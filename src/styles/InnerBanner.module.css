@@ -1,0 +1,179 @@
+.innerBanner {
+    width: 100%;
+    background-color: #d4aa6a;
+    overflow: hidden;
+}
+
+.innerBannerWrapper {
+    display: flex;
+    align-items: stretch;
+    height: 420px;
+}
+
+.innerBannerWrapper .innerBannerLeft {
+    background-color: #9f8240;
+    padding: 24px 0px 24px 48px;
+    /* min-width: 300px; */
+    min-width: 350px;
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.innerBannerWrapper .innerBannerLeft h1 {
+    font-weight: 500;
+    font-size: 2rem;
+    color: #ffffff;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    margin-right: 35px;
+}
+
+.innerBannerWrapper .innerBannerLeft .divider {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.innerBannerWrapper .innerBannerLeft .breadcrumb, .innerBannerWrapper .innerBannerLeft .breadcrumb a {
+    font-size: 15px;
+    font-weight: 300;
+    color: rgba(255, 255, 255,1);
+    letter-spacing: 0.04em;
+    margin-bottom: 0px;
+}
+
+.innerBannerWrapper .innerBannerLeft .breadcrumb span {
+    margin: 0 1px;
+    opacity: 0.7;
+}
+.innerBannerWrapper .innerBannerLeft .breadcrumb span span {
+    font-size: 12px;
+}
+
+.innerBannerWrapper .innerBannerRight {
+    flex: 1;
+    overflow: hidden;
+}
+
+.innerBannerWrapper .innerBannerRight img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+
+
+
+
+.carouselWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  
+}
+
+/* ── Slides ── */
+.carouselImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  pointer-events: none;
+}
+.carouselImage.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ── Arrows ── */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+.arrow:hover {
+  background: rgba(0, 0, 0, 0.65);
+}
+.arrowLeft  { left: 10px; }
+.arrowRight { right: 10px; }
+
+/* ── Dots ── */
+.carouselDots {
+  position: absolute;
+  bottom: 28px; /* above progress bar */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.dot.activeDot {
+  background: #ffffff;
+  transform: scale(1.3);
+}
+
+/* ── Progress Bar ── */
+.progressBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.25);
+  z-index: 10;
+}
+.progressFill {
+  height: 100%;
+  background: #ffffff;
+  width: 0%;
+}
+
+/* ── Pause Badge ── */
+.pauseBadge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  z-index: 10;
+}
+

@@ -1,0 +1,383 @@
+.sectionPadding {
+  padding: 80px 0;
+  background-color: transparent;
+}
+
+.pageContentWrapper {
+  background: linear-gradient(180deg, #fef4f4 0%, #ffffff 30%, #ffffff 70%, #fcf0f0 100%);
+  width: 100%;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.subTitle {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.sectionText {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #333;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin-bottom: 40px;
+}
+
+.donateGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.donateItem {
+  text-align: center;
+}
+
+.donateImgWrapper {
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.donateImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.donateItem:hover .donateImg {
+  transform: scale(1.05);
+}
+
+.donateLabel {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #000;
+}
+
+.exclusionText {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.85rem;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+}
+
+.donateBox {
+  background: #fff;
+  border: 1px solid #c9933b;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  margin-bottom: 60px;
+}
+
+.tabsContainer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.tabBtn {
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tabBtnActive {
+  background-color: #a42c9f;
+  color: #fff;
+  border-color: #a42c9f;
+}
+
+.tabBtnInactive {
+  background-color: #1f1966;
+  color: #fff;
+  border-color: #1f1966;
+}
+
+.tabBtnInactive:hover {
+  background-color: #120e3a;
+  border-color: #120e3a;
+}
+
+.boxTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #000;
+}
+
+/* Form Styles */
+.formHeader {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.formHeaderIcon {
+  width: 50px;
+  height: 50px;
+  background-color: #f0f4f8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #1f1966;
+}
+
+.formHeaderTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.formHeaderSubtitle {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.formSectionTitle {
+  font-size: 1rem;
+  color: #a42c9f;
+  margin: 30px 0 15px 0;
+  font-weight: 500;
+}
+
+.formRow {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.formGroup {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formLabel {
+  font-size: 0.85rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.requiredStar {
+  color: red;
+}
+
+.formInput, .formSelect {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+  background-color: #fff;
+}
+
+.formInput:focus, .formSelect:focus {
+  border-color: #a42c9f;
+}
+
+.locationsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 20px 0 30px;
+  border-top: 1px solid #c9933b;
+  border-bottom: 1px solid #c9933b;
+  padding: 30px 0;
+}
+
+.locationItem h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.locationItem p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 5px;
+  line-height: 1.4;
+}
+
+.timingsTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.timingItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 60px;
+}
+
+.galleryImgWrapper {
+  width: 100%;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.galleryImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.galleryImgWrapper:hover .galleryImg {
+  transform: scale(1.08);
+}
+
+/* Lightbox Styles */
+.lightboxOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.lightboxImage {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.lightboxClose {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10000;
+  transition: color 0.3s ease;
+}
+
+.lightboxClose:hover {
+  color: #a42c9f;
+}
+
+.lightboxPrev, .lightboxNext {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10000;
+  transition: color 0.3s ease;
+  padding: 20px;
+}
+
+.lightboxPrev:hover, .lightboxNext:hover {
+  color: #a42c9f;
+}
+
+.lightboxPrev {
+  left: 20px;
+}
+
+.lightboxNext {
+  right: 20px;
+}
+
+@media (max-width: 991px) {
+  .donateGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .locationsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .galleryGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .donateGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .locationsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .sectionPadding {
+    padding: 40px 0;
+  }
+  .sectionTitle, .subTitle {
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+  .sectionText {
+    margin-bottom: 25px;
+  }
+  .donateBox {
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  .locationsGrid {
+    padding: 15px 0;
+    margin: 10px 0 15px;
+  }
+  .galleryGrid {
+    margin-bottom: 30px;
+  }
+}

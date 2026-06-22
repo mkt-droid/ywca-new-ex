@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    background-color: #ffffff; /* Aap ise apni website ke background color se badal sakte hain */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+ 
+  .logo-container {
+    width: 300px;
+  }
+ 
+  /* Triangle ki drawing animation */
+  .triangle-outline {
+    fill: none;
+    stroke: #2e4a9e; /* Blue color */
+    stroke-width: 10;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: drawLines 2.5s ease-out forwards;
+  }
+ 
+  /* Blue background jo baad mein fill hoga */
+  .triangle-fill {
+    fill: #2e4a9e;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in 1.8s forwards;
+  }
+ 
+  /* Horizontal Blue Bar */
+  .center-bar {
+    fill: #2e4a9e;
+    transform: scaleX(0);
+    transform-origin: center;
+    animation: expandBar 0.6s ease-out 1.2s forwards;
+  }
+ 
+  /* YWCA Text */
+  .logo-text {
+    fill: #000000;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 65px;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in 2.2s forwards;
+  }
+ 
+  /* Animations definition */
+  @keyframes drawLines {
+    to { stroke-dashoffset: 0; }
+  }
+ 
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
+ 
+  @keyframes expandBar {
+    to { transform: scaleX(1); }
+  }
+</style>
+</head>
+<body>
+ 
+<div class="logo-container">
+  <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+    <path class="triangle-fill" d="M 50,70 L 350,70 L 200,340 Z" />
+    <path class="triangle-outline" d="M 50,70 L 350,70 L 200,340 Z" />
+    
+    <rect class="center-bar" x="20" y="125" width="360" height="70" />
+    
+    <text x="200" y="180" class="logo-text" text-anchor="middle">YWCA</text>
+  </svg>
+</div>
+ 
+</body>

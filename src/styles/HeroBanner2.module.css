@@ -1,0 +1,299 @@
+/* ═══════════════════════════════════════════════════════════
+   HERO BANNER — PURE FADE EFFECT
+═══════════════════════════════════════════════════════════ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 100px);
+
+  overflow: hidden;
+  user-select: none;
+
+  isolation: isolate;
+}
+
+/* ──────────────────────────────────────────────────────────
+   PROGRESS BAR
+────────────────────────────────────────────────────────── */
+
+.progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 3px;
+
+  background: rgba(255,255,255,0.15);
+
+  z-index: 30;
+}
+
+.progressFill {
+  height: 100%;
+
+  background: #2A3F8F;
+
+  transition: width 0.1s linear;
+}
+
+/* ──────────────────────────────────────────────────────────
+   SLIDES
+────────────────────────────────────────────────────────── */
+
+.slide {
+  position: absolute;
+  inset: 0;
+
+  opacity: 0;
+  visibility: hidden;
+
+  pointer-events: none;
+
+  z-index: 0;
+
+  transition:
+    opacity 1.5s ease-in-out,
+    visibility 1.5s ease-in-out;
+}
+
+.slideActive {
+  opacity: 1;
+  visibility: visible;
+
+  pointer-events: auto;
+
+  z-index: 5;
+}
+
+/* ──────────────────────────────────────────────────────────
+   BACKGROUND
+────────────────────────────────────────────────────────── */
+
+.bg {
+  position: absolute;
+  inset: 0;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  opacity: 0;
+
+  transition: opacity 1.5s ease-in-out;
+}
+
+.bgActive {
+  opacity: 1;
+}
+
+/* ──────────────────────────────────────────────────────────
+   CONTENT
+────────────────────────────────────────────────────────── */
+
+.content {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 45%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 5% 0 4%;
+
+  z-index: 10;
+
+  opacity: 0;
+
+  pointer-events: none;
+
+  transition: opacity 1.5s ease-in-out;
+}
+
+.contentVisible {
+  opacity: 1;
+
+  pointer-events: auto;
+}
+
+/* ──────────────────────────────────────────────────────────
+   TITLE
+────────────────────────────────────────────────────────── */
+
+.title {
+  margin: 0 0 16px;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.line1,
+.line2 {
+  display: block;
+
+  font-size: clamp(32px, 4.5vw, 70px);
+  font-weight: 700;
+
+  color: #ffffff;
+
+  line-height: 1.05;
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+
+  font-family: var(--font-bebas);
+
+  text-align: center;
+}
+
+/* ──────────────────────────────────────────────────────────
+   SUBTITLE
+────────────────────────────────────────────────────────── */
+
+.subtitle {
+  font-size: clamp(12px, 3vw, 25px);
+  font-weight: 500;
+
+  color: #fff;
+
+  letter-spacing: 0.2px;
+  line-height: 1.5;
+
+  margin: 0 0 28px;
+
+  text-align: center;
+}
+
+/* ──────────────────────────────────────────────────────────
+   BUTTON
+────────────────────────────────────────────────────────── */
+
+.btn {
+  display: inline-block;
+
+  padding: 12px 28px;
+
+  background: #2A3F8F;
+  color: #ffffff;
+
+  font-size: clamp(12px, 2vw, 16px);
+  font-weight: 600;
+
+  letter-spacing: 0.3px;
+  text-decoration: none;
+
+  border-radius: 50px;
+
+  cursor: pointer;
+
+  box-shadow: 0 4px 18px rgba(42, 63, 143, 0.4);
+
+  transition:
+    background 0.25s,
+    transform 0.25s;
+}
+
+.btn:hover {
+  background: #1e2f6e;
+
+  transform: translateY(-2px);
+}
+
+/* ──────────────────────────────────────────────────────────
+   ARROWS
+────────────────────────────────────────────────────────── */
+
+.arrow {
+  position: absolute;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  z-index: 20;
+
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+
+  background: rgba(0,0,0,0.28);
+
+  border: 1px solid rgba(255,255,255,0.22);
+
+  color: #fff;
+
+  font-size: 22px;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition:
+    background 0.2s,
+    transform 0.2s;
+}
+
+.arrow:hover {
+  background: #2A3F8F;
+  border-color: #2A3F8F;
+
+  transform: translateY(-50%) scale(1.08);
+}
+
+.arrowLeft {
+  left: 14px;
+}
+
+.arrowRight {
+  right: 14px;
+}
+
+/* ──────────────────────────────────────────────────────────
+   RESPONSIVE
+────────────────────────────────────────────────────────── */
+
+@media (max-width: 992px) {
+
+  .content {
+    width: 48%;
+    padding: 0 4%;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .hero {
+    min-height: unset;
+  }
+
+  .bg {
+    background-position: center;
+  }
+
+  .content {
+    position: absolute;
+
+    width: 100%;
+
+    padding: 20px;
+
+    align-items: center;
+    text-align: center;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+}

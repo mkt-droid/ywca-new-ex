@@ -1,0 +1,112 @@
+.donateSection {
+  background-color: #f8f6f5; /* Very light beige/gray from design */
+  padding: 80px 0;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.pageTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+}
+
+.contentRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.qrContainer {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.qrImage {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border: 10px solid white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.divider {
+  width: 2px;
+  height: 350px;
+  background-color: #d4aa6a; /* Golden color line */
+  margin: 0 20px;
+}
+
+.detailsContainer {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.sectionHeading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 25px;
+}
+
+.subHeading {
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.textValue {
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 1rem;
+}
+
+.detailsTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.detailsTable td {
+  padding: 5px 0;
+  vertical-align: top;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.detailsTable td:first-child {
+  width: 140px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .contentRow {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .qrContainer {
+    justify-content: center;
+  }
+  
+  .divider {
+    width: 80%;
+    height: 2px;
+    margin: 30px auto;
+  }
+  
+  .detailsContainer {
+    padding-left: 0;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 400px;
+  }
+}

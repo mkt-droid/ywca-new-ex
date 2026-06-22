@@ -1,0 +1,455 @@
+.innerPageSection {
+    padding: 60px 0 70px 0px;
+}
+
+.sectionHeading {
+    margin-bottom: 32px;
+}
+
+.sectionHeading h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    background: linear-gradient(to right, #d63384, #7c3aed, #1e3a8a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.sectionHeading2 {
+    /* margin-bottom: 15px; */
+}
+
+.sectionHeading2 h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    background: linear-gradient(to right, #d63384, #7c3aed, #1e3a8a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+.sectionHeading3 h2 {
+
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+}
+.sectionHeading3 h2 .highlight {
+   color: #fff;
+}
+.sectionHeading h2 .highlight {
+    color: #9b2fa0;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: #293e99;
+    font-weight: 300;
+
+    margin-bottom: 15px;
+}
+
+.historyContent {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin-bottom: 48px;  /* ✅ spacing between blocks */
+}
+
+.historyContent:last-child {
+    margin-bottom: 0;
+}
+
+.imageCol {
+    min-width: 350px;
+    max-width: 340px;
+    flex-shrink: 0;
+}
+
+.imageCol img {
+    width: 100%;
+    display: block;
+    filter: sepia(40%) contrast(1.05);
+    border: 1px solid #e0e0e0;
+}
+
+.imageCol2 {
+    min-width: 350px;
+    max-width: 350px;
+    flex-shrink: 0;
+}
+
+.imageCol2 img {
+    width: 100%;
+    display: block;
+    filter: sepia(40%) contrast(1.05);
+    border: 1px solid #e0e0e0;
+}
+
+.caption {
+    font-size: 18px;
+    color: #555555;
+    font-weight: 300;
+    margin-top: 8px;
+}
+
+.textCol {
+    flex: 1;
+}
+
+.textCol p {
+    font-size: 15px;
+    line-height: 25px;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.textCol p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+.boardSection {
+    /* padding: 30px 0; */
+}
+
+/* ── President ── */
+.presidentWrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 56px;
+}
+
+.presidentCard {
+    border: 1px solid #1e3a8a;
+    padding: 16px;
+    width: 340px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.presidentCard.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.presidentCard img {
+    width: 100%;
+    aspect-ratio: 4 / 4;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 12px;
+}
+
+/* ── Grids ── */
+.row4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   /* ✅ always centered */
+    gap: 20px;
+
+    max-width: 90%;
+    margin: 0 auto 28px;
+}
+
+.row4 > div {
+    width: calc(25% - 20px);   /* 4 cards per row max */
+    min-width: 180px;
+}
+.row5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+/* ── Member Card ── */
+.memberCard {
+    border: 1px solid #ddd;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease,
+                box-shadow 0.3s ease, border-color 0.3s ease;
+    margin-bottom: 20px;
+    height: 100%;
+}
+
+.memberCard.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.memberCard:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(30, 58, 138, 0.12);
+    border-color: #1e3a8a;
+}
+
+.memberCard img {
+    width: 100%;
+    aspect-ratio: 4/ 4;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* ── Placeholder silhouette ── */
+.placeholderImg {
+    width: 100%;
+    aspect-ratio: 4 / 4;
+    background: #d0d5dd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.placeholderImg svg {
+    width: 55%;
+    opacity: 0.5;
+}
+
+/* ── Text ── */
+.memberName {
+    font-weight: 600;
+    font-size: 17px;
+    color: #1a1a1a;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+}
+
+.memberTitle {
+    font-size: 15px;
+    color: #666;
+    font-weight: 300;
+    margin-bottom: 0px;
+}
+
+.pageWrapper {
+    padding: 0px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ── Hero ── */
+.memberHero {
+    background-color: #1e3a8a;
+    border-radius: 4px;
+    margin: 0px 0 40px;
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+    min-height: 380px;
+}
+
+.heroLeft {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.heroName {
+ 
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: #c9a84c;
+    line-height: 1.2;
+}
+
+.heroBottom {
+    margin-top: auto;
+}
+
+.heroDesignation {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 300;
+    letter-spacing: 0.04em;
+    margin-bottom: 8px;
+}
+
+.heroTagline {
+   
+    font-size: 1.7rem;
+    color: #ffffff;
+    font-weight: 300;
+    line-height: 1.3;
+}
+
+.heroRight {
+    width: 420px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.heroRight img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+}
+
+/* ── Details ── */
+.memberDetails {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    padding: 48px 0 60px;
+}
+
+.detailsLeft {
+    flex: 1;
+}
+
+.detailLabel {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 0.04em;
+    margin-bottom: 4px;
+}
+
+.detailValue {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #1a1a1a;
+    margin-bottom: 32px;
+    line-height: 1.2;
+}
+
+.funFact {
+    font-size: 1.3rem;
+}
+
+.linkedinBtn {
+    display: inline-flex;
+      font-size: 0.9rem;
+  padding: 14px 28px;
+  background: #2A3F8F;
+  color: #ffffff;
+  font-size: clamp(12px, 2vw, 18px);
+  font-weight: 600;
+ letter-spacing: 0.02em;
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
+
+  transform: scale(0.95) translateY(12px);
+  box-shadow: 0 4px 18px rgba(42, 63, 143, 0.4);
+  transition: background 0.25s, box-shadow 0.25s, transform 0.2s;
+   align-items: center;
+    gap: 10px;
+    /* display: inline-flex;
+   
+    background-color: #d4e844;
+    color: #1a1a1a;
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 14px 28px;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    transition: background 0.2s ease, transform 0.2s ease; */
+}
+.row3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.memberCard {
+  width: 100%;
+}
+.desc{
+   margin-top: 10px;
+    font-size: 15px;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 10px;
+     color: #1a1a1a;
+     margin-bottom: 0px;
+}
+/* Responsive */
+@media (max-width: 991px) {
+  .row3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .row3 {
+    grid-template-columns: 1fr;
+  }
+}
+.linkedinBtn:hover {
+    background-color: #cba329;
+    transform: translateX(2px);
+}
+
+.linkedinBtn svg {
+    width: 16px;
+    height: 16px;
+}
+
+.detailsDivider {
+    width: 1px;
+    background: #e0e0e0;
+    align-self: stretch;
+    min-height: 200px;
+}
+
+.detailsRight {
+    flex: 1.3;
+}
+
+.quoteText {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    padding-left: 20px;
+    border-left: 3px solid #1e3a8a;
+}
+
+.bioText {
+    font-size: 15px;
+    line-height: 25px;
+    color: #555;
+    font-weight: 300;
+}
+
+.readMore{
+    text-transform: uppercase;
+    color: #DA646F;
+    text-decoration: underline;
+}
+
+.bookNow{
+    text-align: center;
+}
+.bookNow a{
+    display: inline-block;
+    padding: 10px 35px;
+    color: #fff;
+    background-color: #2A3585;
+    margin-top: 25px;
+    border-radius: 25px;
+    font-size: 18px;
+    transition: all .3s ease-in;
+    border: 1px solid #2A3585;
+}
+.bookNow a:hover{
+    background-color: #fff;
+    border: 1px solid #2A3585;
+    color: #2A3585;
+}

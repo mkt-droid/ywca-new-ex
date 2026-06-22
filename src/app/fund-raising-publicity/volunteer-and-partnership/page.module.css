@@ -1,0 +1,194 @@
+.sectionPadding {
+  padding: 80px 0;
+  background-color: transparent;
+}
+
+.pageTitle {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.pageDescription {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 50px auto;
+  color: #333;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.contentWrapper {
+  background-color: #fbfbfb;
+  width: 100%;
+  min-height: 60vh;
+}
+
+.formCard {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.formHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.iconWrapper {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  background-color: #e6f0fa;
+  color: #2b5c92;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  font-size: 1.2rem;
+}
+
+.formTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+  color: #000;
+}
+
+.formSubtitle {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 5px 0 0 0;
+}
+
+.formGroup {
+  margin-bottom: 25px;
+}
+
+.formLabel {
+  display: block;
+  font-size: 0.80rem;
+  color: #444;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.requiredStar {
+  color: #e74c3c;
+  margin-left: 3px;
+}
+
+.formControl {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #333;
+  transition: border-color 0.3s;
+}
+
+.formControl:focus {
+  outline: none;
+  border-color: #2b5c92;
+}
+
+.formSelect {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #333;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 1em;
+}
+
+.formSelect:focus {
+  outline: none;
+  border-color: #2b5c92;
+}
+
+.fileUploadWrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.fileInput {
+  flex: 1;
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  color: #666;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.submitBtn {
+  background-color: #1a1859;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.submitBtn:hover {
+  background-color: #2b287a;
+}
+
+.termsText {
+  font-size: 0.75rem;
+  color: #888;
+  margin-top: 10px;
+  display: block;
+}
+
+.termsLink {
+  color: #888;
+  text-decoration: underline;
+}
+
+  .termsLink:hover {
+    color: #555;
+  }
+
+  @media (max-width: 767px) {
+    .sectionPadding {
+      padding: 40px 0;
+    }
+    .formHeader {
+      align-items: flex-start;
+    }
+    .iconWrapper {
+      margin-top: 2px;
+    }
+    .pageTitle {
+      margin-bottom: 15px;
+    }
+    .pageDescription {
+      margin-bottom: 30px;
+    }
+    .formCard {
+      padding: 20px;
+    }
+  }
