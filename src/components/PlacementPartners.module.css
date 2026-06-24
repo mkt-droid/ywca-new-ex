@@ -1,0 +1,48 @@
+.sectionTitle {
+  font-size: 32px;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.carouselContainer {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  padding: 10px 0;
+  --slide-width: 14.2857%;
+}
+
+.carouselTrack {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.logoSlide {
+  flex: 0 0 var(--slide-width);
+  width: var(--slide-width);
+  flex-shrink: 0;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoImage {
+  height: auto;
+  max-width: 100%;
+  max-height: 70px;
+  object-fit: contain;
+}
+
+@media (max-width: 991px) {
+  .carouselContainer {
+    --slide-width: 33.333%;
+  }
+}
+
+@media (max-width: 576px) {
+  .carouselContainer {
+    --slide-width: 50%;
+  }
+}

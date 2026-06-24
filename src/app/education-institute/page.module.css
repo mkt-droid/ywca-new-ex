@@ -1,0 +1,393 @@
+.bannerSection {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.bannerImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.bannerContent {
+  position: relative;
+}
+
+.enquiryFormCard {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  position: absolute;
+  bottom: -250px;
+  z-index: 10;
+}
+
+.formTitle {
+  color: #c94f9e;
+  /* Pinkish-red from screenshot */
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+
+}
+
+.formInput,
+.formTextarea {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+  background-color: #fcfcfc;
+}
+
+.formInput:focus,
+.formTextarea:focus {
+  border-color: #c94f9e;
+}
+
+.formTextarea {
+  resize: vertical;
+}
+
+.submitBtn {
+  background-color: #1a1a54;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  /* Pill shape */
+  cursor: pointer;
+  width: auto;
+  min-width: 120px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  display: block;
+  margin: 0 auto;
+}
+
+.submitBtn:hover {
+  background-color: #0e0e33;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.sectionText {
+  color: #333;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.newsCard {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+
+.newsImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.newsContent {
+  padding: 20px;
+}
+
+.newsDate {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.newsTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+  line-height: 1.4;
+}
+
+.learningSection {
+  background-color: #090b84;
+  /* Rich vibrant dark blue */
+  color: #fff;
+  padding: 80px 0;
+  margin-top: 40px;
+}
+
+.learningTitle {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.learningText {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.downloadBtn {
+  background-color: #c94f9e;
+  /* Pinkish/Purple from screenshot */
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.startLearningBtn {
+  background-color: #b1259a;
+  color: #fff;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 30px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.startLearningBtn:hover {
+  background-color: #921c7e;
+}
+
+.pillsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.pillLine {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  padding: 8px 15px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: #fff;
+}
+
+.pillLine:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: #fff;
+}
+
+.learningImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.whyUsSection {
+  background-color: #f7e3d5;
+  /* Peach background */
+  padding: 80px 0;
+}
+
+.whyUsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 900px;
+  margin: 40px auto 0;
+}
+
+.whyUsPill {
+  background-color: #9f1c9f;
+  /* Purple card background */
+  color: #fff;
+  padding: 25px 20px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  width: calc(33.333% - 14px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .whyUsPill {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 576px) {
+  .whyUsPill {
+    width: 100%;
+  }
+}
+
+.alumniCard {
+  border: 1px solid #eadbc6;
+  text-align: left;
+  border-radius: 0;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.alumniImage {
+  width: 100%;
+  height: 250px;
+  border-radius: 0;
+  object-fit: cover;
+  margin-bottom: 0;
+}
+
+.alumniContent {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.alumniName {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.alumniDesignation {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.alumniDivider {
+  margin: 0 0 12px 0;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+.alumniQuote {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.viewMoreBtn {
+  background-color: #212c6a;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 40px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.viewMoreBtn:hover {
+  background-color: #111840;
+  color: white;
+}
+
+.partnersLogos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.partnerLogo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #444;
+}
+
+.partnerLogo i {
+  color: #1a1a54;
+  font-size: 24px;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .enquiryFormCard {
+    position: relative;
+    bottom: auto;
+    margin: -20px auto 30px;
+  }
+  
+  .aboutSection {
+    margin-top: 40px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionTitle,
+  .learningTitle {
+    font-size: 1.6rem;
+  }
+  
+  .learningSection,
+  .whyUsSection {
+    padding: 50px 0;
+  }
+  
+  .partnersLogos {
+    gap: 20px;
+  }
+  
+  .whyUsPill {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 576px) {
+  .whyUsPill {
+    width: 100%;
+  }
+  
+  .pillLine {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+  
+  .alumniImage {
+    height: 350px;
+  }
+}

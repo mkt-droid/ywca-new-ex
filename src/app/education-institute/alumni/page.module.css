@@ -1,0 +1,56 @@
+.alumniSection {
+  padding: 60px 0;
+  background-color: #fafafa;
+}
+
+.alumniCard {
+  background-color: #fff;
+  border: 1px solid #d4a976;
+  padding: 15px;
+  margin-bottom: 30px;
+  height: calc(100% - 30px);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.alumniCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.alumniImage {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background-color: #e0e0e0;
+}
+
+.alumniContent {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.alumniName {
+  font-size: 15px;
+  font-weight: 700;
+  color: #111;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 4px;
+}
+
+.alumniSubtitle {
+  font-size: 12px;
+  color: #777;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.alumniDesc {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.6;
+}

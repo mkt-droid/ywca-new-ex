@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": "Diploma In Office Management",
+    "duration": "1 Year",
+    "eligibility": "12th Pass",
+    "image": "/images/education-institute/aca-1.jpg",
+    "category": "Office Management"
+  },
+  {
+    "id": 2,
+    "title": "Diploma In Office Management Advance",
+    "duration": "2 Year",
+    "eligibility": "12th Pass",
+    "image": "/images/education-institute/aca-2.jpg",
+    "category": "Office Management"
+  },
+  {
+    "id": 3,
+    "title": "Diploma In Office Management Advance - 2nd Yr Direct Entry",
+    "duration": "1 Year",
+    "eligibility": "12th Pass and 1 year Diploma in Office Management",
+    "image": "/images/education-institute/aca-1.jpg",
+    "category": "Office Management"
+  },
+  {
+    "id": 4,
+    "title": "Diploma In Office Assistant",
+    "duration": "1 Year",
+    "eligibility": "12th Pass",
+    "image": "/images/education-institute/aca-3.jpg",
+    "category": "Office Management"
+  },
+  {
+    "id": 5,
+    "title": "Diploma In Stenography",
+    "duration": "1 Year",
+    "eligibility": "12th Pass",
+    "image": "/images/education-institute/aca-2.jpg",
+    "category": "Office Management"
+  },
+  {
+    "id": 6,
+    "title": "Diploma in Fashion Technology",
+    "duration": "2 Year",
+    "eligibility": "12th Pass",
+    "image": "/images/education-institute/aca-1.jpg",
+    "category": "Fashion Technology"
+  },
+  {
+    "id": 7,
+    "title": "Certificate in Dress Designing",
+    "duration": "1 Year",
+    "eligibility": "12th Pass",
+    "image": "/images/education-institute/aca-1.jpg",
+    "category": "Fashion Technology"
+  }
+]

@@ -22,7 +22,7 @@
   position: relative;
   z-index: 2;
   color: white;
-  margin-top: 15vh;
+  margin-top: 27vh;
   /* Pushes content a bit towards the bottom */
 }
 
@@ -48,9 +48,9 @@
 .menuItem {
   background-color: #A011AF;
   color: white;
-  padding: 17px 20px;
+  padding: 20px 20px;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 15px;
   font-weight: 400;
   display: flex;
   align-items: center;
@@ -61,8 +61,9 @@
   border-bottom-left-radius: 10px;
 }
 
-.menuItem:hover {
-  background-color: #8c2388;
+.menuItem:hover,
+.menuItemActive {
+  background-color: #c94f9e;
   color: white;
   padding-left: 25px;
 }
