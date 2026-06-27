@@ -11,27 +11,27 @@ const PAGES = [
     {
       src: "/images/focus/slide-1/Blue-Triangle-Family-Hostel.jpg",
       caption: "Blue Triangle Family Hostel",
-      link:'/blue-triangle'
+      link: '/blue-triangle'
     },
     {
       src: "/images/focus/slide-1/Community-Development-Program.jpg",
       caption: "Community Development Program",
-      link:''
+      link: ''
     },
     {
       src: "/images/focus/slide-1/Day-care.jpg",
       caption: "Day Care",
-      link:''
+      link: ''
     },
     {
       src: "/images/focus/slide-1/Education-Institutes.jpg",
       caption: "Education Institutes",
-      link:''
+      link: '/education-institute'
     },
     {
       src: "/images/focus/slide-1/Fund-Raising-and-Publicity.jpg",
       caption: "Fund Raising and Publicity",
-      link:''
+      link: '/fund-raising-publicity'
     },
   ],
 
@@ -40,32 +40,32 @@ const PAGES = [
     {
       src: "/images/focus/slide-2/Public-Affairs-and-Social-Issue.jpg",
       caption: "Public Affairs and Social Issues",
-      link:''
+      link: ''
     },
     {
       src: "/images/focus/slide-2/Membership-Programs.jpg",
       caption: "Membership and Programs",
-      link:''
+      link: ''
     },
     {
       src: "/images/focus/slide-2/Religious.jpg",
       caption: "Religious Education Committee",
-      link:''
+      link: ''
     },
     {
       src: "/images/focus/slide-2/Working-women-hostel.jpg",
       caption: "Working Women Hostels",
-      link:''
+      link: ''
     },
     {
       src: "/images/focus/slide-2/Shelter-Homes.jpg",
       caption: "Shelter Homes",
-      link:''
+      link: ''
     },
     {
       src: "/images/focus/slide-2/Youth.jpg",
       caption: "Youth",
-      link:''
+      link: ''
     },
   ],
 
@@ -307,9 +307,8 @@ const Highlights = () => {
 
           <button
             key={i}
-            className={`${styles.dot} ${
-              i === page ? styles.dotActive : ""
-            }`}
+            className={`${styles.dot} ${i === page ? styles.dotActive : ""
+              }`}
             onClick={() =>
               goTo(i, i > page ? "next" : "prev")
             }
