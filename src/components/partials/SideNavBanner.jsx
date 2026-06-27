@@ -50,6 +50,13 @@ export default function SideNavBanner({
           })}
         </div>
       )}
+      
+      {/* Social Media floating pill */}
+      <div className={styles.socialFloatingPill}>
+        <a href="#" className={styles.socialIcon}><img src="/images/facebook.png" alt="Facebook" /></a>
+        <a href="#" className={styles.socialIcon}><img src="/images/twitter.png" alt="Twitter" /></a>
+        <a href="#" className={styles.socialIcon}><img src="/images/youtube.png" alt="YouTube" /></a>
+      </div>
     </section>
   );
 }

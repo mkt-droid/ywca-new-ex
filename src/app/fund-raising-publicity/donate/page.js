@@ -30,7 +30,7 @@ export default function DonatePage() {
             <div className={styles.detailsContainer}>
               <h2 className={styles.sectionHeading}>Banking details</h2>
 
-              <div className={styles.subHeading}>UP ID</div>
+              <div className={styles.subHeading}>UPI ID</div>
               <div className={styles.textValue}>11519296@cbin</div>
 
               <div className={styles.subHeading}>Bank details</div>

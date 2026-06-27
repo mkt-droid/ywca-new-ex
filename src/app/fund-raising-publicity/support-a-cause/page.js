@@ -24,37 +24,37 @@ export default function SupportACausePage() {
       id: 1,
       title: "Help Women Survivors Of Violence Find Safety And Shelter",
       text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
-      image: "/images/Community-development.jpg",
+      image: "/images/support-and-cause/sac-1.jpg",
     },
     {
       id: 2,
       title: "Lorem Ipsum Is Simply Dummy Text Of The Printing",
       text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
-      image: "/images/fund-raising/thumb-1.png",
+      image: "/images/support-and-cause/sac-2.jpg",
     },
     {
       id: 3,
       title: "Simply Dummy Text Of The Printing And Typesetting",
       text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
-      image: "/images/fund-raising/thumb-2.png",
+      image: "/images/support-and-cause/sac-3.jpg",
     },
     {
       id: 4,
       title: "Dummy Text Of The Printing And Typesetting",
       text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
-      image: "/images/fund-raising/thumb-1.png",
+      image: "/images/support-and-cause/sac-2.jpg",
     },
     {
       id: 5,
       title: "Lpsum Is Simply Dummy Text Of The Printing",
       text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
-      image: "/images/Community-development.jpg",
+      image: "/images/support-and-cause/sac-1.jpg",
     },
     {
       id: 6,
       title: "Lorem Is Simply Dummy Text Of The Printing",
       text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
-      image: "/images/fund-raising/thumb-2.png",
+      image: "/images/support-and-cause/sac-4.jpg",
     }
   ];
 

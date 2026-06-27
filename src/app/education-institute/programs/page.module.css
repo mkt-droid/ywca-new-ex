@@ -38,6 +38,12 @@
   background-color: #fafafa;
 }
 
+.courseCardLink {
+  text-decoration: none;
+  display: block;
+  height: 100%;
+}
+
 .courseCard {
   border: 1px solid #d4a976;
   border-radius: 4px;
@@ -46,6 +52,12 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.courseCardLink:hover .courseCard {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 .courseImage {

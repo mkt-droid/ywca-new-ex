@@ -141,13 +141,13 @@ export default function EcoJusticeLabPage() {
             </div>
 
             <p className={styles.introText}>
-              The Eco-Justice Lab is an environmental sustainability initiative of YWCA of Delhi focused on promoting climate-conscious practices, waste management, and community-led environmental action across its campuses and surrounding communities. The initiative aims to nurture young women and communities as environmental leaders by encouraging sustainable lifestyles, responsible waste management, water conservation, upcycling practices, and climate awareness. Through hands-on interventions, community engagement, and skill-building activities, the Eco-Justice Lab works towards building environmentally conscious communities and strengthening institutional sustainability practices. By integrating climate action with women's empowerment and community participation, the initiative reflects YWCA of Delhi's commitment towards creating a cleaner, greener, and more sustainable future.
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions.
             </p>
 
             <h3 className={styles.subTitle}>Our Activities</h3>
             <div className={styles.activitiesGrid}>
               {activities.map((activity, index) => (
-                <ActionCard 
+                <ActionCard
                   key={index}
                   title={activity.title}
                   text={activity.text}
@@ -164,13 +164,14 @@ export default function EcoJusticeLabPage() {
               <div className={styles.partnershipContent}>
                 <h3>Partnership with IPCA</h3>
                 <p>
-                  Indian Pollution Control Association (IPCA) has been taking forward the Swachh Bharat Mission in many ways across the country by promoting solid waste management practices:
+                  Indian Pollution Control Association (IPCA) has been a key technical partner supporting the sustainability initiatives of YWCA of Delhi. Through this collection.
                 </p>
                 <ul>
-                  <li>Providing door to door waste collection services, segregation of waste and organizing training/awareness programs.</li>
-                  <li>Working with the government, corporate houses, local authorities and communities towards the implementation of solid waste management rules.</li>
-                  <li>Promoting source segregation, recycling, co-processing, and upcycling of plastic waste.</li>
-                  <li>Running a pan India project to execute Extended Producer Responsibility (EPR) on Plastic Packaging.</li>
+                  <li>Plastic collection and segregation systems have been introduced to promote responsible recycling practices</li>
+                  <li>Waste management systems across campuses are strengthened</li>
+                  <li>Capacity-building support is provided for youth, women, and staff</li>
+                  <li>Environmental interventions align with professional sustainability standards</li>
+                  <li>Three large-capacity Aerobins have been installed at the Ashoka Road campus</li>
                 </ul>
               </div>
             </div>
@@ -186,52 +187,54 @@ export default function EcoJusticeLabPage() {
             <div className={styles.regrowSection}>
               <div className={styles.regrowContent}>
                 <h3>ReGrow Organic Manure</h3>
-                <h4>Nurturing Nature with Nature</h4>
+                <h4>Turning Waste into Worth</h4>
                 <p>
-                  We upcycle waste to nurture plants. Our "Organic Manure" is carefully prepared to enrich your plants with essential nutrients. Join us in cultivating green spaces with our organic, sustainable products!
+                  Developed under the Eco-Justice Lab initiative, ReGrow Organic Manure is a sustainable product made from recycled kitchen waste generated at YWCA of Delhi campuses as part of its journey towards becoming a zero-waste campus.
                 </p>
                 <p>
-                  Our natural, chemical-free product revitalizes your garden while protecting the environment. Experience the joy of watching your plants thrive with our organic products.
+                  The initiative demonstrates how waste can be transformed into a valuable community resource while promoting environmental responsibility, sustainable gardening, and circular economy practices.
                 </p>
                 <ul>
-                  <li>100% Organic Manure</li>
-                  <li>Enhances Soil Quality and Texture</li>
-                  <li>Boosts Plant Growth & Root Health</li>
-                  <li>Eco-Friendly and Sustainable</li>
+                  <li>100% Organic & Chemical-Free</li>
+                  <li>Made from Recycled Kitchen Waste</li>
+                  <li>Nourishes Plants & Improves Soil Health</li>
+                  <li>Eco-Friendly & Sustainable</li>
                   <li>Supports Community Livelihoods</li>
-                  <li>Safe for All Plants</li>
+                  <li>Ideal for Home Gardens</li>
                 </ul>
               </div>
               <div className={styles.regrowTableWrapper}>
-                <h4>Available Manure & Prices</h4>
+                <h4>Available Sizes & Prices</h4>
                 <table className={styles.regrowTable}>
                   <thead>
                     <tr>
-                      <th>Product Name</th>
+                      <th>Product Size</th>
                       <th>Price</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Amritmati Vermi Compost</td>
-                      <td>₹ 70</td>
+                      <td>Small Box (Serves 10 Plants)</td>
+                      <td>₹40</td>
                     </tr>
                     <tr>
-                      <td>Regrow Manure 2L (Bottle)</td>
-                      <td>₹ 100</td>
+                      <td>Big Box (Serves 20 Plants)</td>
+                      <td>₹70</td>
                     </tr>
                     <tr>
-                      <td>Cocopeat</td>
-                      <td>₹ 150</td>
+                      <td>1 KG Pack</td>
+                      <td>₹120</td>
                     </tr>
                     <tr>
-                      <td>Eco Brick</td>
-                      <td>₹ 150</td>
+                      <td>5 KG Pack</td>
+                      <td>₹400</td>
                     </tr>
                   </tbody>
                 </table>
-                <div className={styles.tableNote}>
-                  * Note: For bulk orders: 📧 enquiry@ywcaofdelhi.org
+                <div className={styles.tableNote} style={{textAlign: 'left'}}>
+                  <strong style={{color: '#000'}}>To order</strong><br/>
+                  <i className="bi bi-telephone-fill" style={{color: '#666', marginRight: '5px'}}></i> 7011299056<br/>
+                  <i className="bi bi-envelope-fill" style={{color: '#666', marginRight: '5px'}}></i> frap@ywcaofdelhi.org
                 </div>
               </div>
             </div>

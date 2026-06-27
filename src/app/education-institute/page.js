@@ -13,10 +13,10 @@ export const metadata = {
 export default function EducationInstitutePage() {
   const bannerNavItems = [
     { title: 'Overview', icon: 'bi-flower1', link: '/education-institute' },
-    { title: 'Programs', icon: 'bi-mortarboard', link: '/education-institute/programs' },
-    { title: 'Admission', icon: 'bi-person-vcard', link: '/education-institute/admission' },
-    { title: 'Life@YWCA', icon: 'bi-building', link: '#' },
-    { title: 'Contact us', icon: 'bi-telephone', link: '/education-institute/contact' },
+    { title: 'Programs', icon: 'bi-flower1', link: '/education-institute/programs' },
+    { title: 'Admission', icon: 'bi-flower1', link: '/education-institute/admission' },
+    { title: 'Life@YWCA', icon: 'bi-flower1', link: '#' },
+    { title: 'Contact us', icon: 'bi-flower1', link: '/education-institute/contact' },
   ];
 
   const academicNews = [
@@ -47,25 +47,25 @@ export default function EducationInstitutePage() {
       id: 1,
       name: 'Name Surname',
       designation: 'Designation/Organization',
-      quote: "Dummy Ipsum is simply dummy filler text of the printing and type setting & interactive media."
+      quote: "Lorem elit in mollis integer id cursus. Elit enim magna aliquet aenean. Adipiscing magna felis lorem integer."
     },
     {
       id: 2,
       name: 'Name Surname',
       designation: 'Designation/Organization',
-      quote: "Dummy Ipsum is simply dummy filler text of the printing and type setting & interactive media."
+      quote: "Lorem elit in mollis integer id cursus. Elit enim magna aliquet aenean. Adipiscing magna felis lorem integer."
     },
     {
       id: 3,
       name: 'Name Surname',
       designation: 'Designation/Organization',
-      quote: "Dummy Ipsum is simply dummy text of the printing and type setting industry."
+      quote: "Lorem elit in mollis integer id cursus. Elit enim magna aliquet aenean. Adipiscing magna felis lorem integer."
     },
     {
       id: 4,
       name: 'Name Surname',
       designation: 'Designation/Organization',
-      quote: "Dummy Ipsum is simply dummy filler text of the printing and type setting & interactive media."
+      quote: "Lorem elit in mollis integer id cursus. Elit enim magna aliquet aenean. Adipiscing magna felis lorem integer."
     }
   ];
 
@@ -80,18 +80,13 @@ export default function EducationInstitutePage() {
       >
         <div className={styles.bannerContent}>
           <div className={styles.enquiryFormCard}>
-            <h3 className={styles.formTitle}>Enquiry Form</h3>
+            <h3 className={styles.formTitle}>Enquiry form</h3>
             <form>
-              <input type="text" placeholder="Your Name" className={styles.formInput} />
-              <input type="email" placeholder="Email ID" className={styles.formInput} />
-              <input type="text" placeholder="Contact No." className={styles.formInput} />
-              <select className={styles.formInput}>
-                <option>Select Program</option>
-                <option>PG Diploma</option>
-                <option>Diploma</option>
-                <option>Certificate Courses</option>
-              </select>
-              <textarea placeholder="Your Message" className={styles.formTextarea} rows="3"></textarea>
+              <input type="text" placeholder="Your name" className={styles.formInput} />
+              <input type="text" placeholder="Your phone" className={styles.formInput} />
+              <input type="email" placeholder="Your email" className={styles.formInput} />
+              <input type="text" placeholder="Course Interested" className={styles.formInput} />
+              <textarea placeholder="Your comment" className={styles.formTextarea} rows="3"></textarea>
               <button type="button" className={styles.submitBtn}>Submit</button>
             </form>
           </div>
@@ -102,7 +97,7 @@ export default function EducationInstitutePage() {
       <section className={`container mb-5 text-center ${styles.aboutSection}`} style={{ marginTop: '120px' }}>
         <h2 className={styles.sectionTitle}>About YWCA Institute</h2>
         <p className={styles.sectionText}>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like PageMaker including versions.
         </p>
       </section>
 
@@ -133,7 +128,7 @@ export default function EducationInstitutePage() {
                 Welcome to YWCA Academy, where learning knows no bounds. We believe that education is the key to personal and professional growth, and we're here to guide you on your journey to the success.
               </p>
               <button className={styles.startLearningBtn}>Start your learning journey</button>
-              
+
               <div className={styles.pillsContainer}>
                 <span className={styles.pillLine}>Interior Designing</span>
                 <span className={styles.pillLine}>Health Care Sector</span>
@@ -158,13 +153,13 @@ export default function EducationInstitutePage() {
         <div className="container text-center">
           <h2 className={styles.sectionTitle}>Why Us?</h2>
           <div className={styles.whyUsGrid}>
-             <span className={styles.whyUsPill}>Career Focused Learning</span>
-             <span className={styles.whyUsPill}>Industrial Exposure</span>
-             <span className={styles.whyUsPill}>50+ year Legacy</span>
-             <span className={styles.whyUsPill}>Expert Faculty Guidance</span>
-             <span className={styles.whyUsPill}>AI Integrated Curriculum</span>
-             <span className={styles.whyUsPill}>Placement Assistance</span>
-             <span className={styles.whyUsPill}>Well Equipped Lab and<br />AC Classrooms</span>
+            <span className={styles.whyUsPill}>Career Focused Learning</span>
+            <span className={styles.whyUsPill}>Industrial Exposure</span>
+            <span className={styles.whyUsPill}>50+ year Legacy</span>
+            <span className={styles.whyUsPill}>Expert Faculty Guidance</span>
+            <span className={styles.whyUsPill}>AI Integrated Curriculum</span>
+            <span className={styles.whyUsPill}>Placement Assistance</span>
+            <span className={styles.whyUsPill}>Well Equipped Lab and <br/> AC Classrooms</span>
           </div>
         </div>
       </section>

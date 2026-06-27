@@ -31,7 +31,7 @@ export default function AlumniPage() {
       <SideNavBanner
         title={
           <>
-            OUR<br/>ALUMNI
+            OUR<br />ALUMNI
           </>
         }
         bgImage="/images/education-institute/aca-bnr.jpg"
@@ -58,7 +58,6 @@ export default function AlumniPage() {
         </div>
       </section>
       <PlacementPartners />
-      <EducationFooterLinks />
     </main>
   );
 }

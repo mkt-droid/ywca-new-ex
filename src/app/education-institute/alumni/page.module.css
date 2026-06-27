@@ -1,6 +1,7 @@
 .alumniSection {
   padding: 60px 0;
   background-color: #fafafa;
+  margin-bottom: 40px;
 }
 
 .alumniCard {
@@ -16,7 +17,7 @@
 
 .alumniCard:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 }
 
 .alumniImage {

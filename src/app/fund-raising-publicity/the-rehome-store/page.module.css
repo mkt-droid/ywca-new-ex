@@ -52,6 +52,7 @@
   aspect-ratio: 1;
   overflow: hidden;
   border-radius: 4px;
+  border: 1px solid #c9933b;
   margin-bottom: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }

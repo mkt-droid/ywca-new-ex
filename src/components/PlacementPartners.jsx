@@ -4,7 +4,13 @@ import React, { useState, useEffect } from 'react';
 import styles from './PlacementPartners.module.css';
 
 export default function PlacementPartners() {
-  const originalLogos = Array.from({ length: 8 }).map((_, i) => `https://dummyimage.com/160x70/f0f0f0/888888.png&text=Logo+${i+1}`);
+  const originalLogos = [
+    '/images/placement-partners/pp-1.png',
+    '/images/placement-partners/pp-2.png',
+    '/images/placement-partners/pp-3.png',
+    '/images/placement-partners/pp-4.png',
+    '/images/placement-partners/pp-6.png',
+  ];
   
   // Duplicate for seamless infinite feeling
   const logos = [...originalLogos, ...originalLogos, ...originalLogos];

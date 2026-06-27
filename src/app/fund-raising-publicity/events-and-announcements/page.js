@@ -20,7 +20,7 @@ export default function EventsAndAnnouncementsPage() {
   const galleryItems = [
     { 
       title: 'Fundraising Events', 
-      image: 'https://placehold.co/600x400/eeeeee/333333?text=Fundraising+Events',
+      image: '/images/event-announsment/Fundraising-Events.jpg',
       photos: [
         { src: 'https://placehold.co/800x600/dcdcdc/333333?text=Fundraising+Photo+1', description: 'Lorem ipsum is descriptive text for Fundraising Photo 1' },
         { src: 'https://placehold.co/800x600/cccccc/333333?text=Fundraising+Photo+2', description: 'Lorem ipsum is descriptive text for Fundraising Photo 2' },
@@ -29,7 +29,7 @@ export default function EventsAndAnnouncementsPage() {
     },
     { 
       title: 'Collection Drives', 
-      image: 'https://placehold.co/600x400/eeeeee/333333?text=Collection+Drives',
+      image: '/images/event-announsment/Collection-Drives.jpg',
       photos: [
         { src: 'https://placehold.co/800x600/dcdcdc/333333?text=Collection+Photo+1', description: 'Lorem ipsum is descriptive text for Collection Photo 1' },
         { src: 'https://placehold.co/800x600/cccccc/333333?text=Collection+Photo+2', description: 'Lorem ipsum is descriptive text for Collection Photo 2' },
@@ -37,7 +37,7 @@ export default function EventsAndAnnouncementsPage() {
     },
     { 
       title: 'Donation Campaigns', 
-      image: 'https://placehold.co/600x400/eeeeee/333333?text=Donation+Campaigns',
+      image: '/images/event-announsment/Donation-Campaigns.jpg',
       photos: [
         { src: 'https://placehold.co/800x600/dcdcdc/333333?text=Donation+Photo+1', description: 'Lorem ipsum is descriptive text for Donation Photo 1' },
         { src: 'https://placehold.co/800x600/cccccc/333333?text=Donation+Photo+2', description: 'Lorem ipsum is descriptive text for Donation Photo 2' },
@@ -47,7 +47,7 @@ export default function EventsAndAnnouncementsPage() {
     },
     { 
       title: 'Workshops', 
-      image: 'https://placehold.co/600x400/eeeeee/333333?text=Workshops',
+      image: '/images/event-announsment/Workshops.jpg',
       photos: [
         { src: 'https://placehold.co/800x600/dcdcdc/333333?text=Workshop+Photo+1', description: 'Lorem ipsum is descriptive text for Workshop Photo 1' },
         { src: 'https://placehold.co/800x600/cccccc/333333?text=Workshop+Photo+2', description: 'Lorem ipsum is descriptive text for Workshop Photo 2' },
@@ -55,7 +55,7 @@ export default function EventsAndAnnouncementsPage() {
     },
     { 
       title: 'Eco-Justice Lab Inauguration', 
-      image: 'https://placehold.co/600x400/eeeeee/333333?text=Eco-Justice+Lab+Inauguration',
+      image: '/images/event-announsment/Eco-Justice-Lab-Inauguration.jpg',
       photos: [
         { src: 'https://placehold.co/800x600/dcdcdc/333333?text=Eco-Justice+Photo+1', description: 'Lorem ipsum is descriptive text for Eco-Justice Photo 1' },
         { src: 'https://placehold.co/800x600/cccccc/333333?text=Eco-Justice+Photo+2', description: 'Lorem ipsum is descriptive text for Eco-Justice Photo 2' },
@@ -63,7 +63,7 @@ export default function EventsAndAnnouncementsPage() {
     },
     { 
       title: 'The Rehome Store Inauguration', 
-      image: 'https://placehold.co/600x400/eeeeee/333333?text=The+Rehome+Store+Inauguration',
+      image: '/images/event-announsment/The-Rehome-Store-Inauguration.jpg',
       photos: [
         { src: 'https://placehold.co/800x600/dcdcdc/333333?text=Rehome+Store+Photo+1', description: 'Lorem ipsum is descriptive text for Rehome Store Photo 1' },
         { src: 'https://placehold.co/800x600/cccccc/333333?text=Rehome+Store+Photo+2', description: 'Lorem ipsum is descriptive text for Rehome Store Photo 2' },

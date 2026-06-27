@@ -111,21 +111,23 @@ function ProgramsContent() {
               <div className="row">
                 {filteredCourses.map(course => (
                   <div className="col-lg-3 col-md-4 col-sm-6 mb-4" key={course.id}>
-                    <div className={styles.courseCard}>
-                      <img src={course.image} alt={course.title} className={styles.courseImage} />
-                      <div className={styles.courseContent}>
-                        <h5 className={styles.courseTitle}>{course.title}</h5>
-                        <div className={styles.courseDetail}>
-                          <span className={styles.courseDetailLabel}>Duration</span>
-                          <span>{course.duration}</span>
+                    <Link href="/education-institute/admission" className={styles.courseCardLink}>
+                      <div className={styles.courseCard}>
+                        <img src={course.image} alt={course.title} className={styles.courseImage} />
+                        <div className={styles.courseContent}>
+                          <h5 className={styles.courseTitle}>{course.title}</h5>
+                          <div className={styles.courseDetail}>
+                            <span className={styles.courseDetailLabel}>Duration</span>
+                            <span>{course.duration}</span>
+                          </div>
+                          <div className={styles.courseDetail}>
+                            <span className={styles.courseDetailLabel}>Eligibility</span>
+                            <span>{course.eligibility}</span>
+                          </div>
+                          <span className={styles.admissionBtn}>Admission</span>
                         </div>
-                        <div className={styles.courseDetail}>
-                          <span className={styles.courseDetailLabel}>Eligibility</span>
-                          <span>{course.eligibility}</span>
-                        </div>
-                        <Link href="/education-institute/admission" className={styles.admissionBtn}>Admission</Link>
                       </div>
-                    </div>
+                    </Link>
                   </div>
                 ))}
               </div>

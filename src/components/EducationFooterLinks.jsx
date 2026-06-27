@@ -17,25 +17,13 @@ export default function EducationFooterLinks() {
       ]
     },
     {
-      title: 'Fashion Technology',
+      title: 'Beauty Culture & Hair Dressing',
       links: [
         { label: 'Course name one', link: '#' }, { label: 'Course name two', link: '#' }, { label: 'Course name three', link: '#' }, { label: 'Course name four', link: '#' }, { label: 'Course name five', link: '#' }, { label: 'Course name six', link: '#' }, { label: 'Course name seven', link: '#' }
       ]
     },
     {
-      title: 'Information Technology',
-      links: [
-        { label: 'Course name one', link: '#' }, { label: 'Course name two', link: '#' }, { label: 'Course name three', link: '#' }, { label: 'Course name four', link: '#' }, { label: 'Course name five', link: '#' }, { label: 'Course name six', link: '#' }, { label: 'Course name seven', link: '#' }
-      ]
-    },
-    {
-      title: 'Foreign Languages',
-      links: [
-        { label: 'Course name one', link: '#' }, { label: 'Course name two', link: '#' }, { label: 'Course name three', link: '#' }, { label: 'Course name four', link: '#' }, { label: 'Course name five', link: '#' }, { label: 'Course name six', link: '#' }, { label: 'Course name seven', link: '#' }
-      ]
-    },
-    {
-      title: 'Interior Designing',
+      title: 'Advanced Diploma in Beauty Culture',
       links: [
         { label: 'Course name one', link: '#' }, { label: 'Course name two', link: '#' }, { label: 'Course name three', link: '#' }, { label: 'Course name four', link: '#' }, { label: 'Course name five', link: '#' }, { label: 'Course name six', link: '#' }, { label: 'Course name seven', link: '#' }
       ]
@@ -47,19 +35,31 @@ export default function EducationFooterLinks() {
       ]
     },
     {
-      title: 'Communication',
+      title: 'Fashion Designing',
       links: [
         { label: 'Course name one', link: '#' }, { label: 'Course name two', link: '#' }, { label: 'Course name three', link: '#' }, { label: 'Course name four', link: '#' }, { label: 'Course name five', link: '#' }, { label: 'Course name six', link: '#' }, { label: 'Course name seven', link: '#' }
       ]
     },
     {
-      title: 'Beauty & Wellness',
+      title: 'Secretarial Practice',
       links: [
         { label: 'Course name one', link: '#' }, { label: 'Course name two', link: '#' }, { label: 'Course name three', link: '#' }, { label: 'Course name four', link: '#' }, { label: 'Course name five', link: '#' }, { label: 'Course name six', link: '#' }, { label: 'Course name seven', link: '#' }
       ]
     },
     {
-      title: 'Health Care Sector',
+      title: 'Computer Application',
+      links: [
+        { label: 'Course name one', link: '#' }, { label: 'Course name two', link: '#' }, { label: 'Course name three', link: '#' }, { label: 'Course name four', link: '#' }, { label: 'Course name five', link: '#' }, { label: 'Course name six', link: '#' }, { label: 'Course name seven', link: '#' }
+      ]
+    },
+    {
+      title: 'Nutrition & Dietetics',
+      links: [
+        { label: 'Course name one', link: '#' }, { label: 'Course name two', link: '#' }, { label: 'Course name three', link: '#' }, { label: 'Course name four', link: '#' }, { label: 'Course name five', link: '#' }, { label: 'Course name six', link: '#' }, { label: 'Course name seven', link: '#' }
+      ]
+    },
+    {
+      title: 'English Communication',
       links: [
         { label: 'Course name one', link: '#' }, { label: 'Course name two', link: '#' }, { label: 'Course name three', link: '#' }, { label: 'Course name four', link: '#' }, { label: 'Course name five', link: '#' }, { label: 'Course name six', link: '#' }, { label: 'Course name seven', link: '#' }
       ]
