@@ -33,28 +33,28 @@ const Header = () => {
       {/* <div className="cursor"></div> */}
 
       {/* ════════════════════ NAVBAR ════════════════════ */}
-    
+
 
       <nav className="top-nav">
-  <div className="header-top">
-<div className="nav-container-top">
-  <div className="marquee-wrapper">
-    
-    <div className="marquee">
-      <span>BY LOVE SERVE ONE ANOTHER.</span>
-      <span>BY LOVE SERVE ONE ANOTHER.</span>
-      <span>BY LOVE SERVE ONE ANOTHER.</span>
-    </div>
+        <div className="header-top">
+          <div className="nav-container-top">
+            <div className="marquee-wrapper">
 
-    <div className="marquee">
-      <span>BY LOVE SERVE ONE ANOTHER.</span>
-      <span>BY LOVE SERVE ONE ANOTHER.</span>
-      <span>BY LOVE SERVE ONE ANOTHER.</span>
-    </div>
+              <div className="marquee">
+                <span>BY LOVE SERVE ONE ANOTHER.</span>
+                <span>BY LOVE SERVE ONE ANOTHER.</span>
+                <span>BY LOVE SERVE ONE ANOTHER.</span>
+              </div>
 
-  </div>
-</div>
-      </div>
+              <div className="marquee">
+                <span>BY LOVE SERVE ONE ANOTHER.</span>
+                <span>BY LOVE SERVE ONE ANOTHER.</span>
+                <span>BY LOVE SERVE ONE ANOTHER.</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
         <div className="nav-container">
 
           <a href="/" className="nav-brand">
@@ -79,7 +79,7 @@ const Header = () => {
                 Home
               </a>
             </li>
-              <li
+            <li
               className="nav-item"
               onClick={(e) => e.currentTarget.classList.toggle("open")}
             >
@@ -92,44 +92,44 @@ const Header = () => {
 
               <div className="dropdown">
                 <div className="dropdownInner">
-                    <div className="dropdownLeft">
-                      <h3>About Us</h3>
-                      <p>We work to Advance gender equity by responding to urgent need in communities, through national advocasy and grassroots initiatives.</p>
-                    </div>
-                     <div className="dropdownRight">
-                         <a className="dropdown-item" href="/our-history">
-                 History
+                  <div className="dropdownLeft">
+                    <h3>About Us</h3>
+                    <p>We work to Advance gender equity by responding to urgent need in communities, through national advocasy and grassroots initiatives.</p>
+                  </div>
+                  <div className="dropdownRight">
+                    <a className="dropdown-item" href="/our-history">
+                      History
 
-                </a>
+                    </a>
 
-                <a className="dropdown-item" href="/vission-mission">
-              Vision/ Mission
+                    <a className="dropdown-item" href="/vission-mission">
+                      Vision/ Mission
 
-                </a>
+                    </a>
 
-                <a className="dropdown-item" href="/board-of-management">
-              Board of Management
+                    <a className="dropdown-item" href="/board-of-management">
+                      Board of Management
 
-                </a>
+                    </a>
 
-                <a className="dropdown-item" href="message-from-president">
-                 Message from President
+                    <a className="dropdown-item" href="message-from-president">
+                      Message from President
 
-                </a>
+                    </a>
 
-                <a className="dropdown-item" href="#">
-                Message from General Secretary
+                    <a className="dropdown-item" href="/message-from-general-secretary">
+                      Message from General Secretary
 
-                </a>
+                    </a>
 
-                <a className="dropdown-item" href="/executive-team-members">
-                Executive Team
-                </a>
+                    <a className="dropdown-item" href="/executive-team-members">
+                      Executive Team
+                    </a>
 
-               
-                    </div>
+
+                  </div>
                 </div>
-               
+
               </div>
             </li>
 

@@ -1,92 +1,194 @@
-import InnerBanner from "@/components/partials/InnerBanner";
-import styles from '@/styles/Inner.module.css'
+import React from "react";
 import Link from "next/link";
-const BlueTringle = () => {
-    return (
-        <>
-      <InnerBanner 
-      title="Blue Triangle Family Hostel"
-      subTitle="(Guest House)"
-    //   image="/images/Blue-triangle-banner.jpg"
-       images ={ [
-    "/images/Blue-Triangle-Hospital-Banner-1.jpg",
-    "/images/Blue-Triangle-Hospital-Banner-2.jpg",
-    "/images/Blue-Triangle-Hospital-Banner-3.jpg"
-  ]}
-      breadcrumb={[
+import SideNavBanner from "@/components/partials/SideNavBanner";
+import UserStories from "@/components/UserStories";
+import styles from "./page.module.css";
+
+const BlueTriangle = () => {
+  const bannerNavItems = [
+    { title: 'Home / Overview', icon: 'bi-house-door', link: '/blue-triangle' },
+    { title: 'Room Booking', icon: 'bi-door-closed', link: '#' },
+    { title: 'Meeting & Event Spaces', icon: 'bi-people', link: '#' },
+    { title: 'Explore Delhi', icon: 'bi-geo-alt', link: '#' },
+  ];
+
+  const stories = [
     {
-      label: "Focus Area",
-      link: "/blue-triangle",
+      id: 1,
+      name: 'Rachel L.',
+      subtitle: 'From Abu Dhabi',
+      quote: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since then.",
+      avatar: '/images/blue-tringle/user-1.png'
     },
-  ]}/>
-            <section className={styles.innerPageSection}>
+    {
+      id: 2,
+      name: 'Luke',
+      subtitle: 'A wanderer from Sweden',
+      quote: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since then.",
+      avatar: '/images/blue-tringle/user-2.png'
+    },
+    {
+      id: 3,
+      name: 'Daniel A',
+      subtitle: 'First to the old charm of magical...',
+      quote: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since then.",
+      avatar: '/images/blue-tringle/user-3.png'
+    },
+    {
+      id: 4,
+      name: 'Emma',
+      subtitle: 'Explorer',
+      quote: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since then.",
+      avatar: '/images/blue-tringle/user-4.png'
+    }
+  ];
 
-                <div className="container">
-                    <div className={styles.historyContent}>
-                        <div className={styles.imageCol2}>
-                            <img src="/images/Blue-triangle-thumb-1.jpg" alt="Mary Jane Kinnaird" />
-                  
-                        </div>
-                        <div className={styles.textCol}>
-                            <div className={styles.sectionHeading2}>
-                                <h2><span className={styles.highlight}>Overview</span></h2>
+  return (
+    <main>
+      {/* HERO SECTION */}
+      <SideNavBanner
+        bgImage="/images/blue-tringle/bt-bnr.png"
+        navItems={bannerNavItems}
+        activePath="/blue-triangle"
+        contentMarginTop="15vh"
+      >
+        <div className={styles.heroLeft}>
+          <img
+            src="/images/blue-tringle/stamp 1.png"
+            alt="Book Now Stamp"
+            className={styles.stamp}
+          />
+          <h1 className={styles.heroTitle}>
+            Your<br />Preferred Choice<br />In New Delhi
+          </h1>
+        </div>
+      </SideNavBanner>
 
-                            </div>
-                            <p>Welcome to Blue Triangle Family Hostel (BTFH) <br />
-                                Experience exceptional hospitality at YWCA of Delhi's Blue Triangle Family Hostel, where quality
-                                service meets comfort and purpose.
-                            </p>
+      {/* GRADIENT WRAPPER */}
+      <div className={styles.gradientBackground}>
+        {/* BOOKING BAR */}
+        <section className={`container ${styles.bookingSection}`}>
+          <div className={styles.bookingBar}>
+            <h3 className={styles.bookingTitle}>Booking</h3>
+            <div className={styles.bookingForm}>
+              <div className={styles.formGroup}>
+                <i className="bi bi-map"></i>
+                <select className={styles.formInput}>
+                  <option>Select Option</option>
+                  <option>Room</option>
+                  <option>Event Space</option>
+                </select>
+              </div>
+              <div className={styles.formGroup}>
+                <i className="bi bi-calendar-event"></i>
+                <input type="text" placeholder="Check In" className={styles.formInput} />
+              </div>
+              <div className={styles.formGroup}>
+                <i className="bi bi-calendar-event"></i>
+                <input type="text" placeholder="Check out" className={styles.formInput} />
+              </div>
+              <div className={styles.formGroup}>
+                <i className="bi bi-people-fill"></i>
+                <input type="text" placeholder="Travellers" className={styles.formInput} />
+              </div>
+              <button className={styles.bookBtn}>Book Now</button>
+            </div>
+          </div>
+        </section>
 
-                            <div className={styles.sectionHeading2}>
-                                <h2><span className={styles.highlight}>Where restrained luxury shines</span></h2>
+        {/* OVERVIEW SECTION */}
+        <section className={`container ${styles.overviewSection}`}>
+          <div className="row">
+            {/* Left Column */}
+            <div className="col-lg-6">
+              <div className={styles.overviewTextWrapper} style={{ marginBottom: '40px' }}>
+                <p>
+                  <strong>Blue Triangle Family Hostel (BTFH), YWCA of Delhi,</strong> is a premier hospitality destination that has undergone thoughtful enhancements, preserving its heritage charm while embracing modern comforts. Nestled in the heart of the city near India Gate, BTFH offers serene views of lush surroundings, establishing it as a cherished landmark in Delhi's vibrant core. As part of recent upgrades, our property ensures a clean, healthy environment for all guests. BTFH provides spacious accommodations, including comfortable rooms and suites with captivating views of green gardens.
+                </p>
+                <p>
+                  Lorem Ipsum is simply dummy text
+                </p>
+              </div>
+              <div className={styles.overviewImgWrapper}>
+                <img src="/images/blue-tringle/hotel-1.jpg" alt="Building Overview" />
+              </div>
+            </div>
+            {/* Right Column */}
+            <div className="col-lg-6">
+              <div className={styles.overviewImgWrapper} style={{ marginBottom: '40px' }}>
+                <img src="/images/blue-tringle/hotel-2.jpg" alt="Bedroom Overview" />
+              </div>
+              <div className={styles.overviewTextWrapper}>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software including versions of Lorem Ipsum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-                            </div>
-                            <p>Blue Triangle Family Hostel (BTFH), YWCA of Delhi, is a premier hospitality destination that has
-                                undergone thoughtful enhancements, preserving its heritage charm while embracing modern
-                                comforts. Nestled in the heart of the city near india Gate, BTFH offers serene views of lush
-                                surroundings, establishing it as a cherished landmark in Delhi's vibrant core. As part of recent
-                                upgrades, our property ensures a clean, healthy environment for all guests. BTFH provides
-                                spacious accommodations, including comfortable rooms and suites with captivating views of
-                                green gardens,
-                            </p>
-                        </div>
-                    </div>
-
-                    {/* ── Second block: Emma Roberts ── */}
-                    <div className={styles.historyContent}>
-                        <div className={styles.imageCol2}>
-                            <img src="/images/Blue-triangle-thumb-2.jpg" alt="Emma Roberts" />
-
-                        </div>
-                        <div className={styles.textCol}>
-                            <div className={styles.sectionHeading2}>
-                                <h2><span className={styles.highlight}>Highlights</span></h2>
-
-                            </div>
-                            <p>Blue Triangle Family Hostel (BTFH), YWCA of Delhi, is a cherished landmark in the nation’s capital,
-                                offering serene garden views. With thoughtfully redesigned spacious accommodations, quality
-                                dining, and versatile event spaces ideal for conferences, exhibitions, trade fairs, and gatherings,
-                                comes professionals, families, and global guests alike. Our
-
-                                this premier hospitality venue we
-                                exceptional amenities and personalized services, including state-of-the-art facilities, make it the
-
-                                perfect choice for productive stays - while every booking supports women's empowerment and
-                                community development.
-                            </p>
-                            <Link href={'/'} className={styles.readMore}>Read More</Link>
-
-                            <div className={styles.bookNow}>
-                                <Link href={'/'}>Book Now</Link>
-                            </div>
-                        </div>
-                    </div>
-
+        {/* BOOKING CARDS SECTION */}
+        <section className={styles.bookingCardsSection}>
+          <div className="container">
+            <h2 className={styles.sectionTitle}>Booking</h2>
+            <div className={styles.bookingGrid}>
+              <Link href="#" className={styles.bookingCardLink}>
+                <div className={styles.bookingCard}>
+                  <img src="/images/blue-tringle/Book-A-Room.png" alt="Room Booking" />
+                  <h4>Room Booking</h4>
                 </div>
-            </section>
-        </>
+              </Link>
+              <Link href="#" className={styles.bookingCardLink}>
+                <div className={styles.bookingCard}>
+                  <img src="/images/blue-tringle/Meeting-Event-Spaces.png" alt="Meeting & Event Spaces" />
+                  <h4>Meeting & Event Spaces</h4>
+                </div>
+              </Link>
+              <Link href="#" className={styles.bookingCardLink}>
+                <div className={styles.bookingCard}>
+                  <img src="/images/blue-tringle/Explore-Delhi.png" alt="Explore Delhi" />
+                  <h4>Explore Delhi</h4>
+                </div>
+              </Link>
+            </div>
+          </div>
+        </section>
 
-    )
-}
+        {/* USER STORIES SECTION */}
+        <UserStories stories={stories} title="User Stories" />
 
-export default BlueTringle
+        {/* SPECIAL OFFERS SECTION */}
+        <section className={`container ${styles.offersSection}`}>
+          <h2 className={styles.sectionTitle}>Special Offers</h2>
+          <div className={styles.offersGrid}>
+            <div className={styles.offerCard}>
+              <img src="/images/blue-tringle/all-offers.png" alt="Seasons Greeting" />
+            </div>
+            <div className={styles.offerCard}>
+              <img src="/images/blue-tringle/all-offers.png" alt="Seasons Greeting" />
+            </div>
+            <div className={styles.offerCard}>
+              <img src="/images/blue-tringle/all-offers.png" alt="Seasons Greeting" />
+            </div>
+          </div>
+        </section>
+      </div>
+
+      {/* INSTAGRAM SECTION */}
+      <section className={styles.instaSection}>
+        <div className="container">
+          <h2 className={styles.sectionTitle}>Instagram</h2>
+          <div className={styles.instaGrid}>
+            <img src="/images/blue-tringle/insta-1.jpg" alt="Instagram 1" />
+            <img src="/images/blue-tringle/insta-2.png" alt="Instagram 2" />
+            <img src="/images/blue-tringle/insta-3.png" alt="Instagram 3" />
+            <img src="/images/blue-tringle/insta-4.png" alt="Instagram 4" />
+            <img src="/images/blue-tringle/insta-5.png" alt="Instagram 5" />
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+};
+
+export default BlueTriangle;

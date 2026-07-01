@@ -1,0 +1,252 @@
+/* ── HERO BANNER CUSTOMIZATIONS ── */
+.heroLeft {
+  color: #fff;
+  max-width: 500px;
+}
+
+.stamp {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.heroTitle {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+/* ── BOOKING BAR ── */
+.bookingSection {
+  margin-top: 50px;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 0px;
+}
+
+.bookingBar {
+  background-color: #0b077c;
+  padding: 15px 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-left: -15px;
+  width: 900px;
+  max-width: calc(100% + 30px);
+}
+
+.bookingTitle {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.bookingForm {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.formGroup {
+  flex: 1;
+  min-width: 120px;
+  display: flex;
+  align-items: center;
+  background: #ebebeb;
+  padding: 0 15px;
+  border-radius: 4px;
+}
+
+.formGroup:first-of-type {
+  flex: 1.8;
+}
+
+.formGroup i {
+  color: #555;
+  margin-right: 10px;
+}
+
+.formInput {
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  font-size: 0.9rem;
+  color: #333;
+  outline: none;
+  background: transparent;
+}
+
+.bookBtn {
+  background-color: #b000b9;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.bookBtn:hover {
+  background-color: #7a0b4b;
+}
+
+/* ── OVERVIEW ── */
+.overviewSection {
+  padding: 50px 0;
+}
+
+.overviewTextWrapper p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.overviewImgWrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── COMMON HEADINGS ── */
+.sectionTitle {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* ── BOOKING CARDS ── */
+.bookingCardsSection {
+  padding: 50px 0;
+}
+
+.bookingGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.bookingCardLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.bookingCard {
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.bookingCardLink:hover .bookingCard {
+  transform: translateY(-10px);
+}
+
+.bookingCard img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.bookingCardLink:hover .bookingCard img {
+  transform: scale(1.05);
+}
+
+.bookingCard h4 {
+  font-size: 1.1rem;
+  padding: 15px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.gradientBackground {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(253, 243, 237, 1) 15%, rgba(253, 243, 237, 1) 85%, rgba(255, 255, 255, 1) 100%);
+}
+
+/* ── SPECIAL OFFERS ── */
+.offersSection {
+  padding: 50px 0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.offersSection .sectionTitle {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.offersGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.offerCard {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.offerCard img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ── INSTAGRAM ── */
+.instaSection {
+  padding: 60px 0;
+  background-color: #F7E0D3;
+}
+
+.instaGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+
+.instaGrid img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 991px) {
+
+  .bookingGrid,
+  .offersGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .storiesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+
+  .bookingGrid,
+  .offersGrid,
+  .storiesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .instaGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .heroTitle {
+    font-size: 1.8rem;
+  }
+
+  .bookingForm {
+    flex-direction: column;
+  }
+}

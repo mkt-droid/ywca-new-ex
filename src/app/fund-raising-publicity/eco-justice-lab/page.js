@@ -107,7 +107,7 @@ export default function EcoJusticeLabPage() {
             SUPPORT CHANGE
           </>
         }
-        bgImage="/images/fund-raising/main-banner.png"
+        bgImage="/images/fund-raising/main-banner.jpg"
         navItems={bannerNavItems}
       />
 
@@ -231,10 +231,10 @@ export default function EcoJusticeLabPage() {
                     </tr>
                   </tbody>
                 </table>
-                <div className={styles.tableNote} style={{textAlign: 'left'}}>
-                  <strong style={{color: '#000'}}>To order</strong><br/>
-                  <i className="bi bi-telephone-fill" style={{color: '#666', marginRight: '5px'}}></i> 7011299056<br/>
-                  <i className="bi bi-envelope-fill" style={{color: '#666', marginRight: '5px'}}></i> frap@ywcaofdelhi.org
+                <div className={styles.tableNote} style={{ textAlign: 'left' }}>
+                  <strong style={{ color: '#000' }}>To order</strong><br />
+                  <i className="bi bi-telephone-fill" style={{ color: '#666', marginRight: '5px' }}></i> 7011299056<br />
+                  <i className="bi bi-envelope-fill" style={{ color: '#666', marginRight: '5px' }}></i> frap@ywcaofdelhi.org
                 </div>
               </div>
             </div>

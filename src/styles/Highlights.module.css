@@ -117,10 +117,12 @@
 }
 
 /* ── Responsive ──────────────────────────────── */
+@media (max-width: 1300px) {
+  .arrowLeft  { left: 10px; }
+  .arrowRight { right: 10px; }
+}
+
 @media (max-width: 768px) {
   .arrowLeft  { left: 0; }
   .arrowRight { right: 0; }
 }
-
-
-

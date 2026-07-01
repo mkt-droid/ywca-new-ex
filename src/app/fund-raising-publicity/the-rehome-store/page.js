@@ -88,7 +88,7 @@ export default function TheRehomeStorePage() {
             SUPPORT CHANGE
           </>
         }
-        bgImage="/images/fund-raising/main-banner.png"
+        bgImage="/images/fund-raising/main-banner.jpg"
         navItems={bannerNavItems}
       />
 

@@ -59,10 +59,19 @@
   transition: all 0.3s ease;
 }
 
+.primaryBtn i {
+  color: #a42c9f;
+  transition: color 0.3s ease;
+}
+
 .primaryBtn:hover {
-  background-color: #1a1859;
+  background-color: #a42c9f;
   color: white;
   transform: translateY(-2px);
+}
+
+.primaryBtn:hover i {
+  color: white;
 }
 
 .complianceSection {

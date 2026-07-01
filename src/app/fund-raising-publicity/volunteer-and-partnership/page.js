@@ -18,7 +18,7 @@ export default function VolunteerAndPartnershipPage() {
 
   return (
     <main>
-      <SideNavBanner 
+      <SideNavBanner
         title={
           <>
             SUPPORT WOMEN<br />
@@ -26,7 +26,7 @@ export default function VolunteerAndPartnershipPage() {
             SUPPORT CHANGE
           </>
         }
-        bgImage="/images/fund-raising/main-banner.png"
+        bgImage="/images/fund-raising/main-banner.jpg"
         navItems={bannerNavItems}
       />
 

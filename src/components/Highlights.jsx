@@ -21,7 +21,7 @@ const PAGES = [
     {
       src: "/images/focus/slide-1/Day-care.jpg",
       caption: "Day Care",
-      link: ''
+      link: '/day-care'
     },
     {
       src: "/images/focus/slide-1/Education-Institutes.jpg",

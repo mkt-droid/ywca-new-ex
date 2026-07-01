@@ -330,7 +330,7 @@
    display: flex;
    align-items: center;
    justify-content: space-between;
-   padding: 0.6rem 1.5rem;
+   padding: 0.2rem 1.5rem;
    /* height: 75px; */
  }
 
@@ -347,6 +347,7 @@
  .nav-brand img {
    width: 100%;
    background: #ecebeb;
+   max-width: 230px;
  }
 
  .nav-logo svg {
@@ -886,6 +887,42 @@
    display: block;
  }
 
+ @media (max-width: 991px) {
+   .news-bar {
+     flex-direction: column;
+     padding: 0;
+   }
+
+   .news-label {
+     min-height: auto;
+     padding: 15px 20px;
+     justify-content: center;
+   }
+
+   .news-items {
+     flex-wrap: wrap;
+   }
+
+   .news-item {
+     flex: 0 0 50%;
+     max-width: 50%;
+     padding: 15px;
+     border-bottom: 1px solid #eee;
+   }
+
+   .news-item:nth-child(even) {
+     border-right: none;
+   }
+ }
+
+ @media (max-width: 575px) {
+   .news-item {
+     flex: 0 0 100%;
+     max-width: 100%;
+     border-right: none;
+   }
+ }
+
  /* ─── SECTION TITLES ─── */
  .sec-title {
    font-family: "Poppins", sans-serif;
@@ -1272,11 +1309,30 @@
    gap: 11px;
  }
 
+ @media (max-width: 575px) {
+   .hl-grid {
+     grid-template-columns: 1fr;
+   }
+ }
+
  .hl-item1 {
    position: relative;
    overflow: hidden;
    height: 501px;
    cursor: pointer;
+ }
+
+ @media (max-width: 991px) {
+   .hl-item1 {
+     height: 350px;
+     margin-bottom: 11px;
+   }
+ }
+
+ @media (max-width: 575px) {
+   .hl-item1 {
+     height: 245px;
+   }
  }
 
  .hl-item {
@@ -1313,14 +1369,15 @@
  .hl-item1 img {
    width: 100%;
    height: 100%;
+   object-fit: cover;
  }
 
  .hl-item:hover .hl-bg {
-   transform: scale(1.06);
+   transform: scale(1.02);
  }
 
  .hl-item1:hover .hl-bg {
-   transform: scale(1.06);
+   transform: scale(1.02);
  }
 
  .hl-cap {
@@ -1624,10 +1681,6 @@
    .hero-content {
      align-items: center;
      text-align: center;
-   }
-
-   .hl-grid {
-     grid-template-columns: 1fr 1fr;
    }
 
    .hl-item {
@@ -2190,5 +2243,45 @@
    .floating-socials {
      display: none;
      /* Hide sticky socials on mobile since footer already has them */
+   }
+ }
+
+ /* ====================== MOBILE HIGHLIGHTS FIX ====================== */
+ @media (max-width: 767px) {
+
+   /* Make Slide 1 grid behave like Slide 2 */
+   .hl-grid {
+     grid-template-columns: 1fr !important;
+   }
+
+   .hl-grid-six {
+     grid-template-columns: 1fr !important;
+   }
+
+   /* Make Slide 1 items exactly same height as Slide 2 (240px) */
+   .hl-item1,
+   .hl-item {
+     width: 100% !important;
+     max-width: 100% !important;
+     height: 240px !important;
+   }
+
+   .col-lg-5,
+   .col-lg-7 {
+     width: 100% !important;
+     flex: 0 0 100% !important;
+     max-width: 100% !important;
+     padding-right: 15px !important;
+     padding-left: 15px !important;
+   }
+
+   .hl-item img,
+   .hl-item1 img {
+     object-fit: cover !important;
+   }
+
+   /* Remove custom padding that made the first item narrower */
+   .pdr-15 {
+     padding-right: 15px !important;
    }
  }

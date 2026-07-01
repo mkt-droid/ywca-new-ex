@@ -7,6 +7,7 @@ import styles from './page.module.css';
 import SideNavBanner from '@/components/partials/SideNavBanner';
 import PlacementPartners from '@/components/PlacementPartners';
 import EducationFooterLinks from '@/components/EducationFooterLinks';
+import UserStories from '@/components/UserStories';
 import coursesData from '@/data/courses.json';
 
 function ProgramsContent() {
@@ -45,28 +46,28 @@ function ProgramsContent() {
     {
       id: 1,
       name: 'Rachel L.',
-      course: 'Diploma in Stenography',
+      subtitle: 'Diploma in Stenography',
       quote: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since then.",
       avatar: 'https://dummyimage.com/150x150/f0f0f0/333333.png&text=RL'
     },
     {
       id: 2,
       name: 'Luke',
-      course: 'Diploma in Office Assistant',
+      subtitle: 'Diploma in Office Assistant',
       quote: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since then.",
       avatar: 'https://dummyimage.com/150x150/f0f0f0/333333.png&text=L'
     },
     {
       id: 3,
       name: 'Daniel A.',
-      course: 'Diploma in Office Management',
+      subtitle: 'Certificate in Computer Application',
       quote: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since then.",
       avatar: 'https://dummyimage.com/150x150/f0f0f0/333333.png&text=DA'
     },
     {
       id: 4,
       name: 'Lauren',
-      course: 'Diploma in Stenography',
+      subtitle: 'Diploma in Fashion Technology',
       quote: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since then.",
       avatar: 'https://dummyimage.com/150x150/f0f0f0/333333.png&text=L'
     }
@@ -151,27 +152,7 @@ function ProgramsContent() {
       </section>
 
       {/* User Stories */}
-      <section className={styles.storiesSection}>
-        <div className="container">
-          <h2 className={styles.sectionTitle}>User Stories</h2>
-          <div className="row">
-            {stories.map(story => (
-              <div className="col-lg-3 col-md-6 mb-4" key={story.id}>
-                <div className={styles.storyCard}>
-                  <div className={styles.storyHeader}>
-                    <img src={story.avatar} alt={story.name} className={styles.storyAvatar} />
-                    <div>
-                      <h6 className={styles.storyName}>{story.name}</h6>
-                      <p className={styles.storyCourse}>{story.course}</p>
-                    </div>
-                  </div>
-                  <p className={styles.storyQuote}>"{story.quote}"</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <UserStories stories={stories} title="User Stories" />
 
       {/* Placement Partners */}
       <PlacementPartners />

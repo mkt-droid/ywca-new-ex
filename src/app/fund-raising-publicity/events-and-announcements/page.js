@@ -18,8 +18,8 @@ export default function EventsAndAnnouncementsPage() {
   ];
 
   const galleryItems = [
-    { 
-      title: 'Fundraising Events', 
+    {
+      title: 'Fundraising Events',
       image: '/images/event-announsment/Fundraising-Events.jpg',
       photos: [
         { src: 'https://placehold.co/800x600/dcdcdc/333333?text=Fundraising+Photo+1', description: 'Lorem ipsum is descriptive text for Fundraising Photo 1' },
@@ -27,16 +27,16 @@ export default function EventsAndAnnouncementsPage() {
         { src: 'https://placehold.co/800x600/bcbcbc/333333?text=Fundraising+Photo+3', description: 'Lorem ipsum is descriptive text for Fundraising Photo 3' },
       ]
     },
-    { 
-      title: 'Collection Drives', 
+    {
+      title: 'Collection Drives',
       image: '/images/event-announsment/Collection-Drives.jpg',
       photos: [
         { src: 'https://placehold.co/800x600/dcdcdc/333333?text=Collection+Photo+1', description: 'Lorem ipsum is descriptive text for Collection Photo 1' },
         { src: 'https://placehold.co/800x600/cccccc/333333?text=Collection+Photo+2', description: 'Lorem ipsum is descriptive text for Collection Photo 2' },
       ]
     },
-    { 
-      title: 'Donation Campaigns', 
+    {
+      title: 'Donation Campaigns',
       image: '/images/event-announsment/Donation-Campaigns.jpg',
       photos: [
         { src: 'https://placehold.co/800x600/dcdcdc/333333?text=Donation+Photo+1', description: 'Lorem ipsum is descriptive text for Donation Photo 1' },
@@ -45,24 +45,24 @@ export default function EventsAndAnnouncementsPage() {
         { src: 'https://placehold.co/800x600/acacac/333333?text=Donation+Photo+4', description: 'Lorem ipsum is descriptive text for Donation Photo 4' },
       ]
     },
-    { 
-      title: 'Workshops', 
+    {
+      title: 'Workshops',
       image: '/images/event-announsment/Workshops.jpg',
       photos: [
         { src: 'https://placehold.co/800x600/dcdcdc/333333?text=Workshop+Photo+1', description: 'Lorem ipsum is descriptive text for Workshop Photo 1' },
         { src: 'https://placehold.co/800x600/cccccc/333333?text=Workshop+Photo+2', description: 'Lorem ipsum is descriptive text for Workshop Photo 2' },
       ]
     },
-    { 
-      title: 'Eco-Justice Lab Inauguration', 
+    {
+      title: 'Eco-Justice Lab Inauguration',
       image: '/images/event-announsment/Eco-Justice-Lab-Inauguration.jpg',
       photos: [
         { src: 'https://placehold.co/800x600/dcdcdc/333333?text=Eco-Justice+Photo+1', description: 'Lorem ipsum is descriptive text for Eco-Justice Photo 1' },
         { src: 'https://placehold.co/800x600/cccccc/333333?text=Eco-Justice+Photo+2', description: 'Lorem ipsum is descriptive text for Eco-Justice Photo 2' },
       ]
     },
-    { 
-      title: 'The Rehome Store Inauguration', 
+    {
+      title: 'The Rehome Store Inauguration',
       image: '/images/event-announsment/The-Rehome-Store-Inauguration.jpg',
       photos: [
         { src: 'https://placehold.co/800x600/dcdcdc/333333?text=Rehome+Store+Photo+1', description: 'Lorem ipsum is descriptive text for Rehome Store Photo 1' },
@@ -74,7 +74,7 @@ export default function EventsAndAnnouncementsPage() {
 
   return (
     <main>
-      <SideNavBanner 
+      <SideNavBanner
         title={
           <>
             SUPPORT WOMEN<br />
@@ -82,7 +82,7 @@ export default function EventsAndAnnouncementsPage() {
             SUPPORT CHANGE
           </>
         }
-        bgImage="/images/fund-raising/main-banner.png"
+        bgImage="/images/fund-raising/main-banner.jpg"
         navItems={bannerNavItems}
       />
 

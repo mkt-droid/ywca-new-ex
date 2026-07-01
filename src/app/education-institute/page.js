@@ -13,10 +13,10 @@ export const metadata = {
 export default function EducationInstitutePage() {
   const bannerNavItems = [
     { title: 'Overview', icon: 'bi-flower1', link: '/education-institute' },
-    { title: 'Programs', icon: 'bi-flower1', link: '/education-institute/programs' },
-    { title: 'Admission', icon: 'bi-flower1', link: '/education-institute/admission' },
-    { title: 'Life@YWCA', icon: 'bi-flower1', link: '#' },
-    { title: 'Contact us', icon: 'bi-flower1', link: '/education-institute/contact' },
+    { title: 'Programs', icon: 'bi-mortarboard', link: '/education-institute/programs' },
+    { title: 'Admission', icon: 'bi-person-vcard', link: '/education-institute/admission' },
+    { title: 'Life@YWCA', icon: 'bi-building', link: '#' },
+    { title: 'Contact us', icon: 'bi-telephone', link: '/education-institute/contact' },
   ];
 
   const academicNews = [

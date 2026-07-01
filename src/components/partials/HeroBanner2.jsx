@@ -177,6 +177,7 @@ const HeroBanner = () => {
               className={styles.btn}
             >
               {slide.btnText}
+              <i className="bi bi-arrow-right"></i>
             </a>
           </div>
         </div>

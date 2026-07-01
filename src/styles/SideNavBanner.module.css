@@ -1,12 +1,38 @@
 .heroSection {
   position: relative;
   width: 100%;
-  min-height: 80vh;
+  min-height: 60vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+  align-items: end;
+  overflow: hidden;
+}
+
+.heroSection > :global(.container),
+.heroSection > .heroRightMenu {
+  grid-area: 1 / 1;
+}
+
+.heroSection > :global(.container) {
+  margin-bottom: 40px;
+}
+
+.heroBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-size: cover;
   background-position: center;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
+  z-index: 0;
+  filter: grayscale(100%);
+  transition: filter 0.4s ease;
+}
+
+.heroSection:hover .heroBg {
+  filter: grayscale(0%);
 }
 
 .heroOverlay {
@@ -22,7 +48,7 @@
   position: relative;
   z-index: 2;
   color: white;
-  margin-top: 27vh;
+  margin-top: 15vh;
   /* Pushes content a bit towards the bottom */
 }
 
@@ -35,18 +61,17 @@
 }
 
 .heroRightMenu {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  justify-self: end;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   gap: 10px;
   z-index: 10;
+  margin: 25px 0; /* Space above and below */
 }
 
 .menuItem {
-  background-color: #A011AF;
+  background-color: #8A1399;
   color: white;
   padding: 20px 20px;
   text-decoration: none;
@@ -61,11 +86,21 @@
   border-bottom-left-radius: 10px;
 }
 
+.menuItem i {
+  transition: transform 0.8s ease;
+}
+
 .menuItem:hover,
 .menuItemActive {
-  background-color: #c94f9e;
+  background-color: #BE00C4;
   color: white;
   padding-left: 25px;
+  width: 280px;
+}
+
+.menuItem:hover i,
+.menuItemActive i {
+  transform: rotate(360deg);
 }
 
 .socialFloatingPill {

@@ -73,7 +73,7 @@ const ImpactSection = () => {
       {/* Row 1 */}
       <div className="row text-center mb-2">
 
-        <div className="col-4 pl">
+        <div className="col-lg-4 col-md-6 col-12 pl">
           <div className="stat-box stat-box-color-1">
 
             <img src="/images/icons/motivational.png" alt="brand" />
@@ -92,7 +92,7 @@ const ImpactSection = () => {
           </div>
         </div>
 
-        <div className="col-4 pl">
+        <div className="col-lg-4 col-md-6 col-12 pl">
           <div className="stat-box stat-box-color-2">
 
             <img src="/images/icons/vocational.png" alt="brand" />
@@ -111,7 +111,7 @@ const ImpactSection = () => {
           </div>
         </div>
 
-        <div className="col-4">
+        <div className="col-lg-4 col-md-6 col-12">
           <div className="stat-box stat-box-color-3">
 
             <img src="/images/icons/care.png" alt="brand" />
@@ -135,7 +135,7 @@ const ImpactSection = () => {
       {/* Row 2 */}
       <div className="row text-center mt-4">
 
-        <div className="col-4 pl">
+        <div className="col-lg-4 col-md-6 col-12 pl">
           <div className="stat-box stat-box-color-4">
 
             <img src="/images/icons/civil-rights.png" alt="brand" />
@@ -154,7 +154,7 @@ const ImpactSection = () => {
           </div>
         </div>
 
-        <div className="col-4 pl">
+        <div className="col-lg-4 col-md-6 col-12 pl">
           <div className="stat-box stat-box-color-5">
 
             <img src="/images/icons/vegitarian.png" alt="brand" />
@@ -173,7 +173,7 @@ const ImpactSection = () => {
           </div>
         </div>
 
-        <div className="col-4 pl">
+        <div className="col-lg-4 col-md-6 col-12 pl">
           <div className="stat-box stat-box-color-6">
 
             <img src="/images/icons/apple.png" alt="brand" />

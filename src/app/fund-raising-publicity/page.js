@@ -28,7 +28,7 @@ export default function FundRaisingPage() {
             SUPPORT CHANGE
           </>
         }
-        bgImage="/images/fund-raising/main-banner.png"
+        bgImage="/images/fund-raising/main-banner.jpg"
         navItems={bannerNavItems}
       />
 

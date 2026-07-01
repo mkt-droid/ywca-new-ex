@@ -1,5 +1,8 @@
+"use client";
+
 import React from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import styles from '@/styles/SideNavBanner.module.css';
 
 export default function SideNavBanner({ 
@@ -10,13 +13,18 @@ export default function SideNavBanner({
   children,
   sectionStyle = {},
   overlayStyle = {},
-  activePath
+  activePath,
+  contentMarginTop
 }) {
   return (
     <section 
       className={styles.heroSection} 
-      style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none', ...sectionStyle }}
+      style={sectionStyle}
     >
+      <div 
+        className={styles.heroBg} 
+        style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}
+      ></div>
       {bgIframe && (
         <iframe
           src={bgIframe}
@@ -28,7 +36,10 @@ export default function SideNavBanner({
       )}
       <div className={styles.heroOverlay} style={overlayStyle}></div>
       <div className="container" style={{ position: 'relative', zIndex: 3 }}>
-        <div className={styles.heroContent}>
+        <div 
+          className={styles.heroContent} 
+          style={contentMarginTop ? { marginTop: contentMarginTop } : undefined}
+        >
           {title && <h1 className={styles.heroTitle}>
             {title}
           </h1>}
@@ -41,8 +52,25 @@ export default function SideNavBanner({
         <div className={styles.heroRightMenu}>
           {navItems.map((item, idx) => {
             const isActive = activePath && (activePath === item.link || activePath === item.title);
+            
+            const handleNavClick = (e) => {
+              if (item.link && item.link.startsWith('#')) {
+                e.preventDefault();
+                const targetId = item.link.substring(1);
+                const elem = document.getElementById(targetId);
+                if (elem) {
+                  elem.scrollIntoView({ behavior: 'smooth' });
+                }
+              }
+            };
+
             return (
-              <Link href={item.link || '#'} key={idx} className={`${styles.menuItem} ${isActive ? styles.menuItemActive : ''}`}>
+              <Link 
+                href={item.link || '#'} 
+                key={idx} 
+                className={`${styles.menuItem} ${isActive ? styles.menuItemActive : ''}`}
+                onClick={handleNavClick}
+              >
                 {item.icon && <i className={`bi ${item.icon}`}></i>}
                 {item.title}
               </Link>
@@ -51,12 +79,6 @@ export default function SideNavBanner({
         </div>
       )}
       
-      {/* Social Media floating pill */}
-      <div className={styles.socialFloatingPill}>
-        <a href="#" className={styles.socialIcon}><img src="/images/facebook.png" alt="Facebook" /></a>
-        <a href="#" className={styles.socialIcon}><img src="/images/twitter.png" alt="Twitter" /></a>
-        <a href="#" className={styles.socialIcon}><img src="/images/youtube.png" alt="YouTube" /></a>
-      </div>
     </section>
   );
 }
