@@ -50,7 +50,7 @@ const BlueTriangle = () => {
         bgImage="/images/blue-tringle/bt-bnr.png"
         navItems={bannerNavItems}
         activePath="/blue-triangle"
-        contentMarginTop="15vh"
+
       >
         <div className={styles.heroLeft}>
           <img
