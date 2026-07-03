@@ -1,0 +1,111 @@
+.customBanner {
+    width: 100%;
+    height: 420px;
+    background: url('/images/History-banner-img-2.jpg') center center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Optional overlay for better text readability, though screenshot doesn't seem to have a strong one */
+.customBanner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.bannerTitle {
+    position: relative;
+    color: #fff;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.ourHistorySection {
+    padding: 60px 0 70px 0;
+    background-color: #FCF7F7;
+}
+
+.historyBlock {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin-bottom: 60px;
+}
+
+.historyBlock:last-child {
+    margin-bottom: 0;
+}
+
+.historyBlockReverse {
+    flex-direction: row-reverse;
+}
+
+.imageCol {
+    flex: 0 0 350px;
+    max-width: 350px;
+}
+
+.imageWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.imageWrapper img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    filter: sepia(30%) contrast(1.1); /* Adds the vintage look from screenshot */
+}
+
+.imageCaption {
+    background-color: #9f369d; /* exact purple from screenshot */
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    margin: 0; /* ensure no gap */
+}
+
+.textCol {
+    flex: 1;
+}
+
+.blockTitle {
+    font-size: 26px;
+    font-weight: 500;
+    color: #222;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.textCol p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.textCol p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 991px) {
+    .historyBlock, .historyBlockReverse {
+        flex-direction: column;
+    }
+    
+    .imageCol {
+        flex: 1 1 auto;
+        max-width: 100%;
+        width: 100%;
+    }
+}

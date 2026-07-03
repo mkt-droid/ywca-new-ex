@@ -14,7 +14,8 @@ export default function SideNavBanner({
   sectionStyle = {},
   overlayStyle = {},
   activePath,
-  contentMarginTop
+  contentMarginTop,
+  grayscale = true
 }) {
   return (
     <section 
@@ -23,7 +24,10 @@ export default function SideNavBanner({
     >
       <div 
         className={styles.heroBg} 
-        style={{ backgroundImage: bgImage ? `url('${bgImage}')` : 'none' }}
+        style={{ 
+          backgroundImage: bgImage ? `url('${bgImage}')` : 'none',
+          filter: grayscale ? undefined : 'grayscale(0%)'
+        }}
       ></div>
       {bgIframe && (
         <iframe

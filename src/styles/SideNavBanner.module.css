@@ -88,6 +88,8 @@
 }
 
 .menuItem i {
+  font-size: 18px;
+  line-height: 1;
   transition: transform 0.8s ease;
 }
 

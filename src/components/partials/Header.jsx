@@ -122,7 +122,7 @@ const Header = () => {
 
                     </a>
 
-                    <a className="dropdown-item" href="/executive-team-members">
+                    <a className="dropdown-item" href="/executive-team">
                       Executive Team
                     </a>
 
