@@ -84,6 +84,7 @@ export default function EventsAndAnnouncementsPage() {
         }
         bgImage="/images/fund-raising/main-banner.jpg"
         navItems={bannerNavItems}
+        activePath="/fund-raising-publicity/events-and-announcements"
       />
 
       <div className={styles.contentWrapper}>

@@ -90,20 +90,24 @@
 .menuItem i {
   font-size: 18px;
   line-height: 1;
-  transition: transform 0.8s ease;
+  transition: transform 0.3s ease;
 }
 
-.menuItem:hover,
-.menuItemActive {
+.menuItem:hover {
   background-color: #BE00C4;
   color: white;
   padding-left: 25px;
   width: 280px;
 }
 
+.menuItemActive {
+  background-color: #BE00C4;
+  color: white;
+}
+
 .menuItem:hover i,
 .menuItemActive i {
-  transform: rotate(360deg);
+  transform: scale(1.2);
 }
 
 .socialFloatingPill {

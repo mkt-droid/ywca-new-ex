@@ -90,6 +90,7 @@ export default function TheRehomeStorePage() {
         }
         bgImage="/images/fund-raising/main-banner.jpg"
         navItems={bannerNavItems}
+        activePath="/fund-raising-publicity/the-rehome-store"
       />
 
       <div className={styles.pageContentWrapper}>

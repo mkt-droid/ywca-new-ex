@@ -7,9 +7,9 @@ import styles from "./page.module.css";
 const BlueTriangle = () => {
   const bannerNavItems = [
     { title: 'Home / Overview', icon: 'bi-house-door', link: '/blue-triangle' },
-    { title: 'Room Booking', icon: 'bi-door-closed', link: '#' },
-    { title: 'Meeting & Event Spaces', icon: 'bi-people', link: '#' },
-    { title: 'Explore Delhi', icon: 'bi-geo-alt', link: '#' },
+    { title: 'Room Booking', icon: 'bi-door-closed', link: '/blue-triangle/room-booking' },
+    { title: 'Meeting & Event Spaces', icon: 'bi-people', link: '/blue-triangle/meeting-event-spaces' },
+    { title: 'Explore Delhi', icon: 'bi-geo-alt', link: '/blue-triangle/explore-delhi' },
   ];
 
   const stories = [

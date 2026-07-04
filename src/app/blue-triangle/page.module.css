@@ -4,7 +4,7 @@
 
 .stamp {
   width: 120px;
-  margin-bottom: 20px;
+
 }
 
 .heroTitle {
@@ -143,7 +143,7 @@
 }
 
 .bookingCardLink:hover .bookingCard {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
 }
 
 .bookingCard img {
@@ -154,7 +154,7 @@
 }
 
 .bookingCardLink:hover .bookingCard img {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .bookingCard h4 {

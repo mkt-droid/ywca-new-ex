@@ -109,6 +109,7 @@ export default function EcoJusticeLabPage() {
         }
         bgImage="/images/fund-raising/main-banner.jpg"
         navItems={bannerNavItems}
+        activePath="/fund-raising-publicity/eco-justice-lab"
       />
 
       <div className={styles.pageContentWrapper}>

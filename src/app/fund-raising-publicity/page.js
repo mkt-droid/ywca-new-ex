@@ -30,6 +30,7 @@ export default function FundRaisingPage() {
         }
         bgImage="/images/fund-raising/main-banner.jpg"
         navItems={bannerNavItems}
+        activePath="/fund-raising-publicity"
       />
 
       <div className={styles.contentWrapper}>

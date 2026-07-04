@@ -1,0 +1,388 @@
+.heroLeft {
+  color: #fff;
+}
+
+.stamp {
+  width: 120px;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+}
+
+/* ── BOOKING BAR ── */
+.bookingSection {
+  margin-top: 50px;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 0px;
+}
+
+.bookingBar {
+  background-color: #0b077c;
+  padding: 15px 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-left: -15px;
+  width: 900px;
+  max-width: calc(100% + 30px);
+}
+
+.bookingTitle {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.bookingForm {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.formGroup {
+  flex: 1;
+  min-width: 120px;
+  display: flex;
+  align-items: center;
+  background: #ebebeb;
+  padding: 0 15px;
+  border-radius: 4px;
+}
+
+.formGroup:first-of-type {
+  flex: 1.8;
+}
+
+.formGroup i {
+  color: #555;
+  margin-right: 10px;
+}
+
+.formInput {
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  font-size: 0.9rem;
+  color: #333;
+  outline: none;
+  background: transparent;
+}
+
+.bookBtn {
+  background-color: #a42c9f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.bookBtn:hover {
+  background-color: #7a1f76;
+}
+
+/* ── OVERVIEW ── */
+.overviewSection {
+  padding: 50px 0;
+}
+
+.overviewTextWrapper p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.overviewImgWrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── COMMON HEADINGS ── */
+.sectionTitle {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* ── BOOKING CARDS ── */
+.bookingCardsSection {
+  padding: 50px 0;
+}
+
+.bookingGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.bookingCardLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.bookingCard {
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.bookingCardLink:hover .bookingCard {
+  transform: translateY(-5px);
+}
+
+.bookingCard img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.bookingCardLink:hover .bookingCard img {
+  transform: scale(1.03);
+}
+
+.bookingCard h4 {
+  font-size: 0.93rem;
+  padding: 15px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.bigSpaceWrapper {
+  text-align: center;
+  width: calc(50% - 15px);
+  margin: 30px auto 0;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.bigSpaceWrapper:hover {
+  transform: translateY(-5px);
+}
+
+.bigSpaceWrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.bigSpaceWrapper:hover img {
+  transform: scale(1.03);
+}
+
+.bigSpaceTitle {
+  font-size: 0.93rem;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.gradientBackground {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(253, 243, 237, 1) 15%, rgba(253, 243, 237, 1) 85%, rgba(255, 255, 255, 1) 100%);
+}
+
+/* ── INSTAGRAM ── */
+.instaSection {
+  padding: 60px 0;
+  background-color: #F7E0D3;
+}
+
+.instaGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+
+.instaGrid img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 991px) {
+
+  .bookingGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .storiesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bigSpaceWrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .bookingGrid,
+  .storiesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .instaGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .heroTitle {
+    font-size: 1.8rem;
+  }
+
+  .bookingForm {
+    flex-direction: column;
+  }
+}
+
+/* ── POPUP MODAL ── */
+.popupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(180, 180, 180, 0.8);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background: transparent;
+  border: none;
+  font-size: 2.5rem;
+  color: #333;
+  cursor: pointer;
+}
+
+.popupContent {
+  position: relative;
+  display: flex;
+  background: #fff;
+  width: 1100px;
+  max-width: 95%;
+  min-height: 500px;
+  border: 1px solid #d4a373; /* Gold/brown border from design */
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  padding: 40px 80px;
+  gap: 40px;
+  align-items: center;
+}
+
+.popupImageWrapper {
+  flex: 1;
+}
+
+.popupImageWrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.popupTextWrapper {
+  flex: 1;
+}
+
+.popupTitle {
+  font-size: 2rem;
+  color: #111;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.popupDesc {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.popupBookBtn {
+  background: #a42c9f;
+  color: #fff;
+  border: none;
+  padding: 12px 35px;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.popupBookBtn:hover {
+  background: #7a1f76;
+}
+
+.navBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid #293e99;
+  color: #293e99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 10000;
+  transition: all 0.3s;
+}
+
+.navBtn:hover {
+  background: #b000b9;
+  border-color: #b000b9;
+  color: #fff;
+}
+
+.prevBtn {
+  left: 20px;
+}
+
+.nextBtn {
+  right: 20px;
+}
+
+@media (max-width: 768px) {
+  .popupContent {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+  .navBtn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+  .prevBtn {
+    left: 10px;
+  }
+  .nextBtn {
+    right: 10px;
+  }
+}

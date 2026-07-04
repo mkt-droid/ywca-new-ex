@@ -28,6 +28,7 @@ export default function VolunteerAndPartnershipPage() {
         }
         bgImage="/images/fund-raising/main-banner.jpg"
         navItems={bannerNavItems}
+        activePath="/fund-raising-publicity/volunteer-and-partnership"
       />
 
       <div className={styles.contentWrapper}>

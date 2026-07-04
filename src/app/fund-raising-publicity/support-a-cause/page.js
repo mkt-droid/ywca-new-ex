@@ -70,6 +70,7 @@ export default function SupportACausePage() {
         }
         bgImage="/images/fund-raising/main-banner.jpg"
         navItems={bannerNavItems}
+        activePath="/fund-raising-publicity/support-a-cause"
       />
 
       <div className={styles.pageContentWrapper}>

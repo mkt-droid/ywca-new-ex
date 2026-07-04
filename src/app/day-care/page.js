@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Image from 'next/image';
 import styles from './page.module.css';
 import galleryStyles from '@/styles/Gallery.module.css';
@@ -30,6 +30,19 @@ export default function DayCarePage() {
 
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const thumbnailContainerRef = useRef(null);
+
+  const scrollLeftBtn = () => {
+    if (thumbnailContainerRef.current) {
+      thumbnailContainerRef.current.scrollBy({ left: -250, behavior: 'smooth' });
+    }
+  };
+
+  const scrollRightBtn = () => {
+    if (thumbnailContainerRef.current) {
+      thumbnailContainerRef.current.scrollBy({ left: 250, behavior: 'smooth' });
+    }
+  };
 
   const openLightbox = (index) => {
     setCurrentImageIndex(index);
@@ -56,7 +69,7 @@ export default function DayCarePage() {
         title={<>OUR <br />DAY CARE<br /> CENTRE</>}
         bgImage="/images/day-care/banner-image.jpg"
         navItems={bannerNavItems}
-        activePath="/day-care"
+        activePath="#overview"
       />
 
       <section className="container mt-5">
@@ -146,21 +159,36 @@ export default function DayCarePage() {
         {/* Gallery Section */}
         <section className={styles.gallerySection}>
           <h2 className={styles.galleryTitle}>Gallery</h2>
-          <div className={styles.galleryGrid}>
-            {galleryImages.map((src, index) => (
-              <div
-                key={index}
-                className={styles.galleryImageWrapper}
-                onClick={() => openLightbox(index)}
-                style={{ cursor: 'pointer' }}
-              >
-                <img
-                  src={src}
-                  alt={`Day Care Gallery ${index + 1}`}
-                  className={styles.galleryImage}
-                />
+          <div className={styles.inlineGalleryContainer}>
+            <div className={styles.mainImageDisplay}>
+              <img 
+                src={galleryImages[currentImageIndex]} 
+                alt="Main Gallery Image" 
+                className={styles.mainGalleryImage} 
+              />
+            </div>
+            
+            <div className={styles.thumbnailSliderWrapper}>
+              <button className={`${styles.sliderBtn} ${styles.prevBtn}`} onClick={scrollLeftBtn}>
+                <i className="bi bi-chevron-left"></i>
+              </button>
+
+              <div className={styles.thumbnailRow} ref={thumbnailContainerRef}>
+                {galleryImages.map((src, idx) => (
+                  <div 
+                    key={idx} 
+                    className={`${styles.thumbnailItem} ${idx === currentImageIndex ? styles.activeThumbnail : ''}`}
+                    onClick={() => setCurrentImageIndex(idx)}
+                  >
+                    <img src={src} alt={`Thumbnail ${idx + 1}`} />
+                  </div>
+                ))}
               </div>
-            ))}
+
+              <button className={`${styles.sliderBtn} ${styles.nextBtn}`} onClick={scrollRightBtn}>
+                <i className="bi bi-chevron-right"></i>
+              </button>
+            </div>
           </div>
         </section>
 
