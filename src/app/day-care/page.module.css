@@ -5,7 +5,7 @@
 .titleContainer {
   text-align: center;
   padding: 2rem 0;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   scroll-margin-top: 120px;
 }
@@ -39,10 +39,9 @@
 }
 
 .cardSectionPrograms {
-  background-color: #fce9dc;
-  padding: 3rem;
+  background-color: transparent;
+  padding: 3rem 0;
   margin-bottom: 2rem;
-  border: 1px solid #c99b45;
   text-align: center;
   max-width: 850px;
   margin-left: auto;
@@ -50,30 +49,44 @@
   scroll-margin-top: 120px;
 }
 
-.cardSectionCoreValues {
-  background-color: #fce9dc;
-  padding: 3rem;
-  margin-bottom: 2rem;
-  border: 1px solid #c99b45;
-  text-align: center;
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
+.coreValuesOuterBox {
+  border: 1px solid #dcb285;
+  max-width: 1000px;
+  margin: 0 auto 2rem auto;
   scroll-margin-top: 120px;
 }
 
-.programsCardTitle {
-  font-size: 2.1rem;
-  color: #222;
-  margin-bottom: 1rem;
-  font-weight: 500;
+.coreValuesTop {
+  background-color: #fce9dc;
+  padding: 2.5rem 3rem;
+  border-bottom: 1px solid #dcb285;
+  text-align: center;
 }
 
-.programsCardSubtitle {
-  font-size: 1.2rem;
-  color: #222;
-  margin-bottom: 2rem;
+.coreValuesBottom {
+  background-color: #ffffff;
+  padding: 2.5rem 0;
+}
+
+.coreValuesRow {
+  margin: 0;
+}
+
+.coreValuesColLeft {
+  border-right: 1px solid #dcb285;
+  padding: 0 3rem;
+}
+
+.coreValuesColRight {
+  padding: 0 3rem;
+}
+
+.sectionTitlePink {
+  font-size: 1.8rem;
+  color: #A011AF;
+  margin-bottom: 1.5rem;
   font-weight: 500;
+  text-align: center;
 }
 
 .contactDesc {
@@ -107,7 +120,7 @@
 .contactTable td {
   background-color: #1a1c6a;
   color: white;
-  border: 1px solid #c99b45;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 1.2rem 2rem;
   text-align: left;
   font-size: 1.05rem;
@@ -130,59 +143,68 @@
   margin-bottom: 1.5rem;
 }
 
-.programsFlex {
-  display: flex;
-  justify-content: center;
-  gap: 0;
-  margin-bottom: 1.5rem;
-  flex-wrap: wrap;
-  width: 100%;
+.servicesIconsSection {
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 3rem;
+  text-align: center;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  scroll-margin-top: 120px;
 }
 
-.programBox {
-  background-color: #000080;
-  color: white;
-  padding: 2.5rem 1rem;
+.servicesIconsFlex {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 3rem;
+  padding: 0 5rem;
+}
+
+.serviceIconItem {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 1rem;
+}
+
+.iconCircleWrapper {
+  display: flex;
   justify-content: center;
-  flex: 1;
-  min-width: 250px;
-  border-right: 1px solid #c99b45;
+  align-items: center;
+  margin-bottom: 0.5rem;
 }
 
-.programBox:last-child {
-  border-right: none;
+.serviceIconSvg {
+  width: 60px;
+  height: 60px;
 }
 
-.programIcon {
-  font-size: 1.8rem;
-  margin-right: 0.8rem;
-  margin-bottom: 0;
-}
-
-.programText {
-  font-size: 1.1rem;
-  font-weight: 400;
-}
-
-.programTiming {
-  font-size: 1.1rem;
-  color: #222;
-  margin-top: 1rem;
+.serviceIconText {
+  font-size: 1rem;
+  color: #444;
+  font-weight: 600;
 }
 
 .coreValuesDesc {
-  font-size: 1.15rem;
+  font-size: 18px;
   color: #333;
   margin-bottom: 1.5rem;
   line-height: 1.6;
   text-align: left;
 }
 
-.valueTitle {
-  font-size: 1.5rem;
+.valueTitlePink {
+  font-size: 1.3rem;
+  color: #c82090;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+.valueTitleLeft {
+  font-size: 1.25rem;
   color: #ea648f;
   font-weight: 500;
   margin-bottom: 0.8rem;
@@ -190,9 +212,17 @@
 }
 
 .valueText {
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   color: #333;
   margin-bottom: 2rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.valueTextLeft {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 0;
   line-height: 1.6;
   text-align: left;
 }
@@ -201,16 +231,16 @@
   background-color: #fce9dc;
   padding: 3rem 4rem;
   margin-bottom: 2rem;
-  border: 1px solid #c99b45;
+  border: 1px solid #dcb285;
   text-align: center;
-  max-width: 1100px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   scroll-margin-top: 120px;
 }
 
 .servicesDesc {
-  font-size: 1.2rem;
+  font-size: 18px;
   color: #333;
   margin-bottom: 2.5rem;
   font-weight: 400;
@@ -229,7 +259,7 @@
 .servicesList li {
   position: relative;
   padding-left: 1rem;
-  font-size: 1.05rem;
+  font-size: 15px;
   color: #333;
   line-height: 1.5;
 }
@@ -245,12 +275,8 @@
 .gallerySection {
   padding: 1rem 0;
   text-align: center;
-}
-
-.galleryTitle {
-  font-size: 1.6rem;
-  color: #333;
-  margin-bottom: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .inlineGalleryContainer {
@@ -268,7 +294,7 @@
   border-radius: 8px;
   overflow: hidden;
   background: #f0f0f0;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .mainGalleryImage {
@@ -300,7 +326,7 @@
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .sliderBtn:hover {
@@ -326,13 +352,17 @@
 .thumbnailRow::-webkit-scrollbar {
   display: none;
 }
+
 .thumbnailRow {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .thumbnailItem {
-  flex: 0 0 calc(20% - 8px); /* 5 items per row */
+  flex: 0 0 calc(16.666% - 8.333px);
+  /* 6 items per row */
   aspect-ratio: 4 / 3;
   border-radius: 4px;
   overflow: hidden;
@@ -361,9 +391,11 @@
   .prevBtn {
     left: 10px;
   }
+
   .nextBtn {
     right: 10px;
   }
+
   .sliderBtn {
     width: 40px;
     height: 40px;
@@ -374,17 +406,26 @@
 
 @media (max-width: 992px) {
   .thumbnailItem {
-    flex: 0 0 calc(25% - 7.5px); /* 4 items per row */
+    flex: 0 0 calc(25% - 7.5px);
+    /* 4 items per row */
   }
 }
 
 @media (max-width: 768px) {
   .thumbnailItem {
-    flex: 0 0 calc(33.333% - 6.66px); /* 3 items per row */
+    flex: 0 0 calc(33.333% - 6.66px);
+    /* 3 items per row */
   }
 
   .servicesList {
     grid-template-columns: 1fr;
+  }
+
+  .coreValuesColLeft {
+    border-right: none;
+    border-bottom: 1px solid #dcb285;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
   .programBox {
@@ -400,7 +441,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.85);
+  background: rgba(0, 0, 0, 0.85);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -454,48 +495,57 @@
 }
 
 .whyChooseUsSection {
-  padding: 0.5rem 0;
+  padding: 2rem 0;
   text-align: center;
-  max-width: 800px;
-  margin: 0 auto 1.5rem auto;
+  max-width: 1000px;
+  margin: 0 auto 2rem auto;
 }
 
-.whyChooseUsTitle {
-  font-size: 1.9rem;
-  margin-bottom: 1.5rem;
-  font-weight: 700;
-  background: linear-gradient(90deg, #d65b99, #eb87bb);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
+.whyChooseUsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #dcb285;
+  background-color: transparent;
+  margin-top: 1rem;
 }
 
-.whyChooseUsList {
-  list-style-type: none;
-  padding: 0;
+.whyChooseUsItem {
+  flex: 0 0 50%;
+  padding: 1rem 1.5rem;
   text-align: left;
-}
-
-.whyChooseUsList li {
-  position: relative;
-  padding-left: 1.8rem;
-  margin-bottom: 1rem;
+  border-bottom: 1px solid #dcb285;
+  border-right: 1px solid #dcb285;
   color: #333;
-  font-size: 1.25rem;
-  line-height: 1.4;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
 }
 
-.whyChooseUsList li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  top: -0.15rem;
-  color: #d65b99;
-  font-size: 1.6rem;
-  line-height: 1;
+.whyChooseUsItem:nth-child(even) {
+  border-right: none;
 }
 
+.whyChooseUsItemFull {
+  flex: 0 0 100%;
+  padding: 1rem 1.5rem;
+  text-align: left;
+  color: #333;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+}
 
+.cardSectionContact {
+  background-color: #fce9dc;
+  padding: 3rem;
+  margin-bottom: 2rem;
+  border: 1px solid #dcb285;
+  text-align: center;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  scroll-margin-top: 120px;
+}
 
 .contactBox {
   background-color: #0b1c7c;

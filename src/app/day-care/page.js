@@ -74,67 +74,82 @@ export default function DayCarePage() {
 
       <section className="container mt-5">
         <div className={styles.titleContainer} id="overview">
-          <h2 className={styles.mainTitle}>Raj Kumari Amrit Kaur<br />Day Care Centre</h2>
+          <h2 className={styles.mainTitle}>Raj Kumari Amrit Kaur Day Care Centre</h2>
           <h4 className={styles.subTitle}>Nurturing Young Minds in a Safe & Caring Environment</h4>
           <p className={styles.description}>
-            The Raj Kumari Amrit Kaur Day Care Centre is dedicated to supporting working parents through trusted childcare. The centre provides a safe, nurturing, and stimulating environment for up to 25 children, ensuring personalized care and attention. This enables parents to focus on their work with confidence and peace of mind. We emphasize the holistic development of children by nurturing their social, emotional, physical, and cognitive growth through thoughtfully designed programs that complement their home environment.
+            The Raj Kumari Amrit Kaur Day Care Centre is dedicated to supporting working parents
+            through trusted childcare. The centre provides a safe, nurturing, and stimulating
+            environment for up to 25 children, ensuring personalized care and attention. This enables
+            parents to focus on their work with confidence and peace of mind.
+            We emphasize the holistic development of children by nurturing their social, emotional,
+            physical, and cognitive growth through thoughtfully designed programs that complement their home environment.
           </p>
         </div>
 
-        {/* Our Programs */}
-        <div className={styles.cardSectionPrograms} id="programs">
-          <h3 className={styles.programsCardTitle}>Our Programs</h3>
-          <p className={styles.programsCardSubtitle}>We Offer Flexible Childcare Services To Meet Diverse Family Needs</p>
-          <div className={styles.programsFlex}>
-            <div className={styles.programBox}>
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={styles.programIcon} style={{ marginRight: '12px' }}>
-                <circle cx="12" cy="12" r="10"></circle>
-                <polyline points="12 6 12 12 8 16"></polyline>
-              </svg>
-              <span className={styles.programText}>Full Day Care</span>
+        {/* Services Icons (No background box) */}
+        <div className={styles.servicesIconsSection} id="programs">
+          <h3 className={styles.sectionTitlePink}>Our Services & Facilities</h3>
+          <div className={styles.servicesIconsFlex}>
+            <div className={styles.serviceIconItem}>
+              <div className={styles.iconCircleWrapper}>
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#a011af" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 15 15"></polyline>
+                </svg>
+              </div>
+              <span className={styles.serviceIconText}>Full Day Care</span>
             </div>
-            <div className={styles.programBox}>
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={styles.programIcon} style={{ marginRight: '12px' }}>
-                <path d="M12 22a10 10 0 0 1 0-20v20z"></path>
-                <path d="M12 2a10 10 0 0 1 0 20" strokeDasharray="2 3"></path>
-              </svg>
-              <span className={styles.programText}>Half Day Care</span>
+            <div className={styles.serviceIconItem}>
+              <div className={styles.iconCircleWrapper}>
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#a011af" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 15 15"></polyline>
+                </svg>
+              </div>
+              <span className={styles.serviceIconText}>Half Day Care</span>
             </div>
-            <div className={styles.programBox}>
-              <svg width="32" height="32" viewBox="0 0 576 512" fill="currentColor" className={styles.programIcon} style={{ marginRight: '12px' }}>
-                <path d="M163.9 136.9c-29.4-29.8-29.4-78.2 0-108s77-29.8 106.4 0l17.7 18 17.7-18c29.4-29.8 77-29.8 106.4 0s29.4 78.2 0 108L310.5 240.1c-6.2 6.3-14.3 9.4-22.5 9.4s-16.3-3.1-22.5-9.4L163.9 136.9zM568.2 336.3c13.1 17.8 9.3 42.8-8.5 55.9L433.1 485.5c-23.4 17.2-51.6 26.5-80.7 26.5L192 512 32 512c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l36.8 0 44.9-36c22.7-18.2 50.9-28 80-28l78.3 0 16 0 64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0-16 0c-8.8 0-16 7.2-16 16s7.2 16 16 16l120.6 0 119.7-88.2c17.8-13.1 42.8-9.3 55.9 8.5zM193.6 384c0 0 0 0 0 0l-.9 0c.3 0 .6 0 .9 0z" />
-              </svg>
-              <span className={styles.programText}>Guest Child Care</span>
+            <div className={styles.serviceIconItem}>
+              <div className={styles.iconCircleWrapper}>
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#a011af" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                  <path d="M7 21h10" />
+                  <path d="M12 17v4" />
+                </svg>
+              </div>
+              <span className={styles.serviceIconText}>Guest Child Care</span>
             </div>
           </div>
-          <p className={styles.programTiming}>
-            <strong>From</strong> Monday To Friday | 8:30 AM - 6:00 PM
-          </p>
         </div>
 
         {/* Our Core Values */}
-        <div className={styles.cardSectionCoreValues} id="core-values">
-          <h3 className={styles.programsCardTitle}>Our Core Values</h3>
-          <p className={styles.coreValuesDesc}>
-            This shelter home is specially designed for destitute pregnant and lactating women. It operates at two locations- Sarai Rohilla and Jahangirpuri-in collaboration with the Department of Women & Child development, Government of NCT of Delhi.
-          </p>
-          <div className="row text-left">
-            <div className="col-12">
-              <h4 className={styles.valueTitle}>Children</h4>
-              <p className={styles.valueText}>
-                We value each child as a unique individual with distinct talents and abilities. Our approach focuses on age-appropriate development, ensuring healthy and balanced growth.
-              </p>
-              <h4 className={styles.valueTitle}>Families</h4>
-              <p className={styles.valueText}>
-                We believe in building strong and positive relationships with families. A collaborative partnership with parents is essential for the successful development of every child.
-              </p>
+        <div className={styles.coreValuesOuterBox} id="core-values">
+          <div className={styles.coreValuesTop}>
+            <h3 className={styles.sectionTitlePink}>Our Core Values</h3>
+            <p className={styles.coreValuesDesc}>
+              This shelter home is specially designed for destitute pregnant and lactating women. It operates at two locations- Sarai Rohilla and Jahangirpuri-in collaboration with the Department of Women & Child development, Government of NCT of Delhi.
+            </p>
+          </div>
+          <div className={styles.coreValuesBottom}>
+            <div className={`row ${styles.coreValuesRow}`}>
+              <div className={`col-md-6 ${styles.coreValuesColLeft}`}>
+                <h4 className={styles.valueTitleLeft}>Children</h4>
+                <p className={styles.valueTextLeft}>
+                  We value each child as a unique individual with distinct talents and abilities. Our approach focuses on age-appropriate development, ensuring healthy and balanced growth.
+                </p>
+              </div>
+              <div className={`col-md-6 ${styles.coreValuesColRight}`}>
+                <h4 className={styles.valueTitleLeft}>Families</h4>
+                <p className={styles.valueTextLeft}>
+                  We believe in building strong and positive relationships with families. A collaborative partnership with parents is essential for the successful development of every child.
+                </p>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Our Services & Facilities */}
+        {/* Our Services & Facilities (List) */}
         <div className={styles.cardSectionServices} id="services">
-          <h3 className={styles.programsCardTitle}>Our Services & Facilities</h3>
+          <h3 className={styles.sectionTitlePink}>Our Services & Facilities</h3>
           <p className={styles.servicesDesc}>
             We provide a comprehensive range of services to ensure safety, learning, and overall well-being
           </p>
@@ -158,16 +173,16 @@ export default function DayCarePage() {
 
         {/* Gallery Section */}
         <section className={styles.gallerySection}>
-          <h2 className={styles.galleryTitle}>Gallery</h2>
+          <h2 className={styles.sectionTitlePink}>Gallery</h2>
           <div className={styles.inlineGalleryContainer}>
             <div className={styles.mainImageDisplay}>
-              <img 
-                src={galleryImages[currentImageIndex]} 
-                alt="Main Gallery Image" 
-                className={styles.mainGalleryImage} 
+              <img
+                src={galleryImages[currentImageIndex]}
+                alt="Main Gallery Image"
+                className={styles.mainGalleryImage}
               />
             </div>
-            
+
             <div className={styles.thumbnailSliderWrapper}>
               <button className={`${styles.sliderBtn} ${styles.prevBtn}`} onClick={scrollLeftBtn}>
                 <i className="bi bi-chevron-left"></i>
@@ -175,8 +190,8 @@ export default function DayCarePage() {
 
               <div className={styles.thumbnailRow} ref={thumbnailContainerRef}>
                 {galleryImages.map((src, idx) => (
-                  <div 
-                    key={idx} 
+                  <div
+                    key={idx}
                     className={`${styles.thumbnailItem} ${idx === currentImageIndex ? styles.activeThumbnail : ''}`}
                     onClick={() => setCurrentImageIndex(idx)}
                   >
@@ -194,20 +209,35 @@ export default function DayCarePage() {
 
         {/* Why Choose Us */}
         <div className={styles.whyChooseUsSection}>
-          <div style={{ display: 'inline-block', textAlign: 'left' }}>
-            <h3 className={styles.whyChooseUsTitle}>Why Choose Us?</h3>
-            <ul className={styles.whyChooseUsList}>
-              <li>Safe and nurturing environment</li>
-              <li>Experienced and caring staff</li>
-              <li>Focus on holistic child development</li>
-              <li>Strong parent-centre collaboration</li>
-              <li>Structured learning with fun-based activities</li>
-            </ul>
+          <div style={{ display: 'inline-block', width: '100%' }}>
+            <h3 className={styles.sectionTitlePink}>Why Choose Us?</h3>
+            <div className={styles.whyChooseUsGrid}>
+              <div className={styles.whyChooseUsItem}>
+                <i className="bi bi-check-circle-fill" style={{ color: '#a011af', marginRight: '10px', fontSize: '1.2rem' }}></i>
+                Safe and nurturing environment
+              </div>
+              <div className={styles.whyChooseUsItem}>
+                <i className="bi bi-check-circle-fill" style={{ color: '#a011af', marginRight: '10px', fontSize: '1.2rem' }}></i>
+                Experienced and caring staff
+              </div>
+              <div className={styles.whyChooseUsItem}>
+                <i className="bi bi-check-circle-fill" style={{ color: '#a011af', marginRight: '10px', fontSize: '1.2rem' }}></i>
+                Focus on holistic child development
+              </div>
+              <div className={styles.whyChooseUsItem}>
+                <i className="bi bi-check-circle-fill" style={{ color: '#a011af', marginRight: '10px', fontSize: '1.2rem' }}></i>
+                Strong parent-centre collaboration
+              </div>
+              <div className={styles.whyChooseUsItemFull}>
+                <i className="bi bi-check-circle-fill" style={{ color: '#a011af', marginRight: '10px', fontSize: '1.2rem' }}></i>
+                Structured learning with fun-based activities
+              </div>
+            </div>
           </div>
         </div>
 
         {/* Help & Support */}
-        <div className={styles.cardSectionCoreValues} id="contact">
+        <div className={styles.cardSectionContact} id="contact">
           <p className={styles.contactDesc}>
             If you or someone you know needs support, please contact us through the hiplines below. Our team is here to provide a safe space, care, and guidance.
           </p>
