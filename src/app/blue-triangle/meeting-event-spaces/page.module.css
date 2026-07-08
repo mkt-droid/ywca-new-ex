@@ -70,7 +70,7 @@
   padding: 12px 0;
   border: none;
   font-size: 0.9rem;
-  color: #333;
+  color: #000000;
   outline: none;
   background: transparent;
 }
@@ -114,7 +114,7 @@
   text-align: center;
   font-size: 2.2rem;
   font-weight: 400;
-  color: #333;
+  color: #000000;
   margin-bottom: 20px;
 }
 
@@ -273,7 +273,7 @@
   background: transparent;
   border: none;
   font-size: 2.5rem;
-  color: #333;
+  color: #000000;
   cursor: pointer;
 }
 

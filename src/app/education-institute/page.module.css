@@ -90,7 +90,7 @@
 }
 
 .sectionText {
-  color: #333;
+  color: #000000;
   font-size: 0.95rem;
   line-height: 1.6;
   max-width: 800px;
@@ -281,7 +281,7 @@
 .alumniName {
   font-size: 16px;
   font-weight: 700;
-  color: #333;
+  color: #000000;
   margin-bottom: 4px;
 }
 

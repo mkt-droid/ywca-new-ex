@@ -1,11 +1,9 @@
-import React from 'react';
+"use client";
+
+import React, { useState, useRef } from 'react';
 import Link from 'next/link';
 import styles from './page.module.css';
 import SideNavBanner from '@/components/partials/SideNavBanner';
-
-export const metadata = {
-  title: 'Shelter Homes | YWCA of Delhi',
-};
 
 export default function ShelterHomesPage() {
   const bannerNavItems = [
@@ -55,6 +53,21 @@ export default function ShelterHomesPage() {
 
   const galleryImages = Array.from({ length: 10 }, (_, i) => `/images/shelter-homes/gallery-${i + 1}.jpg`);
 
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const thumbnailContainerRef = useRef(null);
+
+  const scrollLeftBtn = () => {
+    if (thumbnailContainerRef.current) {
+      thumbnailContainerRef.current.scrollBy({ left: -250, behavior: 'smooth' });
+    }
+  };
+
+  const scrollRightBtn = () => {
+    if (thumbnailContainerRef.current) {
+      thumbnailContainerRef.current.scrollBy({ left: 250, behavior: 'smooth' });
+    }
+  };
+
   return (
     <main>
       <SideNavBanner
@@ -97,37 +110,29 @@ export default function ShelterHomesPage() {
       </div>
 
       {/* Raj Kumari Amrit Kaur Section */}
-      <div id="rkak">
+      <div id="rkak" style={{ scrollMarginTop: '100px' }}>
         <div className={styles.blueBanner}>
           <h2>Raj Kumari Amrit Kaur<br /><span>(Short Stay Shelter Home)</span></h2>
         </div>
 
         <section className={`container ${styles.detailSection}`}>
           <p className={styles.centerDesc}>
-            Located at Ashoka Road, New Delhi, this shelter home provides temporary accommodation and support to women aged 18-45 years who are facing crisis due to domestic violence, marital conflict, or other emergencies.
+            Located at Ashoka Road, Delhi, this shelter home provides temporary accommodation and support to women aged 18–60 years who are facing difficult circumstances such as domestic violence, homelessness, trafficking, or lack of family support.
           </p>
-
-          <div className={`row row-cols-2 row-cols-md-5 g-3 ${styles.galleryGrid}`}>
-            {galleryImages.map((src, idx) => (
-              <div className="col" key={idx}>
-                <img src={src} alt="Gallery" className={styles.galleryImg} />
-              </div>
-            ))}
-          </div>
 
           <div className={styles.infoBox}>
             <div className="row">
               <div className="col-md-6">
                 <ul className={styles.customList}>
-                  <li>Safe and secure environment</li>
-                  <li>Counselling and emotional support</li>
-                  <li>Medical help and healthcare monitoring</li>
+                  <li>Safe and secure accommodation with nutritious meals</li>
+                  <li>Clothing and essential toiletries</li>
+                  <li>Emotional and psychological counselling</li>
                 </ul>
               </div>
               <div className="col-md-6">
                 <ul className={styles.customList}>
-                  <li>Vocational training</li>
-                  <li>Rehabilitation support and legal counselling</li>
+                  <li>Medical care as needed</li>
+                  <li>Skill development and vocational training</li>
                 </ul>
               </div>
             </div>
@@ -135,54 +140,51 @@ export default function ShelterHomesPage() {
 
           <div className={styles.focusBox}>
             <h4>Our Focus</h4>
-            <p>Our focus is to help women rebuild their lives by promoting self-reliance, emotional well-being, and successful reintegration into society.</p>
+            <p>We aim to help women rebuild their lives by promoting self-reliance, emotional well-being,and successful reintegration into society.</p>
           </div>
 
           <div className={styles.contactSupport}>
-            <p><strong>If you or someone you know needs support, please contact us through the helpline below. Our team is here to provide a safe space, care, and guidance.</strong></p>
+            <p><strong>If you or someone you know needs support, please contact us through the hiplines
+              below.<br /> Our team is here to provide a safe space, care, and guidance.</strong></p>
             <div className={styles.contactButtons}>
-              <button className={styles.purpleBtn}>Raj Kumari Amrit Kaur Shelter Home | +91-11-23360133</button>
-              <button className={styles.purpleBtn}>Helpline | +91-11-23360134</button>
+              <div className={styles.splitBtnWrap}>
+                <div className={styles.splitBtnLeft}>For Inquiry/More Info Call</div>
+                <div className={styles.splitBtnRight}>+91-7011299046</div>
+              </div>
             </div>
           </div>
         </section>
       </div>
 
       {/* Maatritva Chhaya Section */}
-      <div id="maatritva">
+      <div id="maatritva" style={{ scrollMarginTop: '100px' }}>
         <div className={styles.blueBanner}>
-          <h2>Maatritva Chhaya<br /><span>(Shelter Home)</span></h2>
+          <h2>Maatritva Chhaya <br /><span>(Shelter Home)</span></h2>
         </div>
 
         <section className={`container ${styles.detailSection}`}>
           <p className={styles.centerDesc}>
-            This shelter home is specially designed for destitute pregnant and lactating women. It provides a safe heaven with care, medical support, and guidance to ensure the well-being of women & their newborns during the most critical times of their lives.
+            This shelter home is specially designed for destitute pregnant and lactating women. It operates at two locations- Sarai Rohilla and Jahangirpuri-in collaboration with the Department of Women & Child Development, Government of NCT of Delhi.
           </p>
 
-          <div className={`row row-cols-2 row-cols-md-5 g-3 ${styles.galleryGrid}`}>
-            {galleryImages.map((src, idx) => (
-              <div className="col" key={idx}>
-                <img src={src} alt="Gallery" className={styles.galleryImg} />
-              </div>
-            ))}
-          </div>
+
 
           <div className={styles.infoBox}>
             <div className="row">
               <div className="col-md-6">
                 <ul className={styles.customList}>
-                  <li>Safe and secure shelter for destitute pregnant women</li>
-                  <li>Nutritious diet and medical care</li>
-                  <li>Pre-natal and Post-natal care (regular health checkups)</li>
-                  <li>Yoga and meditation classes (stress management)</li>
+                  <li>Safe and comfortable accommodation with food</li>
+                  <li>Clothing and basic necessities</li>
+                  <li>Pre-natal (ANC) and post-natal (PNC) medical care</li>
+                  <li>Psychiatric consultation (through IHBAS Hospital)</li>
                 </ul>
               </div>
               <div className="col-md-6">
                 <ul className={styles.customList}>
-                  <li>Emotional and psychological counselling</li>
+                  <li>Individual and group counseling</li>
                   <li>Guidance on child care and parenting</li>
-                  <li>Vocational training for self-reliance and empowerment</li>
-                  <li>Support for rehabilitation and safe integration</li>
+                  <li>Vocational training for financial independence</li>
+                  <li>Support for rehabilitation and reintegration</li>
                 </ul>
               </div>
             </div>
@@ -190,34 +192,77 @@ export default function ShelterHomesPage() {
 
           <div className={styles.focusBox}>
             <h4>Our Focus</h4>
-            <p>Our focus is to ensure the health, safety, and dignity of mothers and their children while empowering women to lead independent and secure lives.</p>
+            <p>Our Focus is to ensure the health, safety, and dignity of mothers and their children, while empowering women to lead independent and secure lives.</p>
           </div>
 
           <div className={styles.requirementsBox}>
             <div className="row">
               <div className="col-md-6">
-                <h5 className={styles.reqTitle}>Our shelter homes care for:</h5>
+                <h5 className={styles.reqTitle}>Our shelter homes are for:</h5>
                 <ul className={styles.customList}>
-                  <li>Aged between 18-45 years</li>
-                  <li>Women facing crisis or domestic violence, or destitute (for Maatritva)</li>
+                  <li>Women in distress (18 - 60 years)</li>
+                  <li>Destitute pregnant and lactating women without shelter (18 year & above)</li>
                 </ul>
               </div>
               <div className="col-md-6">
-                <h5 className={styles.reqTitle}>Women only:</h5>
+                <h5 className={styles.reqTitle}>Women may:</h5>
                 <ul className={styles.customList}>
-                  <li>Single and without any male child</li>
-                  <li>Above 5 years male child may be conditionally allowed</li>
+                  <li>Approach the shelter directly</li>
+                  <li>Be referred by Police, NGOs, or any concerned individual</li>
                 </ul>
               </div>
             </div>
           </div>
 
+          {/* Gallery Section */}
+          <section className={styles.gallerySection}>
+            <h2 className={styles.galleryTitlePink}>Gallery</h2>
+            <div className={styles.inlineGalleryContainer}>
+              <div className={styles.mainImageDisplay}>
+                <img
+                  src={galleryImages[currentImageIndex]}
+                  alt="Main Gallery Image"
+                  className={styles.mainGalleryImage}
+                />
+              </div>
+
+              <div className={styles.thumbnailSliderWrapper}>
+                <button className={`${styles.sliderBtn} ${styles.prevBtn}`} onClick={scrollLeftBtn}>
+                  <i className="bi bi-chevron-left"></i>
+                </button>
+
+                <div className={styles.thumbnailRow} ref={thumbnailContainerRef}>
+                  {galleryImages.map((src, idx) => (
+                    <div
+                      key={idx}
+                      className={`${styles.thumbnailItem} ${idx === currentImageIndex ? styles.activeThumbnail : ''}`}
+                      onClick={() => setCurrentImageIndex(idx)}
+                    >
+                      <img src={src} alt={`Thumbnail ${idx + 1}`} />
+                    </div>
+                  ))}
+                </div>
+
+                <button className={`${styles.sliderBtn} ${styles.nextBtn}`} onClick={scrollRightBtn}>
+                  <i className="bi bi-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </section>
+
           <div className={styles.contactSupport}>
-            <p><strong>If you or someone you know needs support, please contact us through the helpline below. Our team is here to provide a safe space, care, and guidance.</strong></p>
-            <p className={styles.smallText}>Contact Us For Further Information</p>
+            <p><strong>If you or someone you know needs support, please contact us through the hiplines
+              below.<br /> Our team is here to provide a safe space, care, and guidance.</strong></p>
+            <p className={styles.contactSubtitle}>Contact Us For More Information</p>
             <div className={styles.contactButtonsStack}>
-              <button className={styles.purpleBtnFull}>Short Stay Home, Jahangirpuri | +91-11-23360133</button>
-              <button className={styles.purpleBtnFull}>Short Stay Home, Nawada | +91-11-23360134</button>
+              <div className={styles.splitBtnWrap}>
+                <div className={styles.splitBtnLeft}>Maatritva Chhaya, Jahangirpuri</div>
+                <div className={styles.splitBtnRight}>+91-7011299050</div>
+              </div>
+              <div className={styles.splitBtnWrap}>
+                <div className={styles.splitBtnLeft}>Maatritva Chhaya, Sarai Rohilla</div>
+                <div className={styles.splitBtnRight}>+91-7011299064</div>
+              </div>
             </div>
           </div>
         </section>

@@ -40,7 +40,7 @@ const PAGES = [
     {
       src: "/images/focus/slide-2/Public-Affairs-and-Social-Issue.jpg",
       caption: "Public Affairs and Social Issues",
-      link: ''
+      link: '/public-affairs-and-social-issues'
     },
     {
       src: "/images/focus/slide-2/Membership-Programs.jpg",
@@ -60,7 +60,7 @@ const PAGES = [
     {
       src: "/images/focus/slide-2/Shelter-Homes.jpg",
       caption: "Shelter Homes",
-      link: ''
+      link: '/shelter-homes'
     },
     {
       src: "/images/focus/slide-2/Youth.jpg",

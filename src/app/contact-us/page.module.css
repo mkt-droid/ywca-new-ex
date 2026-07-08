@@ -1,0 +1,181 @@
+.mainContainer {
+  width: 100%;
+}
+
+.topSection {
+  background-color: #F0F3FF;
+  padding: 50px 0;
+}
+
+.leftContentWrapper {
+  max-width: 500px;
+}
+
+.mainTitle {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.1;
+  margin-bottom: 25px;
+}
+
+.subText {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  max-width: 380px;
+}
+
+.letsTalkBlock {
+  padding-left: 0;
+}
+
+@media (min-width: 992px) {
+  .letsTalkBlock {
+    padding-left: 60px;
+  }
+}
+
+.talkHeaderBlock {
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+}
+
+.letsTalkTitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 0;
+}
+
+.contactBlock {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+.contactBlockLast {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.contactTitle {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.contactDetails {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.contactDetails a {
+  color: #666;
+  text-decoration: underline;
+}
+
+/* Form Section */
+.formSection {
+  padding: 60px 0;
+  background-color: #fff;
+  border-top: 1px solid #f3d4b6; /* The light gold border */
+  border-bottom: 1px solid #f3d4b6;
+}
+
+.contactForm {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.formLabel {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.formInput, .formTextarea {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 1px solid #777;
+  background-color: transparent;
+  font-size: 1rem;
+  color: #000000;
+  border-radius: 0;
+}
+
+.formInput:focus, .formTextarea:focus {
+  outline: none;
+  border-bottom-color: #1c2b5e;
+}
+
+.formInput::placeholder, .formTextarea::placeholder {
+  color: #bbb;
+  font-weight: 400;
+}
+
+.submitBtn {
+  background-color: #1c2b5e;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 40px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.submitBtn:hover {
+  background-color: #111a3d;
+}
+
+/* Map Section */
+.mapSection {
+  width: 100%;
+  margin-bottom: 0;
+  border-bottom: 1px solid #f3d4b6;
+}
+
+/* Directory Section */
+.directorySection {
+  padding: 60px 0;
+  background-color: #fafafa;
+}
+
+.directoryWrapper {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.deptCard {
+  background-color: transparent;
+  padding: 15px;
+  height: 100%;
+}
+
+.deptTitle {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 12px;
+}
+
+.deptText {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+.deptText a {
+  color: #555;
+  text-decoration: underline;
+}

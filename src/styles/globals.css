@@ -17,9 +17,9 @@
 
  body {
    font-family: "Poppins", sans-serif;
-   color: #333;
+   color: #000000;
    overflow-x: hidden;
-
+   background-color: #FCF7F7;
  }
 
  h1,
@@ -29,6 +29,10 @@
  h5,
  h6 {
    font-family: "Poppins", sans-serif;
+ }
+
+ p {
+   color: #000000;
  }
 
  .container {
@@ -449,6 +453,16 @@
    padding: 7px 26px 20px;
  }
 
+ .dropdown-simple {
+   min-width: 250px;
+   padding: 10px;
+ }
+
+ .dropdown-right {
+   left: auto;
+   right: 0;
+ }
+
  .nav-item:hover .dropdown {
    opacity: 1;
    visibility: visible;
@@ -546,7 +560,7 @@
    display: block;
    width: 24px;
    height: 2px;
-   background: #333;
+   background: #000000;
    border-radius: 2px;
  }
 

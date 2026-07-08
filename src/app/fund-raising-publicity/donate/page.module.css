@@ -65,7 +65,7 @@
 }
 
 .textValue {
-  color: #333;
+  color: #000000;
   margin-bottom: 25px;
   font-size: 1rem;
 }
@@ -78,7 +78,7 @@
 .detailsTable td {
   padding: 5px 0;
   vertical-align: top;
-  color: #333;
+  color: #000000;
   font-size: 0.95rem;
 }
 

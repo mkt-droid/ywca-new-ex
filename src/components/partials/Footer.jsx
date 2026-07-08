@@ -1,5 +1,6 @@
 'use client'
 import { useEffect } from "react";
+import Link from "next/link";
 const Footer = ()=>{
   // useEffect(() => {
   //   import("bootstrap").then((bootstrap) => {
@@ -100,9 +101,11 @@ const Footer = ()=>{
               <button>
                 Become a Member <i className="bi bi-arrow-right-circle-fill" />
               </button>
-              <button>
-                Contact Us <i className="bi bi-arrow-right-circle-fill" />
-              </button>
+              <Link href="/contact-us" passHref>
+                <button>
+                  Contact Us <i className="bi bi-arrow-right-circle-fill" />
+                </button>
+              </Link>
             </div>
           </div>
         </div>

@@ -135,29 +135,29 @@ const Header = () => {
 
             <li
               className="nav-item"
-            //   onClick={(e) => e.currentTarget.classList.toggle("open")}
+              onClick={(e) => e.currentTarget.classList.toggle("open")}
             >
               <a className="nav-link" href="#">
                 Programs
-                {/* <span className="chevron">
+                <span className="chevron">
                   <i className="bi bi-chevron-down"></i>
-                </span> */}
+                </span>
               </a>
 
-              {/* <div className="dropdown">
+              <div className="dropdown dropdown-simple">
                 <a className="dropdown-item" href="#">
                   Community Development Programs
                 </a>
 
-                <a className="dropdown-item" href="#">
-                  Fund Raising and Publicity
+                <a className="dropdown-item" href="/fund-raising-publicity">
+                  Fund raising & Publicity (FRAP)
                 </a>
 
                 <a className="dropdown-item" href="#">
                   Membership and Programs
                 </a>
 
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="/public-affairs-and-social-issues">
                   Public Affairs and Social Issues
                 </a>
 
@@ -165,44 +165,44 @@ const Header = () => {
                   Religious Education Committee
                 </a>
 
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="/shelter-homes">
                   Shelter Homes
                 </a>
 
                 <a className="dropdown-item" href="#">
                   Youth
                 </a>
-              </div> */}
+              </div>
             </li>
 
             <li
               className="nav-item"
-            //   onClick={(e) => e.currentTarget.classList.toggle("open")}
+              onClick={(e) => e.currentTarget.classList.toggle("open")}
             >
               <a className="nav-link" href="#">
                 Services
-                {/* <span className="chevron">
+                <span className="chevron">
                   <i className="bi bi-chevron-down"></i>
-                </span> */}
+                </span>
               </a>
 
-              {/* <div className="dropdown">
-                <a className="dropdown-item" href="#">
+              <div className="dropdown dropdown-simple">
+                <a className="dropdown-item" href="/blue-triangle">
                   Blue Triangle (Guest House)
                 </a>
 
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="/day-care">
                   Day Care
                 </a>
 
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="/education-institute">
                   Education Institutes
                 </a>
 
                 <a className="dropdown-item" href="#">
                   Working Women Hostels
                 </a>
-              </div> */}
+              </div>
             </li>
 
             {/* <li
@@ -314,7 +314,7 @@ const Header = () => {
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="/contact-us">
                 Contact Us
               </a>
             </li>

@@ -12,7 +12,7 @@
 
 .mainTitle {
   font-size: 2rem;
-  color: #333;
+  color: #000000;
   margin-bottom: 0.5rem;
   font-weight: 500;
 }
@@ -133,7 +133,7 @@
 
 .cardTitle {
   font-size: 1.8rem;
-  color: #333;
+  color: #000000;
   margin-bottom: 0.5rem;
 }
 
@@ -189,7 +189,7 @@
 
 .coreValuesDesc {
   font-size: 18px;
-  color: #333;
+  color: #000000;
   margin-bottom: 1.5rem;
   line-height: 1.6;
   text-align: left;
@@ -213,7 +213,7 @@
 
 .valueText {
   font-size: 1.05rem;
-  color: #333;
+  color: #000000;
   margin-bottom: 2rem;
   line-height: 1.6;
   text-align: center;
@@ -221,7 +221,7 @@
 
 .valueTextLeft {
   font-size: 0.95rem;
-  color: #333;
+  color: #000000;
   margin-bottom: 0;
   line-height: 1.6;
   text-align: left;
@@ -241,7 +241,7 @@
 
 .servicesDesc {
   font-size: 18px;
-  color: #333;
+  color: #000000;
   margin-bottom: 2.5rem;
   font-weight: 400;
 }
@@ -260,7 +260,7 @@
   position: relative;
   padding-left: 1rem;
   font-size: 15px;
-  color: #333;
+  color: #000000;
   line-height: 1.5;
 }
 
@@ -319,7 +319,7 @@
   justify-content: center;
   cursor: pointer;
   flex-shrink: 0;
-  color: #333;
+  color: #000000;
   font-size: 1.2rem;
   transition: all 0.3s ease;
   position: absolute;
@@ -515,7 +515,7 @@
   text-align: left;
   border-bottom: 1px solid #dcb285;
   border-right: 1px solid #dcb285;
-  color: #333;
+  color: #000000;
   font-size: 1.05rem;
   display: flex;
   align-items: center;
@@ -529,7 +529,7 @@
   flex: 0 0 100%;
   padding: 1rem 1.5rem;
   text-align: left;
-  color: #333;
+  color: #000000;
   font-size: 1.05rem;
   display: flex;
   align-items: center;
