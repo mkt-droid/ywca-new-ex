@@ -48,6 +48,48 @@ export default function ShelterHomesPage() {
       image: '/images/shelter-homes/bhl-3.jpg',
       title: 'Uganda diaries',
       desc: 'A 21 year old young woman was brought to Shelter home for care and support. She belongs from Uganda and arrived to India the very first time. She belongs from Lower middle class...',
+    },
+    {
+      id: 4,
+      image: '/images/shelter-homes/bhl-1.jpg',
+      title: 'Ray of Hope',
+      desc: 'A 25year old woman got admitted in Maatritav Chhaya Shelter home, Jahangir Puri by P.S Roop Nagar. She was 5 months pregnant when she came to our center...',
+    },
+    {
+      id: 5,
+      image: '/images/shelter-homes/bhl-2.jpg',
+      title: 'A home away from home',
+      desc: 'A 19-year-old girl experienced acute emotional trauma and distress after being abandoned by her boyfriend upon disclosing her pregnancy. Her situation worsened...',
+    },
+    {
+      id: 6,
+      image: '/images/shelter-homes/bhl-3.jpg',
+      title: 'Uganda diaries',
+      desc: 'A 21 year old young woman was brought to Shelter home for care and support. She belongs from Uganda and arrived to India the very first time. She belongs from Lower middle class...',
+    },
+    {
+      id: 7,
+      image: '/images/shelter-homes/bhl-1.jpg',
+      title: 'Ray of Hope',
+      desc: 'A 25year old woman got admitted in Maatritav Chhaya Shelter home, Jahangir Puri by P.S Roop Nagar. She was 5 months pregnant when she came to our center...',
+    },
+    {
+      id: 8,
+      image: '/images/shelter-homes/bhl-2.jpg',
+      title: 'A home away from home',
+      desc: 'A 19-year-old girl experienced acute emotional trauma and distress after being abandoned by her boyfriend upon disclosing her pregnancy. Her situation worsened...',
+    },
+    {
+      id: 9,
+      image: '/images/shelter-homes/bhl-3.jpg',
+      title: 'Uganda diaries',
+      desc: 'A 21 year old young woman was brought to Shelter home for care and support. She belongs from Uganda and arrived to India the very first time. She belongs from Lower middle class...',
+    },
+    {
+      id: 10,
+      image: '/images/shelter-homes/bhl-1.jpg',
+      title: 'Ray of Hope',
+      desc: 'A 25year old woman got admitted in Maatritav Chhaya Shelter home, Jahangir Puri by P.S Roop Nagar. She was 5 months pregnant when she came to our center...',
     }
   ];
 
@@ -55,6 +97,19 @@ export default function ShelterHomesPage() {
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const thumbnailContainerRef = useRef(null);
+  const hopeSliderRef = useRef(null);
+
+  const scrollHopeLeft = () => {
+    if (hopeSliderRef.current) {
+      hopeSliderRef.current.scrollBy({ left: -350, behavior: 'smooth' });
+    }
+  };
+
+  const scrollHopeRight = () => {
+    if (hopeSliderRef.current) {
+      hopeSliderRef.current.scrollBy({ left: 350, behavior: 'smooth' });
+    }
+  };
 
   const scrollLeftBtn = () => {
     if (thumbnailContainerRef.current) {
@@ -89,10 +144,10 @@ export default function ShelterHomesPage() {
           <h2 className={styles.sectionHeading}>Bringing Hope To Lives</h2>
 
           <div className={styles.sliderContainer}>
-            <button className={styles.sliderArrowLeft}><i className="bi bi-chevron-left"></i></button>
-            <div className="row g-4">
+            <button className={styles.sliderArrowLeft} onClick={scrollHopeLeft}><i className="bi bi-chevron-left"></i></button>
+            <div className={styles.hopeCardsRow} ref={hopeSliderRef}>
               {hopeCards.map((card) => (
-                <div className="col-md-4" key={card.id}>
+                <div className={styles.hopeCardWrapper} key={card.id}>
                   <div className={styles.hopeCard}>
                     <img src={card.image} alt={card.title} className={styles.hopeCardImg} />
                     <div className={styles.hopeCardBody}>
@@ -104,7 +159,7 @@ export default function ShelterHomesPage() {
                 </div>
               ))}
             </div>
-            <button className={styles.sliderArrowRight}><i className="bi bi-chevron-right"></i></button>
+            <button className={styles.sliderArrowRight} onClick={scrollHopeRight}><i className="bi bi-chevron-right"></i></button>
           </div>
         </section>
       </div>
@@ -121,6 +176,10 @@ export default function ShelterHomesPage() {
           </p>
 
           <div className={styles.infoBox}>
+            <div style={{ marginBottom: '20px', textAlign: 'left' }}>
+              <h4 style={{ color: '#000000', fontSize: '1.2rem', fontWeight: 600, marginBottom: '10px' }}>Key highlights</h4>
+              <p style={{ margin: 0, fontSize: '1rem', color: '#000' }}>Shelter Home Capacity: 12 residents</p>
+            </div>
             <div className="row">
               <div className="col-md-6">
                 <ul className={styles.customList}>
@@ -140,12 +199,12 @@ export default function ShelterHomesPage() {
 
           <div className={styles.focusBox}>
             <h4>Our Focus</h4>
-            <p>We aim to help women rebuild their lives by promoting self-reliance, emotional well-being,and successful reintegration into society.</p>
+            <p>We aim to help women rebuild their lives by promoting self-reliance, emotional well-being, and successful reintegration into society.</p>
           </div>
 
           <div className={styles.contactSupport}>
-            <p><strong>If you or someone you know needs support, please contact us through the hiplines
-              below.<br /> Our team is here to provide a safe space, care, and guidance.</strong></p>
+            <p><span style={{ fontWeight: 500 }}>If you or someone you know needs support, please contact us through the hiplines
+              below. Our team is here to provide a safe space, care, and guidance.</span></p>
             <div className={styles.contactButtons}>
               <div className={styles.splitBtnWrap}>
                 <div className={styles.splitBtnLeft}>For Inquiry/More Info Call</div>
@@ -170,6 +229,13 @@ export default function ShelterHomesPage() {
 
 
           <div className={styles.infoBox}>
+            <div style={{ marginBottom: '20px', textAlign: 'left' }}>
+              <h4 style={{ color: '#000000', fontSize: '1.2rem', fontWeight: 600, marginBottom: '10px' }}>Key highlights</h4>
+              <ul className={styles.customList} style={{ margin: 0 }}>
+                <li>Jahangirpuri Shelter Home: 10 residents</li>
+                <li>Sarai Rohilla Shelter Home: 14 residents</li>
+              </ul>
+            </div>
             <div className="row">
               <div className="col-md-6">
                 <ul className={styles.customList}>
@@ -251,8 +317,8 @@ export default function ShelterHomesPage() {
           </section>
 
           <div className={styles.contactSupport}>
-            <p><strong>If you or someone you know needs support, please contact us through the hiplines
-              below.<br /> Our team is here to provide a safe space, care, and guidance.</strong></p>
+            <p><span style={{ fontWeight: 500 }}>If you or someone you know needs support, please contact us through the hiplines
+              below. Our team is here to provide a safe space, care, and guidance.</span></p>
             <p className={styles.contactSubtitle}>Contact Us For More Information</p>
             <div className={styles.contactButtonsStack}>
               <div className={styles.splitBtnWrap}>

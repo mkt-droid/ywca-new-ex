@@ -16,7 +16,7 @@
 }
 
 .sectionHeading2 {
-    /* margin-bottom: 15px; */
+    /* margin-bottom: 0.95rem; */
 }
 
 .sectionHeading2 h2 {
@@ -49,7 +49,7 @@
     color: #293e99;
     font-weight: 300;
 
-    margin-bottom: 15px;
+    margin-bottom: 0.95rem;
 }
 
 .historyContent {
@@ -102,10 +102,10 @@
 }
 
 .textCol p {
-    font-size: 15px;
+    font-size: 0.95rem;
     line-height: 25px;
     color: #000000;
-    margin-bottom: 15px;
+    margin-bottom: 0.95rem;
 }
 
 .textCol p:last-child {
@@ -178,7 +178,7 @@
 .memberCard {
     border: 1px solid #e4c476;
     background: #fff;
-    padding: 15px;
+    padding: 0.95rem;
     cursor: pointer;
     opacity: 0;
     transform: translateY(24px);
@@ -204,7 +204,7 @@
     aspect-ratio: 1 / 1;
     object-fit: cover;
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 0.95rem;
 }
 
 /* ── Placeholder silhouette ── */
@@ -312,7 +312,7 @@
     object-fit: cover;
     object-position: top center;
     display: block;
-    border-radius: 15px;
+    border-radius: 0.95rem;
 }
 
 
@@ -393,11 +393,11 @@
 }
 
 .desc {
-    margin-top: 15px;
+    margin-top: 0.95rem;
     font-size: 12px;
     color: #000000;
     margin-bottom: 0px;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 /* Responsive */
@@ -442,10 +442,10 @@
 }
 
 .signatureBlock {
-    margin-top: 15px;
+    margin-top: 0.95rem;
     font-size: 0.95rem;
     color: #444;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 .signatureBlock strong {
@@ -458,14 +458,14 @@
     font-size: 1.1rem;
     font-weight: 700;
     color: #1a1a1a;
-    line-height: 1.5;
+    line-height: 1.6;
     margin-bottom: 24px;
     padding-left: 20px;
     border-left: 3px solid #1e3a8a;
 }
 
 .bioText {
-    font-size: 15px;
+    font-size: 0.95rem;
     line-height: 25px;
     color: #555;
     font-weight: 300;

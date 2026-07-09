@@ -132,19 +132,19 @@ const BlueTriangle = () => {
           <div className="container">
             <h2 className={styles.sectionTitle}>Booking</h2>
             <div className={styles.bookingGrid}>
-              <Link href="#" className={styles.bookingCardLink}>
+              <Link href="/blue-triangle/room-booking" className={styles.bookingCardLink}>
                 <div className={styles.bookingCard}>
                   <img src="/images/blue-tringle/Book-A-Room.png" alt="Room Booking" />
                   <h4>Room Booking</h4>
                 </div>
               </Link>
-              <Link href="#" className={styles.bookingCardLink}>
+              <Link href="/blue-triangle/meeting-event-spaces" className={styles.bookingCardLink}>
                 <div className={styles.bookingCard}>
                   <img src="/images/blue-tringle/Meeting-Event-Spaces.png" alt="Meeting & Event Spaces" />
                   <h4>Meeting & Event Spaces</h4>
                 </div>
               </Link>
-              <Link href="#" className={styles.bookingCardLink}>
+              <Link href="/blue-triangle/explore-delhi" className={styles.bookingCardLink}>
                 <div className={styles.bookingCard}>
                   <img src="/images/blue-tringle/Explore-Delhi.png" alt="Explore Delhi" />
                   <h4>Explore Delhi</h4>

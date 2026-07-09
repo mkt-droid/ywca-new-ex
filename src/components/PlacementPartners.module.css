@@ -22,7 +22,7 @@
   flex: 0 0 var(--slide-width);
   width: var(--slide-width);
   flex-shrink: 0;
-  padding: 0 15px;
+  padding: 0 0.95rem;
   display: flex;
   align-items: center;
   justify-content: center;

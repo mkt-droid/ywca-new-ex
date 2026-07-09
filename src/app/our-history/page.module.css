@@ -66,7 +66,7 @@
 .imageCaption {
     background-color: #9f369d; /* exact purple from screenshot */
     color: #fff;
-    padding: 10px 15px;
+    padding: 10px 0.95rem;
     font-size: 14px;
     font-weight: 400;
     text-align: left;

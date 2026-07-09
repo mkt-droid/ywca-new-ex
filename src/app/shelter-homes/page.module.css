@@ -9,11 +9,12 @@
 
 .introText {
   text-align: center;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 1.25rem;
+  line-height: 1.5;
   color: #000000;
+  font-weight: 300;
 }
 
 .hopeSection {
@@ -22,10 +23,11 @@
 
 .sectionHeading {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.25rem;
   font-weight: 600;
   color: #000000;
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .sliderContainer {
@@ -70,9 +72,10 @@
 
 .hopeCard {
   background: #fff;
+  border: 1px solid #ffd2b2;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 15px #0000000d;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -93,33 +96,72 @@
 
 .hopeCardTitle {
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 500;
   color: #000000;
-  margin-bottom: 15px;
+  margin-bottom: 0.95rem;
 }
 
 .hopeCardText {
-  font-size: 15px;
+  font-size: 0.95rem;
   color: #000000;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   flex: 1;
+}
+
+.hopeCardsRow {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 0.95rem;
+}
+
+.hopeCardsRow::-webkit-scrollbar {
+  display: none;
+}
+
+.hopeCardsRow {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hopeCardWrapper {
+  flex: 0 0 calc(33.333% - 16px);
+}
+
+@media (max-width: 992px) {
+  .hopeCardWrapper {
+    flex: 0 0 calc(50% - 12px);
+  }
+}
+
+@media (max-width: 768px) {
+  .hopeCardWrapper {
+    flex: 0 0 100%;
+  }
 }
 
 .readMoreBtn {
   align-self: center;
-  background-color: #1a1668;
-  color: #fff;
+  background-color: #242278;
+  color: white;
+  padding: 12px 50px;
+  border-radius: 30px;
   border: none;
-  padding: 8px 30px;
-  border-radius: 25px;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   font-weight: 500;
-  transition: background 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .readMoreBtn:hover {
-  background-color: #0b074a;
+  background-color: #BE00C4;
+  color: white;
+  transform: translateY(-2px);
 }
 
 /* ── BLUE BANNER ── */
@@ -127,19 +169,20 @@
   background-color: #02006c;
   color: #fff;
   text-align: center;
-  padding: 25px 15px;
+  padding: 25px 0.95rem;
 }
 
 .blueBanner h2 {
   font-size: 2.2rem;
   font-weight: 600;
   margin: 0;
-  line-height: 1.3;
+  line-height: 1;
 }
 
 .blueBanner h2 span {
-  font-size: 1.6rem;
+  font-size: 1.34rem;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 /* ── DETAILS SECTION ── */
@@ -149,12 +192,13 @@
 }
 
 .centerDesc {
-  text-align: left;
-  max-width: 900px;
+  text-align: center;
+  max-width: 860px;
   margin: 0 auto 40px;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   color: #000000;
-  line-height: 1.6;
+  line-height: 1.5;
+  font-weight: 300;
 }
 
 .galleryGrid {
@@ -174,7 +218,7 @@
   background-color: #fcefe6;
   padding: 30px;
   border-radius: 0;
-  border: 1px solid #eba471;
+  border: 2px solid #eba471;
   max-width: 900px;
   margin: 0 auto 30px;
 }
@@ -197,15 +241,13 @@
   margin: 0;
 }
 
-.requirementsBox {
-  border: 1px solid #f2d8c9;
-}
+
 
 .reqTitle {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 600;
   color: #000000;
-  margin-bottom: 15px;
+  margin-bottom: 0.95rem;
 }
 
 .customList {
@@ -216,10 +258,12 @@
 
 .customList li {
   position: relative;
-  padding-left: 20px;
-  margin-bottom: 10px;
-  font-size: 15px;
+  padding-left: 30px;
+  margin-bottom: .5em;
+  font-size: 1.1em;
   color: #000000;
+  line-height: 1.5em;
+  font-weight: 300;
 }
 
 .customList li::before {
@@ -262,7 +306,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  gap: 0.95rem;
 }
 
 .purpleBtn {
@@ -278,7 +322,6 @@
 
 .splitBtnWrap {
   display: inline-flex;
-  border-radius: 25px;
   overflow: hidden;
   border: 1px solid #d49c5e;
   text-decoration: none;
@@ -287,27 +330,28 @@
 .splitBtnLeft {
   background-color: #a212b5;
   color: #fff;
-  padding: 12px 20px;
-  font-size: 15px;
-  font-weight: 400;
+  padding: 18px 20px;
+  font-size: 1.1em;
+  font-weight: 300;
   border-right: 1px solid #d49c5e;
-  width: 280px;
+  white-space: nowrap;
   text-align: center;
+  width: 330px;
 }
 
 .splitBtnRight {
   background-color: #a212b5;
   color: #fff;
-  padding: 12px 20px;
-  font-size: 15px;
-  font-weight: 400;
+  padding: 18px 20px;
+  font-size: 1.1em;
+  font-weight: 300;
   width: 180px;
   text-align: center;
 }
 
 .contactSubtitle {
   color: #02006c;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1.1rem;
   text-align: center;
   margin-bottom: 20px;
@@ -342,7 +386,7 @@
   }
 
   .sliderContainer {
-    padding: 0 15px;
+    padding: 0 0.95rem;
   }
 
   .blueBanner h2 {
@@ -361,7 +405,7 @@
 }
 
 .gallerySection {
-  padding: 1rem 0;
+  padding: 0.95rem 0;
   text-align: center;
   max-width: 700px;
   margin: 0 auto;
@@ -370,7 +414,7 @@
 .inlineGalleryContainer {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 0.95rem;
   max-width: 1000px;
   margin: 0 auto;
   position: relative;
@@ -457,7 +501,7 @@
   cursor: pointer;
 
   .gallerySection {
-    padding: 1rem 0;
+    padding: 0.95rem 0;
     text-align: center;
     max-width: 700px;
     margin: 0 auto;
@@ -466,7 +510,7 @@
   .inlineGalleryContainer {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 0.95rem;
     max-width: 1000px;
     margin: 0 auto;
     position: relative;

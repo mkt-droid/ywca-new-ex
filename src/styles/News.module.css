@@ -68,7 +68,7 @@
 
 .titleWrapper{
   background-color: #ffffff;
-  padding: 15px;
+  padding: 0.95rem;
   min-height: 105px;
 }
 .cardTitle {
@@ -100,7 +100,7 @@
     padding: 10px 20px;
 }
 .cardText {
-  font-size: 15px;
+  font-size: 0.95rem;
   color: rgba(255, 255, 255, 0.85);
   line-height: 25px;
   margin: 0;

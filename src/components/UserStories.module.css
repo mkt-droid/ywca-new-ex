@@ -21,8 +21,8 @@
 .storyHeader {
   display: flex;
   align-items: center;
-  gap: 15px;
-  margin-bottom: 15px;
+  gap: 0.95rem;
+  margin-bottom: 0.95rem;
 }
 
 .storyAvatar {

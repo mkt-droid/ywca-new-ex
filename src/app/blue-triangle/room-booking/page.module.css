@@ -26,18 +26,18 @@
 
 .bookingBar {
   background-color: #0b077c;
-  padding: 15px 20px;
+  padding: 0.95rem 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  margin-left: -15px;
+  margin-left: -0.95rem;
   width: 900px;
   max-width: calc(100% + 30px);
 }
 
 .bookingTitle {
   color: #fff;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 600;
-  margin-bottom: 15px;
+  margin-bottom: 0.95rem;
   text-transform: uppercase;
 }
 
@@ -53,7 +53,7 @@
   display: flex;
   align-items: center;
   background: #ebebeb;
-  padding: 0 15px;
+  padding: 0 0.95rem;
   border-radius: 4px;
 }
 
@@ -77,7 +77,7 @@
 }
 
 .bookBtn {
-  background-color: #a42c9f;
+  background-color: #BE00C4;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -97,10 +97,10 @@
 }
 
 .overviewTextWrapper p {
-  font-size: 15px;
-  line-height: 1.5;
+  font-size: 0.95rem;
+  line-height: 1.6;
   color: #444;
-  margin-bottom: 15px;
+  margin-bottom: 0.95rem;
 }
 
 .overviewImgWrapper img {
@@ -159,7 +159,7 @@
 
 .bookingCard h4 {
   font-size: 0.93rem;
-  padding: 15px;
+  padding: 0.95rem;
   margin: 0;
   font-weight: 500;
 }
@@ -179,7 +179,7 @@
 .instaGrid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 15px;
+  gap: 0.95rem;
 }
 
 .instaGrid img {

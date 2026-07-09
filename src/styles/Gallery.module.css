@@ -147,7 +147,7 @@
   width: 100%;
   background-color: #636168; /* Dark grey from mockup */
   color: #d0d0d0;
-  padding: 15px 25px;
+  padding: 0.95rem 25px;
   font-size: 0.95rem;
   text-align: left;
 }
@@ -199,7 +199,7 @@
 
     .closeBtn {
       top: 10px;
-      right: 15px;
+      right: 0.95rem;
       font-size: 24px;
       z-index: 20;
     }

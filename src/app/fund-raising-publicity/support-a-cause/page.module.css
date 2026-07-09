@@ -59,7 +59,7 @@
 
 .cardItem:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 0.95rem rgba(0,0,0,0.1);
 }
 
 .cardImageWrapper {
@@ -68,7 +68,7 @@
   position: relative;
   overflow: hidden;
   border-radius: 2px;
-  margin-bottom: 15px;
+  margin-bottom: 0.95rem;
 }
 
 .cardImage {
@@ -83,7 +83,7 @@
 }
 
 .cardBody {
-  padding: 5px 10px 15px;
+  padding: 5px 10px 0.95rem;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -100,7 +100,7 @@
 .cardText {
   font-size: 0.85rem;
   color: #555;
-  line-height: 1.5;
+  line-height: 1.6;
   margin-bottom: 20px;
   flex-grow: 1;
 }
@@ -132,7 +132,7 @@
       padding: 40px 0;
     }
     .sectionTitle {
-      margin-bottom: 15px;
+      margin-bottom: 0.95rem;
     }
     .sectionText {
       margin-bottom: 30px;

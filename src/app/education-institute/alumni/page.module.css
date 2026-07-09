@@ -7,7 +7,7 @@
 .alumniCard {
   background-color: #fff;
   border: 1px solid #d4a976;
-  padding: 15px;
+  padding: 0.95rem;
   margin-bottom: 30px;
   height: calc(100% - 30px);
   display: flex;
@@ -34,11 +34,11 @@
 }
 
 .alumniName {
-  font-size: 15px;
+  font-size: 0.95rem;
   font-weight: 700;
   color: #111;
   text-transform: uppercase;
-  margin-top: 15px;
+  margin-top: 0.95rem;
   margin-bottom: 4px;
 }
 

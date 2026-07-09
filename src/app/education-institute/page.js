@@ -110,7 +110,7 @@ export default function EducationInstitutePage() {
               <div className={styles.newsCard}>
                 <img src={news.image} alt="Academic News" className={styles.newsImage} />
                 <div className={styles.newsContent}>
-                  <h5 className={styles.newsTitle} style={{ fontSize: '1rem', fontWeight: 'normal', margin: 0 }}>{news.title}</h5>
+                  <h5 className={styles.newsTitle} style={{ fontSize: '0.95rem', fontWeight: 'normal', margin: 0 }}>{news.title}</h5>
                 </div>
               </div>
             </div>

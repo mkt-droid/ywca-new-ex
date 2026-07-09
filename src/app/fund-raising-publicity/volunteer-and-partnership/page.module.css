@@ -34,7 +34,7 @@
   padding: 40px;
   max-width: 1000px;
   margin: 0 auto;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 0.95rem rgba(0, 0, 0, 0.05);
 }
 
 .formHeader {
@@ -53,7 +53,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 15px;
+  margin-right: 0.95rem;
   font-size: 1.2rem;
 }
 
@@ -89,7 +89,7 @@
 
 .formControl {
   width: 100%;
-  padding: 10px 15px;
+  padding: 10px 0.95rem;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 0.9rem;
@@ -104,7 +104,7 @@
 
 .formSelect {
   width: 100%;
-  padding: 10px 15px;
+  padding: 10px 0.95rem;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 0.9rem;
@@ -131,7 +131,7 @@
 
 .fileInput {
   flex: 1;
-  padding: 10px 15px;
+  padding: 10px 0.95rem;
   font-size: 0.9rem;
   color: #666;
   border: none;
@@ -183,7 +183,7 @@
       margin-top: 2px;
     }
     .pageTitle {
-      margin-bottom: 15px;
+      margin-bottom: 0.95rem;
     }
     .pageDescription {
       margin-bottom: 30px;
