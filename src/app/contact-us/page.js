@@ -145,20 +145,20 @@ export default function ContactUsPage() {
             {/* Left Col */}
             <div className="col-lg-7 col-md-12 d-flex flex-column justify-content-start pt-lg-2">
               <div className={styles.leftContentWrapper}>
-                <h1 className={styles.mainTitle}>We'd love to hear<br/>from you</h1>
+                <h1 className={styles.mainTitle}>We'd love to hear<br />from you</h1>
                 <p className={styles.subText}>
-                  Have any question in mind or want to enquire? Please feel<br/>to contact us through the form or the following details.
+                  Have any question in mind or want to enquire? Please feel to contact us through the form or the following details.
                 </p>
               </div>
             </div>
-            
+
             {/* Right Col */}
             <div className="col-lg-5 col-md-12 mt-5 mt-lg-0">
               <div className={styles.letsTalkBlock}>
                 <div className={styles.talkHeaderBlock}>
                   <h3 className={styles.letsTalkTitle}>Let's talk!</h3>
                 </div>
-                
+
                 <div className={styles.contactBlock}>
                   <h4 className={styles.contactTitle}>General Secretary</h4>
                   <p className={styles.contactDetails}>YWCA of Delhi 1, Ashoka Road, New Delhi 110001</p>
@@ -193,7 +193,7 @@ export default function ContactUsPage() {
                 <input type="text" className={styles.formInput} placeholder="Your last name" />
               </div>
             </div>
-            
+
             <div className="row mb-4">
               <div className="col-md-6 mb-4 mb-md-0">
                 <label className={styles.formLabel}>Email id</label>
@@ -204,14 +204,14 @@ export default function ContactUsPage() {
                 <input type="text" className={styles.formInput} placeholder="Subject of message" />
               </div>
             </div>
-            
+
             <div className="row mb-4">
               <div className="col-12">
                 <label className={styles.formLabel}>Message</label>
                 <textarea className={styles.formTextarea} rows="5" placeholder="Type your Message"></textarea>
               </div>
             </div>
-            
+
             <div className="text-center">
               <button type="button" className={styles.submitBtn}>Send message</button>
             </div>
@@ -221,13 +221,13 @@ export default function ContactUsPage() {
 
       {/* Map Section */}
       <section className={styles.mapSection}>
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7004.289066903638!2d77.210756!3d28.62543!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd4c62218e29%3A0xc210cfdf8972010b!2sYoung%20Women%20Christian%20Association!5e0!3m2!1sen!2sus!4v1783647857005!5m2!1sen!2sus" 
-          width="100%" 
-          height="450" 
-          style={{border:0}} 
-          allowFullScreen="" 
-          loading="lazy" 
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7004.289066903638!2d77.210756!3d28.62543!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd4c62218e29%3A0xc210cfdf8972010b!2sYoung%20Women%20Christian%20Association!5e0!3m2!1sen!2sus!4v1783647857005!5m2!1sen!2sus"
+          width="100%"
+          height="450"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
           referrerPolicy="strict-origin-when-cross-origin">
         </iframe>
       </section>

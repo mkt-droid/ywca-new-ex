@@ -93,7 +93,7 @@ export default function ShelterHomesPage() {
     }
   ];
 
-  const galleryImages = Array.from({ length: 10 }, (_, i) => `/images/shelter-homes/gallery-${i + 1}.jpg`);
+  const galleryImages = Array.from({ length: 25 }, (_, i) => `/images/shelter-homes/Gallery/gallery-img-${i + 1}.jpg`);
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const thumbnailContainerRef = useRef(null);
@@ -178,20 +178,22 @@ export default function ShelterHomesPage() {
           <div className={styles.infoBox}>
             <div style={{ marginBottom: '20px', textAlign: 'left' }}>
               <h4 style={{ color: '#000000', fontSize: '1.2rem', fontWeight: 600, marginBottom: '10px' }}>Key highlights</h4>
-              <p style={{ margin: 0, fontSize: '1rem', color: '#000' }}>Shelter Home Capacity: 12 residents</p>
+              <p style={{ margin: 0, fontSize: '1rem', color: '#000', display: 'flex', alignItems: 'flex-start' }}>
+                <span className={styles.highlightCircle}></span>Shelter Home Capacity: 12 residents
+              </p>
             </div>
             <div className="row">
               <div className="col-md-6">
                 <ul className={styles.customList}>
-                  <li>Safe and secure accommodation with nutritious meals</li>
-                  <li>Clothing and essential toiletries</li>
-                  <li>Emotional and psychological counselling</li>
+                  <li><i className="bi bi-circle"></i>Safe and secure accommodation with nutritious meals</li>
+                  <li><i className="bi bi-circle"></i>Clothing and essential toiletries</li>
+                  <li><i className="bi bi-circle"></i>Emotional and psychological counselling</li>
                 </ul>
               </div>
               <div className="col-md-6">
                 <ul className={styles.customList}>
-                  <li>Medical care as needed</li>
-                  <li>Skill development and vocational training</li>
+                  <li><i className="bi bi-circle"></i>Medical care as needed</li>
+                  <li><i className="bi bi-circle"></i>Skill development and vocational training</li>
                 </ul>
               </div>
             </div>
@@ -231,26 +233,26 @@ export default function ShelterHomesPage() {
           <div className={styles.infoBox}>
             <div style={{ marginBottom: '20px', textAlign: 'left' }}>
               <h4 style={{ color: '#000000', fontSize: '1.2rem', fontWeight: 600, marginBottom: '10px' }}>Key highlights</h4>
-              <ul className={styles.customList} style={{ margin: 0 }}>
-                <li>Jahangirpuri Shelter Home: 10 residents</li>
-                <li>Sarai Rohilla Shelter Home: 14 residents</li>
+              <ul style={{ margin: 0, listStyle: 'none', paddingLeft: 0, color: '#000' }}>
+                <li style={{ marginBottom: '8px', display: 'flex', alignItems: 'flex-start' }}><span className={styles.highlightCircle}></span>Jahangirpuri Shelter Home: 10 residents</li>
+                <li style={{ display: 'flex', alignItems: 'flex-start' }}><span className={styles.highlightCircle}></span>Sarai Rohilla Shelter Home: 14 residents</li>
               </ul>
             </div>
             <div className="row">
               <div className="col-md-6">
                 <ul className={styles.customList}>
-                  <li>Safe and comfortable accommodation with food</li>
-                  <li>Clothing and basic necessities</li>
-                  <li>Pre-natal (ANC) and post-natal (PNC) medical care</li>
-                  <li>Psychiatric consultation (through IHBAS Hospital)</li>
+                  <li><i className="bi bi-circle"></i>Safe and comfortable accommodation with food</li>
+                  <li><i className="bi bi-circle"></i>Clothing and basic necessities</li>
+                  <li><i className="bi bi-circle"></i>Pre-natal (ANC) and post-natal (PNC) medical care</li>
+                  <li><i className="bi bi-circle"></i>Psychiatric consultation (through IHBAS Hospital)</li>
                 </ul>
               </div>
               <div className="col-md-6">
                 <ul className={styles.customList}>
-                  <li>Individual and group counseling</li>
-                  <li>Guidance on child care and parenting</li>
-                  <li>Vocational training for financial independence</li>
-                  <li>Support for rehabilitation and reintegration</li>
+                  <li><i className="bi bi-circle"></i>Individual and group counseling</li>
+                  <li><i className="bi bi-circle"></i>Guidance on child care and parenting</li>
+                  <li><i className="bi bi-circle"></i>Vocational training for financial independence</li>
+                  <li><i className="bi bi-circle"></i>Support for rehabilitation and reintegration</li>
                 </ul>
               </div>
             </div>
@@ -266,15 +268,15 @@ export default function ShelterHomesPage() {
               <div className="col-md-6">
                 <h5 className={styles.reqTitle}>Our shelter homes are for:</h5>
                 <ul className={styles.customList}>
-                  <li>Women in distress (18 - 60 years)</li>
-                  <li>Destitute pregnant and lactating women without shelter (18 year & above)</li>
+                  <li><i className="bi bi-circle"></i>Women in distress (18 - 60 years)</li>
+                  <li><i className="bi bi-circle"></i>Destitute pregnant and lactating women without shelter (18 year & above)</li>
                 </ul>
               </div>
               <div className="col-md-6">
                 <h5 className={styles.reqTitle}>Women may:</h5>
                 <ul className={styles.customList}>
-                  <li>Approach the shelter directly</li>
-                  <li>Be referred by Police, NGOs, or any concerned individual</li>
+                  <li><i className="bi bi-circle"></i>Approach the shelter directly</li>
+                  <li><i className="bi bi-circle"></i>Be referred by Police, NGOs, or any concerned individual</li>
                 </ul>
               </div>
             </div>

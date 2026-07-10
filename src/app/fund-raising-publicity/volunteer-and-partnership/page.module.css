@@ -17,8 +17,8 @@
   max-width: 900px;
   margin: 0 auto 50px auto;
   color: #000000;
-  line-height: 1.6;
-  font-size: 0.95rem;
+  line-height: 1.5;
+  font-size: 1rem;
 }
 
 .contentWrapper {
@@ -145,7 +145,7 @@
   border: none;
   padding: 10px 30px;
   border-radius: 30px;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.3s;

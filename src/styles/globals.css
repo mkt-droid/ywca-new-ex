@@ -20,7 +20,7 @@
    color: #000000;
    overflow-x: hidden;
    background-color: #FCF7F7;
-   line-height: 1.6;
+   line-height: 1.5;
  }
 
  h1,
@@ -34,7 +34,9 @@
 
  p {
    color: #000000;
-   line-height: 1.6;
+   font-size: 1rem;
+   line-height: 1.5;
+   font-weight: 400;
  }
 
  .container {
@@ -1238,7 +1240,7 @@
    border: none;
    border-bottom: 1px solid #2a3785;
    padding: 10px 20px;
-   font-size: 0.95rem;
+   font-size: 1rem;
    font-weight: 400;
    text-align: left;
    cursor: pointer;
@@ -1416,7 +1418,7 @@
    background: rgba(150, 116, 57, 0.9);
    padding: 10px 10px 10px 10px;
    color: #fff;
-   font-size: 0.95rem;
+   font-size: 1rem;
    font-weight: 500;
  }
 

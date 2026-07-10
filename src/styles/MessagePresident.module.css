@@ -57,14 +57,14 @@
 }
 
 .heroText {
-    font-size: 0.95rem;
+    font-size: 1rem;
     line-height: 25px;
     color: #555;
     margin: 0;
 }
 
 .msgText{
-     font-size: 0.95rem;
+     font-size: 1rem;
     line-height: 25px;
     color: #555;
     margin: 0;
@@ -241,7 +241,7 @@
     color: #555;
     line-height: 2;
     margin-bottom: 18px;
-    font-size: 0.95rem;
+    font-size: 1rem;
 }
 
 .signature h3 {

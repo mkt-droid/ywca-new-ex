@@ -91,8 +91,8 @@
 
 .sectionText {
   color: #000000;
-  font-size: 0.95rem;
-  line-height: 1.6;
+  font-size: 1rem;
+  line-height: 1.5;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -145,10 +145,10 @@
 }
 
 .learningText {
-  font-size: 0.95rem;
+  font-size: 1rem;
   opacity: 0.9;
   margin-bottom: 30px;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 .downloadBtn {
@@ -231,7 +231,7 @@
   color: #fff;
   padding: 25px 20px;
   border-radius: 8px;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 500;
   width: calc(33.333% - 14px);
   display: flex;
@@ -301,7 +301,7 @@
 .alumniQuote {
   font-size: 12px;
   color: #666;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 .viewMoreBtn {

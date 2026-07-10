@@ -102,9 +102,9 @@
 }
 
 .hopeCardText {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: #000000;
-  line-height: 1.6;
+  line-height: 1.5;
   margin-bottom: 10px;
   flex: 1;
 }
@@ -149,7 +149,7 @@
   padding: 12px 50px;
   border-radius: 30px;
   border: none;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 500;
   display: inline-flex;
   align-items: center;
@@ -244,7 +244,7 @@
 
 
 .reqTitle {
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 600;
   color: #000000;
   margin-bottom: 0.95rem;
@@ -258,22 +258,41 @@
 
 .customList li {
   position: relative;
-  padding-left: 30px;
   margin-bottom: .5em;
-  font-size: 1.1em;
+  font-size: 1rem;
   color: #000000;
   line-height: 1.5em;
-  font-weight: 300;
+  font-weight: 400;
+  display: flex;
+  align-items: flex-start;
 }
 
-.customList li::before {
-  content: '•';
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: #e6235b;
-  font-size: 1.2rem;
-  line-height: 1;
+.customList li i {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 4px solid #e6235b;
+  background-color: #fff;
+  margin-right: 10px;
+  margin-top: 5px;
+  flex-shrink: 0;
+}
+
+.customList li i::before {
+  content: none !important;
+}
+
+.highlightCircle {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 4px solid #e6235b;
+  background-color: #fff;
+  margin-right: 10px;
+  margin-top: 5px;
+  flex-shrink: 0;
 }
 
 /* ── CONTACT SUPPORT ── */
@@ -315,7 +334,7 @@
   border: none;
   padding: 12px 30px;
   border-radius: 25px;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 500;
   transition: background 0.3s;
 }
@@ -363,7 +382,7 @@
   border: none;
   padding: 12px 30px;
   border-radius: 25px;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 500;
   width: 100%;
   max-width: 400px;
@@ -423,16 +442,22 @@
 .mainImageDisplay {
   width: 100%;
   aspect-ratio: 16 / 9;
-  border-radius: 8px;
+  border-radius: 0;
+  border: 1px solid rgba(235, 164, 113, 0.5);
   overflow: hidden;
-  background: #f0f0f0;
+  background-color: #fcefe6;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mainImageDisplay:hover .mainGalleryImage {
+  transform: scale(1.05);
 }
 
 .mainGalleryImage {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  transition: transform 0.5s ease;
 }
 
 .thumbnailSliderWrapper {
@@ -441,8 +466,8 @@
 }
 
 .sliderBtn {
-  background: #f0f0f0;
-  border: none;
+  background: #fff;
+  border: 1px solid #1a1668;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -451,7 +476,7 @@
   justify-content: center;
   cursor: pointer;
   flex-shrink: 0;
-  color: #000000;
+  color: #1a1668;
   font-size: 1.2rem;
   transition: all 0.3s ease;
   position: absolute;
@@ -462,7 +487,8 @@
 }
 
 .sliderBtn:hover {
-  background: #e0e0e0;
+  background: #1a1668;
+  color: #fff;
 }
 
 .prevBtn {
@@ -492,6 +518,8 @@
   /* Firefox */
 }
 
+
+
 .thumbnailItem {
   flex: 0 0 calc(16.666% - 8.333px);
   /* 6 items per row */
@@ -499,156 +527,60 @@
   border-radius: 4px;
   overflow: hidden;
   cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  opacity: 0.7;
+}
 
-  .gallerySection {
-    padding: 0.95rem 0;
-    text-align: center;
-    max-width: 700px;
-    margin: 0 auto;
-  }
+.thumbnailItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-  .inlineGalleryContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 0.95rem;
-    max-width: 1000px;
-    margin: 0 auto;
-    position: relative;
-  }
+.thumbnailItem:hover {
+  opacity: 0.9;
+}
 
-  .mainImageDisplay {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    border-radius: 8px;
-    overflow: hidden;
-    background: #f0f0f0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
+.activeThumbnail {
+  border-color: #c99b45;
+  opacity: 1;
+}
 
-  .mainGalleryImage {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .thumbnailSliderWrapper {
-    position: relative;
-    width: 100%;
-  }
-
-  .sliderBtn {
-    background: #f0f0f0;
-    border: none;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    flex-shrink: 0;
-    color: #000000;
-    font-size: 1.2rem;
-    transition: all 0.3s ease;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  }
-
-  .sliderBtn:hover {
-    background: #e0e0e0;
-  }
-
+@media (max-width: 1200px) {
   .prevBtn {
-    left: -50px;
+    left: 10px;
   }
 
   .nextBtn {
-    right: -50px;
+    right: 10px;
   }
 
-  .thumbnailRow {
-    display: flex;
-    gap: 10px;
-    overflow-x: auto;
-    padding-bottom: 5px;
-    scroll-behavior: smooth;
+  .sliderBtn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    background: rgba(255, 255, 255, 0.8);
   }
+}
 
-  .thumbnailRow::-webkit-scrollbar {
-    display: none;
-  }
-
-  .thumbnailRow {
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
-  }
-
+@media (max-width: 992px) {
   .thumbnailItem {
-    flex: 0 0 calc(16.666% - 8.333px);
-    /* 6 items per row */
-    aspect-ratio: 4 / 3;
-    border-radius: 4px;
-    overflow: hidden;
-    cursor: pointer;
-    border: 3px solid transparent;
-    transition: all 0.3s ease;
-    opacity: 0.7;
+    flex: 0 0 calc(25% - 7.5px);
+    /* 4 items per row */
   }
+}
 
-  .thumbnailItem img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+@media (max-width: 768px) {
+  .thumbnailItem {
+    flex: 0 0 calc(33.333% - 6.66px);
+    /* 3 items per row */
   }
+}
 
-  .thumbnailItem:hover {
-    opacity: 0.9;
-  }
-
-  .activeThumbnail {
-    border-color: #c99b45;
-    opacity: 1;
-  }
-
-  @media (max-width: 1200px) {
-    .prevBtn {
-      left: 10px;
-    }
-
-    .nextBtn {
-      right: 10px;
-    }
-
-    .sliderBtn {
-      width: 40px;
-      height: 40px;
-      font-size: 1.2rem;
-      background: rgba(255, 255, 255, 0.8);
-    }
-  }
-
-  @media (max-width: 992px) {
-    .thumbnailItem {
-      flex: 0 0 calc(25% - 7.5px);
-      /* 4 items per row */
-    }
-  }
-
-  @media (max-width: 768px) {
-    .thumbnailItem {
-      flex: 0 0 calc(33.333% - 6.66px);
-      /* 3 items per row */
-    }
-  }
-
-  .galleryTitlePink {
-    color: #a212b5;
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 25px;
-  }
+.galleryTitlePink {
+  color: #a212b5;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+}

@@ -34,7 +34,7 @@
 
 .bookingTitle {
   color: #fff;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 600;
   margin-bottom: 0.95rem;
   text-transform: uppercase;
@@ -96,8 +96,8 @@
 }
 
 .overviewTextWrapper p {
-  font-size: 0.95rem;
-  line-height: 1.6;
+  font-size: 1rem;
+  line-height: 1.5;
   color: #444;
   margin-bottom: 0.95rem;
 }
@@ -314,9 +314,9 @@
 }
 
 .popupDesc {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: #444;
-  line-height: 1.6;
+  line-height: 1.5;
   margin-bottom: 30px;
 }
 
@@ -325,7 +325,7 @@
   color: #fff;
   border: none;
   padding: 12px 35px;
-  font-size: 0.95rem;
+  font-size: 1rem;
   border-radius: 25px;
   cursor: pointer;
   transition: background 0.3s;

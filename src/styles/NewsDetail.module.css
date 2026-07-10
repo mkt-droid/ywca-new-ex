@@ -138,7 +138,7 @@
 
 .para { 
   color: var(--text-white); 
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height:25px;
   margin-bottom: 20px;
   opacity: 0.9;
@@ -179,7 +179,7 @@
 
 .blockquote p {
   color: var(--text-white);
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-style: italic;
   line-height: 1.7;
   margin: 0;

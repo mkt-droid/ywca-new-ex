@@ -20,10 +20,12 @@
 }
 
 .subText {
-  font-size: 0.95rem;
-  color: #666;
-  line-height: 1.6;
+  font-size: 1rem;
+  color: #000000;
+  font-weight: 400;
+  line-height: 1.5;
   max-width: 380px;
+  margin-bottom: 10px;
 }
 
 .letsTalkBlock {
@@ -68,21 +70,23 @@
 }
 
 .contactDetails {
-  font-size: 0.9rem;
-  color: #666;
-  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #000000;
+  font-weight: 400;
+  margin-bottom: 2px;
 }
 
 .contactDetails a {
-  color: #666;
-  text-decoration: underline;
+  color: #e6235b;
+  text-decoration: none;
 }
 
 /* Form Section */
 .formSection {
   padding: 60px 0;
   background-color: #fff;
-  border-top: 1px solid #f3d4b6; /* The light gold border */
+  border-top: 1px solid #f3d4b6;
+  /* The light gold border */
   border-bottom: 1px solid #f3d4b6;
 }
 
@@ -99,23 +103,26 @@
   display: block;
 }
 
-.formInput, .formTextarea {
+.formInput,
+.formTextarea {
   width: 100%;
   padding: 10px 0;
   border: none;
   border-bottom: 1px solid #777;
   background-color: transparent;
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: #000000;
   border-radius: 0;
 }
 
-.formInput:focus, .formTextarea:focus {
+.formInput:focus,
+.formTextarea:focus {
   outline: none;
   border-bottom-color: #1c2b5e;
 }
 
-.formInput::placeholder, .formTextarea::placeholder {
+.formInput::placeholder,
+.formTextarea::placeholder {
   color: #bbb;
   font-weight: 400;
 }
@@ -126,7 +133,7 @@
   border: none;
   border-radius: 30px;
   padding: 12px 40px;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -151,7 +158,7 @@
 }
 
 .directoryWrapper {
-  max-width: 750px;
+  max-width: 880px;
   margin: 0 auto;
 }
 
@@ -169,13 +176,14 @@
 }
 
 .deptText {
-  font-size: 0.9rem;
-  color: #555;
-  margin-bottom: 6px;
-  line-height: 1.6;
+  font-size: 1rem;
+  color: #000000;
+  font-weight: 400;
+  margin-bottom: 2px;
+  line-height: 1.5;
 }
 
 .deptText a {
-  color: #555;
-  text-decoration: underline;
+  color: #e6235b;
+  text-decoration: none;
 }
