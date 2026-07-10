@@ -222,13 +222,13 @@ export default function ContactUsPage() {
       {/* Map Section */}
       <section className={styles.mapSection}>
         <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.261947833446!2d77.21175651508226!3d28.621913182421867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd34e022f6a1%3A0xc66ea6d0fa284166!2sYWCA%20of%20Delhi!5e0!3m2!1sen!2sin!4v1689123456789!5m2!1sen!2sin" 
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7004.289066903638!2d77.210756!3d28.62543!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd4c62218e29%3A0xc210cfdf8972010b!2sYoung%20Women%20Christian%20Association!5e0!3m2!1sen!2sus!4v1783647857005!5m2!1sen!2sus" 
           width="100%" 
           height="450" 
           style={{border:0}} 
           allowFullScreen="" 
           loading="lazy" 
-          referrerPolicy="no-referrer-when-downgrade">
+          referrerPolicy="strict-origin-when-cross-origin">
         </iframe>
       </section>
 
