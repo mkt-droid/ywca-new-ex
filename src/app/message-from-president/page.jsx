@@ -47,7 +47,7 @@ export default async function Page({ params }) {
                             <p className={styles.detailValue}>{memberData.since}</p>
 
                             <p className={styles.bioText} style={{ marginBottom: "30px" }}>
-                                Lorem Ipsum...to our commitment to gender equality and social inclusion, we carried forward our mission through the three pillars of Strengthening Communities, Building Youth, and Nurturing Nature.
+                                Psalm 106:3 Blessed are those who act justly, who always do what is right.
                             </p>
 
                             <a
@@ -66,14 +66,15 @@ export default async function Page({ params }) {
                         <div className={styles.detailsDivider} />
 
                         <div className={styles.detailsRight}>
-                            <h3 className={styles.detailHeading}>General Secretary Message</h3>
+                            <h3 className={styles.detailHeading}>President YWCA Message</h3>
                             <div className={styles.bioText}>
-                                <p><strong>Placeholder content.</strong> the past year, I feel humbled for the work we have done, for the impact we have made, for the collective growth and resilience we have built, smiles we have brought to many faces and the blessings of the Almighty we have received. The year 2024 - 2025, with all its achievements, learning and challenges has deepened our conviction that empowerment, when rooted in faith and collective action, has the power to transform lives and communities.</p>
-                                <p>Remaining steadfast to our commitment to gender equality and social inclusion, we carried forward our mission through the three pillars of Strengthening Communities, Building Youth, and Nurturing Nature. Our Community Resource Centres continue to thrive as non-judgmental safe spaces where women come together to claim their rights, access entitlements, skilling and livelihood opportunities, strengthen their agency and resilience. In the three Shelter Homes, women in distress and unimaginable situations of violence have found safety, solidarity, healing and pathways to reintegrate. Women survivors of violence, abandonment, and trafficking were supported with dignity and compassion.</p>
-                                <p>Youth empowerment remained a cornerstone. Hundreds of young people were equipped with employable skill training, industry-linked skills, and life orientation—preparing them for taking up leadership and being responsible citizens. Initiatives addressing career exploration, financial literacy sessions, life skill education, gender equality, sexual and reproductive health rights have enabled them to envision futures shaped by resilience and responsibility. Through these efforts, many first-generation learners and earners began rewriting the narratives of their lives differently.</p>
-                                <p>We have dived deeper and made more conscious efforts in strengthening our efforts towards sustainability and care for the nature. While the Eco-Justice Lab has enabled youth to lead sustainable practices, and The ReHome Store became a symbol of dignity and mindful consumption. These were part of a wider effort where communities embraced composting, recycling, and eco entrepreneurship.</p>
-                                <p>This journey was not without challenges. Managing human resource and financial difficulties have led us towards navigating and finding new ways of collective work and system strengthening. Each challenge became an opportunity to strengthen our systems, invest in our staff, and remain faithful to the vision entrusted to us. We learned once again that resilience lies in community, teamwork, and God's grace.</p>
-                                <p>I extend my sincere gratitude to the President, the Board of Management, the Committees, members, staff, partners, and well-wishers for their unwavering dedication and support. The YWCA of Delhi will continue to stand alongside women, children, and youth enabling them to rise with dignity, lead with courage, and live with equality.<br />The legacy continues.</p>
+                                <p>The YWCA of Delhi remains steadfast in its mission to empower women and girls, creating a just, inclusive society where every individual can thrive regardless of caste, creed, race, or economic background. Through our Women’s Training Institute, Working Women’s Hostels, Shelter Homes, and development programmes, we equip women with skills, safety, and support for a life of dignity and independence.</p>
+                                <p>Our dedication to community development reaches beyond urban centers, with our comprehensive Rural and Urban Development Initiatives (RDP & UDP) driving positive change. Our grassroots initiatives aim to transform the lives of girls and women by increasing access to vital resources, including healthcare, education, and protection, ultimately driving lasting positive change.</p>
+
+                                <p>Guided by the Quadrennium Goals, we are committed to strengthening communities, building resilient youth, and nurturing nature. Our ecumenical and interfaith efforts further our vision of unity, justice, and social change. Rooted in faith and service, the YWCA of Delhi is a space of transformation where voices rise, talents bloom, and dreams take flight. Let us continue this journey together, building a future where every woman not only survives but truly thrives.</p>
+
+
+
                                 <div className={styles.signatureBlock}>
                                     <strong>Ms. Rhiya Varghese</strong><br />
                                     <span>President YWCA</span><br />
