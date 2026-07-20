@@ -1,7 +1,7 @@
 .heroSection {
   position: relative;
   width: 100%;
-  min-height: 60vh;
+  min-height: 65vh;
   display: grid;
   grid-template-columns: 1fr;
   align-content: center;
