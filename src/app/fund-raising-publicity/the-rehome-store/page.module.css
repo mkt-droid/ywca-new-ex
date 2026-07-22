@@ -19,8 +19,8 @@
 
 .subTitle {
   text-align: center;
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.7rem;
+  font-weight: 500;
   margin-top: 50px;
   margin-bottom: 30px;
   color: #000;
@@ -54,7 +54,7 @@
   border-radius: 4px;
   border: 1px solid #c9933b;
   margin-bottom: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .donateImg {
@@ -69,10 +69,17 @@
 }
 
 .donateLabel {
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 500;
   color: #000;
 }
+
+.donateDesc {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #000;
+}
+
 
 .exclusionText {
   text-align: center;
@@ -88,7 +95,7 @@
   border: 1px solid #c9933b;
   border-radius: 8px;
   padding: 40px;
-  box-shadow: 0 5px 0.95rem rgba(0,0,0,0.05);
+  box-shadow: 0 5px 0.95rem rgba(0, 0, 0, 0.05);
   margin-bottom: 60px;
 }
 
@@ -118,7 +125,7 @@
 .tabBtnInactive {
   background-color: #1f1966;
   color: #fff;
-  border-color: #1f1966;
+  border-color: #BE00C4;
 }
 
 .tabBtnInactive:hover {
@@ -196,7 +203,8 @@
   color: red;
 }
 
-.formInput, .formSelect {
+.formInput,
+.formSelect {
   padding: 12px 0.95rem;
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -206,7 +214,8 @@
   background-color: #fff;
 }
 
-.formInput:focus, .formSelect:focus {
+.formInput:focus,
+.formSelect:focus {
   border-color: #BE00C4;
 }
 
@@ -314,7 +323,8 @@
   color: #BE00C4;
 }
 
-.lightboxPrev, .lightboxNext {
+.lightboxPrev,
+.lightboxNext {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -328,7 +338,8 @@
   padding: 20px;
 }
 
-.lightboxPrev:hover, .lightboxNext:hover {
+.lightboxPrev:hover,
+.lightboxNext:hover {
   color: #BE00C4;
 }
 
@@ -344,9 +355,11 @@
   .donateGrid {
     grid-template-columns: repeat(3, 1fr);
   }
+
   .locationsGrid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .galleryGrid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -356,28 +369,35 @@
   .donateGrid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .locationsGrid {
     grid-template-columns: 1fr;
   }
-  
+
   .sectionPadding {
     padding: 40px 0;
   }
-  .sectionTitle, .subTitle {
+
+  .sectionTitle,
+  .subTitle {
     margin-top: 25px;
     margin-bottom: 0.95rem;
   }
+
   .sectionText {
     margin-bottom: 25px;
   }
+
   .donateBox {
     padding: 20px;
     margin-bottom: 30px;
   }
+
   .locationsGrid {
     padding: 0.95rem 0;
     margin: 10px 0 0.95rem;
   }
+
   .galleryGrid {
     margin-bottom: 30px;
   }

@@ -192,3 +192,43 @@
       padding: 20px;
     }
   }
+
+.checkboxGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 250px;
+  overflow-y: auto;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.checkboxItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.checkboxItem input[type="checkbox"] {
+  cursor: pointer;
+  margin-top: 3px;
+  width: 16px;
+  height: 16px;
+}
+
+.checkboxItem label {
+  font-size: 0.85rem;
+  color: #444;
+  cursor: pointer;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.helpText {
+  font-size: 0.8rem;
+  color: #777;
+  margin-top: 5px;
+  line-height: 1.4;
+}

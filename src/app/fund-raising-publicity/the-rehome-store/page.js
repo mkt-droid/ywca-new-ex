@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import styles from './page.module.css';
 import Link from 'next/link';
 import SideNavBanner from '@/components/partials/SideNavBanner';
+import CountUp from 'react-countup';
 
 export default function TheRehomeStorePage() {
   const [activeTab, setActiveTab] = useState('drop-off');
@@ -48,12 +49,36 @@ export default function TheRehomeStorePage() {
   ];
 
   const donateItems = [
-    { id: 1, label: "Clothes of all genders & age", image: "/images/the-rehome/Cloths-of-all-genders-age.jpg" },
-    { id: 2, label: "Bags & Accessories", image: "/images/the-rehome/bags.png" },
-    { id: 3, label: "Jewellery", image: "/images/the-rehome/Jewellery.png" },
-    { id: 4, label: "Shoes & Footwear", image: "/images/the-rehome/Shoes-Footwear.png" },
-    { id: 5, label: "Books", image: "/images/the-rehome/Books.png" },
-    { id: 6, label: "Household Items", image: "/images/the-rehome/Household-Items.png" }
+    {
+      id: 1, label: "Clothes of all genders & age",
+      desc: "Casual wear, formal wear, ethnic wear, winter wear and Kids’ clothing in good condition.",
+      image: "/images/the-rehome/Cloths-of-all-genders-age.jpg"
+    },
+    {
+      id: 2, label: "Bags & Accessories",
+      desc: "Handbags, backpacks, wallets, belts, scarves, caps.",
+      image: "/images/the-rehome/bags.png"
+    },
+    {
+      id: 3, label: "Jewellery",
+      desc: "Costume jewellery, bangles, earrings, necklaces, hair accessories",
+      image: "/images/the-rehome/Jewellery.png"
+    },
+    {
+      id: 4, label: "Shoes & Footwear",
+      desc: "Sneakers, sandals, heels, boots, children’s footwear",
+      image: "/images/the-rehome/Shoes-Footwear.png"
+    },
+    {
+      id: 5, label: "Books",
+      desc: "Storybooks, novels, academic books, notebooks, diaries.",
+      image: "/images/the-rehome/Books.png"
+    },
+    {
+      id: 6, label: "Household Items",
+      desc: "Crockery, kitchenware, decorative items. Bedsheets, towels, organizers. Small appliances in working condition",
+      image: "/images/the-rehome/Household-Items.png"
+    }
   ];
 
   const upcyclingGallery = [
@@ -109,12 +134,60 @@ export default function TheRehomeStorePage() {
                     <img src={item.image} alt={item.label} className={styles.donateImg} />
                   </div>
                   <div className={styles.donateLabel}>{item.label}</div>
+                  <p className={styles.donateDesc}>{item.desc}</p>
                 </div>
               ))}
             </div>
             <p className={styles.exclusionText}>
               We don't accept torn or heavily damaged clothes and footwear, broken electronics or appliances, Used cosmetics or toiletries, heavily damaged or unusable books
             </p>
+
+            {/* Impact Highlights */}
+            <div className="mb-5">
+              <h3 className={styles.subTitle} style={{ marginTop: '20px' }}>Impact Highlights</h3>
+              <div className="row g-4 justify-content-center">
+                <div className="col-md-6 col-lg-4 text-center">
+                  <div style={{ backgroundColor: '#fef7f7', padding: '25px 20px', borderRadius: '12px', height: '100%', border: '1px solid #f2dcdc', boxShadow: '0 4px 10px rgba(0,0,0,0.03)' }}>
+                    <h4 style={{ color: '#BE00C4', fontSize: '2.5rem', fontWeight: 600, marginBottom: '10px' }}>
+                      <CountUp end={200} duration={2.5} enableScrollSpy={true} scrollSpyOnce={true} />
+                    </h4>
+                    <p style={{ margin: 0, fontWeight: 500, fontSize: '0.95rem' }}>participants engaged in Awareness and Waste Collection Walks</p>
+                  </div>
+                </div>
+                <div className="col-md-6 col-lg-4 text-center">
+                  <div style={{ backgroundColor: '#fef7f7', padding: '25px 20px', borderRadius: '12px', height: '100%', border: '1px solid #f2dcdc', boxShadow: '0 4px 10px rgba(0,0,0,0.03)' }}>
+                    <h4 style={{ color: '#BE00C4', fontSize: '2.5rem', fontWeight: 600, marginBottom: '10px' }}>
+                      <CountUp end={3200} duration={2.5} separator="," enableScrollSpy={true} scrollSpyOnce={true} /> <span style={{ fontSize: '1.2rem' }}>kgs</span>
+                    </h4>
+                    <p style={{ margin: 0, fontWeight: 500, fontSize: '0.95rem' }}>of kitchen waste collected and processed through sustainable waste management systems</p>
+                  </div>
+                </div>
+                <div className="col-md-6 col-lg-4 text-center">
+                  <div style={{ backgroundColor: '#fef7f7', padding: '25px 20px', borderRadius: '12px', height: '100%', border: '1px solid #f2dcdc', boxShadow: '0 4px 10px rgba(0,0,0,0.03)' }}>
+                    <h4 style={{ color: '#BE00C4', fontSize: '2.5rem', fontWeight: 600, marginBottom: '10px' }}>
+                      <CountUp end={432} duration={2.5} enableScrollSpy={true} scrollSpyOnce={true} /> <span style={{ fontSize: '1.2rem' }}>kgs</span>
+                    </h4>
+                    <p style={{ margin: 0, fontWeight: 500, fontSize: '0.95rem' }}>of organic manure produced from recycled kitchen waste</p>
+                  </div>
+                </div>
+                <div className="col-md-6 col-lg-4 text-center">
+                  <div style={{ backgroundColor: '#fef7f7', padding: '25px 20px', borderRadius: '12px', height: '100%', border: '1px solid #f2dcdc', boxShadow: '0 4px 10px rgba(0,0,0,0.03)' }}>
+                    <h4 style={{ color: '#BE00C4', fontSize: '2.5rem', fontWeight: 600, marginBottom: '10px' }}>
+                      <CountUp end={1000} duration={2.5} separator="," suffix="+" enableScrollSpy={true} scrollSpyOnce={true} /> <span style={{ fontSize: '1.2rem' }}>L</span>
+                    </h4>
+                    <p style={{ margin: 0, fontWeight: 500, fontSize: '0.95rem' }}>of wastewater are reused daily</p>
+                  </div>
+                </div>
+                <div className="col-md-6 col-lg-4 text-center">
+                  <div style={{ backgroundColor: '#fef7f7', padding: '25px 20px', borderRadius: '12px', height: '100%', border: '1px solid #f2dcdc', boxShadow: '0 4px 10px rgba(0,0,0,0.03)' }}>
+                    <h4 style={{ color: '#BE00C4', fontSize: '2.5rem', fontWeight: 600, marginBottom: '10px' }}>
+                      <CountUp end={84} duration={2.5} enableScrollSpy={true} scrollSpyOnce={true} /> <span style={{ fontSize: '1.2rem' }}>kgs</span>
+                    </h4>
+                    <p style={{ margin: 0, fontWeight: 500, fontSize: '0.95rem' }}>of plastic waste collected for recycling initiatives</p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <h3 className={styles.subTitle}>Donate your stuff</h3>
             <div className={styles.donateBox}>

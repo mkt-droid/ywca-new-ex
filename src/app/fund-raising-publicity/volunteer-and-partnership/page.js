@@ -1,5 +1,6 @@
 import React from 'react';
 import SideNavBanner from '@/components/partials/SideNavBanner';
+import MultiSelectDropdown from '@/components/partials/MultiSelectDropdown';
 import styles from './page.module.css';
 
 export const metadata = {
@@ -14,6 +15,29 @@ export default function VolunteerAndPartnershipPage() {
     { title: 'Eco-Justice Lab', icon: 'bi-tree', link: '/fund-raising-publicity/eco-justice-lab' },
     { title: 'Volunteer & Partnership', icon: 'bi-people', link: '/fund-raising-publicity/volunteer-and-partnership' },
     { title: 'Events & Announcements', icon: 'bi-calendar-event', link: '/fund-raising-publicity/events-and-announcements' },
+  ];
+
+  const interestOptions = [
+    { label: 'Volunteer with YWCA of Delhi', value: 'Volunteer with YWCA of Delhi' },
+    { label: 'CSR Partnership', value: 'CSR Partnership' },
+    { label: 'Corporate Donation', value: 'Corporate Donation' },
+    { label: 'Internship Opportunity', value: 'Internship Opportunity' },
+    { label: 'In-Kind Donation', value: 'In-Kind Donation' },
+    { label: 'Event Collaboration', value: 'Event Collaboration' },
+    { label: 'Sustainability & Waste Management Initiatives', value: 'Sustainability & Waste Management Initiatives' },
+    { label: 'Skill Development Programs', value: 'Skill Development Programs' },
+    { label: 'Community Outreach Activities', value: 'Community Outreach Activities' },
+    { label: 'Other', value: 'Other' },
+  ];
+
+  const donationOptions = [
+    { label: 'Financial Contribution', value: 'Financial Contribution' },
+    { label: 'Products / Materials', value: 'Products / Materials' },
+    { label: 'Professional Services', value: 'Professional Services' },
+    { label: 'Sponsorship Support', value: 'Sponsorship Support' },
+    { label: 'Venue / Logistics Support', value: 'Venue / Logistics Support' },
+    { label: 'Educational Materials', value: 'Educational Materials' },
+    { label: 'Other', value: 'Other' },
   ];
 
   return (
@@ -120,27 +144,26 @@ export default function VolunteerAndPartnershipPage() {
                   <div className="col-md-4">
                     <div className={styles.formGroup}>
                       <label className={styles.formLabel}>Choose your area of interest</label>
-                      <select className={styles.formSelect}>
-                        <option value="">Select</option>
-                        {/* Options */}
-                      </select>
+                      <MultiSelectDropdown options={interestOptions} />
                     </div>
                   </div>
                   <div className="col-md-4">
                     <div className={styles.formGroup}>
                       <label className={styles.formLabel}>Choose your Donation / Contribution Details</label>
-                      <select className={styles.formSelect}>
-                        <option value="">Select</option>
-                        {/* Options */}
-                      </select>
+                      <MultiSelectDropdown options={donationOptions} />
                     </div>
                   </div>
                   <div className="col-md-4">
                     <div className={styles.formGroup}>
-                      <label className={styles.formLabel}>Choose your Availability / Timeline</label>
+                      <label className={styles.formLabel}>Preferred Duration / Timeline</label>
                       <select className={styles.formSelect}>
                         <option value="">Select</option>
-                        {/* Options */}
+                        <option value="One-time Support">One-time Support</option>
+                        <option value="Short-term Collaboration">Short-term Collaboration</option>
+                        <option value="Long-term Partnership">Long-term Partnership</option>
+                        <option value="Ongoing Volunteering">Ongoing Volunteering</option>
+                        <option value="Internship (1–3 Months)">Internship (1–3 Months)</option>
+                        <option value="Internship (3–6 Months)">Internship (3–6 Months)</option>
                       </select>
                     </div>
                   </div>
@@ -159,10 +182,13 @@ export default function VolunteerAndPartnershipPage() {
                   </div>
                   <div className="col-md-6">
                     <div className={styles.formGroup}>
-                      <label className={styles.formLabel}>Upload Supporting Documents</label>
+                      <label className={styles.formLabel}>Supporting Documents (Optional)</label>
                       <div className={styles.fileUploadWrapper}>
                         <input type="file" className={styles.fileInput} />
                       </div>
+                      <p className={styles.helpText}>
+                        <strong>Examples:</strong> Company Profile, CSR Proposal, Resume/CV, Portfolio, Partnership Deck, Donation Details
+                      </p>
                     </div>
                   </div>
                 </div>

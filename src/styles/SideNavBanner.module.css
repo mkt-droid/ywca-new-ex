@@ -9,12 +9,12 @@
   overflow: hidden;
 }
 
-.heroSection > :global(.container),
-.heroSection > .heroRightMenu {
+.heroSection> :global(.container),
+.heroSection>.heroRightMenu {
   grid-area: 1 / 1;
 }
 
-.heroSection > :global(.container) {
+.heroSection> :global(.container) {
   margin-bottom: 40px;
 }
 
@@ -53,9 +53,9 @@
 }
 
 .heroTitle {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 500;
-  line-height: 1;
+  line-height: 0.95;
   margin-bottom: 0;
   letter-spacing: 1px;
 }
@@ -66,9 +66,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 10px;
+  gap: 5px;
   z-index: 10;
-  margin: 25px 0; /* Space above and below */
+  margin: 25px 0;
+  /* Space above and below */
 }
 
 .menuItem {
@@ -123,7 +124,7 @@
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   z-index: 15;
-  box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .socialIcon img {
