@@ -13,7 +13,7 @@ const executiveTeam = [
   },
   {
     name: 'Ms. Ruby Rajeev',
-    title: 'Asst. Manager, HR',
+    title: 'Administrative Manager',
     image: '/images/executive/team/Ms.-Ruby-Rajeev.png',
     description: 'Dummy Ipsum is simply dummy filler text of the printing and type setting & interactive media.'
   },
@@ -94,7 +94,7 @@ const ExecutiveTeam = () => {
     <>
       <SideNavBanner
         title={<>EXECUTIVE <br /> TEAM</>}
-        bgImage="/images/executive/team/executive-bnr.jpg"
+        bgImage="/images/01-Banner-Ex-team.jpg"
         contentMarginTop="25vh"
         grayscale={false}
       />

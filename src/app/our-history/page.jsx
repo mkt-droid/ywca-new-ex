@@ -6,7 +6,7 @@ const OurHistory = () => {
     <>
       <SideNavBanner
         title={<>OUR <br /> HISTORY</>}
-        bgImage="/images/History-banner-img-2.jpg"
+        bgImage="/images/01-Banner-History.jpg"
         contentMarginTop="25vh"
         grayscale={false}
       />
