@@ -114,7 +114,7 @@ const MeetingEventSpaces = () => {
             className={styles.stamp}
           />
           <h1 className={styles.heroTitle}>
-            INDOOR &amp; OUTDOOR<br />MEETING &amp; EVENTS<br />SPACES
+            MEETING &amp; EVENTS<br />SPACES
           </h1>
         </div>
       </SideNavBanner>
@@ -190,7 +190,7 @@ const MeetingEventSpaces = () => {
                 </div>
               ))}
             </div>
-            
+
             <div className={styles.bigSpaceWrapper} onClick={() => openPopup(4)}>
               <img src={spacesData[4].image} alt={spacesData[4].title} />
               <div className={styles.bigSpaceTitle}>{spacesData[4].title}</div>
@@ -220,7 +220,7 @@ const MeetingEventSpaces = () => {
       {isPopupOpen && (
         <div className={styles.popupOverlay} onClick={closePopup}>
           <button className={styles.closeBtn} onClick={closePopup}>&times;</button>
-          
+
           <div className={styles.popupContent} onClick={(e) => e.stopPropagation()}>
             <button className={`${styles.navBtn} ${styles.prevBtn}`} onClick={prevSpace}>
               <i className="bi bi-chevron-left"></i>

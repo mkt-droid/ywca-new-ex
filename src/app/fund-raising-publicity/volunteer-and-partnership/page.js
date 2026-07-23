@@ -174,10 +174,7 @@ export default function VolunteerAndPartnershipPage() {
                   <div className="col-md-6">
                     <div className={styles.formGroup}>
                       <label className={styles.formLabel}>Preferred Start Date</label>
-                      <select className={styles.formSelect}>
-                        <option value="">Select</option>
-                        {/* Options */}
-                      </select>
+                      <input type="date" className={styles.formControl} />
                     </div>
                   </div>
                   <div className="col-md-6">

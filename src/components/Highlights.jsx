@@ -44,8 +44,8 @@ const PAGES = [
     },
     {
       src: "/images/focus/slide-2/Membership-Programs.jpg",
-      caption: "Membership and Programs",
-      link: ''
+      caption: "Membership and Program Department",
+      link: '/membership-and-programs'
     },
     {
       src: "/images/focus/slide-2/Religious.jpg",
@@ -55,7 +55,7 @@ const PAGES = [
     {
       src: "/images/focus/slide-2/Working-women-hostel.jpg",
       caption: "Working Women Hostels",
-      link: ''
+      link: '/working-women-hostel'
     },
     {
       src: "/images/focus/slide-2/Shelter-Homes.jpg",
@@ -65,7 +65,7 @@ const PAGES = [
     {
       src: "/images/focus/slide-2/Youth.jpg",
       caption: "Youth",
-      link: ''
+      link: '/youth-department'
     },
   ],
 

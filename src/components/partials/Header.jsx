@@ -102,7 +102,7 @@ const Header = () => {
 
                     </a>
 
-                    <a className="dropdown-item" href="/vission-mission">
+                    <a className="dropdown-item" href="/vision-mission">
                       Vision/ Mission
 
                     </a>
@@ -153,7 +153,7 @@ const Header = () => {
                   Fund raising & Publicity (FRAP)
                 </a>
 
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="/membership-and-programs">
                   Membership and Programs
                 </a>
 
@@ -169,7 +169,7 @@ const Header = () => {
                   Shelter Homes
                 </a>
 
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="/youth-department">
                   Youth
                 </a>
               </div>
@@ -199,7 +199,7 @@ const Header = () => {
                   Education Institutes
                 </a>
 
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="/working-women-hostel">
                   Working Women Hostels
                 </a>
               </div>

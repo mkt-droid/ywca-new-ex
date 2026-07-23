@@ -61,14 +61,14 @@ export default function EcoJusticeLabPage() {
   ];
 
   const galleryImages = [
-    "/images/justice-lab/gallery-1.jpg",
-    "/images/justice-lab/gallery-2.jpg",
-    "/images/justice-lab/gallery-3.jpg",
-    "/images/justice-lab/gallery-4.jpg",
-    "/images/justice-lab/gallery-5.jpg",
-    "/images/justice-lab/gallery-6.jpg",
-    "/images/justice-lab/gallery-7.jpg",
-    "/images/justice-lab/gallery-8.jpg"
+    "/images/fund-raising/gallery/eco-justice-lab/-01.jpg",
+    "/images/fund-raising/gallery/eco-justice-lab/-02.jpg",
+    "/images/fund-raising/gallery/eco-justice-lab/-03.jpg",
+    "/images/fund-raising/gallery/eco-justice-lab/-04.jpg",
+    "/images/fund-raising/gallery/eco-justice-lab/-05.jpg",
+    "/images/fund-raising/gallery/eco-justice-lab/-06.jpg",
+    "/images/fund-raising/gallery/eco-justice-lab/-07.jpg",
+    "/images/fund-raising/gallery/eco-justice-lab/-08.jpg"
   ];
 
   const openLightbox = (images, index) => {

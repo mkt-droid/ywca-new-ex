@@ -149,6 +149,7 @@
   opacity: 0.9;
   margin-bottom: 30px;
   line-height: 1.5;
+  color: #fff;
 }
 
 .downloadBtn {
@@ -351,27 +352,28 @@
     bottom: auto;
     margin: -20px auto 30px;
   }
-  
+
   .aboutSection {
     margin-top: 40px !important;
   }
 }
 
 @media (max-width: 768px) {
+
   .sectionTitle,
   .learningTitle {
     font-size: 1.6rem;
   }
-  
+
   .learningSection,
   .whyUsSection {
     padding: 50px 0;
   }
-  
+
   .partnersLogos {
     gap: 20px;
   }
-  
+
   .whyUsPill {
     width: calc(50% - 10px);
   }
@@ -381,12 +383,12 @@
   .whyUsPill {
     width: 100%;
   }
-  
+
   .pillLine {
     padding: 6px 12px;
     font-size: 12px;
   }
-  
+
   .alumniImage {
     height: 350px;
   }

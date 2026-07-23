@@ -52,55 +52,55 @@ export default function TheRehomeStorePage() {
     {
       id: 1, label: "Clothes of all genders & age",
       desc: "Casual wear, formal wear, ethnic wear, winter wear and Kids’ clothing in good condition.",
-      image: "/images/the-rehome/Cloths-of-all-genders-age.jpg"
+      image: "/images/the-rehome/01.jpg"
     },
     {
       id: 2, label: "Bags & Accessories",
       desc: "Handbags, backpacks, wallets, belts, scarves, caps.",
-      image: "/images/the-rehome/bags.png"
+      image: "/images/the-rehome/02.jpg"
     },
     {
       id: 3, label: "Jewellery",
       desc: "Costume jewellery, bangles, earrings, necklaces, hair accessories",
-      image: "/images/the-rehome/Jewellery.png"
+      image: "/images/the-rehome/03.jpg"
     },
     {
       id: 4, label: "Shoes & Footwear",
       desc: "Sneakers, sandals, heels, boots, children’s footwear",
-      image: "/images/the-rehome/Shoes-Footwear.png"
+      image: "/images/the-rehome/04.jpg"
     },
     {
       id: 5, label: "Books",
       desc: "Storybooks, novels, academic books, notebooks, diaries.",
-      image: "/images/the-rehome/Books.png"
+      image: "/images/the-rehome/05.jpg"
     },
     {
       id: 6, label: "Household Items",
       desc: "Crockery, kitchenware, decorative items. Bedsheets, towels, organizers. Small appliances in working condition",
-      image: "/images/the-rehome/Household-Items.png"
+      image: "/images/the-rehome/06.jpg"
     }
   ];
 
   const upcyclingGallery = [
-    "/images/the-rehome/collection-1.png",
-    "/images/the-rehome/collection-2.jpg",
-    "/images/the-rehome/collection-3.jpg",
-    "/images/the-rehome/collection-4.jpg",
-    "/images/the-rehome/collection-5.jpg",
-    "/images/the-rehome/collection-6.jpg",
-    "/images/the-rehome/collection-7.jpg",
-    "/images/the-rehome/collection-8.jpg"
+    "/images/the-rehome/gallery/we-do-everything/-01.jpg",
+    "/images/the-rehome/gallery/we-do-everything/-02.jpg",
+    "/images/the-rehome/gallery/we-do-everything/-03.jpg",
+    "/images/the-rehome/gallery/we-do-everything/-04.jpg",
+    "/images/the-rehome/gallery/we-do-everything/-05.jpg",
+    "/images/the-rehome/gallery/we-do-everything/-06.jpg",
+    "/images/the-rehome/gallery/we-do-everything/-07.jpg",
+    "/images/the-rehome/gallery/we-do-everything/-08.jpg"
   ];
 
   const launchGallery = [
-    "/images/the-rehome/launch-event-1.jpg",
-    "/images/the-rehome/launch-event-2.jpg",
-    "/images/the-rehome/launch-event-3.jpg",
-    "/images/the-rehome/launch-event-4.jpg",
-    "/images/the-rehome/launch-event-5.jpg",
-    "/images/the-rehome/launch-event-6.jpg",
-    "/images/the-rehome/launch-event-7.jpg",
-    "/images/the-rehome/launch-event-8.jpg"
+    "/images/the-rehome/gallery/our-launch-event/-01.jpg",
+    "/images/the-rehome/gallery/our-launch-event/-02.jpg",
+    "/images/the-rehome/gallery/our-launch-event/-03.jpg",
+    "/images/the-rehome/gallery/our-launch-event/-04.jpg",
+    "/images/the-rehome/gallery/our-launch-event/-05.jpg",
+    "/images/the-rehome/gallery/our-launch-event/-06.jpg",
+    "/images/the-rehome/gallery/our-launch-event/-07.jpg",
+    "/images/the-rehome/gallery/our-launch-event/-08.jpg"
   ];
 
   return (
