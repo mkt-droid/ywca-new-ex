@@ -27,7 +27,7 @@ export default function InsightsPublicationsPage() {
     <main>
       <SideNavBanner
         title={<>INSIGHTS &<br />PUBLICATIONS</>}
-        bgImage="/images/map/01-Banner-MAP.jpg"
+        bgImage="/images/01-Banner-insights-pub.jpg"
         activePath="/insights-publications"
         contentMarginTop="25vh"
       />
