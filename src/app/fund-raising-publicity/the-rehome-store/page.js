@@ -331,6 +331,12 @@ export default function TheRehomeStorePage() {
                         <input type="text" className={styles.formInput} />
                       </div>
                     </div>
+
+                    <div className="text-center mt-3 mb-2">
+                      <button type="submit" className={styles.submitBtn}>
+                        Submit Request
+                      </button>
+                    </div>
                   </form>
                 </div>
               )}

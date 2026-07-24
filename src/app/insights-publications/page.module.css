@@ -1,0 +1,158 @@
+.pageContentWrapper {
+  background-color: transparent;
+}
+
+.sectionPadding {
+  padding: 60px 0;
+}
+
+.tabsContainer {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.tabsList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tabButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background-color: #ffffff;
+  color: #333;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.tabButton:hover {
+  background-color: #f1f1f1;
+  border-color: #d0d0d0;
+}
+
+.activeTab {
+  background-color: #293e99;
+  color: #ffffff;
+  border-color: #293e99;
+}
+
+.activeTab:hover {
+  background-color: #293e99;
+  border-color: #293e99;
+}
+
+.tabContentPanel {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  min-height: 400px;
+}
+
+.tabTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #f1f1f1;
+}
+
+.reportCardLink {
+  text-decoration: none;
+  display: block;
+  height: 100%;
+}
+
+.reportCard {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.reportCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.thumbnailWrapper {
+  position: relative;
+  height: 200px;
+  background-color: #f7f9fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s ease;
+}
+
+.reportCard:hover .thumbnailWrapper {
+  background-color: #f0f4fa;
+}
+
+.largePdfIcon {
+  font-size: 80px;
+  color: #e2252b;
+  /* Standard red for PDF icons */
+  transition: transform 0.5s ease;
+}
+
+.reportCard:hover .largePdfIcon {
+  transform: scale(1.1);
+}
+
+.reportInfo {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.reportTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.viewBtn {
+  font-size: 14px;
+  font-weight: 600;
+  color: #b1259a;
+  /* Using their purple brand color */
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.viewBtn i {
+  transition: transform 0.3s;
+}
+
+.reportCard:hover .viewBtn i {
+  transform: translateX(5px);
+}
+
+.placeholderContent {
+  padding: 40px 0;
+  text-align: center;
+  color: #666;
+  font-size: 16px;
+}

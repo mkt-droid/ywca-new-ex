@@ -50,7 +50,7 @@ const PAGES = [
     {
       src: "/images/focus/slide-2/Religious.jpg",
       caption: "Religious Education Committee",
-      link: ''
+      link: '/religious-education-committee'
     },
     {
       src: "/images/focus/slide-2/Working-women-hostel.jpg",

@@ -59,7 +59,7 @@ export default function PublicAffairsPage() {
 
       <section className={styles.programsSection}>
         <div className="container">
-          <h2 className={styles.programsHeading}>Our Programs</h2>
+          <h3 style={{ color: '#a212b5', fontWeight: '600', marginBottom: '35px', fontSize: '1.9rem', textAlign: 'center', maxWidth: '900px', margin: '0 auto 20px' }}>Our Programs</h3>
           <div className="row justify-content-center mt-4">
             {/*
             {programs.map((item) => (

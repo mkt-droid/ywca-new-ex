@@ -16,7 +16,7 @@ export default function ReligiousEducationCommitteePage() {
     <main>
       <SideNavBanner
         title={<>RELIGIOUS <br />EDUCATION<br /> COMMITTEE</>}
-        bgImage="/images/yuva-department/01-Gallery-Inter-School Debate/2.jpg"
+        bgImage="/images/01-Banner-insights-pub.jpg"
         activePath="/religious-education-committee"
         contentMarginTop="25vh"
       />
@@ -31,38 +31,38 @@ export default function ReligiousEducationCommitteePage() {
           </div>
         </section>
 
-            {/* Programs Section */}
-            <div className="mt-5 text-center">
-              <h3 style={{ color: '#a212b5', fontWeight: '500', marginBottom: '35px', fontSize: '1.5rem' }}>Following are the programs conducted by the Religious Education Committee in the past</h3>
-              
-              <div className="row justify-content-center mt-4">
-                <div className="col-md-6 col-lg-5 mb-4">
-                  <Link href="/religious-education-committee/world-day-of-prayer-2026" className={styles.programLink}>
-                    <div className={styles.programCard}>
-                      <img src="/images/yuva-department/01-Gallery-Inter-School Debate/1.jpg" alt="World Day of Prayer 2026" className="img-fluid rounded mb-3" style={{ width: '100%', height: '280px', objectFit: 'cover' }} />
-                      <div className={styles.cardIconWrapper}>
-                        <i className="bi bi-calendar-event"></i>
-                      </div>
-                      <h3 className={styles.cardTitle}>World Day of Prayer 2026</h3>
-                      <p className="text-muted mb-0 mt-2" style={{ fontSize: '0.9rem' }}>7 March 2026</p>
-                    </div>
-                  </Link>
-                </div>
+        {/* Programs Section */}
+        <div className="mt-5 text-center">
+          <h3 style={{ color: '#a212b5', fontWeight: '600', marginBottom: '35px', fontSize: '1.9rem', maxWidth: '900px', margin: '0 auto 20px' }}>Following are the programs conducted by the Religious Education Committee in the past</h3>
 
-                <div className="col-md-6 col-lg-5 mb-4">
-                  <Link href="/religious-education-committee/lenten-prayer-meeting-2026" className={styles.programLink}>
-                    <div className={styles.programCard}>
-                      <img src="/images/yuva-department/02-Gallery-Thrive Music Festival/1.jpg" alt="Lenten Prayer Meeting 2026" className="img-fluid rounded mb-3" style={{ width: '100%', height: '280px', objectFit: 'cover' }} />
-                      <div className={styles.cardIconWrapper}>
-                        <i className="bi bi-book"></i>
-                      </div>
-                      <h3 className={styles.cardTitle}>Lenten Prayer Meeting 2026</h3>
-                      <p className="text-muted mb-0 mt-2" style={{ fontSize: '0.9rem' }}>27 March 2026</p>
-                    </div>
-                  </Link>
+          <div className="row justify-content-center mt-4">
+            <div className="col-md-6 col-lg-5 mb-4">
+              <Link href="/religious-education-committee/world-day-of-prayer-2026" className={styles.programLink}>
+                <div className={styles.programCard}>
+                  <img src="/images/yuva-department/01-Gallery-Inter-School Debate/1.jpg" alt="World Day of Prayer 2026" className="img-fluid rounded mb-3" style={{ width: '100%', height: '280px', objectFit: 'cover' }} />
+                  <div className={styles.cardIconWrapper}>
+                    <i className="bi bi-calendar-event"></i>
+                  </div>
+                  <h3 className={styles.cardTitle}>World Day of Prayer 2026</h3>
+                  <p className="text-muted mb-0 mt-2" style={{ fontSize: '0.9rem' }}>7 March 2026</p>
                 </div>
-              </div>
+              </Link>
             </div>
+
+            <div className="col-md-6 col-lg-5 mb-4">
+              <Link href="/religious-education-committee/lenten-prayer-meeting-2026" className={styles.programLink}>
+                <div className={styles.programCard}>
+                  <img src="/images/yuva-department/02-Gallery-Thrive Music Festival/1.jpg" alt="Lenten Prayer Meeting 2026" className="img-fluid rounded mb-3" style={{ width: '100%', height: '280px', objectFit: 'cover' }} />
+                  <div className={styles.cardIconWrapper}>
+                    <i className="bi bi-book"></i>
+                  </div>
+                  <h3 className={styles.cardTitle}>Lenten Prayer Meeting 2026</h3>
+                  <p className="text-muted mb-0 mt-2" style={{ fontSize: '0.9rem' }}>27 March 2026</p>
+                </div>
+              </Link>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   );

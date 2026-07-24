@@ -241,7 +241,7 @@ const Header = () => {
               className="nav-item"
             //   onClick={(e) => e.currentTarget.classList.toggle("open")}
             >
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="/insights-publications">
                 Insights & Publications
                 {/* <span className="chevron">
                   <i className="bi bi-chevron-down"></i>

@@ -219,6 +219,23 @@
   border-color: #BE00C4;
 }
 
+.submitBtn {
+  background-color: #1c2b5e;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 40px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 0.95rem;
+}
+
+.submitBtn:hover {
+  background-color: #111a3d;
+}
+
 .locationsGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
