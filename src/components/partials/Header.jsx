@@ -161,7 +161,7 @@ const Header = () => {
                   Public Affairs and Social Issues
                 </a>
 
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="/religious-education-committee">
                   Religious Education Committee
                 </a>
 

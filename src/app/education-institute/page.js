@@ -22,22 +22,22 @@ export default function EducationInstitutePage() {
   const academicNews = [
     {
       id: 1,
-      image: '/images/education-institute/aca-1.jpg',
+      image: '/images/education-institute/1.jpg',
       title: 'Academic News heading will go here'
     },
     {
       id: 2,
-      image: '/images/education-institute/aca-2.jpg',
+      image: '/images/education-institute/2.jpg',
       title: 'Academic News heading will go here'
     },
     {
       id: 3,
-      image: '/images/education-institute/aca-1.jpg',
+      image: '/images/education-institute/3.jpg',
       title: 'Academic News heading will go here'
     },
     {
       id: 4,
-      image: '/images/education-institute/aca-3.jpg',
+      image: '/images/education-institute/4.jpg',
       title: 'Academic News heading will go here'
     }
   ];
@@ -159,7 +159,7 @@ export default function EducationInstitutePage() {
             <span className={styles.whyUsPill}>Expert Faculty Guidance</span>
             <span className={styles.whyUsPill}>AI Integrated Curriculum</span>
             <span className={styles.whyUsPill}>Placement Assistance</span>
-            <span className={styles.whyUsPill}>Well Equipped Lab and <br/> AC Classrooms</span>
+            <span className={styles.whyUsPill}>Well Equipped Lab and <br /> AC Classrooms</span>
           </div>
         </div>
       </section>

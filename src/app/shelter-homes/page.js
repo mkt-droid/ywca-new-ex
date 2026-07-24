@@ -103,7 +103,23 @@ export default function ShelterHomesPage() {
     }
   ];
 
-  const galleryImages = Array.from({ length: 25 }, (_, i) => `/images/shelter-homes/Gallery/gallery-img-${i + 1}.jpg`);
+  const galleryImages = [
+    '/images/shelter-homes/Gallery/1.jpg',
+    '/images/shelter-homes/Gallery/2.jpg',
+    '/images/shelter-homes/Gallery/3.jpg',
+    '/images/shelter-homes/Gallery/4.jpg',
+    '/images/shelter-homes/Gallery/5.jpg',
+    '/images/shelter-homes/Gallery/6.jpg',
+    '/images/shelter-homes/Gallery/7.jpg',
+    '/images/shelter-homes/Gallery/8.jpg',
+    '/images/shelter-homes/Gallery/9.jpg',
+    '/images/shelter-homes/Gallery/10.jpg',
+    '/images/shelter-homes/Gallery/11.jpg',
+    '/images/shelter-homes/Gallery/12.jpg',
+    '/images/shelter-homes/Gallery/13.jpg',
+    '/images/shelter-homes/Gallery/14.jpg',
+    '/images/shelter-homes/Gallery/15.jpg'
+  ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [selectedCard, setSelectedCard] = useState(null);

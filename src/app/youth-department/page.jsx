@@ -12,7 +12,7 @@ export default function YouthDepartmentPage() {
     <main>
       <SideNavBanner
         title={<>YOUTH<br />DEPARTMENT</>}
-        bgImage="/images/yuva-department/gallery-1/img-2.jpg"
+        bgImage="/images/yuva-department/01-Gallery-Inter-School Debate/2.jpg"
         activePath="/youth-department"
         contentMarginTop="25vh"
       />
@@ -37,7 +37,7 @@ export default function YouthDepartmentPage() {
                 <div className="col-md-6 col-lg-5 mb-4">
                   <Link href="/youth-department/inter-school-debate" className={styles.programLink}>
                     <div className={styles.programCard}>
-                      <img src="/images/yuva-department/gallery-1/img-1.jpg" alt="Inter-School Debate Competition 2026" className="img-fluid rounded mb-3" style={{ width: '100%', height: '280px', objectFit: 'cover' }} />
+                      <img src="/images/yuva-department/01-Gallery-Inter-School Debate/1.jpg" alt="Inter-School Debate Competition 2026" className="img-fluid rounded mb-3" style={{ width: '100%', height: '280px', objectFit: 'cover' }} />
                       <div className={styles.cardIconWrapper}>
                         <i className="bi bi-chat-quote-fill"></i>
                       </div>
@@ -49,7 +49,7 @@ export default function YouthDepartmentPage() {
                 <div className="col-md-6 col-lg-5 mb-4">
                   <Link href="/youth-department/thrive-music-festival" className={styles.programLink}>
                     <div className={styles.programCard}>
-                      <img src="/images/yuva-department/gallery-2/img-1.jpg" alt="Thrive Music Festival 2026" className="img-fluid rounded mb-3" style={{ width: '100%', height: '280px', objectFit: 'cover' }} />
+                      <img src="/images/yuva-department/02-Gallery-Thrive Music Festival/1.jpg" alt="Thrive Music Festival 2026" className="img-fluid rounded mb-3" style={{ width: '100%', height: '280px', objectFit: 'cover' }} />
                       <div className={styles.cardIconWrapper}>
                         <i className="bi bi-music-note-beamed"></i>
                       </div>

@@ -3,27 +3,27 @@
 import React, { useState, useRef } from 'react';
 import Link from 'next/link';
 import styles from '../page.module.css';
+import Gallery from '@/components/common/Gallery';
 
 export default function ThriveMusicFestivalPage() {
 
 
-  // Gallery 2 images
-  const galleryImages = Array.from({ length: 14 }, (_, i) => `/images/yuva-department/gallery-2/img-${i + 1}.jpg`);
+  const galleryImages = [
+    '/images/yuva-department/02-Gallery-Thrive Music Festival/1.jpg',
+    '/images/yuva-department/02-Gallery-Thrive Music Festival/2.jpg',
+    '/images/yuva-department/02-Gallery-Thrive Music Festival/3.jpg',
+    '/images/yuva-department/02-Gallery-Thrive Music Festival/4.jpg',
+    '/images/yuva-department/02-Gallery-Thrive Music Festival/5.jpg',
+    '/images/yuva-department/02-Gallery-Thrive Music Festival/6.jpg',
+    '/images/yuva-department/02-Gallery-Thrive Music Festival/7.jpg',
+    '/images/yuva-department/02-Gallery-Thrive Music Festival/8.jpg',
+    '/images/yuva-department/02-Gallery-Thrive Music Festival/9.jpg',
+    '/images/yuva-department/02-Gallery-Thrive Music Festival/10.jpg',
+    '/images/yuva-department/02-Gallery-Thrive Music Festival/11.jpg',
+    '/images/yuva-department/02-Gallery-Thrive Music Festival/12.jpg'
+  ];
 
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const thumbnailContainerRef = useRef(null);
 
-  const scrollLeftBtn = () => {
-    if (thumbnailContainerRef.current) {
-      thumbnailContainerRef.current.scrollBy({ left: -250, behavior: 'smooth' });
-    }
-  };
-
-  const scrollRightBtn = () => {
-    if (thumbnailContainerRef.current) {
-      thumbnailContainerRef.current.scrollBy({ left: 250, behavior: 'smooth' });
-    }
-  };
 
   return (
     <main>
@@ -44,41 +44,7 @@ export default function ThriveMusicFestivalPage() {
             </div>
 
             {/* Gallery Section */}
-            <section className={styles.gallerySection}>
-              <div className={styles.inlineGalleryContainer}>
-                <div className={styles.mainImageDisplay}>
-                  <img
-                    src={galleryImages[currentImageIndex]}
-                    alt="Main Gallery Image"
-                    className={styles.mainGalleryImage}
-                  />
-                </div>
-
-                {galleryImages.length > 1 && (
-                  <div className={styles.thumbnailSliderWrapper}>
-                    <button className={`${styles.sliderBtn} ${styles.prevBtn}`} onClick={scrollLeftBtn}>
-                      <i className="bi bi-chevron-left"></i>
-                    </button>
-
-                    <div className={styles.thumbnailRow} ref={thumbnailContainerRef}>
-                      {galleryImages.map((src, idx) => (
-                        <div
-                          key={idx}
-                          className={`${styles.thumbnailItem} ${idx === currentImageIndex ? styles.activeThumbnail : ''}`}
-                          onClick={() => setCurrentImageIndex(idx)}
-                        >
-                          <img src={src} alt={`Thumbnail ${idx + 1}`} />
-                        </div>
-                      ))}
-                    </div>
-
-                    <button className={`${styles.sliderBtn} ${styles.nextBtn}`} onClick={scrollRightBtn}>
-                      <i className="bi bi-chevron-right"></i>
-                    </button>
-                  </div>
-                )}
-              </div>
-            </section>
+            <Gallery images={galleryImages} />
 
             {/* Content */}
             <div className="mt-5">

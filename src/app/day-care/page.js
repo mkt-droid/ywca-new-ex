@@ -4,6 +4,7 @@ import React, { useState, useRef } from 'react';
 import Image from 'next/image';
 import styles from './page.module.css';
 import galleryStyles from '@/styles/Gallery.module.css';
+import Gallery from '@/components/common/Gallery';
 import SideNavBanner from '@/components/partials/SideNavBanner';
 
 export default function DayCarePage() {
@@ -16,52 +17,24 @@ export default function DayCarePage() {
   ];
 
   const galleryImages = [
-    '/images/day-care/gallery-img-1.jpg',
-    '/images/day-care/gallery-img-2.png',
-    '/images/day-care/gallery-img-3.jpg',
-    '/images/day-care/gallery-img-4.png',
-    '/images/day-care/gallery-img-5.jpg',
-    '/images/day-care/gallery-img-6.jpg',
-    '/images/day-care/gallery-img-7.jpg',
-    '/images/day-care/gallery-img-8.jpg',
-    '/images/day-care/gallery-img-9.jpg',
-    '/images/day-care/gallery-img-10.jpg',
+    '/images/day-care/1.jpg',
+    '/images/day-care/2.jpg',
+    '/images/day-care/3.jpg',
+    '/images/day-care/4.jpg',
+    '/images/day-care/5.jpg',
+    '/images/day-care/6.jpg',
+    '/images/day-care/7.jpg',
+    '/images/day-care/8.jpg',
+    '/images/day-care/9.jpg',
+    '/images/day-care/10.jpg',
+    '/images/day-care/11.jpg',
+    '/images/day-care/12.jpg',
+    '/images/day-care/13.jpg',
+    '/images/day-care/14.jpg',
+    '/images/day-care/15.jpg'
   ];
 
-  const [lightboxOpen, setLightboxOpen] = useState(false);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const thumbnailContainerRef = useRef(null);
 
-  const scrollLeftBtn = () => {
-    if (thumbnailContainerRef.current) {
-      thumbnailContainerRef.current.scrollBy({ left: -250, behavior: 'smooth' });
-    }
-  };
-
-  const scrollRightBtn = () => {
-    if (thumbnailContainerRef.current) {
-      thumbnailContainerRef.current.scrollBy({ left: 250, behavior: 'smooth' });
-    }
-  };
-
-  const openLightbox = (index) => {
-    setCurrentImageIndex(index);
-    setLightboxOpen(true);
-  };
-
-  const closeLightbox = () => {
-    setLightboxOpen(false);
-  };
-
-  const nextImage = (e) => {
-    e.stopPropagation();
-    setCurrentImageIndex((prev) => (prev + 1) % galleryImages.length);
-  };
-
-  const prevImage = (e) => {
-    e.stopPropagation();
-    setCurrentImageIndex((prev) => (prev - 1 + galleryImages.length) % galleryImages.length);
-  };
 
   return (
     <main>
@@ -172,40 +145,7 @@ export default function DayCarePage() {
         </div>
 
         {/* Gallery Section */}
-        <section className={styles.gallerySection}>
-          <h2 className={styles.sectionTitlePink}>Gallery</h2>
-          <div className={styles.inlineGalleryContainer}>
-            <div className={styles.mainImageDisplay}>
-              <img
-                src={galleryImages[currentImageIndex]}
-                alt="Main Gallery Image"
-                className={styles.mainGalleryImage}
-              />
-            </div>
-
-            <div className={styles.thumbnailSliderWrapper}>
-              <button className={`${styles.sliderBtn} ${styles.prevBtn}`} onClick={scrollLeftBtn}>
-                <i className="bi bi-chevron-left"></i>
-              </button>
-
-              <div className={styles.thumbnailRow} ref={thumbnailContainerRef}>
-                {galleryImages.map((src, idx) => (
-                  <div
-                    key={idx}
-                    className={`${styles.thumbnailItem} ${idx === currentImageIndex ? styles.activeThumbnail : ''}`}
-                    onClick={() => setCurrentImageIndex(idx)}
-                  >
-                    <img src={src} alt={`Thumbnail ${idx + 1}`} />
-                  </div>
-                ))}
-              </div>
-
-              <button className={`${styles.sliderBtn} ${styles.nextBtn}`} onClick={scrollRightBtn}>
-                <i className="bi bi-chevron-right"></i>
-              </button>
-            </div>
-          </div>
-        </section>
+        <Gallery images={galleryImages} title="Gallery" />
 
         {/* Why Choose Us */}
         <div className={styles.whyChooseUsSection}>
@@ -266,57 +206,7 @@ export default function DayCarePage() {
 
       </section>
 
-      {/* Lightbox Modal */}
-      {lightboxOpen && (
-        <div className={galleryStyles.lightboxOverlay} onClick={closeLightbox}>
-          <div className={galleryStyles.lightboxContent} onClick={(e) => e.stopPropagation()}>
-            <button className={galleryStyles.closeBtn} onClick={closeLightbox}>
-              &#10005;
-            </button>
-            <div className={galleryStyles.lightboxBody}>
-              <div className={galleryStyles.mainImageRow}>
-                <button className={galleryStyles.navBtn} onClick={prevImage}>
-                  <i className="bi bi-chevron-left"></i>
-                </button>
 
-                <div className={galleryStyles.mainImageBox}>
-                  <img
-                    src={galleryImages[currentImageIndex]}
-                    alt={`Gallery ${currentImageIndex + 1}`}
-                    className={galleryStyles.mainImage}
-                  />
-                  <div className={galleryStyles.imageDescriptionBar}>
-                    Day Care Gallery {currentImageIndex + 1}
-                  </div>
-                </div>
-
-                <button className={galleryStyles.navBtn} onClick={nextImage}>
-                  <i className="bi bi-chevron-right"></i>
-                </button>
-              </div>
-
-              {/* Thumbnails */}
-              <div className={galleryStyles.thumbnailContainer}>
-                <div className={galleryStyles.thumbnailStrip}>
-                  {galleryImages.map((src, idx) => (
-                    <div
-                      key={idx}
-                      className={`${galleryStyles.thumbnailWrapper} ${idx === currentImageIndex ? galleryStyles.activeThumbnail : ''}`}
-                      onClick={() => setCurrentImageIndex(idx)}
-                    >
-                      <img
-                        src={src}
-                        alt={`Thumbnail ${idx + 1}`}
-                        className={galleryStyles.thumbnailImage}
-                      />
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
     </main>
   );
 }

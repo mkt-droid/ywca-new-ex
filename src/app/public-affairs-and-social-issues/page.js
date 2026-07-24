@@ -60,7 +60,8 @@ export default function PublicAffairsPage() {
       <section className={styles.programsSection}>
         <div className="container">
           <h2 className={styles.programsHeading}>Our Programs</h2>
-          <div className="row">
+          <div className="row justify-content-center mt-4">
+            {/*
             {programs.map((item) => (
               <div className="col-lg-4 col-md-6 mb-4" key={item.id}>
                 <Link href="#" className={styles.programCardLink}>
@@ -76,6 +77,31 @@ export default function PublicAffairsPage() {
                 </Link>
               </div>
             ))}
+            */}
+            
+            <div className="col-md-6 col-lg-5 mb-4">
+              <Link href="/public-affairs-and-social-issues/rights-resistance-freedom" className={styles.newProgramLink}>
+                <div className={styles.newProgramCard}>
+                  <img src="/images/pasi/Rights-Resistance-Freedom-Gallery/1.jpg" alt="Rights • Resistance • Freedom" className="img-fluid rounded mb-3" style={{ width: '100%', height: '280px', objectFit: 'cover' }} />
+                  <div className={styles.newCardIconWrapper}>
+                    <i className="bi bi-chat-quote-fill"></i>
+                  </div>
+                  <h3 className={styles.newCardTitle}>Rights • Resistance • Freedom</h3>
+                </div>
+              </Link>
+            </div>
+
+            <div className="col-md-6 col-lg-5 mb-4">
+              <Link href="/public-affairs-and-social-issues/world-environment-day-celebration-2026" className={styles.newProgramLink}>
+                <div className={styles.newProgramCard}>
+                  <img src="/images/pasi/PASI-World-Environment Day-Celebration-Gallery/1.jpg" alt="World Environment Day Celebration 2026" className="img-fluid rounded mb-3" style={{ width: '100%', height: '280px', objectFit: 'cover' }} />
+                  <div className={styles.newCardIconWrapper}>
+                    <i className="bi bi-globe"></i>
+                  </div>
+                  <h3 className={styles.newCardTitle}>World Environment Day Celebration 2026</h3>
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
       </section>

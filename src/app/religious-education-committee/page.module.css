@@ -1,0 +1,382 @@
+.pageBackground {
+  background-color: #fffaf5; /* Off-white background as per design */
+}
+
+.featuresSection {
+  padding: 60px 0;
+}
+
+.featureBox {
+  padding: 20px;
+}
+
+.iconWrap {
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.iconWrap i {
+  color: #c936b8;
+  font-size: 2.5rem;
+}
+
+.featureBox h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.featureBox p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.introPara {
+  margin: 20px auto 40px;
+  text-align: left;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+
+.hostelsSection {
+  padding: 20px 0 60px;
+}
+
+.hostelRow {
+  margin-bottom: 60px;
+}
+
+.hostelTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.hostelDesc {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+.gallerySection {
+  padding: 0.95rem 0;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.galleryTitlePink {
+  color: #a212b5;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.inlineGalleryContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.95rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.mainImageDisplay {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 0;
+  border: 1px solid rgba(235, 164, 113, 0.5);
+  overflow: hidden;
+  background-color: #fcefe6;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mainImageDisplay:hover .mainGalleryImage {
+  transform: scale(1.05);
+}
+
+.mainGalleryImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+
+.thumbnailSliderWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.sliderBtn {
+  background: #fff;
+  border: 1px solid #1a1668;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  color: #1a1668;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.sliderBtn:hover {
+  background: #1a1668;
+  color: #fff;
+}
+
+.prevBtn {
+  left: -50px;
+}
+
+.nextBtn {
+  right: -50px;
+}
+
+.thumbnailRow {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 5px;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.thumbnailRow::-webkit-scrollbar {
+  display: none;
+}
+
+.thumbnailItem {
+  flex: 0 0 calc(16.666% - 8.333px); /* 6 items per row */
+  aspect-ratio: 4 / 3;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  opacity: 0.7;
+}
+
+.thumbnailItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumbnailItem:hover {
+  opacity: 0.9;
+}
+
+.activeThumbnail {
+  border-color: #c99b45;
+  opacity: 1;
+}
+
+@media (max-width: 1200px) {
+  .prevBtn { left: 10px; }
+  .nextBtn { right: 10px; }
+  .sliderBtn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    background: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@media (max-width: 992px) {
+  .thumbnailItem { flex: 0 0 calc(25% - 7.5px); }
+}
+
+@media (max-width: 768px) {
+  .thumbnailItem { flex: 0 0 calc(33.333% - 6.66px); }
+}
+
+.infoBox {
+  background-color: #fcefe6;
+  padding: 30px;
+  border-radius: 0;
+  border: 2px solid #eba471;
+  width: 100%;
+  margin: 0 auto 40px;
+}
+
+.customList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.customList li {
+  position: relative;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #000000;
+  line-height: 1.6em;
+  font-weight: 400;
+  display: flex;
+  align-items: flex-start;
+}
+
+.customList li i {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 4px solid #e6235b;
+  background-color: #fff;
+  margin-right: 10px;
+  margin-top: 5px;
+  flex-shrink: 0;
+}
+
+.customList li i::before {
+  content: none !important;
+}
+
+.infoCard {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  border-bottom: 4px solid #a212b5;
+  border-top: 1px solid #eee;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+
+.infoCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.cardIconWrapper {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -40px auto 15px;
+  font-size: 30px;
+  color: #a212b5;
+  z-index: 2;
+  background: #fff;
+  border: 3px solid #a212b5;
+  position: relative;
+}
+
+.cardTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 15px;
+  flex-grow: 1;
+}
+
+.cardDesc {
+  color: #444;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Added styles for program cards */
+.programLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+.programCard {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.programCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.pageContentWrapper {
+  background: linear-gradient(180deg, #fef4f4 0%, #ffffff 30%, #ffffff 70%, #fcf0f0 100%);
+  width: 100%;
+}
+
+.overviewText {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #000000;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.overviewText p {
+  margin-bottom: 20px;
+}
+
+.backBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  color: #a212b5;
+  background-color: transparent;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.backBtn:hover {
+  color: #fff;
+  background-color: #a212b5;
+}
+
+.innerPageTitle {
+  color: #000;
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin: 0;
+  text-transform: none;
+}
+
+.sectionPadding {
+  padding: 40px 0;
+  background-color: transparent;
+}
+
+.overviewTitle {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #000;
+  text-transform: uppercase;
+}
