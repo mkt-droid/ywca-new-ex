@@ -21,7 +21,7 @@ export default function ContactPage() {
       <SideNavBanner
         title={
           <>
-            CONTACT<br/>US
+            CONTACT<br />US
           </>
         }
         bgIframe="https://maps.google.com/maps?q=YWCA%20of%20Delhi&t=&z=13&ie=UTF8&iwloc=&output=embed"
@@ -29,9 +29,7 @@ export default function ContactPage() {
         activePath="/education-institute/contact"
         overlayStyle={{ background: 'linear-gradient(to right, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.5) 40%, rgba(0,0,0,0.1) 100%)', zIndex: 1 }}
       >
-        <p style={{ marginTop: '20px', fontSize: '18px', maxWidth: '600px', lineHeight: '1.6' }}>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        </p>
+
       </SideNavBanner>
 
       <section className={styles.contactSection}>
@@ -76,7 +74,7 @@ export default function ContactPage() {
                   <input type="email" placeholder="Your email" className={styles.formInput} />
                   <input type="text" placeholder="Which best describe your need" className={styles.formInput} />
                   <textarea placeholder="Your comment" className={styles.formTextarea}></textarea>
-                  
+
                   <button type="button" className={styles.submitBtn}>Submit</button>
                 </form>
               </div>

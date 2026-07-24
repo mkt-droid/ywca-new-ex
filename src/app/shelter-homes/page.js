@@ -213,7 +213,7 @@ export default function ShelterHomesPage() {
 
           <div className={styles.infoBox}>
             <div style={{ marginBottom: '35px', textAlign: 'left' }}>
-              <h4 style={{ color: '#000000', fontSize: '1.2rem', fontWeight: 600, marginBottom: '15px' }}>Key highlights</h4>
+              <h4 style={{ color: '#000000', fontSize: '1.2rem', fontWeight: 600, marginBottom: '15px' }}><i className="bi bi-star-fill" style={{ color: '#e6235b', marginRight: '8px' }}></i>Key highlights</h4>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '15px' }}>
                 <div className={styles.keyHighlightItem}>
                   <i className="bi bi-people-fill" style={{ color: '#e6235b', marginRight: '8px', fontSize: '1.1rem' }}></i>
@@ -271,7 +271,7 @@ export default function ShelterHomesPage() {
 
           <div className={styles.infoBox}>
             <div style={{ marginBottom: '35px', textAlign: 'left' }}>
-              <h4 style={{ color: '#000000', fontSize: '1.2rem', fontWeight: 600, marginBottom: '15px' }}>Key highlights</h4>
+              <h4 style={{ color: '#000000', fontSize: '1.2rem', fontWeight: 600, marginBottom: '15px' }}><i className="bi bi-star-fill" style={{ color: '#e6235b', marginRight: '8px' }}></i>Key highlights</h4>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '15px' }}>
                 <div className={styles.keyHighlightItem}>
                   <i className="bi bi-geo-alt-fill" style={{ color: '#e6235b', marginRight: '8px', fontSize: '1.1rem' }}></i>

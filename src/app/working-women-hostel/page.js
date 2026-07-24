@@ -69,7 +69,7 @@ export default function WorkingWomenHostelPage() {
                   <i className="bi bi-geo-alt"></i>
                 </div>
                 <h4>2+ Location</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
               </div>
             </div>
             <div className="col-md-4">
@@ -78,7 +78,7 @@ export default function WorkingWomenHostelPage() {
                   <i className="bi bi-door-open"></i>
                 </div>
                 <h4>67 Rooms Available</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
               </div>
             </div>
             <div className="col-md-4">
@@ -87,7 +87,7 @@ export default function WorkingWomenHostelPage() {
                   <i className="bi bi-send"></i>
                 </div>
                 <h4>Centrally located</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
               </div>
             </div>
           </div>
@@ -158,7 +158,7 @@ export default function WorkingWomenHostelPage() {
                   <li><i className="bi bi-circle"></i>Candidates must have a Local Lady Guardian.</li>
                   <li><i className="bi bi-circle"></i>Candidate’s monthly income should not be less than Rs. 10,000 and should not be more than Rs. 50,000.</li>
                 </ul>
-                
+
                 <h5 className="fw-bold mt-4 mb-3">Admission Procedure:</h5>
                 <ul className={styles.customList}>
                   <li><i className="bi bi-circle"></i>Buy Prospectus with Accommodation form (cost: Rs. 100).</li>
@@ -169,7 +169,7 @@ export default function WorkingWomenHostelPage() {
                   <li><i className="bi bi-circle"></i>A Medical Certificate from a recognized MBBS Doctor is required.</li>
                 </ul>
               </div>
-              
+
               <div className="col-md-6 mb-4">
                 <h3 style={{ color: '#a212b5', fontWeight: '600', marginBottom: '15px' }}>Facilities Available</h3>
                 <ul className={styles.customList}>
