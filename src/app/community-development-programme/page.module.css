@@ -1,0 +1,246 @@
+.pageBackground {
+  background-color: #f8f9fa;
+  padding-bottom: 100px;
+}
+
+.introSection {
+  background-color: #ffffff;
+  padding: 60px 0;
+}
+
+.introPara {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.sectionPadding {
+  padding: 80px 0;
+  background-color: transparent;
+}
+
+.overviewTitle {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.overviewText {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #000000;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.heroSection {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f1f8ff;
+  border-radius: 12px;
+  margin-bottom: 50px;
+}
+
+.heroHeadline {
+  color: #a212b5;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.primaryButtons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.primaryBtn {
+  background-color: #242278;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.primaryBtn:hover {
+  background-color: #BE00C4;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.supportingLine {
+  font-size: 0.95rem;
+  color: #666;
+  margin-top: 15px;
+  font-style: italic;
+}
+
+.impactSection {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.impactBox {
+  text-align: center;
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  height: 100%;
+  transition: transform 0.3s;
+}
+
+.impactBox:hover {
+  transform: translateY(-5px);
+}
+
+.impactNumber {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #a212b5;
+  margin-bottom: 15px;
+}
+
+.impactText {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.sectionTitle {
+  color: #a212b5;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.solutionBox {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  border-left: 4px solid #a212b5;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.solutionTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.storyTeaser {
+  background-color: #fff3cd;
+  padding: 40px;
+  border-radius: 12px;
+  margin: 50px 0;
+  text-align: center;
+}
+
+.quoteText {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.trustSection {
+  background-color: #fce9dc;
+  padding: 3rem 4rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border: 1px solid #dcb285;
+  text-align: center;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.trustList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4rem;
+  row-gap: 1.5rem;
+  text-align: left;
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 30px;
+}
+
+.trustList li {
+  position: relative;
+  padding-left: 1.5rem;
+  font-size: 1rem;
+  color: #000000;
+  line-height: 1.5;
+}
+
+.trustList li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #666;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.wayCard {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  height: 100%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.wayCard h4 {
+  color: #a212b5;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.newsletterStrip {
+  background-color: #a212b5;
+  color: white;
+  padding: 50px 20px;
+  border-radius: 12px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.newsletterInput {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 30px 0 0 30px;
+  width: 300px;
+  max-width: 100%;
+}
+
+.newsletterBtn {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 0 30px 30px 0;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletterBtn:hover {
+  background-color: #111;
+}
