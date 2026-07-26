@@ -1,7 +1,8 @@
 .heroSection {
   position: relative;
   width: 100%;
-  min-height: 65vh;
+  /* min-height: 65vh; /* Option: Uncomment this line to restore original banner height */
+  min-height: 280px;
   display: grid;
   grid-template-columns: 1fr;
   align-content: center;

@@ -29,44 +29,14 @@ export default function MembershipDepartmentPage() {
           </div>
         </section>
 
-        {/* Learning Programs Section (Adapted from Education Institute) */}
-        <section className={styles.learningSection}>
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-lg-6 col-md-12 mb-5 mb-lg-0 pr-lg-5">
-                <h3 className={`${styles.formGroupTitle} mt-0`}>New Membership Forms</h3>
-                <div className={styles.pdfButtonsContainer}>
-                  <a href="/pdf-forms/Form-Associate-Member.pdf" target="_blank" rel="noopener noreferrer" className={styles.pdfButton}>
-                    <i className={`bi bi-file-earmark-pdf-fill ${styles.pdfIcon}`}></i> <span>Associate Member</span>
-                  </a>
-                  <a href="/pdf-forms/Electoral%20Members.pdf" target="_blank" rel="noopener noreferrer" className={styles.pdfButton}>
-                    <i className={`bi bi-file-earmark-pdf-fill ${styles.pdfIcon}`}></i> <span>Electoral Members</span>
-                  </a>
-                </div>
 
-                <h3 className={styles.formGroupTitle}>Renewal of Membership</h3>
-                <div className={styles.pdfButtonsContainer}>
-                  <a href="/pdf-forms/Associate%20Renewal.pdf" target="_blank" rel="noopener noreferrer" className={styles.pdfButton}>
-                    <i className={`bi bi-file-earmark-pdf-fill ${styles.pdfIcon}`}></i> <span>Associate Renewal</span>
-                  </a>
-                  <a href="/pdf-forms/Electoral-Renewal.pdf" target="_blank" rel="noopener noreferrer" className={styles.pdfButton}>
-                    <i className={`bi bi-file-earmark-pdf-fill ${styles.pdfIcon}`}></i> <span>Electoral Renewal</span>
-                  </a>
-                </div>
-              </div>
-              <div className="col-lg-6 col-md-12 text-center position-relative">
-                <img src="/images/map/Thumb-img.jpg" alt="Learning Programs" className={styles.learningImage} />
-              </div>
-            </div>
-          </div>
-        </section>
 
-        <section className={styles.sectionPadding}>
+        <section className={styles.sectionPadding} style={{ paddingTop: 0, paddingBottom: 0 }}>
           <div className="container">
 
             {/* Programs Section */}
-            <div className="mt-5 text-center">
-              <h3 style={{ color: '#a212b5', fontWeight: '600', marginBottom: '35px', fontSize: '1.9rem', maxWidth: '900px', margin: '0 auto 20px' }}>Programs conducted by the Membership Department in the past</h3>
+            <div className=" text-center">
+              <h3 style={{ color: '#a212b5', fontWeight: '600', fontSize: '1.9rem', maxWidth: '900px', margin: '0 auto 20px' }}>Programs conducted by the Membership Department in the past</h3>
 
               <div className="row justify-content-center mt-4">
                 <div className="col-md-6 col-lg-5 mb-4">
@@ -123,6 +93,37 @@ export default function MembershipDepartmentPage() {
               </div>
             </div>
 
+          </div>
+        </section>
+        {/* Learning Programs Section (Adapted from Education Institute) */}
+        <section className={styles.learningSection}>
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-lg-6 col-md-12 mb-5 mb-lg-0 pr-lg-5">
+                <h3 className={`${styles.formGroupTitle} mt-0`}>New Membership Forms</h3>
+                <div className={styles.pdfButtonsContainer}>
+                  <a href="/pdf-forms/Form-Associate-Member.pdf" target="_blank" rel="noopener noreferrer" className={styles.pdfButton}>
+                    <i className={`bi bi-file-earmark-pdf-fill ${styles.pdfIcon}`}></i> <span>Associate Member</span>
+                  </a>
+                  <a href="/pdf-forms/Electoral%20Members.pdf" target="_blank" rel="noopener noreferrer" className={styles.pdfButton}>
+                    <i className={`bi bi-file-earmark-pdf-fill ${styles.pdfIcon}`}></i> <span>Electoral Members</span>
+                  </a>
+                </div>
+
+                <h3 className={styles.formGroupTitle}>Renewal of Membership</h3>
+                <div className={styles.pdfButtonsContainer}>
+                  <a href="/pdf-forms/Associate%20Renewal.pdf" target="_blank" rel="noopener noreferrer" className={styles.pdfButton}>
+                    <i className={`bi bi-file-earmark-pdf-fill ${styles.pdfIcon}`}></i> <span>Associate Renewal</span>
+                  </a>
+                  <a href="/pdf-forms/Electoral-Renewal.pdf" target="_blank" rel="noopener noreferrer" className={styles.pdfButton}>
+                    <i className={`bi bi-file-earmark-pdf-fill ${styles.pdfIcon}`}></i> <span>Electoral Renewal</span>
+                  </a>
+                </div>
+              </div>
+              <div className="col-lg-6 col-md-12 text-center position-relative">
+                <img src="/images/map/Thumb-img.jpg" alt="Learning Programs" className={styles.learningImage} />
+              </div>
+            </div>
           </div>
         </section>
       </div>

@@ -250,9 +250,16 @@
 .memberHero {
     background: linear-gradient(to right, rgba(146, 45, 157, 0.85), rgba(146, 45, 157, 0.85)), url('/images/board-of-management/bom-bnr.jpg') center/cover no-repeat;
     margin: 0;
-    min-height: 380px;
+    /* min-height: 380px; /* Option: Uncomment this line to restore original banner height */
+    min-height: 280px;
     display: flex;
     align-items: center;
+    filter: grayscale(100%);
+    transition: filter 0.4s ease;
+}
+
+.memberHero:hover {
+    filter: grayscale(0%);
 }
 
 .heroInner {
@@ -264,7 +271,7 @@
 
 .heroLeft {
     flex: 1;
-    padding: 80px 0 0px 0;
+    padding: 40px 0 0px 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -300,7 +307,7 @@
 }
 
 .heroRight {
-    width: 320px;
+    width: 250px;
     flex-shrink: 0;
     display: flex;
     align-items: center;
@@ -308,7 +315,8 @@
 
 .heroRight img {
     width: 100%;
-    height: 320px;
+    /* height: 320px; /* Option: Uncomment this line to restore original image height */
+    height: 250px;
     object-fit: cover;
     object-position: top center;
     display: block;

@@ -12,7 +12,7 @@ const SLIDES = [
     titleLine2: "COMMUNITIES",
     subtitle: "WeMpower – Leaving No One Behind",
     btnText: "Join the YWCA Movement",
-    btnLink: "#",
+    btnLink: "/join-us",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const SLIDES = [
     titleLine2: "YOUTH",
     subtitle: "WeMpower – Leaving No One Behind",
     btnText: "Join the YWCA Movement",
-    btnLink: "#",
+    btnLink: "/join-us",
   },
   {
     id: 3,
@@ -30,9 +30,9 @@ const SLIDES = [
     titleLine2: "NATURE",
     subtitle: "WeMpower – Leaving No One Behind",
     btnText: "Join the YWCA Movement",
-    btnLink: "#",
+    btnLink: "/join-us",
   },
-  
+
 ];
 
 const AUTO_PLAY = 5000;
@@ -120,8 +120,8 @@ const HeroBanner = () => {
   return (
     <section
       className={styles.hero}
-    //   onMouseEnter={() => setPaused(true)}
-    //   onMouseLeave={() => setPaused(false)}
+      //   onMouseEnter={() => setPaused(true)}
+      //   onMouseLeave={() => setPaused(false)}
       aria-label="YWCA Hero Banner"
     >
       <LogoLoader />
@@ -138,15 +138,13 @@ const HeroBanner = () => {
       {SLIDES.map((slide, i) => (
         <div
           key={slide.id}
-          className={`${styles.slide} ${
-            i === current ? styles.slideActive : ""
-          }`}
+          className={`${styles.slide} ${i === current ? styles.slideActive : ""
+            }`}
         >
           {/* Background */}
           <div
-            className={`${styles.bg} ${
-              i === current ? styles.bgActive : ""
-            }`}
+            className={`${styles.bg} ${i === current ? styles.bgActive : ""
+              }`}
             style={{
               backgroundImage: `url(${slide.image})`,
             }}
@@ -154,9 +152,8 @@ const HeroBanner = () => {
 
           {/* Content */}
           <div
-            className={`${styles.content} ${
-              i === current ? styles.contentVisible : ""
-            }`}
+            className={`${styles.content} ${i === current ? styles.contentVisible : ""
+              }`}
           >
             <h1 className={styles.title}>
               <span className={styles.line1}>

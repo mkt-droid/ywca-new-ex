@@ -60,7 +60,6 @@
 }
 
 .tabTitle {
-
   color: #a212b5;
   font-weight: 600;
   margin-bottom: 35px;
@@ -68,10 +67,6 @@
   max-width: 900px;
   margin: 0 auto 20px;
   padding-bottom: 10px;
-
-
-
-
   border-bottom: 2px solid #f1f1f1;
 }
 

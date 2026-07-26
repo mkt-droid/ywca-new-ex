@@ -9,7 +9,6 @@ const VisionMission = () => {
         title={<>OUR <br /> VISION & MISSION</>}
         bgImage="/images/01-Banner-Vision-Mission.jpg"
         contentMarginTop="25vh"
-        grayscale={false}
       />
 
       <section className={styles.visionSection}>

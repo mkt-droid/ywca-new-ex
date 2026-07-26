@@ -96,7 +96,6 @@ const ExecutiveTeam = () => {
         title={<>EXECUTIVE <br /> TEAM</>}
         bgImage="/images/01-Banner-Ex-team.jpg"
         contentMarginTop="25vh"
-        grayscale={false}
       />
 
       <section className={innerStyles.innerPageSection} style={{ backgroundColor: '#FCF7F7' }}>

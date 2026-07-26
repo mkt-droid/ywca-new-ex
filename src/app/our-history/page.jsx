@@ -8,7 +8,6 @@ const OurHistory = () => {
         title={<>OUR <br /> HISTORY</>}
         bgImage="/images/01-Banner-History.jpg"
         contentMarginTop="25vh"
-        grayscale={false}
       />
 
       <section className={styles.ourHistorySection}>

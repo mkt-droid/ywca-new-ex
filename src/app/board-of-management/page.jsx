@@ -134,7 +134,6 @@ const BoardOfManagement = () => {
         title={<>BOARD <br /> OF MANAGEMENT</>}
         bgImage="/images/board-of-management/bom-bnr.jpg"
         contentMarginTop="25vh"
-        grayscale={false}
       />
 
       <section className={styles.innerPageSection} style={{ backgroundColor: '#FCF7F7' }}>

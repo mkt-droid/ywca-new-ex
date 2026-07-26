@@ -39,7 +39,7 @@ export default function DayCarePage() {
   return (
     <main>
       <SideNavBanner
-        title={<>OUR <br />DAY CARE<br /> CENTRE</>}
+        title={<>DAY CARE<br /> CENTRE</>}
         bgImage="/images/day-care/banner-image.jpg"
         navItems={bannerNavItems}
         activePath="#overview"
@@ -127,20 +127,27 @@ export default function DayCarePage() {
             We provide a comprehensive range of services to ensure safety, learning, and overall well-being
           </p>
           <ul className={styles.servicesList}>
-            <li>Safe and secure environment for children 6 months to 12 years</li>
-            <li>Comfortable bedding arrangements, cots and baby cradles</li>
-            <li>Feeding chairs for infants and toddlers</li>
-            <li>CCTV surveillance for enhanced safety</li>
-            <li>Age-appropriate educational toys and learning materials</li>
-            <li>Early Childhood Education (numbers, letters, basic concepts such as big/small)</li>
-            <li>Focus on physical development through outdoor activities</li>
-            <li>Storytelling sessions and interactive learning</li>
-            <li>Creative play and pretend play activities</li>
-            <li>Activities that promote imagination and creativity</li>
-            <li>Festival-based fun and learning activities</li>
-            <li>After-school support, including homework assistance</li>
-            <li>Craft activities for school going children</li>
-            <li>Counseling and emotional support for parents, if required</li>
+            {[
+              "Safe and secure environment for children 6 months to 12 years",
+              "Comfortable bedding arrangements, cots and baby cradles",
+              "Feeding chairs for infants and toddlers",
+              "CCTV surveillance for enhanced safety",
+              "Age-appropriate educational toys and learning materials",
+              "Early Childhood Education (numbers, letters, basic concepts such as big/small)",
+              "Focus on physical development through outdoor activities",
+              "Storytelling sessions and interactive learning",
+              "Creative play and pretend play activities",
+              "Activities that promote imagination and creativity",
+              "Festival-based fun and learning activities",
+              "After-school support, including homework assistance",
+              "Craft activities for school going children",
+              "Counseling and emotional support for parents, if required"
+            ].map((item, index) => (
+              <li key={index}>
+                <i className="bi bi-circle"></i>
+                {item}
+              </li>
+            ))}
           </ul>
         </div>
 
