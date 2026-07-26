@@ -102,7 +102,7 @@ export default function SupportACausePage() {
             SUPPORT CHANGE
           </>
         }
-        bgImage="/images/fund-raising/main-banner.jpg"
+        bgImage="/images/fund-raising/01-banner-support-a-cause.jpg"
         navItems={bannerNavItems}
         activePath="/fund-raising-publicity/support-a-cause"
       />

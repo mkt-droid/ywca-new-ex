@@ -8,9 +8,17 @@ import Gallery from '@/components/common/Gallery';
 export default function WorldDayOfPrayerPage() {
   // Using placeholder array of images until they are downloaded from Google Drive
   const galleryImages = [
-    '/images/yuva-department/01-Gallery-Inter-School Debate/1.jpg',
-    '/images/yuva-department/01-Gallery-Inter-School Debate/2.jpg',
-    '/images/yuva-department/01-Gallery-Inter-School Debate/3.jpg'
+    '/images/religious/World-Day-of-Prayer/1.jpg',
+    '/images/religious/World-Day-of-Prayer/2.jpg',
+    '/images/religious/World-Day-of-Prayer/3.jpg',
+    '/images/religious/World-Day-of-Prayer/4.jpg',
+    '/images/religious/World-Day-of-Prayer/5.jpg',
+    '/images/religious/World-Day-of-Prayer/6.jpg',
+    '/images/religious/World-Day-of-Prayer/7.jpg',
+    '/images/religious/World-Day-of-Prayer/8.jpg',
+    '/images/religious/World-Day-of-Prayer/9.jpg',
+    '/images/religious/World-Day-of-Prayer/10.jpg',
+    '/images/religious/World-Day-of-Prayer/11.jpg'
   ];
 
   return (

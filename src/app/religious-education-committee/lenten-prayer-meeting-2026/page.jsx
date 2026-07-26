@@ -8,9 +8,23 @@ import Gallery from '@/components/common/Gallery';
 export default function LentenPrayerMeetingPage() {
   // Using placeholder array of images until they are downloaded from Google Drive
   const galleryImages = [
-    '/images/yuva-department/02-Gallery-Thrive Music Festival/1.jpg',
-    '/images/yuva-department/02-Gallery-Thrive Music Festival/2.jpg',
-    '/images/yuva-department/02-Gallery-Thrive Music Festival/3.jpg'
+    '/images/religious/Lenten-Prayer-Meet/1.jpg',
+    '/images/religious/Lenten-Prayer-Meet/2.jpg',
+    '/images/religious/Lenten-Prayer-Meet/3.jpg',
+    '/images/religious/Lenten-Prayer-Meet/4.jpg',
+    '/images/religious/Lenten-Prayer-Meet/5.jpg',
+    '/images/religious/Lenten-Prayer-Meet/6.jpg',
+    '/images/religious/Lenten-Prayer-Meet/7.jpg',
+    '/images/religious/Lenten-Prayer-Meet/8.jpg',
+    '/images/religious/Lenten-Prayer-Meet/9.jpg',
+    '/images/religious/Lenten-Prayer-Meet/10.jpg',
+    '/images/religious/Lenten-Prayer-Meet/11.jpg',
+    '/images/religious/Lenten-Prayer-Meet/12.jpg',
+    '/images/religious/Lenten-Prayer-Meet/13.jpg',
+    '/images/religious/Lenten-Prayer-Meet/14.jpg',
+    '/images/religious/Lenten-Prayer-Meet/15.jpg',
+    '/images/religious/Lenten-Prayer-Meet/16.jpg',
+    '/images/religious/Lenten-Prayer-Meet/17.jpg'
   ];
 
   return (

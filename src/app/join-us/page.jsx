@@ -73,7 +73,7 @@ export default function JoinUsPage() {
                     </div>
                     <h4 className={styles.boxTitle}>{option.title}</h4>
                     <p className={styles.boxDesc}>{option.desc}</p>
-                    <Link href={option.link} className={styles.viewMoreBtn}>
+                    <Link href={option.link} target='_blank' className={styles.viewMoreBtn}>
                       View More <i className="bi bi-arrow-right ms-1"></i>
                     </Link>
                   </div>

@@ -107,7 +107,7 @@ export default function EcoJusticeLabPage() {
             SUPPORT CHANGE
           </>
         }
-        bgImage="/images/fund-raising/main-banner.jpg"
+        bgImage="/images/justice-lab/01-banner-eco-justice-lab.jpg"
         navItems={bannerNavItems}
         activePath="/fund-raising-publicity/eco-justice-lab"
       />

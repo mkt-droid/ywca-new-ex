@@ -8,11 +8,11 @@ export default function InsightsPublicationsPage() {
   const [activeTab, setActiveTab] = useState('Annual Reports');
 
   const tabs = [
-    'Annual Reports',
-    'Publications',
-    'Adamya Nari Samman Year Book',
-    'Media Presence',
-    'Financials'
+    { name: 'Annual Reports', icon: 'bi-file-earmark-bar-graph' },
+    { name: 'Publications', icon: 'bi-journal-text' },
+    { name: 'Adamya Nari Samman Year Book', icon: 'bi-book' },
+    { name: 'Media Presence', icon: 'bi-camera-video' },
+    { name: 'Financials', icon: 'bi-bank' }
   ];
 
   const annualReports = [
@@ -42,11 +42,15 @@ export default function InsightsPublicationsPage() {
                   <div className={styles.tabsList}>
                     {tabs.map((tab) => (
                       <button
-                        key={tab}
-                        className={`${styles.tabButton} ${activeTab === tab ? styles.activeTab : ''}`}
-                        onClick={() => setActiveTab(tab)}
+                        key={tab.name}
+                        className={`${styles.tabButton} ${activeTab === tab.name ? styles.activeTab : ''}`}
+                        onClick={() => setActiveTab(tab.name)}
                       >
-                        {tab}
+                        <span style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                          <i className={`bi ${tab.icon}`}></i>
+                          {tab.name}
+                        </span>
+                        <i className="bi bi-chevron-right" style={{ fontSize: '0.85rem', opacity: 0.7 }}></i>
                       </button>
                     ))}
                   </div>

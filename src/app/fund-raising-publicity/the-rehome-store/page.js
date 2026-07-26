@@ -113,7 +113,7 @@ export default function TheRehomeStorePage() {
             SUPPORT CHANGE
           </>
         }
-        bgImage="/images/fund-raising/main-banner.jpg"
+        bgImage="/images/fund-raising/01-banner-the-rehome-store.jpg"
         navItems={bannerNavItems}
         activePath="/fund-raising-publicity/the-rehome-store"
       />

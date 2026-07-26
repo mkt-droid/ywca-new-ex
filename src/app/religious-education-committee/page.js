@@ -39,7 +39,7 @@ export default function ReligiousEducationCommitteePage() {
             <div className="col-md-6 col-lg-5 mb-4">
               <Link href="/religious-education-committee/world-day-of-prayer-2026" className={styles.programLink}>
                 <div className={styles.programCard}>
-                  <img src="/images/yuva-department/01-Gallery-Inter-School Debate/1.jpg" alt="World Day of Prayer 2026" className="img-fluid rounded mb-3" style={{ width: '100%', height: '280px', objectFit: 'cover' }} />
+                  <img src="/images/religious/World-Day-of-Prayer/1.jpg" alt="World Day of Prayer 2026" className="img-fluid rounded mb-3" style={{ width: '100%', height: '280px', objectFit: 'cover' }} />
                   <div className={styles.cardIconWrapper}>
                     <i className="bi bi-calendar-event"></i>
                   </div>
@@ -52,7 +52,7 @@ export default function ReligiousEducationCommitteePage() {
             <div className="col-md-6 col-lg-5 mb-4">
               <Link href="/religious-education-committee/lenten-prayer-meeting-2026" className={styles.programLink}>
                 <div className={styles.programCard}>
-                  <img src="/images/yuva-department/02-Gallery-Thrive Music Festival/1.jpg" alt="Lenten Prayer Meeting 2026" className="img-fluid rounded mb-3" style={{ width: '100%', height: '280px', objectFit: 'cover' }} />
+                  <img src="/images/religious/Lenten-Prayer-Meet/1.jpg" alt="Lenten Prayer Meeting 2026" className="img-fluid rounded mb-3" style={{ width: '100%', height: '280px', objectFit: 'cover' }} />
                   <div className={styles.cardIconWrapper}>
                     <i className="bi bi-book"></i>
                   </div>
