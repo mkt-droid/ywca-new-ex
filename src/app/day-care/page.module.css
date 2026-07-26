@@ -11,10 +11,10 @@
 }
 
 .mainTitle {
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #000000;
   margin-bottom: 0.5rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .subTitle {
@@ -82,10 +82,11 @@
 }
 
 .sectionTitlePink {
-  font-size: 1.8rem;
+  color: #a212b5;
+  font-size: 1.9rem;
+  font-weight: 600;
   color: #A011AF;
   margin-bottom: 1.5rem;
-  font-weight: 500;
   text-align: center;
 }
 

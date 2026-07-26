@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import styles from './page.module.css';
-import SideNavBanner from '@/components/partials/SideNavBanner';
+import InnerPageBanner from '@/components/partials/InnerPageBanner';
 
 export default function InsightsPublicationsPage() {
   const [activeTab, setActiveTab] = useState('Annual Reports');
@@ -25,11 +25,11 @@ export default function InsightsPublicationsPage() {
 
   return (
     <main>
-      <SideNavBanner
+      <InnerPageBanner
         title={<>INSIGHTS &<br />PUBLICATIONS</>}
         bgImage="/images/01-Banner-insights-pub.jpg"
-        activePath="/insights-publications"
         contentMarginTop="25vh"
+        defaultGrayscale={true}
       />
 
       <div className={styles.pageContentWrapper}>

@@ -25,7 +25,7 @@ export default function Gallery({ images = [], title = "" }) {
 
   return (
     <section className={styles.gallerySection}>
-      {title && <h2 className={styles.galleryTitlePink} style={{ color: '#a011af', fontSize: '1.8rem' }}>{title}</h2>}
+      {title && <h2 className={styles.galleryTitlePink} >{title}</h2>}
       <div className={styles.inlineGalleryContainer}>
         <div className={styles.mainImageDisplay}>
           <img

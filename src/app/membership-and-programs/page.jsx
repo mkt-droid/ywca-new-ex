@@ -36,7 +36,7 @@ export default function MembershipDepartmentPage() {
 
             {/* Programs Section */}
             <div className=" text-center">
-              <h3 style={{ color: '#a212b5', fontWeight: '600', fontSize: '1.9rem', maxWidth: '900px', margin: '0 auto 20px' }}>Programs conducted by the Membership Department in the past</h3>
+              <h3 className='sectionTitle mx-600'>Programs conducted by the Membership Department in the past</h3>
 
               <div className="row justify-content-center mt-4">
                 <div className="col-md-6 col-lg-5 mb-4">

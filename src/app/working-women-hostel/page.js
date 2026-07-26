@@ -62,38 +62,39 @@ export default function WorkingWomenHostelPage() {
 
       <div className={styles.pageBackground}>
         <div className={`container ${styles.featuresSection}`}>
-          <div className="row text-center">
-            <div className="col-md-4">
-              <div className={styles.featureBox}>
-                <div className={styles.iconWrap}>
-                  <i className="bi bi-geo-alt"></i>
+          <div className="row text-center justify-content-center">
+            <div className="col-lg-8 col-md-10">
+              <div className="row">
+                <div className="col-md-4">
+                  <div className={styles.featureBox}>
+                    <div className={styles.iconWrap}>
+                      <i className="bi bi-geo-alt"></i>
+                    </div>
+                    <h4>2+ Location</h4>
+                  </div>
                 </div>
-                <h4>2+ Location</h4>
-
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className={styles.featureBox}>
-                <div className={styles.iconWrap}>
-                  <i className="bi bi-door-open"></i>
+                <div className="col-md-4">
+                  <div className={styles.featureBox}>
+                    <div className={styles.iconWrap}>
+                      <i className="bi bi-door-open"></i>
+                    </div>
+                    <h4>67 Rooms Available</h4>
+                  </div>
                 </div>
-                <h4>67 Rooms Available</h4>
-
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className={styles.featureBox}>
-                <div className={styles.iconWrap}>
-                  <i className="bi bi-send"></i>
+                <div className="col-md-4">
+                  <div className={styles.featureBox}>
+                    <div className={styles.iconWrap}>
+                      <i className="bi bi-send"></i>
+                    </div>
+                    <h4>Centrally located</h4>
+                  </div>
                 </div>
-                <h4>Centrally located</h4>
-
               </div>
             </div>
           </div>
 
-          <div className={styles.introPara}>
-            <p>With the progressive change in the socio-economic fabric of the country more and more women are leaving their homes in search of employment in big cities. One of the main difficulties faced by such women is lack of safe and conveniently located accommodation. The YWCA of Delhi, over the years, has emerged as a platform for working women to assume new responsibilities in contributing towards the growth of the nation and the society at large. Hence YWCA established Working Women's Hostels in different parts of Delhi to provide budget accommodation to women from different walks of life irrespective of their caste, class, creed and religion. At present moment YWCA of Delhi runs two Working Women's Hostels.</p>
+          <div className={styles.introPara} >
+            <p style={{ textAlign: 'center' }}>With the progressive change in the socio-economic fabric of the country more and more women are leaving their homes in search of employment in big cities. One of the main difficulties faced by such women is lack of safe and conveniently located accommodation. The YWCA of Delhi, over the years, has emerged as a platform for working women to assume new responsibilities in contributing towards the growth of the nation and the society at large. Hence YWCA established Working Women's Hostels in different parts of Delhi to provide budget accommodation to women from different walks of life irrespective of their caste, class, creed and religion. At present moment YWCA of Delhi runs two Working Women's Hostels.</p>
           </div>
         </div>
 
@@ -105,7 +106,7 @@ export default function WorkingWomenHostelPage() {
                 <img src="/images/working-women-hostels/wwh-1.png" alt="Centenary Working Women's Hostel" className="img-fluid rounded" />
               </div>
               <div className="col-md-6">
-                <h3 className={styles.hostelTitle}>Centenary Working Women's Hostel (CHWW)</h3>
+                <h3 className='sectionTitle'>Centenary Working Women's Hostel (CHWW)</h3>
                 <p className={styles.hostelDesc}>
                   Situated in the heart of the city in Ashoka Road has got 64 rooms with the total bed capacity of 168. In spite of the pandemic the hostel-maintained occupancy of 126 residents throughout this period.
                 </p>
@@ -124,7 +125,7 @@ export default function WorkingWomenHostelPage() {
                 <img src="/images/working-women-hostels/wwh-2.png" alt="Jasola Working Women's Hostel" className="img-fluid rounded" />
               </div>
               <div className="col-md-6">
-                <h3 className={styles.hostelTitle}>Jasola Working Women's Hostel (JWWH)</h3>
+                <h3 className='sectionTitle'>Jasola Working Women's Hostel (JWWH)</h3>
                 <p className={styles.hostelDesc}>
                   The Ministry of Women and Child Development jointly with Ministry of Development of North Eastern Region, Government of India has set up the Working Women's Hostel in Jasola Vihar, New Delhi for women of the North Eastern states and other working women. The Management of the JWWH was entrusted to the YWCA of Delhi in August 2011. JWWH has got 167 rooms with attached bathroom and total bed capacity of 501. During the pandemic the hostel was able to maintain occupancy of 166 throughout.
                 </p>
@@ -136,30 +137,60 @@ export default function WorkingWomenHostelPage() {
         <div className="container mb-5" style={{ color: '#333' }}>
           {/* Mission */}
           <div className="mb-5">
-            <h3 style={{ color: '#a212b5', fontWeight: '600', marginBottom: '15px' }}>Mission of the Working Women Hostel of YWCA</h3>
+            <h3 className='sectionTitle'>Mission of the Working Women Hostel of YWCA</h3>
             <p style={{ lineHeight: '1.8' }}>The Mission for running this Hostel is to make the hostel facilities available to the maximum number of girls and women who are coming to work in Delhi from different parts of India, irrespective of their caste, religion and creed. Our main objective is to make the Hostel facilities available at an affordable price to those candidates who are coming from low income groups. However, the requirement of the high income groups is also not ignored. We always strive hard to strike a balance between these two groups.</p>
           </div>
 
           {/* Values */}
-          <div className="mb-5">
-            <h3 style={{ color: '#a212b5', fontWeight: '600', marginBottom: '15px' }}>Values we follow</h3>
-            <p style={{ lineHeight: '1.8' }}><strong>Justice Beyond Borders :-</strong> The CHWW respects the freedom of all who come in, be it staff, resident, housekeeping or security personnel and each one is given their due to make them feel that all are a part of the big setup called CHWW and it cannot progress without the contribution and support of all concerned.</p>
-            <p style={{ lineHeight: '1.8' }}><strong>Visioning with the Young :-</strong> In our efforts to bring out the best in the youth, all Festivals like Dussehra, Diwali, Independence Day, Lohri and Holi are celebrated by the Hostel Residents with great enthusiasm. This gives them all freedom of expression in various forms and an opportunity to express themselves. The various hazzles of different professions which they face each day is shared among the residents resulting in more appreciation and regard for each one.</p>
+          <div className="mb-5" style={{ maxWidth: '1000px', margin: '0 auto' }}>
+            <h3 className='sectionTitle text-center'>Values we follow</h3>
+            <div className="row justify-content-center">
+              <div className="col-md-6 mb-4">
+                <div className={styles.valueCard}>
+                  <div className={styles.valueIcon}>
+                    <i className="bi bi-globe"></i>
+                  </div>
+                  <h4 className={styles.valueTitle}>Justice Beyond Borders</h4>
+                  <p className={styles.valueText}>
+                    The CHWW respects the freedom of all who come in, be it staff, resident, housekeeping or security personnel and each one is given their due to make them feel that all are a part of the big setup called CHWW and it cannot progress without the contribution and support of all concerned.
+                  </p>
+                </div>
+              </div>
+              <div className="col-md-6 mb-4">
+                <div className={styles.valueCard}>
+                  <div className={styles.valueIcon}>
+                    <i className="bi bi-lightbulb"></i>
+                  </div>
+                  <h4 className={styles.valueTitle}>Visioning with the Young</h4>
+                  <p className={styles.valueText}>
+                    In our efforts to bring out the best in the youth, all Festivals like Dussehra, Diwali, Independence Day, Lohri and Holi are celebrated by the Hostel Residents with great enthusiasm. This gives them all freedom of expression in various forms and an opportunity to express themselves. The various hazzles of different professions which they face each day is shared among the residents resulting in more appreciation and regard for each one.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className={styles.infoBox}>
+            <h3 style={{ color: '#a212b5', fontWeight: '600', marginBottom: '20px', textAlign: 'center' }}>Working Procedures</h3>
             <div className="row">
               <div className="col-md-6 mb-4">
-                <h3 style={{ color: '#a212b5', fontWeight: '600', marginBottom: '15px' }}>Working Procedures</h3>
-                <h5 className="fw-bold mt-4 mb-3">Eligibility Criteria:</h5>
+                <h5 className="fw-bold mb-3">
+                  <i className="bi bi-card-checklist me-2" style={{ color: '#a212b5', fontSize: '1.3rem' }}></i>
+                  Eligibility Criteria
+                </h5>
                 <ul className={styles.customList}>
                   <li><i className="bi bi-circle"></i>Candidates should be new to Delhi (having lived in Delhi for less than 3 years).</li>
                   <li><i className="bi bi-circle"></i>Candidates should not be more than 40 years.</li>
                   <li><i className="bi bi-circle"></i>Candidates must have a Local Lady Guardian.</li>
                   <li><i className="bi bi-circle"></i>Candidate’s monthly income should not be less than Rs. 10,000 and should not be more than Rs. 50,000.</li>
                 </ul>
+              </div>
 
-                <h5 className="fw-bold mt-4 mb-3">Admission Procedure:</h5>
+              <div className="col-md-6 mb-4">
+                <h5 className="fw-bold mb-3">
+                  <i className="bi bi-file-earmark-text me-2" style={{ color: '#a212b5', fontSize: '1.3rem' }}></i>
+                  Admission Procedure
+                </h5>
                 <ul className={styles.customList}>
                   <li><i className="bi bi-circle"></i>Buy Prospectus with Accommodation form (cost: Rs. 100).</li>
                   <li><i className="bi bi-circle"></i>Fill in the Accommodation form completely and submit it to our office.</li>
@@ -169,9 +200,13 @@ export default function WorkingWomenHostelPage() {
                   <li><i className="bi bi-circle"></i>A Medical Certificate from a recognized MBBS Doctor is required.</li>
                 </ul>
               </div>
+            </div>
+          </div>
 
-              <div className="col-md-6 mb-4">
-                <h3 style={{ color: '#a212b5', fontWeight: '600', marginBottom: '15px' }}>Facilities Available</h3>
+          <div className={styles.infoBox}>
+            <h3 style={{ color: '#a212b5', fontWeight: '600', marginBottom: '20px', textAlign: 'center' }}>Facilities Available</h3>
+            <div className="row">
+              <div className="col-md-6">
                 <ul className={styles.customList}>
                   <li><i className="bi bi-circle"></i>Round the clock water and electricity supply and back up.</li>
                   <li><i className="bi bi-circle"></i>Internet facility (on payment).</li>
@@ -181,6 +216,10 @@ export default function WorkingWomenHostelPage() {
                   <li><i className="bi bi-circle"></i>Mess facility (packed lunch is also available).</li>
                   <li><i className="bi bi-circle"></i>Aqua Guard Filtered drinking water.</li>
                   <li><i className="bi bi-circle"></i>Beautiful Visitor’s Room (having fixed visiting hours).</li>
+                </ul>
+              </div>
+              <div className="col-md-6">
+                <ul className={styles.customList}>
                   <li><i className="bi bi-circle"></i>Prayer Room.</li>
                   <li><i className="bi bi-circle"></i>Common room for T.V. (open till 11.00 p.m.).</li>
                   <li><i className="bi bi-circle"></i>Providing Housekeeping service daily for cleaning of rooms, bathrooms etc.</li>
@@ -194,7 +233,7 @@ export default function WorkingWomenHostelPage() {
             </div>
           </div>
 
-          <div className="mb-5">
+          {/* <div className="mb-5">
             <h3 style={{ color: '#a212b5', fontWeight: '600', marginBottom: '15px' }}>Festival Celebrations</h3>
             <p style={{ lineHeight: '1.8' }}>Festivals like Holi, Easter, Lohri, Diwali and Christmas are celebrated with great fervor in the hostel.</p>
             <h5 className="fw-bold mt-3 mb-2">Cultural Evenings:</h5>
@@ -229,22 +268,22 @@ export default function WorkingWomenHostelPage() {
                 <p className={styles.cardDesc}>“Ready to Help” service is provided by the Hostel staff which comprises, the Head of Department, two Resident Secretaries, 4 Establishment Staff, one Gardner and 6 Housekeeping staff.</p>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Downloads Section */}
-          <div className="mb-5 text-center">
-            <h3 style={{ color: '#a212b5', fontWeight: '600', marginBottom: '25px' }}>Download Documents</h3>
+          <div className={styles.downloadSection}>
+            <h2 className={styles.downloadTitle}>Download Documents</h2>
             <div className="d-flex flex-wrap justify-content-center gap-3">
-              <a href="/images/working-women-hostels/HOSTEL FLYER.pdf" download className="btn btn-primary" style={{ backgroundColor: '#a212b5', borderColor: '#a212b5', padding: '10px 25px', borderRadius: '30px', fontWeight: '500' }}>
+              <a href="/images/working-women-hostels/HOSTEL FLYER.pdf" download className={styles.downloadBtn}>
                 <i className="bi bi-file-earmark-pdf me-2"></i>Hostel Flyer
               </a>
-              <a href="/images/working-women-hostels/Prospectus  - CHWW.pdf" download className="btn btn-primary" style={{ backgroundColor: '#a212b5', borderColor: '#a212b5', padding: '10px 25px', borderRadius: '30px', fontWeight: '500' }}>
+              <a href="/images/working-women-hostels/Prospectus  - CHWW.pdf" download className={styles.downloadBtn}>
                 <i className="bi bi-file-earmark-pdf me-2"></i>Prospectus (CHWW)
               </a>
-              <a href="/images/working-women-hostels/Prospectus - JWWH.pdf" download className="btn btn-primary" style={{ backgroundColor: '#a212b5', borderColor: '#a212b5', padding: '10px 25px', borderRadius: '30px', fontWeight: '500' }}>
+              <a href="/images/working-women-hostels/Prospectus - JWWH.pdf" download className={styles.downloadBtn}>
                 <i className="bi bi-file-earmark-pdf me-2"></i>Prospectus (JWWH)
               </a>
-              <a href="/images/working-women-hostels/Prospectus-JWWH.pdf" download className="btn btn-primary" style={{ backgroundColor: '#a212b5', borderColor: '#a212b5', padding: '10px 25px', borderRadius: '30px', fontWeight: '500' }}>
+              <a href="/images/working-women-hostels/Prospectus-JWWH.pdf" download className={styles.downloadBtn}>
                 <i className="bi bi-file-earmark-pdf me-2"></i>Prospectus (JWWH Alt)
               </a>
             </div>

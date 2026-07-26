@@ -1,22 +1,23 @@
 'use client'
-import SideNavBanner from "@/components/partials/SideNavBanner";
+import InnerPageBanner from "@/components/partials/InnerPageBanner";
 import styles from './page.module.css';
 
 const VisionMission = () => {
   return (
     <>
-      <SideNavBanner
+      <InnerPageBanner
         title={<>OUR <br /> VISION & MISSION</>}
         bgImage="/images/01-Banner-Vision-Mission.jpg"
         contentMarginTop="25vh"
+        defaultGrayscale={true}
       />
 
       <section className={styles.visionSection}>
         <div className="container">
           <div className={styles.contentWrapper}>
-            <h1 className={styles.heading}>
+            <h2 className={styles.heading}>
               AN INTERNATIONAL MOVEMENT MOTIVATED BY ITS <br /> CONCERN FOR WOMEN
-            </h1>
+            </h2>
 
             <p className={styles.textParagraph}>
               The Young Women's Christian Association (YWCA) is an international movement motivated by its concern for women all over the world. It is deeply committed to the development and empowerment of women.

@@ -31,7 +31,7 @@ export default function YouthDepartmentPage() {
 
             {/* Programs Section */}
             <div className="mt-5 text-center">
-              <h3 style={{ color: '#a212b5', fontWeight: '600', marginBottom: '35px', fontSize: '1.9rem', maxWidth: '900px', margin: '0 auto 20px' }}>Programs Conducted in Past</h3>
+              <h3 className='sectionTitle mx-800'>Programs Conducted in Past</h3>
 
               <div className="row justify-content-center mt-4">
                 <div className="col-md-6 col-lg-5 mb-4">

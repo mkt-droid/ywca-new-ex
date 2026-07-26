@@ -1,13 +1,14 @@
-import SideNavBanner from "@/components/partials/SideNavBanner";
+import InnerPageBanner from "@/components/partials/InnerPageBanner";
 import styles from './page.module.css'
 
 const OurHistory = () => {
   return (
     <>
-      <SideNavBanner
+      <InnerPageBanner
         title={<>OUR <br /> HISTORY</>}
         bgImage="/images/01-Banner-History.jpg"
         contentMarginTop="25vh"
+        defaultGrayscale={true}
       />
 
       <section className={styles.ourHistorySection}>

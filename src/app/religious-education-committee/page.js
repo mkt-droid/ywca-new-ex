@@ -32,8 +32,8 @@ export default function ReligiousEducationCommitteePage() {
         </section>
 
         {/* Programs Section */}
-        <div className="mt-5 text-center">
-          <h3 style={{ color: '#a212b5', fontWeight: '600', marginBottom: '35px', fontSize: '1.9rem', maxWidth: '900px', margin: '0 auto 20px' }}>Following are the programs conducted by the Religious Education Committee in the past</h3>
+        <div className="mt-3 text-center pb-5">
+          <h3 className='sectionTitle mx-800'>Following are the programs conducted by the Religious Education Committee in the past</h3>
 
           <div className="row justify-content-center mt-4">
             <div className="col-md-6 col-lg-5 mb-4">

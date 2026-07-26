@@ -1,4 +1,5 @@
 'use client'
+import InnerPageBanner from "@/components/partials/InnerPageBanner";
 import styles from '@/styles/Inner.module.css'
 
 export default function MessageGeneralSecretary() {
@@ -13,22 +14,25 @@ export default function MessageGeneralSecretary() {
 
   return (
     <>
-      <section className={styles.memberHero}>
-        <div className="container">
-          <div className={styles.heroInner}>
-            <div className={styles.heroLeft}>
-              <h1 className={styles.heroName}>{memberData.name}</h1>
-              <div className={styles.heroBottom}>
-                <p className={styles.heroDesignation}>{memberData.designation}</p>
-                <h2 className={styles.heroTagline}>{memberData.tagline}</h2>
-              </div>
-            </div>
-            <div className={styles.heroRight}>
-              <img src={memberData.image} alt={memberData.name} />
+      <InnerPageBanner
+        bgImage="/images/board-of-management/bom-bnr.jpg"
+        overlayColor="linear-gradient(to right, rgba(146, 45, 157, 0.85), rgba(146, 45, 157, 0.85))"
+        defaultGrayscale={false}
+        contentMarginTop="0vh"
+      >
+        <div className={styles.heroInner}>
+          <div className={styles.heroLeft}>
+            <h1 className={styles.heroName}>{memberData.name}</h1>
+            <div className={styles.heroBottom}>
+              <p className={styles.heroDesignation}>{memberData.designation}</p>
+              <h2 className={styles.heroTagline}>{memberData.tagline}</h2>
             </div>
           </div>
+          <div className={styles.heroRight}>
+            <img src={memberData.image} alt={memberData.name} />
+          </div>
         </div>
-      </section>
+      </InnerPageBanner>
 
       <section className={styles.innerPageSection} style={{ backgroundColor: '#FCF7F7' }}>
         <div className="container">

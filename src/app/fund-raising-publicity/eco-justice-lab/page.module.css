@@ -9,8 +9,8 @@
 
 .sectionTitle {
   text-align: center;
-  font-size: 2.2rem;
-  font-weight: 600;
+  font-size:2.2rem;
+  font-weight:600;
   color: #000;
   text-transform: uppercase;
 }
@@ -155,10 +155,10 @@
 .viewMoreBtn {
   background-color: #1f1966;
   color: #fff;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 500;
-  padding: 8px 25px;
-  border-radius: 20px;
+  padding: 10px 25px;
+  border-radius: 30px;
   border: none;
   text-decoration: none;
   display: inline-block;
@@ -167,7 +167,7 @@
 }
 
 .viewMoreBtn:hover {
-  background-color: #120e3a;
+  background-color: #a212b5;
   color: #fff;
 }
 
@@ -453,3 +453,4 @@
     margin-bottom: 30px;
   }
 }
+

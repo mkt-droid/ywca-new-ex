@@ -15,6 +15,104 @@ export default function CDPProgramsPage() {
     { title: 'STORIES', icon: 'bi-book', link: '/community-development-programme/stories' }
   ];
 
+  const [selectedProgram, setSelectedProgram] = React.useState(null);
+
+  const programsData = [
+    {
+      id: 1,
+      title: "Education & Literacy",
+      tagline: "Because independence starts with being able to read your own life.",
+      thumbnail: "/images/Community-development.jpg",
+      problem: "Many women in Delhi’s settlements were pulled out of school early — for marriage, housework, or to help earn. Without basic literacy and numeracy, they remain dependent on others for the simplest transactions.",
+      solutions: [
+        "Non-formal adult literacy classes (3 months, evening batches for working women)",
+        "Remedial and bridge classes for out-of-school girls to re-enter formal school",
+        "Digital literacy basics (using a smartphone safely, UPI payments, government portals)"
+      ],
+      whoItsFor: "Women aged 15–45 and adolescent girls at risk of dropping out.",
+      outcomes: "Reading/writing proficiency, school re-enrolment rate, digital transaction confidence.",
+      stats: [
+        { value: "1,800", label: "Learners Enrolled" },
+        { value: "78%", label: "Course Completion" },
+        { value: "240", label: "Girls Re-enrolled" }
+      ],
+      ctaText: "Sponsor a Literacy Kit →",
+      ctaPrice: "₹800/learner",
+      ctaLink: "/fund-raising-publicity/donate"
+    },
+    {
+      id: 2,
+      title: "Skill Building & Livelihoods",
+      tagline: "A skill is the shortest distance between hardship and hope.",
+      thumbnail: "/images/01-Banner-Vision-Mission.jpg",
+      problem: "Even when women want to work, they often lack a marketable skill, capital to start something small, or the confidence to seek employment outside the home.",
+      solutions: [
+        "Tailoring & garment-making (3–6 month certified courses)",
+        "Beauty & wellness training",
+        "Basic computer & office skills",
+        "Food processing and packaging (pickles, spices, bakery)",
+        "Post-training placement support and linkage to micro-loans and SHG credit"
+      ],
+      whoItsFor: "Women aged 18–50 seeking income independence.",
+      outcomes: "Certification rate, placement/self-employment rate within 6 months, average monthly income increase.",
+      stats: [
+        { value: "1,100", label: "Women Trained" },
+        { value: "68%", label: "Placed/Self-employed" },
+        { value: "₹4,200", label: "Avg Monthly Increase" }
+      ],
+      ctaText: "Fund a Skill Training Seat →",
+      ctaPrice: "₹3,500/woman",
+      ctaLink: "/fund-raising-publicity/donate"
+    },
+    {
+      id: 3,
+      title: "Health & Well-being",
+      tagline: "A healthy woman can build a healthy home — and a healthy community.",
+      thumbnail: "/images/high-1.jpg",
+      problem: "Poor sanitation, limited health literacy, and stigma around reproductive and mental health leave women managing serious issues silently.",
+      solutions: [
+        "Menstrual and reproductive health awareness sessions",
+        "Nutrition counselling for women and children",
+        "Mental health awareness and referral support",
+        "Linkage to government health schemes (Ayushman Bharat, ANC/PNC services)",
+        "Health camps in partnership with local clinics and hospitals"
+      ],
+      whoItsFor: "Women, adolescent girls, and mothers of young children.",
+      outcomes: "Health camp attendance, scheme enrolment rate, reduction in self-reported health-seeking barriers.",
+      stats: [
+        { value: "35", label: "Health Camps" },
+        { value: "6,500", label: "Beneficiaries Reached" },
+        { value: "2,100", label: "Linked to Govt Schemes" }
+      ],
+      ctaText: "Support a Health Camp →",
+      ctaPrice: "₹15,000",
+      ctaLink: "/fund-raising-publicity/donate"
+    },
+    {
+      id: 4,
+      title: "Leadership & Rights",
+      tagline: "She doesn’t just need a seat at the table. She needs to build the table.",
+      thumbnail: "/images/01-Banner-insights-pub.jpg",
+      problem: "Women in urban settlements are rarely consulted on decisions that affect their own communities — from local infrastructure to safety to household finances.",
+      solutions: [
+        "Self-Help Group (SHG) formation and financial literacy",
+        "Community leadership training for women representatives",
+        "Legal rights awareness (domestic violence law, property rights, POSH)",
+        "Support to access grievance redressal and local governance structures"
+      ],
+      whoItsFor: "SHG members and emerging women leaders across settlements.",
+      outcomes: "Number of active SHGs, savings mobilised, women taking on formal/informal leadership roles.",
+      stats: [
+        { value: "180", label: "Active SHGs" },
+        { value: "₹42L", label: "Savings Mobilised" },
+        { value: "95", label: "Women in Leadership" }
+      ],
+      ctaText: "Back a Self-Help Group →",
+      ctaPrice: "₹10,000",
+      ctaLink: "/fund-raising-publicity/donate"
+    }
+  ];
+
   return (
     <>
       <Head>
@@ -40,246 +138,94 @@ export default function CDPProgramsPage() {
           </div>
         </div>
 
-        {/* Program 1 */}
+        {/* Programs Grid */}
         <section className={styles.programSection}>
           <div className="container">
-            <div className="row">
-              <div className="col-lg-6 mb-4 mb-lg-0">
-                <h3 className={styles.programTitle}>Program 1: Education & Literacy</h3>
-                <div className={styles.programTagline}>Because independence starts with being able to read your own life.</div>
-
-                <div className={styles.problemSolutionBox}>
-                  <div className={styles.problemBox}>
-                    <div className={styles.boxLabel}><i className="bi bi-exclamation-triangle-fill"></i> The Problem</div>
-                    <p className={styles.boxText}>Many women in Delhi’s settlements were pulled out of school early — for marriage, housework, or to help earn. Without basic literacy and numeracy, they remain dependent on others for the simplest transactions.</p>
-                  </div>
-                  <div className={styles.solutionBox}>
-                    <div className={styles.boxLabel}><i className="bi bi-check-circle-fill"></i> What We Do</div>
-                    <ul className={styles.solutionList}>
-                      <li>Non-formal adult literacy classes (3 months, evening batches for working women)</li>
-                      <li>Remedial and bridge classes for out-of-school girls to re-enter formal school</li>
-                      <li>Digital literacy basics (using a smartphone safely, UPI payments, government portals)</li>
-                    </ul>
+            <h2 className={`text-center mb-5 ${styles.sectionTitle}`}>Our Programs</h2>
+            <div className="row g-4">
+              {programsData.map(program => (
+                <div key={program.id} className="col-lg-3 col-md-6 mb-4">
+                  <div className={styles.courseCard}>
+                    <img src={program.thumbnail} alt={program.title} className={styles.courseImage} />
+                    <div className={styles.courseContent}>
+                      <h5 className={styles.courseTitle}>{program.title}</h5>
+                      <p className={styles.cardTagline}>{program.tagline}</p>
+                      <div className={styles.btnGroup}>
+                        <button className={styles.viewMoreBtn} onClick={() => setSelectedProgram(program)}>
+                          View More
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="col-lg-6">
-                <div className={styles.infoRow}>
-                  <div className={styles.infoCard}>
-                    <div className={styles.infoCardTitle}>Who it’s for:</div>
-                    <p className={styles.infoCardText}>Women aged 15–45 and adolescent girls at risk of dropping out.</p>
-                  </div>
-                  <div className={styles.infoCard}>
-                    <div className={styles.infoCardTitle}>Outcomes we track:</div>
-                    <p className={styles.infoCardText}>Reading/writing proficiency, school re-enrolment rate, digital transaction confidence.</p>
-                  </div>
-                </div>
-
-                <h5 className="mb-3">2023–24 Impact Snapshot <small className="text-muted">[VERIFY]</small></h5>
-                <div className={styles.statsGrid}>
-                  <div className={styles.statCard}>
-                    <div className={styles.statValue}>1,800</div>
-                    <div className={styles.statLabel}>Learners Enrolled</div>
-                  </div>
-                  <div className={styles.statCard}>
-                    <div className={styles.statValue}>78%</div>
-                    <div className={styles.statLabel}>Course Completion</div>
-                  </div>
-                  <div className={styles.statCard}>
-                    <div className={styles.statValue}>240</div>
-                    <div className={styles.statLabel}>Girls Re-enrolled</div>
-                  </div>
-                </div>
-
-                <div className={styles.ctaWrapper}>
-                  <Link href="/community-development-programme/donate" className={styles.primaryBtn}>Sponsor a Literacy Kit — ₹800/learner →</Link>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </section>
 
-        {/* Program 2 */}
-        <section className={styles.programSection}>
-          <div className="container">
-            <div className="row flex-lg-row-reverse">
-              <div className="col-lg-6 mb-4 mb-lg-0">
-                <h3 className={styles.programTitle}>Program 2: Skill Building & Livelihoods</h3>
-                <div className={styles.programTagline}>A skill is the shortest distance between hardship and hope.</div>
-
-                <div className={styles.problemSolutionBox}>
-                  <div className={styles.problemBox}>
-                    <div className={styles.boxLabel}><i className="bi bi-exclamation-triangle-fill"></i> The Problem</div>
-                    <p className={styles.boxText}>Even when women want to work, they often lack a marketable skill, capital to start something small, or the confidence to seek employment outside the home.</p>
-                  </div>
-                  <div className={styles.solutionBox}>
-                    <div className={styles.boxLabel}><i className="bi bi-check-circle-fill"></i> What We Do</div>
-                    <ul className={styles.solutionList}>
-                      <li>Tailoring & garment-making (3–6 month certified courses)</li>
-                      <li>Beauty & wellness training</li>
-                      <li>Basic computer & office skills</li>
-                      <li>Food processing and packaging (pickles, spices, bakery)</li>
-                      <li>Post-training placement support and linkage to micro-loans and SHG credit</li>
-                    </ul>
-                  </div>
+        {/* Modal (Controlled by React state) */}
+        {selectedProgram && (
+          <div className="modal fade show" style={{ display: 'block', backgroundColor: 'rgba(0,0,0,0.5)' }} tabIndex="-1" aria-hidden="true">
+            <div className="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+              <div className="modal-content">
+                <div className={`modal-header ${styles.modalHeader}`}>
+                  <h5 className={`modal-title ${styles.modalTitle}`}>{selectedProgram.title}</h5>
+                  <button type="button" className="btn-close" onClick={() => setSelectedProgram(null)} aria-label="Close"></button>
                 </div>
-              </div>
-              <div className="col-lg-6">
-                <div className={styles.infoRow}>
-                  <div className={styles.infoCard}>
-                    <div className={styles.infoCardTitle}>Who it’s for:</div>
-                    <p className={styles.infoCardText}>Women aged 18–50 seeking income independence.</p>
-                  </div>
-                  <div className={styles.infoCard}>
-                    <div className={styles.infoCardTitle}>Outcomes we track:</div>
-                    <p className={styles.infoCardText}>Certification rate, placement/self-employment rate within 6 months, average monthly income increase.</p>
-                  </div>
-                </div>
+                <div className={`modal-body ${styles.modalBody}`}>
+                  <div className={styles.programTagline}>{selectedProgram.tagline}</div>
 
-                <h5 className="mb-3">2023–24 Impact Snapshot <small className="text-muted">[VERIFY]</small></h5>
-                <div className={styles.statsGrid}>
-                  <div className={styles.statCard}>
-                    <div className={styles.statValue}>1,100</div>
-                    <div className={styles.statLabel}>Women Trained</div>
+                  <div className={styles.problemSolutionBox}>
+                    <div className={styles.problemBox}>
+                      <div className={styles.boxLabel}><i className="bi bi-exclamation-triangle-fill"></i> The Problem</div>
+                      <p className={styles.boxText}>{selectedProgram.problem}</p>
+                    </div>
+                    <div className={styles.solutionBox}>
+                      <div className={styles.boxLabel}><i className="bi bi-check-circle-fill"></i> What We Do</div>
+                      <ul className={styles.solutionList}>
+                        {selectedProgram.solutions.map((sol, idx) => (
+                          <li key={idx}>{sol}</li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
-                  <div className={styles.statCard}>
-                    <div className={styles.statValue}>68%</div>
-                    <div className={styles.statLabel}>Placed/Self-employed</div>
-                  </div>
-                  <div className={styles.statCard}>
-                    <div className={styles.statValue}>₹4,200</div>
-                    <div className={styles.statLabel}>Avg Monthly Increase</div>
-                  </div>
-                </div>
 
-                <div className={styles.ctaWrapper}>
-                  <Link href="/community-development-programme/donate" className={styles.primaryBtn}>Fund a Skill Training Seat — ₹3,500/woman →</Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+                  <div className={styles.infoRow}>
+                    <div className={styles.infoCard}>
+                      <div className={styles.infoCardTitle}>Who it’s for</div>
+                      <p className={styles.infoCardText}>{selectedProgram.whoItsFor}</p>
+                    </div>
+                    <div className={styles.infoCard}>
+                      <div className={styles.infoCardTitle}>Outcomes we track</div>
+                      <p className={styles.infoCardText}>{selectedProgram.outcomes}</p>
+                    </div>
+                  </div>
 
-        {/* Program 3 */}
-        <section className={styles.programSection}>
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-6 mb-4 mb-lg-0">
-                <h3 className={styles.programTitle}>Program 3: Health & Well-being</h3>
-                <div className={styles.programTagline}>A healthy woman can build a healthy home — and a healthy community.</div>
 
-                <div className={styles.problemSolutionBox}>
-                  <div className={styles.problemBox}>
-                    <div className={styles.boxLabel}><i className="bi bi-exclamation-triangle-fill"></i> The Problem</div>
-                    <p className={styles.boxText}>Poor sanitation, limited health literacy, and stigma around reproductive and mental health leave women managing serious issues silently.</p>
+                  <div className={styles.statsGrid}>
+                    {selectedProgram.stats.map((stat, idx) => (
+                      <div key={idx} className={styles.statCard}>
+                        <div className={styles.statValue}>{stat.value}</div>
+                        <div className={styles.statLabel}>{stat.label}</div>
+                      </div>
+                    ))}
                   </div>
-                  <div className={styles.solutionBox}>
-                    <div className={styles.boxLabel}><i className="bi bi-check-circle-fill"></i> What We Do</div>
-                    <ul className={styles.solutionList}>
-                      <li>Menstrual and reproductive health awareness sessions</li>
-                      <li>Nutrition counselling for women and children</li>
-                      <li>Mental health awareness and referral support</li>
-                      <li>Linkage to government health schemes (Ayushman Bharat, ANC/PNC services)</li>
-                      <li>Health camps in partnership with local clinics and hospitals</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <div className={styles.infoRow}>
-                  <div className={styles.infoCard}>
-                    <div className={styles.infoCardTitle}>Who it’s for:</div>
-                    <p className={styles.infoCardText}>Women, adolescent girls, and mothers of young children.</p>
-                  </div>
-                  <div className={styles.infoCard}>
-                    <div className={styles.infoCardTitle}>Outcomes we track:</div>
-                    <p className={styles.infoCardText}>Health camp attendance, scheme enrolment rate, reduction in self-reported health-seeking barriers.</p>
-                  </div>
-                </div>
 
-                <h5 className="mb-3">2023–24 Impact Snapshot <small className="text-muted">[VERIFY]</small></h5>
-                <div className={styles.statsGrid}>
-                  <div className={styles.statCard}>
-                    <div className={styles.statValue}>35</div>
-                    <div className={styles.statLabel}>Health Camps</div>
+                  <div className="text-center mt-4 mb-2">
+                    <Link href={selectedProgram.ctaLink} className={styles.primaryBtn} onClick={() => setSelectedProgram(null)}>
+                      {selectedProgram.ctaText}
+                    </Link>
+                    {selectedProgram.ctaPrice && (
+                      <div style={{ fontSize: '0.85rem', color: '#666', marginTop: '8px' }}>
+                        {selectedProgram.ctaPrice}
+                      </div>
+                    )}
                   </div>
-                  <div className={styles.statCard}>
-                    <div className={styles.statValue}>6,500</div>
-                    <div className={styles.statLabel}>Beneficiaries Reached</div>
-                  </div>
-                  <div className={styles.statCard}>
-                    <div className={styles.statValue}>2,100</div>
-                    <div className={styles.statLabel}>Linked to Govt Schemes</div>
-                  </div>
-                </div>
-
-                <div className={styles.ctaWrapper}>
-                  <Link href="/community-development-programme/donate" className={styles.primaryBtn}>Support a Health Camp — ₹15,000 →</Link>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-
-        {/* Program 4 */}
-        <section className={styles.programSection}>
-          <div className="container">
-            <div className="row flex-lg-row-reverse">
-              <div className="col-lg-6 mb-4 mb-lg-0">
-                <h3 className={styles.programTitle}>Program 4: Leadership & Rights</h3>
-                <div className={styles.programTagline}>She doesn’t just need a seat at the table. She needs to build the table.</div>
-
-                <div className={styles.problemSolutionBox}>
-                  <div className={styles.problemBox}>
-                    <div className={styles.boxLabel}><i className="bi bi-exclamation-triangle-fill"></i> The Problem</div>
-                    <p className={styles.boxText}>Women in urban settlements are rarely consulted on decisions that affect their own communities — from local infrastructure to safety to household finances.</p>
-                  </div>
-                  <div className={styles.solutionBox}>
-                    <div className={styles.boxLabel}><i className="bi bi-check-circle-fill"></i> What We Do</div>
-                    <ul className={styles.solutionList}>
-                      <li>Self-Help Group (SHG) formation and financial literacy</li>
-                      <li>Community leadership training for women representatives</li>
-                      <li>Legal rights awareness (domestic violence law, property rights, POSH)</li>
-                      <li>Support to access grievance redressal and local governance structures</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <div className={styles.infoRow}>
-                  <div className={styles.infoCard}>
-                    <div className={styles.infoCardTitle}>Who it’s for:</div>
-                    <p className={styles.infoCardText}>SHG members and emerging women leaders across settlements.</p>
-                  </div>
-                  <div className={styles.infoCard}>
-                    <div className={styles.infoCardTitle}>Outcomes we track:</div>
-                    <p className={styles.infoCardText}>Number of active SHGs, savings mobilised, women taking on formal/informal leadership roles.</p>
-                  </div>
-                </div>
-
-                <h5 className="mb-3">2023–24 Impact Snapshot <small className="text-muted">[VERIFY]</small></h5>
-                <div className={styles.statsGrid}>
-                  <div className={styles.statCard}>
-                    <div className={styles.statValue}>180</div>
-                    <div className={styles.statLabel}>Active SHGs</div>
-                  </div>
-                  <div className={styles.statCard}>
-                    <div className={styles.statValue}>₹42L</div>
-                    <div className={styles.statLabel}>Savings Mobilised</div>
-                  </div>
-                  <div className={styles.statCard}>
-                    <div className={styles.statValue}>95</div>
-                    <div className={styles.statLabel}>Women in Leadership</div>
-                  </div>
-                </div>
-
-                <div className={styles.ctaWrapper}>
-                  <Link href="/community-development-programme/donate" className={styles.primaryBtn}>Back a Self-Help Group — ₹10,000 →</Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        )}
 
         {/* Where We Work */}
         <section className={styles.whereWeWork}>

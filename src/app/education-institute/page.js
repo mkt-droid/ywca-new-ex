@@ -103,7 +103,7 @@ export default function EducationInstitutePage() {
 
       {/* Academic News Section */}
       <section className="container mb-5">
-        <h2 className={`${styles.sectionTitle} text-center`}>Academic News</h2>
+        <h2 className={`sectionTitle text-center`}>Academic News</h2>
         <div className="row mt-4">
           {academicNews.map(news => (
             <div className="col-md-3 mb-4" key={news.id}>

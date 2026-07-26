@@ -28,11 +28,10 @@
 }
 
 .sectionTitle {
-  font-size: 2rem;
+  color: #a212b5;
+  margin-bottom: 20px;
+  font-size: 1.9rem;
   font-weight: 600;
-  margin-bottom: 0.95rem;
-  color: #000;
-  line-height: 1.3;
 }
 
 .zigzagSection {
@@ -65,11 +64,10 @@
 }
 
 .zigzagTitle {
-  font-size: 2rem;
+  color: #a212b5;
+  margin-bottom: 20px;
+  font-size: 1.9rem;
   font-weight: 600;
-  color: #000000;
-  margin-bottom: 0.95rem;
-  line-height: 1.3;
 }
 
 .zigzagText {
@@ -82,72 +80,65 @@
   .zigzagContent {
     padding: 20px 15px 0 15px;
   }
+
   .zigzagRow {
     margin-bottom: 50px;
   }
 }
 
-.valuesGrid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 30px;
-}
-
 .valueCard {
-  background: white;
-  border: 1px solid #eaeaea;
+  background: #ffffff;
   border-radius: 12px;
-  padding: 30px 20px;
-  width: calc(33.333% - 15px);
+  padding: 35px 25px;
   text-align: center;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-  position: relative;
-  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #eaeaea;
 }
 
 .valueCard:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-  border-color: #BE00C4;
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  border-color: #a212b5;
 }
 
 .valueIcon {
-  font-size: 2.5rem;
-  color: #242278;
-  margin-bottom: 15px;
+  width: 80px;
+  height: 80px;
+  background-color: #fdf2ff;
+  color: #a212b5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  margin-bottom: 20px;
   transition: all 0.3s ease;
 }
 
 .valueCard:hover .valueIcon {
-  color: #BE00C4;
+  background-color: #a212b5;
+  color: #ffffff;
+  transform: scale(1.1);
 }
 
 .valueTitle {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 700;
-  color: #000;
+  color: #222222;
   margin-bottom: 15px;
 }
 
 .valueText {
   font-size: 0.95rem;
-  color: #555;
+  color: #666666;
+  margin-bottom: 25px;
   line-height: 1.6;
-}
-
-@media (max-width: 991px) {
-  .valueCard {
-    width: calc(50% - 10px);
-  }
-}
-
-@media (max-width: 576px) {
-  .valueCard {
-    width: 100%;
-  }
+  flex-grow: 1;
 }
 
 .modelStep {
@@ -155,14 +146,14 @@
   background-color: white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   border: 1px solid #eee;
   transition: all 0.3s ease;
 }
 
 .modelStep:hover {
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   border-color: #BE00C4;
 }
 
@@ -201,65 +192,98 @@
 
 .govCard {
   background: #ffffff;
-  border: 1px solid #eaeaea;
   border-radius: 12px;
-  padding: 40px 30px;
+  padding: 35px 25px;
   text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   height: 100%;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.04);
-  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #eaeaea;
 }
 
 .govCard:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-  border-color: #BE00C4;
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  border-color: #a212b5;
 }
 
 .govIcon {
-  font-size: 2.5rem;
-  color: #BE00C4;
+  width: 80px;
+  height: 80px;
+  background-color: #fdf2ff;
+  color: #a212b5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
   margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.govCard:hover .govIcon {
+  background-color: #a212b5;
+  color: #ffffff;
+  transform: scale(1.1);
 }
 
 .govTitle {
   font-size: 1.3rem;
   font-weight: 700;
-  color: #242278;
+  color: #222222;
   margin-bottom: 15px;
 }
 
 .govText {
-  color: #555;
-  font-size: 1rem;
+  font-size: 0.95rem;
+  color: #666666;
+  margin-bottom: 25px;
   line-height: 1.6;
+  flex-grow: 1;
 }
 
 .affiliationsList {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 15px;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .affiliationItem {
-  background-color: white;
-  padding: 15px 30px;
-  border-radius: 8px;
+  background-color: #ffffff;
+  padding: 12px 25px;
+  border-radius: 50px;
   border: 1px solid #eaeaea;
-  color: #333;
+  color: #222222;
   font-weight: 600;
+  font-size: 0.95rem;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.affiliationItem i {
+  color: #a212b5;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
 }
 
 .affiliationItem:hover {
-  background-color: #242278;
-  color: white;
-  border-color: #242278;
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(36, 34, 120, 0.15);
+  background-color: #a212b5;
+  color: #ffffff;
+  border-color: #a212b5;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(162, 18, 181, 0.2);
+}
+
+.affiliationItem:hover i {
+  color: #ffffff;
 }
 
 .primaryBtn {

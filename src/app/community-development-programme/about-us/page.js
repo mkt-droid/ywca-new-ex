@@ -45,7 +45,7 @@ export default function CDPAboutUsPage() {
               <div className={`row align-items-center ${styles.zigzagRow}`}>
                 <div className="col-md-6 mb-4 mb-md-0">
                   <div className={styles.zigzagImageWrapper}>
-                    <img src="/images/01-Banner-Vision-Mission.jpg" alt="Our Mission" className={styles.zigzagImage} />
+                    <img src="/images/Community-development.jpg" alt="Our Mission" className={styles.zigzagImage} />
                   </div>
                 </div>
                 <div className="col-md-6">
@@ -60,7 +60,7 @@ export default function CDPAboutUsPage() {
               <div className={`row align-items-center ${styles.zigzagRow} flex-md-row-reverse`}>
                 <div className="col-md-6 mb-4 mb-md-0">
                   <div className={styles.zigzagImageWrapper}>
-                    <img src="/images/Community-development.jpg" alt="Our Vision" className={styles.zigzagImage} />
+                    <img src="/images/01-Banner-Vision-Mission.jpg" alt="Our Vision" className={styles.zigzagImage} />
                   </div>
                 </div>
                 <div className="col-md-6">
@@ -84,31 +84,41 @@ export default function CDPAboutUsPage() {
             {/* Our Values */}
             <div className="mt-5 pt-4">
               <h2 className={`${styles.sectionTitle} text-center d-block`}>Our Values</h2>
-              <div className={styles.valuesGrid}>
-                <div className={styles.valueCard}>
-                  <div className={styles.valueIcon}><i className="bi bi-person-heart"></i></div>
-                  <h4 className={styles.valueTitle}>Dignity first</h4>
-                  <p className={styles.valueText}>We design every programme so women & children are treated as capable partners, never as charity cases.</p>
+              <div className="row g-4 justify-content-center mt-3">
+                <div className="col-md-6 col-lg-4">
+                  <div className={styles.valueCard}>
+                    <div className={styles.valueIcon}><i className="bi bi-person-heart"></i></div>
+                    <h4 className={styles.valueTitle}>Dignity first</h4>
+                    <p className={styles.valueText}>We design every programme so women & children are treated as capable partners, never as charity cases.</p>
+                  </div>
                 </div>
-                <div className={styles.valueCard}>
-                  <div className={styles.valueIcon}><i className="bi bi-people"></i></div>
-                  <h4 className={styles.valueTitle}>Community-led</h4>
-                  <p className={styles.valueText}>Local women & children help identify needs and shape solutions — we facilitate, they lead.</p>
+                <div className="col-md-6 col-lg-4">
+                  <div className={styles.valueCard}>
+                    <div className={styles.valueIcon}><i className="bi bi-people"></i></div>
+                    <h4 className={styles.valueTitle}>Community-led</h4>
+                    <p className={styles.valueText}>Local women & children help identify needs and shape solutions — we facilitate, they lead.</p>
+                  </div>
                 </div>
-                <div className={styles.valueCard}>
-                  <div className={styles.valueIcon}><i className="bi bi-graph-up-arrow"></i></div>
-                  <h4 className={styles.valueTitle}>Evidence over assumption</h4>
-                  <p className={styles.valueText}>We track outcomes, not just activities, and we adjust when something isn’t working.</p>
+                <div className="col-md-6 col-lg-4">
+                  <div className={styles.valueCard}>
+                    <div className={styles.valueIcon}><i className="bi bi-graph-up-arrow"></i></div>
+                    <h4 className={styles.valueTitle}>Evidence over assumption</h4>
+                    <p className={styles.valueText}>We track outcomes, not just activities, and we adjust when something isn’t working.</p>
+                  </div>
                 </div>
-                <div className={styles.valueCard}>
-                  <div className={styles.valueIcon}><i className="bi bi-globe"></i></div>
-                  <h4 className={styles.valueTitle}>Inclusion</h4>
-                  <p className={styles.valueText}>We serve regardless of religion, caste, ethnicity or background. We reach out to the marginalised.</p>
+                <div className="col-md-6 col-lg-4">
+                  <div className={styles.valueCard}>
+                    <div className={styles.valueIcon}><i className="bi bi-globe"></i></div>
+                    <h4 className={styles.valueTitle}>Inclusion</h4>
+                    <p className={styles.valueText}>We serve regardless of religion, caste, ethnicity or background. We reach out to the marginalised.</p>
+                  </div>
                 </div>
-                <div className={styles.valueCard}>
-                  <div className={styles.valueIcon}><i className="bi bi-shield-check"></i></div>
-                  <h4 className={styles.valueTitle}>Accountability</h4>
-                  <p className={styles.valueText}>To our beneficiaries first, and to our allies, donors and partners with equal seriousness.</p>
+                <div className="col-md-6 col-lg-4">
+                  <div className={styles.valueCard}>
+                    <div className={styles.valueIcon}><i className="bi bi-shield-check"></i></div>
+                    <h4 className={styles.valueTitle}>Accountability</h4>
+                    <p className={styles.valueText}>To our beneficiaries first, and to our allies, donors and partners with equal seriousness.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -190,13 +200,13 @@ export default function CDPAboutUsPage() {
             <div className="mt-5 pt-4">
               <h2 className={`${styles.sectionTitle} text-center d-block`}>Our Affiliations & Allyship</h2>
               <div className={styles.affiliationsList}>
-                <div className={styles.affiliationItem}>YWCA of India</div>
-                <div className={styles.affiliationItem}>Delhi Commission for Women</div>
-                <div className={styles.affiliationItem}>DWCD Office - Mangolpuri</div>
-                <div className={styles.affiliationItem}>DLSA - Najafgarh & Mangolpuri</div>
-                <div className={styles.affiliationItem}>DCPU - Mangolpuri</div>
-                <div className={styles.affiliationItem}>Canara Bank - Mangolpuri</div>
-                <div className={styles.affiliationItem}>Rotary Club of Delhi SouthEx</div>
+                <div className={styles.affiliationItem}><i className="bi bi-award"></i> YWCA of India</div>
+                <div className={styles.affiliationItem}><i className="bi bi-shield-check"></i> Delhi Commission for Women</div>
+                <div className={styles.affiliationItem}><i className="bi bi-building"></i> DWCD Office - Mangolpuri</div>
+                <div className={styles.affiliationItem}><i className="bi bi-bank"></i> DLSA - Najafgarh & Mangolpuri</div>
+                <div className={styles.affiliationItem}><i className="bi bi-people"></i> DCPU - Mangolpuri</div>
+                <div className={styles.affiliationItem}><i className="bi bi-cash-coin"></i> Canara Bank - Mangolpuri</div>
+                <div className={styles.affiliationItem}><i className="bi bi-globe"></i> Rotary Club of Delhi SouthEx</div>
               </div>
             </div>
 

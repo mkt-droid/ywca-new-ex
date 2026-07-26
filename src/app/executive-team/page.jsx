@@ -1,5 +1,5 @@
 'use client'
-import SideNavBanner from "@/components/partials/SideNavBanner";
+import InnerPageBanner from "@/components/partials/InnerPageBanner";
 import innerStyles from '@/styles/Inner.module.css';
 import styles from './page.module.css';
 import { useRef, useEffect } from "react";
@@ -92,10 +92,11 @@ const ExecutiveTeam = () => {
 
   return (
     <>
-      <SideNavBanner
+      <InnerPageBanner
         title={<>EXECUTIVE <br /> TEAM</>}
         bgImage="/images/01-Banner-Ex-team.jpg"
         contentMarginTop="25vh"
+        defaultGrayscale={true}
       />
 
       <section className={innerStyles.innerPageSection} style={{ backgroundColor: '#FCF7F7' }}>

@@ -145,7 +145,7 @@ export default function ContactUsPage() {
             {/* Left Col */}
             <div className="col-lg-7 col-md-12 d-flex flex-column justify-content-start pt-lg-2">
               <div className={styles.leftContentWrapper}>
-                <h1 className={styles.mainTitle}>We'd love to hear<br />from you</h1>
+                <h2 className={styles.mainTitle}>We'd love to hear<br />from you</h2>
                 <p className={styles.subText}>
                   Have any question in mind or want to enquire? Please feel to contact us through the form or the following details.
                 </p>

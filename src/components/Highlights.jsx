@@ -16,7 +16,7 @@ const PAGES = [
     {
       src: "/images/focus/slide-1/Community-Development-Program.jpg",
       caption: "Community Development Program",
-      link: ''
+      link: '/community-development-programme'
     },
     {
       src: "/images/focus/slide-1/Day-care.jpg",

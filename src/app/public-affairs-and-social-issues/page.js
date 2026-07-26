@@ -58,8 +58,8 @@ export default function PublicAffairsPage() {
       </section>
 
       <section className={styles.programsSection}>
-        <div className="container">
-          <h3 style={{ color: '#a212b5', fontWeight: '600', marginBottom: '35px', fontSize: '1.9rem', textAlign: 'center', maxWidth: '900px', margin: '0 auto 20px' }}>Our Programs</h3>
+        <div className="container text-center">
+          <h3 className='sectionTitle'>Our Programs</h3>
           <div className="row justify-content-center mt-4">
             {/*
             {programs.map((item) => (
@@ -78,7 +78,7 @@ export default function PublicAffairsPage() {
               </div>
             ))}
             */}
-            
+
             <div className="col-md-6 col-lg-5 mb-4">
               <Link href="/public-affairs-and-social-issues/rights-resistance-freedom" className={styles.newProgramLink}>
                 <div className={styles.newProgramCard}>
@@ -94,7 +94,7 @@ export default function PublicAffairsPage() {
             <div className="col-md-6 col-lg-5 mb-4">
               <Link href="/public-affairs-and-social-issues/world-environment-day-celebration-2026" className={styles.newProgramLink}>
                 <div className={styles.newProgramCard}>
-                  <img src="/images/pasi/PASI-World-Environment Day-Celebration-Gallery/1.jpg" alt="World Environment Day Celebration 2026" className="img-fluid rounded mb-3" style={{ width: '100%', height: '280px', objectFit: 'cover' }} />
+                  <img src="/images/pasi/PASI-World-Environment%20Day-Celebration-Gallery/5.jpg" alt="World Environment Day Celebration 2026" className="img-fluid rounded mb-3" style={{ width: '100%', height: '280px', objectFit: 'cover' }} />
                   <div className={styles.newCardIconWrapper}>
                     <i className="bi bi-globe"></i>
                   </div>
