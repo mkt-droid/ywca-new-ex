@@ -19,6 +19,7 @@ export default function AdmissionPage() {
     <main>
       {/* Banner Section */}
       <SideNavBanner
+        height="380px"
         title={
           <>
             EDUCATIONAL<br />INSTITUTE

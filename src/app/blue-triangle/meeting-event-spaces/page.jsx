@@ -103,6 +103,7 @@ const MeetingEventSpaces = () => {
     <main>
       {/* HERO SECTION */}
       <SideNavBanner
+        height="380px"
         bgImage="/images/meetings-and-event/me-bnr.jpg"
         navItems={bannerNavItems}
         activePath="/blue-triangle/meeting-event-spaces"

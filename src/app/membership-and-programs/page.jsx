@@ -9,6 +9,7 @@ export default function MembershipDepartmentPage() {
   return (
     <main>
       <SideNavBanner
+        height="380px"
         title={<>MEMBERSHIP AND<br />PROGRAM DEPARTMENT</>}
         bgImage="/images/map/01-Banner-MAP.jpg"
         activePath="/membership-and-programs"

@@ -53,6 +53,7 @@ export default function WorkingWomenHostelPage() {
   return (
     <main>
       <SideNavBanner
+        height="380px"
         title={<>WORKING WOMEN<br />HOSTEL</>}
         bgImage="/images/working-women-hostels/main-banner.jpg"
         navItems={bannerNavItems}

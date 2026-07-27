@@ -15,12 +15,13 @@ export default function SideNavBanner({
   overlayStyle = {},
   activePath,
   contentMarginTop,
-  grayscale = true
+  grayscale = true,
+  height
 }) {
   return (
     <section 
       className={styles.heroSection} 
-      style={sectionStyle}
+      style={{ ...sectionStyle, ...(height ? { minHeight: height } : {}) }}
     >
       <div 
         className={styles.heroBg} 

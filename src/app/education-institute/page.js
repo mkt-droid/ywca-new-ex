@@ -73,6 +73,7 @@ export default function EducationInstitutePage() {
     <main>
       {/* Banner Section with Enquiry Form */}
       <SideNavBanner
+        height="380px"
         bgImage="/images/education-institute/aca-bnr.jpg"
         navItems={bannerNavItems}
         sectionStyle={{ overflow: 'visible' }}

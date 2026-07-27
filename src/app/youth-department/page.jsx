@@ -11,6 +11,7 @@ export default function YouthDepartmentPage() {
   return (
     <main>
       <SideNavBanner
+        height="380px"
         title={<>YOUTH<br />DEPARTMENT</>}
         bgImage="/images/yuva-department/01-Banner-Youth.jpg"
         activePath="/youth-department"

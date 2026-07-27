@@ -19,6 +19,7 @@ export default function ContactPage() {
     <main>
       {/* Banner Section */}
       <SideNavBanner
+        height="380px"
         title={
           <>
             CONTACT<br />US

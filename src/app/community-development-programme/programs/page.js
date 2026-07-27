@@ -122,6 +122,7 @@ export default function CDPProgramsPage() {
 
       <main>
         <SideNavBanner
+          height="380px"
           title={<>PROGRAMS<br />CDP</>}
           bgImage="/images/working-women-hostels/main-banner.jpg"
           navItems={bannerNavItems}

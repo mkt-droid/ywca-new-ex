@@ -18,7 +18,8 @@ export default function MessageGeneralSecretary() {
         bgImage="/images/board-of-management/bom-bnr.jpg"
         overlayColor="linear-gradient(to right, rgba(146, 45, 157, 0.85), rgba(146, 45, 157, 0.85))"
         defaultGrayscale={false}
-        contentMarginTop="0vh"
+        contentMarginTop="25px"
+        marginBottom="25px"
       >
         <div className={styles.heroInner}>
           <div className={styles.heroLeft}>

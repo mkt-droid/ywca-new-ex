@@ -29,6 +29,7 @@ export default function AlumniPage() {
     <main>
       {/* Banner Section */}
       <SideNavBanner
+        height="380px"
         title={
           <>
             OUR<br />ALUMNI

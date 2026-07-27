@@ -9,6 +9,7 @@ export default function InnerPageBanner({
   defaultGrayscale = false, 
   contentMarginTop = '25vh',
   minHeight = '280px',
+  marginBottom,
 }) {
   return (
     <section 
@@ -22,7 +23,7 @@ export default function InnerPageBanner({
           '--overlay-color': overlayColor || 'transparent'
         }}
       />
-      <div className="container" style={{ position: 'relative', zIndex: 3 }}>
+      <div className="container" style={{ position: 'relative', zIndex: 3, ...(marginBottom ? { marginBottom } : {}) }}>
         <div className={styles.heroContent} style={{ marginTop: contentMarginTop }}>
           {title && <h1 className={styles.heroTitle}>{title}</h1>}
           {children}

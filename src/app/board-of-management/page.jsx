@@ -134,7 +134,8 @@ const BoardOfManagement = () => {
         title={<>BOARD <br /> OF MANAGEMENT</>}
         bgImage="/images/board-of-management/bom-bnr.jpg"
         contentMarginTop="25vh"
-        defaultGrayscale={true}
+        overlayColor="linear-gradient(to right, rgba(146, 45, 157, 0.85), rgba(146, 45, 157, 0.85))"
+        defaultGrayscale={false}
       />
 
       <section className={styles.innerPageSection} style={{ backgroundColor: '#FCF7F7' }}>

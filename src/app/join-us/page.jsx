@@ -49,9 +49,10 @@ export default function JoinUsPage() {
     <main>
       <InnerPageBanner
         title={<>JOIN US<br /> YWCA</>}
-        bgImage="/images/01-Banner-insights-pub.jpg"
+        bgImage="/images/join-us/main-banner.jpeg"
         contentMarginTop="25vh"
-        defaultGrayscale={true}
+        overlayColor="linear-gradient(to right, rgba(146, 45, 157, 0.85), rgba(146, 45, 157, 0.85))"
+        defaultGrayscale={false}
       />
 
       <div className={styles.pageContentWrapper}>

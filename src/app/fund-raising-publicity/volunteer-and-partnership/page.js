@@ -43,6 +43,7 @@ export default function VolunteerAndPartnershipPage() {
   return (
     <main>
       <SideNavBanner
+        height="380px"
         title={
           <>
             SUPPORT WOMEN<br />

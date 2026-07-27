@@ -108,6 +108,7 @@ const ExploreDelhi = () => {
     <main>
       {/* HERO SECTION */}
       <SideNavBanner
+        height="380px"
         bgImage="/images/Explore-Delhi/me-bnr.jpg"
         navItems={bannerNavItems}
         activePath="/blue-triangle/explore-delhi"

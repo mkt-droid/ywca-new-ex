@@ -107,6 +107,7 @@ function ProgramsContent() {
     <main>
       {/* Banner Section */}
       <SideNavBanner
+        height="380px"
         title={
           <>
             EDUCATIONAL<br />INSTITUTE

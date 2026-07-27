@@ -47,6 +47,7 @@ const BlueTriangle = () => {
     <main>
       {/* HERO SECTION */}
       <SideNavBanner
+        height="380px"
         bgImage="/images/room-booking/room-booking-bnr.jpg"
         navItems={bannerNavItems}
         activePath="/blue-triangle"

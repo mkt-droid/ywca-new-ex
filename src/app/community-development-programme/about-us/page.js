@@ -24,6 +24,7 @@ export default function CDPAboutUsPage() {
 
       <main>
         <SideNavBanner
+          height="380px"
           title={<>ABOUT US<br />CDP</>}
           bgImage="/images/working-women-hostels/main-banner.jpg"
           navItems={bannerNavItems}

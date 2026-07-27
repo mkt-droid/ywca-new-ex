@@ -19,6 +19,7 @@ export default function PublicAffairsPage() {
   return (
     <main>
       <SideNavBanner
+        height="380px"
         title={<>PUBLIC AFFAIRS<br />AND SOCIAL ISSUES</>}
         bgImage="/images/01-Banner-Pasi.jpg"
         contentMarginTop="35vh"

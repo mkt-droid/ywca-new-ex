@@ -61,8 +61,9 @@ export default function CDPOverviewPage() {
 
       <main>
         <SideNavBanner
+          height="380px"
           title={<>Community Development<br />Programme</>}
-          bgImage="/images/working-women-hostels/main-banner.jpg"
+          bgImage="/images/cdp/main-banner.jpeg"
           navItems={bannerNavItems}
           activePath="/community-development-programme"
           contentMarginTop="25vh"
