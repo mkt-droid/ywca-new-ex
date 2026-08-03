@@ -32,6 +32,7 @@ function ProgramsContent() {
     { title: 'Programs', icon: 'bi-mortarboard', link: '/education-institute/programs' },
     { title: 'Admission', icon: 'bi-person-vcard', link: '/education-institute/admission' },
     { title: 'Life@YWCA', icon: 'bi-building', link: '#' },
+    { title: 'Student Corner', icon: 'bi-people', link: '#' },
     { title: 'Contact us', icon: 'bi-telephone', link: '/education-institute/contact' },
   ];
 
@@ -54,52 +55,38 @@ function ProgramsContent() {
   const stories = [
     {
       id: 1,
-      name: 'Mansha',
-      subtitle: 'English Conversation & Personality Development',
-      quote: "I would like to say that I had a wonderful experience at YWCA. Those three months were very productive, memorable, and life-changing for me. Joining this course was one of the best decisions I have ever made. I would especially like to thank Ms. Diksha Monga Ma'am for always supporting us.",
-      avatar: 'https://dummyimage.com/150x150/f0f0f0/333333.png&text=M'
+      name: 'Anu Kumari',
+      subtitle: 'DMLT Graduate | MediBuddy, Gurugram',
+      quote: `My experience at the Women's Training Institute, YWCA of Delhi, has been truly rewarding. The dedicated faculty, practical training, and supportive environment helped me build a strong foundation in Medical Laboratory Technology. Today, I am proud to be working at MediBuddy, Gurugram. I sincerely thank my teachers and YWCA for guiding me towards a successful career.`,
+      avatar: 'https://dummyimage.com/150x150/f0f0f0/333333.png&text=AK'
     },
     {
       id: 2,
-      name: 'Rama',
-      subtitle: 'English Conversation & Personality Development',
-      quote: "All the teachers at YWCA were excellent. Their way of teaching, the respect they showed to every student, and the friendly atmosphere they created made learning a great experience. I would especially like to thank Diksha Ma’am. My time at YWCA has been a truly memorable experience.",
-      avatar: 'https://dummyimage.com/150x150/f0f0f0/333333.png&text=R'
+      name: 'Manisha',
+      subtitle: 'BMLT Graduate | Junior Research Fellow, AIIMS, New Delhi',
+      quote: `YWCA of Delhi provided me with excellent academic knowledge, practical skills, and the confidence to excel in my career. The guidance and encouragement of my teachers helped me achieve my goals, from postgraduate studies to becoming a Junior Research Fellow at AIIMS, New Delhi. I am grateful to YWCA for shaping my professional journey.`,
+      avatar: 'https://dummyimage.com/150x150/f0f0f0/333333.png&text=M'
     },
     {
       id: 3,
-      name: 'Preeti Rajpal',
-      subtitle: 'English Conversation & Personality Development',
-      quote: "Thank you for this wonderful course. I learned many new things. The classes were easy to understand, and all the teachers were very kind and helpful. A special thanks to Diksha Ma'am for your support, guidance, and encouragement throughout the course.",
-      avatar: 'https://dummyimage.com/150x150/f0f0f0/333333.png&text=PR'
+      name: 'Sarika Yadav',
+      subtitle: 'DMLT, Batch (2022-2024)',
+      quote: `Completing my *Diploma In Medical Laboratory Technology (DMLT),* *(2022-2024)* ,at *Women's training institute (YWCA of Delhi),* has been a truly transformative experience.The institute provided us with a wonderfully supportive, disciplined, and empowering environment to learn and grow. From the well-equipped labs to the structured curriculum, YWCA Delhi gave me the perfect foundation for me careers in healthcare.\n\nI want to express my deepest gratitude to *[Jolly Ma'am].* Thank you for your patience, your dedication to teaching us complex diagnostic procedures, and for always motivating us to do our best. Teachers like you are rare, and I feel incredibly fortunate to have been your student. I carry the skills and confidence you gave me into my professional career.\n\nWith gratitude and respect,\n*[Sarika Yadav]*\nDMLT, Batch (2022-2024)`,
+      avatar: 'https://dummyimage.com/150x150/f0f0f0/333333.png&text=SY'
     },
     {
       id: 4,
-      name: 'Kriti',
-      subtitle: 'English Conversation & Personality Development',
-      quote: "This course has helped me improve my English speaking, communication skills, vocabulary, and confidence. Diksha Ma'am was very supportive, patient, and encouraging. Earlier, I was not confident while speaking English, but after attending this course, I feel much more confident.",
-      avatar: 'https://dummyimage.com/150x150/f0f0f0/333333.png&text=K'
+      name: 'Shivani Binjola',
+      subtitle: 'DMLT',
+      quote: `Hello my dear friends,\nI am Shivani Binjola and I am very glad to share my life's story with you. I have completed my DMLT from Y.W.C.A. Y.W.C.A. is one of the reputed institutes for pursuing MLT. As a result, I'm elated to be a part of such a reputed organization.\nNo wonder the teachers are also amazing. They teach extremely well and do not show partiality on any basis. Instead, the teachers behave in an extremely positive manner with everyone.\nI wanted to share my personal experience with my institution as I feel nostalgic about my college days. I would like to bring to your notice that I completely adore my teachers as they are excellent in teaching and behave like friends with the students. The teaching methods are powerful and student-friendly.\nActually, I used to be a weak student in my class. There were so many activities that we used to have during our lectures. I owe my success to my institution and my dear teachers.\nI would like to thank Y.W.C.A. from the bottom of my heart and thank my dear teachers once again.\nRegards,\nShivani Binjola`,
+      avatar: 'https://dummyimage.com/150x150/f0f0f0/333333.png&text=SB'
     },
     {
       id: 5,
-      name: 'Anuradha',
-      subtitle: 'English Conversation & Personality Development',
-      quote: "I learned many new things that helped me improve my communication skills and increase my confidence. A special thanks to Diksha Ma'am for being such a sweet, kind, and supportive teacher. I also loved the positive environment at YWCA.",
-      avatar: 'https://dummyimage.com/150x150/f0f0f0/333333.png&text=A'
-    },
-    {
-      id: 6,
-      name: 'Diti Sharma',
-      subtitle: 'English Conversation & Personality Development',
-      quote: "I had a great learning experience at YWCA. The course was so interested and easy to understand. The faculty members were supportive, patient, they always clear our doubts. My special thanks to Ms.Diksha ma'am for her support and guidance.",
+      name: 'Drishti Sharma',
+      subtitle: 'DMLT, Batch (2016–2018)',
+      quote: `Drishti Sharma is a proud alumna of the Diploma in Medical Laboratory Technology (DMLT) programme at the Women's Training Institute, YWCA of Delhi (Batch 2016–2018). She is currently working in the Department of Molecular Diagnostics at Rajiv Gandhi Cancer Institute & Research Centre, Rohini, Delhi.\n\nThe Diploma in Medical Laboratory Technology at YWCA of Delhi gave me the knowledge, confidence, and practical skills needed to build a successful career. The faculty members were exceptionally supportive and guided me throughout my academic journey. Their encouragement helped me discover my potential and paved the way for my professional success. I am grateful to YWCA for providing me with a strong foundation in the field of medical laboratory technology.`,
       avatar: 'https://dummyimage.com/150x150/f0f0f0/333333.png&text=DS'
-    },
-    {
-      id: 7,
-      name: 'Sunita Singh',
-      subtitle: 'English Conversation & Personality Development',
-      quote: "I have completed a 3 months course in English Communication and Personally Development from YWCA DWARKA. Diksha Monga ma'am taught us. She is an excellent teacher and mentor. Her teaching and communication skills are tremendous.",
-      avatar: 'https://dummyimage.com/150x150/f0f0f0/333333.png&text=SS'
     }
   ];
 

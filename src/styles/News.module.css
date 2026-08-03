@@ -100,11 +100,37 @@
     padding: 10px 20px;
 }
 .cardText {
-  font-size: 1rem;
-  color: rgba(255, 255, 255, 0.85);
-  line-height: 25px;
+  color: #eeeeee;
+  font-size: 14px;
+  line-height: 1.6;
   margin: 0;
 }
+
+/* ── Category Tabs ── */
+.categoryBtn {
+  background-color: transparent;
+  color: #182660;
+  border: 2px solid #182660;
+  border-radius: 30px;
+  padding: 8px 24px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.categoryBtn:hover {
+  background-color: rgba(24, 38, 96, 0.1);
+}
+
+.categoryBtnActive {
+  background-color: #182660;
+  color: #ffffff;
+  border: 2px solid #182660;
+  border-radius: 30px;
+  padding: 8px 24px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
 
 /* ─────────────────────────────────────────
    Load Animation — same as BoardOfManagement

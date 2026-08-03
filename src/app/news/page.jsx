@@ -2,46 +2,18 @@
 import InnerBanner from "@/components/partials/InnerBanner"
 import styles from '@/styles/News.module.css'
 import Link from "next/link"
-import { useRef, useEffect } from "react"
-
-// ── News data array ──
-const newsItems = [
-  {
-    id: 1,
-    title: 'World YWCA Day – Celebrating Sisterhood and Solidarity – 25th April, 2026',
-    image: '/images/News-item-1.jpg',
-    slug: 'world-ywca-day-2026',
-    description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text.',
-  },
-  {
-    id: 2,
-    title: 'Lenten Prayer Meeting – 27th March 2026',
-    image: '/images/News-item-2.jpg',
-    slug: 'lenten-prayer-meeting-2026',
-     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text.',
-  },
-  {
-    id: 3,
-    title: 'Thrive Music Festival – 14th March 2026',
-    image: '/images/News-item-3.jpg',
-    slug: 'thrive-music-festival-2026',
-    description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text.',
-  },
-  {
-    id: 4,
-    title: "International Women's Day – 7th March 2026",
-    image: '/images/News-item-4.jpg',
-    slug: 'international-womens-day-2026',
-    description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text.',
-  }
-]
+import { useRef, useEffect, useState } from "react"
+import newsData from '@/data/news.json'
 
 const News = () => {
   const sectionRef = useRef(null)
+  const [selectedCategory, setSelectedCategory] = useState('All')
+
+  const categories = ['All', ...new Set(newsData.map(item => item.category))]
+
+  const filteredNews = selectedCategory === 'All'
+    ? newsData
+    : newsData.filter(item => item.category === selectedCategory)
 
   // ── Same IntersectionObserver logic as BoardOfManagement ──
   useEffect(() => {
@@ -67,11 +39,11 @@ const News = () => {
   return (
     <>
       <InnerBanner
-         title="Lorem Ipsum is dummy text of type setting"
-     subTitle=""
-       images ={ [
-    "/images/News-banner.jpg"
-  ]}
+        title="News & Updates"
+        subTitle=""
+        images={[
+          "/images/News-banner.jpg"
+        ]}
 
         bg="#E1D8C6"
         breadcrumb={[
@@ -85,68 +57,54 @@ const News = () => {
           {/* ── Section Title ── */}
           <h2 className={styles.sectionTitle}>NEWS</h2>
 
+          {/* ── Category Tabs ── */}
+          <div className="d-flex flex-wrap justify-content-center gap-2 mb-5">
+            {categories.map((cat, idx) => (
+              <button
+                key={idx}
+                className={selectedCategory === cat ? styles.categoryBtnActive : styles.categoryBtn}
+                onClick={() => setSelectedCategory(cat)}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
+
           {/* ── Cards Grid ── */}
           <div className={`row g-4`} ref={sectionRef}>
-            {newsItems.map((item, i) => (
+            {filteredNews.map((item, i) => (
               <div
                 key={item.id}
                 className={`col-12 col-md-6 col-lg-4 ${styles.animateCard}`}
                 data-delay={i * 100}
               >
-                {
-                  i === 0 ?    <Link href={`/news/${item.slug}`}>
-                <div className={styles.newsCard}>
-
-                  {/* Image */}
-                  <div className={styles.cardImgWrap}>
-                    <img
-                      src={item.image}
-                      alt={item.title}
-                      className={styles.cardImg}
-                    />
-                  </div>
-
-                  {/* Body */}
-                  <div className={styles.cardBody}>
-                    <div className={styles.titleWrapper}>
-                    <span  className={`${styles.cardTitle} ${styles.gradientText}`}>
-                      {item.title}
-                    </span>
+                <Link href={`/news/${item.slug}`} style={{ textDecoration: 'none' }}>
+                  <div className={styles.newsCard}>
+                    {/* Image */}
+                    <div className={styles.cardImgWrap}>
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        className={styles.cardImg}
+                      />
                     </div>
-                    <hr className={styles.divider} />
-                    <div className={styles.contentWrapper}>
-                    <p className={styles.cardText}>{item.description}</p>
-                    </div>
-                  </div>
 
-                </div>
-                </Link> : <div className={styles.newsCard}>
-
-                  {/* Image */}
-                  <div className={styles.cardImgWrap}>
-                    <img
-                      src={item.image}
-                      alt={item.title}
-                      className={styles.cardImg}
-                    />
-                  </div>
-
-                  {/* Body */}
-                  <div className={styles.cardBody}>
-                    <div className={styles.titleWrapper}>
-                    <span  className={`${styles.cardTitle} ${styles.gradientText}`}>
-                      {item.title}
-                    </span>
-                    </div>
-                    <hr className={styles.divider} />
-                    <div className={styles.contentWrapper}>
-                    <p className={styles.cardText}>{item.description}</p>
+                    {/* Body */}
+                    <div className={styles.cardBody}>
+                      <div className={styles.titleWrapper}>
+                        <span className={`${styles.cardTitle} ${styles.gradientText}`}>
+                          {item.title}
+                        </span>
+                      </div>
+                      <hr className={styles.divider} />
+                      <div className={styles.contentWrapper}>
+                        <p className={styles.cardText}>
+                          {item.description.length > 100 ? `${item.description.substring(0, 100)}...` : item.description}
+                        </p>
+                      </div>
                     </div>
                   </div>
-
-                </div>
-                }
-             
+                </Link>
               </div>
             ))}
           </div>

@@ -11,12 +11,12 @@ export default function PlacementPartners() {
     '/images/placement-partners/pp-4.png',
     '/images/placement-partners/pp-6.png',
   ];
-  
+
   // Duplicate for seamless infinite feeling
   const logos = [...originalLogos, ...originalLogos, ...originalLogos];
-  
+
   const [currentIndex, setCurrentIndex] = useState(0);
-  
+
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex(prev => (prev + 1) % originalLogos.length);
@@ -26,15 +26,15 @@ export default function PlacementPartners() {
 
   return (
     <section className="container mt-3 mb-5 text-center">
-      <h2 className={styles.sectionTitle}>Our Placement Partners</h2>
+      <h2 className={'sectionTitle'}>Our Placement Partners</h2>
       <div className={styles.carouselContainer}>
-        <div 
+        <div
           className={styles.carouselTrack}
           style={{ transform: `translateX(calc(-${currentIndex} * var(--slide-width)))` }}
         >
           {logos.map((logo, i) => (
             <div key={i} className={styles.logoSlide}>
-              <img src={logo} alt={`Placement Partner ${i+1}`} className={styles.logoImage} />
+              <img src={logo} alt={`Placement Partner ${i + 1}`} className={styles.logoImage} />
             </div>
           ))}
         </div>

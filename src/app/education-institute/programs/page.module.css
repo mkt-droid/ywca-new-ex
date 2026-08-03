@@ -51,7 +51,7 @@
 
 .courseCard:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .courseImage {
@@ -68,9 +68,9 @@
 }
 
 .courseTitle {
-  font-size: 17px;
-  font-weight: 700;
-  color: #222;
+  font-size: 14px;
+  font-weight: 500;
+  color: #cd4a90;
   margin-bottom: 0.95rem;
   line-height: 1.4;
 }
@@ -100,9 +100,9 @@
   color: white;
   border: none;
   border-radius: 30px;
-  padding: 8px 16px;
+  padding: 6px 11px;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 400;
   transition: all 0.3s;
   text-decoration: none;
   display: flex;
@@ -119,11 +119,11 @@
 .viewMoreBtn {
   background-color: transparent;
   color: #c94f9e;
-  border: 1.5px solid #c94f9e;
+  border: 1.5px solid #1a1a54;
   border-radius: 30px;
-  padding: 8px 16px;
+  padding: 6px 11px;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 400;
   transition: all 0.3s ease;
   cursor: pointer;
   display: flex;
@@ -233,8 +233,8 @@
 }
 
 .sectionTitle {
-  font-size:2.2rem;
-  font-weight:600;
+  font-size: 2.2rem;
+  font-weight: 600;
   color: #000;
   margin-bottom: 0.95rem;
 }
@@ -301,11 +301,10 @@
   }
 
   .sectionTitle {
-    font-size:2.2rem;
+    font-size: 2.2rem;
   }
 
   .partnersLogos {
     gap: 20px;
   }
 }
-

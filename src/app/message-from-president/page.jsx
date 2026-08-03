@@ -22,7 +22,7 @@ export default async function Page({ params }) {
         <>
             <InnerPageBanner
                 bgImage="/images/board-of-management/bom-bnr.jpg"
-                overlayColor="linear-gradient(to right, rgba(146, 45, 157, 0.85), rgba(146, 45, 157, 0.85))"
+                overlayColor="linear-gradient(to right, rgba(146, 45, 157, 0.85), rgba(146, 45, 157, 0.4))"
                 defaultGrayscale={false}
                 contentMarginTop="25px"
                 marginBottom="25px"

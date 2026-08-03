@@ -9,7 +9,7 @@ const VisionMission = () => {
         title={<>OUR <br /> VISION & MISSION</>}
         bgImage="/images/01-Banner-Vision-Mission.jpg"
         contentMarginTop="25vh"
-        overlayColor="linear-gradient(to right, rgba(146, 45, 157, 0.85), rgba(146, 45, 157, 0.85))"
+        overlayColor="linear-gradient(to right, rgba(146, 45, 157, 0.85), rgba(146, 45, 157, 0.4))"
         defaultGrayscale={false}
       />
 

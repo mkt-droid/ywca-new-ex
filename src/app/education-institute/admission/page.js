@@ -12,6 +12,7 @@ export default function AdmissionPage() {
     { title: 'Programs', icon: 'bi-mortarboard', link: '/education-institute/programs' },
     { title: 'Admission', icon: 'bi-person-vcard', link: '/education-institute/admission' },
     { title: 'Life@YWCA', icon: 'bi-building', link: '#' },
+    { title: 'Student Corner', icon: 'bi-people', link: '#' },
     { title: 'Contact us', icon: 'bi-telephone', link: '/education-institute/contact' },
   ];
 

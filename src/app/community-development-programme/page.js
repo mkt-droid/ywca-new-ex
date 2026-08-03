@@ -173,11 +173,11 @@ export default function CDPOverviewPage() {
           {/* Featured Story */}
           <div className="container">
             <div className={styles.storyTeaser}>
+              <i className={`bi bi-quote ${styles.quoteIcon}`}></i>
               <div className={styles.quoteText}>
-                “I used to ask my parents for ₹100-Rs. 400 to buy clothes. Now I am part of garment construction unit & run my own tailoring unit from my home.”
+                I used to ask my parents for ₹100 - ₹400 to buy clothes. Now I am part of garment construction unit & run my own tailoring unit from my home.
               </div>
-              <div className="mb-4"><strong>— Ankush, Najafgarh community</strong></div>
-              <Link href="#" className={styles.primaryBtn}>Read Ankush’s Story →</Link>
+              <div className={styles.quoteAuthor}><strong>— Ankush, Najafgarh community</strong></div>
             </div>
           </div>
 

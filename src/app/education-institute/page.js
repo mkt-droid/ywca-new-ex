@@ -5,6 +5,7 @@ import styles from './page.module.css';
 import SideNavBanner from '@/components/partials/SideNavBanner';
 import PlacementPartners from '@/components/PlacementPartners';
 import EducationFooterLinks from '@/components/EducationFooterLinks';
+import newsData from '@/data/news.json';
 
 export const metadata = {
   title: 'Education Institute | YWCA of Delhi',
@@ -16,31 +17,13 @@ export default function EducationInstitutePage() {
     { title: 'Programs', icon: 'bi-mortarboard', link: '/education-institute/programs' },
     { title: 'Admission', icon: 'bi-person-vcard', link: '/education-institute/admission' },
     { title: 'Life@YWCA', icon: 'bi-building', link: '#' },
+    { title: 'Student Corner', icon: 'bi-people', link: '#' },
     { title: 'Contact us', icon: 'bi-telephone', link: '/education-institute/contact' },
   ];
 
-  const academicNews = [
-    {
-      id: 1,
-      image: '/images/education-institute/1.jpg',
-      title: 'Academic News heading will go here'
-    },
-    {
-      id: 2,
-      image: '/images/education-institute/2.jpg',
-      title: 'Academic News heading will go here'
-    },
-    {
-      id: 3,
-      image: '/images/education-institute/3.jpg',
-      title: 'Academic News heading will go here'
-    },
-    {
-      id: 4,
-      image: '/images/education-institute/4.jpg',
-      title: 'Academic News heading will go here'
-    }
-  ];
+  const academicNews = newsData
+    .filter(news => news.category === 'Academic News')
+    .slice(0, 8);
 
   const alumni = [
     {
@@ -112,10 +95,16 @@ export default function EducationInstitutePage() {
                 <img src={news.image} alt="Academic News" className={styles.newsImage} />
                 <div className={styles.newsContent}>
                   <h5 className={styles.newsTitle} style={{ fontSize: '0.95rem', fontWeight: 'normal', margin: 0 }}>{news.title}</h5>
+                  <Link href={`/news/${news.id}`} className={styles.newsViewMore}>
+                    View more <i className="bi bi-arrow-right"></i>
+                  </Link>
                 </div>
               </div>
             </div>
           ))}
+        </div>
+        <div className="text-center mt-3">
+          <Link href="/news" className={styles.viewMoreBtn}>View All</Link>
         </div>
       </section>
 
@@ -128,18 +117,21 @@ export default function EducationInstitutePage() {
               <p className={styles.learningText}>
                 Welcome to YWCA Academy, where learning knows no bounds. We believe that education is the key to personal and professional growth, and we're here to guide you on your journey to the success.
               </p>
-              <button className={styles.startLearningBtn}>Start your learning journey</button>
+              <Link href={'/education-institute/programs'} className={styles.startLearningBtn}>Start your learning journey</Link>
 
               <div className={styles.pillsContainer}>
-                <span className={styles.pillLine}>Interior Designing</span>
-                <span className={styles.pillLine}>Health Care Sector</span>
-                <span className={styles.pillLine}>Beauty & Wellness</span>
-                <span className={styles.pillLine}>Office Management</span>
-                <span className={styles.pillLine}>Information Technology</span>
-                <span className={styles.pillLine}>Fashion Technology</span>
-                <span className={styles.pillLine}>Travel & Tourism</span>
-                <span className={styles.pillLine}>Personality Dev</span>
-                <span className={styles.pillLine}>Foreign Languages</span>
+                {[
+                  'Office Management', 'Fashion Technology', 'Information Technology',
+                  'Foreign Languages', 'Interior Designing', 'Travel & Tourism',
+                  'Beauty & Wellness', 'Personality Development', 'Health Care Sector'
+                ].map((cat, idx) => {
+                  const slug = cat.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+                  return (
+                    <Link key={idx} href={`/education-institute/programs?category=${slug}`} className={styles.pillLine} style={{ textDecoration: 'none' }}>
+                      {cat}
+                    </Link>
+                  );
+                })}
               </div>
             </div>
             <div className="col-lg-6 col-md-12 text-center position-relative">
@@ -149,25 +141,27 @@ export default function EducationInstitutePage() {
         </div>
       </section>
 
+
       {/* Why Us Section */}
       <section className={styles.whyUsSection}>
         <div className="container text-center">
-          <h2 className={styles.sectionTitle}>Why Us?</h2>
+          <h2 className={'sectionTitle'}>Why Choose YWCA OF DELHI Education Institute</h2>
           <div className={styles.whyUsGrid}>
-            <span className={styles.whyUsPill}>Career Focused Learning</span>
-            <span className={styles.whyUsPill}>Industrial Exposure</span>
-            <span className={styles.whyUsPill}>50+ year Legacy</span>
-            <span className={styles.whyUsPill}>Expert Faculty Guidance</span>
-            <span className={styles.whyUsPill}>AI Integrated Curriculum</span>
-            <span className={styles.whyUsPill}>Placement Assistance</span>
-            <span className={styles.whyUsPill}>Well Equipped Lab and <br /> AC Classrooms</span>
+            <span className={styles.whyUsPill}><i className="bi bi-bullseye me-2"></i>Career Focused Learning</span>
+            <span className={styles.whyUsPill}><i className="bi bi-building me-2"></i>Industrial Exposure</span>
+            <span className={styles.whyUsPill}><i className="bi bi-award me-2"></i>50+ year Legacy</span>
+            <span className={styles.whyUsPill}><i className="bi bi-person-workspace me-2"></i>Expert Faculty Guidance</span>
+            <span className={styles.whyUsPill}><i className="bi bi-cpu me-2"></i>AI Integrated Curriculum</span>
+            <span className={styles.whyUsPill}><i className="bi bi-briefcase me-2"></i>Placement Assistance</span>
+            <span className={styles.whyUsPill}><i className="bi bi-display me-2"></i>Well Equipped Lab and <br /> AC Classrooms</span>
+            <span className={styles.whyUsPill}><i className="bi bi-house-heart me-2"></i>Hostel facility for Girls</span>
           </div>
         </div>
       </section>
 
       {/* Alumni Section */}
       <section className="container mt-5 mb-5 text-center">
-        <h2 className={styles.sectionTitle} style={{ fontWeight: 400, color: '#222', fontSize: '32px' }}>Our Alumni Are Shaping The Future</h2>
+        <h2 className={'sectionTitle'}>Our Alumni Are Shaping The Future</h2>
         <div className="row mt-4">
           {alumni.map(person => (
             <div className="col-md-3 col-sm-6 mb-4" key={person.id}>

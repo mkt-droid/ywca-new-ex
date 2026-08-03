@@ -129,24 +129,24 @@ export default function DayCarePage() {
           </p>
           <ul className={styles.servicesList}>
             {[
-              "Safe and secure environment for children 6 months to 12 years",
-              "Comfortable bedding arrangements, cots and baby cradles",
-              "Feeding chairs for infants and toddlers",
-              "CCTV surveillance for enhanced safety",
-              "Age-appropriate educational toys and learning materials",
-              "Early Childhood Education (numbers, letters, basic concepts such as big/small)",
-              "Focus on physical development through outdoor activities",
-              "Storytelling sessions and interactive learning",
-              "Creative play and pretend play activities",
-              "Activities that promote imagination and creativity",
-              "Festival-based fun and learning activities",
-              "After-school support, including homework assistance",
-              "Craft activities for school going children",
-              "Counseling and emotional support for parents, if required"
+              { text: "Safe and secure environment for children 6 months to 12 years", icon: "bi-shield-check" },
+              { text: "Comfortable bedding arrangements, cots and baby cradles", icon: "bi-moon-stars" },
+              { text: "Feeding chairs for infants and toddlers", icon: "bi-cup-hot" },
+              { text: "CCTV surveillance for enhanced safety", icon: "bi-camera-video" },
+              { text: "Age-appropriate educational toys and learning materials", icon: "bi-puzzle" },
+              { text: "Early Childhood Education (numbers, letters, basic concepts such as big/small)", icon: "bi-book" },
+              { text: "Focus on physical development through outdoor activities", icon: "bi-bicycle" },
+              { text: "Storytelling sessions and interactive learning", icon: "bi-chat-dots" },
+              { text: "Creative play and pretend play activities", icon: "bi-palette" },
+              { text: "Activities that promote imagination and creativity", icon: "bi-lightbulb" },
+              { text: "Festival-based fun and learning activities", icon: "bi-stars" },
+              { text: "After-school support, including homework assistance", icon: "bi-pencil-square" },
+              { text: "Craft activities for school going children", icon: "bi-scissors" },
+              { text: "Counseling and emotional support for parents, if required", icon: "bi-heart-pulse" }
             ].map((item, index) => (
               <li key={index}>
-                <i className="bi bi-circle"></i>
-                {item}
+                <i className={`bi ${item.icon}`}></i>
+                {item.text}
               </li>
             ))}
           </ul>
@@ -190,7 +190,7 @@ export default function DayCarePage() {
             If you or someone you know needs support, please contact us through the hiplines below. Our team is here to provide a safe space, care, and guidance.
           </p>
           <p className={styles.contactSubtitle}>
-            YWCA Of Delhi, Ashoka Road
+            YWCA Of Delhi
           </p>
           <div className={styles.contactTableWrapper}>
             <table className={styles.contactTable}>
