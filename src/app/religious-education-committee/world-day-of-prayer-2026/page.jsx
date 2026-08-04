@@ -47,7 +47,7 @@ export default function WorldDayOfPrayerPage() {
             <div className="mt-5">
               <div className={styles.overviewText} style={{ textAlign: 'left', maxWidth: '1000px' }}>
                 <p>YWCA of Delhi observed the World Day of Prayer on 7 March 2026, bringing together members and staff in a spirit of faith, prayer, and fellowship. The gathering provided an opportunity for spiritual reflection and collective worship, reinforcing the importance of prayer in daily life.</p>
-                <p>The keynote message was delivered by Ms. Surinder Kaur Lal, Christian leader, speaker, writer, and journalist, who shared an inspiring reflection based on Matthew 11:28–30. Her message encouraged participants to find rest, hope, and strength in Christ amidst life’s challenges. The observance concluded with prayers and fellowship, strengthening the spiritual bonds within the YWCA community.</p>
+                <p>The keynote message was delivered by Ms. Surinder Kaur Lal, Christian leader, speaker, writer, and journalist, who shared an inspiring reflection based on Matthew 11:28-30. Her message encouraged participants to find rest, hope, and strength in Christ amidst life’s challenges. The observance concluded with prayers and fellowship, strengthening the spiritual bonds within the YWCA community.</p>
 
               </div>
             </div>

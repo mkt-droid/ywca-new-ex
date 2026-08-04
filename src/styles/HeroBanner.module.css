@@ -146,7 +146,7 @@
   transform: translateY(16px);
 }
 
-/* CTA Button — navy blue pill */
+/* CTA Button - navy blue pill */
 .btn {
   display: inline-block;
   padding: 12px 28px;
@@ -170,7 +170,7 @@
 }
 
 /* ══════════════════════════════════════════════════════════
-   ANIMATE IN — staggered on active slide
+   ANIMATE IN - staggered on active slide
    Line1 → Line2 → Subtitle → Button
 ══════════════════════════════════════════════════════════ */
 .contentVisible .line1 {

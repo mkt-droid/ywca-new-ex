@@ -100,10 +100,10 @@ export default function InternationalWomensDayPage() {
                 <ul>
                   <li>Ms. Lakshmi Dubey, Assistant Commissioner of Police, Special Police Unit for Women and Children (SPUWAC), Delhi Police</li>
                   <li>Ms. Gauri Dewal, CSR Coordinator, National School of Drama</li>
-                  <li>Ms. Shruti Bajaj, Senior Manager – CSR, Indian Oil Corporation Limited</li>
-                  <li>Mr. Shashi Chandra Maan, Senior Manager – CSR, Indian Oil Corporation Limited</li>
+                  <li>Ms. Shruti Bajaj, Senior Manager - CSR, Indian Oil Corporation Limited</li>
+                  <li>Mr. Shashi Chandra Maan, Senior Manager - CSR, Indian Oil Corporation Limited</li>
                 </ul>
-                <p>The celebration stood as a powerful tribute to women who are truly Adamya—unstoppable in spirit, resilience, and courage.</p>
+                <p>The celebration stood as a powerful tribute to women who are truly Adamya-unstoppable in spirit, resilience, and courage.</p>
               </div>
             </div>
             

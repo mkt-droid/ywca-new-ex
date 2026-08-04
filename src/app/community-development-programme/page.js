@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 import styles from './page.module.css';
 import SideNavBanner from '@/components/partials/SideNavBanner';
-import CountUp from 'react-countup';
+import ImpactStats from '@/components/partials/ImpactStats';
 
 export default function CDPOverviewPage() {
   const bannerNavItems = [
@@ -21,13 +21,13 @@ export default function CDPOverviewPage() {
       id: 1,
       number: 12000,
       suffix: "+",
-      text: "Women & girls reached",
+      text: "Women & girls directly reached",
       icon: "bi-people",
       color: "#c82333"
     },
     {
       id: 2,
-      number: 7,
+      number: 45,
       suffix: "",
       text: "Urban settlements covered",
       icon: "bi-house-heart",
@@ -43,18 +43,50 @@ export default function CDPOverviewPage() {
     },
     {
       id: 4,
-      number: 2000,
+      number: 2100,
       suffix: "+",
-      text: "Women & Girls aware of SRHR",
-      icon: "bi-shield-check",
+      text: "Women placed in jobs or self-employment",
+      icon: "bi-briefcase",
       color: "#86328a"
+    },
+    {
+      id: 5,
+      number: 180,
+      suffix: "",
+      text: "Active Self-Help Groups",
+      icon: "bi-diagram-3",
+      color: "#f39c12"
+    },
+    {
+      id: 6,
+      number: 42,
+      suffix: "L+",
+      text: "Total SHG savings mobilised",
+      icon: "bi-piggy-bank",
+      color: "#17a2b8"
+    },
+    {
+      id: 7,
+      number: 210,
+      suffix: "+",
+      text: "Health camps conducted",
+      icon: "bi-heart-pulse",
+      color: "#e83e8c"
+    },
+    {
+      id: 8,
+      number: 900,
+      suffix: "+",
+      text: "Girls supported back into formal education",
+      icon: "bi-book",
+      color: "#28a745"
     }
   ];
 
   return (
     <>
       <Head>
-        <title>YWCA of Delhi | Community Development Programme — Empowering Women/Communities in Delhi’s Urban Settlements</title>
+        <title>YWCA of Delhi | Community Development Programme - Empowering Women/Communities in Delhi’s Urban Settlements</title>
         <meta name="description" content="YWCA of Delhi’s Community Development Programme works with women, Young girls and children in Delhi’s urban slums and resettlement colonies through education, skill-building, awareness, and leadership training. Donate, volunteer, or partner with us today." />
         <meta name="keywords" content="women empowerment NGO Delhi, community development Delhi slums, NGO for women Delhi, skill training women Delhi, donate NGO Delhi" />
       </Head>
@@ -73,9 +105,9 @@ export default function CDPOverviewPage() {
           {/* Hero Section */}
           <section className={styles.sectionPadding}>
             <div className="container">
-              <h2 className={styles.overviewTitle} style={{ maxWidth: 800, margin: '0 auto 25px' }}>Every woman deserves the power to shape her own future.</h2>
+              <h2 className={styles.overviewTitle} style={{ maxWidth: 800, margin: '0 auto 25px' }}>We measure success in changed lives - and we can show you the numbers.</h2>
               <p className={styles.overviewText}>
-                For over <strong>[XX]</strong> years, the YWCA of Delhi’s Community Development Programme has walked alongside women, young girls & children in Delhi’s urban settlements — turning vulnerability into voice, and dependence into dignity.
+                For over years, the YWCA of Delhi’s Community Development Programme has walked alongside women, young girls & children in Delhi’s urban settlements - turning vulnerability into voice, and dependence into dignity.
               </p>
 
               <div className={styles.primaryButtons}>
@@ -92,21 +124,7 @@ export default function CDPOverviewPage() {
           {/* Impact Snapshot */}
           <div className={styles.impactSection}>
             <div className="container">
-              <div className="row g-4">
-                {impactStats.map((stat) => (
-                  <div className="col-md-3 col-sm-6" key={stat.id}>
-                    <div className={styles.impactBox} style={{ borderTop: `4px solid ${stat.color}` }}>
-                      <div className={styles.impactIcon} style={{ color: stat.color }}>
-                        <i className={`bi ${stat.icon}`}></i>
-                      </div>
-                      <div className={styles.impactNumber} style={{ color: stat.color }}>
-                        <CountUp end={stat.number} duration={2.5} separator="," enableScrollSpy={true} scrollSpyOnce={true} />{stat.suffix}
-                      </div>
-                      <div className={styles.impactText}>{stat.text}</div>
-                    </div>
-                  </div>
-                ))}
-              </div>
+              <ImpactStats data={impactStats} animated={true} />
             </div>
           </div>
 
@@ -115,14 +133,14 @@ export default function CDPOverviewPage() {
             <div className="container">
               <h2 className={styles.sectionTitle}>Behind Delhi’s skyline, a quieter struggle continues</h2>
               <div className={styles.introPara}>
-                <p>In Delhi’s crowded urban settlements — the informal colonies, resettlement clusters, and slum pockets that house millions of the city’s working poor — women, girls & children carry the heaviest, least visible burden. Limited access to education, early marriage, unsafe public spaces, low-wage or no work, and little say in household or community decisions keep generations of women locked out of opportunity.</p>
-                <p>We believe this is not inevitable. It is solvable — with the right support, delivered consistently, at the community level.</p>
+                <p>In Delhi’s crowded urban settlements - the informal colonies, resettlement clusters, and slum pockets that house millions of the city’s working poor - women, girls & children carry the heaviest, least visible burden. Limited access to education, early marriage, unsafe public spaces, low-wage or no work, and little say in household or community decisions keep generations of women locked out of opportunity.</p>
+                <p>We believe this is not inevitable. It is solvable - with the right support, delivered consistently, at the community level.</p>
               </div>
 
               <h2 className={styles.sectionTitle} style={{ marginBottom: '10px' }}>Our Solution</h2>
               <h4 className={styles.subTitle}>We don’t just help women. We work with them.</h4>
               <div className={styles.introPara}>
-                <p>The YWCA of Delhi’s Community Development Programme takes a woman from where she is to where she wants to be — through four connected pathways:</p>
+                <p>The YWCA of Delhi’s Community Development Programme takes a woman from where she is to where she wants to be - through four connected pathways:</p>
               </div>
 
               <div className="row mt-4 g-4">
@@ -177,7 +195,7 @@ export default function CDPOverviewPage() {
               <div className={styles.quoteText}>
                 I used to ask my parents for ₹100 - ₹400 to buy clothes. Now I am part of garment construction unit & run my own tailoring unit from my home.
               </div>
-              <div className={styles.quoteAuthor}><strong>— Ankush, Najafgarh community</strong></div>
+              <div className={styles.quoteAuthor}><strong>- Ankush, Najafgarh community</strong></div>
             </div>
           </div>
 
@@ -189,7 +207,7 @@ export default function CDPOverviewPage() {
               </h2>
               <ul className={styles.trustList}>
                 <li><i className="bi bi-check-circle-fill" style={{ color: '#a212b5', marginTop: '3px' }}></i> <span>Registered under the Societies Registration Act, affiliated to the YWCA of India</span></li>
-                <li><i className="bi bi-check-circle-fill" style={{ color: '#a212b5', marginTop: '3px' }}></i> <span>12A & 80G registered — your donations are tax-deductible</span></li>
+                <li><i className="bi bi-check-circle-fill" style={{ color: '#a212b5', marginTop: '3px' }}></i> <span>12A & 80G registered - your donations are tax-deductible</span></li>
                 <li><i className="bi bi-check-circle-fill" style={{ color: '#a212b5', marginTop: '3px' }}></i> <span>FCRA compliant for international contributions</span></li>
                 <li><i className="bi bi-check-circle-fill" style={{ color: '#a212b5', marginTop: '3px' }}></i> <span>Annual reports and audited financial statements published every year</span></li>
                 <li><i className="bi bi-check-circle-fill" style={{ color: '#a212b5', marginTop: '3px' }}></i> <span>[XX]% of every rupee you donate goes directly to programmes on the ground</span></li>
@@ -243,7 +261,7 @@ export default function CDPOverviewPage() {
           {/* <div className="container">
             <div className={styles.newsletterStrip}>
               <h3>Stay close to the change you’re creating.</h3>
-              <p className="mb-4">Get quarterly updates on the women, young girl or child you’re supporting — real stories, real numbers, no spam.</p>
+              <p className="mb-4">Get quarterly updates on the women, young girl or child you’re supporting - real stories, real numbers, no spam.</p>
               <form className="d-flex justify-content-center align-items-center flex-wrap" onSubmit={(e) => e.preventDefault()}>
                 <input type="email" placeholder="Your email address" className={styles.newsletterInput} required />
                 <button type="submit" className={styles.newsletterBtn}>Subscribe</button>

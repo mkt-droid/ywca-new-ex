@@ -160,8 +160,8 @@ export default function BeAVolunteerPage() {
                         <option value="Short-term Collaboration">Short-term Collaboration</option>
                         <option value="Long-term Partnership">Long-term Partnership</option>
                         <option value="Ongoing Volunteering">Ongoing Volunteering</option>
-                        <option value="Internship (1–3 Months)">Internship (1–3 Months)</option>
-                        <option value="Internship (3–6 Months)">Internship (3–6 Months)</option>
+                        <option value="Internship (1-3 Months)">Internship (1-3 Months)</option>
+                        <option value="Internship (3-6 Months)">Internship (3-6 Months)</option>
                       </select>
                     </div>
                   </div>

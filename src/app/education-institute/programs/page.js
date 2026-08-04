@@ -84,8 +84,8 @@ function ProgramsContent() {
     {
       id: 5,
       name: 'Drishti Sharma',
-      subtitle: 'DMLT, Batch (2016–2018)',
-      quote: `Drishti Sharma is a proud alumna of the Diploma in Medical Laboratory Technology (DMLT) programme at the Women's Training Institute, YWCA of Delhi (Batch 2016–2018). She is currently working in the Department of Molecular Diagnostics at Rajiv Gandhi Cancer Institute & Research Centre, Rohini, Delhi.\n\nThe Diploma in Medical Laboratory Technology at YWCA of Delhi gave me the knowledge, confidence, and practical skills needed to build a successful career. The faculty members were exceptionally supportive and guided me throughout my academic journey. Their encouragement helped me discover my potential and paved the way for my professional success. I am grateful to YWCA for providing me with a strong foundation in the field of medical laboratory technology.`,
+      subtitle: 'DMLT, Batch (2016-2018)',
+      quote: `Drishti Sharma is a proud alumna of the Diploma in Medical Laboratory Technology (DMLT) programme at the Women's Training Institute, YWCA of Delhi (Batch 2016-2018). She is currently working in the Department of Molecular Diagnostics at Rajiv Gandhi Cancer Institute & Research Centre, Rohini, Delhi.\n\nThe Diploma in Medical Laboratory Technology at YWCA of Delhi gave me the knowledge, confidence, and practical skills needed to build a successful career. The faculty members were exceptionally supportive and guided me throughout my academic journey. Their encouragement helped me discover my potential and paved the way for my professional success. I am grateful to YWCA for providing me with a strong foundation in the field of medical laboratory technology.`,
       avatar: 'https://dummyimage.com/150x150/f0f0f0/333333.png&text=DS'
     }
   ];

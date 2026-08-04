@@ -19,7 +19,7 @@ export default function CDPAboutUsPage() {
     <>
       <Head>
         <title>About Us | YWCA of Delhi Community Development Programme</title>
-        <meta name="description" content="Learn about the YWCA of Delhi’s Community Development Programme — our history, mission, values, and the team working to empower women in Delhi’s urban settlements." />
+        <meta name="description" content="Learn about the YWCA of Delhi’s Community Development Programme - our history, mission, values, and the team working to empower women in Delhi’s urban settlements." />
       </Head>
 
       <main>
@@ -36,8 +36,8 @@ export default function CDPAboutUsPage() {
           <div className="container">
             <h1 className={styles.heroHeadline} style={{ maxWidth: 800, margin: '0 auto 25px' }}>Rooted in a century of service. Focused on today’s most urgent need.</h1>
             <div className={styles.introPara}>
-              <p>The YWCA (Young Women’s Christian Association) has stood for justice & dignity and empowerment of women worldwide for over 165 years. The YWCA of Delhi carries this legacy forward through its Community Development Programme (CDP) — a dedicated initiative working directly inside Delhi’s urban settlements, where the gap between opportunity and access is widest.</p>
-              <p>We are not a programme that arrives with answers. We are a programme that arrives with time, trust, and tools — and lets women build their own answers.</p>
+              <p>The YWCA (Young Women’s Christian Association) has stood for justice & dignity and empowerment of women worldwide for over 165 years. The YWCA of Delhi carries this legacy forward through its Community Development Programme (CDP) - a dedicated initiative working directly inside Delhi’s urban settlements, where the gap between opportunity and access is widest.</p>
+              <p>We are not a programme that arrives with answers. We are a programme that arrives with time, trust, and tools - and lets women build their own answers.</p>
             </div>
 
             {/* Mission & Vision Zigzag */}
@@ -52,7 +52,7 @@ export default function CDPAboutUsPage() {
                 <div className="col-md-6">
                   <div className={styles.zigzagContent}>
                     <h3 className={styles.zigzagTitle}>Our Mission</h3>
-                    <p className={styles.zigzagText}>To empower women, young women & children in Delhi’s urban settlements with the education, skills, awareness on rights, access to entitlements and leadership confidence they need to lead self-reliant, dignified lives — and to strengthen the communities around them in the process.</p>
+                    <p className={styles.zigzagText}>To empower women, young women & children in Delhi’s urban settlements with the education, skills, awareness on rights, access to entitlements and leadership confidence they need to lead self-reliant, dignified lives - and to strengthen the communities around them in the process.</p>
                   </div>
                 </div>
               </div>
@@ -78,7 +78,7 @@ export default function CDPAboutUsPage() {
               <h2 className={`${styles.sectionTitle} text-center d-block`}>How it started</h2>
               <div className={styles.introPara}>
                 <p>The Community Development Programme grew out its core values to serve by love & care decades ago: welfare handouts changed a day; skills and confidence changed a life. Starting with a handful of literacy circles, the programme has since grown into a multi-pronged intervention spanning 7 urban settlements across Delhi, reaching more than 12,000 women and girls & children with education, livelihood, health, and leadership support.</p>
-                <p>Today, CDP is run by a team of community workers, instructors and social workers — many of whom are graduates of our own programmes.</p>
+                <p>Today, CDP is run by a team of community workers, instructors and social workers - many of whom are graduates of our own programmes.</p>
               </div>
             </div>
 
@@ -97,7 +97,7 @@ export default function CDPAboutUsPage() {
                   <div className={styles.valueCard}>
                     <div className={styles.valueIcon}><i className="bi bi-people"></i></div>
                     <h4 className={styles.valueTitle}>Community-led</h4>
-                    <p className={styles.valueText}>Local women & children help identify needs and shape solutions — we facilitate, they lead.</p>
+                    <p className={styles.valueText}>Local women & children help identify needs and shape solutions - we facilitate, they lead.</p>
                   </div>
                 </div>
                 <div className="col-md-6 col-lg-4">

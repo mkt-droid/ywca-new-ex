@@ -47,7 +47,7 @@ export default function MembershipDepartmentPage() {
                       <div className={styles.cardIconWrapper}>
                         <i className="bi bi-tree-fill"></i>
                       </div>
-                      <h3 className={styles.cardTitle}>Members’ Picnic – Lodhi Garden</h3>
+                      <h3 className={styles.cardTitle}>Members’ Picnic - Lodhi Garden</h3>
                       <p className="text-muted">28 February 2026</p>
                     </div>
                   </Link>

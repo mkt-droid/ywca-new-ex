@@ -23,13 +23,13 @@ export default function CDPProgramsPage() {
       title: "Education & Literacy",
       tagline: "Because independence starts with being able to read your own life.",
       thumbnail: "/images/Community-development.jpg",
-      problem: "Many women in Delhi’s settlements were pulled out of school early — for marriage, housework, or to help earn. Without basic literacy and numeracy, they remain dependent on others for the simplest transactions.",
+      problem: "Many women in Delhi’s settlements were pulled out of school early - for marriage, housework, or to help earn. Without basic literacy and numeracy, they remain dependent on others for the simplest transactions.",
       solutions: [
         "Non-formal adult literacy classes (3 months, evening batches for working women)",
         "Remedial and bridge classes for out-of-school girls to re-enter formal school",
         "Digital literacy basics (using a smartphone safely, UPI payments, government portals)"
       ],
-      whoItsFor: "Women aged 15–45 and adolescent girls at risk of dropping out.",
+      whoItsFor: "Women aged 15-45 and adolescent girls at risk of dropping out.",
       outcomes: "Reading/writing proficiency, school re-enrolment rate, digital transaction confidence.",
       stats: [
         { value: "1,800", label: "Learners Enrolled" },
@@ -47,13 +47,13 @@ export default function CDPProgramsPage() {
       thumbnail: "/images/01-Banner-Vision-Mission.jpg",
       problem: "Even when women want to work, they often lack a marketable skill, capital to start something small, or the confidence to seek employment outside the home.",
       solutions: [
-        "Tailoring & garment-making (3–6 month certified courses)",
+        "Tailoring & garment-making (3-6 month certified courses)",
         "Beauty & wellness training",
         "Basic computer & office skills",
         "Food processing and packaging (pickles, spices, bakery)",
         "Post-training placement support and linkage to micro-loans and SHG credit"
       ],
-      whoItsFor: "Women aged 18–50 seeking income independence.",
+      whoItsFor: "Women aged 18-50 seeking income independence.",
       outcomes: "Certification rate, placement/self-employment rate within 6 months, average monthly income increase.",
       stats: [
         { value: "1,100", label: "Women Trained" },
@@ -67,7 +67,7 @@ export default function CDPProgramsPage() {
     {
       id: 3,
       title: "Health & Well-being",
-      tagline: "A healthy woman can build a healthy home — and a healthy community.",
+      tagline: "A healthy woman can build a healthy home - and a healthy community.",
       thumbnail: "/images/high-1.jpg",
       problem: "Poor sanitation, limited health literacy, and stigma around reproductive and mental health leave women managing serious issues silently.",
       solutions: [
@@ -93,7 +93,7 @@ export default function CDPProgramsPage() {
       title: "Leadership & Rights",
       tagline: "She doesn’t just need a seat at the table. She needs to build the table.",
       thumbnail: "/images/01-Banner-insights-pub.jpg",
-      problem: "Women in urban settlements are rarely consulted on decisions that affect their own communities — from local infrastructure to safety to household finances.",
+      problem: "Women in urban settlements are rarely consulted on decisions that affect their own communities - from local infrastructure to safety to household finances.",
       solutions: [
         "Self-Help Group (SHG) formation and financial literacy",
         "Community leadership training for women representatives",
@@ -134,7 +134,7 @@ export default function CDPProgramsPage() {
           <div className="container">
             <h1 className={styles.heroHeadline} style={{ maxWidth: 800, margin: '0 auto 25px' }}>Four Pathways. One Goal: A Woman’s Independence.</h1>
             <p className={styles.introPara}>
-              Every woman who walks through our doors is at a different starting point. That’s why CDP runs four interconnected programme areas — designed to meet her there, and walk with her forward.
+              Every woman who walks through our doors is at a different starting point. That’s why CDP runs four interconnected programme areas - designed to meet her there, and walk with her forward.
             </p>
           </div>
         </div>

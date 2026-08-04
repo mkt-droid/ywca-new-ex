@@ -11,7 +11,7 @@ const SLIDES = [
     image: "/images/Banner-1.jpg",        // 👈 apna path
     titleLine1: "STRENGTHENING",
     titleLine2: "COMMUNITIES",
-    subtitle: "WeMpower – Leaving No One Behind",
+    subtitle: "WeMpower - Leaving No One Behind",
     btnText: "Join the YWCA Movement",
     btnLink: "#",
   },
@@ -20,7 +20,7 @@ const SLIDES = [
     image: "/images/Banner-2.jpg",        // 👈 apna path
     titleLine1: "BUILDING",
     titleLine2: "YOUTH",
-    subtitle: "WeMpower – Leaving No One Behind",
+    subtitle: "WeMpower - Leaving No One Behind",
     btnText: "Join the YWCA Movement",
     btnLink: "#",
   },
@@ -29,7 +29,7 @@ const SLIDES = [
     image: "/images/Banner-3.jpg",        // 👈 apna path
     titleLine1: "NURTURING",
     titleLine2: "NATURE",
-    subtitle: "WeMpower – Leaving No One Behind",
+    subtitle: "WeMpower - Leaving No One Behind",
     btnText: "Join the YWCA Movement",
     btnLink: "#",
   }
@@ -124,7 +124,7 @@ const HeroBanner = () => {
             ].join(" ")}
             aria-hidden={!isActive}
           >
-            {/* Full image as background — zoom punch on entry */}
+            {/* Full image as background - zoom punch on entry */}
             <div
               className={[
                 styles.bg,
@@ -134,7 +134,7 @@ const HeroBanner = () => {
               style={{ backgroundImage: `url(${slide.image})` }}
             />
 
-            {/* Text overlay — positioned over the right golden panel */}
+            {/* Text overlay - positioned over the right golden panel */}
             <div className={[
               styles.content,
               isActive ? styles.contentVisible : "",

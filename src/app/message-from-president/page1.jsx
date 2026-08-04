@@ -106,7 +106,7 @@ const MessagePresident = () => {
                         </h3>
 
                         <span>
-                            President — YWCA of Delhi
+                            President - YWCA of Delhi
                         </span>
 
                     </div>

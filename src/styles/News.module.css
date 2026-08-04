@@ -133,7 +133,7 @@
 
 
 /* ─────────────────────────────────────────
-   Load Animation — same as BoardOfManagement
+   Load Animation - same as BoardOfManagement
    (opacity + translateY, triggered by
     IntersectionObserver adding .visible)
 ───────────────────────────────────────── */

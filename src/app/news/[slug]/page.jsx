@@ -7,7 +7,7 @@ import { useEffect, useRef, useState } from "react"
 // ── Mock detail data (replace with real fetch by slug) ──
 const newsDetail = {
   id: 1,
-  title: 'World YWCA Day – Celebrating Sisterhood and Solidarity – 25th April, 2026',
+  title: 'World YWCA Day - Celebrating Sisterhood and Solidarity - 25th April, 2026',
   image: '/images/News-item-1.jpg',
   date: '25th April, 2026',
   category: 'Events',
@@ -24,7 +24,7 @@ const newsDetail = {
     },
     {
       type: 'quote',
-      text: '"Empowering women, empowering communities – together we rise, together we thrive."',
+      text: '"Empowering women, empowering communities - together we rise, together we thrive."',
     },
     {
       type: 'paragraph',
@@ -63,21 +63,21 @@ const newsDetail = {
 const relatedNews = [
   {
     id: 2,
-    title: 'Lenten Prayer Meeting – 27th March 2026',
+    title: 'Lenten Prayer Meeting - 27th March 2026',
     image: '/images/News-item-2.jpg',
     slug: 'lenten-prayer-meeting-2026',
     date: '27th March, 2026',
   },
   {
     id: 3,
-    title: 'Thrive Music Festival – 14th March 2026',
+    title: 'Thrive Music Festival - 14th March 2026',
     image: '/images/News-item-3.jpg',
     slug: 'thrive-music-festival-2026',
     date: '14th March, 2026',
   },
   {
     id: 4,
-    title: "International Women's Day – 7th March 2026",
+    title: "International Women's Day - 7th March 2026",
     image: '/images/News-item-4.jpg',
     slug: 'international-womens-day-2026',
     date: '7th March, 2026',

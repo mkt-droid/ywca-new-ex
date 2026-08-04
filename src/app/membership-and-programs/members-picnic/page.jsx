@@ -50,7 +50,7 @@ export default function MembersPicnicPage() {
                 </Link>
               </div>
               <div className="flex-grow-1 text-center" style={{ padding: '0 15px' }}>
-                <h2 className={styles.innerPageTitle}>Members’ Picnic – Lodhi Garden</h2>
+                <h2 className={styles.innerPageTitle}>Members’ Picnic - Lodhi Garden</h2>
                 <p className="text-muted mb-0 mt-2">28 February 2026</p>
               </div>
               <div style={{ flex: '0 0 auto', width: '85px', visibility: 'hidden' }} className="d-none d-md-block"></div>

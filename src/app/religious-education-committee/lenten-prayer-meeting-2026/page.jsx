@@ -53,7 +53,7 @@ export default function LentenPrayerMeetingPage() {
             <div className="mt-5">
               <div className={styles.overviewText} style={{ textAlign: 'left', maxWidth: '1000px' }}>
                 <p>The Lenten Prayer Meeting was held on 27 March 2026 at YWCA of Delhi, bringing together members for a meaningful time of prayer, reflection, and spiritual renewal during the Lenten season.</p>
-                <p>The programme began with an opening prayer, followed by a welcome address and scripture reading from Romans 5:6–11, reflecting on God’s love, grace, and the sacrifice of Christ. The Lenten message encouraged participants to deepen their faith and embrace the spirit of repentance, gratitude, and hope that characterizes the season.</p>
+                <p>The programme began with an opening prayer, followed by a welcome address and scripture reading from Romans 5:6-11, reflecting on God’s love, grace, and the sacrifice of Christ. The Lenten message encouraged participants to deepen their faith and embrace the spirit of repentance, gratitude, and hope that characterizes the season.</p>
                 <p>The gathering provided a sacred space for contemplation and fellowship, inspiring members to strengthen their spiritual journey and commitment to Christian values.</p>
 
               </div>

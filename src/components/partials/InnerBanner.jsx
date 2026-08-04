@@ -5,7 +5,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 
 const InnerBanner = ({
   title = "YWCA",
-  subTitle = "Building – 2026",
+  subTitle = "Building - 2026",
   images = [
     "/images/History-banner-img-1.jpg",
   ],

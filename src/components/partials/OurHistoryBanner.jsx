@@ -8,7 +8,7 @@ const OurHistoryBanner = ({
     {
       image: "/images/History-banner-img-1.jpg",
       title: "YWCA",
-      subTitle: "Building – 2026",
+      subTitle: "Building - 2026",
     },
   ],
   breadcrumb = [],
