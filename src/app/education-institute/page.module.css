@@ -82,12 +82,7 @@
   background-color: #0e0e33;
 }
 
-.sectionTitle {
-  font-size: 2.2rem;
-  color: #000;
-  font-weight: 600;
-  margin-bottom: 0.95rem;
-}
+
 
 .sectionText {
   color: #000000;
@@ -395,7 +390,6 @@
 
 @media (max-width: 768px) {
 
-  .sectionTitle,
   .learningTitle {
     font-size: 1.6rem;
   }

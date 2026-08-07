@@ -100,7 +100,7 @@ export default function EcoJusticeLabPage() {
   return (
     <main>
       <SideNavBanner
-        height="380px"
+        height="360px"
         title={
           <>
             SUPPORT WOMEN<br />
@@ -116,7 +116,7 @@ export default function EcoJusticeLabPage() {
       <div className={styles.pageContentWrapper}>
         <section className={styles.sectionPadding}>
           <div className="container">
-            <h2 className={styles.sectionTitle}>ECO- JUSTICE LAB</h2>
+            <h1 className="sectionTitle_1 text-center mx-800">ECO- JUSTICE LAB</h1>
             <p className={styles.sectionSubtitle}>Building Climate Leadership Through Community Action</p>
 
             <div className={styles.statsContainer}>

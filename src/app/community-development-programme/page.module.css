@@ -16,7 +16,6 @@
 }
 
 .sectionPadding {
-  padding: 80px 0;
   background-color: transparent;
 }
 
@@ -143,7 +142,7 @@
   background-color: #fff;
   padding: 30px;
   border-radius: 10px;
-  border-left: 4px solid #a212b5;
+  border: 1px solid #eaeaea;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   height: 100%;
   display: flex;
@@ -199,11 +198,11 @@
 }
 
 .trustSection {
-  background-color: #fce9dc;
+  background-color: #ffebe0;
   padding: 3rem 4rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  border: 1px solid #dcb285;
+  border-radius: 12px;
   text-align: center;
   max-width: 1000px;
   margin-left: auto;
@@ -228,60 +227,6 @@
   font-size: 1rem;
   color: #000000;
   line-height: 1.5;
-}
-
-.wayCard {
-  background-color: #fff;
-  border-radius: 12px;
-  padding: 35px 25px;
-  height: 100%;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  border: 1px solid #eaeaea;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-}
-
-.wayCard:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
-  border-color: #a212b5;
-}
-
-.iconWrapper {
-  width: 80px;
-  height: 80px;
-  background-color: #fdf2ff;
-  color: #a212b5;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 35px;
-  margin-bottom: 20px;
-  transition: all 0.3s ease;
-}
-
-.wayCard:hover .iconWrapper {
-  background-color: #a212b5;
-  color: #ffffff;
-  transform: scale(1.1);
-}
-
-.wayCard p {
-  flex-grow: 1;
-  color: #555;
-  margin-bottom: 25px;
-  line-height: 1.6;
-}
-
-.wayCard h4 {
-  color: #a212b5;
-  font-weight: 600;
-  margin-bottom: 15px;
-  font-size: 1.4rem;
 }
 
 .newsletterStrip {

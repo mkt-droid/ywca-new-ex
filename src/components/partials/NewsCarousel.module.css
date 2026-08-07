@@ -1,0 +1,77 @@
+.carouselContainer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.scrollTrack {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  gap: 24px;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.scrollTrack::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+.slide {
+  flex: 0 0 calc(25% - 18px); /* 4 items per row */
+  scroll-snap-align: start;
+}
+
+@media (max-width: 991px) {
+  .slide {
+    flex: 0 0 calc(33.333% - 16px);
+  }
+}
+
+@media (max-width: 768px) {
+  .slide {
+    flex: 0 0 calc(50% - 12px);
+  }
+}
+
+@media (max-width: 576px) {
+  .slide {
+    flex: 0 0 100%;
+  }
+}
+
+.navButton {
+  background: white;
+  border: 1px solid #eaeaea;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #a212b5;
+  transition: all 0.3s ease;
+}
+
+.navButton:hover {
+  background: #a212b5;
+  color: white;
+}
+
+.leftBtn {
+  left: -20px;
+}
+
+.rightBtn {
+  right: -20px;
+}

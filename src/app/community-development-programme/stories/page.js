@@ -22,17 +22,17 @@ export default function CDPStoriesPage() {
     <>
       <main>
         <SideNavBanner
-          height="380px"
+          height="360px"
           title={<>STORIES<br />CDP</>}
-          bgImage="/images/working-women-hostels/main-banner.jpg"
+          bgImage="/images/cdp/main-banner.jpg"
           navItems={bannerNavItems}
           activePath="/community-development-programme/stories"
           contentMarginTop="25vh"
         />
 
-        <div className={styles.pageBackground}>
+        <div className={`${styles.pageBackground} pageContentWrapper`}>
           <div className="container">
-            <h1 className={styles.heroHeadline}>These are not case studies. These are her words, her journey, her win.</h1>
+            <h1 className="sectionTitle_1 text-center mx-800">These are not case studies. These are her words, her journey, her win.</h1>
             <p className={styles.introPara}>
               All names below are used with consent; some have been changed at the individual’s request to protect privacy. Photographs are used with informed, written consent.
             </p>
@@ -47,8 +47,8 @@ export default function CDPStoriesPage() {
                 <img src="/images/board-member-thumb.jpg" alt="Sunita's Sewing Machine" className="img-fluid rounded shadow" style={{ objectFit: 'cover', height: '100%', width: '100%' }} />
               </div>
               <div className="col-lg-7 ps-lg-5">
-                <h2 className="sectionTitle" style={{ marginBottom: '10px' }}>Sunita’s Sewing Machine</h2>
-                <h4 className={styles.storySubtitle}>From asking for ₹10 to running her own tailoring unit</h4>
+                <h2 className="sectionTitle_2" style={{ marginBottom: '10px' }}>Sunita’s Sewing Machine</h2>
+                <h3 className={`sectionTitle_3 ${styles.storySubtitle}`}>From asking for ₹10 to running her own tailoring unit</h3>
                 <p className={styles.storyText}>
                   Sunita, 34, lives in Sangam Vihar with her husband, a daily-wage electrician, and their two children. For over a decade, her days revolved entirely around the house - she had no independent income and relied on her husband for even the smallest purchases.
                 </p>
@@ -79,8 +79,8 @@ export default function CDPStoriesPage() {
                 <img src="/images/board-member-thumb.jpg" alt="Reshma's Second Chance" className="img-fluid rounded shadow" style={{ objectFit: 'cover', height: '100%', width: '100%' }} />
               </div>
               <div className="col-lg-7 pe-lg-5">
-                <h2 className="sectionTitle" style={{ marginBottom: '10px' }}>Reshma’s Second Chance at School</h2>
-                <h4 className={styles.storySubtitle}>Pulled out at 13. Back in school at 15 - with a plan.</h4>
+                <h2 className="sectionTitle_2" style={{ marginBottom: '10px' }}>Reshma’s Second Chance at School</h2>
+                <h3 className={`sectionTitle_3 ${styles.storySubtitle}`}>Pulled out at 13. Back in school at 15 - with a plan.</h3>
                 <p className={styles.storyText}>
                   Reshma was withdrawn from school in Class 8 to help care for younger siblings while her mother worked as domestic help. For two years, her days had no structure and few options.
                 </p>
@@ -111,8 +111,8 @@ export default function CDPStoriesPage() {
                 <img src="/images/board-member-thumb.jpg" alt="Meena's Self-Help Group" className="img-fluid rounded shadow" style={{ objectFit: 'cover', height: '100%', width: '100%' }} />
               </div>
               <div className="col-lg-7 ps-lg-5">
-                <h2 className="sectionTitle" style={{ marginBottom: '10px' }}>Meena’s Self-Help Group</h2>
-                <h4 className={styles.storySubtitle}>From isolated homemaker to elected community representative</h4>
+                <h2 className="sectionTitle_2" style={{ marginBottom: '10px' }}>Meena’s Self-Help Group</h2>
+                <h3 className={`sectionTitle_3 ${styles.storySubtitle}`}>From isolated homemaker to elected community representative</h3>
                 <p className={styles.storyText}>
                   Meena joined a CDP-facilitated Self-Help Group in Govindpuri primarily to save small amounts of money safely. Over two years, regular SHG meetings became a space where she and other women discussed household issues, local infrastructure problems, and eventually, local governance.
                 </p>
@@ -135,25 +135,25 @@ export default function CDPStoriesPage() {
         {/* Video Stories */}
         <section className={styles.videoSection}>
           <div className="container">
-            <h2 className={styles.sectionTitle} style={{ color: 'white' }}>Video Testimonials</h2>
+            <h2 className="sectionTitle_2 text-center" style={{ color: 'white' }}>Video Testimonials</h2>
             <div className="row justify-content-center mt-5">
               <div className="col-md-4 mb-4">
                 <div className={styles.videoPlaceholder}>
                   <i className="bi bi-play-circle-fill"></i>
                 </div>
-                <p className={styles.videoCaption}>Sunita shares her journey<br/><span style={{ opacity: 0.7, fontSize: '0.85rem' }}>Used with informed consent</span></p>
+                <p className={styles.videoCaption}>Sunita shares her journey<br /><span style={{ opacity: 0.7, fontSize: '0.85rem' }}>Used with informed consent</span></p>
               </div>
               <div className="col-md-4 mb-4">
                 <div className={styles.videoPlaceholder}>
                   <i className="bi bi-play-circle-fill"></i>
                 </div>
-                <p className={styles.videoCaption}>Reshma talks about returning to school<br/><span style={{ opacity: 0.7, fontSize: '0.85rem' }}>Used with informed consent</span></p>
+                <p className={styles.videoCaption}>Reshma talks about returning to school<br /><span style={{ opacity: 0.7, fontSize: '0.85rem' }}>Used with informed consent</span></p>
               </div>
               <div className="col-md-4 mb-4">
                 <div className={styles.videoPlaceholder}>
                   <i className="bi bi-play-circle-fill"></i>
                 </div>
-                <p className={styles.videoCaption}>Meena on leadership in Govindpuri<br/><span style={{ opacity: 0.7, fontSize: '0.85rem' }}>Used with informed consent</span></p>
+                <p className={styles.videoCaption}>Meena on leadership in Govindpuri<br /><span style={{ opacity: 0.7, fontSize: '0.85rem' }}>Used with informed consent</span></p>
               </div>
             </div>
           </div>
@@ -166,7 +166,7 @@ export default function CDPStoriesPage() {
               <div className={styles.shareIcon}>
                 <i className="bi bi-chat-quote-fill"></i>
               </div>
-              <h2 className="sectionTitle text-center" style={{ marginBottom: '15px' }}>Share Your Story</h2>
+              <h2 className="sectionTitle_2 text-center" style={{ marginBottom: '15px' }}>Share Your Story</h2>
               <p className="mb-4" style={{ color: '#555', fontSize: '1.15rem' }}>Are you a CDP alumna with a story to share?</p>
               <Link href="/contact" className={styles.primaryBtn}>
                 Get in touch →
@@ -178,7 +178,7 @@ export default function CDPStoriesPage() {
         {/* Final CTA */}
         <section className={styles.ctaSection}>
           <div className="container px-3">
-            <h3 className="sectionTitle text-center" style={{ maxWidth: '800px', margin: '0 auto 25px auto', lineHeight: '1.4' }}>Every story here started with someone who gave, volunteered, or believed.</h3>
+            <h2 className="sectionTitle_2 text-center" style={{ maxWidth: '800px', margin: '0 auto 25px auto', lineHeight: '1.4' }}>Every story here started with someone who gave, volunteered, or believed.</h2>
             <Link href="/fund-raising-publicity/donate" className={styles.primaryBtn}>
               Be the reason for the next one →
             </Link>

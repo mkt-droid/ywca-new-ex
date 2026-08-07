@@ -6,6 +6,7 @@ import SideNavBanner from '@/components/partials/SideNavBanner';
 import PlacementPartners from '@/components/PlacementPartners';
 import EducationFooterLinks from '@/components/EducationFooterLinks';
 import newsData from '@/data/news.json';
+import NewsCarousel from '@/components/partials/NewsCarousel';
 
 export const metadata = {
   title: 'Education Institute | YWCA of Delhi',
@@ -56,7 +57,7 @@ export default function EducationInstitutePage() {
     <main>
       {/* Banner Section with Enquiry Form */}
       <SideNavBanner
-        height="380px"
+        height="360px"
         bgImage="/images/education-institute/aca-bnr.jpg"
         navItems={bannerNavItems}
         sectionStyle={{ overflow: 'visible' }}
@@ -66,8 +67,7 @@ export default function EducationInstitutePage() {
           <div className={styles.enquiryFormCard}>
             <h3 className={styles.formTitle}>Enquiry form</h3>
             <form>
-              <input type="text" placeholder="Your name" className={styles.formInput} />
-              <input type="text" placeholder="Your phone" className={styles.formInput} />
+              <input type="text" placeholder="Your name" className={styles.formInput} /><input type="text" placeholder="Your phone" className={styles.formInput} />
               <input type="email" placeholder="Your email" className={styles.formInput} />
               <input type="text" placeholder="Course Interested" className={styles.formInput} />
               <textarea placeholder="Your comment" className={styles.formTextarea} rows="3"></textarea>
@@ -79,7 +79,7 @@ export default function EducationInstitutePage() {
 
       {/* About Section */}
       <section className={`container mb-5 text-center ${styles.aboutSection}`} style={{ marginTop: '120px' }}>
-        <h2 className={styles.sectionTitle}>About YWCA Institute</h2>
+        <h1 className="sectionTitle_1 text-center mx-800">About YWCA Institute</h1>
         <p className={styles.sectionText}>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like PageMaker including versions.
         </p>
@@ -87,21 +87,9 @@ export default function EducationInstitutePage() {
 
       {/* Academic News Section */}
       <section className="container mb-5">
-        <h2 className={`sectionTitle text-center`}>Academic News</h2>
-        <div className="row mt-4">
-          {academicNews.map(news => (
-            <div className="col-md-3 mb-4" key={news.id}>
-              <div className={styles.newsCard}>
-                <img src={news.image} alt="Academic News" className={styles.newsImage} />
-                <div className={styles.newsContent}>
-                  <h5 className={styles.newsTitle} style={{ fontSize: '0.95rem', fontWeight: 'normal', margin: 0 }}>{news.title}</h5>
-                  <Link href={`/news/${news.id}`} className={styles.newsViewMore}>
-                    View more <i className="bi bi-arrow-right"></i>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          ))}
+        <h2 className="sectionTitle_2 text-center d-block">Academic News</h2>
+        <div className="mt-4">
+          <NewsCarousel newsData={academicNews} />
         </div>
         <div className="text-center mt-3">
           <Link href="/news" className={styles.viewMoreBtn}>View All</Link>
@@ -145,7 +133,7 @@ export default function EducationInstitutePage() {
       {/* Why Us Section */}
       <section className={styles.whyUsSection}>
         <div className="container text-center">
-          <h2 className={'sectionTitle'}>Why Choose YWCA OF DELHI Education Institute</h2>
+          <h2 className="sectionTitle_2 text-center d-block">Why Choose YWCA OF DELHI Education Institute</h2>
           <div className={styles.whyUsGrid}>
             <span className={styles.whyUsPill}><i className="bi bi-bullseye me-2"></i>Career Focused Learning</span>
             <span className={styles.whyUsPill}><i className="bi bi-building me-2"></i>Industrial Exposure</span>
@@ -161,14 +149,14 @@ export default function EducationInstitutePage() {
 
       {/* Alumni Section */}
       <section className="container mt-5 mb-5 text-center">
-        <h2 className={'sectionTitle'}>Our Alumni Are Shaping The Future</h2>
+        <h2 className="sectionTitle_2 text-center d-block">Our Alumni Are Shaping The Future</h2>
         <div className="row mt-4">
           {alumni.map(person => (
             <div className="col-md-3 col-sm-6 mb-4" key={person.id}>
               <div className={styles.alumniCard}>
                 <img src="/images/education-institute/alumani.jpg" alt="Alumni" className={styles.alumniImage} />
                 <div className={styles.alumniContent}>
-                  <h5 className={styles.alumniName}>{person.name}</h5>
+                  <h3 className={styles.alumniName}>{person.name}</h3>
                   <p className={styles.alumniDesignation}>{person.designation}</p>
                   <hr className={styles.alumniDivider} />
                   <p className={styles.alumniQuote}>{person.quote}</p>
@@ -189,6 +177,6 @@ export default function EducationInstitutePage() {
 
       {/* Footer Links Section */}
       <EducationFooterLinks />
-    </main>
+</main>
   );
 }

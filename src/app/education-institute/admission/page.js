@@ -20,7 +20,7 @@ export default function AdmissionPage() {
     <main>
       {/* Banner Section */}
       <SideNavBanner
-        height="380px"
+        height="360px"
         title={
           <>
             EDUCATIONAL<br />INSTITUTE
@@ -37,7 +37,7 @@ export default function AdmissionPage() {
             {/* Left Column */}
             <div className="col-lg-6 col-md-12">
               <div className={styles.leftColumn}>
-                <h2 className={styles.heading}>Admission enquiry</h2>
+                <h1 className="sectionTitle_1 text-center mx-800">Admission enquiry</h1>
                 <p className={styles.subText}>
                   Connect Curriculum To Careers<br />
                   Strengthen Employment Outcomes<br />
@@ -87,6 +87,6 @@ export default function AdmissionPage() {
           </div>
         </div>
       </section>
-    </main>
+</main>
   );
 }

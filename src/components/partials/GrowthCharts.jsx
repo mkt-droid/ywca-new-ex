@@ -26,14 +26,14 @@ export default function GrowthCharts() {
     <div className="row g-4 mt-3">
       <div className="col-md-6 text-center">
         <div style={{ background: '#fff', padding: '30px 20px', borderRadius: '12px', boxShadow: '0 4px 20px rgba(0,0,0,0.04)', border: '1px solid #eaeaea', height: '100%' }}>
-          <h4 style={{ color: '#242278', marginBottom: '30px', fontWeight: 600, fontSize: '1.2rem' }}>Women reached per year</h4>
+          <h3 style={{ color: '#242278', marginBottom: '30px', fontWeight: 600, fontSize: '1.2rem' }}>Women reached per year</h3>
           <div style={{ width: '100%', height: 300 }}>
             <ResponsiveContainer width="100%" height="100%">
               <LineChart data={womenReachedData} margin={{ top: 5, right: 20, left: 0, bottom: 5 }}>
                 <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#eaeaea" />
-                <XAxis dataKey="year" axisLine={false} tickLine={false} tick={{fill: '#666'}} dy={10} />
-                <YAxis axisLine={false} tickLine={false} tick={{fill: '#666'}} dx={-10} />
-                <Tooltip 
+                <XAxis dataKey="year" axisLine={false} tickLine={false} tick={{ fill: '#666' }} dy={10} />
+                <YAxis axisLine={false} tickLine={false} tick={{ fill: '#666' }} dx={-10} />
+                <Tooltip
                   contentStyle={{ borderRadius: '8px', border: 'none', boxShadow: '0 4px 15px rgba(0,0,0,0.08)' }}
                 />
                 <Line type="monotone" dataKey="reached" stroke="#BE00C4" strokeWidth={4} activeDot={{ r: 6, fill: '#BE00C4', stroke: '#fff', strokeWidth: 2 }} name="Women Reached" />
@@ -42,18 +42,18 @@ export default function GrowthCharts() {
           </div>
         </div>
       </div>
-      
+
       <div className="col-md-6 text-center">
         <div style={{ background: '#fff', padding: '30px 20px', borderRadius: '12px', boxShadow: '0 4px 20px rgba(0,0,0,0.04)', border: '1px solid #eaeaea', height: '100%' }}>
-          <h4 style={{ color: '#242278', marginBottom: '30px', fontWeight: 600, fontSize: '1.2rem' }}>Vocational training completions</h4>
+          <h3 style={{ color: '#242278', marginBottom: '30px', fontWeight: 600, fontSize: '1.2rem' }}>Vocational training completions</h3>
           <div style={{ width: '100%', height: 300 }}>
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={vocationalTrainingData} margin={{ top: 5, right: 20, left: 0, bottom: 5 }}>
                 <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#eaeaea" />
-                <XAxis dataKey="year" axisLine={false} tickLine={false} tick={{fill: '#666'}} dy={10} />
-                <YAxis axisLine={false} tickLine={false} tick={{fill: '#666'}} dx={-10} />
-                <Tooltip 
-                  cursor={{fill: '#f8f9fa'}}
+                <XAxis dataKey="year" axisLine={false} tickLine={false} tick={{ fill: '#666' }} dy={10} />
+                <YAxis axisLine={false} tickLine={false} tick={{ fill: '#666' }} dx={-10} />
+                <Tooltip
+                  cursor={{ fill: '#f8f9fa' }}
                   contentStyle={{ borderRadius: '8px', border: 'none', boxShadow: '0 4px 15px rgba(0,0,0,0.08)' }}
                 />
                 <Bar dataKey="completions" fill="#0dcaf0" radius={[6, 6, 0, 0]} name="Completions" barSize={45} />

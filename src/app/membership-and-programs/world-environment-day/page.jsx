@@ -48,7 +48,7 @@ export default function WorldEnvironmentDayPage() {
                 </Link>
               </div>
               <div className="flex-grow-1 text-center" style={{ padding: '0 15px' }}>
-                <h2 className={styles.innerPageTitle}>World Environment Day Celebration 2026</h2>
+                <h1 className="sectionTitle_1 text-center mx-800">World Environment Day Celebration 2026</h1>
                 <p className="text-muted mb-0 mt-2">13th June 2026</p>
               </div>
               <div style={{ flex: '0 0 auto', width: '85px', visibility: 'hidden' }} className="d-none d-md-block"></div>

@@ -16,7 +16,7 @@
 .introPara {
   text-align: center;
   max-width: 900px;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 0px auto;
   color: #000000;
   line-height: 1.5;
   font-size: 1rem;
@@ -226,12 +226,7 @@
   overflow: hidden;
 }
 
-.sectionTitle {
-  color: #a212b5;
-  margin-bottom: 20px;
-  font-size: 1.9rem;
-  font-weight: 600;
-}
+
 
 .whereTitle {
   font-size: 2.8rem;

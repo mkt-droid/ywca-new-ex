@@ -75,11 +75,10 @@ export default function EventsAndAnnouncementsPage() {
   return (
     <main>
       <SideNavBanner
-        height="380px"
+        height="360px"
         title={
           <>
-            SUPPORT WOMEN<br />
-            SUPPORT SUSTAINABILITY<br />
+            SUPPORT WOMEN<br />SUPPORT SUSTAINABILITY<br />
             SUPPORT CHANGE
           </>
         }
@@ -91,7 +90,7 @@ export default function EventsAndAnnouncementsPage() {
       <div className={styles.contentWrapper}>
         <section className={styles.sectionPadding}>
           <div className="container">
-            <h2 className={styles.pageTitle}>EVENTS AND ANNOUNCEMENTS</h2>
+            <h1 className="sectionTitle_1 text-center mx-800">EVENTS AND ANNOUNCEMENTS</h1>
             <p className={styles.pageDescription}>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions.
             </p>
@@ -99,7 +98,7 @@ export default function EventsAndAnnouncementsPage() {
             <Gallery title="Gallery" items={galleryItems} columns={4} />
           </div>
         </section>
-      </div>
-    </main>
+            </div>
+</main>
   );
 }

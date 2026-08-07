@@ -43,11 +43,10 @@ export default function VolunteerAndPartnershipPage() {
   return (
     <main>
       <SideNavBanner
-        height="380px"
+        height="360px"
         title={
           <>
-            SUPPORT WOMEN<br />
-            SUPPORT SUSTAINABILITY<br />
+            SUPPORT WOMEN<br />SUPPORT SUSTAINABILITY<br />
             SUPPORT CHANGE
           </>
         }
@@ -59,7 +58,7 @@ export default function VolunteerAndPartnershipPage() {
       <div className={styles.contentWrapper}>
         <section className={styles.sectionPadding}>
           <div className="container">
-            <h2 className={styles.pageTitle}>VOLUNTEER & PARTNERSHIP</h2>
+            <h1 className="sectionTitle_1 text-center mx-800">VOLUNTEER & PARTNERSHIP</h1>
             <p className={styles.pageDescription}>
               Join hands with us to create lasting change and empower communities together.
             </p>
@@ -202,6 +201,6 @@ export default function VolunteerAndPartnershipPage() {
           </div>
         </section>
       </div>
-    </main>
+</main>
   );
 }

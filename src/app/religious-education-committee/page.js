@@ -15,7 +15,7 @@ export default function ReligiousEducationCommitteePage() {
   return (
     <main>
       <SideNavBanner
-        height="380px"
+        height="360px"
         title={<>RELIGIOUS <br />EDUCATION<br /> COMMITTEE</>}
         bgImage="/images/01-Banner-Religious-Education.jpg"
         activePath="/religious-education-committee"
@@ -25,7 +25,7 @@ export default function ReligiousEducationCommitteePage() {
       <div className={styles.pageContentWrapper}>
         <section className={styles.sectionPadding} id="overview">
           <div className="container">
-            <h2 className={styles.overviewTitle}>Religious Education Committee</h2>
+            <h1 className="sectionTitle_1 text-center mx-800">Religious Education Committee</h1>
             <div className={styles.overviewText}>
               <p>The Religious Education Committee of YWCA of Delhi nurtures the spiritual life of members through prayer, worship, fellowship, and faith-based activities. The Committee organizes regular prayer services, Bible studies, devotional gatherings, retreats, and special observances that provide opportunities for reflection, spiritual growth, and community building. Through these activities, it seeks to strengthen faith, encourage fellowship, and promote Christian values of love, service, and compassion among members and the wider YWCA community.</p>
             </div>

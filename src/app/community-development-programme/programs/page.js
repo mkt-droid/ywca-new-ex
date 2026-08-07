@@ -122,17 +122,17 @@ export default function CDPProgramsPage() {
 
       <main>
         <SideNavBanner
-          height="380px"
+          height="360px"
           title={<>PROGRAMS<br />CDP</>}
-          bgImage="/images/working-women-hostels/main-banner.jpg"
+          bgImage="/images/cdp/main-banner.jpg"
           navItems={bannerNavItems}
           activePath="/community-development-programme/programs"
           contentMarginTop="25vh"
         />
 
-        <div className={styles.pageBackground}>
+        <div className={`${styles.pageBackground} pageContentWrapper`}>
           <div className="container">
-            <h1 className={styles.heroHeadline} style={{ maxWidth: 800, margin: '0 auto 25px' }}>Four Pathways. One Goal: A Woman’s Independence.</h1>
+            <h1 className="sectionTitle_1 text-center mx-800">Four Pathways. One Goal: A Woman’s Independence.</h1>
             <p className={styles.introPara}>
               Every woman who walks through our doors is at a different starting point. That’s why CDP runs four interconnected programme areas - designed to meet her there, and walk with her forward.
             </p>
@@ -142,14 +142,14 @@ export default function CDPProgramsPage() {
         {/* Programs Grid */}
         <section className={styles.programSection}>
           <div className="container">
-            <h2 className={`text-center mb-5 ${styles.sectionTitle}`}>Our Programs</h2>
+            <h2 className="sectionTitle_2 text-center">Our Programs</h2>
             <div className="row g-4">
               {programsData.map(program => (
                 <div key={program.id} className="col-lg-3 col-md-6 mb-4">
                   <div className={styles.courseCard}>
                     <img src={program.thumbnail} alt={program.title} className={styles.courseImage} />
                     <div className={styles.courseContent}>
-                      <h5 className={styles.courseTitle}>{program.title}</h5>
+                      <h3 className={`${styles.courseTitle}`}>{program.title}</h3>
                       <p className={styles.cardTagline}>{program.tagline}</p>
                       <div className={styles.btnGroup}>
                         <button className={styles.viewMoreBtn} onClick={() => setSelectedProgram(program)}>
@@ -170,7 +170,7 @@ export default function CDPProgramsPage() {
             <div className="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
               <div className="modal-content">
                 <div className={`modal-header ${styles.modalHeader}`}>
-                  <h5 className={`modal-title ${styles.modalTitle}`}>{selectedProgram.title}</h5>
+                  <h3 className={`modal-title ${styles.modalTitle}`}>{selectedProgram.title}</h3>
                   <button type="button" className="btn-close" onClick={() => setSelectedProgram(null)} aria-label="Close"></button>
                 </div>
                 <div className={`modal-body ${styles.modalBody}`}>
@@ -275,7 +275,6 @@ export default function CDPProgramsPage() {
             </div>
           </div>
         </section>
-
       </main>
     </>
   );

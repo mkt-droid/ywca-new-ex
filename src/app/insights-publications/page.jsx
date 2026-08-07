@@ -16,11 +16,11 @@ export default function InsightsPublicationsPage() {
   ];
 
   const annualReports = [
-    { title: 'ANNUAL REPORT 2024-25', file: 'ANNUAL REPORT - 2024-25.pdf', thumbnail: '/images/map/01-Picnic.jpg' },
-    { title: 'ANNUAL REPORT 2023-24', file: 'ANNUAL REPORT_2023-24.pdf', thumbnail: '/images/map/02-International-Women-Day-Celebration.jpg' },
-    { title: 'ANNUAL REPORT 2022-23', file: 'ANNUAL REPORT -2022-2023.pdf', thumbnail: '/images/map/03-World-YCWA-Celebration.jpg' },
-    { title: 'ANNUAL REPORT 2017-18', file: 'ANNUAL REPORT- 2017 -2018.pdf', thumbnail: '/images/map/04-World-Environment-Day-Celebration-2026.jpg' },
-    { title: 'ANNUAL REPORT 2016-17', file: 'ANNUAL REPORT- 2016-2017.pdf', thumbnail: '/images/map/01-Picnic.jpg' }
+    { title: 'ANNUAL REPORT 2024-25', file: 'ANNUAL REPORT - 2024-25.pdf', thumbnail: '/images/insights-publication/Thumb-1.jpg' },
+    { title: 'ANNUAL REPORT 2023-24', file: 'ANNUAL REPORT_2023-24.pdf', thumbnail: '/images/insights-publication/Thumb-2.jpg' },
+    { title: 'ANNUAL REPORT 2022-23', file: 'ANNUAL REPORT -2022-2023.pdf', thumbnail: '/images/insights-publication/Thumb-3.jpg' },
+    { title: 'ANNUAL REPORT 2017-18', file: 'ANNUAL REPORT- 2017 -2018.pdf', thumbnail: '/images/insights-publication/Thumb-4.jpg' },
+    { title: 'ANNUAL REPORT 2016-17', file: 'ANNUAL REPORT- 2016-2017.pdf', thumbnail: '/images/insights-publication/Thumb-5.jpg' }
   ];
 
   return (
@@ -29,7 +29,7 @@ export default function InsightsPublicationsPage() {
         title={<>INSIGHTS &<br />PUBLICATIONS</>}
         bgImage="/images/01-Banner-insights-pub.jpg"
         contentMarginTop="25vh"
-        overlayColor="linear-gradient(to right, rgba(146, 45, 157, 0.85), rgba(146, 45, 157, 0.85))"
+        overlayColor="linear-gradient(to right, rgba(146, 45, 157, 0.85), rgba(146, 45, 157, 0.4))"
         defaultGrayscale={false}
       />
 
@@ -69,7 +69,10 @@ export default function InsightsPublicationsPage() {
                             <a href={`/pdf-forms/insights-publication/${report.file}`} target="_blank" rel="noopener noreferrer" className={styles.reportCardLink}>
                               <div className={styles.reportCard}>
                                 <div className={styles.thumbnailWrapper}>
-                                  <i className={`bi bi-file-earmark-pdf-fill ${styles.largePdfIcon}`}></i>
+                                  <img src={report.thumbnail} alt={report.title} className={styles.thumbnailImage} />
+                                  <div className={styles.pdfIconBadge}>
+                                    <i className="bi bi-file-earmark-pdf-fill"></i>
+                                  </div>
                                 </div>
                                 <div className={styles.reportInfo}>
                                   <h4 className={styles.reportTitle}>{report.title}</h4>

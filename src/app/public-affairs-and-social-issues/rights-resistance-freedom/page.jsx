@@ -38,7 +38,7 @@ export default function RightsResistanceFreedomPage() {
                 </Link>
               </div>
               <div className="flex-grow-1 text-center" style={{ padding: '0 15px' }}>
-                <h2 className={styles.innerPageTitle}>Rights • Resistance • Freedom</h2>
+                <h1 className="sectionTitle_1 text-center mx-800">Rights • Resistance • Freedom</h1>
                 <p className="text-muted mb-0 mt-2">13 February 2026</p>
               </div>
               <div style={{ flex: '0 0 auto', width: '85px', visibility: 'hidden' }} className="d-none d-md-block"></div>

@@ -1,0 +1,75 @@
+.valueCard {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 35px 25px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #eaeaea;
+}
+
+.valueCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  border-color: #a212b5;
+}
+
+.valueIcon {
+  width: 80px;
+  height: 80px;
+  background-color: #fdf2ff;
+  color: #a212b5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.valueCard:hover .valueIcon {
+  background-color: #a212b5;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+.valueTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #222222;
+  margin-bottom: 15px;
+}
+
+.valueText {
+  font-size: 0.95rem;
+  color: #666666;
+  margin-bottom: 25px;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.primaryBtn {
+  background-color: #242278;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 400;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+.primaryBtn:hover {
+  background-color: #BE00C4;
+  color: white;
+  transform: translateY(-2px);
+}

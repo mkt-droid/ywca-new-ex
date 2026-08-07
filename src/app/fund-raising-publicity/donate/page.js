@@ -11,7 +11,7 @@ export default function DonatePage() {
     <main>
       <section className={styles.donateSection}>
         <div className="container">
-          <h1 className={styles.pageTitle}>DONATE US</h1>
+          <h1 className="sectionTitle_1 text-center mx-800">DONATE US</h1>
 
           <div className={styles.contentRow}>
             {/* QR Code Column */}

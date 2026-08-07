@@ -39,7 +39,7 @@ export default function DayCarePage() {
   return (
     <main>
       <SideNavBanner
-        height="380px"
+        height="360px"
         title={<>DAY CARE<br /> CENTRE</>}
         bgImage="/images/day-care/banner-image.jpg"
         navItems={bannerNavItems}
@@ -48,7 +48,7 @@ export default function DayCarePage() {
 
       <section className="container mt-5">
         <div className={styles.titleContainer} id="overview">
-          <h2 className={styles.mainTitle}>Raj Kumari Amrit Kaur Day Care Centre</h2>
+          <h1 className="sectionTitle_1 text-center mx-800">Raj Kumari Amrit Kaur Day Care Centre</h1>
           <h4 className={styles.subTitle}>Nurturing Young Minds in a Safe & Caring Environment</h4>
           <p className={styles.description}>
             The Raj Kumari Amrit Kaur Day Care Centre is dedicated to supporting working parents
@@ -213,8 +213,6 @@ export default function DayCarePage() {
         </div>
 
       </section>
-
-
-    </main>
+</main>
   );
 }

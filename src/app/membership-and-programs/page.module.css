@@ -1,10 +1,10 @@
 .pageContentWrapper {
+  padding: 50px 0;
   background: linear-gradient(180deg, #fef4f4 0%, #ffffff 30%, #ffffff 70%, #fcf0f0 100%);
   width: 100%;
 }
 
 .sectionPadding {
-  padding: 40px 0;
   background-color: transparent;
 }
 

@@ -11,7 +11,7 @@ export default function YouthDepartmentPage() {
   return (
     <main>
       <SideNavBanner
-        height="380px"
+        height="360px"
         title={<>YOUTH<br />DEPARTMENT</>}
         bgImage="/images/yuva-department/01-Banner-Youth.jpg"
         activePath="/youth-department"
@@ -22,7 +22,7 @@ export default function YouthDepartmentPage() {
         <section className={styles.sectionPadding}>
           <div className="container">
 
-            <h2 className={styles.overviewTitle}>Youth Department</h2>
+            <h1 className="sectionTitle_1 text-center mx-800">Youth Department</h1>
 
             <div className={styles.overviewText}>
               <p>The Youth Department of the YWCA of Delhi promotes meaningful and active participation of young people in the organisation’s programmes, enabling them to recognise their role as agents of social, political, and economic change in society. The department works to nurture leadership, awareness, and responsibility among youth, encouraging them to engage with issues that shape their communities and the wider world.</p>

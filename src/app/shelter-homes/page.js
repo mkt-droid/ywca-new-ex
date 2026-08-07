@@ -162,7 +162,7 @@ export default function ShelterHomesPage() {
   return (
     <main>
       <SideNavBanner
-        height="380px"
+        height="360px"
         title={<>SHELTER<br />HOMES</>}
         bgImage="/images/shelter-homes/shelter-bnr.jpg"
         navItems={bannerNavItems}
@@ -178,7 +178,7 @@ export default function ShelterHomesPage() {
         </section>
 
         <section className={`container ${styles.hopeSection}`}>
-          <h2 className={styles.sectionHeading}>Bringing Hope To Lives</h2>
+          <h1 className="sectionTitle_1 text-center mx-800">Bringing Hope To Lives</h1>
 
           <div className={styles.sliderContainer}>
             <button className={styles.sliderArrowLeft} onClick={scrollHopeLeft}><i className="bi bi-chevron-left"></i></button>
@@ -401,7 +401,6 @@ export default function ShelterHomesPage() {
           </div>
         </div>
       )}
-
-    </main>
+</main>
   );
 }

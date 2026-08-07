@@ -1,10 +1,10 @@
 .pageContentWrapper {
+  padding: 50px 0;
   background-color: transparent;
 }
 
 .sectionPadding {
-  padding: 60px 0;
-}
+  }
 
 /* .tabsContainer {
   background: #f8f9fa;
@@ -101,21 +101,42 @@
   justify-content: center;
   border-bottom: 1px solid #eee;
   transition: background-color 0.3s ease;
+  overflow: hidden;
 }
 
 .reportCard:hover .thumbnailWrapper {
   background-color: #f0f4fa;
 }
 
-.largePdfIcon {
-  font-size: 80px;
-  color: #e2252b;
-  /* Standard red for PDF icons */
+.thumbnailImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   transition: transform 0.5s ease;
 }
 
-.reportCard:hover .largePdfIcon {
-  transform: scale(1.1);
+.reportCard:hover .thumbnailImage {
+  transform: scale(1.05);
+}
+
+.pdfIconBadge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(255, 255, 255, 0.95);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.pdfIconBadge i {
+  font-size: 16px;
+  color: #e2252b;
 }
 
 .reportInfo {

@@ -95,7 +95,7 @@ export default function SupportACausePage() {
   return (
     <main>
       <SideNavBanner
-        height="380px"
+        height="360px"
         title={
           <>
             SUPPORT WOMEN<br />
@@ -111,7 +111,7 @@ export default function SupportACausePage() {
       <div className={styles.pageContentWrapper}>
         <section className={styles.sectionPadding}>
           <div className="container">
-            <h2 className={styles.sectionTitle}>SUPPORT A CAUSE</h2>
+            <h1 className="sectionTitle_1 text-center mx-800">SUPPORT A CAUSE</h1>
             <p className={styles.sectionText}>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions.
             </p>

@@ -1,39 +1,40 @@
 .impactBox {
   text-align: center;
-  padding: 30px 20px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  height: 100%;
+  padding: 20px 25px;
+  min-height: 263px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid #eaeaea;
+  transition: all 0.5s ease;
+  color: #ffffff;
 }
 
 .impactBox:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
 }
 
 .impactIcon {
-  font-size: 3rem;
-  margin-bottom: 15px;
+  font-size: 4rem;
+  margin: 10px auto 20px;
   line-height: 1;
+  color: #ffffff;
 }
 
 .impactNumber {
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 500;
   line-height: 1;
+  color: #ffffff;
+  display: block;
 }
 
 .impactText {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #444;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: 10px;
   line-height: 1.4;
 }

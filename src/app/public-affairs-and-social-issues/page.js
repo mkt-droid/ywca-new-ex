@@ -19,7 +19,7 @@ export default function PublicAffairsPage() {
   return (
     <main>
       <SideNavBanner
-        height="380px"
+        height="360px"
         title={<>PUBLIC AFFAIRS<br />AND SOCIAL ISSUES</>}
         bgImage="/images/01-Banner-Pasi.jpg"
         contentMarginTop="35vh"
@@ -27,7 +27,7 @@ export default function PublicAffairsPage() {
 
       <section className={`container ${styles.sectionPadding}`}>
         <div className={styles.headerText}>
-          <h2 className={styles.mainHeading}>SOCIAL ENGAGEMENT & ADVOCACY</h2>
+          <h1 className="sectionTitle_1 text-center mx-800">SOCIAL ENGAGEMENT & ADVOCACY</h1>
           <p className={styles.subHeading}>
             Violence is a fundamental instrument of patriarchy, and its multiple forms of systemic oppression are
             deeply interconnected. The Public Affairs and Social Issues (PASI) Department of the YWCA of Delhi
@@ -106,6 +106,6 @@ export default function PublicAffairsPage() {
           </div>
         </div>
       </section>
-    </main>
+</main>
   );
 }

@@ -106,7 +106,7 @@ export default function TheRehomeStorePage() {
   return (
     <main>
       <SideNavBanner
-        height="380px"
+        height="360px"
         title={
           <>
             SUPPORT WOMEN<br />
@@ -122,7 +122,7 @@ export default function TheRehomeStorePage() {
       <div className={styles.pageContentWrapper}>
         <section className={styles.sectionPadding}>
           <div className="container">
-            <h2 className={styles.sectionTitle}>THE REHOME STORE</h2>
+            <h1 className="sectionTitle_1 text-center mx-800">THE REHOME STORE</h1>
             <p className={styles.sectionText}>
               In alignment with the Sustainable Development Goals and the commitment of YWCA of Delhi towards Strengthening Communities and Nurturing Nature, The ReHome Store is a sustainable and inclusive initiative that promotes the reuse and repurposing of pre-loved items. The initiative encourages responsible consumption while creating livelihood opportunities for women from shelter homes and local communities. By collecting gently used clothes, accessories, books, household items, and reusable products, The ReHome Store gives discarded items a second life with dignity and purpose. Guided by the philosophy “Gently Used, Warmly Given”, the initiative aims to reduce waste, support circular economy practices, and build a more environmentally conscious and compassionate community.
             </p>

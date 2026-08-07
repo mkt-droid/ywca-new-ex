@@ -9,7 +9,7 @@ export default function MembershipDepartmentPage() {
   return (
     <main>
       <SideNavBanner
-        height="380px"
+        height="360px"
         title={<>MEMBERSHIP AND<br />PROGRAM DEPARTMENT</>}
         bgImage="/images/map/01-Banner-MAP.jpg"
         activePath="/membership-and-programs"
@@ -20,7 +20,7 @@ export default function MembershipDepartmentPage() {
         <section className={styles.sectionPadding}>
           <div className="container">
 
-            <h2 className={styles.overviewTitle}>Membership and Program Department</h2>
+            <h1 className="sectionTitle_1 text-center mx-800">Membership and Program Department</h1>
 
             <div className={styles.overviewText}>
               <p>The YWCA of Delhi is a women-only, membership-based organisation that forms part of a global movement. It welcomes women from all walks of life to enroll and become active members of this international network.</p>

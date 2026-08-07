@@ -48,7 +48,7 @@ export default function InternationalWomensDayPage() {
                 </Link>
               </div>
               <div className="flex-grow-1 text-center" style={{ padding: '0 15px' }}>
-                <h2 className={styles.innerPageTitle}>International Women’s Day Celebration & Adamya Nari Samman</h2>
+                <h1 className="sectionTitle_1 text-center mx-800">International Women’s Day Celebration & Adamya Nari Samman</h1>
                 <p className="text-muted mb-0 mt-2">7 March 2026</p>
               </div>
               <div style={{ flex: '0 0 auto', width: '85px', visibility: 'hidden' }} className="d-none d-md-block"></div>

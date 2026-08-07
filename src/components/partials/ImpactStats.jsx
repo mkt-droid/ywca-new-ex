@@ -5,14 +5,14 @@ import styles from './ImpactStats.module.css';
 
 export default function ImpactStats({ data, animated = false }) {
   return (
-    <div className="row g-4">
+    <div className="row g-4 text-center justify-content-center">
       {data.map((stat, idx) => (
-        <div className="col-md-3 col-sm-6" key={stat.id || idx}>
-          <div className={styles.impactBox} style={{ borderTop: `4px solid ${stat.color}` }}>
-            <div className={styles.impactIcon} style={{ color: stat.color }}>
+        <div className="col-lg-3 col-md-6 col-sm-12" key={stat.id || idx}>
+          <div className={styles.impactBox} style={{ backgroundColor: stat.color }}>
+            <div className={styles.impactIcon}>
               <i className={`bi ${stat.icon}`}></i>
             </div>
-            <div className={styles.impactNumber} style={{ color: stat.color }}>
+            <div className={styles.impactNumber}>
               {animated && stat.number !== undefined ? (
                 <>
                   <CountUp 

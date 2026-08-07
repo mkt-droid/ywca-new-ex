@@ -20,7 +20,7 @@ export default function ContactPage() {
     <main>
       {/* Banner Section */}
       <SideNavBanner
-        height="380px"
+        height="360px"
         title={
           <>
             CONTACT<br />US
@@ -40,7 +40,7 @@ export default function ContactPage() {
             {/* Left Column */}
             <div className="col-lg-6 col-md-12">
               <div className={styles.leftColumn}>
-                <h2 className={styles.heading}>Contact YWCA Institute</h2>
+                <h1 className="sectionTitle_1 text-center mx-800">Contact YWCA Institute</h1>
                 <p className={styles.subText}>
                   It Has Been A Hundred Years Since The YWCA Of Delhi Has Established Itself Firmly On The Social Sector Map Alongside Other Great Institutions. The Core Values Of YWCA Of Delhi Such As Emancipation Of The Scores Of Under Privileged, Economically Weak And Distressed People Of Society Of This Institution Have Remained Consistent Over The Past Century.
                 </p>
@@ -84,6 +84,6 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-    </main>
+</main>
   );
 }

@@ -6,8 +6,33 @@ import Head from 'next/head';
 import styles from './page.module.css';
 import SideNavBanner from '@/components/partials/SideNavBanner';
 import ImpactStats from '@/components/partials/ImpactStats';
+import OurValues from '@/components/partials/OurValues';
 
 export default function CDPOverviewPage() {
+  const threeWaysValues = [
+    {
+      icon: "bi-heart-fill",
+      title: "Donate",
+      text: "Your gift funds a skill, a school kit, a sewing machine or tools for tailoring & beauty wellness. Every rupee is tracked to a real outcome.",
+      link: "/fund-raising-publicity/donate",
+      buttonText: "Donate Now →"
+    },
+    {
+      icon: "bi-person-raised-hand",
+      title: "Volunteer",
+      text: "Teach a class, mentor a girl, lend your professional skills. A few hours can shift a life’s trajectory.",
+      link: "/fund-raising-publicity/volunteer-and-partnership",
+      buttonText: "Become a Volunteer →"
+    },
+    {
+      icon: "bi-buildings",
+      title: "Partner (CSR)",
+      text: "Align your CSR mandate with measurable, audited impact in Delhi’s underserved settlements.",
+      link: "#",
+      buttonText: "Explore CSR Partnerships →"
+    }
+  ];
+
   const bannerNavItems = [
     { title: 'Overview', icon: 'bi-house-door', link: '/community-development-programme' },
     { title: 'ABOUT US', icon: 'bi-info-circle', link: '/community-development-programme/about-us' },
@@ -93,19 +118,19 @@ export default function CDPOverviewPage() {
 
       <main>
         <SideNavBanner
-          height="380px"
+          height="360px"
           title={<>Community Development<br />Programme</>}
-          bgImage="/images/cdp/main-banner.jpeg"
+          bgImage="/images/cdp/main-banner.jpg"
           navItems={bannerNavItems}
           activePath="/community-development-programme"
           contentMarginTop="25vh"
         />
 
-        <div className={styles.pageBackground} style={{ paddingBottom: 0 }}>
+        <div className={`${styles.pageBackground} pageContentWrapper`} style={{ paddingBottom: 0 }}>
           {/* Hero Section */}
           <section className={styles.sectionPadding}>
             <div className="container">
-              <h2 className={styles.overviewTitle} style={{ maxWidth: 800, margin: '0 auto 25px' }}>We measure success in changed lives - and we can show you the numbers.</h2>
+              <h1 className="sectionTitle_1 text-center mx-800">We measure success in changed lives - and we can show you the numbers.</h1>
               <p className={styles.overviewText}>
                 For over years, the YWCA of Delhi’s Community Development Programme has walked alongside women, young girls & children in Delhi’s urban settlements - turning vulnerability into voice, and dependence into dignity.
               </p>
@@ -123,7 +148,7 @@ export default function CDPOverviewPage() {
 
           {/* Impact Snapshot */}
           <div className={styles.impactSection}>
-            <div className="container">
+            <div className="container mt-5">
               <ImpactStats data={impactStats} animated={true} />
             </div>
           </div>
@@ -131,13 +156,13 @@ export default function CDPOverviewPage() {
           {/* The Problem & Solution */}
           <section className={styles.introSection}>
             <div className="container">
-              <h2 className={styles.sectionTitle}>Behind Delhi’s skyline, a quieter struggle continues</h2>
+              <h2 className="sectionTitle_2">Behind Delhi’s skyline, a quieter struggle continues</h2>
               <div className={styles.introPara}>
                 <p>In Delhi’s crowded urban settlements - the informal colonies, resettlement clusters, and slum pockets that house millions of the city’s working poor - women, girls & children carry the heaviest, least visible burden. Limited access to education, early marriage, unsafe public spaces, low-wage or no work, and little say in household or community decisions keep generations of women locked out of opportunity.</p>
                 <p>We believe this is not inevitable. It is solvable - with the right support, delivered consistently, at the community level.</p>
               </div>
 
-              <h2 className={styles.sectionTitle} style={{ marginBottom: '10px' }}>Our Solution</h2>
+              <h2 className="sectionTitle_2" style={{ marginBottom: '10px' }}>Our Solution</h2>
               <h4 className={styles.subTitle}>We don’t just help women. We work with them.</h4>
               <div className={styles.introPara}>
                 <p>The YWCA of Delhi’s Community Development Programme takes a woman from where she is to where she wants to be - through four connected pathways:</p>
@@ -146,37 +171,37 @@ export default function CDPOverviewPage() {
               <div className="row mt-4 g-4">
                 <div className="col-md-6">
                   <div className={styles.solutionBox}>
-                    <div className={styles.solutionTitle}>
+                    <h3 className={styles.solutionTitle}>
                       <i className="bi bi-book" style={{ color: '#a212b5', marginRight: '10px', fontSize: '1.6rem' }}></i>
                       Education & Literacy
-                    </div>
+                    </h3>
                     <p>Non-formal education, remedial classes, bridge classes and adult literacy so no one is left behind because they cannot sign or read a form, a payslip, or a prescription.</p>
                   </div>
                 </div>
                 <div className="col-md-6">
                   <div className={styles.solutionBox}>
-                    <div className={styles.solutionTitle}>
+                    <h3 className={styles.solutionTitle}>
                       <i className="bi bi-person-gear" style={{ color: '#a212b5', marginRight: '10px', fontSize: '1.6rem' }}></i>
                       Skill Building & Livelihoods
-                    </div>
+                    </h3>
                     <p>Vocational training in tailoring, beauty & wellness, food processing, knitting & garment construction followed by guiding them through career guidance & exploring ways to earn.</p>
                   </div>
                 </div>
                 <div className="col-md-6">
                   <div className={styles.solutionBox}>
-                    <div className={styles.solutionTitle}>
+                    <h3 className={styles.solutionTitle}>
                       <i className="bi bi-heart-pulse" style={{ color: '#a212b5', marginRight: '10px', fontSize: '1.6rem' }}></i>
                       Health & Well-being
-                    </div>
+                    </h3>
                     <p>Awareness on sexual & reproductive health rights, advocacy on SRHR, Menstrual health & hygiene, free eye screening, nutrition, hygiene, and mental well-being.</p>
                   </div>
                 </div>
                 <div className="col-md-6">
                   <div className={styles.solutionBox}>
-                    <div className={styles.solutionTitle}>
+                    <h3 className={styles.solutionTitle}>
                       <i className="bi bi-shield-check" style={{ color: '#a212b5', marginRight: '10px', fontSize: '1.6rem' }}></i>
                       Leadership & Rights
-                    </div>
+                    </h3>
                     <p>Community based organisations, community leadership training, and legal-rights & gov entitlement awareness so community members lead change in their own neighbourhoods.</p>
                   </div>
                 </div>
@@ -202,7 +227,7 @@ export default function CDPOverviewPage() {
           {/* Why Trust Us */}
           <div className="container px-3">
             <div className={styles.trustSection}>
-              <h2 className={styles.sectionTitle} style={{ textAlign: 'center', marginBottom: '30px' }}>
+              <h2 className="sectionTitle_2" style={{ textAlign: 'center', marginBottom: '30px', color: '#a212b5' }}>
                 Transparency isn’t a buzzword for us. It’s how we operate.
               </h2>
               <ul className={styles.trustList}>
@@ -212,7 +237,7 @@ export default function CDPOverviewPage() {
                 <li><i className="bi bi-check-circle-fill" style={{ color: '#a212b5', marginTop: '3px' }}></i> <span>Annual reports and audited financial statements published every year</span></li>
                 <li><i className="bi bi-check-circle-fill" style={{ color: '#a212b5', marginTop: '3px' }}></i> <span>[XX]% of every rupee you donate goes directly to programmes on the ground</span></li>
               </ul>
-              <div className="mt-5">
+              <div className="mt-5 text-center">
                 <Link href="#" className={styles.primaryBtn}>View Our Financial Transparency →</Link>
               </div>
             </div>
@@ -221,39 +246,7 @@ export default function CDPOverviewPage() {
           {/* Three Ways to Be Part of the Change */}
           <section className={styles.introSection}>
             <div className="container">
-              <h2 className={`${styles.sectionTitle} text-center d-block`}>Three Ways to Be Part of the Change</h2>
-              <div className="row g-4 ">
-                <div className="col-md-4">
-                  <div className={styles.wayCard}>
-                    <div className={styles.iconWrapper}>
-                      <i className="bi bi-heart-fill"></i>
-                    </div>
-                    <h4>Donate</h4>
-                    <p>Your gift funds a skill, a school kit, a sewing machine or tools for tailoring & beauty wellness. Every rupee is tracked to a real outcome.</p>
-                    <Link href="/fund-raising-publicity/donate" className={styles.primaryBtn}>Donate Now →</Link>
-                  </div>
-                </div>
-                <div className="col-md-4">
-                  <div className={styles.wayCard}>
-                    <div className={styles.iconWrapper}>
-                      <i className="bi bi-person-raised-hand"></i>
-                    </div>
-                    <h4>Volunteer</h4>
-                    <p>Teach a class, mentor a girl, lend your professional skills. A few hours can shift a life’s trajectory.</p>
-                    <Link href="/fund-raising-publicity/volunteer-and-partnership" className={styles.primaryBtn}>Become a Volunteer →</Link>
-                  </div>
-                </div>
-                <div className="col-md-4">
-                  <div className={styles.wayCard}>
-                    <div className={styles.iconWrapper}>
-                      <i className="bi bi-buildings"></i>
-                    </div>
-                    <h4>Partner (CSR)</h4>
-                    <p>Align your CSR mandate with measurable, audited impact in Delhi’s underserved settlements.</p>
-                    <Link href="#" className={styles.primaryBtn}>Explore CSR Partnerships →</Link>
-                  </div>
-                </div>
-              </div>
+              <OurValues title="Three Ways to Be Part of the Change" values={threeWaysValues} />
             </div>
           </section>
 

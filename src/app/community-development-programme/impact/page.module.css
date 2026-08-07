@@ -17,7 +17,7 @@
 .introPara {
   text-align: center;
   max-width: 800px;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 0px auto;
   color: #444;
   line-height: 1.6;
   font-size: 1.1rem;
@@ -32,13 +32,7 @@
   background-color: #fdf5ff;
 }
 
-.sectionTitle {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #a212b5;
-  margin-bottom: 40px;
-}
+
 
 .statsGrid {
   display: grid;
@@ -122,67 +116,6 @@
   font-size: 1.1rem;
   color: #444;
   margin-bottom: 30px;
-}
-
-.levelsGrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  margin-bottom: 30px;
-}
-
-.wayCard {
-  background-color: #fff;
-  border-radius: 12px;
-  padding: 35px 25px;
-  height: 100%;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  border: 1px solid #eaeaea;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-}
-
-.wayCard:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
-  border-color: #BE00C4;
-}
-
-.iconWrapper {
-  width: 80px;
-  height: 80px;
-  background-color: #fdf2ff;
-  color: #BE00C4;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 35px;
-  margin-bottom: 20px;
-  transition: all 0.3s ease;
-}
-
-.wayCard:hover .iconWrapper {
-  background-color: #BE00C4;
-  color: #ffffff;
-  transform: scale(1.1);
-}
-
-.wayCard p {
-  flex-grow: 1;
-  color: #555;
-  margin-bottom: 0;
-  line-height: 1.6;
-}
-
-.wayCard h4 {
-  color: #BE00C4;
-  font-weight: 600;
-  margin-bottom: 15px;
-  font-size: 1.4rem;
 }
 
 .measureOutro {
@@ -298,12 +231,7 @@
   margin-top: 60px;
 }
 
-.ctaTitle {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 25px;
-  color: #a212b5;
-}
+
 
 .primaryBtn {
   background-color: #242278;

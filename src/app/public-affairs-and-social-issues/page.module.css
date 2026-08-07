@@ -1,6 +1,5 @@
 .sectionPadding {
-  padding: 80px 0 40px;
-}
+  }
 
 .headerText {
   text-align: center;
@@ -187,6 +186,7 @@
 }
 
 .pageContentWrapper {
+  padding: 50px 0;
   background: linear-gradient(180deg, #fef4f4 0%, #ffffff 30%, #ffffff 70%, #fcf0f0 100%);
   width: 100%;
 }

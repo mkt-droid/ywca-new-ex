@@ -51,7 +51,7 @@ export default function JoinUsPage() {
         title={<>JOIN US<br /> YWCA</>}
         bgImage="/images/join-us/main-banner.jpeg"
         contentMarginTop="25vh"
-        overlayColor="linear-gradient(to right, rgba(146, 45, 157, 0.85), rgba(146, 45, 157, 0.85))"
+        overlayColor="linear-gradient(to right, rgba(146, 45, 157, 0.85), rgba(146, 45, 157, 0.4))"
         defaultGrayscale={false}
       />
 

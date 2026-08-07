@@ -6,6 +6,7 @@ import SideNavBanner from '@/components/partials/SideNavBanner';
 import ImpactStats from '@/components/partials/ImpactStats';
 import GrowthCharts from '@/components/partials/GrowthCharts';
 import FinancialChart from '@/components/partials/FinancialChart';
+import OurValues from '@/components/partials/OurValues';
 
 export const metadata = {
   title: 'Our Impact | Measurable Results from Delhi’s Urban Settlements',
@@ -13,6 +14,24 @@ export const metadata = {
 };
 
 export default function CDPImpactPage() {
+  const measureImpactValues = [
+    {
+      icon: "bi-people-fill",
+      title: "Output",
+      text: "How many women attended training, sessions, or camps."
+    },
+    {
+      icon: "bi-graph-up-arrow",
+      title: "Outcome",
+      text: "What changed for them: income earned, literacy gained, health scheme enrolment."
+    },
+    {
+      icon: "bi-award-fill",
+      title: "Longer-term impact",
+      text: "Sustained income 12 months on, girls who stayed in school, SHGs still active after 2 years."
+    }
+  ];
+
   const bannerNavItems = [
     { title: 'Overview', icon: 'bi-house-door', link: '/community-development-programme' },
     { title: 'ABOUT US', icon: 'bi-info-circle', link: '/community-development-programme/about-us' },
@@ -43,17 +62,17 @@ export default function CDPImpactPage() {
     <>
       <main>
         <SideNavBanner
-          height="380px"
+          height="360px"
           title={<>IMPACT<br />CDP</>}
-          bgImage="/images/working-women-hostels/main-banner.jpg"
+          bgImage="/images/cdp/main-banner.jpg"
           navItems={bannerNavItems}
           activePath="/community-development-programme/impact"
           contentMarginTop="25vh"
         />
 
-        <div className={styles.pageBackground}>
+        <div className={`${styles.pageBackground} pageContentWrapper`}>
           <div className="container">
-            <h1 className={styles.heroHeadline}>We measure success in changed lives - and we can show you the numbers.</h1>
+            <h1 className="sectionTitle_1 text-center mx-800">We measure success in changed lives - and we can show you the numbers.</h1>
             <p className={styles.introPara}>
               We believe donors, partners, and the communities we serve all deserve honesty about what’s working and what isn’t. Here is our impact, verified and updated annually.
             </p>
@@ -63,7 +82,7 @@ export default function CDPImpactPage() {
         {/* Cumulative Impact */}
         <section className={styles.impactSection}>
           <div className="container">
-            <h2 className={'sectionTitle text-center'}>Cumulative Impact Since</h2>
+            <h2 className="sectionTitle_2 text-center d-block">Cumulative Impact Since</h2>
             <ImpactStats data={cumulativeImpacts} animated={true} />
 
           </div>
@@ -72,7 +91,7 @@ export default function CDPImpactPage() {
         {/* Year-on-Year Growth */}
         <section className={`${styles.impactSection} ${styles.altBg}`}>
           <div className="container">
-            <h2 className={'sectionTitle text-center'}>Year-on-Year Growth</h2>
+            <h2 className="sectionTitle_2 text-center d-block">Year-on-Year Growth</h2>
             <GrowthCharts />
 
           </div>
@@ -81,31 +100,9 @@ export default function CDPImpactPage() {
         {/* How We Measure Impact */}
         <section className={styles.impactSection}>
           <div className="container">
-            <h2 className={'sectionTitle text-center'}>How We Measure Impact</h2>
+            <h2 className="sectionTitle_2 text-center d-block">How We Measure Impact</h2>
             <p className={styles.measureIntro}>We track outcomes at three levels:</p>
-            <div className={styles.levelsGrid}>
-              <div className={styles.wayCard}>
-                <div className={styles.iconWrapper}>
-                  <i className="bi bi-people-fill"></i>
-                </div>
-                <h4>Output</h4>
-                <p>How many women attended training, sessions, or camps.</p>
-              </div>
-              <div className={styles.wayCard}>
-                <div className={styles.iconWrapper}>
-                  <i className="bi bi-graph-up-arrow"></i>
-                </div>
-                <h4>Outcome</h4>
-                <p>What changed for them: income earned, literacy gained, health scheme enrolment.</p>
-              </div>
-              <div className={styles.wayCard}>
-                <div className={styles.iconWrapper}>
-                  <i className="bi bi-award-fill"></i>
-                </div>
-                <h4>Longer-term impact</h4>
-                <p>Sustained income 12 months on, girls who stayed in school, SHGs still active after 2 years.</p>
-              </div>
-            </div>
+            <OurValues values={measureImpactValues} title="" className='mt-3' />
             {/* <p className={styles.measureOutro}>
               We conduct [quarterly/annual] outcome surveys and third-party evaluations [VERIFY frequency and evaluator] to ensure our numbers reflect real change, not just activity counts.
             </p> */}
@@ -115,7 +112,7 @@ export default function CDPImpactPage() {
         {/* Financial Transparency */}
         <section className={`${styles.impactSection} ${styles.altBg}`}>
           <div className="container">
-            <h2 className={'sectionTitle text-center'}>Where every rupee goes</h2>
+            <h2 className="sectionTitle_2 text-center d-block">Where every rupee goes</h2>
 
             <div style={{ background: '#fff', padding: '40px', borderRadius: '12px', boxShadow: '0 4px 20px rgba(0,0,0,0.04)', border: '1px solid #eaeaea' }}>
               <div className="row g-5 align-items-center">
@@ -165,7 +162,7 @@ export default function CDPImpactPage() {
         {/* CTA */}
         <section className={styles.ctaSection}>
           <div className="container px-3">
-            <h3 className={styles.ctaTitle}>Your donation, tracked.</h3>
+            <h2 className="sectionTitle_2 text-center d-block">Your donation, tracked.</h2>
             <Link href="/fund-raising-publicity/donate" className={styles.primaryBtn}>
               Donate and receive a personalised impact update →
             </Link>
