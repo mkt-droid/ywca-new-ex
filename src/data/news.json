@@ -4,171 +4,242 @@
     "title": "Bridge the Gap - August-September 2025",
     "date": "August-September 2025",
     "description": "The academic year opened with the Bridge the Gap peer-learning initiative, designed to support students from diverse educational and social backgrounds. Through collaborative learning, peer interaction and shared academic support, students were encouraged to build confidence, strengthen communication skills and learn from one another. The programme helped create an inclusive learning environment and fostered teamwork, mutual respect and a smoother transition into the institute.",
-    "image": "/images/education-institute/1.jpg",
+    "image": "/images/blog/Bridge the Gap_1.jpg",
     "category": "Academic News",
-    "slug": "bridge-the-gap-2025"
+    "slug": "bridge-the-gap-2025",
+    "gallery": [
+      "/images/blog/Bridge the Gap_1.jpg"
+    ]
   },
   {
     "id": 2,
     "title": "Teachers' Day Celebration - September 04, 2025",
     "date": "September 04, 2025",
     "description": "Students marked Teachers' Day with enthusiasm through dances, speeches and cultural presentations dedicated to their teachers. Faculty members were honoured with personalised tags recognising their individual strengths and contributions. The event strengthened the bond between students and teachers and created a warm, joyful and appreciative atmosphere, made even more memorable by a special performance by the faculty.",
-    "image": "/images/education-institute/2.jpg",
+    "image": "/images/blog/Teachers’ Day Celebration_1.jpg",
     "category": "Academic News",
-    "slug": "teachers-day-celebration-2025"
+    "slug": "teachers-day-celebration-2025",
+    "gallery": [
+      "/images/blog/Teachers’ Day Celebration_1.jpg"
+    ]
   },
   {
     "id": 3,
     "title": "Nutrition Week Competition - September 04, 2025",
     "date": "September 04, 2025",
     "description": "As part of Nutrition Week, students presented nutritious home-cooked dishes from different Indian cuisines and explained their nutritional value and health benefits before the judges. The activity deepened students' understanding of balanced diets and healthy eating habits while also developing public speaking, presentation skills, creativity and cultural awareness.",
-    "image": "/images/education-institute/3.jpg",
+    "image": "/images/blog/Nutrition Week Competition_1.jpg",
     "category": "Academic News",
-    "slug": "nutrition-week-competition-2025"
+    "slug": "nutrition-week-competition-2025",
+    "gallery": [
+      "/images/blog/Nutrition Week Competition_1.jpg",
+      "/images/blog/Nutrition Week Competition_2.jpg"
+    ]
   },
   {
     "id": 4,
     "title": "CPR Awareness Session with Manipal Hospital - September 12, 2025",
     "date": "September 12, 2025",
     "description": "A CPR awareness and training session was conducted in collaboration with Manipal Hospital to educate students on basic life-saving techniques and emergency response. The session included practical demonstrations and helped students understand the importance of remaining calm, responding promptly and acting responsibly during medical emergencies.",
-    "image": "/images/education-institute/4.jpg",
+    "image": "/images/blog/CPR Session in collaboration with Mahipal Hospital_1.jpg",
     "category": "Academic News",
-    "slug": "cpr-awareness-session-manipal-2025"
+    "slug": "cpr-awareness-session-manipal-2025",
+    "gallery": [
+      "/images/blog/CPR Session in collaboration with Mahipal Hospital_1.jpg",
+      "/images/blog/CPR Session in colabration with Mahipal Hospital_2.jpg"
+    ]
   },
   {
     "id": 5,
     "title": "Hindi Diwas - September 12, 2025",
     "date": "September 12, 2025",
     "description": "Hindi Diwas was celebrated to instil pride in the Hindi language and its rich cultural heritage while reinforcing the value of effective communication in all languages. A Hindi poetry recitation competition gave students a platform to express themselves confidently, with many speaking on the microphone for the first time. Merit certificates and medals were awarded to encourage confidence, enthusiasm and respect for linguistic diversity.",
-    "image": "/images/education-institute/1.jpg",
+    "image": "/images/blog/Hindi Diwas.jpg",
     "category": "Academic News",
-    "slug": "hindi-diwas-2025"
+    "slug": "hindi-diwas-2025",
+    "gallery": [
+      "/images/blog/Hindi Diwas.jpg"
+    ]
   },
   {
     "id": 6,
     "title": "Christmas Programme of EI - December 09, 2025",
     "date": "December 09, 2025",
     "description": "The Christmas programme nurtured creativity and confidence among EI students through festive performances and joyful expressions. The celebration enhanced students' stage presence, encouraged participation and created a heartwarming atmosphere that spread Christmas cheer among all attendees.",
-    "image": "/images/education-institute/2.jpg",
+    "image": "/images/blog/Christmas Prog of EI_1.jpg",
     "category": "Academic News",
-    "slug": "christmas-programme-ei-2025"
+    "slug": "christmas-programme-ei-2025",
+    "gallery": [
+      "/images/blog/Christmas Prog of EI_1.jpg"
+    ]
   },
   {
     "id": 7,
     "title": "Youth Fit Fiesta - January 22, 2026",
     "date": "January 22, 2026",
     "description": "Organised on the occasion of Republic Day, Youth Fit Fiesta promoted the message of 'Healthy Youth, Healthy Nation'. Students participated in sports and fitness activities that encouraged discipline, teamwork, healthy competition and active lifestyles. The event reinforced the importance of physical fitness as an essential part of holistic development.",
-    "image": "/images/education-institute/3.jpg",
+    "image": "/images/blog/Youth Fit Fiesta_1.jpg",
     "category": "Academic News",
-    "slug": "youth-fit-fiesta-2026"
+    "slug": "youth-fit-fiesta-2026",
+    "gallery": [
+      "/images/blog/Youth Fit Fiesta_1.jpg"
+    ]
   },
   {
     "id": 8,
     "title": "Five-Day Self-Defence Training - February 25, 2026 onwards",
     "date": "February 25, 2026",
     "description": "A five-day self-defence training programme was conducted by the Women Cell team of the Delhi Police for girl students of the institute. The training focused on practical self-defence techniques, personal safety, situational awareness and confidence-building. Through expert guidance and hands-on sessions, students developed essential skills to protect themselves and respond effectively in challenging situations.",
-    "image": "/images/education-institute/4.jpg",
+    "image": "/images/blog/5 Days Self Defence Training_1.jpg",
     "category": "Academic News",
-    "slug": "five-day-self-defence-training-2026"
+    "slug": "five-day-self-defence-training-2026",
+    "gallery": [
+      "/images/blog/5 Days Self Defence Training_1.jpg",
+      "/images/blog/5 Days Self Defence Training_2.jpg"
+    ]
   },
   {
     "id": 9,
     "title": "Self-Defence Training Showcase on Women's Day - March 06, 2026",
     "date": "March 06, 2026",
     "description": "On the occasion of International Women's Day, students demonstrated the self-defence skills they had learnt during the five-day training programme in the presence of Delhi Police officials. The event highlighted their confidence, discipline and preparedness. Outstanding performers were awarded trophies, while all participating students received certificates from the Delhi Police in recognition of successful completion of the training.",
-    "image": "/images/education-institute/1.jpg",
+    "image": "/images/blog/Self-Defence Training Showcase on Women’s Day_1.jpg",
     "category": "Academic News",
-    "slug": "self-defence-training-showcase-womens-day-2026"
+    "slug": "self-defence-training-showcase-womens-day-2026",
+    "gallery": [
+      "/images/blog/Self-Defence Training Showcase on Women’s Day_1.jpg",
+      "/images/blog/Self-Defence Training Showcase on Women’s Day_2.jpg",
+      "/images/blog/Self-Defence Training Showcase on Women’s Day_3.jpg"
+    ]
   },
   {
     "id": 10,
     "title": "Performances in Collaboration with Shelter Home on Women's Day - March 07, 2026",
     "date": "March 07, 2026",
     "description": "In collaboration with a shelter home, students presented two special performances to mark International Women's Day. The first presentation, 'Unsung Heroes Walk', highlighted the contributions of lesser-known women leaders of India, while the second addressed contemporary issues such as body shaming, gender stereotypes and social pressure. The performances encouraged empathy, gender sensitivity and respect for women's contributions and experiences.",
-    "image": "/images/education-institute/2.jpg",
+    "image": "/images/blog/Performances in Collaboration with Shelter Home on Women's Day_1.jpg",
     "category": "Academic News",
-    "slug": "performances-collaboration-shelter-home-womens-day-2026"
+    "slug": "performances-collaboration-shelter-home-womens-day-2026",
+    "gallery": [
+      "/images/blog/Performances in Collaboration with Shelter Home on Women's Day_1.jpg",
+      "/images/blog/Performances in Collaboration with Shelter Home on Women's Day_2.jpg"
+    ]
   },
   {
     "id": 11,
     "title": "World Head Injury Awareness Day at Traffic Park - March 20, 2026",
     "date": "March 20, 2026",
     "description": "Students participated in the World Head Injury Awareness Day programme organised by the Delhi Traffic Police at Traffic Park. The event created awareness about road safety, helmet use and preventive measures to reduce head injuries caused by road accidents. Through interactive activities and informative sessions, students gained valuable knowledge of responsible road behaviour and traffic rules.",
-    "image": "/images/education-institute/3.jpg",
+    "image": "/images/blog/World Head Injury Awareness Day at Traffic Park_1.jpg",
     "category": "Academic News",
-    "slug": "world-head-injury-awareness-day-traffic-park-2026"
+    "slug": "world-head-injury-awareness-day-traffic-park-2026",
+    "gallery": [
+      "/images/blog/World Head Injury Awareness Day at Traffic Park_1.jpg",
+      "/images/blog/World Head Injury Awareness Day at Traffic Park_2.jpg",
+      "/images/blog/World Head Injury Awareness Day at Traffic Park_3.jpg"
+    ]
   },
   {
     "id": 12,
     "title": "Matrix Hair Colouring Workshop - April 10, 2026",
     "date": "April 10, 2026",
     "description": "Students of the Beauty Culture Department participated in a professional hair colouring workshop conducted by industry experts from Matrix. The session introduced students to contemporary hair colouring techniques, product knowledge and professional salon standards, thereby strengthening their technical competence and industry readiness.",
-    "image": "/images/education-institute/4.jpg",
+    "image": "/images/blog/Matrix hair colour.jpg",
     "category": "Academic News",
-    "slug": "matrix-hair-colouring-workshop-2026"
+    "slug": "matrix-hair-colouring-workshop-2026",
+    "gallery": [
+      "/images/blog/Matrix hair colour.jpg"
+    ]
   },
   {
     "id": 13,
     "title": "Advanced Hair Protein Treatment Session with IKONIC - April 18, 2026",
     "date": "April 18, 2026",
     "description": "An industry-led session conducted by experts from IKONIC familiarised students with advanced hair protein treatments and modern hair care techniques. The hands-on learning experience enhanced students' practical understanding of professional beauty services and exposed them to current industry practices.",
-    "image": "/images/education-institute/1.jpg",
+    "image": "/images/blog/Protein hair therapy.jpg",
     "category": "Academic News",
-    "slug": "advanced-hair-protein-treatment-session-ikonic-2026"
+    "slug": "advanced-hair-protein-treatment-session-ikonic-2026",
+    "gallery": [
+      "/images/blog/Protein hair therapy.jpg"
+    ]
   },
   {
     "id": 14,
     "title": "Four-Day CBSE Capacity Building Programme - April 21, 22, 23 and 28, 2026",
     "date": "April 21, 2026",
     "description": "A four-day Capacity Building Programme was organised for CBSE teachers to provide insights into skill-based education and emerging career opportunities. The sessions introduced teachers to subjects such as Shorthand, Typography, Computer Applications and Office Procedures, highlighting their practical relevance and industry demand. The programme also promoted YWCA's vocational courses and encouraged teachers to counsel students on career pathways after Class XII.",
-    "image": "/images/education-institute/2.jpg",
+    "image": "/images/blog/4-Day CBSE Capacity Building Programme_1.jpg",
     "category": "Academic News",
-    "slug": "four-day-cbse-capacity-building-programme-2026"
+    "slug": "four-day-cbse-capacity-building-programme-2026",
+    "gallery": [
+      "/images/blog/4-Day CBSE Capacity Building Programme_1.jpg",
+      "/images/blog/4-Day CBSE Capacity Building Programme_2.jpg",
+      "/images/blog/4-Day CBSE Capacity Building Programme_3.jpg"
+    ]
   },
   {
     "id": 15,
     "title": "Visit to Beauty Expo at Pragati Maidan - May 18, 2026",
     "date": "May 18, 2026",
     "description": "Students visited the Beauty Expo at Pragati Maidan to gain first-hand exposure to the latest trends, products, technologies and innovations in the beauty and wellness industry. The visit broadened their professional outlook, strengthened industry awareness and encouraged them to understand evolving market practices.",
-    "image": "/images/education-institute/3.jpg",
+    "image": "/images/blog/Visit to Beauty Expo at Pragati Maidan.jpg",
     "category": "Academic News",
-    "slug": "visit-beauty-expo-pragati-maidan-2026"
+    "slug": "visit-beauty-expo-pragati-maidan-2026",
+    "gallery": [
+      "/images/blog/Visit to Beauty Expo at Pragati Maidan.jpg"
+    ]
   },
   {
     "id": 16,
     "title": "Internship Opportunities for HBC students",
     "date": "2025-26",
     "description": "The students interned with the NGO Sewa Bharti to apply practical bridal makeup skills in a real community setting under the theme 'Sharing is Caring'. The activity strengthened technical proficiency, teamwork and mutual learning while allowing students to contribute meaningfully through their vocational skills. Additionally, the students provided hair and skin care counselling at the MTNL and BSNL Staff Quarters. The activity enabled them to apply classroom learning in a real-world environment while developing confidence, client interaction skills and professional conduct.",
-    "image": "/images/education-institute/4.jpg",
+    "image": "/images/blog/Bridal Makeup at Samuhik Vivah_1.jpg",
     "category": "Academic News",
-    "slug": "internship-opportunities-hbc-students"
+    "slug": "internship-opportunities-hbc-students",
+    "gallery": [
+      "/images/blog/Bridal Makeup at Samuhik Vivah_1.jpg",
+      "/images/blog/MTNL and BSNL counselling session.jpg"
+    ]
   },
   {
     "id": 17,
     "title": "Women Empowerment Tools/Policies Awareness Programme by Delhi Police - May 29, 2026",
     "date": "May 29, 2026",
     "description": "Delhi Police officials conducted an informative and engaging session on the tools and policies available for empowering women. The programme introduced students to online threats, responsible use of technology, safe internet practices and the importance of reporting cybercrimes. Interactive elements, including a live band performance and a digitally equipped awareness truck, made the learning accessible, memorable and relevant to students' daily online lives.",
-    "image": "/images/education-institute/1.jpg",
+    "image": "/images/blog/Women Empowerment & Security Awareness Programme by Delhi Police_1.jpg",
     "category": "Academic News",
-    "slug": "women-empowerment-tools-policies-awareness-programme-delhi-police-2026"
+    "slug": "women-empowerment-tools-policies-awareness-programme-delhi-police-2026",
+    "gallery": [
+      "/images/blog/Women Empowerment & Security Awareness Programme by Delhi Police_1.jpg",
+      "/images/blog/Women Empowerment & Security Awareness Programme by Delhi Police_2.jpg",
+      "/images/blog/Women Empowerment & Security Awareness Programme by Delhi Police_3.jpg"
+    ]
   },
   {
     "id": 18,
     "title": "School Visits and Counselling Sessions (YWCA Outreach Programme)",
     "date": "2025-26",
     "description": "The institute continued its outreach programme through school visits and counselling sessions aimed at promoting the importance of vocational education among school students. These sessions included career guidance, exposure to YWCA departments and motivational interactions, encouraging students to consider skill-based courses and informed career pathways. Number of students reached = 4000",
-    "image": "/images/education-institute/2.jpg",
+    "image": "/images/blog/School Visits & Counselling Sessions (YWCA Outreach Programme)_1.jpg",
     "category": "Academic News",
-    "slug": "school-visits-counselling-sessions-ywca-outreach-programme-2025-26"
+    "slug": "school-visits-counselling-sessions-ywca-outreach-programme-2025-26",
+    "gallery": [
+      "/images/blog/School Visits & Counselling Sessions (YWCA Outreach Programme)_1.jpg",
+      "/images/blog/School Visits & Counselling Sessions (YWCA Outreach Programme)_2.jpg"
+    ]
   },
   {
     "id": 19,
     "title": "Mental Health Awareness Session - 2025-26",
     "date": "2025-26",
     "description": "A mental health awareness session was organised to promote emotional well-being, reduce stigma and encourage students to seek support when needed. The session helped students understand the importance of self-care, resilience and open conversations around mental health as part of their personal and professional growth.",
-    "image": "/images/education-institute/3.jpg",
+    "image": "/images/blog/Mental Health Awareness Session – Rojgar Ki Rah_1.jpg",
     "category": "Academic News",
-    "slug": "mental-health-awareness-session-2025-26"
+    "slug": "mental-health-awareness-session-2025-26",
+    "gallery": [
+      "/images/blog/Mental Health Awareness Session – Rojgar Ki Rah_1.jpg"
+    ]
   },
   {
     "id": 20,
@@ -177,15 +248,23 @@
     "description": "The training aimed to enhance students' confidence, grooming and professional presentation. Through personality development inputs and saree draping practice, students improved their poise, workplace readiness and ability to present themselves with confidence in formal settings.",
     "image": "/images/education-institute/4.jpg",
     "category": "Academic News",
-    "slug": "personality-development-saree-draping-training-2025-26"
+    "slug": "personality-development-saree-draping-training-2025-26",
+    "gallery": [
+      "/images/education-institute/4.jpg"
+    ]
   },
   {
     "id": 21,
     "title": "Industrial Visits - November 2025 – March 2026",
     "date": "November 2025 – March 2026",
     "description": "Industrial visits were organised to provide students with exposure to real workplace settings and industry practices. These visits helped bridge classroom learning with professional environments, strengthened career awareness and enabled students to understand the expectations, standards and opportunities within their chosen fields. Number of students reached = 3600",
-    "image": "/images/education-institute/1.jpg",
+    "image": "/images/blog/Manipal Visit.jpg",
     "category": "Academic News",
-    "slug": "industrial-visits-nov-2025-mar-2026"
+    "slug": "industrial-visits-nov-2025-mar-2026",
+    "gallery": [
+      "/images/blog/Manipal Visit.jpg",
+      "/images/blog/Manipal visit2.jpg",
+      "/images/blog/Manipal Visit 3.jpg"
+    ]
   }
 ]

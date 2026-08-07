@@ -3,88 +3,16 @@ import InnerBanner from "@/components/partials/InnerBanner"
 import styles from '@/styles/NewsDetail.module.css'
 import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
-
-// ── Mock detail data (replace with real fetch by slug) ──
-const newsDetail = {
-  id: 1,
-  title: 'World YWCA Day - Celebrating Sisterhood and Solidarity - 25th April, 2026',
-  image: '/images/News-item-1.jpg',
-  date: '25th April, 2026',
-  category: 'Events',
-  author: 'YWCA Delhi',
-  slug: 'world-ywca-day-2026',
-  content: [
-    {
-      type: 'paragraph',
-      text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
-    },
-    {
-      type: 'paragraph',
-      text: 'It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    },
-    {
-      type: 'quote',
-      text: '"Empowering women, empowering communities - together we rise, together we thrive."',
-    },
-    {
-      type: 'paragraph',
-      text: 'Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
-    },
-    {
-      type: 'subheading',
-      text: 'Highlights of the Celebration',
-    },
-    {
-      type: 'list',
-      items: [
-        'Cultural performances by YWCA members from across regions',
-        'Panel discussion on women\'s leadership and solidarity',
-        'Recognition ceremony for outstanding contributors',
-        'Community lunch and networking session',
-        'Exhibition of artwork by YWCA youth program participants',
-      ],
-    },
-    {
-      type: 'paragraph',
-      text: 'It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.',
-    },
-  ],
-  gallery: [
-    '/images/News-item-1.jpg',
-    '/images/News-item-1.jpg',
-    '/images/News-item-1.jpg',
-    '/images/News-item-1.jpg',
-    '/images/News-item-1.jpg',
-    '/images/News-item-1.jpg',
-  ],
-}
-
-// ── Related news ──
-const relatedNews = [
-  {
-    id: 2,
-    title: 'Lenten Prayer Meeting - 27th March 2026',
-    image: '/images/News-item-2.jpg',
-    slug: 'lenten-prayer-meeting-2026',
-    date: '27th March, 2026',
-  },
-  {
-    id: 3,
-    title: 'Thrive Music Festival - 14th March 2026',
-    image: '/images/News-item-3.jpg',
-    slug: 'thrive-music-festival-2026',
-    date: '14th March, 2026',
-  },
-  {
-    id: 4,
-    title: "International Women's Day - 7th March 2026",
-    image: '/images/News-item-4.jpg',
-    slug: 'international-womens-day-2026',
-    date: '7th March, 2026',
-  },
-]
+import { useParams } from 'next/navigation'
+import newsData from '@/data/news.json'
 
 const NewsDetail = () => {
+  const params = useParams()
+  const slug = params?.slug
+
+  const newsDetail = newsData.find(item => item.slug === slug) || newsData[0]
+  const relatedNews = newsData.filter(item => item.slug !== slug).slice(0, 3)
+
   const contentRef = useRef(null)
   const galleryRef = useRef(null)
   const relatedRef = useRef(null)
@@ -174,35 +102,7 @@ const NewsDetail = () => {
 
               {/* Article Body */}
               <div className={`${styles.articleBody} ${styles.animate}`} data-delay="200" ref={contentRef}>
-                {newsDetail.content.map((block, i) => {
-                  if (block.type === 'paragraph') {
-                    return <p key={i} className={styles.para}>{block.text}</p>
-                  }
-                  if (block.type === 'quote') {
-                    return (
-                      <blockquote key={i} className={styles.blockquote}>
-                        <span className={styles.quoteIcon}>"</span>
-                        <p>{block.text.replace(/"/g, '')}</p>
-                      </blockquote>
-                    )
-                  }
-                  if (block.type === 'subheading') {
-                    return <h3 key={i} className={styles.subheading}>{block.text}</h3>
-                  }
-                  if (block.type === 'list') {
-                    return (
-                      <ul key={i} className={styles.articleList}>
-                        {block.items.map((item, j) => (
-                          <li key={j} className={styles.articleListItem}>
-                            <span className={styles.listDot} />
-                            {item}
-                          </li>
-                        ))}
-                      </ul>
-                    )
-                  }
-                  return null
-                })}
+                <p className={styles.para}>{newsDetail.description}</p>
               </div>
    {/* Share */}
               <div className={`${styles.shareRow} ${styles.animate}`} data-delay="300">
@@ -233,33 +133,32 @@ const NewsDetail = () => {
                 </div>
               </div>
               {/* Gallery */}
-              {/* <div className={`${styles.gallerySection} ${styles.animate}`} data-delay="250" ref={galleryRef}>
+              <div className={`${styles.gallerySection} ${styles.animate}`} data-delay="250" ref={galleryRef}>
                 <h3 className={styles.galleryTitle}>Gallery</h3>
-     <div className={styles.galleryGrid}>
-  {newsDetail.gallery.map((img, i) => (
-    <div
-      key={i}
-      className={styles.galleryItem}
-      onClick={() => setSelectedImage(img)}
-    >
-      <img
-        src={img}
-        alt={`Gallery ${i + 1}`}
-        className={styles.galleryImg}
-      />
-
-      <div className={styles.galleryOverlay}>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
-          <circle cx="11" cy="11" r="8" />
-          <line x1="21" y1="21" x2="16.65" y2="16.65" />
-          <line x1="11" y1="8" x2="11" y2="14" />
-          <line x1="8" y1="11" x2="14" y2="11" />
-        </svg>
-      </div>
-    </div>
-  ))}
-</div>
-              </div> */}
+                <div className={styles.galleryGrid}>
+                  {newsDetail.gallery && newsDetail.gallery.map((img, i) => (
+                    <div
+                      key={i}
+                      className={styles.galleryItem}
+                      onClick={() => setSelectedImage(img)}
+                    >
+                      <img
+                        src={img}
+                        alt={`Gallery ${i + 1}`}
+                        className={styles.galleryImg}
+                      />
+                      <div className={styles.galleryOverlay}>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
+                          <circle cx="11" cy="11" r="8" />
+                          <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                          <line x1="11" y1="8" x2="11" y2="14" />
+                          <line x1="8" y1="11" x2="14" y2="11" />
+                        </svg>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
 
            
 
