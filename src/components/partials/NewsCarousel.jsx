@@ -33,7 +33,7 @@ export default function NewsCarousel({ newsData }) {
               <img src={news.image} alt="Academic News" className={pageStyles.newsImage} />
               <div className={pageStyles.newsContent}>
                 <h3 className={pageStyles.newsTitle} style={{ fontSize: '0.95rem', fontWeight: 'normal', margin: 0 }}>{news.title}</h3>
-                <Link href={`/news/${news.id}`} className={pageStyles.newsViewMore}>
+                <Link href={`/news/${news.slug}`} className={pageStyles.newsViewMore}>
                   View more <i className="bi bi-arrow-right"></i>
                 </Link>
               </div>

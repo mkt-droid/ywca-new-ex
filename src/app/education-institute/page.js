@@ -92,7 +92,7 @@ export default function EducationInstitutePage() {
           <NewsCarousel newsData={academicNews} />
         </div>
         <div className="text-center mt-3">
-          <Link href="/news" className={styles.viewMoreBtn}>View All</Link>
+          <Link href="/news?category=Academic+News" className={styles.viewMoreBtn}>View All</Link>
         </div>
       </section>
 

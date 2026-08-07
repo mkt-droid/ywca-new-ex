@@ -9,6 +9,16 @@ const News = () => {
   const sectionRef = useRef(null)
   const [selectedCategory, setSelectedCategory] = useState('All')
 
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const category = params.get('category');
+      if (category) {
+        setSelectedCategory(category);
+      }
+    }
+  }, [])
+
   const categories = ['All', ...new Set(newsData.map(item => item.category))]
 
   const filteredNews = selectedCategory === 'All'
