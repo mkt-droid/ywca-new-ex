@@ -22,7 +22,7 @@ export default function ReligiousEducationCommitteePage() {
         contentMarginTop="25vh"
       />
 
-      <div className={styles.pageContentWrapper}>
+      <div className="pageContentWrapper">
         <section className={styles.sectionPadding} id="overview">
           <div className="container">
             <h1 className="sectionTitle_1 text-center mx-800">Religious Education Committee</h1>
@@ -34,7 +34,7 @@ export default function ReligiousEducationCommitteePage() {
 
         {/* Programs Section */}
         <div className="mt-3 text-center pb-5">
-          <h3 className='sectionTitle mx-800'>Following are the programs conducted by the Religious Education Committee in the past</h3>
+          <h2 className='sectionTitle_2 text-center mx-800'>Following are the programs conducted by the Religious Education Committee in the past</h2>
 
           <div className="row justify-content-center mt-4">
             <div className="col-md-6 col-lg-5 mb-4">

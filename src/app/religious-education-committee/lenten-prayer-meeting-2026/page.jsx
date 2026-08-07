@@ -29,7 +29,7 @@ export default function LentenPrayerMeetingPage() {
 
   return (
     <main>
-      <div className={styles.pageContentWrapper}>
+      <div className="pageContentWrapper">
         <section className="pt-4 pb-5">
           <div className="container">
             {/* Header Section */}
@@ -40,7 +40,7 @@ export default function LentenPrayerMeetingPage() {
                 </Link>
               </div>
               <div className="flex-grow-1 text-center" style={{ padding: '0 15px' }}>
-                <h1 className="sectionTitle_1 text-center mx-800">Lenten Prayer Meeting 2026</h1>
+                <h1 className="sectionTitle_1 text-center mx-800 mb-0">Lenten Prayer Meeting 2026</h1>
                 <p className="text-muted mb-0 mt-2">27 March 2026</p>
               </div>
               <div style={{ flex: '0 0 auto', width: '85px', visibility: 'hidden' }} className="d-none d-md-block"></div>

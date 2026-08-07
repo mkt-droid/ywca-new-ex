@@ -21,7 +21,7 @@ export default function MembersPicnicPage() {
     '/images/map/gallery/01-Members Picnic/13.jpg',
     '/images/map/gallery/01-Members Picnic/14.jpg'
   ];
-  
+
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const thumbnailContainerRef = useRef(null);
 
@@ -50,7 +50,7 @@ export default function MembersPicnicPage() {
                 </Link>
               </div>
               <div className="flex-grow-1 text-center" style={{ padding: '0 15px' }}>
-                <h1 className="sectionTitle_1 text-center mx-800">Members’ Picnic - Lodhi Garden</h1>
+                <h1 className="sectionTitle_1 text-center mx-800 mb-0" >Members’ Picnic - Lodhi Garden</h1>
                 <p className="text-muted mb-0 mt-2">28 February 2026</p>
               </div>
               <div style={{ flex: '0 0 auto', width: '85px', visibility: 'hidden' }} className="d-none d-md-block"></div>
@@ -104,7 +104,7 @@ export default function MembersPicnicPage() {
                 <p>The picnic was a meaningful day of community building, joy, and sisterhood, reflecting the spirit and values of YWCA of Delhi.</p>
               </div>
             </div>
-            
+
           </div>
         </section>
       </div>

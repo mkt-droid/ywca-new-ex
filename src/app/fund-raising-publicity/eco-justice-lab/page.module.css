@@ -4,16 +4,7 @@
   width: 100%;
 }
 
-.sectionPadding {
-  }
-
-.sectionTitle {
-  text-align: center;
-  font-size:2.2rem;
-  font-weight:600;
-  color: #000;
-  text-transform: uppercase;
-}
+.sectionPadding {}
 
 .sectionSubtitle {
   text-align: center;
@@ -85,15 +76,6 @@
   color: #000000;
   line-height: 1.5;
   font-size: 1rem;
-}
-
-/* Subtitles */
-.subTitle {
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 40px;
-  color: #000;
 }
 
 /* Activities Grid */
@@ -195,13 +177,6 @@
   flex: 1;
 }
 
-.partnershipContent h3 {
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: #000;
-  margin-bottom: 20px;
-}
-
 .partnershipContent p {
   font-size: 0.85rem;
   color: #444;
@@ -244,20 +219,6 @@
   flex: 1;
 }
 
-.regrowContent h3 {
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: #000;
-  margin-bottom: 10px;
-}
-
-.regrowContent h4 {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #000000;
-  margin-bottom: 20px;
-}
-
 .regrowContent p {
   font-size: 1rem;
   color: #444;
@@ -278,13 +239,6 @@
 
 .regrowTableWrapper {
   flex: 1;
-}
-
-.regrowTableWrapper h4 {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #000000;
-  margin-bottom: 20px;
 }
 
 .regrowTable {
@@ -436,21 +390,22 @@
   .activitiesGrid {
     grid-template-columns: 1fr;
   }
-  
+
   .sectionPadding {
     padding: 40px 0;
   }
-  
-  .sectionSubtitle, .statsContainer, .subTitle {
+
+  .sectionSubtitle,
+  .statsContainer {
     margin-bottom: 25px;
   }
-  
+
   .introText {
     margin-bottom: 30px;
   }
-  
-  .activitiesGrid, .galleryGrid {
+
+  .activitiesGrid,
+  .galleryGrid {
     margin-bottom: 30px;
   }
 }
-

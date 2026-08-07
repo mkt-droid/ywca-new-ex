@@ -12,7 +12,8 @@ export default function CDPProgramsPage() {
     { title: 'ABOUT US', icon: 'bi-info-circle', link: '/community-development-programme/about-us' },
     { title: 'PROGRAMS', icon: 'bi-diagram-3', link: '/community-development-programme/programs' },
     { title: 'IMPACT', icon: 'bi-graph-up-arrow', link: '/community-development-programme/impact' },
-    { title: 'STORIES', icon: 'bi-book', link: '/community-development-programme/stories' }
+    { title: 'STORIES', icon: 'bi-book', link: '/community-development-programme/stories' },
+    { title: 'GET INVOLVED', icon: 'bi-person-raised-hand', link: '/community-development-programme/get-involved' }
   ];
 
   const [selectedProgram, setSelectedProgram] = React.useState(null);

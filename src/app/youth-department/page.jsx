@@ -18,7 +18,7 @@ export default function YouthDepartmentPage() {
         contentMarginTop="25vh"
       />
 
-      <div className={styles.pageContentWrapper}>
+      <div className="pageContentWrapper">
         <section className={styles.sectionPadding}>
           <div className="container">
 
@@ -32,7 +32,7 @@ export default function YouthDepartmentPage() {
 
             {/* Programs Section */}
             <div className="mt-5 text-center">
-              <h3 className='sectionTitle mx-800'>Programs Conducted in Past</h3>
+              <h2 className='sectionTitle_2 text-center mx-800'>Programs Conducted in Past</h2>
 
               <div className="row justify-content-center mt-4">
                 <div className="col-md-6 col-lg-5 mb-4">

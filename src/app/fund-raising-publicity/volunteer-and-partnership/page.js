@@ -46,7 +46,8 @@ export default function VolunteerAndPartnershipPage() {
         height="360px"
         title={
           <>
-            SUPPORT WOMEN<br />SUPPORT SUSTAINABILITY<br />
+            SUPPORT WOMEN<br />
+            SUPPORT SUSTAINABILITY<br />
             SUPPORT CHANGE
           </>
         }
@@ -55,10 +56,10 @@ export default function VolunteerAndPartnershipPage() {
         activePath="/fund-raising-publicity/volunteer-and-partnership"
       />
 
-      <div className={styles.contentWrapper}>
+      <div className={`${styles.contentWrapper} pageContentWrapper`}>
         <section className={styles.sectionPadding}>
           <div className="container">
-            <h1 className="sectionTitle_1 text-center mx-800">VOLUNTEER & PARTNERSHIP</h1>
+            <h1 className="sectionTitle_1 text-center mx-800">Volunteer & Partnership</h1>
             <p className={styles.pageDescription}>
               Join hands with us to create lasting change and empower communities together.
             </p>
@@ -201,6 +202,6 @@ export default function VolunteerAndPartnershipPage() {
           </div>
         </section>
       </div>
-</main>
+    </main>
   );
 }

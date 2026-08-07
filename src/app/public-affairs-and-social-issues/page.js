@@ -25,9 +25,11 @@ export default function PublicAffairsPage() {
         contentMarginTop="35vh"
       />
 
-      <section className={`container ${styles.sectionPadding}`}>
-        <div className={styles.headerText}>
-          <h1 className="sectionTitle_1 text-center mx-800">SOCIAL ENGAGEMENT & ADVOCACY</h1>
+      <div className="pageContentWrapper">
+        <section className={styles.sectionPadding}>
+          <div className="container">
+            <div className={styles.headerText}>
+              <h1 className="sectionTitle_1 text-center mx-800">Social Engagement & Advocacy</h1>
           <p className={styles.subHeading}>
             Violence is a fundamental instrument of patriarchy, and its multiple forms of systemic oppression are
             deeply interconnected. The Public Affairs and Social Issues (PASI) Department of the YWCA of Delhi
@@ -55,12 +57,13 @@ export default function PublicAffairsPage() {
           <div className="col-md-6">
             <img src="/images/pasi/about-img.jpg" alt="Social Engagement" className={styles.aboutImg} />
           </div>
-        </div>
-      </section>
+          </div>
+          </div>
+        </section>
 
-      <section className={styles.programsSection}>
+        <section className={styles.programsSection}>
         <div className="container text-center">
-          <h3 className='sectionTitle'>Our Programs</h3>
+          <h2 className='sectionTitle_2 text-center'>Our Programs</h2>
           <div className="row justify-content-center mt-4">
             {/*
             {programs.map((item) => (
@@ -105,7 +108,8 @@ export default function PublicAffairsPage() {
             </div>
           </div>
         </div>
-      </section>
-</main>
+        </section>
+      </div>
+    </main>
   );
 }

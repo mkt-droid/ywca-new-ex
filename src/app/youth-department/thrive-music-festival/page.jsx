@@ -27,7 +27,7 @@ export default function ThriveMusicFestivalPage() {
 
   return (
     <main>
-      <div className={styles.pageContentWrapper}>
+      <div className="pageContentWrapper">
         <section className="pt-4 pb-5">
           <div className="container">
             {/* Header Section */}
@@ -38,7 +38,7 @@ export default function ThriveMusicFestivalPage() {
                 </Link>
               </div>
               <div className="flex-grow-1 text-center" style={{ padding: '0 15px' }}>
-                <h1 className="sectionTitle_1 text-center mx-800">Thrive Music Festival 2026</h1>
+                <h1 className="sectionTitle_1 text-center mx-800 mb-0">Thrive Music Festival 2026</h1>
               </div>
               <div style={{ flex: '0 0 auto', width: '85px', visibility: 'hidden' }} className="d-none d-md-block"></div>
             </div>

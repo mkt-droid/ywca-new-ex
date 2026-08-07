@@ -108,10 +108,10 @@ export default function SupportACausePage() {
         activePath="/fund-raising-publicity/support-a-cause"
       />
 
-      <div className={styles.pageContentWrapper}>
+      <div className={`${styles.pageContentWrapper} pageContentWrapper`}>
         <section className={styles.sectionPadding}>
           <div className="container">
-            <h1 className="sectionTitle_1 text-center mx-800">SUPPORT A CAUSE</h1>
+            <h1 className="sectionTitle_1 text-center mx-800">Support A Cause</h1>
             <p className={styles.sectionText}>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions.
             </p>

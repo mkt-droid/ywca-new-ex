@@ -19,7 +19,7 @@ export default function WorldEnvironmentDayPage() {
     '/images/map/gallery/05-World Environment Day Celebration/11.jpg',
     '/images/map/gallery/05-World Environment Day Celebration/12.jpg'
   ];
-  
+
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const thumbnailContainerRef = useRef(null);
 
@@ -48,7 +48,7 @@ export default function WorldEnvironmentDayPage() {
                 </Link>
               </div>
               <div className="flex-grow-1 text-center" style={{ padding: '0 15px' }}>
-                <h1 className="sectionTitle_1 text-center mx-800">World Environment Day Celebration 2026</h1>
+                <h1 className="sectionTitle_1 text-center mx-800 mb-0">World Environment Day Celebration 2026</h1>
                 <p className="text-muted mb-0 mt-2">13th June 2026</p>
               </div>
               <div style={{ flex: '0 0 auto', width: '85px', visibility: 'hidden' }} className="d-none d-md-block"></div>
@@ -101,7 +101,7 @@ export default function WorldEnvironmentDayPage() {
                 <p>The celebration reflected collective action towards sustainability and reinforced YWCA of Delhi’s commitment to building a greener, more responsible future.</p>
               </div>
             </div>
-            
+
           </div>
         </section>
       </div>

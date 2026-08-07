@@ -7,13 +7,7 @@
   margin: 0 auto;
 }
 
-.mainHeading {
-  font-size:2.2rem;
-  font-weight:600;
-  margin-bottom: 25px;
-  color: #000000;
-  text-transform: uppercase;
-}
+
 
 .subHeading {
   font-size: 1rem;
@@ -43,13 +37,7 @@
   padding: 60px 0 80px;
 }
 
-.programsHeading {
-  text-align: center;
-  font-size: 2.2rem;
-  font-weight: 500;
-  color: #000000;
-  margin-bottom: 40px;
-}
+
 
 .programCardLink {
   text-decoration: none;

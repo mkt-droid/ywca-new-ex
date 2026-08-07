@@ -87,18 +87,19 @@ export default function EventsAndAnnouncementsPage() {
         activePath="/fund-raising-publicity/events-and-announcements"
       />
 
-      <div className={styles.contentWrapper}>
+      <div className={`${styles.contentWrapper} pageContentWrapper`}>
         <section className={styles.sectionPadding}>
           <div className="container">
-            <h1 className="sectionTitle_1 text-center mx-800">EVENTS AND ANNOUNCEMENTS</h1>
+            <h1 className="sectionTitle_1 text-center mx-800">Events And Announcements</h1>
             <p className={styles.pageDescription}>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions.
             </p>
 
-            <Gallery title="Gallery" items={galleryItems} columns={4} />
+            <h2 className="sectionTitle_2 text-center">Gallery</h2>
+            <Gallery items={galleryItems} columns={4} />
           </div>
         </section>
-            </div>
-</main>
+      </div>
+    </main>
   );
 }

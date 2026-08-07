@@ -9,6 +9,7 @@ export const metadata = {
 export default function DonatePage() {
   return (
     <main>
+      <div className="pageContentWrapper">
       <section className={styles.donateSection}>
         <div className="container">
           <h1 className="sectionTitle_1 text-center mx-800">DONATE US</h1>
@@ -28,7 +29,7 @@ export default function DonatePage() {
 
             {/* Banking Details Column */}
             <div className={styles.detailsContainer}>
-              <h2 className={styles.sectionHeading}>Banking details</h2>
+              <h2 className="sectionTitle_2 text-center">Banking details</h2>
 
               <div className={styles.subHeading}>UPI ID</div>
               <div className={styles.textValue}>11519296@cbin</div>
@@ -62,6 +63,7 @@ export default function DonatePage() {
           </div>
         </div>
       </section>
+      </div>
     </main>
   );
 }

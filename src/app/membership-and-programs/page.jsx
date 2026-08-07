@@ -20,7 +20,7 @@ export default function MembershipDepartmentPage() {
         <section className={styles.sectionPadding}>
           <div className="container">
 
-            <h1 className="sectionTitle_1 text-center mx-800">Membership and Program Department</h1>
+            <h1 className="sectionTitle_1 text-center mx-800">Membership And Program Department</h1>
 
             <div className={styles.overviewText}>
               <p>The YWCA of Delhi is a women-only, membership-based organisation that forms part of a global movement. It welcomes women from all walks of life to enroll and become active members of this international network.</p>
@@ -37,7 +37,7 @@ export default function MembershipDepartmentPage() {
 
             {/* Programs Section */}
             <div className=" text-center">
-              <h3 className='sectionTitle mx-600'>Programs conducted by the Membership Department in the past</h3>
+              <h2 className='sectionTitle_2 text-center'>Programs conducted by the Membership Department in the past</h2>
 
               <div className="row justify-content-center mt-4">
                 <div className="col-md-6 col-lg-5 mb-4">
@@ -101,7 +101,7 @@ export default function MembershipDepartmentPage() {
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6 col-md-12 mb-5 mb-lg-0 pr-lg-5">
-                <h3 className={`${styles.formGroupTitle} mt-0`}>New Membership Forms</h3>
+                <h2 className={`${styles.formGroupTitle} mt-0`}>New Membership Forms</h2>
                 <div className={styles.pdfButtonsContainer}>
                   <a href="/pdf-forms/Form-Associate-Member.pdf" target="_blank" rel="noopener noreferrer" className={styles.pdfButton}>
                     <i className={`bi bi-file-earmark-pdf-fill ${styles.pdfIcon}`}></i> <span>Associate Member</span>
@@ -111,7 +111,7 @@ export default function MembershipDepartmentPage() {
                   </a>
                 </div>
 
-                <h3 className={styles.formGroupTitle}>Renewal of Membership</h3>
+                <h2 className={styles.formGroupTitle}>Renewal of Membership</h2>
                 <div className={styles.pdfButtonsContainer}>
                   <a href="/pdf-forms/Associate%20Renewal.pdf" target="_blank" rel="noopener noreferrer" className={styles.pdfButton}>
                     <i className={`bi bi-file-earmark-pdf-fill ${styles.pdfIcon}`}></i> <span>Associate Renewal</span>

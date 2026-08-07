@@ -113,10 +113,10 @@ export default function EcoJusticeLabPage() {
         activePath="/fund-raising-publicity/eco-justice-lab"
       />
 
-      <div className={styles.pageContentWrapper}>
+      <div className={`${styles.pageContentWrapper} pageContentWrapper`}>
         <section className={styles.sectionPadding}>
           <div className="container">
-            <h1 className="sectionTitle_1 text-center mx-800">ECO- JUSTICE LAB</h1>
+            <h1 className="sectionTitle_1 text-center mx-800">Eco- Justice Lab</h1>
             <p className={styles.sectionSubtitle}>Building Climate Leadership Through Community Action</p>
 
             <div className={styles.statsContainer}>
@@ -146,7 +146,7 @@ export default function EcoJusticeLabPage() {
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions.
             </p>
 
-            <h3 className={styles.subTitle}>Our Activities</h3>
+            <h2 className="sectionTitle_2 text-center">Our Activities</h2>
             <div className={styles.activitiesGrid}>
               {activities.map((activity, index) => (
                 <ActionCard
@@ -164,7 +164,7 @@ export default function EcoJusticeLabPage() {
                 <img src="/images/justice-lab/partnership-with ipca.jpg" alt="Partnership with IPCA" className={styles.partnershipImg} />
               </div>
               <div className={styles.partnershipContent}>
-                <h3>Partnership with IPCA</h3>
+                <h2 className="sectionTitle_2 text-center">Partnership with IPCA</h2>
                 <p>
                   Indian Pollution Control Association (IPCA) has been a key technical partner supporting the sustainability initiatives of YWCA of Delhi. Through this collection.
                 </p>
@@ -188,8 +188,8 @@ export default function EcoJusticeLabPage() {
           <div className="container">
             <div className={styles.regrowSection}>
               <div className={styles.regrowContent}>
-                <h3>ReGrow Organic Manure</h3>
-                <h4>Turning Waste into Worth</h4>
+                <h2 className="sectionTitle_2 text-center">ReGrow Organic Manure</h2>
+                <h3 className="sectionTitle_3 text-center">Turning Waste into Worth</h3>
                 <p>
                   Developed under the Eco-Justice Lab initiative, ReGrow Organic Manure is a sustainable product made from recycled kitchen waste generated at YWCA of Delhi campuses as part of its journey towards becoming a zero-waste campus.
                 </p>
@@ -241,7 +241,7 @@ export default function EcoJusticeLabPage() {
               </div>
             </div>
 
-            <h3 className={styles.subTitle}>Lab Inaugural Event - 4th Sept 2025</h3>
+            <h2 className="sectionTitle_2 text-center">Lab Inaugural Event - 4th Sept 2025</h2>
             <div className={styles.galleryGrid}>
               {galleryImages.map((img, index) => (
                 <div key={index} className={styles.galleryImgWrapper} onClick={() => openLightbox(galleryImages, index)}>

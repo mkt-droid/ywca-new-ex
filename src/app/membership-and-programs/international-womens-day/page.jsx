@@ -19,7 +19,7 @@ export default function InternationalWomensDayPage() {
     '/images/map/gallery/02-International Womens Day Celebration/11.jpg',
     '/images/map/gallery/02-International Womens Day Celebration/12.jpg'
   ];
-  
+
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const thumbnailContainerRef = useRef(null);
 
@@ -48,7 +48,7 @@ export default function InternationalWomensDayPage() {
                 </Link>
               </div>
               <div className="flex-grow-1 text-center" style={{ padding: '0 15px' }}>
-                <h1 className="sectionTitle_1 text-center mx-800">International Women’s Day Celebration & Adamya Nari Samman</h1>
+                <h1 className="sectionTitle_1 text-center mx-800 mb-0">International Women’s Day Celebration & Adamya Nari Samman</h1>
                 <p className="text-muted mb-0 mt-2">7 March 2026</p>
               </div>
               <div style={{ flex: '0 0 auto', width: '85px', visibility: 'hidden' }} className="d-none d-md-block"></div>
@@ -106,7 +106,7 @@ export default function InternationalWomensDayPage() {
                 <p>The celebration stood as a powerful tribute to women who are truly Adamya-unstoppable in spirit, resilience, and courage.</p>
               </div>
             </div>
-            
+
           </div>
         </section>
       </div>

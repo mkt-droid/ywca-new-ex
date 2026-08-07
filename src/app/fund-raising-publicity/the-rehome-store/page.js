@@ -119,15 +119,15 @@ export default function TheRehomeStorePage() {
         activePath="/fund-raising-publicity/the-rehome-store"
       />
 
-      <div className={styles.pageContentWrapper}>
+      <div className={`${styles.pageContentWrapper} pageContentWrapper`}>
         <section className={styles.sectionPadding}>
           <div className="container">
-            <h1 className="sectionTitle_1 text-center mx-800">THE REHOME STORE</h1>
+            <h1 className="sectionTitle_1 text-center mx-800">The Rehome Store</h1>
             <p className={styles.sectionText}>
               In alignment with the Sustainable Development Goals and the commitment of YWCA of Delhi towards Strengthening Communities and Nurturing Nature, The ReHome Store is a sustainable and inclusive initiative that promotes the reuse and repurposing of pre-loved items. The initiative encourages responsible consumption while creating livelihood opportunities for women from shelter homes and local communities. By collecting gently used clothes, accessories, books, household items, and reusable products, The ReHome Store gives discarded items a second life with dignity and purpose. Guided by the philosophy “Gently Used, Warmly Given”, the initiative aims to reduce waste, support circular economy practices, and build a more environmentally conscious and compassionate community.
             </p>
 
-            <h3 className={styles.subTitle}>What can you donate?</h3>
+            <h2 className="sectionTitle_2 text-center">What can you donate?</h2>
             <div className={styles.donateGrid}>
               {donateItems.map((item) => (
                 <div key={item.id} className={styles.donateItem}>
@@ -145,7 +145,7 @@ export default function TheRehomeStorePage() {
 
             {/* Impact Highlights */}
             <div className="mb-5">
-              <h3 className={styles.subTitle} style={{ marginTop: '20px' }}>Impact Highlights</h3>
+              <h2 className="sectionTitle_2 text-center" style={{ marginTop: '20px' }}>Impact Highlights</h2>
               <div className="row g-4 justify-content-center">
                 <div className="col-md-6 col-lg-4 text-center">
                   <div style={{ backgroundColor: '#fef7f7', padding: '25px 20px', borderRadius: '12px', height: '100%', border: '1px solid #f2dcdc', boxShadow: '0 4px 10px rgba(0,0,0,0.03)' }}>
@@ -190,7 +190,7 @@ export default function TheRehomeStorePage() {
               </div>
             </div>
 
-            <h3 className={styles.subTitle}>Donate your stuff</h3>
+            <h2 className="sectionTitle_2 text-center">Donate your stuff</h2>
             <div className={styles.donateBox}>
               <div className={styles.tabsContainer}>
                 <button
@@ -343,7 +343,7 @@ export default function TheRehomeStorePage() {
               )}
             </div>
 
-            <h3 className={styles.subTitle}>We do everything - Collection, Sorting & Upcycling</h3>
+            <h2 className="sectionTitle_2 text-center">We do everything - Collection, Sorting & Upcycling</h2>
             <div className={styles.galleryGrid}>
               {upcyclingGallery.map((img, index) => (
                 <div key={`upcycle-${index}`} className={styles.galleryImgWrapper} onClick={() => openLightbox(upcyclingGallery, index)}>
@@ -352,7 +352,7 @@ export default function TheRehomeStorePage() {
               ))}
             </div>
 
-            <h3 className={styles.subTitle}>Our Launch Event</h3>
+            <h2 className="sectionTitle_2 text-center">Our Launch Event</h2>
             <div className={styles.galleryGrid}>
               {launchGallery.map((img, index) => (
                 <div key={`launch-${index}`} className={styles.galleryImgWrapper} onClick={() => openLightbox(launchGallery, index)}>

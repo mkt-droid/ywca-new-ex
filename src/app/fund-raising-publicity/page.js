@@ -33,11 +33,11 @@ export default function FundRaisingPage() {
         activePath="/fund-raising-publicity"
       />
 
-      <div className={styles.contentWrapper}>
+      <div className={`${styles.contentWrapper} pageContentWrapper`}>
         {/* Overview Section */}
         <section className={styles.sectionPadding}>
           <div className="container">
-            <h1 className="sectionTitle_1 text-center mx-800">OVERVIEW</h1>
+            <h1 className="sectionTitle_1 text-center mx-800">Overview</h1>
             <p className={styles.overviewText}>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions.
             </p>
@@ -49,7 +49,8 @@ export default function FundRaisingPage() {
           <div className="container">
             <div className="row align-items-center">
               <div className="col-md-6 mb-4 mb-md-0 pr-md-5">
-                <h2 className={styles.helpTitle}>Your Small Help can brighten<br />up some one's life</h2>
+                <h2 className="sectionTitle_2" style={{ marginBottom: '10px' }}>Your Small Help</h2>
+                <h3 className="sectionTitle_3" style={{ marginBottom: '15px' }}>Can brighten up someone's life</h3>
                 <p className={styles.helpText}>
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                 </p>
@@ -71,7 +72,8 @@ export default function FundRaisingPage() {
         {/* Registration & Compliance Documents Section */}
         <section className="container">
           <div className={styles.complianceSection}>
-            <h2 className={styles.complianceTitle}>Registration & Compliance Documents</h2>
+            <h2 className="sectionTitle_2 text-center">Registration & Compliance Documents</h2>
+            {/* <h3 className="sectionTitle_3 text-center" style={{ marginBottom: '30px', color: '#fff' }}>Transparency in our operations</h3> */}
             <div className={styles.complianceBtns}>
               <Link href="#" className={styles.purpleBtn}>80G Certificate</Link>
               <Link href="#" className={styles.purpleBtn}>CSR Eligibility Documents</Link>
@@ -92,7 +94,8 @@ export default function FundRaisingPage() {
                 />
               </div>
               <div className="col-md-6 pl-md-5">
-                <h2 className={styles.helpTitle}>Event gallery</h2>
+                <h2 className="sectionTitle_2" style={{ marginBottom: '10px' }}>Event gallery</h2>
+                <h3 className="sectionTitle_3" style={{ marginBottom: '15px' }}>Glimpses of our recent activities</h3>
                 <p className={styles.helpText}>
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.
                 </p>
@@ -109,7 +112,8 @@ export default function FundRaisingPage() {
           <div className="container">
             <div className="row align-items-center">
               <div className="col-md-6 mb-4 mb-md-0 pr-md-5">
-                <h2 className={styles.helpTitle}>Volunteer with us</h2>
+                <h2 className="sectionTitle_2" style={{ marginBottom: '10px' }}>Volunteer with us</h2>
+                <h3 className="sectionTitle_3" style={{ marginBottom: '15px' }}>Be a part of our journey</h3>
                 <p className={styles.helpText}>
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.
                 </p>
@@ -127,7 +131,7 @@ export default function FundRaisingPage() {
             </div>
           </div>
         </section>
-            </div>
-</main>
+      </div>
+    </main>
   );
 }

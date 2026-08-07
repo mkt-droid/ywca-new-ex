@@ -13,8 +13,10 @@ export default function OurValues({ values = [], title = "Our Values", className
         </h2>
       )}
       <div className="row g-4 justify-content-center mt-3">
-        {values.map((value, idx) => (
-          <div className="col-md-6 col-lg-4" key={idx}>
+        {values.map((value, idx) => {
+          const colClass = values.length === 4 ? "col-md-6 col-lg-3" : "col-md-6 col-lg-4";
+          return (
+          <div className={colClass} key={idx}>
             <div className={styles.valueCard}>
               <div className={styles.valueIcon}>
                 <i className={`bi ${value.icon}`}></i>
@@ -28,7 +30,7 @@ export default function OurValues({ values = [], title = "Our Values", className
               )}
             </div>
           </div>
-        ))}
+        )})}
       </div>
     </div>
   );
