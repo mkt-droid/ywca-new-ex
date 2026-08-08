@@ -32,7 +32,10 @@ export default function NewsCarousel({ newsData }) {
             <div className={pageStyles.newsCard}>
               <img src={news.image} alt="Academic News" className={pageStyles.newsImage} />
               <div className={pageStyles.newsContent}>
-                <h3 className={pageStyles.newsTitle} style={{ fontSize: '0.95rem', fontWeight: 'normal', margin: 0 }}>{news.title}</h3>
+                <h3 className={pageStyles.newsTitle} style={{ fontSize: '0.95rem', fontWeight: news.excerpt ? 'bold' : 'normal', margin: 0 }}>{news.title}</h3>
+                {news.excerpt && (
+                  <p style={{ fontSize: '0.85rem', color: '#666', marginTop: '10px', marginBottom: '10px', display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{news.excerpt}</p>
+                )}
                 <Link href={`/news/${news.slug}`} className={pageStyles.newsViewMore}>
                   View more <i className="bi bi-arrow-right"></i>
                 </Link>

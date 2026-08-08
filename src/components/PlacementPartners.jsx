@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from './PlacementPartners.module.css';
 
-export default function PlacementPartners() {
+export default function PlacementPartners({ title = "Our Placement Partners", className = "container mt-3 mb-5 text-center" }) {
   const originalLogos = [
     '/images/placement-partners/pp-1.png',
     '/images/placement-partners/pp-2.png',
@@ -25,8 +25,8 @@ export default function PlacementPartners() {
   }, [originalLogos.length]);
 
   return (
-    <section className="container mt-3 mb-5 text-center">
-      <h2 className={'sectionTitle'}>Our Placement Partners</h2>
+    <section className={className}>
+      <h2 className="sectionTitle_2 mb-4">{title}</h2>
       <div className={styles.carouselContainer}>
         <div
           className={styles.carouselTrack}

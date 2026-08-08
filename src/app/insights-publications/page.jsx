@@ -76,7 +76,7 @@ export default function InsightsPublicationsPage() {
                                 </div>
                                 <div className={styles.reportInfo}>
                                   <h4 className={styles.reportTitle}>{report.title}</h4>
-                                  <span className={styles.viewBtn}>View PDF <i className="bi bi-arrow-right"></i></span>
+                                  <span className={styles.viewBtn}>View More <i className="bi bi-arrow-right"></i></span>
                                 </div>
                               </div>
                             </a>
