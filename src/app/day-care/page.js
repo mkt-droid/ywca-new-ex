@@ -62,7 +62,7 @@ export default function DayCarePage() {
 
         {/* Services Icons (No background box) */}
         <div className={styles.servicesIconsSection} id="programs">
-          <h3 className={styles.sectionTitlePink}>Our Services & Facilities</h3>
+          <h2 className="sectionTitle_2 text-center">Our Services & Facilities</h2>
           <div className={styles.servicesIconsFlex}>
             <div className={styles.serviceIconItem}>
               <div className={styles.iconCircleWrapper}>
@@ -98,7 +98,7 @@ export default function DayCarePage() {
         {/* Our Core Values */}
         <div className={styles.coreValuesOuterBox} id="core-values">
           <div className={styles.coreValuesTop}>
-            <h3 className={styles.sectionTitlePink}>Our Core Values</h3>
+            <h2 className="sectionTitle_2 text-center">Our Core Values</h2>
             <p className={styles.coreValuesDesc}>
               This shelter home is specially designed for destitute pregnant and lactating women. It operates at two locations- Sarai Rohilla and Jahangirpuri-in collaboration with the Department of Women & Child development, Government of NCT of Delhi.
             </p>
@@ -123,7 +123,7 @@ export default function DayCarePage() {
 
         {/* Our Services & Facilities (List) */}
         <div className={styles.cardSectionServices} id="services">
-          <h3 className={styles.sectionTitlePink}>Our Services & Facilities</h3>
+          <h2 className="sectionTitle_2 text-center">Our Services & Facilities</h2>
           <p className={styles.servicesDesc}>
             We provide a comprehensive range of services to ensure safety, learning, and overall well-being
           </p>
@@ -158,7 +158,7 @@ export default function DayCarePage() {
         {/* Why Choose Us */}
         <div className={styles.whyChooseUsSection}>
           <div style={{ display: 'inline-block', width: '100%' }}>
-            <h3 className={styles.sectionTitlePink}>Why Choose Us?</h3>
+            <h2 className="sectionTitle_2 text-center">Why Choose Us?</h2>
             <div className={styles.whyChooseUsGrid}>
               <div className={styles.whyChooseUsItem}>
                 <i className="bi bi-check-circle-fill" style={{ color: '#a011af', marginRight: '10px', fontSize: '1.2rem' }}></i>

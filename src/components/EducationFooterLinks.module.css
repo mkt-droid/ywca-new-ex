@@ -34,3 +34,31 @@
   color: white;
   text-decoration: underline;
 }
+
+.masonryGrid {
+  column-count: 5;
+  column-gap: 30px;
+}
+
+.masonryItem {
+  break-inside: avoid;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 991px) {
+  .masonryGrid {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 767px) {
+  .masonryGrid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 575px) {
+  .masonryGrid {
+    column-count: 1;
+  }
+}

@@ -107,7 +107,7 @@ export default function WorkingWomenHostelPage() {
                 <img src="/images/working-women-hostels/wwh-1.png" alt="Centenary Working Women's Hostel" className="img-fluid rounded" />
               </div>
               <div className="col-md-6">
-                <h3 className='sectionTitle'>Centenary Working Women's Hostel (CHWW)</h3>
+                <h2 className="sectionTitle_2">Centenary Working Women's Hostel (CHWW)</h2>
                 <p className={styles.hostelDesc}>
                   Situated in the heart of the city in Ashoka Road has got 64 rooms with the total bed capacity of 168. In spite of the pandemic the hostel-maintained occupancy of 126 residents throughout this period.
                 </p>
@@ -126,7 +126,7 @@ export default function WorkingWomenHostelPage() {
                 <img src="/images/working-women-hostels/wwh-2.png" alt="Jasola Working Women's Hostel" className="img-fluid rounded" />
               </div>
               <div className="col-md-6">
-                <h3 className='sectionTitle'>Jasola Working Women's Hostel (JWWH)</h3>
+                <h2 className="sectionTitle_2">Jasola Working Women's Hostel (JWWH)</h2>
                 <p className={styles.hostelDesc}>
                   The Ministry of Women and Child Development jointly with Ministry of Development of North Eastern Region, Government of India has set up the Working Women's Hostel in Jasola Vihar, New Delhi for women of the North Eastern states and other working women. The Management of the JWWH was entrusted to the YWCA of Delhi in August 2011. JWWH has got 167 rooms with attached bathroom and total bed capacity of 501. During the pandemic the hostel was able to maintain occupancy of 166 throughout.
                 </p>
@@ -138,13 +138,13 @@ export default function WorkingWomenHostelPage() {
         <div className="container mb-5" style={{ color: '#333' }}>
           {/* Mission */}
           <div className="mb-5">
-            <h3 className='sectionTitle'>Mission of the Working Women Hostel of YWCA</h3>
+            <h2 className="sectionTitle_2">Mission of the Working Women Hostel of YWCA</h2>
             <p style={{ lineHeight: '1.8' }}>The Mission for running this Hostel is to make the hostel facilities available to the maximum number of girls and women who are coming to work in Delhi from different parts of India, irrespective of their caste, religion and creed. Our main objective is to make the Hostel facilities available at an affordable price to those candidates who are coming from low income groups. However, the requirement of the high income groups is also not ignored. We always strive hard to strike a balance between these two groups.</p>
           </div>
 
           {/* Values */}
           <div className="mb-5" style={{ maxWidth: '1000px', margin: '0 auto' }}>
-            <h3 className='sectionTitle text-center'>Values we follow</h3>
+            <h2 className="sectionTitle_2 text-center">Values we follow</h2>
             <div className="row justify-content-center">
               <div className="col-md-6 mb-4">
                 <div className={styles.valueCard}>
@@ -172,7 +172,7 @@ export default function WorkingWomenHostelPage() {
           </div>
 
           <div className={styles.infoBox}>
-            <h3 style={{ color: '#a212b5', fontWeight: '600', marginBottom: '20px', textAlign: 'center' }}>Working Procedures</h3>
+            <h2 className="sectionTitle_2 text-center" style={{ marginBottom: '20px' }}>Working Procedures</h2>
             <div className="row">
               <div className="col-md-6 mb-4">
                 <h5 className="fw-bold mb-3">
@@ -205,7 +205,7 @@ export default function WorkingWomenHostelPage() {
           </div>
 
           <div className={styles.infoBox}>
-            <h3 style={{ color: '#a212b5', fontWeight: '600', marginBottom: '20px', textAlign: 'center' }}>Facilities Available</h3>
+            <h2 className="sectionTitle_2 text-center" style={{ marginBottom: '20px' }}>Facilities Available</h2>
             <div className="row">
               <div className="col-md-6">
                 <ul className={styles.customList}>
@@ -235,7 +235,7 @@ export default function WorkingWomenHostelPage() {
           </div>
 
           {/* <div className="mb-5">
-            <h3 style={{ color: '#a212b5', fontWeight: '600', marginBottom: '15px' }}>Festival Celebrations</h3>
+            <h2 className="sectionTitle_2" style={{ marginBottom: '15px' }}>Festival Celebrations</h2>
             <p style={{ lineHeight: '1.8' }}>Festivals like Holi, Easter, Lohri, Diwali and Christmas are celebrated with great fervor in the hostel.</p>
             <h5 className="fw-bold mt-3 mb-2">Cultural Evenings:</h5>
             <p style={{ lineHeight: '1.8' }}>Four Cultural Evenings in a year are organized for the hostel residents (April, July, October and December), giving opportunity to the residents to relax and have fun together and get to know each other and build the bond of friendship and support away from their family and friends.</p>
@@ -247,7 +247,7 @@ export default function WorkingWomenHostelPage() {
                 <div className={styles.cardIconWrapper}>
                   <i className="bi bi-tools"></i>
                 </div>
-                <h3 className={styles.cardTitle}>Maintenance</h3>
+                <h3 className="sectionTitle_3">Maintenance</h3>
                 <p className={styles.cardDesc}>Each Resident has access to the “Requirement Book'', related to maintenance work. Electrician, Plumber and Carpenter are available any time whenever the need arises.</p>
               </div>
             </div>
@@ -256,7 +256,7 @@ export default function WorkingWomenHostelPage() {
                 <div className={styles.cardIconWrapper}>
                   <i className="bi bi-people-fill"></i>
                 </div>
-                <h3 className={styles.cardTitle}>Hostel Committee</h3>
+                <h3 className="sectionTitle_3">Hostel Committee</h3>
                 <p className={styles.cardDesc}>There is a new Hostel Committee every year. It comprises of the Chairperson and its Members. The General Secretary and President are invited for every Committee meeting. The Head of the Department of CHWW convenes the Committee Meetings and various issues of the Hostel are discussed and solved by the Committee Members.</p>
               </div>
             </div>
@@ -265,7 +265,7 @@ export default function WorkingWomenHostelPage() {
                 <div className={styles.cardIconWrapper}>
                   <i className="bi bi-person-badge"></i>
                 </div>
-                <h3 className={styles.cardTitle}>Hostel Staff</h3>
+                <h3 className="sectionTitle_3">Hostel Staff</h3>
                 <p className={styles.cardDesc}>“Ready to Help” service is provided by the Hostel staff which comprises, the Head of Department, two Resident Secretaries, 4 Establishment Staff, one Gardner and 6 Housekeeping staff.</p>
               </div>
             </div>
@@ -273,7 +273,7 @@ export default function WorkingWomenHostelPage() {
 
           {/* Downloads Section */}
           <div className={styles.downloadSection}>
-            <h2 className={styles.downloadTitle}>Download Documents</h2>
+            <h2 className="sectionTitle_2 text-center">Download Documents</h2>
             <div className="d-flex flex-wrap justify-content-center gap-3">
               <a href="/images/working-women-hostels/HOSTEL FLYER.pdf" download className={styles.downloadBtn}>
                 <i className="bi bi-file-earmark-pdf me-2"></i>Hostel Flyer

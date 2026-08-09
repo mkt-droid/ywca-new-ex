@@ -11,7 +11,6 @@ export default function AdmissionPage() {
     { title: 'Overview', icon: 'bi-flower1', link: '/education-institute' },
     { title: 'Programs', icon: 'bi-mortarboard', link: '/education-institute/programs' },
     { title: 'Admission', icon: 'bi-person-vcard', link: '/education-institute/admission' },
-    { title: 'Life@YWCA', icon: 'bi-building', link: '#' },
     { title: 'Student Corner', icon: 'bi-people', link: '#' },
     { title: 'Contact us', icon: 'bi-telephone', link: '/education-institute/contact' },
   ];
@@ -37,7 +36,7 @@ export default function AdmissionPage() {
             {/* Left Column */}
             <div className="col-lg-6 col-md-12">
               <div className={styles.leftColumn}>
-                <h1 className="sectionTitle_1 text-center mx-800">Admission enquiry</h1>
+                <h1 className="sectionTitle_1 mx-800">Admission enquiry</h1>
                 <p className={styles.subText}>
                   Connect Curriculum To Careers<br />
                   Strengthen Employment Outcomes<br />
@@ -87,6 +86,6 @@ export default function AdmissionPage() {
           </div>
         </div>
       </section>
-</main>
+    </main>
   );
 }

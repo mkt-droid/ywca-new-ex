@@ -36,7 +36,7 @@ const OurHistory = () => {
       <div className="container">
 
         <div className={styles.sectionHeading}>
-          <h2><span className={styles.highlight}>Our</span> History</h2>
+          <h2 className="sectionTitle_2 text-center"><span className={styles.highlight}>Our</span> History</h2>
           <p className={styles.subtitle}>Discover the work that YWCA of Delhi does.</p>
         </div>
 

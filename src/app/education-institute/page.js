@@ -65,7 +65,7 @@ export default function EducationInstitutePage() {
       >
         <div className={styles.bannerContent}>
           <div className={styles.enquiryFormCard}>
-            <h3 className={styles.formTitle}>Enquiry form</h3>
+            <h3 className="sectionTitle_3">Enquiry form</h3>
             <form>
               <input type="text" placeholder="Your name" className={styles.formInput} /><input type="text" placeholder="Your phone" className={styles.formInput} />
               <input type="email" placeholder="Your email" className={styles.formInput} />
@@ -101,7 +101,7 @@ export default function EducationInstitutePage() {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-12 mb-5 mb-lg-0 text-center pr-lg-5">
-              <h2 className={styles.learningTitle}>Learning Programs - Unlock Your Full<br />Potential, Join Now</h2>
+              <h2 className="sectionTitle_2 text-center text-white">Learning Programs - Unlock Your Full<br />Potential, Join Now</h2>
               <p className={styles.learningText}>
                 Welcome to YWCA Academy, where learning knows no bounds. We believe that education is the key to personal and professional growth, and we're here to guide you on your journey to the success.
               </p>
@@ -177,6 +177,6 @@ export default function EducationInstitutePage() {
 
       {/* Footer Links Section */}
       <EducationFooterLinks />
-</main>
+    </main>
   );
 }

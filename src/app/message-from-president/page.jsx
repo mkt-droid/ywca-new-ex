@@ -70,7 +70,7 @@ export default async function Page({ params }) {
                         <div className={styles.detailsDivider} />
 
                         <div className={styles.detailsRight}>
-                            <h3 className={styles.detailHeading}>President YWCA Message</h3>
+                            <h2 className="sectionTitle_2" style={{ textAlign: "left", marginBottom: "1.5rem" }}>President YWCA Message</h2>
                             <div className={styles.bioText}>
                                 <p>The YWCA of Delhi remains steadfast in its mission to empower women and girls, creating a just, inclusive society where every individual can thrive regardless of caste, creed, race, or economic background. Through our Women’s Training Institute, Working Women’s Hostels, Shelter Homes, and development programmes, we equip women with skills, safety, and support for a life of dignity and independence.</p>
                                 <p>Our dedication to community development reaches beyond urban centers, with our comprehensive Rural and Urban Development Initiatives (RDP & UDP) driving positive change. Our grassroots initiatives aim to transform the lives of girls and women by increasing access to vital resources, including healthcare, education, and protection, ultimately driving lasting positive change.</p>

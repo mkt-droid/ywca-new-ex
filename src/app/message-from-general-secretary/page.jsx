@@ -64,7 +64,7 @@ export default function MessageGeneralSecretary() {
             <div className={styles.detailsDivider} />
 
             <div className={styles.detailsRight}>
-              <h3 className={styles.detailHeading}>General Secretary Message</h3>
+              <h2 className={'sectionTitle_2'}>General Secretary Message</h2>
               <div className={styles.bioText}>
                 <p>As I reflect on the journey of the past year, I feel humbled for the work we have done, for the impact we have made, for the collective growth and resilience we have built, smiles we have brought to many faces and the blessings of the Almighty we have received. The year 2024 - 2025, with all its achievements, learning and challenges has deepened our conviction that empowerment, when rooted in faith and collective action, has the power to transform lives and communities.</p>
                 <p>Remaining steadfast to our commitment to gender equality and social inclusion, we carried forward our mission through the three pillars of Strengthening Communities, Building Youth, and Nurturing Nature. Our Community Resource Centres continue to thrive as non-judgmental safe spaces where women come together to claim their rights, access entitlements, skilling and livelihood opportunities, strengthen their agency and resilience. In the three Shelter Homes, women in distress and unimaginable situations of violence have found safety, solidarity, healing and pathways to reintegrate. Women survivors of violence, abandonment, and trafficking were supported with dignity and compassion.</p>

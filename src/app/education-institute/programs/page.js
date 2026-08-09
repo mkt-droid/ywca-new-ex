@@ -31,7 +31,6 @@ function ProgramsContent() {
     { title: 'Overview', icon: 'bi-flower1', link: '/education-institute' },
     { title: 'Programs', icon: 'bi-mortarboard', link: '/education-institute/programs' },
     { title: 'Admission', icon: 'bi-person-vcard', link: '/education-institute/admission' },
-    { title: 'Life@YWCA', icon: 'bi-building', link: '#' },
     { title: 'Student Corner', icon: 'bi-people', link: '#' },
     { title: 'Contact us', icon: 'bi-telephone', link: '/education-institute/contact' },
   ];
@@ -163,8 +162,8 @@ function ProgramsContent() {
             <div className="text-center py-5">
               <h4 style={{ color: '#666', marginBottom: '10px' }}>No programs found</h4>
               <p style={{ color: '#888', marginBottom: '20px' }}>We currently don't have any programs listed in this category.</p>
-              <button 
-                className={styles.exploreMoreBtn} 
+              <button
+                className={styles.exploreMoreBtn}
                 onClick={() => handleCategoryChange('All')}
               >
                 View All Programs
@@ -189,7 +188,7 @@ function ProgramsContent() {
           <div className={styles.modalContent} onClick={e => e.stopPropagation()}>
             <button className={styles.modalClose} onClick={() => setSelectedCourse(null)}>&times;</button>
             <div className={styles.modalHeader}>
-              <h3>{selectedCourse.title}</h3>
+              <h3 className="sectionTitle_3">{selectedCourse.title}</h3>
             </div>
             <div className={styles.modalBody}>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '15px', marginBottom: '20px', backgroundColor: '#f9f9f9', padding: '15px', borderRadius: '5px' }}>
@@ -204,7 +203,7 @@ function ProgramsContent() {
                   <p style={{ marginTop: '5px', lineHeight: '1.5' }}>{selectedCourse.description}</p>
                 </div>
               )}
-              
+
               {selectedCourse.structure && selectedCourse.structure.length > 0 && (
                 <div style={{ marginBottom: '20px' }}>
                   <strong style={{ color: '#a212b5', fontSize: '18px' }}>Programme Structure</strong>

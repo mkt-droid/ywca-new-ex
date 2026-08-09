@@ -70,7 +70,7 @@ const BlueTriangle = () => {
         {/* BOOKING BAR */}
         <section className={`container ${styles.bookingSection}`}>
           <div className={styles.bookingBar}>
-            <h3 className={styles.bookingTitle}>Booking</h3>
+            <h3 className="sectionTitle_3 text-white">Booking</h3>
             <div className={styles.bookingForm}>
               <div className={styles.formGroup}>
                 <i className="bi bi-map"></i>
@@ -125,7 +125,7 @@ const BlueTriangle = () => {
         {/* BOOKING CARDS SECTION */}
         <section className={styles.bookingCardsSection}>
           <div className="container">
-            <h2 className={styles.sectionTitle}>Rooms</h2>
+            <h2 className="sectionTitle_2 text-center">Rooms</h2>
             <div className={styles.bookingGrid}>
               <Link href="#" className={styles.bookingCardLink}>
                 <div className={styles.bookingCard}>
@@ -164,7 +164,7 @@ const BlueTriangle = () => {
       {/* INSTAGRAM SECTION */}
       <section className={styles.instaSection}>
         <div className="container">
-          <h2 className={styles.sectionTitle}>Instagram</h2>
+          <h2 className="sectionTitle_2 text-center">Instagram</h2>
           <div className={styles.instaGrid}>
             <img src="/images/blue-tringle/insta-1.jpg" alt="Instagram 1" />
             <img src="/images/blue-tringle/insta-2.png" alt="Instagram 2" />

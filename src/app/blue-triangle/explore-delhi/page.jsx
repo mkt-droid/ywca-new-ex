@@ -128,7 +128,7 @@ const ExploreDelhi = () => {
       {/* GLIMPSES OF DELHI */}
       <section className={styles.glimpsesSection}>
         <div className="container">
-          <h2 className={styles.sectionTitle}>Glimpses Of Delhi</h2>
+          <h2 className="sectionTitle_2 text-center">Glimpses Of Delhi</h2>
 
           <div className={styles.glimpsesGrid}>
             <div className={styles.glimpsesCard}>
@@ -223,7 +223,7 @@ const ExploreDelhi = () => {
       {/* INSTAGRAM SECTION */}
       <section className={styles.instaSection}>
         <div className="container">
-          <h2 className={styles.sectionTitle} style={{ marginTop: 0 }}>Instagram</h2>
+          <h2 className="sectionTitle_2 text-center" style={{ marginTop: 0 }}>Instagram</h2>
           <div className={styles.instaGrid}>
             <img src="/images/blue-tringle/insta-1.jpg" alt="Instagram 1" />
             <img src="/images/blue-tringle/insta-2.png" alt="Instagram 2" />

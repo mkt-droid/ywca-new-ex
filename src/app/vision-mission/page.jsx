@@ -16,7 +16,7 @@ const VisionMission = () => {
       <section className={styles.visionSection}>
         <div className="container">
           <div className={styles.contentWrapper}>
-            <h2 className={styles.heading}>
+            <h2 className="sectionTitle_2 text-center">
               AN INTERNATIONAL MOVEMENT MOTIVATED BY ITS <br /> CONCERN FOR WOMEN
             </h2>
 
