@@ -1,41 +1,23 @@
 import React from 'react';
 import Head from 'next/head';
-import SideNavBanner from '@/components/partials/SideNavBanner';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Privacy Policy | YWCA Delhi Community Development Programme',
+  title: 'Privacy Policy | YWCA of Delhi',
 };
 
 export default function PrivacyPolicyPage() {
-  const bannerNavItems = [
-    { title: 'Overview', icon: 'bi-house-door', link: '/community-development-programme' },
-    { title: 'ABOUT US', icon: 'bi-info-circle', link: '/community-development-programme/about-us' },
-    { title: 'PROGRAMS', icon: 'bi-diagram-3', link: '/community-development-programme/programs' },
-    { title: 'IMPACT', icon: 'bi-graph-up-arrow', link: '/community-development-programme/impact' },
-    { title: 'STORIES', icon: 'bi-book', link: '/community-development-programme/stories' },
-    { title: 'GET INVOLVED', icon: 'bi-person-raised-hand', link: '/community-development-programme/get-involved' }
-  ];
 
   return (
     <>
       <main style={{ backgroundColor: '#f8f9fa', paddingBottom: '100px' }}>
-        <SideNavBanner
-          height="360px"
-          title={<>PRIVACY<br />POLICY</>}
-          bgImage="/images/cdp/main-banner.jpg"
-          navItems={bannerNavItems}
-          activePath="/community-development-programme/privacy-policy"
-          overlayStyle={{ background: 'linear-gradient(to right, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.5) 40%, rgba(0,0,0,0.1) 100%)', zIndex: 1 }}
-        />
-
-        <section className="container mt-5">
+        <section className="container mt-4">
           <div className="bg-white p-4 p-md-5 rounded shadow-sm border" style={{ borderColor: '#eaeaea' }}>
             <h1 className="sectionTitle_1 mb-3">Privacy Policy</h1>
-            <p className="text-muted mb-4">Last updated: [Date]</p>
+            <p className="text-muted mb-4">Last updated: August 10, 2026</p>
             
             <p className="mb-4">
-              YWCA of Delhi (“we,” “us,” “our”), through its Community Development Programme, is committed to protecting the privacy of everyone who interacts with us — donors, volunteers, partners, beneficiaries, and website visitors. This Privacy Policy explains what information we collect, how we use it, and the choices you have.
+              YWCA of Delhi (“we,” “us,” “our”) is committed to protecting the privacy of everyone who interacts with us — donors, volunteers, partners, beneficiaries, and website visitors. This Privacy Policy explains what information we collect, how we use it, and the choices you have.
             </p>
             <div className="alert alert-warning mb-5">
               This is a template. Please have it reviewed by a qualified legal professional familiar with Indian data protection law (including the Digital Personal Data Protection Act, 2023) before publishing.
@@ -75,7 +57,7 @@ export default function PrivacyPolicyPage() {
             <p className="mb-4">Our website uses cookies to enhance browsing experience and analyse site traffic. You can disable cookies through your browser settings; some site features may not function fully if you do.</p>
 
             <h3 className="sectionTitle_3 mb-3">7. Your Rights</h3>
-            <p className="mb-4">You may request access to, correction of, or deletion of your personal data by contacting <a href="mailto:privacy@ywcadelhicdp.org" className="text-decoration-none text-dark fw-medium">privacy@ywcadelhicdp.org</a>. You may unsubscribe from communications at any time via the link in our emails or by contacting us directly.</p>
+            <p className="mb-4">You may request access to, correction of, or deletion of your personal data by contacting <a href="mailto:privacy@ywcadelhi.org" className="text-decoration-none text-dark fw-medium">privacy@ywcadelhi.org</a>. You may unsubscribe from communications at any time via the link in our emails or by contacting us directly.</p>
 
             <h3 className="sectionTitle_3 mb-3">8. Children’s Privacy</h3>
             <p className="mb-4">We do not knowingly collect personal information from children through this website. Information about minor beneficiaries is collected only through our formal programme consent processes involving parents/guardians.</p>
@@ -84,7 +66,7 @@ export default function PrivacyPolicyPage() {
             <p className="mb-4">We may update this Privacy Policy periodically. The “last updated” date at the top reflects the most recent revision.</p>
 
             <h3 className="sectionTitle_3 mb-3">10. Contact Us</h3>
-            <p className="mb-4">For privacy-related questions, contact <a href="mailto:privacy@ywcadelhicdp.org" className="text-decoration-none text-dark fw-medium">privacy@ywcadelhicdp.org</a>.</p>
+            <p className="mb-4">For privacy-related questions, contact <a href="mailto:privacy@ywcadelhi.org" className="text-decoration-none text-dark fw-medium">privacy@ywcadelhi.org</a>.</p>
           </div>
         </section>
       </main>

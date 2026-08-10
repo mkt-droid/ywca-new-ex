@@ -268,3 +268,27 @@
   color: #444;
   margin-bottom: 25px;
 }
+
+.categoryPill {
+  font-size: 0.9rem;
+  cursor: pointer;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  color: #212529;
+  transition: all 0.3s ease;
+}
+
+.categoryPill:hover {
+  background-color: #242278;
+  border-color: #242278;
+  color: #fff;
+}
+
+.categoryPillActive {
+  font-size: 0.9rem;
+  cursor: pointer;
+  background-color: #242278;
+  border: 1px solid #242278;
+  color: #fff;
+  transition: all 0.3s ease;
+}

@@ -110,10 +110,10 @@
 .categoryBtn {
   background-color: transparent;
   color: #182660;
-  border: 2px solid #182660;
+  border: 1px solid #182660;
   border-radius: 30px;
   padding: 8px 24px;
-  font-weight: 600;
+  font-weight: 500;
   transition: all 0.3s ease;
 }
 
@@ -124,10 +124,10 @@
 .categoryBtnActive {
   background-color: #182660;
   color: #ffffff;
-  border: 2px solid #182660;
+  border: 1px solid #182660;
   border-radius: 30px;
   padding: 8px 24px;
-  font-weight: 600;
+  font-weight: 500;
   transition: all 0.3s ease;
 }
 

@@ -7,7 +7,8 @@ import styles from './page.module.css';
 import SideNavBanner from '@/components/partials/SideNavBanner';
 import ImpactStats from '@/components/partials/ImpactStats';
 import OurValues from '@/components/partials/OurValues';
-import NewsCarousel from '@/components/partials/NewsCarousel';
+import CdpBlogSection from '@/components/partials/CdpBlogSection';
+import { cdpBlogData } from '@/data/cdpBlogData';
 
 export default function CDPOverviewPage() {
   const threeWaysValues = [
@@ -109,36 +110,7 @@ export default function CDPOverviewPage() {
     }
   ];
 
-  const blogData = [
-    {
-      id: 1,
-      title: "Why Financial Literacy Is the First Step to Real Independence — Not the Last",
-      excerpt: "When we started our Self-Help Group programme, we assumed women needed capital first and financial knowledge later. Five years and 180 SHGs on, we’ve learned it’s the other way around. Here’s what changed our approach — and what it means for the women we work with.",
-      image: "/images/cdp/main-banner.jpg",
-      slug: "#"
-    },
-    {
-      id: 2,
-      title: "Inside a CDP Health Camp: What 150 Women in One Morning Taught Us About Access",
-      excerpt: "Our latest health camp in Madanpur Khadar screened 150 women in a single morning. The lines were long, but the real story was in what women asked our volunteer doctors when they finally had someone to ask.",
-      image: "/images/cdp/main-banner.jpg",
-      slug: "#"
-    },
-    {
-      id: 3,
-      title: "Meet the Volunteer Who Turned a 3-Month Commitment Into 3 Years",
-      excerpt: "[Name] came to us as a college student looking for a resume line. She’s now our longest-serving literacy volunteer. Her story is a reminder that consistency, not credentials, is what these communities need most.",
-      image: "/images/cdp/main-banner.jpg",
-      slug: "#"
-    },
-    {
-      id: 4,
-      title: "Our FY 2024–25 Annual Report Is Here — Here’s What the Numbers Really Tell Us",
-      excerpt: "Beyond the headline figures, our latest annual report reveals where our model is working best — and where we’re still adapting. A transparent look at a year of work.",
-      image: "/images/cdp/main-banner.jpg",
-      slug: "#"
-    }
-  ];
+
 
   return (
     <>
@@ -171,6 +143,8 @@ export default function CDPOverviewPage() {
                 <Link href="/fund-raising-publicity/donate" className={styles.primaryBtn}>Donate Now</Link>
                 <Link href="/fund-raising-publicity/volunteer-and-partnership" className={styles.primaryBtn}>Volunteer With Us</Link>
                 <Link href="/community-development-programme/csr" className={styles.primaryBtn}>Partner With Us (CSR)</Link>
+                <Link href="/community-development-programme/get-involved" className={styles.primaryBtn}>Get Involved</Link>
+                <Link href="/community-development-programme/contact" className={styles.primaryBtn}>Contact Us</Link>
               </div>
               <p className={styles.supportingLine} style={{ textAlign: 'center', marginTop: '15px' }}>
                 ₹500 can sponsor one woman’s tailoring training kit for a month. <Link href="/community-development-programme/impact">See what your gift can do →</Link>
@@ -267,7 +241,7 @@ export default function CDPOverviewPage() {
                 <li><i className="bi bi-check-circle-fill" style={{ color: '#a212b5', marginTop: '3px' }}></i> <span>12A & 80G registered - your donations are tax-deductible</span></li>
                 <li><i className="bi bi-check-circle-fill" style={{ color: '#a212b5', marginTop: '3px' }}></i> <span>FCRA compliant for international contributions</span></li>
                 <li><i className="bi bi-check-circle-fill" style={{ color: '#a212b5', marginTop: '3px' }}></i> <span>Annual reports and audited financial statements published every year</span></li>
-                <li><i className="bi bi-check-circle-fill" style={{ color: '#a212b5', marginTop: '3px' }}></i> <span>[XX]% of every rupee you donate goes directly to programmes on the ground</span></li>
+                <li><i className="bi bi-check-circle-fill" style={{ color: '#a212b5', marginTop: '3px' }}></i> <span>Every rupee you donate goes directly to programmes on the ground</span></li>
               </ul>
               <div className="mt-5 text-center">
                 <Link href="#" className={styles.primaryBtn}>View Our Financial Transparency →</Link>
@@ -283,27 +257,7 @@ export default function CDPOverviewPage() {
           </section>
 
           {/* Blog Section */}
-          <section className="container mt-5 pt-4 mb-5 pb-5">
-            <h2 className="sectionTitle_2 text-center d-block mb-3">Stories, Updates, and Lessons</h2>
-
-            <div className="d-flex flex-wrap justify-content-center gap-2 mb-5">
-              {['Beneficiary Stories', 'Programme Updates', 'Events & Camps', 'Volunteer Voices', 'Policy & Advocacy', 'Annual Reports'].map((category, idx) => (
-                <span key={idx} className="badge rounded-pill bg-light text-dark border px-3 py-2 fw-medium" style={{ fontSize: '0.9rem', cursor: 'pointer' }}>
-                  {category}
-                </span>
-              ))}
-            </div>
-
-            <div className="mt-4">
-              <NewsCarousel newsData={blogData} />
-            </div>
-
-            <div className="text-center mt-5">
-              <Link href="/news" className={styles.primaryBtn}>
-                View All <i className="bi bi-arrow-right"></i>
-              </Link>
-            </div>
-          </section>
+          <CdpBlogSection blogData={cdpBlogData} />
 
 
 

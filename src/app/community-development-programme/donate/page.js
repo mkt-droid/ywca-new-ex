@@ -15,8 +15,7 @@ export default function CDPDonatePage() {
     { title: 'ABOUT US', icon: 'bi-info-circle', link: '/community-development-programme/about-us' },
     { title: 'PROGRAMS', icon: 'bi-diagram-3', link: '/community-development-programme/programs' },
     { title: 'IMPACT', icon: 'bi-graph-up-arrow', link: '/community-development-programme/impact' },
-    { title: 'STORIES', icon: 'bi-book', link: '/community-development-programme/stories' },
-    { title: 'GET INVOLVED', icon: 'bi-person-raised-hand', link: '/community-development-programme/get-involved' }
+    { title: 'STORIES', icon: 'bi-book', link: '/community-development-programme/stories' }
   ];
 
   const impactTiers = [
@@ -229,7 +228,7 @@ export default function CDPDonatePage() {
                   </h2>
                   <div id="faq2" className="accordion-collapse collapse" data-bs-parent="#donorFaqAccordion">
                     <div className="accordion-body" style={{ color: '#444' }}>
-                      [XX]% of programme donations go directly to on-ground work; the remainder supports essential monitoring, staff training, and governance that keep our programmes effective and accountable.
+                      Programme donations go directly to on-ground work; the remainder supports essential monitoring, staff training, and governance that keep our programmes effective and accountable.
                     </div>
                   </div>
                 </div>

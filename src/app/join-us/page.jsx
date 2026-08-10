@@ -17,13 +17,13 @@ export default function JoinUsPage() {
       title: 'Be a Volunteer',
       desc: 'Give your time and skills to make a real positive impact in society.',
       icon: 'bi-people',
-      link: '/join-us/be-a-volunteer'
+      link: '/fund-raising-publicity/volunteer-and-partnership'
     },
     {
       title: 'Donate us',
       desc: 'Your valuable contributions help us sustain and expand our social initiatives.',
       icon: 'bi-box2-heart',
-      link: '/fund-raising-publicity'
+      link: '/fund-raising-publicity/donate'
     },
     {
       title: 'Work With Us',

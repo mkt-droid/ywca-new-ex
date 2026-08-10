@@ -1,38 +1,20 @@
 import React from 'react';
 import Head from 'next/head';
-import SideNavBanner from '@/components/partials/SideNavBanner';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Terms of Use | YWCA Delhi Community Development Programme',
+  title: 'Terms of Use | YWCA of Delhi',
 };
 
 export default function TermsOfUsePage() {
-  const bannerNavItems = [
-    { title: 'Overview', icon: 'bi-house-door', link: '/community-development-programme' },
-    { title: 'ABOUT US', icon: 'bi-info-circle', link: '/community-development-programme/about-us' },
-    { title: 'PROGRAMS', icon: 'bi-diagram-3', link: '/community-development-programme/programs' },
-    { title: 'IMPACT', icon: 'bi-graph-up-arrow', link: '/community-development-programme/impact' },
-    { title: 'STORIES', icon: 'bi-book', link: '/community-development-programme/stories' },
-    { title: 'GET INVOLVED', icon: 'bi-person-raised-hand', link: '/community-development-programme/get-involved' }
-  ];
 
   return (
     <>
       <main style={{ backgroundColor: '#f8f9fa', paddingBottom: '100px' }}>
-        <SideNavBanner
-          height="360px"
-          title={<>TERMS<br />OF USE</>}
-          bgImage="/images/cdp/main-banner.jpg"
-          navItems={bannerNavItems}
-          activePath="/community-development-programme/terms-of-use"
-          overlayStyle={{ background: 'linear-gradient(to right, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.5) 40%, rgba(0,0,0,0.1) 100%)', zIndex: 1 }}
-        />
-
-        <section className="container mt-5">
+        <section className="container mt-4">
           <div className="bg-white p-4 p-md-5 rounded shadow-sm border" style={{ borderColor: '#eaeaea' }}>
             <h1 className="sectionTitle_1 mb-3">Terms of Use</h1>
-            <p className="text-muted mb-4">Last updated: [Date]</p>
+            <p className="text-muted mb-4">Last updated: August 10, 2026</p>
             
             <div className="alert alert-warning mb-5">
               This is a template. Please have it reviewed by a qualified legal professional before publishing.
@@ -42,7 +24,7 @@ export default function TermsOfUsePage() {
             <p className="mb-4">By accessing or using this website, you agree to be bound by these Terms of Use. If you do not agree, please do not use this website.</p>
 
             <h3 className="sectionTitle_3 mb-3">2. About This Website</h3>
-            <p className="mb-4">This website is operated by YWCA of Delhi for its Community Development Programme, to share information about our work, facilitate donations, volunteering, and partnerships, and engage with the public.</p>
+            <p className="mb-4">This website is operated by YWCA of Delhi, to share information about our work, facilitate donations, volunteering, and partnerships, and engage with the public.</p>
 
             <h3 className="sectionTitle_3 mb-3">3. Use of Website Content</h3>
             <p className="mb-4">All content on this website — including text, images, logos, and design — is the property of YWCA of Delhi unless otherwise credited, and is protected under applicable intellectual property laws. You may share content for non-commercial purposes with proper attribution. Reproduction for commercial use requires prior written permission.</p>
@@ -74,7 +56,7 @@ export default function TermsOfUsePage() {
             <p className="mb-4">We may revise these Terms periodically. Continued use of the website after changes constitutes acceptance of the revised Terms.</p>
 
             <h3 className="sectionTitle_3 mb-3">11. Contact</h3>
-            <p className="mb-4">For questions about these Terms, contact <a href="mailto:info@ywcadelhicdp.org" className="text-decoration-none text-dark fw-medium">info@ywcadelhicdp.org</a>.</p>
+            <p className="mb-4">For questions about these Terms, contact <a href="mailto:info@ywcadelhi.org" className="text-decoration-none text-dark fw-medium">info@ywcadelhi.org</a>.</p>
           </div>
         </section>
       </main>

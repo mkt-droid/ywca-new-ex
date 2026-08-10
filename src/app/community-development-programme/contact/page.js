@@ -15,8 +15,7 @@ export default function CDPContactPage() {
     { title: 'ABOUT US', icon: 'bi-info-circle', link: '/community-development-programme/about-us' },
     { title: 'PROGRAMS', icon: 'bi-diagram-3', link: '/community-development-programme/programs' },
     { title: 'IMPACT', icon: 'bi-graph-up-arrow', link: '/community-development-programme/impact' },
-    { title: 'STORIES', icon: 'bi-book', link: '/community-development-programme/stories' },
-    { title: 'GET INVOLVED', icon: 'bi-person-raised-hand', link: '/community-development-programme/get-involved' }
+    { title: 'STORIES', icon: 'bi-book', link: '/community-development-programme/stories' }
   ];
 
   return (
@@ -53,15 +52,15 @@ export default function CDPContactPage() {
                       <i className="bi bi-envelope"></i>
                     </div>
                     <div className={styles.contactInfo}>
-                      <span className="mb-1"><strong>General enquiries:</strong> <br/><a href="mailto:info@ywcadelhicdp.org" className="text-muted text-decoration-none small">info@ywcadelhicdp.org</a></span>
-                      <span className="mb-1"><strong>Donations & donor relations:</strong> <br/><a href="mailto:donate@ywcadelhicdp.org" className="text-muted text-decoration-none small">donate@ywcadelhicdp.org</a></span>
-                      <span className="mb-1"><strong>Volunteering:</strong> <br/><a href="mailto:volunteer@ywcadelhicdp.org" className="text-muted text-decoration-none small">volunteer@ywcadelhicdp.org</a></span>
-                      <span className="mb-1"><strong>CSR & partnerships:</strong> <br/><a href="mailto:csr@ywcadelhicdp.org" className="text-muted text-decoration-none small">csr@ywcadelhicdp.org</a></span>
-                      <span><strong>Media enquiries:</strong> <br/><a href="mailto:media@ywcadelhicdp.org" className="text-muted text-decoration-none small">media@ywcadelhicdp.org</a></span>
+                      <span className="mb-1"><strong>General enquiries:</strong> <br /><a href="mailto:info@ywcadelhicdp.org" className="text-muted text-decoration-none small">info@ywcadelhicdp.org</a></span>
+                      <span className="mb-1"><strong>Donations & donor relations:</strong> <br /><a href="mailto:donate@ywcadelhicdp.org" className="text-muted text-decoration-none small">donate@ywcadelhicdp.org</a></span>
+                      <span className="mb-1"><strong>Volunteering:</strong> <br /><a href="mailto:volunteer@ywcadelhicdp.org" className="text-muted text-decoration-none small">volunteer@ywcadelhicdp.org</a></span>
+                      <span className="mb-1"><strong>CSR & partnerships:</strong> <br /><a href="mailto:csr@ywcadelhicdp.org" className="text-muted text-decoration-none small">csr@ywcadelhicdp.org</a></span>
+                      <span><strong>Media enquiries:</strong> <br /><a href="mailto:media@ywcadelhicdp.org" className="text-muted text-decoration-none small">media@ywcadelhicdp.org</a></span>
                     </div>
                   </div>
 
-                  <div className={styles.contactCard}>
+                  <div className={styles.contactCard} style={{ alignItems: 'center !important' }}>
                     <div className={styles.iconCircle}>
                       <i className="bi bi-telephone"></i>
                     </div>
@@ -75,8 +74,8 @@ export default function CDPContactPage() {
                       <i className="bi bi-geo-alt"></i>
                     </div>
                     <div className={styles.contactInfo}>
-                      <span className="mb-2"><strong>Office address:</strong> <br/><span className="text-muted fw-normal">YWCA of Delhi, Community Development Programme, 1 Ashoka Road, New Delhi – 110001</span></span>
-                      <span><strong>Office hours:</strong> <br/><span className="text-muted fw-normal">Monday–Saturday, 9:30 AM – 5:30 PM</span></span>
+                      <span className="mb-2"><strong>Office address:</strong> <br /><span className="text-muted fw-normal">YWCA of Delhi, Community Development Programme, 1 Ashoka Road, New Delhi – 110001</span></span>
+                      <span><strong>Office hours:</strong> <br /><span className="text-muted fw-normal">Monday–Saturday, 9:30 AM – 5:30 PM</span></span>
                     </div>
                   </div>
 
@@ -90,7 +89,7 @@ export default function CDPContactPage() {
                     <input type="text" placeholder="Full Name*" className={styles.formInput} required />
                     <input type="email" placeholder="Email*" className={styles.formInput} required />
                     <input type="tel" placeholder="Phone" className={styles.formInput} />
-                    
+
                     <select className={styles.formSelect} required defaultValue="">
                       <option value="" disabled>I’m interested in...</option>
                       <option value="Donating">Donating</option>
@@ -105,7 +104,7 @@ export default function CDPContactPage() {
                     <button type="button" className={styles.submitBtn}>Submit</button>
                   </form>
                 </div>
-                
+
                 <div className="mt-5 pt-2">
                   <h5 className="mb-3 fw-bold" style={{ color: '#2e1c8a' }}>Follow Us</h5>
                   <div className="d-flex gap-2">

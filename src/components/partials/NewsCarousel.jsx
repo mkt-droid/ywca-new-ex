@@ -4,7 +4,7 @@ import Link from 'next/link';
 import styles from './NewsCarousel.module.css';
 import pageStyles from '@/app/education-institute/page.module.css';
 
-export default function NewsCarousel({ newsData }) {
+export default function NewsCarousel({ newsData, linkPrefix = "/news" }) {
   const scrollRef = useRef(null);
 
   const scrollLeft = () => {
@@ -36,7 +36,7 @@ export default function NewsCarousel({ newsData }) {
                 {news.excerpt && (
                   <p style={{ fontSize: '0.85rem', color: '#666', marginTop: '10px', marginBottom: '10px', display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{news.excerpt}</p>
                 )}
-                <Link href={`/news/${news.slug}`} className={pageStyles.newsViewMore}>
+                <Link href={`${linkPrefix}/${news.slug}`} className={pageStyles.newsViewMore}>
                   View more <i className="bi bi-arrow-right"></i>
                 </Link>
               </div>

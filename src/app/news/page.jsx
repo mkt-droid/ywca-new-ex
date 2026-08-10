@@ -2,28 +2,40 @@
 import InnerBanner from "@/components/partials/InnerBanner"
 import styles from '@/styles/News.module.css'
 import Link from "next/link"
-import { useRef, useEffect, useState } from "react"
+import { useRouter, useSearchParams } from "next/navigation"
 import newsData from '@/data/news.json'
+import { Suspense, useRef, useEffect, useState } from "react"
 
-const News = () => {
+const NewsContent = () => {
   const sectionRef = useRef(null)
+  const router = useRouter()
+  const searchParams = useSearchParams()
+  const categoryParam = searchParams ? searchParams.get('category') : null
+  
   const [selectedCategory, setSelectedCategory] = useState('All')
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const params = new URLSearchParams(window.location.search);
-      const category = params.get('category');
-      if (category) {
-        setSelectedCategory(category);
-      }
+    if (categoryParam) {
+      setSelectedCategory(categoryParam)
+    } else {
+      setSelectedCategory('All')
     }
-  }, [])
+  }, [categoryParam])
 
   const categories = ['All', ...new Set(newsData.map(item => item.category))]
 
   const filteredNews = selectedCategory === 'All'
     ? newsData
     : newsData.filter(item => item.category === selectedCategory)
+
+  const handleCategoryClick = (cat) => {
+    setSelectedCategory(cat)
+    if (cat === 'All') {
+      router.push('/news', { scroll: false })
+    } else {
+      router.push(`/news?category=${encodeURIComponent(cat)}`, { scroll: false })
+    }
+  }
 
   // ── Same IntersectionObserver logic as BoardOfManagement ──
   useEffect(() => {
@@ -44,7 +56,7 @@ const News = () => {
     const cards = sectionRef.current?.querySelectorAll('.' + styles.animateCard)
     cards?.forEach((card) => observer.observe(card))
     return () => observer.disconnect()
-  }, [])
+  }, [selectedCategory])
 
   return (
     <>
@@ -73,7 +85,7 @@ const News = () => {
               <button
                 key={idx}
                 className={selectedCategory === cat ? styles.categoryBtnActive : styles.categoryBtn}
-                onClick={() => setSelectedCategory(cat)}
+                onClick={() => handleCategoryClick(cat)}
               >
                 {cat}
               </button>
@@ -122,6 +134,14 @@ const News = () => {
         </div>
       </section>
     </>
+  )
+}
+
+const News = () => {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <NewsContent />
+    </Suspense>
   )
 }
 

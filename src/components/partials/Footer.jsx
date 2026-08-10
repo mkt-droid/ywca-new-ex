@@ -82,6 +82,12 @@ const Footer = () => {
                   <li>
                     <a href="/news">News & Updates</a>
                   </li>
+                  <li>
+                    <Link href="/privacy-policy">Privacy Policy</Link>
+                  </li>
+                  <li>
+                    <Link href="/terms-of-use">Terms of Use</Link>
+                  </li>
                 </ul>
                 <div className="subscription-box">
                   <label>Subscribe to Newsletter</label>
