@@ -60,7 +60,7 @@ const BlueTriangle = () => {
             className={styles.stamp}
           />
           <h1 className={styles.heroTitle}>
-            Where<br />Restrained Luxury<br />Shines
+            Where Restrained <br /> Luxury Shines
           </h1>
         </div>
       </SideNavBanner>

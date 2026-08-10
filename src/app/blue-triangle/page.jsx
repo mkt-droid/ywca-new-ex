@@ -60,7 +60,7 @@ const BlueTriangle = () => {
             className={styles.stamp}
           />
           <h1 className={styles.heroTitle}>
-            Your<br />Preferred Choice<br />In New Delhi
+            Your Preferred Choice<br />In New Delhi
           </h1>
         </div>
       </SideNavBanner>

@@ -2358,9 +2358,28 @@
  .interactiveCard {
    transition: transform 0.3s ease, box-shadow 0.3s ease;
  }
+
  .interactiveCard:hover {
    transform: translateY(-5px);
-   box-shadow: 0 10px 20px rgba(0,0,0,0.12) !important;
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12) !important;
+ }
+
+ .bg-primary {
+   background-color: #090b84 !important;
+ }
+
+ .primaryBtn {
+   color: #fff;
+   background-color: #242278;
+   border: none;
+   border-radius: 30px;
+   align-items: center;
+   gap: 8px;
+   padding: 12px 30px;
+   font-weight: 400;
+   text-decoration: none;
+   transition: all .3s;
+   display: inline-flex;
  }
 
  .sectionTitle_1 {

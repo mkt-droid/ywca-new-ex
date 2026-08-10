@@ -119,13 +119,13 @@ const Footer = () => {
         </div>
       </div>
       <div className="floating-socials">
-        <a href="http://www.facebook.com/YWCA-Delhi-240739709322431/" target="_blank" className="soc-icon">
+        <a href="https://www.facebook.com/YWCAOFDELHI/" target="_blank" className="soc-icon">
           <img src="/images/facebook.png" alt="icon" />
         </a>
-        <a href="#" target="_blank" className="soc-icon">
+        <a href="https://www.linkedin.com/in/young-women-christian-association-of-delhi-42802a131/" target="_blank" className="soc-icon">
           <img src="/images/linkedin.png" alt="icon" />
         </a>
-        <a href="#" target="_blank" className="soc-icon">
+        <a href="https://www.instagram.com/ywcaofdelhi" target="_blank" className="soc-icon">
           <img src="/images/instagram.png" alt="icon" />
         </a>
       </div>
@@ -137,14 +137,14 @@ const Footer = () => {
             <div className="col-lg-4">
               <div className="social-row">
 
-                <a href="http://www.facebook.com/YWCA-Delhi-240739709322431/" target="_blank" className="soc-icon">
+                <a href="https://www.facebook.com/YWCAOFDELHI/" target="_blank" className="soc-icon">
                   <img src="/images/facebook.png" alt="icon" />
                 </a>
-                <a href="#" className="soc-icon" target="_blank">
+                <a href="https://www.linkedin.com/in/young-women-christian-association-of-delhi-42802a131/" className="soc-icon" target="_blank">
                   <img src="/images/linkedin.png" alt="icon" />
                 </a>
 
-                <a href="#" className="soc-icon" target="_blank">
+                <a href="https://www.instagram.com/ywcaofdelhi" className="soc-icon" target="_blank">
                   <img src="/images/instagram.png" alt="icon" />
                 </a>
               </div>

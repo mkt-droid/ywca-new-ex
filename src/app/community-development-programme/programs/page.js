@@ -22,7 +22,7 @@ export default function CDPProgramsPage() {
       id: 1,
       title: "Education & Literacy",
       tagline: "Because independence starts with being able to read your own life.",
-      thumbnail: "/images/Community-development.jpg",
+      thumbnail: "/images/cdp/Program-Education.jpg",
       problem: "Many women in Delhi’s settlements were pulled out of school early - for marriage, housework, or to help earn. Without basic literacy and numeracy, they remain dependent on others for the simplest transactions.",
       solutions: [
         "Non-formal adult literacy classes (3 months, evening batches for working women)",
@@ -44,7 +44,7 @@ export default function CDPProgramsPage() {
       id: 2,
       title: "Skill Building & Livelihoods",
       tagline: "A skill is the shortest distance between hardship and hope.",
-      thumbnail: "/images/01-Banner-Vision-Mission.jpg",
+      thumbnail: "/images/cdp/Program-Skill.jpg",
       problem: "Even when women want to work, they often lack a marketable skill, capital to start something small, or the confidence to seek employment outside the home.",
       solutions: [
         "Tailoring & garment-making (3-6 month certified courses)",
@@ -68,7 +68,7 @@ export default function CDPProgramsPage() {
       id: 3,
       title: "Health & Well-being",
       tagline: "A healthy woman can build a healthy home - and a healthy community.",
-      thumbnail: "/images/high-1.jpg",
+      thumbnail: "/images/cdp/Program-Health.jpg",
       problem: "Poor sanitation, limited health literacy, and stigma around reproductive and mental health leave women managing serious issues silently.",
       solutions: [
         "Menstrual and reproductive health awareness sessions",
@@ -92,7 +92,7 @@ export default function CDPProgramsPage() {
       id: 4,
       title: "Leadership & Rights",
       tagline: "She doesn’t just need a seat at the table. She needs to build the table.",
-      thumbnail: "/images/01-Banner-insights-pub.jpg",
+      thumbnail: "/images/cdp/Programs-Leadership.jpg",
       problem: "Women in urban settlements are rarely consulted on decisions that affect their own communities - from local infrastructure to safety to household finances.",
       solutions: [
         "Self-Help Group (SHG) formation and financial literacy",

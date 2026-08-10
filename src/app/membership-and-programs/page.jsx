@@ -103,22 +103,22 @@ export default function MembershipDepartmentPage() {
               <div className="col-lg-6 col-md-12 mb-5 mb-lg-0 pr-lg-5">
                 <h2 className={`${styles.formGroupTitle} mt-0`}>New Membership Forms</h2>
                 <div className={styles.pdfButtonsContainer}>
-                  <a href="/pdf-forms/Form-Associate-Member.pdf" target="_blank" rel="noopener noreferrer" className={styles.pdfButton}>
-                    <i className={`bi bi-file-earmark-pdf-fill ${styles.pdfIcon}`}></i> <span>Associate Member</span>
-                  </a>
-                  <a href="/pdf-forms/Electoral%20Members.pdf" target="_blank" rel="noopener noreferrer" className={styles.pdfButton}>
-                    <i className={`bi bi-file-earmark-pdf-fill ${styles.pdfIcon}`}></i> <span>Electoral Members</span>
-                  </a>
+                  <Link href="/membership-and-programs/associate-member-form" className={styles.pdfButton}>
+                    <i className={`bi bi-file-earmark-text-fill ${styles.pdfIcon}`}></i> <span>Associate Member</span>
+                  </Link>
+                  <Link href="/membership-and-programs/electoral-member-form" className={styles.pdfButton}>
+                    <i className={`bi bi-file-earmark-text-fill ${styles.pdfIcon}`}></i> <span>Electoral Members</span>
+                  </Link>
                 </div>
 
                 <h2 className={styles.formGroupTitle}>Renewal of Membership</h2>
                 <div className={styles.pdfButtonsContainer}>
-                  <a href="/pdf-forms/Associate%20Renewal.pdf" target="_blank" rel="noopener noreferrer" className={styles.pdfButton}>
-                    <i className={`bi bi-file-earmark-pdf-fill ${styles.pdfIcon}`}></i> <span>Associate Renewal</span>
-                  </a>
-                  <a href="/pdf-forms/Electoral-Renewal.pdf" target="_blank" rel="noopener noreferrer" className={styles.pdfButton}>
-                    <i className={`bi bi-file-earmark-pdf-fill ${styles.pdfIcon}`}></i> <span>Electoral Renewal</span>
-                  </a>
+                  <Link href="/membership-and-programs/associate-renewal-form" className={styles.pdfButton}>
+                    <i className={`bi bi-file-earmark-text-fill ${styles.pdfIcon}`}></i> <span>Associate Renewal</span>
+                  </Link>
+                  <Link href="/membership-and-programs/electoral-renewal-form" className={styles.pdfButton}>
+                    <i className={`bi bi-file-earmark-text-fill ${styles.pdfIcon}`}></i> <span>Electoral Renewal</span>
+                  </Link>
                 </div>
               </div>
               <div className="col-lg-6 col-md-12 text-center position-relative">
