@@ -5,7 +5,7 @@
 
 /* ── Section wrapper ── */
 .newsSection {
-  background-color: #B19A66;
+  background-color: #f8f9fa;
   padding: 60px 0 80px;
 }
 
@@ -13,7 +13,7 @@
 .sectionTitle {
   font-size: 2rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #182660;
   letter-spacing: 3px;
   text-transform: uppercase;
   text-align: center;
