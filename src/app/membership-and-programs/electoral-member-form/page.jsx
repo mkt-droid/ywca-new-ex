@@ -19,15 +19,15 @@ export default function ElectoralMemberFormPage() {
           <div className="col-lg-8 col-md-10">
             <div className="card shadow-sm">
               <div className="card-header bg-white text-center py-4 border-bottom">
-                <div className="d-flex justify-content-between align-items-start mb-3">
-                  <div className="text-start">
-                    <h1 className="mb-1" style={{ color: '#243a76', fontWeight: 'bold' }}>YWCA OF DELHI</h1>
-                    <p className="mb-0" style={{ fontSize: '14px', fontWeight: 'bold' }}>1, Ashoka Road, New Delhi-110001</p>
-                  </div>
-                  <div className="border border-dark p-2 text-center" style={{ minWidth: '100px' }}>
+                <div className="mb-3 text-center">
+                  <h1 className="mb-1" style={{ color: '#243a76', fontWeight: 'bold' }}>YWCA OF DELHI</h1>
+                  <p className="mb-0" style={{ fontSize: '14px', fontWeight: 'bold' }}>1, Ashoka Road, New Delhi-110001</p>
+                  {/*
+                  <div className="border border-dark p-2 text-center position-absolute top-0 end-0 m-4" style={{ minWidth: '100px' }}>
                     <small className="d-block mb-1">Form No:</small>
                     <span className="fs-5 text-danger">783</span>
                   </div>
+                  */}
                 </div>
                 <img src="/images/logo.png" alt="YWCA Logo" style={{ height: '80px', marginBottom: '15px' }} />
                 <div className="bg-primary text-white py-2 mb-3">
@@ -87,46 +87,39 @@ export default function ElectoralMemberFormPage() {
                   <p className="small text-center text-white bg-primary p-2 fst-italic mb-0">Membership may be withdrawn if it has been found that the member by any act, word or deed has tarnished the image or has gone against the Aim and / or Basis of the YWCA of Delhi.</p>
                 </div>
 
-                <div className="bg-light p-4 rounded border mb-4 text-center">
+                <div className="bg-light p-4 rounded border mb-4">
                   <div className="d-flex align-items-center justify-content-center gap-3 mb-3">
-                    <img src="/images/logo.png" alt="YWCA Logo" style={{ height: '50px' }} />
-                    <div>
+                    <img src="/images/logo.png" alt="YWCA Logo" style={{ height: '60px' }} />
+                    <div className="text-start">
                       <h4 className="mb-0" style={{ color: '#243a76', fontWeight: 'bold' }}>YWCA OF DELHI</h4>
                       <p className="mb-0 small fw-bold">1, Ashoka Road, New Delhi-110001</p>
                     </div>
                   </div>
                   <div className="d-flex justify-content-center align-items-center gap-2 mb-4">
                     <span className="fw-bold">Membership Year</span>
-                    <input type="text" className="form-control form-control-sm border-0 border-bottom border-dark rounded-0 px-0 bg-transparent" style={{ width: '150px' }} />
+                    <input type="text" className="form-control form-control-sm border-0 border-bottom border-dark rounded-0 px-0 bg-transparent" style={{ width: '200px' }} />
                   </div>
-
-                  <div className="d-flex justify-content-between align-items-start text-start mb-3">
-                    <div>
-                      <h4 className="text-danger mb-3">783</h4>
-                      <div className="d-flex gap-4">
-                        <div>
-                          <label className="small mb-0 text-muted">Form No.:</label>
-                          <div className="border-bottom border-dark" style={{ height: '20px', width: '100px' }}></div>
-                        </div>
+                  
+                  <div className="d-flex justify-content-between align-items-end text-start mb-3">
+                    <div className="d-flex flex-column gap-3">
+                      <div className="d-flex align-items-end gap-2">
+                        <label className="small mb-0 text-muted">Receipt No.:</label>
+                        <input type="text" className="form-control form-control-sm border-0 border-bottom border-dark rounded-0 px-0 bg-transparent" style={{ width: '120px' }} />
                       </div>
-                      <div className="d-flex gap-4 mt-2">
-                        <div className="d-flex align-items-end gap-2">
-                          <label className="small mb-0 text-muted">Receipt No.:</label>
-                          <input type="text" className="form-control form-control-sm border-0 border-bottom border-dark rounded-0 px-0 bg-transparent" style={{ width: '100px' }} />
-                        </div>
-                        <div className="d-flex align-items-end gap-2">
-                          <label className="small mb-0 text-muted">Date:</label>
-                          <input type="date" className="form-control form-control-sm border-0 border-bottom border-dark rounded-0 px-0 bg-transparent" style={{ width: '120px' }} />
-                        </div>
+                      <div className="d-flex align-items-end gap-2">
+                        <label className="small mb-0 text-muted">Date:</label>
+                        <input type="date" className="form-control form-control-sm border-0 border-bottom border-dark rounded-0 px-0 bg-transparent" style={{ width: '140px' }} />
                       </div>
                     </div>
-
+                    
                     <div className="d-flex flex-column align-items-end gap-3">
-                      <div className="border border-dark p-2 text-center" style={{ minWidth: '150px' }}>
+                      {/* 
+                      <div className="border border-dark p-2 text-center" style={{ minWidth: '150px', backgroundColor: '#fff' }}>
                         <small className="d-block text-muted">Membership No.</small>
                         <div className="mt-2" style={{ height: '25px' }}></div>
                       </div>
-                      <div style={{ width: '120px', height: '140px', border: '1px solid #ccc', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '10px' }}>
+                      */}
+                      <div style={{ width: '150px', height: '160px', border: '1px solid #ccc', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '10px', backgroundColor: '#fff' }}>
                         <small className="text-muted">Please paste recent passport size photograph here</small>
                       </div>
                     </div>

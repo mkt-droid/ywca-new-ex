@@ -19,14 +19,15 @@ export default function AssociateMemberFormPage() {
           <div className="col-lg-8 col-md-10">
             <div className="card shadow-sm">
               <div className="card-header bg-white text-center py-4 border-bottom">
-                <div className="d-flex justify-content-between align-items-start mb-3">
-                  <div className="text-start">
-                    <h1 className="mb-1" style={{ color: '#243a76', fontWeight: 'bold' }}>YWCA OF DELHI</h1>
-                  </div>
-                  <div className="border border-dark p-2 text-center" style={{ minWidth: '100px' }}>
+                <div className="mb-3 text-center">
+                  <h1 className="mb-1" style={{ color: '#243a76', fontWeight: 'bold' }}>YWCA OF DELHI</h1>
+                  <p className="mb-0" style={{ fontSize: '14px', fontWeight: 'bold' }}>1, Ashoka Road, New Delhi-110001</p>
+                  {/* 
+                  <div className="border border-dark p-2 text-center position-absolute top-0 end-0 m-2" style={{ minWidth: '100px' }}>
                     <small className="d-block mb-1">Form No:</small>
                     <span className="fs-5 text-danger">091</span>
                   </div>
+                  */}
                 </div>
                 <img src="/images/logo.png" alt="YWCA Logo" style={{ height: '80px', marginBottom: '15px' }} />
                 <div className="bg-primary text-white py-2 mb-3">
@@ -93,11 +94,13 @@ export default function AssociateMemberFormPage() {
 
                 <div className="d-flex justify-content-between align-items-start mb-4">
                   <div>
+                    {/*
                     <div className="d-flex align-items-center gap-2 mb-3">
                       <span className="text-muted">Application Form No:</span>
                       <h4 className="text-danger mb-0">091</h4>
                       <div className="border-bottom border-dark" style={{ width: '100px' }}></div>
                     </div>
+                    */}
                     <div className="d-flex gap-4">
                       <div className="d-flex align-items-end gap-2">
                         <label className="mb-0 text-muted">Receipt</label>
