@@ -70,9 +70,9 @@ export default function InsightsPublicationsPage() {
                               <div className={styles.reportCard}>
                                 <div className={styles.thumbnailWrapper}>
                                   <img src={report.thumbnail} alt={report.title} className={styles.thumbnailImage} />
-                                  <div className={styles.pdfIconBadge}>
+                                  {/* <div className={styles.pdfIconBadge}>
                                     <i className="bi bi-file-earmark-pdf-fill"></i>
-                                  </div>
+                                  </div> */}
                                 </div>
                                 <div className={styles.reportInfo}>
                                   <h4 className={styles.reportTitle}>{report.title}</h4>

@@ -106,13 +106,13 @@ export default function DayCarePage() {
           <div className={styles.coreValuesBottom}>
             <div className={`row ${styles.coreValuesRow}`}>
               <div className={`col-md-6 ${styles.coreValuesColLeft}`}>
-                <h4 className={styles.valueTitleLeft}>Children</h4>
+                <h4 className={styles.valueTitleLeft}><i className="bi bi-emoji-smile"></i>Children</h4>
                 <p className={styles.valueTextLeft}>
                   We value each child as a unique individual with distinct talents and abilities. Our approach focuses on age-appropriate development, ensuring healthy and balanced growth.
                 </p>
               </div>
               <div className={`col-md-6 ${styles.coreValuesColRight}`}>
-                <h4 className={styles.valueTitleLeft}>Families</h4>
+                <h4 className={styles.valueTitleLeft}><i className="bi bi-people"></i>Families</h4>
                 <p className={styles.valueTextLeft}>
                   We believe in building strong and positive relationships with families. A collaborative partnership with parents is essential for the successful development of every child.
                 </p>

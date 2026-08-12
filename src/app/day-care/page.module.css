@@ -208,9 +208,37 @@
 .valueTitleLeft {
   font-size: 1.25rem;
   color: #ea648f;
-  font-weight: 500;
-  margin-bottom: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
   text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.valueTitleLeft i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  color: #e6235b;
+  font-size: 1.3rem;
+  margin-right: 15px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.coreValuesColLeft:hover .valueTitleLeft i,
+.coreValuesColRight:hover .valueTitleLeft i {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(230, 35, 91, 0.2);
+  background-color: #e6235b;
+  color: #ffffff;
+  border-color: #e6235b;
 }
 
 .valueText {
@@ -260,11 +288,11 @@
 
 .servicesList li {
   position: relative;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
   font-size: 1.05rem;
-  color: #000000;
-  line-height: 1.6em;
-  font-weight: 400;
+  color: #222;
+  line-height: 1.5;
+  font-weight: 500;
   display: flex;
   align-items: flex-start;
 }
@@ -273,11 +301,26 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #a011af; /* matching theme color */
-  font-size: 1.25rem;
-  margin-right: 14px;
-  margin-top: 2px;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  color: #e6235b;
+  font-size: 1.3rem;
+  margin-right: 18px;
+  margin-top: -2px;
   flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.servicesList li:hover i {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(230, 35, 91, 0.2);
+  background-color: #e6235b;
+  color: #ffffff;
+  border-color: #e6235b;
 }
 
 .servicesList li::before {

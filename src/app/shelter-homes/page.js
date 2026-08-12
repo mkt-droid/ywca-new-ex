@@ -225,15 +225,15 @@ export default function ShelterHomesPage() {
             <div className="row">
               <div className="col-md-6">
                 <ul className={styles.customList}>
-                  <li><i className="bi bi-circle"></i>Safe and secure accommodation with nutritious meals</li>
-                  <li><i className="bi bi-circle"></i>Clothing and essential toiletries</li>
-                  <li><i className="bi bi-circle"></i>Emotional and psychological counselling</li>
+                  <li><i className="bi bi-house-heart-fill"></i>Safe and secure accommodation with nutritious meals</li>
+                  <li><i className="bi bi-bag-heart-fill"></i>Clothing and essential toiletries</li>
+                  <li><i className="bi bi-person-hearts"></i>Emotional and psychological counselling</li>
                 </ul>
               </div>
               <div className="col-md-6">
                 <ul className={styles.customList}>
-                  <li><i className="bi bi-circle"></i>Medical care as needed</li>
-                  <li><i className="bi bi-circle"></i>Skill development and vocational training</li>
+                  <li><i className="bi bi-hospital-fill"></i>Medical care as needed</li>
+                  <li><i className="bi bi-tools"></i>Skill development and vocational training</li>
                 </ul>
               </div>
             </div>
@@ -287,18 +287,18 @@ export default function ShelterHomesPage() {
             <div className="row">
               <div className="col-md-6">
                 <ul className={styles.customList}>
-                  <li><i className="bi bi-circle"></i>Safe and comfortable accommodation with food</li>
-                  <li><i className="bi bi-circle"></i>Clothing and basic necessities</li>
-                  <li><i className="bi bi-circle"></i>Pre-natal (ANC) and post-natal (PNC) medical care</li>
-                  <li><i className="bi bi-circle"></i>Psychiatric consultation (through IHBAS Hospital)</li>
+                  <li><i className="bi bi-house-heart-fill"></i>Safe and comfortable accommodation with food</li>
+                  <li><i className="bi bi-bag-heart-fill"></i>Clothing and basic necessities</li>
+                  <li><i className="bi bi-hospital-fill"></i>Pre-natal (ANC) and post-natal (PNC) medical care</li>
+                  <li><i className="bi bi-person-plus-fill"></i>Psychiatric consultation (through IHBAS Hospital)</li>
                 </ul>
               </div>
               <div className="col-md-6">
                 <ul className={styles.customList}>
-                  <li><i className="bi bi-circle"></i>Individual and group counseling</li>
-                  <li><i className="bi bi-circle"></i>Guidance on child care and parenting</li>
-                  <li><i className="bi bi-circle"></i>Vocational training for financial independence</li>
-                  <li><i className="bi bi-circle"></i>Support for rehabilitation and reintegration</li>
+                  <li><i className="bi bi-people-fill"></i>Individual and group counseling</li>
+                  <li><i className="bi bi-emoji-smile-fill"></i>Guidance on child care and parenting</li>
+                  <li><i className="bi bi-laptop"></i>Vocational training for financial independence</li>
+                  <li><i className="bi bi-signpost-split-fill"></i>Support for rehabilitation and reintegration</li>
                 </ul>
               </div>
             </div>
@@ -314,15 +314,15 @@ export default function ShelterHomesPage() {
               <div className="col-md-6">
                 <h5 className={styles.reqTitle}>Our shelter homes are for:</h5>
                 <ul className={styles.customList}>
-                  <li><i className="bi bi-circle"></i>Women in distress (18 - 60 years)</li>
-                  <li><i className="bi bi-circle"></i>Destitute pregnant and lactating women without shelter (18 year & above)</li>
+                  <li><i className="bi bi-exclamation-triangle-fill"></i>Women in distress (18 - 60 years)</li>
+                  <li><i className="bi bi-person-heart"></i>Destitute pregnant and lactating women without shelter (18 year & above)</li>
                 </ul>
               </div>
               <div className="col-md-6">
                 <h5 className={styles.reqTitle}>Women may:</h5>
                 <ul className={styles.customList}>
-                  <li><i className="bi bi-circle"></i>Approach the shelter directly</li>
-                  <li><i className="bi bi-circle"></i>Be referred by Police, NGOs, or any concerned individual</li>
+                  <li><i className="bi bi-box-arrow-in-right"></i>Approach the shelter directly</li>
+                  <li><i className="bi bi-building-fill-check"></i>Be referred by Police, NGOs, or any concerned individual</li>
                 </ul>
               </div>
             </div>
