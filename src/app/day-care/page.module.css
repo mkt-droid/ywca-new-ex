@@ -638,3 +638,405 @@
   padding: 0.8rem 0.95rem;
   font-size: 0.9rem;
 }
+
+/* NEW REDESIGN STYLES */
+
+/* 1. Services Top Cards */
+.newServicesTopGrid {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.newServiceTopCard {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem 1.2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+  min-width: 250px;
+  max-width: 320px;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.newServiceTopIconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #a011af;
+  font-size: 3rem;
+  /* Much larger icon */
+}
+
+.newServiceTopText {
+  text-align: left;
+}
+
+.newServiceTopTitle {
+  font-size: 1.1rem;
+  color: #a011af;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.newServiceTopDesc {
+  font-size: 0.85rem;
+  color: #555;
+  line-height: 1.3;
+  margin: 0;
+}
+
+/* 2. Core Values Redesign */
+.newCoreValuesContainer {
+  background-color: #faece5;
+  /* Very light peach */
+  border-radius: 12px;
+  /* Re-added border radius */
+  padding: 4rem 3rem;
+  /* More padding */
+  max-width: 1000px;
+  margin: 0 auto 3rem auto;
+  scroll-margin-top: 120px;
+}
+
+.newCoreValuesTitle {
+  color: #a011af;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.newCoreValuesDesc {
+  font-size: 1.1rem;
+  color: #333;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+  /* Larger bottom margin before cards */
+  line-height: 1.6;
+}
+
+.newCoreValuesGrid {
+  display: flex;
+  gap: 2.5rem;
+  /* Larger gap between cards */
+  flex-wrap: wrap;
+}
+
+.newCoreValueCard {
+  background: #fff;
+  border-radius: 12px;
+  /* Smoother border radius */
+  padding: 2rem;
+  /* Significant padding as seen in image */
+  flex: 1;
+  min-width: 300px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  /* Extremely subtle shadow */
+  display: flex;
+  align-items: flex-start;
+  /* Aligns icon to top */
+}
+
+.newCoreValueCardContent {
+  flex: 1;
+}
+
+.newCoreValueCardTitle {
+  font-size: 1.4rem;
+  /* Larger title */
+  color: #ea2064;
+  /* Pinkish-red matching the image */
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.newCoreValueCardIcon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #fcebe9;
+  /* Light pink background for icon */
+  color: #ea2064;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  margin-right: 1.2rem;
+  flex-shrink: 0;
+}
+
+.newCoreValueCardDesc {
+  font-size: 0.9rem;
+  color: #555;
+  /* Dark gray for better readability */
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* 3. Services List Grid */
+.newServicesGridContainer {
+
+  margin: 0 auto 3rem auto;
+  text-align: center;
+  scroll-margin-top: 120px;
+}
+
+.newServicesGridTitle {
+  color: #a011af;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.newServicesGridDesc {
+  font-size: 1.05rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.newServicesGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.newServiceGridCard {
+  border-radius: 12px;
+  padding: 1.5rem 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+  flex: 1 1 calc(25% - 1.5rem);
+  min-width: 220px;
+  max-width: 320px;
+}
+
+.newServiceGridIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.newServiceGridText {
+  font-size: 0.9rem;
+  color: #222;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Pastel Backgrounds */
+.bgPastel0 {
+  background-color: #fbd6ec;
+}
+
+/* pink */
+.bgPastel1 {
+  background-color: #fbe4c4;
+}
+
+/* orange */
+.bgPastel2 {
+  background-color: #d7eed7;
+}
+
+/* green */
+.bgPastel3 {
+  background-color: #e3d9f9;
+}
+
+/* purple */
+.bgPastel4 {
+  background-color: #d1ecfc;
+}
+
+/* blue */
+/* Icon Colors corresponding to background */
+.bgPastel0 .newServiceGridIcon {
+  color: #e6235b;
+}
+
+.bgPastel1 .newServiceGridIcon {
+  color: #f26d21;
+}
+
+.bgPastel2 .newServiceGridIcon {
+  color: #2e9f3b;
+}
+
+.bgPastel3 .newServiceGridIcon {
+  color: #a011af;
+}
+
+.bgPastel4 .newServiceGridIcon {
+  color: #0b5fb6;
+}
+
+/* 4. Why Choose Us Redesign */
+.newWhyChooseContainer {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto 3rem auto;
+}
+
+.newWhyChooseTitle {
+  color: #a011af;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+}
+
+.newWhyChooseTitle::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #a011af;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.newWhyChooseGrid {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.newWhyChooseCard {
+  background: #e3dbf7;
+  border-radius: 12px;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1 1 150px;
+  min-width: 150px;
+}
+
+.newWhyChooseIcon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #fff;
+  color: #283593;
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.newWhyChooseText {
+  color: #283593;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/* 5. Contact Section Redesign */
+.newContactContainer {
+  background: #fce9dc;
+  border-radius: 12px;
+  padding: 3rem;
+  max-width: 1000px;
+  margin: 0 auto 3rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: center;
+  scroll-margin-top: 120px;
+}
+
+.newContactLeft {
+  flex: 1;
+  min-width: 300px;
+}
+
+.newContactDesc {
+  font-size: 1.1rem;
+  color: #111;
+  line-height: 1.5;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.newContactImage {
+  max-width: 250px;
+  margin-top: 1rem;
+}
+
+.newContactRight {
+  flex: 1;
+  min-width: 300px;
+}
+
+.newContactSubtitle {
+  font-size: 1.5rem;
+  color: #8c1c13;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.newContactCardsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.newContactCard {
+  background: #fff;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.newContactCardIcon {
+  background: #262963;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.newContactCardLabel {
+  width: 100px;
+  padding: 0 1rem;
+  font-weight: 600;
+  color: #333;
+  font-size: 0.95rem;
+  border-right: 1px solid #eee;
+}
+
+.newContactCardValue {
+  padding: 0 1rem;
+  color: #444;
+  font-size: 0.95rem;
+  word-break: break-word;
+}

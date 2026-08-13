@@ -16,11 +16,11 @@ export default function InsightsPublicationsPage() {
   ];
 
   const annualReports = [
-    { title: 'ANNUAL REPORT 2024-25', file: 'ANNUAL REPORT - 2024-25.pdf', thumbnail: '/images/insights-publication/Thumb-1.jpg' },
-    { title: 'ANNUAL REPORT 2023-24', file: 'ANNUAL REPORT_2023-24.pdf', thumbnail: '/images/insights-publication/Thumb-2.jpg' },
-    { title: 'ANNUAL REPORT 2022-23', file: 'ANNUAL REPORT -2022-2023.pdf', thumbnail: '/images/insights-publication/Thumb-3.jpg' },
+    { title: 'ANNUAL REPORT 2024-25', file: 'ANNUAL REPORT - 2024-25.pdf', thumbnail: '/images/insights-publication/Thumb-2.jpg' },
+    { title: 'ANNUAL REPORT 2023-24', file: 'ANNUAL REPORT_2023-24.pdf', thumbnail: '/images/insights-publication/Thumb-1.jpg' },
+    { title: 'ANNUAL REPORT 2022-23', file: 'ANNUAL REPORT -2022-2023.pdf', thumbnail: '/images/insights-publication/Thumb-5.jpg' },
     { title: 'ANNUAL REPORT 2017-18', file: 'ANNUAL REPORT- 2017 -2018.pdf', thumbnail: '/images/insights-publication/Thumb-4.jpg' },
-    { title: 'ANNUAL REPORT 2016-17', file: 'ANNUAL REPORT- 2016-2017.pdf', thumbnail: '/images/insights-publication/Thumb-5.jpg' }
+    { title: 'ANNUAL REPORT 2016-17', file: 'ANNUAL REPORT- 2016-2017.pdf', thumbnail: '/images/insights-publication/Thumb-3.jpg' }
   ];
 
   return (
@@ -70,9 +70,9 @@ export default function InsightsPublicationsPage() {
                               <div className={styles.reportCard}>
                                 <div className={styles.thumbnailWrapper}>
                                   <img src={report.thumbnail} alt={report.title} className={styles.thumbnailImage} />
-                                  {/* <div className={styles.pdfIconBadge}>
+                                  <div className={styles.pdfIconBadge}>
                                     <i className="bi bi-file-earmark-pdf-fill"></i>
-                                  </div> */}
+                                  </div>
                                 </div>
                                 <div className={styles.reportInfo}>
                                   <h4 className={styles.reportTitle}>{report.title}</h4>

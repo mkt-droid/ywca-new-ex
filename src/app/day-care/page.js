@@ -39,7 +39,7 @@ export default function DayCarePage() {
   return (
     <main>
       <SideNavBanner
-        height="360px"
+        height="430px"
         title={<>DAY CARE<br /> CENTRE</>}
         bgImage="/images/day-care/banner-image.jpg"
         navItems={bannerNavItems}
@@ -62,58 +62,59 @@ export default function DayCarePage() {
 
         {/* Services Icons (No background box) */}
         <div className={styles.servicesIconsSection} id="programs">
-          <h2 className="sectionTitle_2 text-center">Our Services & Facilities</h2>
-          <div className={styles.servicesIconsFlex}>
-            <div className={styles.serviceIconItem}>
-              <div className={styles.iconCircleWrapper}>
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#a011af" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 6 12 12 15 15"></polyline>
-                </svg>
+          <h2 className="sectionTitle_2 text-center">— Our Services &amp; Facilities —</h2>
+          <div className={styles.newServicesTopGrid}>
+            <div className={styles.newServiceTopCard}>
+              <div className={styles.newServiceTopIconWrapper}>
+                <i className="bi bi-clock"></i>
               </div>
-              <span className={styles.serviceIconText}>Full Day Care</span>
+              <div className={styles.newServiceTopText}>
+                <h4 className={styles.newServiceTopTitle}>Full Day Care</h4>
+                <p className={styles.newServiceTopDesc}>Complete day care with engaging activities, learning and healthy meals.</p>
+              </div>
             </div>
-            <div className={styles.serviceIconItem}>
-              <div className={styles.iconCircleWrapper}>
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#a011af" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 6 12 12 15 15"></polyline>
-                </svg>
+            <div className={styles.newServiceTopCard}>
+              <div className={styles.newServiceTopIconWrapper}>
+                <i className="bi bi-clock"></i>
               </div>
-              <span className={styles.serviceIconText}>Half Day Care</span>
+              <div className={styles.newServiceTopText}>
+                <h4 className={styles.newServiceTopTitle}>Half Day Care</h4>
+                <p className={styles.newServiceTopDesc}>Flexible half-day care with focus on learning, play and personal attention.</p>
+              </div>
             </div>
-            <div className={styles.serviceIconItem}>
-              <div className={styles.iconCircleWrapper}>
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#a011af" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                  <path d="M7 21h10" />
-                  <path d="M12 17v4" />
-                </svg>
+            <div className={styles.newServiceTopCard}>
+              <div className={styles.newServiceTopIconWrapper}>
+                <i className="bi bi-suit-heart"></i>
               </div>
-              <span className={styles.serviceIconText}>Guest Child Care</span>
+              <div className={styles.newServiceTopText}>
+                <h4 className={styles.newServiceTopTitle}>Guest Child Care</h4>
+                <p className={styles.newServiceTopDesc}>Short-term care for your child with the same love, safety and learning.</p>
+              </div>
             </div>
           </div>
         </div>
 
         {/* Our Core Values */}
-        <div className={styles.coreValuesOuterBox} id="core-values">
-          <div className={styles.coreValuesTop}>
-            <h2 className="sectionTitle_2 text-center">Our Core Values</h2>
-            <p className={styles.coreValuesDesc}>
-              This shelter home is specially designed for destitute pregnant and lactating women. It operates at two locations- Sarai Rohilla and Jahangirpuri-in collaboration with the Department of Women & Child development, Government of NCT of Delhi.
-            </p>
-          </div>
-          <div className={styles.coreValuesBottom}>
-            <div className={`row ${styles.coreValuesRow}`}>
-              <div className={`col-md-6 ${styles.coreValuesColLeft}`}>
-                <h4 className={styles.valueTitleLeft}><i className="bi bi-emoji-smile"></i>Children</h4>
-                <p className={styles.valueTextLeft}>
+        <div className={styles.newCoreValuesContainer} id="core-values">
+          <h2 className={styles.newCoreValuesTitle}>Our Core Values</h2>
+          <p className={styles.newCoreValuesDesc}>
+            This shelter home is specially designed for destitute pregnant and lactating women. It operates at two locations- Sarai Rohilla and Jahangirpuri-in collaboration with the Department of Women & Child development, Government of NCT of Delhi.
+          </p>
+          <div className={styles.newCoreValuesGrid}>
+            <div className={styles.newCoreValueCard}>
+              <div className={styles.newCoreValueCardIcon}><i className="bi bi-person"></i></div>
+              <div className={styles.newCoreValueCardContent}>
+                <h4 className={styles.newCoreValueCardTitle}>Children</h4>
+                <p className={styles.newCoreValueCardDesc}>
                   We value each child as a unique individual with distinct talents and abilities. Our approach focuses on age-appropriate development, ensuring healthy and balanced growth.
                 </p>
               </div>
-              <div className={`col-md-6 ${styles.coreValuesColRight}`}>
-                <h4 className={styles.valueTitleLeft}><i className="bi bi-people"></i>Families</h4>
-                <p className={styles.valueTextLeft}>
+            </div>
+            <div className={styles.newCoreValueCard}>
+              <div className={styles.newCoreValueCardIcon}><i className="bi bi-people"></i></div>
+              <div className={styles.newCoreValueCardContent}>
+                <h4 className={styles.newCoreValueCardTitle}>Families</h4>
+                <p className={styles.newCoreValueCardDesc}>
                   We believe in building strong and positive relationships with families. A collaborative partnership with parents is essential for the successful development of every child.
                 </p>
               </div>
@@ -122,12 +123,12 @@ export default function DayCarePage() {
         </div>
 
         {/* Our Services & Facilities (List) */}
-        <div className={styles.cardSectionServices} id="services">
-          <h2 className="sectionTitle_2 text-center">Our Services & Facilities</h2>
-          <p className={styles.servicesDesc}>
+        <div className={styles.newServicesGridContainer} id="services">
+          <h2 className={styles.newServicesGridTitle}>Our Services &amp; Facilities</h2>
+          <p className={styles.newServicesGridDesc}>
             We provide a comprehensive range of services to ensure safety, learning, and overall well-being
           </p>
-          <ul className={styles.servicesList}>
+          <div className={styles.newServicesGrid}>
             {[
               { text: "Safe and secure environment for children 6 months to 12 years", icon: "bi-shield-check" },
               { text: "Comfortable bedding arrangements, cots and baby cradles", icon: "bi-moon-stars" },
@@ -143,76 +144,86 @@ export default function DayCarePage() {
               { text: "After-school support, including homework assistance", icon: "bi-pencil-square" },
               { text: "Craft activities for school going children", icon: "bi-scissors" },
               { text: "Counseling and emotional support for parents, if required", icon: "bi-heart-pulse" }
-            ].map((item, index) => (
-              <li key={index}>
-                <i className={`bi ${item.icon}`}></i>
-                {item.text}
-              </li>
-            ))}
-          </ul>
+            ].map((item, index) => {
+              const pastelClass = styles[`bgPastel${index % 5}`];
+              return (
+                <div key={index} className={`${styles.newServiceGridCard} ${pastelClass}`}>
+                  <div className={styles.newServiceGridIcon}>
+                    <i className={`bi ${item.icon}`}></i>
+                  </div>
+                  <p className={styles.newServiceGridText}>{item.text}</p>
+                </div>
+              );
+            })}
+          </div>
         </div>
 
         {/* Gallery Section */}
         <Gallery images={galleryImages} title="Gallery" />
 
         {/* Why Choose Us */}
-        <div className={styles.whyChooseUsSection}>
-          <div style={{ display: 'inline-block', width: '100%' }}>
-            <h2 className="sectionTitle_2 text-center">Why Choose Us?</h2>
-            <div className={styles.whyChooseUsGrid}>
-              <div className={styles.whyChooseUsItem}>
-                <i className="bi bi-check-circle-fill" style={{ color: '#a011af', marginRight: '10px', fontSize: '1.2rem' }}></i>
-                Safe and nurturing environment
-              </div>
-              <div className={styles.whyChooseUsItem}>
-                <i className="bi bi-check-circle-fill" style={{ color: '#a011af', marginRight: '10px', fontSize: '1.2rem' }}></i>
-                Experienced and caring staff
-              </div>
-              <div className={styles.whyChooseUsItem}>
-                <i className="bi bi-check-circle-fill" style={{ color: '#a011af', marginRight: '10px', fontSize: '1.2rem' }}></i>
-                Focus on holistic child development
-              </div>
-              <div className={styles.whyChooseUsItem}>
-                <i className="bi bi-check-circle-fill" style={{ color: '#a011af', marginRight: '10px', fontSize: '1.2rem' }}></i>
-                Strong parent-centre collaboration
-              </div>
-              <div className={styles.whyChooseUsItemFull}>
-                <i className="bi bi-check-circle-fill" style={{ color: '#a011af', marginRight: '10px', fontSize: '1.2rem' }}></i>
-                Structured learning with fun-based activities
-              </div>
+        <div className={styles.newWhyChooseContainer}>
+          <h2 className={'sectionTitle_2 text-center mt-5'}>Why Choose Us?</h2>
+          <div className={styles.newWhyChooseGrid}>
+            <div className={styles.newWhyChooseCard}>
+              <i className={`bi bi-shield-check ${styles.newWhyChooseIcon}`}></i>
+              <div className={styles.newWhyChooseText}>Safe and nurturing environment</div>
+            </div>
+            <div className={styles.newWhyChooseCard}>
+              <i className={`bi bi-people ${styles.newWhyChooseIcon}`}></i>
+              <div className={styles.newWhyChooseText}>Experienced and caring staff</div>
+            </div>
+            <div className={styles.newWhyChooseCard}>
+              <i className={`bi bi-person-check ${styles.newWhyChooseIcon}`}></i>
+              <div className={styles.newWhyChooseText}>Focus on holistic child development</div>
+            </div>
+            <div className={styles.newWhyChooseCard}>
+              <i className={`bi bi-briefcase ${styles.newWhyChooseIcon}`}></i>
+              <div className={styles.newWhyChooseText}>Strong parent-centre collaboration</div>
+            </div>
+            <div className={styles.newWhyChooseCard}>
+              <i className={`bi bi-card-checklist ${styles.newWhyChooseIcon}`}></i>
+              <div className={styles.newWhyChooseText}>Structured learning with fun-based activities</div>
             </div>
           </div>
         </div>
 
         {/* Help & Support */}
-        <div className={styles.cardSectionContact} id="contact">
-          <p className={styles.contactDesc}>
-            If you or someone you know needs support, please contact us through the hiplines below. Our team is here to provide a safe space, care, and guidance.
-          </p>
-          <p className={styles.contactSubtitle}>
-            YWCA Of Delhi
-          </p>
-          <div className={styles.contactTableWrapper}>
-            <table className={styles.contactTable}>
-              <tbody>
-                <tr>
-                  <th>Address</th>
-                  <td>YWCA Of Delhi, Ashoka Road</td>
-                </tr>
-                <tr>
-                  <th>Phone</th>
-                  <td>+91-07011299046</td>
-                </tr>
-                <tr>
-                  <th>Email</th>
-                  <td>Dc@ywcaofdelhi.Org , Sh@ywcaofdelhi.Org</td>
-                </tr>
-              </tbody>
-            </table>
+        <div className={styles.newContactContainer} id="contact">
+          <div className={styles.newContactLeft}>
+            <p className={styles.newContactDesc}>
+              If you or someone you know needs support, please contact us through the helplines below. Our team is here to provide a safe space, care, and guidance.
+            </p>
+            {/* Using a placeholder SVG for the kids drawing or a suitable icon */}
+            <div style={{ color: '#e6235b', fontSize: '3rem', marginTop: '1.5rem', display: 'flex', gap: '1.5rem', alignItems: 'flex-end', justifyContent: 'flex-start' }}>
+              <i className="bi bi-person-standing"></i>
+              <i className="bi bi-person-standing" style={{ fontSize: '2rem' }}></i>
+              <i className="bi bi-person-standing"></i>
+            </div>
+          </div>
+          <div className={styles.newContactRight}>
+            <p className={styles.newContactSubtitle}>YWCA Of Delhi</p>
+            <div className={styles.newContactCardsList}>
+              <div className={styles.newContactCard}>
+                <div className={styles.newContactCardIcon}><i className="bi bi-geo-alt"></i></div>
+                <div className={styles.newContactCardLabel}>Address</div>
+                <div className={styles.newContactCardValue}>YWCA of Delhi, Ashoka Road</div>
+              </div>
+              <div className={styles.newContactCard}>
+                <div className={styles.newContactCardIcon}><i className="bi bi-telephone"></i></div>
+                <div className={styles.newContactCardLabel}>Phone</div>
+                <div className={styles.newContactCardValue}>+91-07011299046</div>
+              </div>
+              <div className={styles.newContactCard}>
+                <div className={styles.newContactCardIcon}><i className="bi bi-envelope"></i></div>
+                <div className={`${styles.newContactCardLabel} pr-3`}>Email</div>
+                <div className={styles.newContactCardValue}>Dc@ywcaofdelhi.Org, Sh@ywcaofdelhi.Org</div>
+              </div>
+            </div>
           </div>
         </div>
 
       </section>
-</main>
+    </main>
   );
 }

@@ -2368,6 +2368,10 @@
    background-color: #090b84 !important;
  }
 
+ .pr-3 {
+   padding-right: 50px !important;
+ }
+
  .primaryBtn {
    color: #fff;
    background-color: #242278;
