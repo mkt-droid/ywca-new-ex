@@ -4,33 +4,56 @@
 }
 
 .featuresSection {
-  padding: 60px 0;
+  padding: 60px 0 20px 0;
+}
+
+.featuresGrid {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .featureBox {
-  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem 1.2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex: 1;
+  min-width: 250px;
+  max-width: 320px;
+  border: 1px solid rgba(0, 0, 0, 0.03);
 }
 
 .iconWrap {
-  margin-bottom: 20px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #a011af;
+  font-size: 2.2rem;
 }
 
 .iconWrap i {
-  color: #c936b8;
-  font-size: 2.5rem;
+  color: inherit;
+  font-size: inherit;
+}
+
+.featureText {
+  text-align: left;
 }
 
 .featureBox h4 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.featureBox p {
-  font-size: 0.95rem;
-  color: #666;
+  font-size: 1.1rem;
+  color: #a011af;
+  font-weight: 700;
+  margin: 0;
 }
 
 .introPara {
@@ -401,3 +424,87 @@
   color: white;
   transform: translateY(-2px);
 }
+
+/* Hostel Cards New Layout */
+.hostelsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .hostelsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hostelCard {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #f0f0f0;
+}
+
+.hostelCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.hostelCardImg {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.hostelCardBody {
+  padding: 30px 25px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.hostelCardTitleWrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.hostelCardIcon {
+  width: 55px;
+  height: 55px;
+  background-color: #a212b5;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.hostelCardTitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #a212b5;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.hostelCardText {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #555;
+  margin: 0;
+  text-align: left;
+}

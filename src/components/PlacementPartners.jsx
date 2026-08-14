@@ -5,11 +5,20 @@ import styles from './PlacementPartners.module.css';
 
 export default function PlacementPartners({ title = "Our Placement Partners", className = "container mt-3 mb-5 text-center" }) {
   const originalLogos = [
-    '/images/placement-partners/pp-1.png',
-    '/images/placement-partners/pp-2.png',
-    '/images/placement-partners/pp-3.png',
-    '/images/placement-partners/pp-4.png',
-    '/images/placement-partners/pp-6.png',
+    '/images/partners/AIIMS.jpg',
+    '/images/partners/Apollo.jpg',
+    '/images/partners/Bata.jpg',
+    '/images/partners/Bharti-Airtel-Foundation.jpg',
+    '/images/partners/Concentrix.jpg',
+    '/images/partners/Frankfin.jpg',
+    '/images/partners/HYATT.jpg',
+    '/images/partners/Kidzania.jpg',
+    '/images/partners/PNB-MetLife.jpg',
+    '/images/partners/S&N.jpg',
+    '/images/partners/Sir-Ganga-Ram.jpg',
+    '/images/partners/TC.jpg',
+    '/images/partners/Taj.jpg',
+    '/images/partners/Volvo.jpg',
   ];
 
   // Duplicate for seamless infinite feeling

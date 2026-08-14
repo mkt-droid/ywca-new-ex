@@ -7,6 +7,8 @@ import Gallery from '@/components/common/Gallery';
 import SideNavBanner from '@/components/partials/SideNavBanner';
 
 export default function WorkingWomenHostelPage() {
+  const [popupContent, setPopupContent] = useState(null);
+
   const bannerNavItems = [
     { title: 'Home / Overview', icon: 'bi-house-door', link: '#' },
     {
@@ -63,33 +65,29 @@ export default function WorkingWomenHostelPage() {
 
       <div className={styles.pageBackground}>
         <div className={`container ${styles.featuresSection}`}>
-          <div className="row text-center justify-content-center">
-            <div className="col-lg-8 col-md-10">
-              <div className="row">
-                <div className="col-md-4">
-                  <div className={styles.featureBox}>
-                    <div className={styles.iconWrap}>
-                      <i className="bi bi-geo-alt"></i>
-                    </div>
-                    <h4>2+ Location</h4>
-                  </div>
-                </div>
-                <div className="col-md-4">
-                  <div className={styles.featureBox}>
-                    <div className={styles.iconWrap}>
-                      <i className="bi bi-door-open"></i>
-                    </div>
-                    <h4>67 Rooms Available</h4>
-                  </div>
-                </div>
-                <div className="col-md-4">
-                  <div className={styles.featureBox}>
-                    <div className={styles.iconWrap}>
-                      <i className="bi bi-send"></i>
-                    </div>
-                    <h4>Centrally located</h4>
-                  </div>
-                </div>
+          <div className={styles.featuresGrid}>
+            <div className={styles.featureBox}>
+              <div className={styles.iconWrap}>
+                <i className="bi bi-geo-alt"></i>
+              </div>
+              <div className={styles.featureText}>
+                <h4>2+ Location</h4>
+              </div>
+            </div>
+            <div className={styles.featureBox}>
+              <div className={styles.iconWrap}>
+                <i className="bi bi-door-open"></i>
+              </div>
+              <div className={styles.featureText}>
+                <h4>67 Rooms Available</h4>
+              </div>
+            </div>
+            <div className={styles.featureBox}>
+              <div className={styles.iconWrap}>
+                <i className="bi bi-send"></i>
+              </div>
+              <div className={styles.featureText}>
+                <h4>Centrally located</h4>
               </div>
             </div>
           </div>
@@ -101,39 +99,78 @@ export default function WorkingWomenHostelPage() {
 
         <div className={styles.hostelsSection}>
           <div className="container">
-            {/* Hostel 1 */}
-            <div className={`row align-items-center ${styles.hostelRow}`} id="chww">
-              <div className="col-md-6">
-                <img src="/images/working-women-hostels/wwh-1.png" alt="Centenary Working Women's Hostel" className="img-fluid rounded" />
+            <div className={styles.hostelsGrid}>
+              
+              {/* Hostel 1 */}
+              <div 
+                className={styles.hostelCard} 
+                id="chww"
+                onClick={() => setPopupContent({
+                  title: "Centenary Working Women's Hostel (CHWW)",
+                  image: "/images/working-women-hostels/wwh-1.png",
+                  paragraphs: [
+                    "Situated in the heart of the city in Ashoka Road has got 64 rooms with the total bed capacity of 168. In spite of the pandemic the hostel-maintained occupancy of 126 residents throughout this period.",
+                    "The Centenary Hostel for Working Women of the YWCA of Delhi is a centrally located hostel for working women in the heart of New Delhi in Connaught Place. It provides a home away from home in an atmosphere both secure and pleasant and homely to accommodate 168 women in its warmth and embrace. CHWW has 67 rooms and three guest rooms with twin sharing basis and fees are marked accordingly with stay not beyond 33 months. Guest room accommodation is available for a maximum period of one month. Advance booking can be made for one month by depositing advance payment of 7 days.",
+                    "Mess facility is available for Guests on payment. The mess provides subsided and homely meals for all the three meals times along with morning and evening tea."
+                  ]
+                })}
+              >
+                <img src="/images/working-women-hostels/wwh-1.png" alt="Centenary Working Women's Hostel" className={styles.hostelCardImg} />
+                <div className={styles.hostelCardBody}>
+                  <div className={styles.hostelCardTitleWrap}>
+                    <div className={styles.hostelCardIcon}><i className="bi bi-building"></i></div>
+                    <h3 className={styles.hostelCardTitle}>Centenary Working Women's Hostel (CHWW)</h3>
+                  </div>
+                  <p className={styles.hostelCardText}>
+                    Situated in the heart of the city in Ashoka Road has got 64 rooms with the total bed capacity of 168. In spite of the pandemic the hostel-maintained occupancy of 126 residents throughout this period.
+                  </p>
+                </div>
               </div>
-              <div className="col-md-6">
-                <h2 className="sectionTitle_2">Centenary Working Women's Hostel (CHWW)</h2>
-                <p className={styles.hostelDesc}>
-                  Situated in the heart of the city in Ashoka Road has got 64 rooms with the total bed capacity of 168. In spite of the pandemic the hostel-maintained occupancy of 126 residents throughout this period.
-                </p>
-                <p className={styles.hostelDesc}>
-                  The Centenary Hostel for Working Women of the YWCA of Delhi is a centrally located hostel for working women in the heart of New Delhi in Connaught Place. It provides a home away from home in an atmosphere both secure and pleasant and homely to accommodate 168 women in its warmth and embrace. CHWW has 67 rooms and three guest rooms with twin sharing basis and fees are marked accordingly with stay not beyond 33 months. Guest room accommodation is available for a maximum period of one month. Advance booking can be made for one month by depositing advance payment of 7 days.
-                </p>
-                <p className={styles.hostelDesc}>
-                  Mess facility is available for Guests on payment. The mess provides subsided and homely meals for all the three meals times along with morning and evening tea.
-                </p>
-              </div>
-            </div>
 
-            {/* Hostel 2 */}
-            <div className={`row align-items-center ${styles.hostelRow} flex-row-reverse`} id="jwwh">
-              <div className="col-md-6">
-                <img src="/images/working-women-hostels/wwh-2.png" alt="Jasola Working Women's Hostel" className="img-fluid rounded" />
+              {/* Hostel 2 */}
+              <div 
+                className={styles.hostelCard} 
+                id="jwwh"
+                onClick={() => setPopupContent({
+                  title: "Jasola Working Women's Hostel (JWWH)",
+                  image: "/images/working-women-hostels/wwh-2.png",
+                  paragraphs: [
+                    "The Ministry of Women and Child Development jointly with Ministry of Development of North Eastern Region, Government of India has set up the Working Women's Hostel in Jasola Vihar, New Delhi for women of the North Eastern states and other working women.",
+                    "The Management of the JWWH was entrusted to the YWCA of Delhi in August 2011. JWWH has got 167 rooms with attached bathroom and total bed capacity of 501. During the pandemic the hostel was able to maintain occupancy of 166 throughout."
+                  ]
+                })}
+              >
+                <img src="/images/working-women-hostels/wwh-2.png" alt="Jasola Working Women's Hostel" className={styles.hostelCardImg} />
+                <div className={styles.hostelCardBody}>
+                  <div className={styles.hostelCardTitleWrap}>
+                    <div className={styles.hostelCardIcon}><i className="bi bi-building"></i></div>
+                    <h3 className={styles.hostelCardTitle}>Jasola Working Women's Hostel (JWWH)</h3>
+                  </div>
+                  <p className={styles.hostelCardText}>
+                    The Ministry of Women and Child Development jointly with Ministry of Development of North Eastern Region, Government of India has set up the Working Women's Hostel in Jasola Vihar, New Delhi for women of the North Eastern states and other working women.
+                  </p>
+                </div>
               </div>
-              <div className="col-md-6">
-                <h2 className="sectionTitle_2">Jasola Working Women's Hostel (JWWH)</h2>
-                <p className={styles.hostelDesc}>
-                  The Ministry of Women and Child Development jointly with Ministry of Development of North Eastern Region, Government of India has set up the Working Women's Hostel in Jasola Vihar, New Delhi for women of the North Eastern states and other working women. The Management of the JWWH was entrusted to the YWCA of Delhi in August 2011. JWWH has got 167 rooms with attached bathroom and total bed capacity of 501. During the pandemic the hostel was able to maintain occupancy of 166 throughout.
-                </p>
-              </div>
+
             </div>
           </div>
         </div>
+
+        {/* Modal/Popup */}
+        {popupContent && (
+          <div className={styles.modalOverlay} onClick={() => setPopupContent(null)}>
+            <div className={styles.modalContent} onClick={e => e.stopPropagation()}>
+              <button className={styles.modalClose} onClick={() => setPopupContent(null)}><i className="bi bi-x-lg"></i></button>
+              <img src={popupContent.image} alt={popupContent.title} className={styles.modalImg} />
+              <div className={styles.modalBody}>
+                <h3 className={styles.modalTitle}>{popupContent.title}</h3>
+                {popupContent.paragraphs.map((p, idx) => (
+                  <p key={idx} className={styles.modalText}>{p}</p>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
 
         <div className="container mb-5" style={{ color: '#333' }}>
           {/* Mission */}

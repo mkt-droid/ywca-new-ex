@@ -29,27 +29,31 @@ export default function EducationInstitutePage() {
   const alumni = [
     {
       id: 1,
-      name: 'Name Surname',
-      designation: 'Designation/Organization',
-      quote: "Lorem elit in mollis integer id cursus. Elit enim magna aliquet aenean. Adipiscing magna felis lorem integer."
+      name: 'Mrs. Shikha Arora',
+      designation: 'Medical Laboratory Technologist',
+      quote: "After completing my 12th with Science, I wanted to enter the healthcare field quickly while gaining practical skills. Joining the DMLT program at YWCA ...",
+      image: '/images/education-institute/shikha_arora_full.jpg'
     },
     {
       id: 2,
       name: 'Name Surname',
       designation: 'Designation/Organization',
-      quote: "Lorem elit in mollis integer id cursus. Elit enim magna aliquet aenean. Adipiscing magna felis lorem integer."
+      quote: "Lorem elit in mollis integer id cursus. Elit enim magna aliquet aenean. Adipiscing magna felis lorem integer.",
+      image: '/images/education-institute/alumani.jpg'
     },
     {
       id: 3,
       name: 'Name Surname',
       designation: 'Designation/Organization',
-      quote: "Lorem elit in mollis integer id cursus. Elit enim magna aliquet aenean. Adipiscing magna felis lorem integer."
+      quote: "Lorem elit in mollis integer id cursus. Elit enim magna aliquet aenean. Adipiscing magna felis lorem integer.",
+      image: '/images/education-institute/alumani.jpg'
     },
     {
       id: 4,
       name: 'Name Surname',
       designation: 'Designation/Organization',
-      quote: "Lorem elit in mollis integer id cursus. Elit enim magna aliquet aenean. Adipiscing magna felis lorem integer."
+      quote: "Lorem elit in mollis integer id cursus. Elit enim magna aliquet aenean. Adipiscing magna felis lorem integer.",
+      image: '/images/education-institute/alumani.jpg'
     }
   ];
 
@@ -154,7 +158,7 @@ export default function EducationInstitutePage() {
           {alumni.map(person => (
             <div className="col-md-3 col-sm-6 mb-4" key={person.id}>
               <div className={styles.alumniCard}>
-                <img src="/images/education-institute/alumani.jpg" alt="Alumni" className={styles.alumniImage} />
+                <img src={person.image || "/images/education-institute/alumani.jpg"} alt="Alumni" className={styles.alumniImage} />
                 <div className={styles.alumniContent}>
                   <h3 className={styles.alumniName}>{person.name}</h3>
                   <p className={styles.alumniDesignation}>{person.designation}</p>
