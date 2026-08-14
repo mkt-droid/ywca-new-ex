@@ -66,9 +66,10 @@ const BlueTriangle = () => {
       </SideNavBanner>
 
       {/* GRADIENT WRAPPER */}
-      <div className={styles.gradientBackground}>
+      <div>
         {/* BOOKING BAR */}
         <section className={`container ${styles.bookingSection}`}>
+          {/* 
           <div className={styles.bookingBar}>
             <h3 className="sectionTitle_3 text-white">Booking</h3>
             <div className={styles.bookingForm}>
@@ -95,6 +96,19 @@ const BlueTriangle = () => {
               <button className={styles.bookBtn}>Book Now</button>
             </div>
           </div>
+          */}
+          <Link
+            href="https://ywcaofdelhi.org/public/public/GHBooking.aspx"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ display: 'block', maxWidth: '900px', marginLeft: '-0.95rem' }}
+          >
+            <img
+              src="/images/Booking-Banner.jpg"
+              alt="Booking Banner"
+              style={{ width: '100%', display: 'block', boxShadow: '0 10px 30px rgba(0, 0, 0, 0.1)' }}
+            />
+          </Link>
         </section>
 
         {/* OVERVIEW SECTION */}
@@ -106,9 +120,7 @@ const BlueTriangle = () => {
                 <p>
                   <strong>Blue Triangle Family Hostel (BTFH), YWCA of Delhi,</strong> is a premier hospitality destination that has undergone thoughtful enhancements, preserving its heritage charm while embracing modern comforts. Nestled in the heart of the city near India Gate, BTFH offers serene views of lush surroundings, establishing it as a cherished landmark in Delhi's vibrant core. As part of recent upgrades, our property ensures a clean, healthy environment for all guests. BTFH provides spacious accommodations, including comfortable rooms and suites with captivating views of green gardens.
                 </p>
-                <p>
-                  Lorem Ipsum is simply dummy text
-                </p>
+
               </div>
               <div className={styles.overviewImgWrapper}>
                 <img src="/images/blue-tringle/hotel-1.jpg" alt="Building Overview" />

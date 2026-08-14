@@ -188,7 +188,7 @@
 /* ── DETAILS SECTION ── */
 .detailSection {
   padding: 50px 0;
-  background: linear-gradient(to bottom right, #ffffff 40%, #ffe9d9 100%);
+  /* background: linear-gradient(to bottom right, #ffffff 40%, #ffe9d9 100%); */
 }
 
 .centerDesc {
@@ -258,7 +258,7 @@
   display: inline-flex;
   align-items: center;
   font-weight: 500;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   color: #000;
   font-size: 1rem;
 }
@@ -689,7 +689,8 @@
   justify-content: center;
   line-height: 1;
   margin: 0;
-  transform: translateY(1px); /* Slight adjustment for exact visual center */
+  transform: translateY(1px);
+  /* Slight adjustment for exact visual center */
 }
 
 .modalCloseBtn:hover {

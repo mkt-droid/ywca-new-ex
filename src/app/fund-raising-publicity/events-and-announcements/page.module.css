@@ -12,17 +12,18 @@
   font-size: 1rem;
 }
 
-  .contentWrapper {
-    background-color: #fbfbfb;
-    width: 100%;
-    min-height: 60vh;
+.contentWrapper {
+  /* background-color: #fbfbfb; */
+  width: 100%;
+  min-height: 60vh;
+}
+
+@media (max-width: 767px) {
+  .sectionPadding {
+    padding: 40px 0;
   }
 
-  @media (max-width: 767px) {
-    .sectionPadding {
-      padding: 40px 0;
-    }
-    .pageDescription {
-      margin-bottom: 30px;
-    }
+  .pageDescription {
+    margin-bottom: 30px;
   }
+}

@@ -62,7 +62,7 @@ export default function DayCarePage() {
 
         {/* Services Icons (No background box) */}
         <div className={styles.servicesIconsSection} id="programs">
-          <h2 className="sectionTitle_2 text-center">— Our Services &amp; Facilities —</h2>
+          <h2 className="sectionTitle_2 text-center">Our Services &amp; Facilities</h2>
           <div className={styles.newServicesTopGrid}>
             <div className={styles.newServiceTopCard}>
               <div className={styles.newServiceTopIconWrapper}>

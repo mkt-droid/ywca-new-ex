@@ -203,7 +203,7 @@ const ExploreDelhi = () => {
                 {sliderData[currentSlideIndex].entry && (
                   <div className={styles.sliderDetailsRow}>Entry Fees: {sliderData[currentSlideIndex].entry}</div>
                 )}
-                
+
                 <div className={styles.sliderContact}>
                   <i>{sliderData[currentSlideIndex].contact}</i>
                 </div>

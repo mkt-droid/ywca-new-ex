@@ -21,7 +21,7 @@
 }
 
 .contentWrapper {
-  background-color: #fbfbfb;
+  /* background-color: #fbfbfb; */
   width: 100%;
   min-height: 60vh;
 }
@@ -167,30 +167,35 @@
   text-decoration: underline;
 }
 
-  .termsLink:hover {
-    color: #555;
+.termsLink:hover {
+  color: #555;
+}
+
+@media (max-width: 767px) {
+  .sectionPadding {
+    padding: 40px 0;
   }
 
-  @media (max-width: 767px) {
-    .sectionPadding {
-      padding: 40px 0;
-    }
-    .formHeader {
-      align-items: flex-start;
-    }
-    .iconWrapper {
-      margin-top: 2px;
-    }
-    .pageTitle {
-      margin-bottom: 0.95rem;
-    }
-    .pageDescription {
-      margin-bottom: 30px;
-    }
-    .formCard {
-      padding: 20px;
-    }
+  .formHeader {
+    align-items: flex-start;
   }
+
+  .iconWrapper {
+    margin-top: 2px;
+  }
+
+  .pageTitle {
+    margin-bottom: 0.95rem;
+  }
+
+  .pageDescription {
+    margin-bottom: 30px;
+  }
+
+  .formCard {
+    padding: 20px;
+  }
+}
 
 .checkboxGroup {
   display: flex;

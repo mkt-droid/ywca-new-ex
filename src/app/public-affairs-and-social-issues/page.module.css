@@ -1,5 +1,4 @@
-.sectionPadding {
-  }
+.sectionPadding {}
 
 .headerText {
   text-align: center;
@@ -33,7 +32,7 @@
 }
 
 .programsSection {
-  background-color: #fcfcfc;
+  /* background-color: #fcfcfc; */
   padding: 60px 0 80px;
 }
 
@@ -281,8 +280,10 @@
   overflow-x: auto;
   padding-bottom: 5px;
   scroll-behavior: smooth;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .thumbnailRow::-webkit-scrollbar {
@@ -290,7 +291,8 @@
 }
 
 .thumbnailItem {
-  flex: 0 0 calc(16.666% - 8.333px); /* 6 items per row */
+  flex: 0 0 calc(16.666% - 8.333px);
+  /* 6 items per row */
   aspect-ratio: 4 / 3;
   border-radius: 4px;
   overflow: hidden;
@@ -316,8 +318,14 @@
 }
 
 @media (max-width: 1200px) {
-  .prevBtn { left: 10px; }
-  .nextBtn { right: 10px; }
+  .prevBtn {
+    left: 10px;
+  }
+
+  .nextBtn {
+    right: 10px;
+  }
+
   .sliderBtn {
     width: 40px;
     height: 40px;
@@ -327,9 +335,13 @@
 }
 
 @media (max-width: 992px) {
-  .thumbnailItem { flex: 0 0 calc(25% - 7.5px); }
+  .thumbnailItem {
+    flex: 0 0 calc(25% - 7.5px);
+  }
 }
 
 @media (max-width: 768px) {
-  .thumbnailItem { flex: 0 0 calc(33.333% - 6.66px); }
+  .thumbnailItem {
+    flex: 0 0 calc(33.333% - 6.66px);
+  }
 }

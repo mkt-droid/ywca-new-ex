@@ -66,9 +66,10 @@ const BlueTriangle = () => {
       </SideNavBanner>
 
       {/* GRADIENT WRAPPER */}
-      <div className={styles.gradientBackground}>
+      <div className={''}>
         {/* BOOKING BAR */}
         <section className={`container ${styles.bookingSection}`}>
+          {/* 
           <div className={styles.bookingBar}>
             <h3 className="sectionTitle_3 text-white">Booking</h3>
             <div className={styles.bookingForm}>
@@ -95,6 +96,19 @@ const BlueTriangle = () => {
               <button className={styles.bookBtn}>Book Now</button>
             </div>
           </div>
+          */}
+          <Link
+            href="https://ywcaofdelhi.org/public/public/GHBooking.aspx"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ display: 'block', maxWidth: '900px', marginLeft: '-0.95rem' }}
+          >
+            <img
+              src="/images/Booking-Banner.jpg"
+              alt="Booking Banner"
+              style={{ width: '100%', display: 'block', boxShadow: '0 10px 30px rgba(0, 0, 0, 0.1)' }}
+            />
+          </Link>
         </section>
 
         {/* OVERVIEW SECTION */}

@@ -2372,6 +2372,11 @@
    padding-right: 50px !important;
  }
 
+ main {
+   background: linear-gradient(#fff 0%, #fffbf9 15% 85%, #fff 100%);
+   /* background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(253, 243, 237, 1) 15%, rgba(253, 243, 237, 1) 85%, rgba(255, 255, 255, 1) 100%); */
+ }
+
  .primaryBtn {
    color: #fff;
    background-color: #242278;
