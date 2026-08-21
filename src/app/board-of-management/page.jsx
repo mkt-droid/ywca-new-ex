@@ -12,6 +12,15 @@ const allMembers = [
     image: '/images/President.jpg',
     description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
   },
+    {
+    name: 'Ms. Pragya Mohanty',
+    title: 'General Secretary YWCA of Delhi',
+    image: '/images/Ms.-Pragya-Monthly.png',
+    description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
+  },
+  
+
+
   {
     name: 'Ms. Nisha Samuel',
     title: 'Vice President YWCA',
@@ -96,6 +105,13 @@ const allMembers = [
     image: '/images/board-of-management/dummy.jpg',
     description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
   },
+  {
+    name: 'Ms. Ananya Das Gupta',
+    title: 'Co-opted Member',
+    image: '/images/board-of-management/anaya.jpeg',
+    description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
+  },
+  
 ]
 
 // ── Placeholder silhouette ──
@@ -160,7 +176,7 @@ const BoardOfManagement = () => {
                         }
                         <p className={styles.memberName}>{m.name}</p>
                         <p className={styles.memberTitle}>{m.title}</p>
-                        <p className={styles.desc}>{m.description}</p>
+                        {/* <p className={styles.desc}>{m.description}</p> */}
                       </Link> : <>
                         {m.image
                           ? <img src={m.image} alt={m.name} />
@@ -168,7 +184,7 @@ const BoardOfManagement = () => {
                         }
                         <p className={styles.memberName}>{m.name}</p>
                         <p className={styles.memberTitle}>{m.title}</p>
-                        <p className={styles.desc}>{m.description}</p>
+                        {/* <p className={styles.desc}>{m.description}</p> */}
                       </>
                     }
 
