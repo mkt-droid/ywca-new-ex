@@ -992,10 +992,10 @@
 }
 
 .newContactSubtitle {
+  color: #1a1c6a;
+  margin-bottom: 20px;
   font-size: 1.5rem;
-  color: #8c1c13;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
+  font-weight: 600;
 }
 
 .newContactCardsList {

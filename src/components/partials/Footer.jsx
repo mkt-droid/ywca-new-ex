@@ -33,15 +33,21 @@ const Footer = () => {
                 </div>
                 <ul className="footer-socials">
                   <li>
-                    <a href="#">
-                      <i className="bi bi-telephone" /> 011 - 22334455
+                    <a href="tel:911123362975">
+                      <i className="bi bi-telephone" />+91-11-23362975
+
                     </a>
                   </li>
                   <li>
-                    <a href="#">
-                      {" "}
+                    <a href="tel:917011299042">
+                      <i className="bi bi-telephone" />+91-7011299042
+
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:info@ywcaofdelhi.org">
                       <i className="bi bi-envelope" />
-                      Email@domain.com
+                      info@ywcaofdelhi.org
                     </a>
                   </li>
                 </ul>

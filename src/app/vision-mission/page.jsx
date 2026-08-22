@@ -15,35 +15,43 @@ const VisionMission = () => {
 
       <section className={styles.visionSection}>
         <div className="container">
-          <div className={styles.contentWrapper}>
-            <h2 className="sectionTitle_2 text-center">
-              AN INTERNATIONAL MOVEMENT MOTIVATED BY ITS <br /> CONCERN FOR WOMEN
-            </h2>
-
-            <p className={styles.textParagraph}>
-              The Young Women's Christian Association (YWCA) is an international movement motivated by its concern for women all over the world. It is deeply committed to the development and empowerment of women.
-            </p>
-
-            <p className={styles.textParagraph}>
-              It is a movement with a mission to educate, train, to create awareness and counsel women to enable them contribute effectively to the socio-economic development of our nation.
-            </p>
-
-            <p className={styles.textParagraph}>
-              The YWCA of Delhi was established in 1912 and affiliated to the world YWCA through the National Body, YWCA of India.
-            </p>
-
-            <p className={styles.textParagraph}>
-              The YWCA of Delhi over the years has emerged as a platform for the present generation of women to assume new responsibilities in contributing towards the growth of the nation and the society in large. It is fully focused in its vision to empower women in all works of life. The job oriented vocational education imparted at YWCA has gone a long way to improve the financial and economical status of women.
-            </p>
-
-            <p className={styles.textParagraph}>
-              The YWCA of Delhi through its multifarious activities in education, training, counseling and employment has been rendering acumen service to women and children.
-            </p>
-
-            <p className={styles.textParagraph}>
-              The YWCA aims at empowering women in their struggle for justice, attaining higher social status and legitimate rights. The mission encourages equal participation of women at all levels and foresees a change in their role in Indian society.
-            </p>
+          
+          {/* Vision Section */}
+          <div className="row align-items-center mb-5">
+            <div className="col-md-6 mb-4 mb-md-0">
+              <img 
+                src="/images/01-Banner-Vision-Mission.jpg" 
+                alt="Vision" 
+                className={styles.sectionImage} 
+              />
+            </div>
+            <div className="col-md-6">
+              <h2 className="sectionTitle_2 mb-4" style={{ textAlign: 'left' }}>Vision</h2>
+              <p className={styles.textParagraph}>
+                YWCA of Delhi remains steadfast in its commitment to empowering women and girls to confront gender inequity, social and economic disparities, caste-based discrimination, and all forms of violence. In a world increasingly marked by environmental degradation and human rights violations, the YWCA - one of the largest women's movements globally - stands poised to be a powerful force for social transformation.
+              </p>
+            </div>
           </div>
+
+          <div style={{ height: '40px' }}></div>
+
+          {/* Mission Section */}
+          <div className="row align-items-center">
+            <div className="col-md-6 order-md-2 mb-4 mb-md-0">
+              <img 
+                src="/images/Vission-Mission-banner.jpg" 
+                alt="Mission" 
+                className={styles.sectionImage} 
+              />
+            </div>
+            <div className="col-md-6 order-md-1">
+              <h2 className="sectionTitle_2 mb-4" style={{ textAlign: 'left' }}>Mission</h2>
+              <p className={styles.textParagraph}>
+                In a rapidly changing world, YWCA of Delhi is called to respond with timely and effective interventions through programmes and projects that address the needs of marginalized communities. We strive to be inclusive of all people - regardless of age, class, caste, creed, or religion - while remaining firmly committed to upholding human dignity and protecting the environment.
+              </p>
+            </div>
+          </div>
+
         </div>
       </section>
     </>

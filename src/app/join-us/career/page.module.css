@@ -1,0 +1,201 @@
+.pageContentWrapper {
+  padding: 60px 0;
+  background-color: #fdf5f8; /* Soft pinkish background similar to the image */
+}
+
+.careerContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.sidebar {
+  width: 100%;
+  max-width: 280px;
+}
+
+@media (max-width: 991px) {
+  .sidebar {
+    max-width: 100%;
+  }
+}
+
+.latestOpenings {
+  border: 1px solid #e8459b;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background: #fff;
+}
+
+.latestOpeningsHeader {
+  /* background-color: #fdf2ff; */
+  color: #e8459b;
+  padding: 12px 15px;
+  font-weight: 600;
+  border-bottom: 1px solid #e8459b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.latestOpeningsHeader span {
+  font-size: 0.75rem;
+  background-color: #e8459b;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.latestOpeningsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.latestOpeningsList li {
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #333;
+}
+.latestOpeningsList li:last-child {
+  border-bottom: none;
+}
+
+.newBadge {
+  background-color: #ffc107;
+  color: #000;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.facultyRecruitment {
+  border: 1px solid #e8459b;
+  border-radius: 6px;
+  padding: 12px 15px;
+  color: #1a4f9b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.95rem;
+  background: #fff;
+  cursor: pointer;
+}
+.facultyRecruitment:hover {
+  background: #fcfcfc;
+}
+
+.mainContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.latestDate {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 15px;
+}
+.latestDate span {
+  color: #e8459b;
+}
+
+.jobTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  font-size: 0.9rem;
+  margin-bottom: 40px;
+}
+
+.jobTable th, .jobTable td {
+  border: 1px solid #000;
+  padding: 15px;
+  vertical-align: top;
+  color: #000;
+}
+
+.jobTable th {
+  width: 25%;
+  background-color: #fff;
+  font-weight: 600;
+}
+
+.jobTable ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+.jobTable ol {
+  padding-left: 15px;
+  margin-bottom: 0;
+}
+
+.jobTable li {
+  margin-bottom: 6px;
+}
+
+.jobTable p {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: #000;
+}
+.jobTable p:last-child {
+  margin-bottom: 0;
+}
+
+.boldText {
+  font-weight: 700;
+}
+
+.applyLink {
+  color: #0d6efd;
+  text-decoration: underline;
+  word-break: break-all;
+}
+
+.womenOnlyText {
+  color: #e8459b;
+  font-style: italic;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.subHeading {
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 8px;
+  color: #1a4f9b;
+}
+
+.listArrow {
+  list-style: none;
+  padding-left: 0;
+}
+
+.listArrow li {
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 6px;
+}
+
+.listArrow li::before {
+  content: '>';
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: bold;
+  color: #000;
+}

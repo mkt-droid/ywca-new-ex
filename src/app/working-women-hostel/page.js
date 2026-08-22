@@ -308,6 +308,51 @@ export default function WorkingWomenHostelPage() {
             </div>
           </div> */}
 
+          {/* Donation Posters Section */}
+          <div className="mb-5 pb-4 border-bottom">
+            <h2 className="sectionTitle_2 text-center" style={{ marginBottom: '40px' }}>Support Our Cause</h2>
+            <div className="row justify-content-center align-items-center">
+              <div className="col-md-6 mb-4 text-center">
+                <Link href="/fund-raising-publicity/donate" style={{ display: 'block' }}>
+                  <img 
+                    src="/images/wwh_1.jpeg" 
+                    alt="Working Women Hostel Support 1" 
+                    style={{ width: '100%', maxHeight: '500px', objectFit: 'contain', borderRadius: '8px', boxShadow: '0 4px 15px rgba(0,0,0,0.08)', cursor: 'pointer' }} 
+                  />
+                </Link>
+              </div>
+              <div className="col-md-6 mb-4 text-center">
+                <Link href="/fund-raising-publicity/donate" style={{ display: 'block' }}>
+                  <img 
+                    src="/images/wwh_2.jpeg" 
+                    alt="Working Women Hostel Support 2" 
+                    style={{ width: '100%', maxHeight: '500px', objectFit: 'contain', borderRadius: '8px', boxShadow: '0 4px 15px rgba(0,0,0,0.08)', cursor: 'pointer' }} 
+                  />
+                </Link>
+              </div>
+            </div>
+            <div className="text-center mt-4">
+              <Link 
+                href="/fund-raising-publicity/donate" 
+                style={{ 
+                  display: 'inline-block',
+                  backgroundColor: '#e8459b', 
+                  color: '#fff', 
+                  padding: '12px 40px', 
+                  borderRadius: '30px', 
+                  fontWeight: '600', 
+                  textTransform: 'uppercase',
+                  textDecoration: 'none',
+                  transition: 'background-color 0.3s'
+                }}
+                onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#cf3788'}
+                onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#e8459b'}
+              >
+                Donate Now
+              </Link>
+            </div>
+          </div>
+
           {/* Downloads Section */}
           <div className={styles.downloadSection}>
             <h2 className="sectionTitle_2 text-center">Download Documents</h2>
