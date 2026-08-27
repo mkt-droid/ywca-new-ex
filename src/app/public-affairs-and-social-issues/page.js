@@ -55,7 +55,7 @@ export default function PublicAffairsPage() {
             </p>
           </div>
           <div className="col-md-6">
-            <img src="/images/pasi/about-img.jpg" alt="Social Engagement" className={styles.aboutImg} />
+            <img src="/images/pasi/about-img.jpeg" alt="Social Engagement" className={styles.aboutImg} />
           </div>
           </div>
           </div>

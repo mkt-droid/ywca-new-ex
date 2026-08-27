@@ -11,7 +11,7 @@ export default function JoinUsPage() {
       title: 'Be a Member',
       desc: 'Join our community and support our mission for empowerment and equality.',
       icon: 'bi-person-heart',
-      link: '/membership-and-programs'
+      link: '/join-us/become-a-member'
     },
     {
       title: 'Be a Volunteer',
@@ -29,7 +29,7 @@ export default function JoinUsPage() {
       title: 'Work With Us',
       desc: 'Explore career opportunities and work with our dedicated professional team.',
       icon: 'bi-person-workspace',
-      link: '/contact-us'
+      link: '/join-us/career'
     },
     {
       title: 'Intern With Us',

@@ -192,7 +192,7 @@ export default function DayCarePage() {
         <div className={styles.newContactContainer} id="contact">
           <div className={styles.newContactLeft}>
             <p className={styles.newContactDesc}>
-              If you or someone you know needs support, please contact us through the helplines below. Our team is here to provide a safe space, care, and guidance.
+              We’re here to help. Please feel free to reach out to our Day Care team for guidance, assistance, or any information you may need. Our team is committed to creating a safe, caring, and nurturing environment for every child.
             </p>
             {/* Using a placeholder SVG for the kids drawing or a suitable icon */}
             <div style={{ color: '#e6235b', fontSize: '3rem', marginTop: '1.5rem', display: 'flex', gap: '1.5rem', alignItems: 'flex-end', justifyContent: 'flex-start' }}>
@@ -202,7 +202,8 @@ export default function DayCarePage() {
             </div>
           </div>
           <div className={styles.newContactRight}>
-            <p className={styles.newContactSubtitle}>YWCA Of Delhi</p>
+            <p className={styles.newContactSubtitle}>Need support or have a question about your child’s care?</p>
+
             <div className={styles.newContactCardsList}>
               <div className={styles.newContactCard}>
                 <div className={styles.newContactCardIcon}><i className="bi bi-geo-alt"></i></div>

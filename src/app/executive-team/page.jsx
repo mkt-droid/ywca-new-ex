@@ -36,8 +36,8 @@ const executiveTeam = [
     description: 'Dummy Ipsum is simply dummy filler text of the printing and type setting & interactive media.'
   },
   {
-    name: 'Ms. Lovnita Dogra',
-    title: 'Communications Coordinator & Coordinator, PRAP',
+    name: 'Ms. Kasturi',
+    title:'Designation',
     image: '/images/executive/team/Ms.-Pragyan-Mohanty.png',
     description: 'Dummy Ipsum is simply dummy filler text of the printing and type setting & interactive media.'
   },
@@ -117,7 +117,7 @@ const ExecutiveTeam = () => {
                     )}
                     <p className={innerStyles.memberName}>{member.name}</p>
                     <p className={`${innerStyles.memberTitle} ${styles.execTitle}`}>{member.title}</p>
-                    <p className={`${innerStyles.desc} ${styles.execDesc}`}>{member.description}</p>
+                    {/* <p className={`${innerStyles.desc} ${styles.execDesc}`}>{member.description}</p> */}
                   </div>
                 </div>
               ))}

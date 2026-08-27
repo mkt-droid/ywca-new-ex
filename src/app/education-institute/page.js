@@ -17,7 +17,7 @@ export default function EducationInstitutePage() {
     { title: 'Overview', icon: 'bi-flower1', link: '/education-institute' },
     { title: 'Programs', icon: 'bi-mortarboard', link: '/education-institute/programs' },
     { title: 'Admission', icon: 'bi-person-vcard', link: '/education-institute/admission' },
-    { title: 'Life@YWCA', icon: 'bi-building', link: '#' },
+    // { title: 'Life@YWCA', icon: 'bi-building', link: '#' },
     { title: 'Student Corner', icon: 'bi-people', link: '#' },
     { title: 'Contact us', icon: 'bi-telephone', link: '/education-institute/contact' },
   ];
@@ -61,7 +61,7 @@ export default function EducationInstitutePage() {
     <main>
       {/* Banner Section with Enquiry Form */}
       <SideNavBanner
-        height="360px"
+        height="480px"
         bgImage="/images/education-institute/aca-bnr.jpg"
         navItems={bannerNavItems}
         sectionStyle={{ overflow: 'visible' }}
@@ -91,7 +91,7 @@ export default function EducationInstitutePage() {
 
       {/* Academic News Section */}
       <section className="container mb-5">
-        <h2 className="sectionTitle_2 text-center d-block">Academic News</h2>
+        <h2 className="sectionTitle_2 text-center d-block">Life@YWCA</h2>
         <div className="mt-4">
           <NewsCarousel newsData={academicNews} />
         </div>
@@ -152,7 +152,7 @@ export default function EducationInstitutePage() {
       </section>
 
       {/* Alumni Section */}
-      <section className="container mt-5 mb-5 text-center">
+      {/* <section className="container mt-5 mb-5 text-center">
         <h2 className="sectionTitle_2 text-center d-block">Our Alumni Are Shaping The Future</h2>
         <div className="row mt-4">
           {alumni.map(person => (
@@ -174,7 +174,7 @@ export default function EducationInstitutePage() {
             View more
           </Link>
         </div>
-      </section>
+      </section> */}
 
       {/* Placement Partners */}
       <PlacementPartners />
