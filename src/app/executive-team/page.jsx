@@ -8,7 +8,7 @@ const executiveTeam = [
   {
     name: 'Ms. Pragyan Mohanty',
     title: 'Communications Coordinator & Coordinator, PRAP',
-    image: '/images/executive/team/Ms.-Pragyan-Mohanty.png',
+    image: '/images/Ms.-Pragya-Monthly.png',
     description: 'Dummy Ipsum is simply dummy filler text of the printing and type setting & interactive media.'
   },
   {

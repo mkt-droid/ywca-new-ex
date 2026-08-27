@@ -87,19 +87,19 @@ const allMembers = [
   {
     name: 'Ms. Rachel Mercy Oommen',
     title: 'Chairperson, CDP',
-    image: '/images/board-of-management/dummy.jpg',
+    image: '/images/board-of-management/ms-rachel-mercy.jpeg',
     description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
   },
   {
     name: 'Ms. Bliss Peter',
-    title: 'Vice President YWCA',
-    image: '/images/board-of-management/dummy.jpg',
+    title: 'Member',
+    image: '/images/board-of-management/ms-bliss peter.jpeg',
     description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
   },
   {
     name: 'Ms. Leah John',
     title: 'Member',
-    image: '/images/board-of-management/dummy.jpg',
+    image: '/images/board-of-management/ms-leah-john.jpeg',
     description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
   },
   {

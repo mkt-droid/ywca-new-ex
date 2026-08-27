@@ -6,9 +6,9 @@ import { useRef, useEffect } from "react"
 
 const members = [
   {
-    name: 'MS. PRAGYAN MOHANTY',
+    name: 'MS. PRAGYAN MOHANTY1',
     title: 'General Secretary',
-    image: '/images/executive-team-member-thumb.jpg',
+    image: '/images/Ms.-Pragya-Monthly.png',
     description: 'Lorem Ipsum is simply dummy text of the printing and type setting industry.'
   },
   {
@@ -118,13 +118,13 @@ const ExecutiveTeam = () => {
                     data-delay={i * 80}
                   >
                     {/* <Link href={`/executive-team/${m.name.toLowerCase().replace(/\s+/g, '-')}`}> */}
-                      {m.image
-                        ? <img src={m.image} alt={m.name} />
-                        : <PlaceholderImg />
-                      }
-                      <p className={styles.memberName}>{m.name}</p>
-                      <p className={styles.memberTitle}>{m.title}</p>
-                      <p className={styles.desc}>{m.description}</p>
+                    {m.image
+                      ? <img src={m.image} alt={m.name} />
+                      : <PlaceholderImg />
+                    }
+                    <p className={styles.memberName}>{m.name}</p>
+                    <p className={styles.memberTitle}>{m.title}</p>
+                    <p className={styles.desc}>{m.description}</p>
                     {/* </Link> */}
                   </div>
                 </div>

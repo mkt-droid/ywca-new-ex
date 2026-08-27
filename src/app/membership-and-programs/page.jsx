@@ -101,24 +101,32 @@ export default function MembershipDepartmentPage() {
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6 col-md-12 mb-5 mb-lg-0 pr-lg-5">
-                <h2 className={`${styles.formGroupTitle} mt-0`}>New Membership Forms</h2>
+                <h2 className={`${styles.formGroupTitle} mt-0`}>Be a Member</h2>
                 <div className={styles.pdfButtonsContainer}>
-                  <Link href="/membership-and-programs/associate-member-form" className={styles.pdfButton}>
+                  <Link href="/join-us/become-a-member" className={styles.pdfButton}>
+                    Membership
+                  </Link>
+
+                  {/* <Link href="/membership-and-programs/associate-member-form" className={styles.pdfButton}>
                     Associate Member
                   </Link>
                   <Link href="/membership-and-programs/electoral-member-form" className={styles.pdfButton}>
                     Electoral Members
-                  </Link>
+                  </Link> */}
                 </div>
 
                 <h2 className={styles.formGroupTitle}>Renewal of Membership</h2>
                 <div className={styles.pdfButtonsContainer}>
                   <Link href="/membership-and-programs/associate-renewal-form" className={styles.pdfButton}>
+                    Renewal
+                  </Link>
+
+                  {/* <Link href="/membership-and-programs/associate-renewal-form" className={styles.pdfButton}>
                     Associate Renewal
                   </Link>
                   <Link href="/membership-and-programs/electoral-renewal-form" className={styles.pdfButton}>
                     Electoral Renewal
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
               <div className="col-lg-6 col-md-12 text-center position-relative">
