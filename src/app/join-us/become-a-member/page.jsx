@@ -121,8 +121,9 @@ export default function BecomeAMemberPage() {
               </div>
 
               <div className={styles.btnGroup}>
-                <button type="button" className={styles.actionBtn}>SAVE</button>
-
+                <button type="button" className={styles.actionBtn}>
+                  SAVE <i className="bi bi-arrow-right" />
+                </button>
               </div>
             </form>
           </div>

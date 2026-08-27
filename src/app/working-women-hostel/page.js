@@ -308,48 +308,67 @@ export default function WorkingWomenHostelPage() {
             </div>
           </div> */}
 
-          {/* Donation Posters Section */}
+          {/* Support Our Cause HTML Card */}
           <div className="mb-5 pb-4 border-bottom">
             <h2 className="sectionTitle_2 text-center" style={{ marginBottom: '40px' }}>Support Our Cause</h2>
-            <div className="row justify-content-center align-items-center">
-              <div className="col-md-6 mb-4 text-center">
-                <Link href="/fund-raising-publicity/donate" style={{ display: 'block' }}>
-                  <img 
-                    src="/images/wwh_1.jpeg" 
-                    alt="Working Women Hostel Support 1" 
-                    style={{ width: '100%', maxHeight: '500px', objectFit: 'contain', borderRadius: '8px', boxShadow: '0 4px 15px rgba(0,0,0,0.08)', cursor: 'pointer' }} 
-                  />
-                </Link>
+            
+            <div className={styles.causeCardWrapper}>
+              <div className="row g-0 align-items-stretch">
+                {/* Left Column: Image */}
+                <div className="col-lg-6">
+                  <div className={styles.causeImageWrap}>
+                    <img 
+                      src="/images/wwh_1.jpeg" 
+                      alt="Help Women Survivors" 
+                      className={styles.causeImg}
+                    />
+                  </div>
+                </div>
+
+                {/* Right Column: HTML Poster Content */}
+                <div className="col-lg-6">
+                  <div className={styles.causeContentWrap}>
+                    {/* Headline */}
+                    <h3 className={styles.causeHeadline}>
+                      Help Women Survivors of Violence find Safety and Security
+                    </h3>
+
+                    {/* Paragraphs */}
+                    <p className={styles.causeText}>
+                      At the YWCA of Delhi Shelter Homes, we support women survivors of violence and abandonment by providing a safe space to heal, regain strength, and rebuild lives with dignity.
+                    </p>
+                    <p className={styles.causeText}>
+                      Every Contribution Matters, Big or Small helps create a pathway to Safety and New Beginning. Be a part of YWCA of Delhi's Donation Drive through Milaap Crowd Funding Platform.
+                    </p>
+
+                    <div className={styles.causeDivider}></div>
+
+                    {/* QR Section */}
+                    <div className={styles.qrSection}>
+                      <p className={styles.scanText}>
+                        Donate by scanning the QR code with any UPI app or by visiting the link provided.
+                      </p>
+
+                      <div className={styles.qrCodeBox}>
+                        <img src="/images/wwh_qr.jpeg" alt="QR Code" className={styles.qrImg} />
+                      </div>
+
+                      <a 
+                        href="http://m-lp.co/womensur-1" 
+                        target="_blank" 
+                        rel="noreferrer" 
+                        className={styles.qrLink}
+                      >
+                        http://m-lp.co/womensur-1
+                      </a>
+                    </div>
+
+                    <div className={styles.thankYouText}>
+                      Thank you for your Support
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="col-md-6 mb-4 text-center">
-                <Link href="/fund-raising-publicity/donate" style={{ display: 'block' }}>
-                  <img 
-                    src="/images/wwh_2.jpeg" 
-                    alt="Working Women Hostel Support 2" 
-                    style={{ width: '100%', maxHeight: '500px', objectFit: 'contain', borderRadius: '8px', boxShadow: '0 4px 15px rgba(0,0,0,0.08)', cursor: 'pointer' }} 
-                  />
-                </Link>
-              </div>
-            </div>
-            <div className="text-center mt-4">
-              <Link 
-                href="/fund-raising-publicity/donate" 
-                style={{ 
-                  display: 'inline-block',
-                  backgroundColor: '#e8459b', 
-                  color: '#fff', 
-                  padding: '12px 40px', 
-                  borderRadius: '30px', 
-                  fontWeight: '600', 
-                  textTransform: 'uppercase',
-                  textDecoration: 'none',
-                  transition: 'background-color 0.3s'
-                }}
-                onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#cf3788'}
-                onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#e8459b'}
-              >
-                Donate Now
-              </Link>
             </div>
           </div>
 

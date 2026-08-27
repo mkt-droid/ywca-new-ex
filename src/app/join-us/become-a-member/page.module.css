@@ -38,24 +38,23 @@
 
 .formControl {
   width: 100%;
-  padding: 10px 0;
-  border: none;
-  border-bottom: 1px solid #777;
-  background-color: transparent;
+  padding: 10px 14px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
   font-size: 1rem;
   color: #000000;
-  border-radius: 0;
-  transition: border-bottom-color 0.3s ease;
+  border-radius: 6px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .formControl::placeholder {
-  color: #bbb;
+  color: #aaaaaa;
 }
 
 .formControl:focus {
   outline: none;
-  border-bottom-color: #1c2b5e;
-  box-shadow: none;
+  border-color: #1a4f9b;
+  box-shadow: 0 0 0 3px rgba(26, 79, 155, 0.15);
 }
 
 .textareaControl {
@@ -80,16 +79,16 @@
 .btnGroup {
   display: flex;
   gap: 15px;
-  margin-top: 50px;
-  border-top: 1px solid #eee;
-  padding-top: 40px;
+  margin-top: 20px;
+  border-top: none;
+  padding-top: 0;
 }
 
 .actionBtn {
   background-color: #293e99;
   color: #ffffff;
   border: none;
-  padding: 10px 30px;
+  padding: 10px 25px;
   border-radius: 30px;
   font-weight: 600;
   cursor: pointer;
@@ -97,6 +96,9 @@
   transition: background-color 0.3s ease, transform 0.3s ease;
   font-size: 0.9rem;
   letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .actionBtn:hover {

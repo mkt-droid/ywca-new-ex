@@ -96,7 +96,7 @@ export default function DayCarePage() {
 
         {/* Our Core Values */}
         <div className={styles.newCoreValuesContainer} id="core-values">
-          <h2 className={styles.newCoreValuesTitle}>Our Core Values</h2>
+          <h2 className="sectionTitle_2 text-center">Our Core Values</h2>
           <p className={styles.newCoreValuesDesc}>
             This shelter home is specially designed for destitute pregnant and lactating women. It operates at two locations- Sarai Rohilla and Jahangirpuri-in collaboration with the Department of Women & Child development, Government of NCT of Delhi.
           </p>
@@ -124,7 +124,7 @@ export default function DayCarePage() {
 
         {/* Our Services & Facilities (List) */}
         <div className={styles.newServicesGridContainer} id="services">
-          <h2 className={styles.newServicesGridTitle}>Our Services &amp; Facilities</h2>
+          <h2 className="sectionTitle_2 text-center">Our Services &amp; Facilities</h2>
           <p className={styles.newServicesGridDesc}>
             We provide a comprehensive range of services to ensure safety, learning, and overall well-being
           </p>
@@ -202,7 +202,7 @@ export default function DayCarePage() {
             </div>
           </div>
           <div className={styles.newContactRight}>
-            <p className={styles.newContactSubtitle}>Need support or have a question about your child’s care?</p>
+            <h2 className="sectionTitle_2">Need support or have a question about your child’s care?</h2>
 
             <div className={styles.newContactCardsList}>
               <div className={styles.newContactCard}>
@@ -218,7 +218,7 @@ export default function DayCarePage() {
               <div className={styles.newContactCard}>
                 <div className={styles.newContactCardIcon}><i className="bi bi-envelope"></i></div>
                 <div className={`${styles.newContactCardLabel} pr-3`}>Email</div>
-                <div className={styles.newContactCardValue}>Dc@ywcaofdelhi.Org, Sh@ywcaofdelhi.Org</div>
+                <div className={styles.newContactCardValue}>Dc@ywcaofdelhi.Org</div>
               </div>
             </div>
           </div>

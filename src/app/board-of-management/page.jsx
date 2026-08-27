@@ -12,13 +12,13 @@ const allMembers = [
     image: '/images/President.jpg',
     description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
   },
-    {
-    name: 'Ms. Pragya Mohanty',
-    title: 'General Secretary YWCA of Delhi',
+  {
+    name: 'Ms. Pragyan Mohanty',
+    title: 'General Secretary YWCA',
     image: '/images/Ms.-Pragya-Monthly.png',
     description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
   },
-  
+
 
 
   {
@@ -111,7 +111,7 @@ const allMembers = [
     image: '/images/board-of-management/anaya.jpeg',
     description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
   },
-  
+
 ]
 
 // ── Placeholder silhouette ──

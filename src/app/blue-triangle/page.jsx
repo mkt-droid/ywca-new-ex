@@ -6,7 +6,7 @@ import styles from "./page.module.css";
 
 const BlueTriangle = () => {
   const bannerNavItems = [
-    { title: 'Home / Overview', icon: 'bi-house-door', link: '/blue-triangle' },
+    { title: 'Overview', icon: 'bi-house-door', link: '/blue-triangle' },
     { title: 'Room Booking', icon: 'bi-door-closed', link: '/blue-triangle/room-booking' },
     { title: 'Meeting & Event Spaces', icon: 'bi-people', link: '/blue-triangle/meeting-event-spaces' },
     { title: 'Explore Delhi', icon: 'bi-geo-alt', link: '/blue-triangle/explore-delhi' },
@@ -54,11 +54,11 @@ const BlueTriangle = () => {
 
       >
         <div className={styles.heroLeft}>
-          <img
+          {/* <img
             src="/images/blue-tringle/stamp 1.png"
             alt="Book Now Stamp"
             className={styles.stamp}
-          />
+          /> */}
           <h1 className={styles.heroTitle}>
             Your Preferred Choice<br />In New Delhi
           </h1>
@@ -188,7 +188,7 @@ const BlueTriangle = () => {
       </div>
 
       {/* INSTAGRAM SECTION */}
-      <section className={styles.instaSection}>
+      {/* <section className={styles.instaSection}>
         <div className="container">
           <h2 className="sectionTitle_2 text-center">Instagram</h2>
           <div className={styles.instaGrid}>
@@ -199,7 +199,7 @@ const BlueTriangle = () => {
             <img src="/images/blue-tringle/insta-5.png" alt="Instagram 5" />
           </div>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 };

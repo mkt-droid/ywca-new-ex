@@ -6,7 +6,7 @@ import styles from "./page.module.css";
 
 const ExploreDelhi = () => {
   const bannerNavItems = [
-    { title: 'Home / Overview', icon: 'bi-house-door', link: '/blue-triangle' },
+    { title: 'Overview', icon: 'bi-house-door', link: '/blue-triangle' },
     { title: 'Room Booking', icon: 'bi-door-closed', link: '/blue-triangle/room-booking' },
     { title: 'Meeting & Event Spaces', icon: 'bi-people', link: '/blue-triangle/meeting-event-spaces' },
     { title: 'Explore Delhi', icon: 'bi-geo-alt', link: '/blue-triangle/explore-delhi' },
@@ -114,11 +114,7 @@ const ExploreDelhi = () => {
         activePath="/blue-triangle/explore-delhi"
       >
         <div className={styles.heroLeft}>
-          <img
-            src="/images/blue-tringle/stamp 1.png"
-            alt="Book Now Stamp"
-            className={styles.stamp}
-          />
+
           <h1 className={styles.heroTitle}>
             EXPERIENCE<br />DELHI WITH US
           </h1>
@@ -218,10 +214,26 @@ const ExploreDelhi = () => {
       </section>
 
       {/* USER STORIES SECTION */}
-      <UserStories stories={stories} title="User Stories" />
+      {/* <UserStories stories={stories} title="User Stories" /> */}
+
+      {/* SPECIAL OFFERS SECTION */}
+      <section className={`container ${styles.offersSection}`}>
+        <h2 className="sectionTitle_2 text-center">Special Offers</h2>
+        <div className={styles.offersGrid}>
+          <div className={styles.offerCard}>
+            <img src="/images/blue-tringle/all-offers.png" alt="Seasons Greeting" />
+          </div>
+          <div className={styles.offerCard}>
+            <img src="/images/blue-tringle/all-offers.png" alt="Seasons Greeting" />
+          </div>
+          <div className={styles.offerCard}>
+            <img src="/images/blue-tringle/all-offers.png" alt="Seasons Greeting" />
+          </div>
+        </div>
+      </section>
 
       {/* INSTAGRAM SECTION */}
-      <section className={styles.instaSection}>
+      {/* <section className={styles.instaSection}>
         <div className="container">
           <h2 className="sectionTitle_2 text-center" style={{ marginTop: 0 }}>Instagram</h2>
           <div className={styles.instaGrid}>
@@ -232,7 +244,7 @@ const ExploreDelhi = () => {
             <img src="/images/blue-tringle/insta-5.png" alt="Instagram 5" />
           </div>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 };

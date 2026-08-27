@@ -233,6 +233,36 @@
   right: 0;
 }
 
+/* ── SPECIAL OFFERS ── */
+.offersSection {
+  padding: 50px 0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.offersSection .sectionTitle {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.offersGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.offerCard {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.offerCard img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* ── INSTAGRAM ── */
 .instaSection {
   padding: 60px 0;
@@ -253,7 +283,8 @@
 
 /* ── RESPONSIVE ── */
 @media (max-width: 991px) {
-  .glimpsesGrid {
+  .glimpsesGrid,
+  .offersGrid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -276,7 +307,8 @@
 }
 
 @media (max-width: 767px) {
-  .glimpsesGrid {
+  .glimpsesGrid,
+  .offersGrid {
     grid-template-columns: 1fr;
   }
 
