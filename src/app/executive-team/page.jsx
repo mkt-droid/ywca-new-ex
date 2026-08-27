@@ -24,8 +24,8 @@ const executiveTeam = [
     description: 'Dummy Ipsum is simply dummy filler text of the printing and type setting & interactive media.'
   },
   {
-    name: 'Ms. Amrita Upali Singh',
-    title: 'HOD CPC',
+    name: 'Ms. Amrita',
+    title: 'HOD, CDP',
     image: '/images/executive/team/Ms.Amrita-Upali-Singh.png',
     description: 'Dummy Ipsum is simply dummy filler text of the printing and type setting & interactive media.'
   },
@@ -37,19 +37,19 @@ const executiveTeam = [
   },
   {
     name: 'Ms. Kasturi',
-    title:'Designation',
-    image: '/images/executive/team/Ms.-Pragyan-Mohanty.png',
+    title: 'HOD, MAP / PASI',
+    image: '/images/board-of-management/ms-kasturi.jpeg',
     description: 'Dummy Ipsum is simply dummy filler text of the printing and type setting & interactive media.'
   },
   {
-    name: 'Ms. Rajni Rawat',
-    title: 'Coordinator, Youth, REC, PASI',
+    name: 'Ms. Rajni',
+    title: 'Coordinator Youth/ REC',
     image: '/images/executive/team/Ms.-Rajni-Rawat.png',
     description: 'Dummy Ipsum is simply dummy filler text of the printing and type setting & interactive media.'
   },
   {
-    name: 'Mr. Sanjeev Masih',
-    title: 'HOD STFH',
+    name: 'Mr. Sanjeev',
+    title: 'HOD, BTFH',
     image: '/images/executive/team/Mr.-Sanjeev-Masih.png',
     description: 'Dummy Ipsum is simply dummy filler text of the printing and type setting & interactive media.'
   },

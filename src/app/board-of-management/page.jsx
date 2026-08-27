@@ -8,29 +8,20 @@ import { useRef, useEffect } from "react"
 const allMembers = [
   {
     name: 'Ms. Rhiya Varghese',
-    title: 'President YWCA',
+    title: 'President',
     image: '/images/President.jpg',
     description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
   },
   {
-    name: 'Ms. Pragyan Mohanty',
-    title: 'General Secretary YWCA',
-    image: '/images/Ms.-Pragya-Monthly.png',
+    name: 'Ms. Apphia A. Daniel',
+    title: 'Vice- President',
+    image: '/images/board-of-management/ms-apphia-akanksha-daniel.jpg',
     description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
   },
-
-
-
   {
     name: 'Ms. Nisha Samuel',
-    title: 'Vice President YWCA',
+    title: 'Vice- President',
     image: '/images/board-of-management/ms-nisha-samual.jpg',
-    description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
-  },
-  {
-    name: 'Ms. Apphia Akansha Daniel',
-    title: 'Vice President YWCA',
-    image: '/images/board-of-management/ms-apphia-akanksha-daniel.jpg',
     description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
   },
   {
@@ -40,7 +31,7 @@ const allMembers = [
     description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
   },
   {
-    name: 'Ms. Suruchi D Dass',
+    name: 'Ms. Suruchi D. Dass',
     title: 'Asst. Treasurer',
     image: '/images/board-of-management/ms-suruchi-Dass.jpg',
     description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
@@ -52,20 +43,14 @@ const allMembers = [
     description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
   },
   {
-    name: 'Ms. Rachel Mercy Oommen',
-    title: 'Chairperson, CDP',
-    image: '/images/board-of-management/dummy.jpg',
-    description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
-  },
-  {
     name: 'Ms. Amelia Andrews',
-    title: 'Chairperson, Youth',
+    title: 'Member',
     image: '/images/board-of-management/ms-amelia-andrews.jpg',
     description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
   },
   {
     name: 'Ms. Anushka Rose',
-    title: 'Chairperson, Personnel Committee',
+    title: 'Member',
     image: '/images/board-of-management/ms-anushka-rose.jpg',
     description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
   },
@@ -94,6 +79,18 @@ const allMembers = [
     description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
   },
   {
+    name: 'Ms. Pragyan Mohanty',
+    title: 'General Secretary YWCA',
+    image: '/images/Ms.-Pragya-Monthly.png',
+    description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
+  },
+  {
+    name: 'Ms. Rachel Mercy Oommen',
+    title: 'Chairperson, CDP',
+    image: '/images/board-of-management/dummy.jpg',
+    description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
+  },
+  {
     name: 'Ms. Bliss Peter',
     title: 'Vice President YWCA',
     image: '/images/board-of-management/dummy.jpg',
@@ -110,8 +107,7 @@ const allMembers = [
     title: 'Co-opted Member',
     image: '/images/board-of-management/anaya.jpeg',
     description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
-  },
-
+  }
 ]
 
 // ── Placeholder silhouette ──
