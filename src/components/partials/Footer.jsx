@@ -51,36 +51,36 @@ const Footer = () => {
               <div className="footer-widget">
                 <ul className="quick-links">
                   <li>
-                    <a href="/">Home</a>
+                    <Link href="/">Home</Link>
                   </li>
                   <li>
-                    <a href="/">About Us</a>
+                    <Link href="/our-history">About Us</Link>
                   </li>
                   <li>
-                    <a href="/">
+                    <Link href="/membership-and-programs">
                       Our Programs
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/">Hotel Bookings</a>
+                    <Link href="/blue-triangle">Hotel Bookings</Link>
                   </li>
                   <li>
-                    <a href="/">Course Inquiry</a>
+                    <Link href="/education-institute/contact">Course Inquiry</Link>
                   </li>
                   <li>
-                    <a href="/">Guest House Booking</a>
+                    <Link href="/blue-triangle">Guest House Booking</Link>
                   </li>
                   <li>
-                    <a href="/">Career</a>
+                    <Link href="/career">Career</Link>
                   </li>
                   <li>
-                    <a href="/">Leadership</a>
+                    <Link href="/board-of-management">Leadership</Link>
                   </li>
                   <li>
-                    <a href="/">Team</a>
+                    <Link href="/executive-team">Team</Link>
                   </li>
                   <li>
-                    <a href="/news">News & Updates</a>
+                    <Link href="/news">News & Updates</Link>
                   </li>
                   <li>
                     <Link href="/privacy-policy">Privacy Policy</Link>
@@ -101,13 +101,17 @@ const Footer = () => {
             <div className="col-lg-3">
               <div className="footer-widget">
                 <div className="usefull-links">
-                  <button>
-                    Become a Donor <i className="bi bi-arrow-right-circle-fill" />
-                  </button>
-                  <button>
-                    Become a Member <i className="bi bi-arrow-right-circle-fill" />
-                  </button>
-                  <Link href="/contact-us" passHref>
+                  <Link href="/fund-raising-publicity/donate">
+                    <button>
+                      Become a Donor <i className="bi bi-arrow-right-circle-fill" />
+                    </button>
+                  </Link>
+                  <Link href="/membership-and-programs">
+                    <button>
+                      Become a Member <i className="bi bi-arrow-right-circle-fill" />
+                    </button>
+                  </Link>
+                  <Link href="/contact-us">
                     <button>
                       Contact Us <i className="bi bi-arrow-right-circle-fill" />
                     </button>
