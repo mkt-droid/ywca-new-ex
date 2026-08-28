@@ -59,7 +59,7 @@ export default function VolunteerAndPartnershipPage() {
       <div className={`${styles.contentWrapper} pageContentWrapper`}>
         <section className={styles.sectionPadding}>
           <div className="container">
-            <h1 className="sectionTitle_1 text-center mx-800">Volunteer & Partnership</h1>
+            <h1 className="sectionTitle_1 text-center mx-800">Volunteer & Partnership </h1>
             <p className={styles.pageDescription}>
               Join hands with us to create lasting change and empower communities together.
             </p>
