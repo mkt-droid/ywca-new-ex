@@ -8,15 +8,15 @@ const executiveTeam = [
   {
     name: 'Ms. Pragyan Mohanty',
     title: 'General Secretary YWCA',
-    image: '/images/executive/team/Ms.-Pragyan-Mohanty.png',
+    image: '/images/Ms.-Pragya-Monthly.png',
     description: 'Dummy Ipsum is simply dummy filler text of the printing and type setting & interactive media.'
   },
-  {
-    name: 'Name',
-    title: 'Chief Accounts Officer',
-    image: null,
-    description: 'Dummy Ipsum is simply dummy filler text of the printing and type setting & interactive media.'
-  },
+  // {
+  //   name: 'Name',
+  //   title: 'Chief Accounts Officer',
+  //   image: null,
+  //   description: 'Dummy Ipsum is simply dummy filler text of the printing and type setting & interactive media.'
+  // },
   {
     name: 'Ms. Ruby Rajeev',
     title: 'Administrative Manager',
@@ -65,12 +65,12 @@ const executiveTeam = [
     image: '/images/executive/team/Ms.-Vandana-Mashis.png',
     description: 'Dummy Ipsum is simply dummy filler text of the printing and type setting & interactive media.'
   },
-  {
-    name: 'Name',
-    title: 'Hostel HOD',
-    image: null,
-    description: 'Dummy Ipsum is simply dummy filler text of the printing and type setting & interactive media.'
-  }
+  // {
+  //   name: 'Name',
+  //   title: 'Hostel HOD',
+  //   image: null,
+  //   description: 'Dummy Ipsum is simply dummy filler text of the printing and type setting & interactive media.'
+  // }
 ];
 
 const PlaceholderImg = () => (
