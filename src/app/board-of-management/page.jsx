@@ -4,7 +4,7 @@ import styles from '@/styles/Inner.module.css'
 import Link from "next/link"
 import { useRef, useEffect } from "react"
 
-// ── Single array with all members including President ──
+// ── Single array with all members re-sequenced to match Annual Report order (original properties preserved) ──
 const allMembers = [
   {
     name: 'Ms. Rhiya Varghese',
@@ -55,6 +55,36 @@ const allMembers = [
     description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
   },
   {
+    name: 'Ms. Aradhna Peter',
+    title: 'President YWCA',
+    image: '/images/board-of-management/ms-aradhna-peter.jpg',
+    description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
+  },
+  {
+    name: 'Ms. Bliss Peter',
+    title: 'Member',
+    image: '/images/board-of-management/ms-bliss peter.jpeg',
+    description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
+  },
+  {
+    name: 'Ms. Dheerender Bhola',
+    title: 'Chairperson, REC',
+    image: '/images/board-of-management/ms-dheerender-bhola.jpg',
+    description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
+  },
+  {
+    name: 'Ms. Leah John',
+    title: 'Member',
+    image: '/images/board-of-management/ms-leah-john.jpeg',
+    description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
+  },
+  {
+    name: 'Ms. Rachel Mercy Oommen',
+    title: 'Chairperson, CDP',
+    image: '/images/board-of-management/ms-rachel-mercy.jpeg',
+    description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
+  },
+  {
     name: 'Ms. Samantha Maria',
     title: 'Chairperson, Finance',
     image: '/images/board-of-management/ms-samantha.jpg',
@@ -67,45 +97,15 @@ const allMembers = [
     description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
   },
   {
-    name: 'Ms. Dheerender Bhola',
-    title: 'Chairperson, REC',
-    image: '/images/board-of-management/ms-dheerender-bhola.jpg',
-    description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
-  },
-  {
-    name: 'Ms. Aradhna Peter',
-    title: 'President YWCA',
-    image: '/images/board-of-management/ms-aradhna-peter.jpg',
+    name: 'Ms. Ananya Das Gupta',
+    title: 'Co-opted Member',
+    image: '/images/board-of-management/anaya.jpeg',
     description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
   },
   {
     name: 'Ms. Pragyan Mohanty',
     title: 'General Secretary YWCA',
     image: '/images/Ms.-Pragya-Monthly.png',
-    description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
-  },
-  {
-    name: 'Ms. Rachel Mercy Oommen',
-    title: 'Chairperson, CDP',
-    image: '/images/board-of-management/ms-rachel-mercy.jpeg',
-    description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
-  },
-  {
-    name: 'Ms. Bliss Peter',
-    title: 'Member',
-    image: '/images/board-of-management/ms-bliss peter.jpeg',
-    description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
-  },
-  {
-    name: 'Ms. Leah John',
-    title: 'Member',
-    image: '/images/board-of-management/ms-leah-john.jpeg',
-    description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
-  },
-  {
-    name: 'Ms. Ananya Das Gupta',
-    title: 'Co-opted Member',
-    image: '/images/board-of-management/anaya.jpeg',
     description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
   }
 ]
@@ -154,11 +154,11 @@ const BoardOfManagement = () => {
         <div className="container">
           <section className={styles.boardSection} ref={sectionRef}>
 
-            <div className="row">
+            <div className="row justify-content-center">
               {allMembers.map((m, i) => (
                 <div
                   key={i}
-                  className="col-lg-4 col-md-4 col-sm-6 col-12 mb-20"
+                  className="col-lg-3 col-md-4 col-sm-6 col-12 mb-20"
                 >
                   <div
                     className={styles.memberCard}

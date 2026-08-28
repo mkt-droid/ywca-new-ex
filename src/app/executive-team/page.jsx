@@ -7,8 +7,14 @@ import { useRef, useEffect } from "react";
 const executiveTeam = [
   {
     name: 'Ms. Pragyan Mohanty',
-    title: 'Communications Coordinator & Coordinator, PRAP',
-    image: '/images/Ms.-Pragya-Monthly.png',
+    title: 'General Secretary YWCA',
+    image: '/images/executive/team/Ms.-Pragyan-Mohanty.png',
+    description: 'Dummy Ipsum is simply dummy filler text of the printing and type setting & interactive media.'
+  },
+  {
+    name: 'Name',
+    title: 'Chief Accounts Officer',
+    image: null,
     description: 'Dummy Ipsum is simply dummy filler text of the printing and type setting & interactive media.'
   },
   {
@@ -30,15 +36,15 @@ const executiveTeam = [
     description: 'Dummy Ipsum is simply dummy filler text of the printing and type setting & interactive media.'
   },
   {
-    name: 'Ms. Linda Gangmei',
-    title: 'HOD Shelter Homes',
-    image: '/images/executive/team/Ms.-Linda-Gangmei.png',
-    description: 'Dummy Ipsum is simply dummy filler text of the printing and type setting & interactive media.'
-  },
-  {
     name: 'Ms. Kasturi',
     title: 'HOD, MAP / PASI',
     image: '/images/board-of-management/ms-kasturi.jpeg',
+    description: 'Dummy Ipsum is simply dummy filler text of the printing and type setting & interactive media.'
+  },
+  {
+    name: 'Ms. Linda Gangmei',
+    title: 'HOD Shelter Homes',
+    image: '/images/executive/team/Ms.-Linda-Gangmei.png',
     description: 'Dummy Ipsum is simply dummy filler text of the printing and type setting & interactive media.'
   },
   {
@@ -48,7 +54,7 @@ const executiveTeam = [
     description: 'Dummy Ipsum is simply dummy filler text of the printing and type setting & interactive media.'
   },
   {
-    name: 'Mr. Sanjeev',
+    name: 'Mr. Sanjeev Masih',
     title: 'HOD, BTFH',
     image: '/images/executive/team/Mr.-Sanjeev-Masih.png',
     description: 'Dummy Ipsum is simply dummy filler text of the printing and type setting & interactive media.'
@@ -57,6 +63,12 @@ const executiveTeam = [
     name: 'Ms. Vandana Mashis',
     title: 'Deputy Director Education Institutes',
     image: '/images/executive/team/Ms.-Vandana-Mashis.png',
+    description: 'Dummy Ipsum is simply dummy filler text of the printing and type setting & interactive media.'
+  },
+  {
+    name: 'Name',
+    title: 'Hostel HOD',
+    image: null,
     description: 'Dummy Ipsum is simply dummy filler text of the printing and type setting & interactive media.'
   }
 ];
@@ -103,7 +115,7 @@ const ExecutiveTeam = () => {
       <section className={innerStyles.innerPageSection} style={{ backgroundColor: '#FCF7F7' }}>
         <div className="container">
           <section className={innerStyles.boardSection} ref={sectionRef}>
-            <div className="row">
+            <div className="row justify-content-center">
               {executiveTeam.map((member, i) => (
                 <div
                   key={i}

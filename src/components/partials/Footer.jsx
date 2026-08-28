@@ -112,7 +112,7 @@ const Footer = () => {
                       Become a Donor <i className="bi bi-arrow-right-circle-fill" />
                     </button>
                   </Link>
-                  <Link href="/membership-and-programs">
+                  <Link href="/join-us/become-a-member">
                     <button>
                       Become a Member <i className="bi bi-arrow-right-circle-fill" />
                     </button>
