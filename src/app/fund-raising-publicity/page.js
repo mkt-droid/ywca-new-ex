@@ -37,7 +37,7 @@ export default function FundRaisingPage() {
       <div className={`${styles.contentWrapper} pageContentWrapper`} style={{ paddingBottom: 0 }}>
 
         {/* HOW YOU CAN HELP */}
-        <section className={`container ${styles.newSection}`}>
+        <section className={`container ${styles.newSection}`} style={{ paddingTop: 0 }}>
           <div className="text-center mb-5">
             <h2 className="sectionTitle_2">How You Can Help</h2>
 
