@@ -10,6 +10,7 @@ const ExploreDelhi = () => {
     { title: 'Room Booking', icon: 'bi-door-closed', link: '/blue-triangle/room-booking' },
     { title: 'Meeting & Event Spaces', icon: 'bi-people', link: '/blue-triangle/meeting-event-spaces' },
     { title: 'Explore Delhi', icon: 'bi-geo-alt', link: '/blue-triangle/explore-delhi' },
+    { title: 'Contact Us', icon: 'bi-telephone', link: '/blue-triangle/contact' },
   ];
 
   const stories = [

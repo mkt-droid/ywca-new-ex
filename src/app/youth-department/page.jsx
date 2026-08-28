@@ -35,7 +35,7 @@ export default function YouthDepartmentPage() {
               <h2 className='sectionTitle_2 text-center mx-800'>Programs Conducted in Past</h2>
 
               <div className="row justify-content-center mt-4">
-                <div className="col-md-6 col-lg-5 mb-4">
+                <div className="col-md-6 col-lg-4 mb-4">
                   <Link href="/youth-department/inter-school-debate" className={styles.programLink}>
                     <div className={styles.programCard}>
                       <img src="/images/yuva-department/01-Gallery-Inter-School Debate/1.jpg" alt="Inter-School Debate Competition 2026" className="img-fluid rounded mb-3" style={{ width: '100%', height: '280px', objectFit: 'cover' }} />
@@ -47,7 +47,7 @@ export default function YouthDepartmentPage() {
                   </Link>
                 </div>
 
-                <div className="col-md-6 col-lg-5 mb-4">
+                <div className="col-md-6 col-lg-4 mb-4">
                   <Link href="/youth-department/thrive-music-festival" className={styles.programLink}>
                     <div className={styles.programCard}>
                       <img src="/images/yuva-department/02-Gallery-Thrive Music Festival/1.jpg" alt="Thrive Music Festival 2026" className="img-fluid rounded mb-3" style={{ width: '100%', height: '280px', objectFit: 'cover' }} />
@@ -55,6 +55,18 @@ export default function YouthDepartmentPage() {
                         <i className="bi bi-music-note-beamed"></i>
                       </div>
                       <h3 className={styles.cardTitle}>Thrive Music Festival 2026</h3>
+                    </div>
+                  </Link>
+                </div>
+
+                <div className="col-md-6 col-lg-4 mb-4">
+                  <Link href="/youth-department/new-program" className={styles.programLink}>
+                    <div className={styles.programCard}>
+                      <img src="/images/yuva-department/03-Gallery/1.jpeg" alt="Round Table on Technology-Facilitated Gender Violence" className="img-fluid rounded mb-3" style={{ width: '100%', height: '280px', objectFit: 'cover' }} />
+                      <div className={styles.cardIconWrapper}>
+                        <i className="bi bi-people-fill"></i>
+                      </div>
+                      <h3 className={styles.cardTitle}>Round Table on Technology-Facilitated Gender Violence</h3>
                     </div>
                   </Link>
                 </div>
