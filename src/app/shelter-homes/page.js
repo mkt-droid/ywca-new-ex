@@ -328,6 +328,70 @@ export default function ShelterHomesPage() {
             </div>
           </div>
 
+          {/* Support Our Cause HTML Card */}
+          <div className="mb-5 pb-4 border-bottom">
+            <h2 className="sectionTitle_2 text-center" style={{ marginBottom: '40px' }}>Support Shelter Homes</h2>
+
+            <div className={styles.causeCardWrapper}>
+              <div className="row g-0 align-items-stretch">
+                {/* Left Column: Image */}
+                <div className="col-lg-6">
+                  <div className={styles.causeImageWrap}>
+                    <img
+                      src="/images/wwh_1.jpeg"
+                      alt="Help Women Survivors"
+                      className={styles.causeImg}
+                    />
+                  </div>
+                </div>
+
+                {/* Right Column: HTML Poster Content */}
+                <div className="col-lg-6">
+                  <div className={styles.causeContentWrap}>
+                    {/* Headline */}
+                    <h3 className={styles.causeHeadline}>
+                      Help Women Survivors of Violence find Safety and Security
+                    </h3>
+
+                    {/* Paragraphs */}
+                    <p className={styles.causeText}>
+                      At the YWCA of Delhi Shelter Homes, we support women survivors of violence and abandonment by providing a safe space to heal, regain strength, and rebuild lives with dignity.
+                    </p>
+                    <p className={styles.causeText}>
+                      Every Contribution Matters, Big or Small helps create a pathway to Safety and New Beginning. Be a part of YWCA of Delhi's Donation Drive through Milaap Crowd Funding Platform.
+                    </p>
+
+                    <div className={styles.causeDivider}></div>
+
+                    {/* QR Section */}
+                    <div className={styles.qrSection}>
+                      <p className={styles.scanText}>
+                        Donate by scanning the QR code with any UPI app or by visiting the link provided.
+                      </p>
+
+                      <div className={styles.qrCodeBox}>
+                        <img src="/images/wwh_qr.jpeg" alt="QR Code" className={styles.qrImg} />
+                      </div>
+
+                      <a
+                        href="http://m-lp.co/womensur-1"
+                        target="_blank"
+                        rel="noreferrer"
+                        className={styles.qrLink}
+                      >
+                        http://m-lp.co/womensur-1
+                      </a>
+                    </div>
+
+                    <div className={styles.thankYouText}>
+                      Thank you for your Support
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Gallery Section */}
           <section className={styles.gallerySection}>
             <h2 className={styles.galleryTitlePink}>Gallery</h2>
@@ -401,6 +465,6 @@ export default function ShelterHomesPage() {
           </div>
         </div>
       )}
-</main>
+    </main>
   );
 }
