@@ -64,7 +64,12 @@ export default function ContactPage() {
                   </div>
                   <div className={styles.contactInfo}>
                     <strong>Phone / Mob:</strong>
-                    <span>011-23360133, 23365014, 23365441 &nbsp;|&nbsp; +91 7011299044</span>
+                    <span>
+                      <a href="tel:01123360133" style={{ color: 'inherit', textDecoration: 'none' }}>011-23360133</a>,{' '}
+                      <a href="tel:01123365014" style={{ color: 'inherit', textDecoration: 'none' }}>23365014</a>,{' '}
+                      <a href="tel:01123365441" style={{ color: 'inherit', textDecoration: 'none' }}>23365441</a> &nbsp;|&nbsp;{' '}
+                      <a href="tel:+917011299044" style={{ color: 'inherit', textDecoration: 'none' }}>+91 7011299044</a>
+                    </span>
                   </div>
                 </div>
 
