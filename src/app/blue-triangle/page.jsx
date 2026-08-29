@@ -256,6 +256,8 @@ const BlueTriangle = () => {
             />
           </Link>
         </section>
+
+
         {/* SPECIAL OFFERS SECTION */}
         <section className={`container ${styles.offersSection}`}>
           <h2 className="sectionTitle_2 text-center">Special Offers</h2>
@@ -271,6 +273,18 @@ const BlueTriangle = () => {
             </div>
           </div>
         </section>
+        {/* PDF DOWNLOADS SECTION */}
+        <section id="compliance-docs" className="container">
+          <div className={styles.complianceSection}>
+            <h2 className="sectionTitle_2 text-center" style={{ color: '#fff', marginBottom: '40px' }}>Download Brochure & Guidelines</h2>
+            <div className={styles.complianceBtns}>
+              <a href="/images/blue-tringle/pdf/BTFH%20BROCHURE%20PROSPECTUS%20%20TARIFF%20CARD%20(1).pdf" download className={styles.purpleBtn} target="_blank" rel="noopener noreferrer"><i className="bi bi-file-earmark-pdf me-2"></i>BTFH Brochure & Tariff Card</a>
+              <a href="/images/blue-tringle/pdf/Hotel%20Rule%20Book_BTFH.pdf" download className={styles.purpleBtn} target="_blank" rel="noopener noreferrer"><i className="bi bi-file-earmark-pdf me-2"></i>Hotel Rule Book</a>
+              <a href="/images/blue-tringle/pdf/LAWN%20PROMOTION.pdf" download className={styles.purpleBtn} target="_blank" rel="noopener noreferrer"><i className="bi bi-file-earmark-pdf me-2"></i>Lawn Promotion</a>
+            </div>
+          </div>
+        </section>
+
       </div>
 
       {/* INSTAGRAM SECTION */}

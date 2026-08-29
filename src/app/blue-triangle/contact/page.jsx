@@ -63,10 +63,8 @@ export default function ContactPage() {
                     <i className="bi bi-telephone"></i>
                   </div>
                   <div className={styles.contactInfo}>
-                    <strong>Phone:</strong>
-                    <span>011-23360133, 23365014, 23365441</span>
-                    <strong className="mt-1">Mob:</strong>
-                    <span>7011299044</span>
+                    <strong>Phone / Mob:</strong>
+                    <span>011-23360133, 23365014, 23365441 &nbsp;|&nbsp; +91 7011299044</span>
                   </div>
                 </div>
 

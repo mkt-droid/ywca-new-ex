@@ -342,3 +342,45 @@
     padding: 30px 15px;
   }
 }
+
+/* ── COMPLIANCE SECTION ── */
+.complianceSection {
+  background-image: url('/images/fund-raising/reg.png');
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0;
+  text-align: center;
+  border-radius: 8px;
+  margin: 40px 0;
+}
+
+.complianceTitle {
+  color: white;
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.complianceBtns {
+  display: flex;
+  justify-content: center;
+  gap: 0.95rem;
+  flex-wrap: wrap;
+}
+
+.purpleBtn {
+  background-color: #BE00C4;
+  color: white;
+  padding: 12px 40px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.purpleBtn:hover {
+  background-color: #8c2388;
+  color: white;
+  transform: translateY(-2px);
+}
