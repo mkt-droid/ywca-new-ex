@@ -38,11 +38,7 @@ export default function FundRaisingPage() {
 
         {/* HOW YOU CAN HELP */}
         <section className={`container ${styles.newSection}`} style={{ paddingTop: 0 }}>
-          <div className="text-center mb-5">
-            <h2 className="sectionTitle_2">How You Can Help</h2>
 
-            <p className={styles.subtitle}>Choose the way that speaks to your heart.</p>
-          </div>
           <div className="row g-3 justify-content-center">
             <div className="col-lg col-md-6 col-sm-12 mb-3">
               <div className={styles.helpCard}>
@@ -142,17 +138,17 @@ export default function FundRaisingPage() {
               </div>
 
               <div className={`row w-100 g-0 align-items-center ${styles.causeContentWrapper}`}>
-                <div className="col-lg-5 p-4 p-md-5">
+                <div className="col-lg-6 p-4 p-md-5">
                   <span className={styles.causeLabelHeader}>SUPPORT A CAUSE</span>
                   <h2 className={styles.causeTitleHeader}>Help a Woman Find Safety, Dignity and Hope</h2>
                   <p className={styles.causeDesc}>Behind every shelter home is a woman rebuilding her life. Your contribution can help provide safety, care and support to women survivors of violence as they begin their journey towards a better future.</p>
                   <div className="mt-4 d-flex flex-nowrap" style={{ whiteSpace: 'nowrap' }}>
-                    <Link href="#" className={styles.solidPurpleBtn}>READ THEIR STORIES</Link>
+                    <Link href="/fund-raising-publicity/donate" className={styles.solidPurpleBtn}>Donate Now</Link>
                     <Link href="/fund-raising-publicity/support-a-cause" className={styles.outlinePurpleBtn}>SUPPORT THIS CAUSE</Link>
                   </div>
                 </div>
-                <div className="col-lg-3 d-none d-lg-block"></div>
-                <div className="col-lg-4 p-4 p-md-5">
+                <div className="col-lg-6 d-none d-lg-block"></div>
+                {/* <div className="col-lg-4 p-4 p-md-5">
                   <div className={styles.campaignBoxRight}>
                     <span className={styles.campaignTag}>CURRENT CAMPAIGN</span>
                     <h3 className={styles.campaignTitleRight}>Help Women Survivors of Violence Find Safety and Shelter</h3>
@@ -168,7 +164,7 @@ export default function FundRaisingPage() {
                       <i className="bi bi-heart"></i> SUPPORT NOW <span style={{ marginLeft: '4px' }}>&#9656;</span>
                     </Link>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -226,7 +222,7 @@ export default function FundRaisingPage() {
 
                 <div className="d-flex gap-3 mt-4 justify-content-center">
                   <Link href="/fund-raising-publicity/the-rehome-store" className={styles.outlinePurpleBtn}>WHAT CAN I DONATE?</Link>
-                  <Link href="#" className={styles.solidPurpleBtn}>REQUEST A PICKUP</Link>
+                  <Link href="/fund-raising-publicity/the-rehome-store#pickup" className={styles.solidPurpleBtn}>REQUEST A PICKUP</Link>
                 </div>
               </div>
             </div>

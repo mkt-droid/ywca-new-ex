@@ -125,34 +125,6 @@ const BlueTriangle = () => {
         </section>
         {/* BOOKING BAR */}
         <section className={`container  ${styles.bookingSection}`}>
-          {/* 
-          <div className={styles.bookingBar}>
-            <h3 className="sectionTitle_3 text-white">Booking</h3>
-            <div className={styles.bookingForm}>
-              <div className={styles.formGroup}>
-                <i className="bi bi-map"></i>
-                <select className={styles.formInput}>
-                  <option>Select Option</option>
-                  <option>Room</option>
-                  <option>Event Space</option>
-                </select>
-              </div>
-              <div className={styles.formGroup}>
-                <i className="bi bi-calendar-event"></i>
-                <input type="text" placeholder="Check In" className={styles.formInput} />
-              </div>
-              <div className={styles.formGroup}>
-                <i className="bi bi-calendar-event"></i>
-                <input type="text" placeholder="Check out" className={styles.formInput} />
-              </div>
-              <div className={styles.formGroup}>
-                <i className="bi bi-people-fill"></i>
-                <input type="text" placeholder="Travellers" className={styles.formInput} />
-              </div>
-              <button className={styles.bookBtn}>Book Now</button>
-            </div>
-          </div>
-          */}
           <Link
             href="https://ywcaofdelhi.org/public/public/GHBooking.aspx"
             target="_blank"

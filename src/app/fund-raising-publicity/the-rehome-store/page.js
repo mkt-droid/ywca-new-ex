@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './page.module.css';
 import Link from 'next/link';
 import SideNavBanner from '@/components/partials/SideNavBanner';
@@ -7,6 +7,12 @@ import CountUp from 'react-countup';
 
 export default function TheRehomeStorePage() {
   const [activeTab, setActiveTab] = useState('drop-off');
+
+  useEffect(() => {
+    if (window.location.hash === '#pickup') {
+      setActiveTab('pickup');
+    }
+  }, []);
   const [lightbox, setLightbox] = useState({
     isOpen: false,
     images: [],
@@ -190,7 +196,7 @@ export default function TheRehomeStorePage() {
               </div>
             </div>
 
-            <h2 className="sectionTitle_2 text-center">Donate your stuff</h2>
+            <h2 id="pickup" className="sectionTitle_2 text-center">Donate your stuff</h2>
             <div className={styles.donateBox}>
               <div className={styles.tabsContainer}>
                 <button
