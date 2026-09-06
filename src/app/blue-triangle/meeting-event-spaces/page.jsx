@@ -48,33 +48,52 @@ const MeetingEventSpaces = () => {
   const spacesData = [
     {
       id: 0,
-      title: "Conference Room - 1",
+      title: "Conference Room 1",
+      subtitle: "Up to 30 guests",
       image: "/images/meetings-and-event/Conference-Room- 1.jpg",
-      desc: "Sample Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged."
+      desc: "Up to 30 guests",
+      tariffs: [
+        { type: "CONFERENCE NO. 1", tariff: "5,310", timing: "9am to 5pm / 10am to 6pm" }
+      ]
     },
     {
       id: 1,
-      title: "Conference Room - 2",
+      title: "Conference Room 2",
+      subtitle: "Up to 40 guests",
       image: "/images/meetings-and-event/Conference-Room - 2.jpg",
-      desc: "Sample Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged."
+      desc: "Up to 40 guests",
+      tariffs: [
+        { type: "CONFERENCE NO. 2", tariff: "5,900", timing: "9am to 5pm / 10am to 6pm" }
+      ]
     },
     {
       id: 2,
-      title: "Conference Room - 3",
+      title: "Conference Room 3",
+      subtitle: "Up to 20 guests",
       image: "/images/meetings-and-event/Conference-Room - 3.jpg",
-      desc: "Sample Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged."
+      desc: "Up to 20 guests",
+      tariffs: [
+        { type: "CONFERENCE NO. 3", tariff: "4,130", timing: "9am to 5pm / 10am to 6pm" }
+      ]
     },
     {
       id: 3,
-      title: "Hall",
+      title: "Constantia Hall",
+      subtitle: "Up to 200 guests",
       image: "/images/meetings-and-event/Conference-Room - 4.jpg",
-      desc: "Sample Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged."
+      desc: "Up to 200 guests",
+      tariffs: [
+        { type: "CONSTANTIA HALL (FULL DAY)", tariff: "29,500", timing: "10am to 5pm" },
+        { type: "CONSTANTIA HALL (HALF DAY)", tariff: "16,520", timing: "10am to 1pm / 2pm to 5pm / 6pm to 9pm" }
+      ]
     },
     {
       id: 4,
-      title: "Lawn Space",
+      title: "YWCA Lawn Space",
+      subtitle: "Up to 500 guests",
       image: "/images/meetings-and-event/big-space.jpg",
-      desc: "Sample Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged."
+      desc: "A unique option for larger events, with a relaxed and serene atmosphere. Up to 500 guests.",
+      tariffs: []
     }
   ];
 
@@ -123,25 +142,28 @@ const MeetingEventSpaces = () => {
 
         {/* OVERVIEW SECTION */}
         <section className={`container ${styles.overviewSection}`}>
-          <div className="row">
+          <div className="row align-items-center g-5">
             {/* Left Column */}
             <div className="col-lg-6">
-              <div className={styles.overviewTextWrapper} style={{ marginBottom: '40px' }}>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library, took a 1914 Cicero translation and scrambled it to make dummy text.
+              <div className={styles.overviewTextWrapper}>
+                <h3 style={{ color: '#242278', marginBottom: '20px', fontWeight: 600, fontSize: '2rem' }}>Exceptional Venues</h3>
+                <p style={{ fontSize: '1.1rem', color: '#444', lineHeight: 1.7, marginBottom: '20px' }}>
+                  BTFH, New Delhi is a pinnacle of hospitality in the heart of Lutyens’ Delhi, making it a prime choice for landmark occasions. With a wide array of venues that are suitable for the most intimate to the grandest of celebrations, our conference halls in New Delhi are second to none.
                 </p>
-                <p>
-                  For Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software including versions of Lorem Ipsum. For Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software including versions of Lorem Ipsum. For Letraset's Body Type sheets. It has survived not only many decades.
+                <p style={{ fontSize: '1.1rem', color: '#444', lineHeight: 1.7 }}>
+                  So whether you are celebrating personal or corporate milestones, awards, galas or retreats, let our signature BTFH service help you deliver an impeccable event. For business meetings and conferences, our conference halls in Delhi offer sophisticated settings that promote productivity and collaboration.
                 </p>
               </div>
-
             </div>
             {/* Right Column */}
             <div className="col-lg-6">
               <div className={styles.overviewImgWrapper}>
-                <img src="/images/meetings-and-event/about-img.jpg" alt="About Meeting & Event Spaces" />
+                <img 
+                  src="/images/blue-tringle/mas-main.png" 
+                  alt="About Meeting & Event Spaces" 
+                  style={{ borderRadius: '16px', boxShadow: '0 15px 40px rgba(0,0,0,0.12)', width: '100%' }}
+                />
               </div>
-
             </div>
           </div>
         </section>
@@ -155,15 +177,27 @@ const MeetingEventSpaces = () => {
                 <div key={space.id} className={styles.bookingCardLink} onClick={() => openPopup(index)}>
                   <div className={styles.bookingCard}>
                     <img src={space.image} alt={space.title} />
-                    <h4>{space.title}</h4>
+                    <div className={styles.cardContent}>
+                      <div className={styles.titleContainer}>
+                        <h4 className={styles.cardTitle}>{space.title}</h4>
+                        {space.subtitle && <span className={styles.cardSubtitle}>{space.subtitle}</span>}
+                      </div>
+                    </div>
                   </div>
                 </div>
               ))}
             </div>
 
             <div className={styles.bigSpaceWrapper} onClick={() => openPopup(4)}>
-              <img src={spacesData[4].image} alt={spacesData[4].title} />
-              <div className={styles.bigSpaceTitle}>{spacesData[4].title}</div>
+              <div className={styles.bookingCard}>
+                <img src={spacesData[4].image} alt={spacesData[4].title} style={{ height: '350px' }} />
+                <div className={styles.cardContent}>
+                  <div className={styles.titleContainer}>
+                    <h4 className={styles.cardTitle}>{spacesData[4].title}</h4>
+                    {spacesData[4].subtitle && <span className={styles.cardSubtitle}>{spacesData[4].subtitle}</span>}
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -202,6 +236,30 @@ const MeetingEventSpaces = () => {
             <div className={styles.popupTextWrapper}>
               <h3 className={styles.popupTitle}>{spacesData[currentSpaceIndex].title}</h3>
               <p className={styles.popupDesc}>{spacesData[currentSpaceIndex].desc}</p>
+
+              {spacesData[currentSpaceIndex].tariffs && spacesData[currentSpaceIndex].tariffs.length > 0 && (
+                <div className={styles.tariffTableContainer}>
+                  <table className={styles.tariffTable}>
+                    <thead>
+                      <tr>
+                        <th>TYPES OF VENUE</th>
+                        <th>TARIFF (₹)</th>
+                        <th>TIMING</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {spacesData[currentSpaceIndex].tariffs.map((t, i) => (
+                        <tr key={i}>
+                          <td>{t.type}</td>
+                          <td style={{ fontWeight: 600 }}>{t.tariff}</td>
+                          <td>{t.timing}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              )}
+
               <button className={styles.popupBookBtn}>Book Now</button>
             </div>
 

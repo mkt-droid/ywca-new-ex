@@ -136,62 +136,87 @@
 }
 
 .bookingCard {
+  background: #ffffff;
+  border-radius: 12px;
   overflow: hidden;
   text-align: center;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  height: 100%;
 }
 
-.bookingCardLink:hover .bookingCard {
+.bookingCardLink:hover .bookingCard,
+.bigSpaceWrapper:hover .bookingCard {
   transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
 }
 
 .bookingCard img {
   width: 100%;
-  height: 200px;
+  height: 220px;
   object-fit: cover;
   transition: transform 0.5s ease;
 }
 
-.bookingCardLink:hover .bookingCard img {
-  transform: scale(1.03);
+.bookingCardLink:hover .bookingCard img,
+.bigSpaceWrapper:hover .bookingCard img {
+  transform: scale(1.05);
 }
 
-.bookingCard h4 {
-  font-size: 0.93rem;
-  padding: 0.95rem;
+.cardContent {
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.cardTitle {
+  font-size: 18px;
   margin: 0;
+  font-weight: 600;
+  color: #222;
+  text-align: center;
+}
+
+.cardSubtitle {
+  font-size: 13px;
+  color: #666;
+  margin-top: 4px;
   font-weight: 500;
+  text-align: center;
+}
+
+.tariffWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 15px;
+}
+
+.viewDetailsText {
+  font-size: 14px;
+  font-weight: 600;
+  color: #BE00C4;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .bigSpaceWrapper {
   text-align: center;
   width: calc(50% - 0.95rem);
   margin: 30px auto 0;
-  overflow: hidden;
-  transition: transform 0.3s ease;
   cursor: pointer;
-}
-
-.bigSpaceWrapper:hover {
-  transform: translateY(-5px);
-}
-
-.bigSpaceWrapper img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.5s ease;
-}
-
-.bigSpaceWrapper:hover img {
-  transform: scale(1.03);
-}
-
-.bigSpaceTitle {
-  font-size: 0.93rem;
-  font-weight: 500;
-  margin-top: 0.95rem;
 }
 
 .gradientBackground {
@@ -317,7 +342,35 @@
   font-size: 1rem;
   color: #444;
   line-height: 1.5;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+.tariffTableContainer {
+  margin-bottom: 25px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.tariffTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.tariffTable th {
+  background-color: #f7e0d3;
+  color: #242278;
+  font-weight: 600;
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 2px solid #e0c8b9;
+}
+
+.tariffTable td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #eaeaea;
+  color: #444;
+  vertical-align: middle;
 }
 
 .popupBookBtn {

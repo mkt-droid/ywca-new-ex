@@ -40,8 +40,17 @@ const BlueTriangle = () => {
       name: 'Emma',
       subtitle: 'Explorer',
       quote: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since then.",
-      avatar: '/images/blue-tringle/user-4.png'
     }
+  ];
+
+  const roomTypes = [
+    { name: 'Single Room', subtitle: '', tariff: '2,368' },
+    { name: 'Double Room', subtitle: '(Double OCC.)', tariff: '3,929' },
+    { name: 'Double Room', subtitle: '(Single OCC.)', tariff: '3,177' },
+    { name: 'Executive Deluxe', subtitle: '(Double OCC.)', tariff: '4,128' },
+    { name: 'Executive Deluxe', subtitle: '(Single OCC.)', tariff: '3,365' },
+    { name: 'Family Suite', subtitle: '', tariff: '4,877' },
+    { name: 'Dormitory', subtitle: '(6 Bedded)', tariff: '5,662' }
   ];
 
   return (
@@ -68,25 +77,26 @@ const BlueTriangle = () => {
 
         {/* OVERVIEW SECTION */}
         <section className={`container ${styles.overviewSection}`}>
-          <div className="row">
-            {/* Left Column */}
-            <div className="col-lg-6">
-              <div className={styles.overviewTextWrapper} style={{ marginBottom: '40px' }}>
+          <div className="row mb-4">
+            <div className="col-12 text-center">
+              <div className={styles.overviewTextWrapper} style={{ marginBottom: '40px', maxWidth: '900px', margin: '0 auto' }}>
+                <h3 style={{ color: '#242278', marginBottom: '20px', fontWeight: 600 }}>Exceptional Hotel Offers at BTFH, New Delhi</h3>
                 <p>
-                  BTFH-Room Booking. The printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library, took a 1914 Cicero translation and scrambled it to make dummy text.
-                </p>
-                <p>
-                  For Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software including versions of Lorem Ipsum. For Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software including versions of Lorem Ipsum. For Letraset's Body Type sheets. It has survived not only many decades.
+                  Enhance your stay at BTFH, New Delhi with these limited-time offers. From dining to room upgrades, our promotions bring an extra touch of indulgence to your next BTFH experience. Take advantage of these enticing hotel offers to create lasting memories during your visit.
                 </p>
               </div>
-
             </div>
-            {/* Right Column */}
-            <div className="col-lg-6">
-              <div className={styles.overviewImgWrapper}>
-                <img src="/images/room-booking/about-img.jpg" alt="Building Overview" />
+          </div>
+          <div className="row g-4">
+            <div className="col-md-6">
+              <div className={styles.overviewImgWrapper} style={{ height: '300px' }}>
+                <img src="/images/blue-tringle/book-1.jpg" alt="Hotel Offer 1" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px' }} />
               </div>
-
+            </div>
+            <div className="col-md-6">
+              <div className={styles.overviewImgWrapper} style={{ height: '300px' }}>
+                <img src="/images/blue-tringle/book-2.jpg" alt="Hotel Offer 2" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px' }} />
+              </div>
             </div>
           </div>
         </section>
@@ -95,31 +105,25 @@ const BlueTriangle = () => {
         <section className={styles.bookingCardsSection}>
           <div className="container">
             <h2 className="sectionTitle_2 text-center">Rooms</h2>
+            <h4 className="text-center" style={{ marginBottom: '40px' }}>TYPES OF ACCOMMODATION</h4>
             <div className={styles.bookingGrid}>
-              <Link href="#" className={styles.bookingCardLink}>
-                <div className={styles.bookingCard}>
-                  <img src="/images/room-booking/room-booking-thumb.jpg" alt="Single room" />
-                  <h4>Single room</h4>
-                </div>
-              </Link>
-              <Link href="#" className={styles.bookingCardLink}>
-                <div className={styles.bookingCard}>
-                  <img src="/images/room-booking/room-booking-thumb.jpg" alt="Double Room (Double OCC.)" />
-                  <h4>Double Room (Double OCC.)</h4>
-                </div>
-              </Link>
-              <Link href="#" className={styles.bookingCardLink}>
-                <div className={styles.bookingCard}>
-                  <img src="/images/room-booking/room-booking-thumb.jpg" alt="Double Room (Single OCC.)" />
-                  <h4>Double Room (Single OCC.)</h4>
-                </div>
-              </Link>
-              <Link href="#" className={styles.bookingCardLink}>
-                <div className={styles.bookingCard}>
-                  <img src="/images/room-booking/room-booking-thumb.jpg" alt="Executive deluxe (Double OCC.)" />
-                  <h4>Executive deluxe (Double OCC.)</h4>
-                </div>
-              </Link>
+              {roomTypes.map((room, index) => (
+                <Link key={index} href="#" className={styles.bookingCardLink}>
+                  <div className={styles.bookingCard}>
+                    <img src="/images/room-booking/room-booking-thumb.jpg" alt={room.name} />
+                    <div className={styles.cardContent}>
+                      <div className={styles.titleContainer}>
+                        <h4 className={styles.cardTitle}>{room.name}</h4>
+                        {room.subtitle && <span className={styles.cardSubtitle}>{room.subtitle}</span>}
+                      </div>
+                      <div className={styles.tariffWrapper}>
+                        <span className={styles.tariffLabel}>Tariff</span>
+                        <span className={styles.tariffPrice}>₹{room.tariff}</span>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              ))}
             </div>
           </div>
         </section>
