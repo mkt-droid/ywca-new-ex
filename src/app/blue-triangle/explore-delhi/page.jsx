@@ -355,6 +355,31 @@ const ExploreDelhi = () => {
         </div>
       </section>
 
+      <div className="text-center mb-4">
+            <h2 className="sectionTitle_2">Itenaries</h2>
+
+            <p style={{ maxWidth: '850px', margin: '15px auto 0', fontSize: '1.05rem', lineHeight: '1.7', color: '#444' }}>
+              Discover the captivating heritage and contemporary charm of the capital through immersive storytelling. Blending structure with flexibility, our itineraries are an expertly curated blend of must-visit landmarks and offbeat things to do in Delhi.
+            </p>
+          </div>
+
+
+          <div className="text-center mb-4">
+            <h2 className="sectionTitle_4 mb-4">Half Day Tours</h2>
+            <h3 className="sectionTitle_3">Capital Connect</h3>
+
+            <p style={{ maxWidth: '850px', margin: '15px auto 0', fontSize: '1.05rem', lineHeight: '1.7', color: '#444' }}>
+             Designed for a breezy introduction to the monuments and markets that define the capital’s cultural and political landscape, this itinerary covers some must-see attractions in Delhi along with lesser-known spots.
+            </p>
+            <p>Timings: 10:00 am to 3:00 pm</p>
+            <p>Suitable for All age groups</p>
+            <p>Best time to visit Throughout the year</p>
+
+            <h3 className="sectionTitle_3">Highlights</h3>
+            <p  style={{ maxWidth: '850px', margin: '15px auto 0', fontSize: '1.05rem', lineHeight: '1.7', color: '#444' }}>Travel back in time, right in the midst of Connaught Place - the busy commercial heart of Delhi - with a pit-stop at Agrasen Ki Baoli. The 14th century step well that was built when the area was a scrubland populated by kikar trees and jackals, is the best-preserved of ten baolis in Delhi.</p>
+          </div>
+
+
       {/* INSTAGRAM SECTION */}
       {/* <section className={styles.instaSection}>
         <div className="container">

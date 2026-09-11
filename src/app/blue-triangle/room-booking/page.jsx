@@ -135,11 +135,6 @@ const BlueTriangle = () => {
             rel="noopener noreferrer"
             style={{ display: 'block', maxWidth: '900px', margin: '0 auto', paddingBottom: 70 }}
           >
-            <img
-              src="/images/Booking-Banner.jpg"
-              alt="Booking Banner"
-              style={{ width: '100%', display: 'block', boxShadow: '0 10px 30px rgba(0, 0, 0, 0.1)' }}
-            />
           </Link>
         </section>
         {/* USER STORIES SECTION */}
