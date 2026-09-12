@@ -284,7 +284,7 @@ const ExploreDelhi = () => {
       {/* HERO SECTION */}
       <SideNavBanner
         height="360px"
-        bgImage="/images/explore-delhi/me-bnr.jpg"
+        bgImage="/images/Explore-Delhi/me-bnr.jpg"
         navItems={bannerNavItems}
         activePath="/blue-triangle/explore-delhi"
       >
@@ -303,7 +303,7 @@ const ExploreDelhi = () => {
 
           <div className={styles.glimpsesGrid}>
             <div className={styles.glimpsesCard}>
-              <img src="/images/explore-delhi/IconicLandmarks.png" alt="Iconic Landmarks" />
+              <img src="/images/Explore-Delhi/IconicLandmarks.png" alt="Iconic Landmarks" />
               <div className={styles.glimpsesOverlay}>
                 <h3 className={styles.glimpsesTitle}>Iconic<br />Landmarks</h3>
                 <p className={styles.glimpsesSubtitle}>Delhi</p>
@@ -311,7 +311,7 @@ const ExploreDelhi = () => {
             </div>
 
             <div className={styles.glimpsesCard}>
-              <img src="/images/explore-delhi/Heritage-Architecture.png" alt="Heritage & Architecture" />
+              <img src="/images/Explore-Delhi/Heritage-Architecture.png" alt="Heritage & Architecture" />
               <div className={styles.glimpsesOverlay}>
                 <h3 className={styles.glimpsesTitle}>Heritage &<br />Architecture</h3>
                 <p className={styles.glimpsesSubtitle}>Delhi</p>
@@ -319,7 +319,7 @@ const ExploreDelhi = () => {
             </div>
 
             <div className={styles.glimpsesCard}>
-              <img src="/images/explore-delhi/Old-Delhi -Charm.png" alt="Old Delhi Charm" />
+              <img src="/images/Explore-Delhi/Old-Delhi -Charm.png" alt="Old Delhi Charm" />
               <div className={styles.glimpsesOverlay}>
                 <h3 className={styles.glimpsesTitle}>Old Delhi<br />Charm</h3>
                 <p className={styles.glimpsesSubtitle}>Delhi</p>
@@ -327,7 +327,7 @@ const ExploreDelhi = () => {
             </div>
 
             <div className={styles.glimpsesCard}>
-              <img src="/images/explore-delhi/Religious-Places.png" alt="Religious Places" />
+              <img src="/images/Explore-Delhi/Religious-Places.png" alt="Religious Places" />
               <div className={styles.glimpsesOverlay}>
                 <h3 className={styles.glimpsesTitle}>Religious<br />Places</h3>
                 <p className={styles.glimpsesSubtitle}>Delhi</p>
