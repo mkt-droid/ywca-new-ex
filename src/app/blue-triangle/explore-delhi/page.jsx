@@ -97,7 +97,7 @@ const ExploreDelhi = () => {
     {
       id: 1,
       title: "Purana Qila",
-      images: ["/images/Explore-Delhi/Purana-Qila.jpg"],
+      images: ["/images/blue-tringle/explore-delhi/tomb.jpg"],
       desc: "One of Delhi’s oldest and most significant historical monuments stands as a symbol of the capital’s multi-layered history, from its mythological association with Indraprastha - capital of the Pandavas in the Mahabharata epic - to its Mughal heritage. Stretching across 300 acres, it features three prominent gateways, bastions, moats, a mosque and a library. Look out for the Sher Mandal, an octagonal red sandstone tower. It was on the steps of this very structure that Humayun fell to his death in 1556, marking a tragic end to a ruler whose life was filled with both triumph and turmoil.",
       distance: "4 km",
       hours: "8:00 am to 6:00 pm",
@@ -126,7 +126,7 @@ const ExploreDelhi = () => {
     {
       id: 3,
       title: "Jai Hind – Sound and Light Show At Red Fort",
-      images: ["/images/Explore-Delhi/Jai-Hind.jpg"],
+      images: ["/images/blue-tringle/explore-delhi/red-ford-1.jpg"],
       desc: "Two shows daily Hindi & English in the evening. Named among the world’s finest by National Geographic, this is a world-class immersive experience of 400 years of history tracing from the 17th century to the present, featuring narration by Amitabh Bachchan, projection mapping, powerful sound design and cinematic storytelling with live actors, dancers and puppets. Where history rises in theatrical performance: The royal Mughal empire & the power struggle between Dara Shikoh and Aurangzeb; The invasion of Nadir Shah (1739); The Revolt of 1857; India’s journey to independence, rise of the INA and beyond.",
       distance: "4-5 km",
       hours: "Evening",
@@ -138,7 +138,7 @@ const ExploreDelhi = () => {
     {
       id: 4,
       title: "Red Fort Centre & Museum Experience",
-      images: ["/images/Explore-Delhi/Red-Fort-Museum.jpg"],
+      images: ["/images/blue-tringle/explore-delhi/national-mueseam.jpg"],
       desc: "Best explored during the day before attending the Jai Hind show in the evening. Located within the Red Fort (Lal Qila) complex. Offers a deeper insight into India’s history where echoes of the Mughal era lingers in every arch & corridor. Showcases rich culture and legacy of the Mughal monument. One of the most educational places to visit in Delhi NCR. Features curated exhibits on stories of empire, craft and history. Highlights India’s freedom struggle through museum displays.",
       distance: "4-5 km",
       hours: "Daytime",
@@ -284,7 +284,7 @@ const ExploreDelhi = () => {
       {/* HERO SECTION */}
       <SideNavBanner
         height="360px"
-        bgImage="/images/Explore-Delhi/me-bnr.jpg"
+        bgImage="/images/explore-delhi/me-bnr.jpg"
         navItems={bannerNavItems}
         activePath="/blue-triangle/explore-delhi"
       >
@@ -303,7 +303,7 @@ const ExploreDelhi = () => {
 
           <div className={styles.glimpsesGrid}>
             <div className={styles.glimpsesCard}>
-              <img src="/images/Explore-Delhi/IconicLandmarks.png" alt="Iconic Landmarks" />
+              <img src="/images/explore-delhi/IconicLandmarks.png" alt="Iconic Landmarks" />
               <div className={styles.glimpsesOverlay}>
                 <h3 className={styles.glimpsesTitle}>Iconic<br />Landmarks</h3>
                 <p className={styles.glimpsesSubtitle}>Delhi</p>
@@ -311,7 +311,7 @@ const ExploreDelhi = () => {
             </div>
 
             <div className={styles.glimpsesCard}>
-              <img src="/images/Explore-Delhi/Heritage-Architecture.png" alt="Heritage & Architecture" />
+              <img src="/images/explore-delhi/Heritage-Architecture.png" alt="Heritage & Architecture" />
               <div className={styles.glimpsesOverlay}>
                 <h3 className={styles.glimpsesTitle}>Heritage &<br />Architecture</h3>
                 <p className={styles.glimpsesSubtitle}>Delhi</p>
@@ -319,7 +319,7 @@ const ExploreDelhi = () => {
             </div>
 
             <div className={styles.glimpsesCard}>
-              <img src="/images/Explore-Delhi/Old-Delhi -Charm.png" alt="Old Delhi Charm" />
+              <img src="/images/explore-delhi/Old-Delhi -Charm.png" alt="Old Delhi Charm" />
               <div className={styles.glimpsesOverlay}>
                 <h3 className={styles.glimpsesTitle}>Old Delhi<br />Charm</h3>
                 <p className={styles.glimpsesSubtitle}>Delhi</p>
@@ -327,7 +327,7 @@ const ExploreDelhi = () => {
             </div>
 
             <div className={styles.glimpsesCard}>
-              <img src="/images/Explore-Delhi/Religious-Places.png" alt="Religious Places" />
+              <img src="/images/explore-delhi/Religious-Places.png" alt="Religious Places" />
               <div className={styles.glimpsesOverlay}>
                 <h3 className={styles.glimpsesTitle}>Religious<br />Places</h3>
                 <p className={styles.glimpsesSubtitle}>Delhi</p>
