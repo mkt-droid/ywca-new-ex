@@ -4,6 +4,55 @@ import SideNavBanner from "@/components/partials/SideNavBanner";
 import UserStories from "@/components/UserStories";
 import styles from "./page.module.css";
 
+const ImageCarousel = ({ images, alt }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  React.useEffect(() => {
+    if (!images || images.length <= 1) return;
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % images.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [images]);
+
+  // Reset index when images array changes
+  React.useEffect(() => {
+    setCurrentIndex(0);
+  }, [images]);
+
+  if (!images || images.length === 0) return null;
+
+  return (
+    <div style={{ position: "relative", width: "100%", height: "100%", overflow: "hidden" }}>
+      <img
+        src={images[currentIndex]}
+        alt={alt}
+        className={styles.sliderImage}
+        style={{ transition: "opacity 0.5s ease-in-out" }}
+      />
+      {images.length > 1 && (
+        <div style={{ position: "absolute", bottom: "15px", width: "100%", display: "flex", justifyContent: "center", gap: "8px" }}>
+          {images.map((_, idx) => (
+            <span
+              key={idx}
+              onClick={() => setCurrentIndex(idx)}
+              style={{
+                width: "12px",
+                height: "12px",
+                borderRadius: "50%",
+                backgroundColor: currentIndex === idx ? "#fff" : "rgba(255, 255, 255, 0.5)",
+                cursor: "pointer",
+                boxShadow: "0 0 3px rgba(0,0,0,0.3)",
+                transition: "background-color 0.3s ease"
+              }}
+            ></span>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
+
 const ExploreDelhi = () => {
   const bannerNavItems = [
     { title: 'Overview', icon: 'bi-house-door', link: '/blue-triangle' },
@@ -48,7 +97,7 @@ const ExploreDelhi = () => {
     {
       id: 1,
       title: "Purana Qila",
-      image: "/images/Explore-Delhi/Purana-Qila.jpg",
+      images: ["/images/Explore-Delhi/Purana-Qila.jpg"],
       desc: "One of Delhi’s oldest and most significant historical monuments stands as a symbol of the capital’s multi-layered history, from its mythological association with Indraprastha - capital of the Pandavas in the Mahabharata epic - to its Mughal heritage. Stretching across 300 acres, it features three prominent gateways, bastions, moats, a mosque and a library. Look out for the Sher Mandal, an octagonal red sandstone tower. It was on the steps of this very structure that Humayun fell to his death in 1556, marking a tragic end to a ruler whose life was filled with both triumph and turmoil.",
       distance: "4 km",
       hours: "8:00 am to 6:00 pm",
@@ -60,7 +109,12 @@ const ExploreDelhi = () => {
     {
       id: 2,
       title: "Red Fort (Lal Qila)",
-      image: "/images/Explore-Delhi/Red-Fort.jpg",
+      images: [
+        "/images/blue-tringle/explore-delhi/red-ford-1.jpg",
+        "/images/blue-tringle/explore-delhi/red-ford-2.jpg",
+        "/images/blue-tringle/explore-delhi/red-ford-3.jpg",
+        "/images/blue-tringle/explore-delhi/red-ford-4.jpg"
+      ],
       desc: "Built by Shah Jahan in 1648, Delhi’s most recognized red sandstone landmark was said to have been designed by Ustad Ahmad Lahori, the architect behind the Taj Mahal. Wander across the octagonal-shaped UNESCO World Heritage Site, exploring expansive courtyards, the Diwan-i-Aam (Hall of Public Audience) - a marvel of Mughal geometry - Diwan-i-Khas (Hall of Private Audience) and the women’s only Rang Mahal (Palace of Colours). Jai Hind, the fort’s light and sound show vividly narrates India's history in the baritone voice of renowned actor, Amitabh Bachchan.",
       distance: "4-5 km",
       hours: "9:30 am to 4:30 pm (Light & Sound Show Timings: 7:00 pm to 8:00 pm Hindi, 8:15 pm to 9:00 pm English)",
@@ -72,7 +126,7 @@ const ExploreDelhi = () => {
     {
       id: 3,
       title: "Jai Hind – Sound and Light Show At Red Fort",
-      image: "/images/Explore-Delhi/Jai-Hind.jpg",
+      images: ["/images/Explore-Delhi/Jai-Hind.jpg"],
       desc: "Two shows daily Hindi & English in the evening. Named among the world’s finest by National Geographic, this is a world-class immersive experience of 400 years of history tracing from the 17th century to the present, featuring narration by Amitabh Bachchan, projection mapping, powerful sound design and cinematic storytelling with live actors, dancers and puppets. Where history rises in theatrical performance: The royal Mughal empire & the power struggle between Dara Shikoh and Aurangzeb; The invasion of Nadir Shah (1739); The Revolt of 1857; India’s journey to independence, rise of the INA and beyond.",
       distance: "4-5 km",
       hours: "Evening",
@@ -84,7 +138,7 @@ const ExploreDelhi = () => {
     {
       id: 4,
       title: "Red Fort Centre & Museum Experience",
-      image: "/images/Explore-Delhi/Red-Fort-Museum.jpg",
+      images: ["/images/Explore-Delhi/Red-Fort-Museum.jpg"],
       desc: "Best explored during the day before attending the Jai Hind show in the evening. Located within the Red Fort (Lal Qila) complex. Offers a deeper insight into India’s history where echoes of the Mughal era lingers in every arch & corridor. Showcases rich culture and legacy of the Mughal monument. One of the most educational places to visit in Delhi NCR. Features curated exhibits on stories of empire, craft and history. Highlights India’s freedom struggle through museum displays.",
       distance: "4-5 km",
       hours: "Daytime",
@@ -96,7 +150,7 @@ const ExploreDelhi = () => {
     {
       id: 5,
       title: "Jantar Mantar",
-      image: "/images/Explore-Delhi/Jantar-Mantar.jpg",
+      images: ["/images/blue-tringle/explore-delhi/jantar manter.jpg"],
       desc: "Located near Connaught Place, this 18th century, open-air astronomical observatory was one of five of its kind, commissioned to be built across India by Maharaja Sawai Jai Singh II - a brilliant mathematician and astronomer - to aid in the study of celestial bodies, determine time, track planets and predict eclipses. Amongst the 13 large-scale architectural instruments is Samrat Yantra (a giant sundial used to measure the precise time of day), Misra Yantra (designed to determine the longest and shortest days of the year) and Jayaprakash Yantra (used to determine the coordinates of celestial bodies).",
       distance: "2 km",
       hours: "6:00 am to 6:00 pm",
@@ -108,7 +162,7 @@ const ExploreDelhi = () => {
     {
       id: 6,
       title: "National Museum",
-      image: "/images/Explore-Delhi/National-Museum.jpg",
+      images: ["/images/blue-tringle/explore-delhi/national-mueseam.jpg"],
       desc: "Located on Janpath, one of the largest museums in India was established in 1949. It showcases a variety of articles ranging from the prehistoric era to modern works of art. Besides hosting a variety of workshops, yoga, meditation sessions and cultural performances in the evenings, it also offers visitors a unique chance to see art conservators in action.",
       distance: "6 km",
       hours: "10:00 am to 6:00 pm (weekdays) 10:00 am to 8:00 pm (weekends)",
@@ -120,7 +174,7 @@ const ExploreDelhi = () => {
     {
       id: 7,
       title: "Qutub Minar",
-      image: "/images/Explore-Delhi/Qutub-Minar.jpg",
+      images: ["/images/blue-tringle/explore-delhi/qutub-minar.jpg"],
       desc: "Built in the 12th century as a victory tower, the 73-metre-high minaret is crafted from red sandstone and marble, featuring intricate carvings and inscriptions from the Quran. The capital’s most towering monument looms over you as you stroll through the Qutub complex, which includes the Quwwat-ul-Islam Mosque, the Tomb of Imam Zamin, Major Smith’s Cupola, Sanderson’s Sundial and the Alai Darwaza. The most interesting legend here is related to the six-tonne, seven-metre-tall Iron Pillar. While it continues to capture the imagination of scientists, owing to its mysterious resistance to rust, there’s a popular belief that good fortune awaits you can completely wrap your hands around the pillar with your back touching it.",
       distance: "10.5 km",
       hours: "7:00 am to 5:00 pm",
@@ -132,7 +186,7 @@ const ExploreDelhi = () => {
     {
       id: 8,
       title: "Lotus Temple",
-      image: "/images/Explore-Delhi/Lotus-Temple.jpg",
+      images: ["/images/blue-tringle/explore-delhi/lotus-temple.jpg"],
       desc: "A marvellous symbol of unity and peace, the Lotus Temple - Baháʼí House of Worship - is distinguished by its exterior made of 27 free-standing marble ‘petals’ arranged in clusters of three to form nine sides, a number that is considered auspicious in the Baha’i faith. Explore the lush, idyllic temple complex that encompasses nine water pools lined with each petal, which glimmer in daylight. You can also meditate inside the prayer hall.",
       distance: "10.5 km",
       hours: "9:00 am to 5:30 pm (Closed on Mondays)",
@@ -144,7 +198,7 @@ const ExploreDelhi = () => {
     {
       id: 9,
       title: "India Gate",
-      image: "/images/Explore-Delhi/India-Gate.jpg",
+      images: ["/images/blue-tringle/explore-delhi/india-gate.jpg"],
       desc: "Located on Rajpath, the awe-inspiring war memorial, a 42-metre-high archway of sandstone, rises majestically against the backdrop of Rashtrapati Bhawan. Enjoy ice cream from local vendors or pack a picnic to soak in the lively atmosphere. To experience the monument in a unique way, sign up for a session with Delhi City Segway Tour company from 5 pm to 9 pm, starting at INR 2500.",
       distance: "3 km",
       hours: "All day",
@@ -156,7 +210,7 @@ const ExploreDelhi = () => {
     {
       id: 10,
       title: "Safdarjung Tomb",
-      image: "/images/Explore-Delhi/Safdarjung-Tomb.jpg",
+      images: ["/images/blue-tringle/explore-delhi/tomb.jpg"],
       desc: "Considered to be the last monumental tomb garden of the time, this magnificent marble and sandstone structure marked the end of an era of Mughal art and architecture that began with the Taj Mahal in Agra. It was built by the son of Safdarjung, the Wazir ul-Hindustan (Prime Minister) of the Indian subcontinent during the rule of Ahmad Shah Bahadur. Located in Jor Bagh, it’s one of the lesser-frequented yet grand monuments in the capital. Besides exploring the mausoleum, you can stroll around the lush gardens and perimetre wall.",
       distance: "7 km",
       hours: "7:00 am to 5:00 pm",
@@ -168,7 +222,7 @@ const ExploreDelhi = () => {
     {
       id: 11,
       title: "Humayun's Tomb",
-      image: "/images/Explore-Delhi/Humayun-Tomb.jpg",
+      images: ["/images/blue-tringle/explore-delhi/humayu-tomb.jpg"],
       desc: "Mughal architecture meets tranquil greenery in the first Persian-style garden-tomb in the Indian subcontinent. Commissioned by Humayun’s wife Hamida Banu Begum, this rare memorial built by a woman for her husband, was later known as ‘Dormitory of the Mughals’, housing a 100 tombs inside a single complex. Wander along the pathways of this remarkable UNESCO World Heritage Site to marvel at its sublime proportions, seemingly floating over symmetrical gardens.",
       distance: "7 km",
       hours: "6:00 am to 6:00 pm",
@@ -180,7 +234,7 @@ const ExploreDelhi = () => {
     {
       id: 12,
       title: "Connaught Place",
-      image: "/images/Explore-Delhi/Connaught-Place.jpg",
+      images: ["/images/blue-tringle/explore-delhi/connaught-place.jpg"],
       desc: "The unofficial social epicentre of Delhi, affectionately called CP, this British built commercial and retail hub is a great place to window shop, people watch, visit art galleries and stroll the gargantuan underground Palika Bazaar. A key financial and business centre, the area offers several delights, from antique cinemas and toy shops to leading contemporary art galleries.",
       distance: "4 km",
       hours: "10:00 am to 9:00 pm",
@@ -192,7 +246,7 @@ const ExploreDelhi = () => {
     {
       id: 13,
       title: "Chandni Chowk",
-      image: "/images/Explore-Delhi/Chandni-Chowk.jpg",
+      images: ["/images/blue-tringle/explore-delhi/chadni-chauk.jpg"],
       desc: "Delhi’s oldest and biggest market epitomises the capital’s lively, diverse culture. Designed as a half-moon-shaped square adorned with trees, canals and pools for 17th century royal Mughal processions, it’s now the epicentre of Delhi’s irresistible food scene, serving iconic paranthas, bedmi puris, samosas, kebabs and jalebis along with textiles, antiques and everything in between.",
       distance: "8 km",
       hours: "10:00 am to 8:00 pm",
@@ -204,7 +258,7 @@ const ExploreDelhi = () => {
     {
       id: 14,
       title: "Dilli Haat",
-      image: "/images/Explore-Delhi/Dilli-Haat.jpg",
+      images: ["/images/blue-tringle/explore-delhi/dilli-hat.jpg"],
       desc: "Designed to resemble a traditional village market (haat), this cultural and entertainment hub features artisan stalls on a rotating basis, offering a staggering variety of handlooms, jewellery, accessories, decor, toys and small goods. Stay back after a shopping spree to enjoy cultural performances in the evening.",
       distance: "6 km",
       hours: "10:30 am to 10:00 pm",
@@ -303,10 +357,9 @@ const ExploreDelhi = () => {
 
           <div key={currentSlideIndex} className={`${styles.sliderCard} ${styles.fadeEffect}`}>
             <div className={styles.sliderLeft}>
-              <img
-                src={sliderData[currentSlideIndex].image}
-                alt={sliderData[currentSlideIndex].title}
-                className={styles.sliderImage}
+              <ImageCarousel 
+                images={sliderData[currentSlideIndex].images} 
+                alt={sliderData[currentSlideIndex].title} 
               />
             </div>
 

@@ -44,13 +44,13 @@ const BlueTriangle = () => {
   ];
 
   const roomTypes = [
-    { name: 'Single Room', subtitle: '', tariff: '2,368' },
-    { name: 'Double Room', subtitle: '(Double OCC.)', tariff: '3,929' },
-    { name: 'Double Room', subtitle: '(Single OCC.)', tariff: '3,177' },
-    { name: 'Executive Deluxe', subtitle: '(Double OCC.)', tariff: '4,128' },
-    { name: 'Executive Deluxe', subtitle: '(Single OCC.)', tariff: '3,365' },
-    { name: 'Family Suite', subtitle: '', tariff: '4,877' },
-    { name: 'Dormitory', subtitle: '(6 Bedded)', tariff: '5,662' }
+    { name: 'Single Room', tariff: '2,368' },
+    { name: 'Double Room  (Double OCC.)', tariff: '3,929' },
+    { name: 'Double Room (Single OCC.)', tariff: '3,177' },
+    { name: 'Executive Deluxe (Double OCC.)', tariff: '4,128' },
+    { name: 'Executive Deluxe (Single OCC.)', tariff: '3,365' },
+    { name: 'Family Suite', tariff: '4,877' },
+    { name: 'Dormitory (6 Bedded)', tariff: '5,662' }
   ];
 
   return (
@@ -90,12 +90,12 @@ const BlueTriangle = () => {
           <div className="row g-4">
             <div className="col-md-6">
               <div className={styles.overviewImgWrapper} style={{ height: '300px' }}>
-                <img src="/images/blue-tringle/book-1.jpg" alt="Hotel Offer 1" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px' }} />
+                <img src="/images/blue-tringle/book-1.jpg" alt="Hotel Offer 1" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
             </div>
             <div className="col-md-6">
               <div className={styles.overviewImgWrapper} style={{ height: '300px' }}>
-                <img src="/images/blue-tringle/book-2.jpg" alt="Hotel Offer 2" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px' }} />
+                <img src="/images/blue-tringle/book-2.jpg" alt="Hotel Offer 2" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
             </div>
           </div>
@@ -112,10 +112,7 @@ const BlueTriangle = () => {
                   <div className={styles.bookingCard}>
                     <img src="/images/room-booking/room-booking-thumb.jpg" alt={room.name} />
                     <div className={styles.cardContent}>
-                      <div className={styles.titleContainer}>
-                        <h4 className={styles.cardTitle}>{room.name}</h4>
-                        {room.subtitle && <span className={styles.cardSubtitle}>{room.subtitle}</span>}
-                      </div>
+                      <h4 className={styles.cardTitle}>{room.name}</h4>
                       <div className={styles.tariffWrapper}>
                         <span className={styles.tariffLabel}>Tariff</span>
                         <span className={styles.tariffPrice}>₹{room.tariff}</span>
