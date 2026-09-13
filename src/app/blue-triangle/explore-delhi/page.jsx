@@ -392,46 +392,87 @@ const ExploreDelhi = () => {
       {/* USER STORIES SECTION */}
       {/* <UserStories stories={stories} title="User Stories" /> */}
 
-      {/* SPECIAL OFFERS SECTION */}
-      <section className={`container ${styles.offersSection}`}>
-        <h2 className="sectionTitle_2 text-center">Special Offers</h2>
-        <div className={styles.offersGrid}>
-          <div className={styles.offerCard}>
-            <img src="/images/blue-tringle/all-offers.png" alt="Seasons Greeting" />
-          </div>
-          <div className={styles.offerCard}>
-            <img src="/images/blue-tringle/all-offers.png" alt="Seasons Greeting" />
-          </div>
-          <div className={styles.offerCard}>
-            <img src="/images/blue-tringle/all-offers.png" alt="Seasons Greeting" />
-          </div>
-        </div>
-      </section>
 
       <div className="text-center mb-4">
             <h2 className="sectionTitle_2">Itenaries</h2>
 
-            <p style={{ maxWidth: '850px', margin: '15px auto 0', fontSize: '1.05rem', lineHeight: '1.7', color: '#444' }}>
+            <p style={{ maxWidth: '850px', margin: '15px auto 0', fontSize: '1.05rem', lineHeight: '1.7', color: '#000', textAlign:"left" }}>
               Discover the captivating heritage and contemporary charm of the capital through immersive storytelling. Blending structure with flexibility, our itineraries are an expertly curated blend of must-visit landmarks and offbeat things to do in Delhi.
             </p>
           </div>
 
 
           <div className="text-center mb-4">
-            <h2 className="sectionTitle_4 mb-4">Half Day Tours</h2>
-            <h3 className="sectionTitle_3">Capital Connect</h3>
+            <h2 className="sectionTitle_2">Half Day Tours</h2>
+            <h3 className="sectionTitle_3">1. Capital Connect</h3>
 
-            <p style={{ maxWidth: '850px', margin: '15px auto 0', fontSize: '1.05rem', lineHeight: '1.7', color: '#444' }}>
+            <p style={{ maxWidth: '850px', margin: '15px auto 0', fontSize: '1.05rem', lineHeight: '1.7', color: '#000' , textAlign:"left"}}>
              Designed for a breezy introduction to the monuments and markets that define the capital’s cultural and political landscape, this itinerary covers some must-see attractions in Delhi along with lesser-known spots.
             </p>
-            <p>Timings: 10:00 am to 3:00 pm</p>
-            <p>Suitable for All age groups</p>
-            <p>Best time to visit Throughout the year</p>
+            <p style={{ fontSize: '1.1rem', padding:'1rem', lineHeight: '1.7', marginTop:'15px'}}>"Timings: 10:00 am to 3:00 pm | Suitable for All age groups | Best time to visit Throughout the year"</p>
 
-            <h3 className="sectionTitle_3">Highlights</h3>
-            <p  style={{ maxWidth: '850px', margin: '15px auto 0', fontSize: '1.05rem', lineHeight: '1.7', color: '#444' }}>Travel back in time, right in the midst of Connaught Place - the busy commercial heart of Delhi - with a pit-stop at Agrasen Ki Baoli. The 14th century step well that was built when the area was a scrubland populated by kikar trees and jackals, is the best-preserved of ten baolis in Delhi.</p>
+            <p  style={{ maxWidth: '850px', margin: '15px auto 0', fontSize: '1.05rem', lineHeight: '1.7', color: '#000' , textAlign:"left"}}>
+              Travel back in time, right in the midst of Connaught Place - the busy commercial heart of Delhi - with a pit-stop at Agrasen Ki Baoli. The 14th century step well that was built when the area was a scrubland populated by kikar trees and jackals, is the best-preserved of ten baolis in Delhi.</p>
           </div>
 
+
+          <div className="text-center mb-4">
+            <h3 className="sectionTitle_3">2. Icons of Delhi</h3>
+            <p style={{ maxWidth: '850px', margin: '15px auto 0', fontSize: '1.05rem', lineHeight: '1.7', color: '#000' , textAlign:"left"}}>
+              This itinerary unfolds like a cinematic saga of a global metropolis that traces its origins back to the 6th century as Indraprastha, capital of the Pandavas in the Mahabharata epic. From Mughal-era monuments and an ancient step well to a contemporary architectural marvel designed by Iranian architect Fariborz Sahba, you’ll immerse in the fascinating social, historical, political and archaeological tapestry of Delhi.
+            </p>
+          </div>
+
+
+          <div className="text-center mb-4">
+            <p style={{ fontSize: '1.1rem', padding:'1rem', lineHeight: '1.7', marginTop:'15px'}}>"Timings: 10:00 am to 3:00 pm | Suitable for All age groups | Best time to visit Throughout the year"</p>
+
+            <h3 className="sectionTitle_3">Highlights</h3>
+            <p  style={{ maxWidth: '850px', margin: '15px auto 0', fontSize: '1.05rem', lineHeight: '1.7', color: '#000' , textAlign:"left"}}>
+              Drive by the ceremonial boulevard Rajpath and India’s power avenue - Raisina Hill - to marvel at the Rashtrapati Bhawan, official residence of the President of India and the imposing India Gate, a war memorial to 82,000 soldiers of the undivided Indian Army who died during the First World War.</p>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div className="text-center mb-4">
+            <h2 className="sectionTitle_2">Full Day Tours</h2>
+            <h3 className="sectionTitle_3">1. A Day in Metropolice</h3>
+
+            <p style={{ maxWidth: '850px', margin: '15px auto 0', fontSize: '1.05rem', lineHeight: '1.7', color: '#000', textAlign:"left"}}>
+             Marvel at ancient architecture, UNESCO World Heritage sites and modern landmarks as you discover the capital’s landscape. Fascinating stories of warring empires, valiant kings and patrons of the arts offer an intimate connection to to centuries of history on this day tour in Delhi.
+            </p>
+            <p style={{ fontSize: '1.1rem', padding:'1rem', lineHeight: '1.7', marginTop:'15px'}}>"Timings: 10:00 am to 3:00 pm | Suitable for All age groups | Best time to visit Throughout the year"</p>
+
+            <h3 className="sectionTitle_3">Highlights</h3>
+            <p  style={{ maxWidth: '850px', margin: '15px auto 0', fontSize: '1.05rem', lineHeight: '1.7', color: '#000', textAlign:"left"}}>
+              One of the Delhi’s lesser-known attractions, the red sandstone Purana Qila (Old Fort) narrates incredible stories. Explore Sher Mandal (an octagonal tower built as a library) and majestic gardens as you’re captivated by stories of underground tunnels leading to prime locations in Delhi.</p>
+          </div>
+
+
+          <div className="text-center mb-4">
+            <h3 className="sectionTitle_3">2. City on "Auto pilot"</h3>
+            <p style={{ maxWidth: '850px', margin: '15px auto 0', fontSize: '1.05rem', lineHeight: '1.7', color: '#000', textAlign:"left"}}>
+              Across the grandeur of New Delhi and the vibrant energy of Old Delhi, this curated trail gives you authentic insights in the varied landscape of the capital. Witness the political corridors of power and ride in a tuk-tuk (auto - rickshaw) to experience Delhi in different ways.
+            </p>
+          </div>
+
+
+          <div className="text-center mb-4">
+          <h3 className="sectionTitle_3">Highlights</h3>
+            <p  style={{ maxWidth: '850px', margin: '15px auto 0', fontSize: '1.05rem', lineHeight: '1.7', color: '#000', textAlign:"left"}}>
+              Swerving away from the storied elegance of New Delhi, a signature Old Delhi tuk-tuk ride immerses you in the vibrant labyrinth of lanes, bustling bazaars, organised chaos and old world charm of Old Delhi.
+</p>
+          </div>
 
       {/* INSTAGRAM SECTION */}
       {/* <section className={styles.instaSection}>
