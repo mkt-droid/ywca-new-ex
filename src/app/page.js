@@ -1,69 +1,70 @@
 import Highlights from "@/components/Highlights";
 import ImpactSection from "@/components/ImpactSection";
+import PresenceMap from "@/components/PresenceMap";
 
 import HeroBanner from "@/components/partials/HeroBanner2";
 export default function Home() {
   return (
     <>
-    <HeroBanner/>
-  {/* ════════════════════ NEWS BAR ════════════════════ */}
-  <div className="news-bar">
-    <div className="news-label">NEWS</div>
-    <div className="news-items">
-      <div className="news-item">
-        <img src="/images/News-Thumb/World-YCWA-Day.jpg" alt="brand" />
-        <span className="n-text">
-        <span className="n-label">World YWCA Day - Celebrating Sisterhood and Solidarity 
-          <span className="n-date">25th April, 2026</span>
-          </span>
-          <a className="n-more" href="/news/world-ywca-day-2026">
-            Read More <i className="bi bi-arrow-up-right-circle" />
-          </a>
-        </span>
+      <HeroBanner />
+      {/* ════════════════════ NEWS BAR ════════════════════ */}
+      <div className="news-bar">
+        <div className="news-label">NEWS</div>
+        <div className="news-items">
+          <div className="news-item">
+            <img src="/images/News-Thumb/World-YCWA-Day.jpg" alt="brand" />
+            <span className="n-text">
+              <span className="n-label">World YWCA Day - Celebrating Sisterhood and Solidarity
+                <span className="n-date">25th April, 2026</span>
+              </span>
+              <a className="n-more" href="/news/world-ywca-day-2026">
+                Read More <i className="bi bi-arrow-up-right-circle" />
+              </a>
+            </span>
+          </div>
+          <div className="news-item">
+            <img src="/images/News-Thumb/Lenten-Prayer-Meet.jpg" alt="brand" />
+            <span className="n-text">
+              <span className="n-label"> Lenten Prayer Meeting
+                <span className="n-date">27th March 2026 </span>
+              </span>
+              <a className="n-more" href="#">
+                Read More <i className="bi bi-arrow-up-right-circle" />
+              </a>
+            </span>
+          </div>
+          <div className="news-item">
+            <img src="/images/News-Thumb/Thrive-Music-Fest.jpg" alt="brand" />
+            <span className="n-text">
+              <span className="n-label">Thrive Music Festival
+                <span className="n-date">14th March 2026</span>
+              </span>
+              <a className="n-more" href="#">
+                Read More <i className="bi bi-arrow-up-right-circle" />
+              </a>
+            </span>
+          </div>
+          <div className="news-item">
+            <img src="/images/News-Thumb/Int-Women-day.jpg" alt="brand" />
+            <span className="n-text">
+              <span className="n-label">
+                International Women’s Day
+                <span className="n-date">7th March 2026</span>
+              </span>
+
+              <a className="n-more" href="#">
+                Read More <i className="bi bi-arrow-up-right-circle" />
+              </a>
+            </span>
+          </div>
+        </div>
       </div>
-      <div className="news-item">
-       <img src="/images/News-Thumb/Lenten-Prayer-Meet.jpg" alt="brand" />
-        <span className="n-text">
-          <span className="n-label"> Lenten Prayer Meeting
-          <span className="n-date">27th March 2026 </span>
-          </span>
-          <a className="n-more" href="#">
-            Read More <i className="bi bi-arrow-up-right-circle" />
-          </a>
-        </span>
-      </div>
-      <div className="news-item">
-       <img src="/images/News-Thumb/Thrive-Music-Fest.jpg" alt="brand" />
-        <span className="n-text">
-          <span className="n-label">Thrive Music Festival
-          <span className="n-date">14th March 2026</span>
-          </span>
-          <a className="n-more" href="#">
-            Read More <i className="bi bi-arrow-up-right-circle" />
-          </a>
-        </span>
-      </div>
-      <div className="news-item">
-        <img src="/images/News-Thumb/Int-Women-day.jpg" alt="brand" />
-        <span className="n-text">
-          <span className="n-label">
-           International Women’s Day
-          <span className="n-date">7th March 2026</span>
-          </span>
-        
-          <a className="n-more" href="#">
-            Read More <i className="bi bi-arrow-up-right-circle" />
-          </a>
-        </span>
-      </div>
-    </div>
-  </div>
-  <section className="hl-sec-2">
-    <div className="container">
-      <h2 className="sec-title white-text">Our Focus Areas</h2>
-      <div className="sec-sub" />
-      <Highlights/>
-      {/* <div className="row">
+      <section className="hl-sec-2">
+        <div className="container">
+          <h2 className="sec-title white-text">Our Focus Areas</h2>
+          <div className="sec-sub" />
+          <Highlights />
+          {/* <div className="row">
         <div className="col-lg-5 pdr-0">
           <div className="hl-item1">
             <div
@@ -121,22 +122,26 @@ export default function Home() {
           </div>
         </div>
       </div> */}
-    </div>
-  </section>
-  <>
-  <section className="hello-sec">
+        </div>
+      </section>
+      <>
+        {/* <section className="hello-sec">
     <h2 className="sec-title">Our Presence in Delhi</h2>
     <div className="map-section">
       <img src="/images/Map.png" alt="img" />
     </div>
-  </section>
-  {/* ════════════════════ IMPACT IN ACTION ════════════════════ */}
-  <section className="impact-sec">
-    <div className="container ">
-      <section className="impact-sec-inner">
-        <h2 className="sec-title">Our Impact In Action</h2>
-         <ImpactSection/>
-        {/* <div className="row text-center mb-2">
+  </section> */}
+
+        {/* New Interactive Presence Map added below the static one as requested */}
+        <PresenceMap />
+
+        {/* ════════════════════ IMPACT IN ACTION ════════════════════ */}
+        <section className="impact-sec">
+          <div className="container ">
+            <section className="impact-sec-inner">
+              <h2 className="sec-title">Our Impact In Action</h2>
+              <ImpactSection />
+              {/* <div className="row text-center mb-2">
           <div className="col-4 pl">
             <div className="stat-box stat-box-color-1">
               <img src="/images/icons/motivational.png" alt="brand" />
@@ -202,11 +207,11 @@ export default function Home() {
             </div>
           </div>
         </div> */}
-      </section>
-    </div>
-  </section>
-</>
+            </section>
+          </div>
+        </section>
+      </>
 
-</>
+    </>
   );
 }

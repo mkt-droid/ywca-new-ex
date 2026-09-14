@@ -17,8 +17,8 @@
 
 .sectionTitle {
   text-align: center;
-  font-size:2.2rem;
-  font-weight:600;
+  font-size: 2.2rem;
+  font-weight: 600;
   color: #1a1c6a;
   margin-bottom: 30px;
   margin-top: 50px;
@@ -313,6 +313,7 @@
 
 /* ── RESPONSIVE ── */
 @media (max-width: 991px) {
+
   .glimpsesGrid,
   .offersGrid {
     grid-template-columns: repeat(2, 1fr);
@@ -337,6 +338,7 @@
 }
 
 @media (max-width: 767px) {
+
   .glimpsesGrid,
   .offersGrid {
     grid-template-columns: 1fr;
@@ -354,4 +356,119 @@
     width: 95%;
     padding: 20px;
   }
+}
+
+/* ── ITINERARIES SECTION ── */
+.itinerarySection {
+  padding: 80px 0;
+  background-color: #fafafa;
+}
+
+.itineraryHeader {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+}
+
+.itineraryHeader p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+.itineraryTypeContainer {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.itineraryTypeTitle {
+  color: #1a1c6a;
+  font-size: 2rem;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+}
+
+.itineraryTypeTitle::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  background-color: #c108c9;
+  bottom: 0;
+  left: 25%;
+  border-radius: 2px;
+}
+
+.itineraryCard {
+  background: #fff;
+  border-radius: 12px;
+  padding: 35px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+  border: 1px solid #eaeaea;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.itineraryCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-color: #c108c9;
+}
+
+.itineraryCardTitle {
+  font-size: 1.8rem;
+  color: #222;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.itineraryCardDesc {
+  color: #555;
+  line-height: 1.7;
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+.itineraryMeta {
+  background: #f8f9fa;
+  border-left: 4px solid #c108c9;
+  padding: 15px 20px;
+  border-radius: 4px;
+  margin-bottom: 25px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.itineraryMeta span {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.itineraryMeta span i {
+  color: #c108c9;
+  margin-right: 10px;
+}
+
+.itineraryMeta span:last-child {
+  margin-bottom: 0;
+}
+
+.itineraryHighlightsTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1c6a;
+  margin-bottom: 15px;
+}
+
+.itineraryHighlightsDesc {
+  color: #555;
+  line-height: 1.7;
+  font-size: 1rem;
+  margin-bottom: 0;
 }

@@ -33,7 +33,7 @@ export default function ReligiousEducationCommitteePage() {
         </section>
 
         {/* Programs Section */}
-        <div className="mt-3 text-center pb-5">
+        <div className="container mt-3 text-center pb-5">
           <h2 className='sectionTitle_2 text-center mx-800'>Following are the programs conducted by the Religious Education Committee in the past</h2>
 
           <div className="row justify-content-center mt-4">
