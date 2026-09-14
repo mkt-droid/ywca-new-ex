@@ -11,7 +11,7 @@ const LOCATIONS = [
     address: "1, Ashoka Road, New Delhi 110001",
     tel: "+91-11-23362779",
     email: "wti@ywcaofdelhi.org",
-    image: "/images/wwh_1.jpeg",
+    image: "/images/Map-Placeholder.jpg",
     top: "30%", left: "55%"
   },
   {
@@ -22,7 +22,7 @@ const LOCATIONS = [
     address: "Jahangirpuri, New Delhi",
     tel: "+91-11-XXXXXXX",
     email: "info@ywcaofdelhi.org",
-    image: "/images/cdp/1.jpg",
+    image: "/images/Map-Placeholder.jpg",
     top: "15%", left: "45%"
   },
   {
@@ -33,7 +33,7 @@ const LOCATIONS = [
     address: "Mangolpuri, New Delhi",
     tel: "+91-11-XXXXXXX",
     email: "info@ywcaofdelhi.org",
-    image: "/images/cdp/2.jpg",
+    image: "/images/Map-Placeholder.jpg",
     top: "35%", left: "25%"
   },
   {
@@ -44,7 +44,7 @@ const LOCATIONS = [
     address: "YWCA of Delhi 1, Ashoka Road, New Delhi 110001",
     tel: "+91-11-23362779",
     email: "g_s@ywcaofdelhi.org",
-    image: "/images/wwh_2.jpeg",
+    image: "/images/Map-Placeholder-2.jpg",
     top: "45%", left: "57%" // Central blue pin
   },
   {
@@ -55,7 +55,7 @@ const LOCATIONS = [
     address: "Ashoka Road, New Delhi 110001",
     tel: "+91-11-23362779",
     email: "info@ywcaofdelhi.org",
-    image: "/images/Blue-triangle.jpg",
+    image: "/images/Map-Placeholder.jpg",
     top: "50%", left: "59%"
   },
   {
@@ -66,7 +66,7 @@ const LOCATIONS = [
     address: "Sector 10, Dwarka, New Delhi",
     tel: "+91-11-XXXXXXX",
     email: "info@ywcaofdelhi.org",
-    image: "/images/cdp/3.jpg",
+    image: "/images/Map-Placeholder.jpg",
     top: "65%", left: "20%"
   },
   {
@@ -77,7 +77,7 @@ const LOCATIONS = [
     address: "Sarai Rohilla, New Delhi",
     tel: "+91-11-XXXXXXX",
     email: "info@ywcaofdelhi.org",
-    image: "/images/cdp/4.jpg",
+    image: "/images/Map-Placeholder.jpg",
     top: "40%", left: "48%"
   },
   {
@@ -88,7 +88,7 @@ const LOCATIONS = [
     address: "Najafgarh, New Delhi",
     tel: "+91-11-XXXXXXX",
     email: "info@ywcaofdelhi.org",
-    image: "/images/cdp/5.jpg",
+    image: "/images/Map-Placeholder.jpg",
     top: "60%", left: "15%"
   },
   {
@@ -99,7 +99,7 @@ const LOCATIONS = [
     address: "Govindpuri, New Delhi",
     tel: "+91-11-XXXXXXX",
     email: "info@ywcaofdelhi.org",
-    image: "/images/cdp/6.jpg",
+    image: "/images/Map-Placeholder.jpg",
     top: "75%", left: "70%"
   },
   {
@@ -110,7 +110,7 @@ const LOCATIONS = [
     address: "Khadar, New Delhi",
     tel: "+91-11-XXXXXXX",
     email: "info@ywcaofdelhi.org",
-    image: "/images/cdp/7.jpg",
+    image: "/images/Map-Placeholder.jpg",
     top: "85%", left: "60%"
   },
   {
@@ -121,7 +121,7 @@ const LOCATIONS = [
     address: "Ashoka Road, New Delhi",
     tel: "+91-11-23362779",
     email: "info@ywcaofdelhi.org",
-    image: "/images/wwh_1.jpeg",
+    image: "/images/Map-Placeholder.jpg",
     top: "55%", left: "58%"
   },
   {
@@ -132,7 +132,7 @@ const LOCATIONS = [
     address: "Jasola Vihar, New Delhi",
     tel: "+91-11-XXXXXXX",
     email: "info@ywcaofdelhi.org",
-    image: "/images/wwh_2.jpeg",
+    image: "/images/Map-Placeholder.jpg",
     top: "72%", left: "80%"
   }
 ];
@@ -244,7 +244,7 @@ export default function PresenceMap() {
               For now, let's use the actual Map.png as an underlay, but the points might overlap. */}
           <div style={{ position: 'relative' }}>
             {/* Note: In a real scenario, this image should be just the map outline without the baked-in text */}
-            <img src="/images/map_123.png" alt="Delhi Map" className={styles.mapImage}
+            <img src="/images/India-gate-Map.png" alt="Delhi Map" className={styles.mapImage}
               onError={(e) => { e.target.src = "/images/Map.png" }} />
 
             <div className={styles.mapPointsContainer}>

@@ -55,22 +55,8 @@
   text-shadow: 0.5px 0 0 currentColor;
 }
 
-/* Connecting Line (Horizontal part) */
-.listItem::after {
-  content: "";
-  position: absolute;
-  right: -50px;
-  /* extends out towards the map */
-  top: 50%;
-  width: 50px;
-  height: 1px;
-  background-color: #999;
-  z-index: 1;
-}
 
-.listItemSelected::after {
-  background-color: #1a1c6a;
-}
+
 
 /* MIDDLE - MAP */
 .mapColumn {
@@ -169,6 +155,7 @@
     opacity: 0;
     transform: translateX(20px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
