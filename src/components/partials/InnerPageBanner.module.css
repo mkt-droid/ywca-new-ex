@@ -69,6 +69,28 @@
 
 @media (max-width: 767px) {
   .heroTitle {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+  }
+
+  .heroSection {
+    min-height: 180px !important;
+  }
+
+  .heroContent {
+    margin-top: 60px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroTitle {
+    font-size: 1.3rem;
+  }
+
+  .heroSection {
+    min-height: 150px !important;
+  }
+
+  .heroContent {
+    margin-top: 45px !important;
   }
 }

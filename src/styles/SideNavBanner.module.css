@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   /* min-height: 65vh; /* Option: Uncomment this line to restore original banner height */
-  min-height: 280px;
+  min-height: 200px;
   display: grid;
   grid-template-columns: 1fr;
   align-content: center;
@@ -137,20 +137,22 @@
 
 @media (max-width: 991px) {
   .heroSection {
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-top: 60px;
-    padding-bottom: 40px;
+    justify-content: flex-end;
+    padding-top: 40px;
+    padding-bottom: 0;
+    min-height: 200px;
   }
 
   .heroTitle {
-    font-size: 2.2rem;
-    text-align: center;
+    font-size: 2rem;
   }
 
   .heroContent {
-    margin-top: 0;
-    text-align: center;
+    margin-top: 0 !important;
+    padding: 0 15px;
+    margin-bottom: 16px;
   }
 
   .heroRightMenu {
@@ -158,26 +160,62 @@
     top: auto;
     right: auto;
     transform: none;
-    margin-top: 40px;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
     width: 100%;
-    padding: 0 15px;
-    gap: 10px;
+    gap: 0;
+    margin: 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .heroRightMenu::-webkit-scrollbar {
+    display: none;
   }
 
   .menuItem {
     width: auto;
-    flex: 1 1 calc(50% - 20px);
-    font-size: 0.85rem;
-    padding: 12px 15px;
-    border-radius: 8px;
+    flex: 0 0 auto;
+    font-size: 0.8rem;
+    padding: 12px 14px;
+    border-radius: 0;
     justify-content: center;
     text-align: center;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .menuItem:hover {
-    padding-left: 15px;
+    padding-left: 14px;
+    width: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .heroSection {
+    min-height: 170px;
+  }
+
+  .heroTitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroSection {
+    min-height: 150px;
+  }
+
+  .heroTitle {
+    font-size: 1.3rem;
+  }
+
+  .menuItem {
+    font-size: 0.75rem;
+    padding: 10px 12px;
   }
 }

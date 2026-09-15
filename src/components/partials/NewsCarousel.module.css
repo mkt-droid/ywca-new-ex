@@ -75,3 +75,10 @@
 .rightBtn {
   right: -20px;
 }
+
+/* Mobile: arrows hide karo — swipe se scroll hoga, horizontal overflow bhi nahi aayega */
+@media (max-width: 768px) {
+  .navButton {
+    display: none;
+  }
+}

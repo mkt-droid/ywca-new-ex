@@ -43,14 +43,14 @@ export default function MembersPicnicPage() {
         <section className="pt-4 pb-5">
           <div className="container">
             {/* Header Section */}
-            <div className="mb-4 d-flex align-items-center" style={{ backgroundColor: '#fff', padding: '15px 20px', borderRadius: '12px', boxShadow: '0 2px 8px rgba(0,0,0,0.03)' }}>
+            <div className={styles.eventPageHeader}>
               <div style={{ flex: '0 0 auto' }}>
                 <Link href="/membership-and-programs" className={styles.backBtn}>
                   <i className="bi bi-arrow-left"></i> Back
                 </Link>
               </div>
-              <div className="flex-grow-1 text-center" style={{ padding: '0 15px' }}>
-                <h1 className="sectionTitle_1 text-center mx-800 mb-0" >Members’ Picnic - Lodhi Garden</h1>
+              <div className={styles.eventPageHeaderTitle}>
+                <h1 className="sectionTitle_1 text-center mx-800 mb-0" >Members' Picnic - Lodhi Garden</h1>
                 <p className="text-muted mb-0 mt-2">28 February 2026</p>
               </div>
               <div style={{ flex: '0 0 auto', width: '85px', visibility: 'hidden' }} className="d-none d-md-block"></div>
