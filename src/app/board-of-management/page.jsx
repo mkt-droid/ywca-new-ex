@@ -68,7 +68,7 @@ const allMembers = [
   },
   {
     name: 'Ms. Dheerender Bhola',
-    title: 'Chairperson, REC',
+    title: 'Member',
     image: '/images/board-of-management/ms-dheerender-bhola.jpg',
     description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
   },
@@ -80,13 +80,13 @@ const allMembers = [
   },
   {
     name: 'Ms. Rachel Mercy Oommen',
-    title: 'Chairperson, CDP',
+    title: 'Member',
     image: '/images/board-of-management/ms-rachel-mercy.jpeg',
     description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
   },
   {
     name: 'Ms. Samantha Maria',
-    title: 'Chairperson, Finance',
+    title: 'Member',
     image: '/images/board-of-management/ms-samantha.jpg',
     description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
   },
@@ -104,7 +104,7 @@ const allMembers = [
   },
   {
     name: 'Ms. Pragyan Mohanty',
-    title: 'General Secretary YWCA',
+    title: 'General Secretary',
     image: '/images/Ms.-Pragya-Monthly.png',
     description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
   }

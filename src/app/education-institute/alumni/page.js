@@ -13,7 +13,7 @@ export default function AlumniPage() {
     { title: 'Overview', icon: 'bi-flower1', link: '/education-institute' },
     { title: 'Programs', icon: 'bi-mortarboard', link: '/education-institute/programs' },
     { title: 'Admission', icon: 'bi-person-vcard', link: '/education-institute/admission' },
-    { title: 'Student Corner', icon: 'bi-people', link: '#' },
+    { title: 'Life@YWCA', icon: 'bi-people', link: '/news?category=Academic+News' },
     { title: 'Contact us', icon: 'bi-telephone', link: '/education-institute/contact' },
   ];
 

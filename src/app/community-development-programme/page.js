@@ -239,7 +239,6 @@ export default function CDPOverviewPage() {
               <ul className={styles.trustList}>
                 <li><i className="bi bi-check-circle-fill" style={{ color: '#a212b5', marginTop: '3px' }}></i> <span>Registered under the Societies Registration Act, affiliated to the YWCA of India</span></li>
                 <li><i className="bi bi-check-circle-fill" style={{ color: '#a212b5', marginTop: '3px' }}></i> <span>12A & 80G registered - your donations are tax-deductible</span></li>
-                <li><i className="bi bi-check-circle-fill" style={{ color: '#a212b5', marginTop: '3px' }}></i> <span>FCRA compliant for international contributions</span></li>
                 <li><i className="bi bi-check-circle-fill" style={{ color: '#a212b5', marginTop: '3px' }}></i> <span>Annual reports and audited financial statements published every year</span></li>
                 <li><i className="bi bi-check-circle-fill" style={{ color: '#a212b5', marginTop: '3px' }}></i> <span>Every rupee you donate goes directly to programmes on the ground</span></li>
               </ul>

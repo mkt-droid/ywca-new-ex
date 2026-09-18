@@ -63,12 +63,9 @@ const Footer = () => {
                     <Link href="/our-history">About Us</Link>
                   </li>
                   <li>
-                    <Link href="/membership-and-programs">
-                      Our Programs
-                    </Link>
                   </li>
                   <li>
-                    <Link href="/blue-triangle">Hotel Bookings</Link>
+                    <Link href="/blue-triangle">Guest House</Link>
                   </li>
                   <li>
                     <Link href="/education-institute/contact">Course Inquiry</Link>

@@ -245,7 +245,7 @@ export default function ShelterHomesPage() {
           </div>
 
           <div className={styles.contactSupport}>
-            <p><span style={{ fontWeight: 500 }}>If you or someone you know needs support, please contact us through the hiplines
+            <p><span style={{ fontWeight: 500 }}>If you or someone you know needs support, please contact us through the helplines
               below. Our team is here to provide a safe space, care, and guidance.</span></p>
             <div className={styles.contactButtons}>
               <div className={styles.splitBtnWrap}>

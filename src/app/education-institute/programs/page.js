@@ -7,7 +7,6 @@ import styles from './page.module.css';
 import SideNavBanner from '@/components/partials/SideNavBanner';
 import PlacementPartners from '@/components/PlacementPartners';
 import EducationFooterLinks from '@/components/EducationFooterLinks';
-import UserStories from '@/components/UserStories';
 import coursesData from '@/data/courses.json';
 
 function ProgramsContent() {
@@ -31,7 +30,7 @@ function ProgramsContent() {
     { title: 'Overview', icon: 'bi-flower1', link: '/education-institute' },
     { title: 'Programs', icon: 'bi-mortarboard', link: '/education-institute/programs' },
     { title: 'Admission', icon: 'bi-person-vcard', link: '/education-institute/admission' },
-    { title: 'Student Corner', icon: 'bi-people', link: '#' },
+    { title: 'Life@YWCA', icon: 'bi-people', link: '/news?category=Academic+News' },
     { title: 'Contact us', icon: 'bi-telephone', link: '/education-institute/contact' },
   ];
 
@@ -50,44 +49,6 @@ function ProgramsContent() {
   const handleLoadMore = () => {
     setVisibleCount(prev => prev + 12);
   };
-
-  const stories = [
-    {
-      id: 1,
-      name: 'Anu Kumari',
-      subtitle: 'DMLT Graduate | MediBuddy, Gurugram',
-      quote: `My experience at the Women's Training Institute, YWCA of Delhi, has been truly rewarding. The dedicated faculty, practical training, and supportive environment helped me build a strong foundation in Medical Laboratory Technology. Today, I am proud to be working at MediBuddy, Gurugram. I sincerely thank my teachers and YWCA for guiding me towards a successful career.`,
-      avatar: 'https://dummyimage.com/150x150/f0f0f0/333333.png&text=AK'
-    },
-    {
-      id: 2,
-      name: 'Manisha',
-      subtitle: 'BMLT Graduate | Junior Research Fellow, AIIMS, New Delhi',
-      quote: `YWCA of Delhi provided me with excellent academic knowledge, practical skills, and the confidence to excel in my career. The guidance and encouragement of my teachers helped me achieve my goals, from postgraduate studies to becoming a Junior Research Fellow at AIIMS, New Delhi. I am grateful to YWCA for shaping my professional journey.`,
-      avatar: 'https://dummyimage.com/150x150/f0f0f0/333333.png&text=M'
-    },
-    {
-      id: 3,
-      name: 'Sarika Yadav',
-      subtitle: 'DMLT, Batch (2022-2024)',
-      quote: `Completing my *Diploma In Medical Laboratory Technology (DMLT),* *(2022-2024)* ,at *Women's training institute (YWCA of Delhi),* has been a truly transformative experience.The institute provided us with a wonderfully supportive, disciplined, and empowering environment to learn and grow. From the well-equipped labs to the structured curriculum, YWCA Delhi gave me the perfect foundation for me careers in healthcare.\n\nI want to express my deepest gratitude to *[Jolly Ma'am].* Thank you for your patience, your dedication to teaching us complex diagnostic procedures, and for always motivating us to do our best. Teachers like you are rare, and I feel incredibly fortunate to have been your student. I carry the skills and confidence you gave me into my professional career.\n\nWith gratitude and respect,\n*[Sarika Yadav]*\nDMLT, Batch (2022-2024)`,
-      avatar: 'https://dummyimage.com/150x150/f0f0f0/333333.png&text=SY'
-    },
-    {
-      id: 4,
-      name: 'Shivani Binjola',
-      subtitle: 'DMLT',
-      quote: `Hello my dear friends,\nI am Shivani Binjola and I am very glad to share my life's story with you. I have completed my DMLT from Y.W.C.A. Y.W.C.A. is one of the reputed institutes for pursuing MLT. As a result, I'm elated to be a part of such a reputed organization.\nNo wonder the teachers are also amazing. They teach extremely well and do not show partiality on any basis. Instead, the teachers behave in an extremely positive manner with everyone.\nI wanted to share my personal experience with my institution as I feel nostalgic about my college days. I would like to bring to your notice that I completely adore my teachers as they are excellent in teaching and behave like friends with the students. The teaching methods are powerful and student-friendly.\nActually, I used to be a weak student in my class. There were so many activities that we used to have during our lectures. I owe my success to my institution and my dear teachers.\nI would like to thank Y.W.C.A. from the bottom of my heart and thank my dear teachers once again.\nRegards,\nShivani Binjola`,
-      avatar: 'https://dummyimage.com/150x150/f0f0f0/333333.png&text=SB'
-    },
-    {
-      id: 5,
-      name: 'Drishti Sharma',
-      subtitle: 'DMLT, Batch (2016-2018)',
-      quote: `Drishti Sharma is a proud alumna of the Diploma in Medical Laboratory Technology (DMLT) programme at the Women's Training Institute, YWCA of Delhi (Batch 2016-2018). She is currently working in the Department of Molecular Diagnostics at Rajiv Gandhi Cancer Institute & Research Centre, Rohini, Delhi.\n\nThe Diploma in Medical Laboratory Technology at YWCA of Delhi gave me the knowledge, confidence, and practical skills needed to build a successful career. The faculty members were exceptionally supportive and guided me throughout my academic journey. Their encouragement helped me discover my potential and paved the way for my professional success. I am grateful to YWCA for providing me with a strong foundation in the field of medical laboratory technology.`,
-      avatar: 'https://dummyimage.com/150x150/f0f0f0/333333.png&text=DS'
-    }
-  ];
 
   return (
     <main>
@@ -172,9 +133,6 @@ function ProgramsContent() {
           )}
         </div>
       </section>
-
-      {/* User Stories */}
-      <UserStories stories={stories} title="User Stories" />
 
       {/* Placement Partners */}
       <PlacementPartners />
