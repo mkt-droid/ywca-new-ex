@@ -12,7 +12,7 @@ export const metadata = {
 export default function SupportACausePage() {
   const bannerNavItems = [
     { title: 'Overview & Donation', icon: 'bi-flower1', link: '/fund-raising-publicity' },
-    { title: 'Support a Cause', icon: 'bi-heart', link: '/fund-raising-publicity/support-a-cause' },
+    { title: 'Support a Cause', icon: 'bi-heart', link: '/shelter-homes/' },
     { title: 'The ReHome Store', icon: 'bi-shop', link: '/fund-raising-publicity/the-rehome-store' },
     { title: 'Eco-Justice Lab', icon: 'bi-tree', link: '/fund-raising-publicity/eco-justice-lab' },
     { title: 'Volunteer & Partnership', icon: 'bi-people', link: '/fund-raising-publicity/volunteer-and-partnership' },

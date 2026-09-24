@@ -11,7 +11,7 @@ export const metadata = {
 export default function FundRaisingPage() {
   const bannerNavItems = [
     { title: 'Overview & Donation', icon: 'bi-flower1', link: '/fund-raising-publicity' },
-    { title: 'Support a Cause', icon: 'bi-heart', link: '/fund-raising-publicity/support-a-cause' },
+    { title: 'Support a Cause', icon: 'bi-heart', link: '/shelter-homes' },
     { title: 'The ReHome Store', icon: 'bi-shop', link: '/fund-raising-publicity/the-rehome-store' },
     { title: 'Eco-Justice Lab', icon: 'bi-tree', link: '/fund-raising-publicity/eco-justice-lab' },
     { title: 'Volunteer & Partnership', icon: 'bi-people', link: '/fund-raising-publicity/volunteer-and-partnership' },
@@ -59,19 +59,12 @@ export default function FundRaisingPage() {
             <div className="col-lg col-md-6 col-sm-12 mb-3">
               <div className={styles.helpCard}>
                 <div className={styles.helpCardIcon} style={{ backgroundColor: 'rgba(85, 155, 85, 0.1)' }}><i className="bi bi-gift-fill" style={{ color: '#559b55' }}></i></div>
-                <h4>Donate in Kind</h4>
-                <p>Give pre-loved items a second life through The ReHome Store.</p>
+                <h4>Give with Purpose</h4>
+                <p>Support community through recycling, composting, water conservation and other green initiatives.</p>
                 <Link href="/fund-raising-publicity/the-rehome-store" className={styles.helpCardLink}>DONATE ITEMS <i className="bi bi-arrow-right"></i></Link>
               </div>
             </div>
-            <div className="col-lg col-md-6 col-sm-12 mb-3">
-              <div className={styles.helpCard}>
-                <div className={styles.helpCardIcon} style={{ backgroundColor: 'rgba(119, 161, 61, 0.1)' }}><i className="bi bi-tree-fill" style={{ color: '#77a13d' }}></i></div>
-                <h4>Donate Green</h4>
-                <p>Support environment action through recycling, composting, water conservation and more.</p>
-                <Link href="/fund-raising-publicity/eco-justice-lab" className={styles.helpCardLink}>SUPPORT GREEN ACTION <i className="bi bi-arrow-right"></i></Link>
-              </div>
-            </div>
+
             <div className="col-lg col-md-6 col-sm-12 mb-3">
               <div className={styles.helpCard}>
                 <div className={styles.helpCardIcon} style={{ backgroundColor: 'rgba(74, 122, 181, 0.1)' }}><i className="bi bi-briefcase-fill" style={{ color: '#4a7ab5' }}></i></div>
@@ -245,7 +238,7 @@ export default function FundRaisingPage() {
                     <div className={styles.circleIcon}>
                       <i className="bi bi-tree"></i>
                     </div>
-                    <h6>Turn Waste<br />into Worth</h6>
+                    <h6>Organic manure</h6>
                     <p>Support composting<br />and organic manure<br />production.</p>
                   </div>
                   <div className={styles.iconItemGreen}>
@@ -259,8 +252,8 @@ export default function FundRaisingPage() {
                     <div className={styles.circleIcon}>
                       <i className="bi bi-house-heart"></i>
                     </div>
-                    <h6>Build Green<br />Communities</h6>
-                    <p>Support awareness,<br />youth engagement<br />and climate action.</p>
+                    <h6>Communities</h6>
+                    <p>Youth engagement<br />and climate action.</p>
                   </div>
                 </div>
 

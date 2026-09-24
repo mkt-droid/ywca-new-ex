@@ -47,7 +47,7 @@ export default function TheRehomeStorePage() {
 
   const bannerNavItems = [
     { title: 'Overview & Donation', icon: 'bi-flower1', link: '/fund-raising-publicity' },
-    { title: 'Support a Cause', icon: 'bi-heart', link: '/fund-raising-publicity/support-a-cause' },
+    { title: 'Support a Cause', icon: 'bi-heart', link: '/shelter-homes' },
     { title: 'The ReHome Store', icon: 'bi-shop', link: '/fund-raising-publicity/the-rehome-store' },
     { title: 'Eco-Justice Lab', icon: 'bi-tree', link: '/fund-raising-publicity/eco-justice-lab' },
     { title: 'Volunteer & Partnership', icon: 'bi-people', link: '/fund-raising-publicity/volunteer-and-partnership' },
@@ -56,7 +56,7 @@ export default function TheRehomeStorePage() {
 
   const donateItems = [
     {
-      id: 1, label: "Clothes of all genders & age",
+      id: 1, label: "Clothes for all",
       desc: "Casual wear, formal wear, ethnic wear, winter wear and Kids’ clothing in good condition.",
       image: "/images/the-rehome/01.jpg"
     },
