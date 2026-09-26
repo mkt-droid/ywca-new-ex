@@ -28,7 +28,7 @@ export default function Home() {
               <span className="n-label"> Lenten Prayer Meeting
                 <span className="n-date">27th March 2026 </span>
               </span>
-              <a className="n-more" href="#">
+              <a className="n-more" href="/news/lenten-prayer-meeting">
                 Read More <i className="bi bi-arrow-up-right-circle" />
               </a>
             </span>
@@ -39,7 +39,7 @@ export default function Home() {
               <span className="n-label">Thrive Music Festival
                 <span className="n-date">14th March 2026</span>
               </span>
-              <a className="n-more" href="#">
+              <a className="n-more" href="/news/thrive-music-festival">
                 Read More <i className="bi bi-arrow-up-right-circle" />
               </a>
             </span>
@@ -52,7 +52,7 @@ export default function Home() {
                 <span className="n-date">7th March 2026</span>
               </span>
 
-              <a className="n-more" href="#">
+              <a className="n-more" href="/news/international-womens-day">
                 Read More <i className="bi bi-arrow-up-right-circle" />
               </a>
             </span>

@@ -1,6 +1,54 @@
 [
   {
     "id": 1,
+    "title": "World YWCA Day - Celebrating Sisterhood and Solidarity",
+    "date": "25th April, 2026",
+    "description": "Lorem ipsum is a standard placeholder or dummy text used across graphic design, publishing, and web development to test layouts and visual hierarchies. By utilizing a scrambled, nonsensical version of Latin, it allows designers to focus entirely on typography, spacing, and page structure without being distracted by readable content.",
+    "image": "/images/News-Thumb/World-YCWA-Day.jpg",
+    "category": "Academic News",
+    "slug": "world-ywca-day-2026",
+    "gallery": [
+      "/images/News-Thumb/World-YCWA-Day.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Lenten Prayer Meeting",
+    "date": "27th March 2026",
+    "description": "Lorem ipsum is a standard placeholder or dummy text used across graphic design, publishing, and web development to test layouts and visual hierarchies. By utilizing a scrambled, nonsensical version of Latin, it allows designers to focus entirely on typography, spacing, and page structure without being distracted by readable content.",
+    "image": "/images/News-Thumb/Lenten-Prayer-Meet.jpg",
+    "category": "Academic News",
+    "slug": "lenten-prayer-meeting",
+    "gallery": [
+      "/images/News-Thumb/Lenten-Prayer-Meet.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Thrive Music Festival",
+    "date": "14th March 2026",
+    "description": "Lorem ipsum is a standard placeholder or dummy text used across graphic design, publishing, and web development to test layouts and visual hierarchies. By utilizing a scrambled, nonsensical version of Latin, it allows designers to focus entirely on typography, spacing, and page structure without being distracted by readable content.",
+    "image": "/images/News-Thumb/Thrive-Music-Fest.jpg",
+    "category": "Academic News",
+    "slug": "thrive-music-festival",
+    "gallery": [
+      "/images/News-Thumb/Thrive-Music-Fest.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "International Women’s Day",
+    "date": "7th March 2026",
+    "description": "Lorem ipsum is a standard placeholder or dummy text used across graphic design, publishing, and web development to test layouts and visual hierarchies. By utilizing a scrambled, nonsensical version of Latin, it allows designers to focus entirely on typography, spacing, and page structure without being distracted by readable content.",
+    "image": "/images/News-Thumb/Int-Women-day.jpg",
+    "category": "Academic News",
+    "slug": "international-womens-day",
+    "gallery": [
+      "/images/News-Thumb/Int-Women-day.jpg"
+    ]
+  },
+  {
+    "id": 5,
     "title": "Bridge the Gap - August-September 2025",
     "date": "August-September 2025",
     "description": "The academic year opened with the Bridge the Gap peer-learning initiative, designed to support students from diverse educational and social backgrounds. Through collaborative learning, peer interaction and shared academic support, students were encouraged to build confidence, strengthen communication skills and learn from one another. The programme helped create an inclusive learning environment and fostered teamwork, mutual respect and a smoother transition into the institute.",
@@ -12,7 +60,7 @@
     ]
   },
   {
-    "id": 2,
+    "id": 6,
     "title": "Teachers' Day Celebration - September 04, 2025",
     "date": "September 04, 2025",
     "description": "Students marked Teachers' Day with enthusiasm through dances, speeches and cultural presentations dedicated to their teachers. Faculty members were honoured with personalised tags recognising their individual strengths and contributions. The event strengthened the bond between students and teachers and created a warm, joyful and appreciative atmosphere, made even more memorable by a special performance by the faculty.",
@@ -24,7 +72,7 @@
     ]
   },
   {
-    "id": 3,
+    "id": 7,
     "title": "Nutrition Week Competition - September 04, 2025",
     "date": "September 04, 2025",
     "description": "As part of Nutrition Week, students presented nutritious home-cooked dishes from different Indian cuisines and explained their nutritional value and health benefits before the judges. The activity deepened students' understanding of balanced diets and healthy eating habits while also developing public speaking, presentation skills, creativity and cultural awareness.",
@@ -37,7 +85,7 @@
     ]
   },
   {
-    "id": 4,
+    "id": 8,
     "title": "CPR Awareness Session with Manipal Hospital - September 12, 2025",
     "date": "September 12, 2025",
     "description": "A CPR awareness and training session was conducted in collaboration with Manipal Hospital to educate students on basic life-saving techniques and emergency response. The session included practical demonstrations and helped students understand the importance of remaining calm, responding promptly and acting responsibly during medical emergencies.",
@@ -50,7 +98,7 @@
     ]
   },
   {
-    "id": 5,
+    "id": 9,
     "title": "Hindi Diwas - September 12, 2025",
     "date": "September 12, 2025",
     "description": "Hindi Diwas was celebrated to instil pride in the Hindi language and its rich cultural heritage while reinforcing the value of effective communication in all languages. A Hindi poetry recitation competition gave students a platform to express themselves confidently, with many speaking on the microphone for the first time. Merit certificates and medals were awarded to encourage confidence, enthusiasm and respect for linguistic diversity.",
@@ -62,7 +110,7 @@
     ]
   },
   {
-    "id": 6,
+    "id": 10,
     "title": "Christmas Programme of EI - December 09, 2025",
     "date": "December 09, 2025",
     "description": "The Christmas programme nurtured creativity and confidence among EI students through festive performances and joyful expressions. The celebration enhanced students' stage presence, encouraged participation and created a heartwarming atmosphere that spread Christmas cheer among all attendees.",
@@ -74,7 +122,7 @@
     ]
   },
   {
-    "id": 7,
+    "id": 11,
     "title": "Youth Fit Fiesta - January 22, 2026",
     "date": "January 22, 2026",
     "description": "Organised on the occasion of Republic Day, Youth Fit Fiesta promoted the message of 'Healthy Youth, Healthy Nation'. Students participated in sports and fitness activities that encouraged discipline, teamwork, healthy competition and active lifestyles. The event reinforced the importance of physical fitness as an essential part of holistic development.",
@@ -86,7 +134,7 @@
     ]
   },
   {
-    "id": 8,
+    "id": 12,
     "title": "Five-Day Self-Defence Training - February 25, 2026 onwards",
     "date": "February 25, 2026",
     "description": "A five-day self-defence training programme was conducted by the Women Cell team of the Delhi Police for girl students of the institute. The training focused on practical self-defence techniques, personal safety, situational awareness and confidence-building. Through expert guidance and hands-on sessions, students developed essential skills to protect themselves and respond effectively in challenging situations.",
@@ -99,7 +147,7 @@
     ]
   },
   {
-    "id": 9,
+    "id": 13,
     "title": "Self-Defence Training Showcase on Women's Day - March 06, 2026",
     "date": "March 06, 2026",
     "description": "On the occasion of International Women's Day, students demonstrated the self-defence skills they had learnt during the five-day training programme in the presence of Delhi Police officials. The event highlighted their confidence, discipline and preparedness. Outstanding performers were awarded trophies, while all participating students received certificates from the Delhi Police in recognition of successful completion of the training.",
@@ -113,7 +161,7 @@
     ]
   },
   {
-    "id": 10,
+    "id": 14,
     "title": "Performances in Collaboration with Shelter Home on Women's Day - March 07, 2026",
     "date": "March 07, 2026",
     "description": "In collaboration with a shelter home, students presented two special performances to mark International Women's Day. The first presentation, 'Unsung Heroes Walk', highlighted the contributions of lesser-known women leaders of India, while the second addressed contemporary issues such as body shaming, gender stereotypes and social pressure. The performances encouraged empathy, gender sensitivity and respect for women's contributions and experiences.",
@@ -126,7 +174,7 @@
     ]
   },
   {
-    "id": 11,
+    "id": 15,
     "title": "World Head Injury Awareness Day at Traffic Park - March 20, 2026",
     "date": "March 20, 2026",
     "description": "Students participated in the World Head Injury Awareness Day programme organised by the Delhi Traffic Police at Traffic Park. The event created awareness about road safety, helmet use and preventive measures to reduce head injuries caused by road accidents. Through interactive activities and informative sessions, students gained valuable knowledge of responsible road behaviour and traffic rules.",
@@ -140,7 +188,7 @@
     ]
   },
   {
-    "id": 12,
+    "id": 16,
     "title": "Matrix Hair Colouring Workshop - April 10, 2026",
     "date": "April 10, 2026",
     "description": "Students of the Beauty Culture Department participated in a professional hair colouring workshop conducted by industry experts from Matrix. The session introduced students to contemporary hair colouring techniques, product knowledge and professional salon standards, thereby strengthening their technical competence and industry readiness.",
@@ -152,7 +200,7 @@
     ]
   },
   {
-    "id": 13,
+    "id": 17,
     "title": "Advanced Hair Protein Treatment Session with IKONIC - April 18, 2026",
     "date": "April 18, 2026",
     "description": "An industry-led session conducted by experts from IKONIC familiarised students with advanced hair protein treatments and modern hair care techniques. The hands-on learning experience enhanced students' practical understanding of professional beauty services and exposed them to current industry practices.",
@@ -164,7 +212,7 @@
     ]
   },
   {
-    "id": 14,
+    "id": 18,
     "title": "Four-Day CBSE Capacity Building Programme - April 21, 22, 23 and 28, 2026",
     "date": "April 21, 2026",
     "description": "A four-day Capacity Building Programme was organised for CBSE teachers to provide insights into skill-based education and emerging career opportunities. The sessions introduced teachers to subjects such as Shorthand, Typography, Computer Applications and Office Procedures, highlighting their practical relevance and industry demand. The programme also promoted YWCA's vocational courses and encouraged teachers to counsel students on career pathways after Class XII.",
@@ -178,7 +226,7 @@
     ]
   },
   {
-    "id": 15,
+    "id": 19,
     "title": "Visit to Beauty Expo at Pragati Maidan - May 18, 2026",
     "date": "May 18, 2026",
     "description": "Students visited the Beauty Expo at Pragati Maidan to gain first-hand exposure to the latest trends, products, technologies and innovations in the beauty and wellness industry. The visit broadened their professional outlook, strengthened industry awareness and encouraged them to understand evolving market practices.",
@@ -190,7 +238,7 @@
     ]
   },
   {
-    "id": 16,
+    "id": 20,
     "title": "Internship Opportunities for HBC students",
     "date": "2025-26",
     "description": "The students interned with the NGO Sewa Bharti to apply practical bridal makeup skills in a real community setting under the theme 'Sharing is Caring'. The activity strengthened technical proficiency, teamwork and mutual learning while allowing students to contribute meaningfully through their vocational skills. Additionally, the students provided hair and skin care counselling at the MTNL and BSNL Staff Quarters. The activity enabled them to apply classroom learning in a real-world environment while developing confidence, client interaction skills and professional conduct.",
@@ -203,7 +251,7 @@
     ]
   },
   {
-    "id": 17,
+    "id": 21,
     "title": "Women Empowerment Tools/Policies Awareness Programme by Delhi Police - May 29, 2026",
     "date": "May 29, 2026",
     "description": "Delhi Police officials conducted an informative and engaging session on the tools and policies available for empowering women. The programme introduced students to online threats, responsible use of technology, safe internet practices and the importance of reporting cybercrimes. Interactive elements, including a live band performance and a digitally equipped awareness truck, made the learning accessible, memorable and relevant to students' daily online lives.",
@@ -217,7 +265,7 @@
     ]
   },
   {
-    "id": 18,
+    "id": 22,
     "title": "School Visits and Counselling Sessions (YWCA Outreach Programme)",
     "date": "2025-26",
     "description": "The institute continued its outreach programme through school visits and counselling sessions aimed at promoting the importance of vocational education among school students. These sessions included career guidance, exposure to YWCA departments and motivational interactions, encouraging students to consider skill-based courses and informed career pathways. Number of students reached = 4000",
@@ -230,7 +278,7 @@
     ]
   },
   {
-    "id": 19,
+    "id": 23,
     "title": "Mental Health Awareness Session - 2025-26",
     "date": "2025-26",
     "description": "A mental health awareness session was organised to promote emotional well-being, reduce stigma and encourage students to seek support when needed. The session helped students understand the importance of self-care, resilience and open conversations around mental health as part of their personal and professional growth.",
@@ -242,7 +290,7 @@
     ]
   },
   {
-    "id": 20,
+    "id": 24,
     "title": "Personality Development and Saree Draping Training - Various Days 2025-26",
     "date": "2025-26",
     "description": "The training aimed to enhance students' confidence, grooming and professional presentation. Through personality development inputs and saree draping practice, students improved their poise, workplace readiness and ability to present themselves with confidence in formal settings.",
@@ -254,7 +302,7 @@
     ]
   },
   {
-    "id": 21,
+    "id": 25,
     "title": "Industrial Visits - November 2025 – March 2026",
     "date": "November 2025 – March 2026",
     "description": "Industrial visits were organised to provide students with exposure to real workplace settings and industry practices. These visits helped bridge classroom learning with professional environments, strengthened career awareness and enabled students to understand the expectations, standards and opportunities within their chosen fields. Number of students reached = 3600",
@@ -268,7 +316,7 @@
     ]
   },
   {
-    "id": 22,
+    "id": 26,
     "title": "Why Financial Literacy Is the First Step to Real Independence — Not the Last",
     "date": "15 Oct 2026",
     "description": "When we started our Self-Help Group programme, we assumed women needed capital first and financial knowledge later. Five years and 180 SHGs on, we’ve learned it’s the other way around. Here’s what changed our approach — and what it means for the women we work with.\n\nFinancial literacy is often seen as a secondary skill, something to be learned after one has secured an income. However, in our work across Delhi's urban settlements, we discovered that without foundational financial knowledge, any capital injected into the community was quickly dissipated. Women were securing loans but didn't know how to budget, save, or invest efficiently.\n\nBy introducing mandatory financial literacy training before capital disbursement, we saw a 40% increase in loan repayment rates and a significant rise in household savings. The women in our program are now not just borrowers; they are informed financial decision-makers. They understand interest rates, banking procedures, and the importance of emergency funds.\n\nThis shift in strategy emphasizes that real independence is built on a solid understanding of how money works.",
@@ -281,7 +329,7 @@
     ]
   },
   {
-    "id": 23,
+    "id": 27,
     "title": "Inside a CDP Health Camp: What 150 Women in One Morning Taught Us About Access",
     "date": "02 Nov 2026",
     "description": "Our latest health camp in Madanpur Khadar screened 150 women in a single morning. The lines were long, but the real story was in what women asked our volunteer doctors when they finally had someone to ask.\n\nMany of these women had ignored chronic pain, vision issues, and nutritional deficiencies for years. The barrier wasn't always a lack of medical facilities nearby; it was the lack of an approachable, non-judgmental space where they felt heard. Our volunteer doctors noted that nearly 60% of the questions asked were about preventative care and nutrition—topics often brushed aside in rushed public clinics.\n\nThe overwhelming turnout highlighted a critical lesson: healthcare access is as much about trust and communication as it is about proximity. By bringing healthcare directly into their community and ensuring doctors took the time to listen, we were able to provide more than just prescriptions—we provided reassurance and vital health education.",
@@ -294,7 +342,7 @@
     ]
   },
   {
-    "id": 24,
+    "id": 28,
     "title": "Meet the Volunteer Who Turned a 3-Month Commitment Into 3 Years",
     "date": "18 Nov 2026",
     "description": "Sneha came to us as a college student looking for a resume line. She’s now our longest-serving literacy volunteer. Her story is a reminder that consistency, not credentials, is what these communities need most.\n\nInitially committing to just three months to fulfill a college requirement, Sneha found herself profoundly moved by the eagerness of the women in her adult literacy class. She realized that while she was teaching them to read, they were teaching her about resilience, community, and the power of determination.\n\nThree years later, Sneha is still here. She has helped over 40 women achieve basic literacy and is now involved in developing our advanced curriculum. \"The hardest part isn't the teaching,\" she says, \"it's unlearning the biases we bring into the classroom. The women here are incredibly smart; they just haven't had the opportunity.\"\n\nHer journey underscores the core philosophy of our volunteer program: it's not about swooping in to 'save' anyone. It's about showing up, week after week, and being a reliable partner in someone else's growth.",
@@ -307,7 +355,7 @@
     ]
   },
   {
-    "id": 25,
+    "id": 29,
     "title": "Our FY 2024–25 Annual Report Is Here — Here’s What the Numbers Really Tell Us",
     "date": "05 Dec 2026",
     "description": "Beyond the headline figures, our latest annual report reveals where our model is working best — and where we’re still adapting. A transparent look at a year of work.\n\nThis fiscal year brought unprecedented challenges and remarkable breakthroughs. While we celebrate reaching over 5,000 direct beneficiaries, a closer look at the data reveals nuanced trends. Our vocational training programs saw a 25% increase in enrollment, yet post-training placement rates highlighted a need for stronger industry partnerships.\n\nWe also noted a significant uptick in participation in our rights-awareness workshops, indicating a growing demand for legal literacy among community members. These numbers are more than just metrics; they are signposts guiding our strategic direction. They tell us that while our interventions are effective, we must continuously evolve to meet the complex, changing needs of the communities we serve.\n\nAs we look forward to the next year, our focus will be on deepening our impact, strengthening our partnerships, and ensuring that our programs remain responsive and community-led.",

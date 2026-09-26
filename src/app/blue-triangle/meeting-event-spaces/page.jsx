@@ -174,7 +174,7 @@ const MeetingEventSpaces = () => {
             <h2 className="sectionTitle_2 text-center">Spaces</h2>
             <div className={styles.bookingGrid}>
               {spacesData.slice(0, 4).map((space, index) => (
-                <div key={space.id} className={styles.bookingCardLink} onClick={() => openPopup(index)}>
+                <Link key={space.id} href="https://ywcaofdelhi.org/public/Public/Login.aspx" target="_blank" rel="noopener noreferrer" className={styles.bookingCardLink} style={{textDecoration: 'none'}}>
                   <div className={styles.bookingCard}>
                     <img src={space.image} alt={space.title} />
                     <div className={styles.cardContent}>
@@ -184,11 +184,11 @@ const MeetingEventSpaces = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
 
-            <div className={styles.bigSpaceWrapper} onClick={() => openPopup(4)}>
+            <Link href="https://ywcaofdelhi.org/public/Public/Login.aspx" target="_blank" rel="noopener noreferrer" className={styles.bigSpaceWrapper} style={{textDecoration: 'none', display: 'block'}}>
               <div className={styles.bookingCard}>
                 <img src={spacesData[4].image} alt={spacesData[4].title} style={{ height: '350px' }} />
                 <div className={styles.cardContent}>
@@ -198,7 +198,7 @@ const MeetingEventSpaces = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </Link>
           </div>
         </section>
 
@@ -260,7 +260,9 @@ const MeetingEventSpaces = () => {
                 </div>
               )}
 
-              <button className={styles.popupBookBtn}>Book Now</button>
+              <Link href="https://ywcaofdelhi.org/public/Public/Login.aspx" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none'}}>
+                <button className={styles.popupBookBtn}>Book Now</button>
+              </Link>
             </div>
 
             <button className={`${styles.navBtn} ${styles.nextBtn}`} onClick={nextSpace}>

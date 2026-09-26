@@ -117,9 +117,13 @@ export default function MembershipDepartmentPage() {
 
                 <h2 className={styles.formGroupTitle}>Renewal of Membership</h2>
                 <div className={styles.pdfButtonsContainer}>
-                  <Link href="/membership-and-programs/associate-renewal-form" className={styles.pdfButton}>
+                  {/* <Link href="/membership-and-programs/associate-renewal-form" className={styles.pdfButton}>
+                    Renewal
+                  </Link> */}
+                  <Link target='_blank' href="https://ywcaofdelhi.org/public/Public/Login.aspx" className={styles.pdfButton}>
                     Renewal
                   </Link>
+
 
                   {/* <Link href="/membership-and-programs/associate-renewal-form" className={styles.pdfButton}>
                     Associate Renewal

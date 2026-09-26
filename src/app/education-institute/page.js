@@ -108,7 +108,7 @@ export default function EducationInstitutePage() {
       >
         <div className={styles.bannerContent}>
           <div className={styles.enquiryFormCard}>
-            <h3 className="sectionTitle_3">Enquiry form</h3>
+            <h3 className="sectionTitle_3">Unlock Your Full Potential, Join Now</h3>
             <form>
               <input type="text" placeholder="Your name" className={styles.formInput} /><input type="text" placeholder="Your phone" className={styles.formInput} />
               <input type="email" placeholder="Your email" className={styles.formInput} />
@@ -215,8 +215,8 @@ export default function EducationInstitutePage() {
         </div>
       </section> */}
 
-      {/* User Stories */}
-      <UserStories stories={stories} title="User Stories" />
+      {/* Student Reviews */}
+      <UserStories stories={stories} title="Student Reviews" />
 
       {/* Placement Partners */}
       <PlacementPartners />
