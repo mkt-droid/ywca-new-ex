@@ -148,9 +148,9 @@ export default function EducationInstitutePage() {
               <p className={styles.learningText}>
                 Welcome to YWCA Academy, where learning knows no bounds. We believe that education is the key to personal and professional growth, and we're here to guide you on your journey to the success.
               </p>
-              <Link href={'/education-institute/programs'} className={styles.startLearningBtn}>Start your learning journey</Link>
+              {/* <Link href={'/education-institute/programs'} className={styles.startLearningBtn}>Start your learning journey</Link> */}
 
-              <div className={styles.pillsContainer}>
+              {/* <div className={styles.pillsContainer}>
                 {[
                   'Office Management', 'Fashion Technology', 'Information Technology',
                   'Foreign Languages', 'Interior Designing', 'Travel & Tourism',
@@ -163,7 +163,7 @@ export default function EducationInstitutePage() {
                     </Link>
                   );
                 })}
-              </div>
+              </div> */}
             </div>
             <div className="col-lg-6 col-md-12 text-center position-relative">
               <img src="/images/education-institute/pills-image.png" alt="Learning Programs" className={styles.learningImage} />

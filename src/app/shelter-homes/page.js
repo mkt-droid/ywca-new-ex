@@ -295,7 +295,7 @@ export default function ShelterHomesPage() {
               </div>
               <div className="col-md-6">
                 <ul className={styles.customList}>
-                  <li><i className="bi bi-people-fill"></i>Individual and group counseling</li>
+                  <li><i className="bi bi-people-fill"></i>Individual and group counselling</li>
                   <li><i className="bi bi-emoji-smile-fill"></i>Guidance on child care and parenting</li>
                   <li><i className="bi bi-laptop"></i>Vocational training for financial independence</li>
                   <li><i className="bi bi-signpost-split-fill"></i>Support for rehabilitation and reintegration</li>
