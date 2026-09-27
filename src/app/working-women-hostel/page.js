@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import styles from './page.module.css';
 import Gallery from '@/components/common/Gallery';
@@ -8,6 +8,15 @@ import SideNavBanner from '@/components/partials/SideNavBanner';
 
 export default function WorkingWomenHostelPage() {
   const [popupContent, setPopupContent] = useState(null);
+
+  useEffect(() => {
+    if (popupContent) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => { document.body.style.overflow = 'unset'; };
+  }, [popupContent]);
 
   const bannerNavItems = [
     { title: 'Home / Overview', icon: 'bi-house-door', link: '#' },
@@ -108,6 +117,7 @@ export default function WorkingWomenHostelPage() {
                 onClick={() => setPopupContent({
                   title: "Centenary Working Women's Hostel (CHWW)",
                   image: "/images/working-women-hostels/wwh-1.png",
+                  bookLink: "https://www.ywcaofdelhi.org/CHWW.html",
                   paragraphs: [
                     "Situated in the heart of the city in Ashoka Road has got 64 rooms with the total bed capacity of 168. In spite of the pandemic the hostel-maintained occupancy of 126 residents throughout this period.",
                     "The Centenary Hostel for Working Women of the YWCA of Delhi is a centrally located hostel for working women in the heart of New Delhi in Connaught Place. It provides a home away from home in an atmosphere both secure and pleasant and homely to accommodate 168 women in its warmth and embrace. CHWW has 67 rooms and three guest rooms with twin sharing basis and fees are marked accordingly with stay not beyond 33 months. Guest room accommodation is available for a maximum period of one month. Advance booking can be made for one month by depositing advance payment of 7 days.",
@@ -124,6 +134,11 @@ export default function WorkingWomenHostelPage() {
                   <p className={styles.hostelCardText}>
                     Situated in the heart of the city in Ashoka Road has got 64 rooms with the total bed capacity of 168. In spite of the pandemic the hostel-maintained occupancy of 126 residents throughout this period.
                   </p>
+                  <div style={{ marginTop: 'auto', paddingTop: '15px' }}>
+                    <a href="https://www.ywcaofdelhi.org/CHWW.html" target="_blank" rel="noopener noreferrer" className={styles.bookNowBtn} onClick={e => e.stopPropagation()}>
+                      Book Now
+                    </a>
+                  </div>
                 </div>
               </div>
 
@@ -134,6 +149,7 @@ export default function WorkingWomenHostelPage() {
                 onClick={() => setPopupContent({
                   title: "Jasola Working Women's Hostel (JWWH)",
                   image: "/images/working-women-hostels/wwh-2.png",
+                  bookLink: "https://www.ywcaofdelhi.org/JWWH.html",
                   paragraphs: [
                     "The Ministry of Women and Child Development jointly with Ministry of Development of North Eastern Region, Government of India has set up the Working Women's Hostel in Jasola Vihar, New Delhi for women of the North Eastern states and other working women.",
                     "The Management of the JWWH was entrusted to the YWCA of Delhi in August 2011. JWWH has got 167 rooms with attached bathroom and total bed capacity of 501. During the pandemic the hostel was able to maintain occupancy of 166 throughout."
@@ -149,6 +165,11 @@ export default function WorkingWomenHostelPage() {
                   <p className={styles.hostelCardText}>
                     The Ministry of Women and Child Development jointly with Ministry of Development of North Eastern Region, Government of India has set up the Working Women's Hostel in Jasola Vihar, New Delhi for women of the North Eastern states and other working women.
                   </p>
+                  <div style={{ marginTop: 'auto', paddingTop: '15px' }}>
+                    <a href="https://www.ywcaofdelhi.org/JWWH.html" target="_blank" rel="noopener noreferrer" className={styles.bookNowBtn} onClick={e => e.stopPropagation()}>
+                      Book Now
+                    </a>
+                  </div>
                 </div>
               </div>
 
@@ -160,13 +181,30 @@ export default function WorkingWomenHostelPage() {
         {popupContent && (
           <div className={styles.modalOverlay} onClick={() => setPopupContent(null)}>
             <div className={styles.modalContent} onClick={e => e.stopPropagation()}>
-              <button className={styles.modalClose} onClick={() => setPopupContent(null)}><i className="bi bi-x-lg"></i></button>
-              <img src={popupContent.image} alt={popupContent.title} className={styles.modalImg} />
+              <button className={styles.modalCloseBtn} onClick={() => setPopupContent(null)}>
+                <i className="bi bi-x-lg"></i>
+              </button>
               <div className={styles.modalBody}>
-                <h3 className={styles.modalTitle}>{popupContent.title}</h3>
-                {popupContent.paragraphs.map((p, idx) => (
-                  <p key={idx} className={styles.modalText}>{p}</p>
-                ))}
+                <div className={styles.modalImageWrapper}>
+                  <img src={popupContent.image} alt={popupContent.title} />
+                </div>
+                <div className={styles.modalTextContent}>
+                  <h2 className={styles.modalTitle}>{popupContent.title}</h2>
+                  {popupContent.paragraphs.map((p, idx) => (
+                    <p key={idx} className={styles.modalDesc}>{p}</p>
+                  ))}
+                  <div style={{ marginTop: '25px' }}>
+                    {popupContent.bookLink ? (
+                      <a href={popupContent.bookLink} target="_blank" rel="noopener noreferrer" className={styles.bookNowBtn}>
+                        Book Now
+                      </a>
+                    ) : (
+                      <Link href="/contact-us" className={styles.bookNowBtn}>
+                        Book Now
+                      </Link>
+                    )}
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -245,27 +283,27 @@ export default function WorkingWomenHostelPage() {
             <h2 className="sectionTitle_2 text-center" style={{ marginBottom: '20px' }}>Facilities Available</h2>
             <div className="row">
               <div className="col-md-6">
-                <ul className={styles.customList}>
-                  <li><i className="bi bi-circle"></i>Round the clock water and electricity supply and back up.</li>
-                  <li><i className="bi bi-circle"></i>Internet facility (on payment).</li>
-                  <li><i className="bi bi-circle"></i>Security Provided at the Main Gate.</li>
-                  <li><i className="bi bi-circle"></i>Availability of a small Library.</li>
-                  <li><i className="bi bi-circle"></i>Green environment with Green Lawn and flowers.</li>
-                  <li><i className="bi bi-circle"></i>Mess facility (packed lunch is also available).</li>
-                  <li><i className="bi bi-circle"></i>Aqua Guard Filtered drinking water.</li>
-                  <li><i className="bi bi-circle"></i>Beautiful Visitor’s Room (having fixed visiting hours).</li>
+                <ul className={styles.iconList}>
+                  <li><i className="bi bi-lightning-charge-fill"></i>Round the clock water and electricity supply and back up.</li>
+                  <li><i className="bi bi-wifi"></i>Internet facility (on payment).</li>
+                  <li><i className="bi bi-shield-lock-fill"></i>Security Provided at the Main Gate.</li>
+                  <li><i className="bi bi-book-fill"></i>Availability of a small Library.</li>
+                  <li><i className="bi bi-tree-fill"></i>Green environment with Green Lawn and flowers.</li>
+                  <li><i className="bi bi-cup-hot-fill"></i>Mess facility (packed lunch is also available).</li>
+                  <li><i className="bi bi-droplet-fill"></i>Aqua Guard Filtered drinking water.</li>
+                  <li><i className="bi bi-people-fill"></i>Beautiful Visitor’s Room (having fixed visiting hours).</li>
                 </ul>
               </div>
               <div className="col-md-6">
-                <ul className={styles.customList}>
-                  <li><i className="bi bi-circle"></i>Prayer Room.</li>
-                  <li><i className="bi bi-circle"></i>Common room for T.V. (open till 11.00 p.m.).</li>
-                  <li><i className="bi bi-circle"></i>Providing Housekeeping service daily for cleaning of rooms, bathrooms etc.</li>
-                  <li><i className="bi bi-circle"></i>Providing Room Coolers (on payment in summers)</li>
-                  <li><i className="bi bi-circle"></i>Catering to the needs of the sick residents</li>
-                  <li><i className="bi bi-circle"></i>Providing Parking area for Car and Scooter on payment</li>
-                  <li><i className="bi bi-circle"></i>First Aid Facility</li>
-                  <li><i className="bi bi-circle"></i>Laundry Facility</li>
+                <ul className={styles.iconList}>
+                  <li><i className="bi bi-brightness-high-fill"></i>Prayer Room.</li>
+                  <li><i className="bi bi-tv-fill"></i>Common room for T.V. (open till 11.00 p.m.).</li>
+                  <li><i className="bi bi-stars"></i>Providing Housekeeping service daily for cleaning of rooms, bathrooms etc.</li>
+                  <li><i className="bi bi-snow"></i>Providing Room Coolers (on payment in summers)</li>
+                  <li><i className="bi bi-heart-pulse-fill"></i>Catering to the needs of the sick residents</li>
+                  <li><i className="bi bi-car-front-fill"></i>Providing Parking area for Car and Scooter on payment</li>
+                  <li><i className="bi bi-bag-plus-fill"></i>First Aid Facility</li>
+                  <li><i className="bi bi-basket-fill"></i>Laundry Facility</li>
                 </ul>
               </div>
             </div>

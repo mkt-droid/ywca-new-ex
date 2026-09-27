@@ -282,6 +282,49 @@
   content: none !important;
 }
 
+.iconList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.iconList li {
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 1.05rem;
+  color: #222;
+  line-height: 1.5;
+  font-weight: 500;
+  display: flex;
+  align-items: flex-start;
+}
+
+.iconList li i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  color: #a212b5;
+  font-size: 1.3rem;
+  margin-right: 18px;
+  margin-top: -2px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.iconList li:hover i {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(162, 18, 181, 0.2);
+  background-color: #a212b5;
+  color: #ffffff;
+  border-color: #a212b5;
+}
+
 .infoCard {
   background: #fff;
   border-radius: 12px;
@@ -644,4 +687,175 @@
   color: #ffffff;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(162, 18, 181, 0.4);
+}
+
+/* ── MODAL ── */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUpScale {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+  padding: 20px;
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+.modalContent {
+  background-color: #fafafa;
+  border: 2px solid #c98d45;
+  width: 95vw;
+  max-width: 1200px;
+  height: 90vh;
+  max-height: 850px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  animation: slideUpScale 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.modalCloseBtn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #f1f1f1;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #333;
+  z-index: 20;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 0;
+}
+
+.modalCloseBtn i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  transform: translateY(1px);
+}
+
+.modalCloseBtn:hover {
+  color: #fff;
+  background: #e6235b;
+}
+
+.modalBody {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 30px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+@media (min-width: 768px) {
+  .modalBody {
+    flex-direction: row;
+    overflow-y: hidden;
+  }
+}
+
+.modalImageWrapper {
+  flex: 0 0 35%;
+}
+
+.modalImageWrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.modalTextContent {
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .modalTextContent {
+    overflow-y: auto;
+    padding-right: 15px;
+    height: 100%;
+  }
+
+  .modalTextContent::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .modalTextContent::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+}
+
+.modalTitle {
+  color: #a212b5;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.modalDesc {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.bookNowBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #242278;
+  color: #ffffff;
+  padding: 12px 35px;
+  border-radius: 30px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.bookNowBtn:hover {
+  background-color: #BE00C4;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(36, 34, 120, 0.25);
 }
