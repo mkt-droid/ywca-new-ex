@@ -13,10 +13,10 @@ files.forEach(f => {
   let content = fs.readFileSync(p, 'utf8');
   
   // Replace bg-primary with standard custom background color
-  content = content.replace(/className="([^"]*)bg-primary([^"]*)"/g, 'className="$1$2" style={{ backgroundColor: \\'#090b84\\' }}');
+  content = content.replace(/className="([^"]*)bg-primary([^"]*)"/g, 'className="$1$2" style={{ backgroundColor: \\'#141879\\' }}');
   
   // Replace btn-primary with rounded-pill and custom style for the submit buttons
-  content = content.replace(/className="([^"]*)btn-primary([^"]*)"/g, 'className="$1text-white rounded-pill$2" style={{ backgroundColor: \\'#090b84\\', borderColor: \\'#090b84\\' }}');
+  content = content.replace(/className="([^"]*)btn-primary([^"]*)"/g, 'className="$1text-white rounded-pill$2" style={{ backgroundColor: \\'#141879\\', borderColor: \\'#141879\\' }}');
   
   // Clean up double spaces in class names
   content = content.replace(/className="\s+/g, 'className="');
