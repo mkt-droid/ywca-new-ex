@@ -217,10 +217,8 @@ export default function EducationInstitutePage() {
 
       {/* Student Reviews */}
       <UserStories stories={stories} title="Student Reviews" />
-
       {/* Placement Partners */}
       <PlacementPartners />
-
       {/* Footer Links Section */}
       <EducationFooterLinks />
     </main>
