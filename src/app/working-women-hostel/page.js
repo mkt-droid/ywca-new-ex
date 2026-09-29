@@ -135,7 +135,7 @@ export default function WorkingWomenHostelPage() {
                     Situated in the heart of the city in Ashoka Road has got 64 rooms with the total bed capacity of 168. In spite of the pandemic the hostel-maintained occupancy of 126 residents throughout this period.
                   </p>
                   <div style={{ marginTop: 'auto', paddingTop: '15px' }}>
-                    <a href="https://www.ywcaofdelhi.org/CHWW.html" target="_blank" rel="noopener noreferrer" className={styles.bookNowBtn} onClick={e => e.stopPropagation()}>
+                    <a href="https://ywcaofdelhi.org/public/Public/Login.aspx?ReturnUrl=%2fpublic%2fHBookRoom.aspx" target="_blank" rel="noopener noreferrer" className={styles.bookNowBtn} onClick={e => e.stopPropagation()}>
                       Book Now
                     </a>
                   </div>
@@ -149,7 +149,7 @@ export default function WorkingWomenHostelPage() {
                 onClick={() => setPopupContent({
                   title: "Jasola Working Women's Hostel (JWWH)",
                   image: "/images/working-women-hostels/wwh-2.png",
-                  bookLink: "https://www.ywcaofdelhi.org/JWWH.html",
+                  bookLink: "https://ywcaofdelhi.org/public/Public/Login.aspx?ReturnUrl=%2fpublic%2fHBookRoom.aspx",
                   paragraphs: [
                     "The Ministry of Women and Child Development jointly with Ministry of Development of North Eastern Region, Government of India has set up the Working Women's Hostel in Jasola Vihar, New Delhi for women of the North Eastern states and other working women.",
                     "The Management of the JWWH was entrusted to the YWCA of Delhi in August 2011. JWWH has got 167 rooms with attached bathroom and total bed capacity of 501. During the pandemic the hostel was able to maintain occupancy of 166 throughout."
@@ -166,7 +166,7 @@ export default function WorkingWomenHostelPage() {
                     The Ministry of Women and Child Development jointly with Ministry of Development of North Eastern Region, Government of India has set up the Working Women's Hostel in Jasola Vihar, New Delhi for women of the North Eastern states and other working women.
                   </p>
                   <div style={{ marginTop: 'auto', paddingTop: '15px' }}>
-                    <a href="https://www.ywcaofdelhi.org/JWWH.html" target="_blank" rel="noopener noreferrer" className={styles.bookNowBtn} onClick={e => e.stopPropagation()}>
+                    <a href="https://ywcaofdelhi.org/public/Public/Login.aspx?ReturnUrl=%2fpublic%2fHBookRoom.aspx" target="_blank" rel="noopener noreferrer" className={styles.bookNowBtn} onClick={e => e.stopPropagation()}>
                       Book Now
                     </a>
                   </div>
