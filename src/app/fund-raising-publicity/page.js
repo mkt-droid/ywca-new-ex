@@ -168,8 +168,8 @@ export default function FundRaisingPage() {
           <div className="row g-4">
             <div className="col-md-6">
               <div className={styles.rehomeBox}>
-                <span className={styles.boxLabel}>THE REHOME STORE</span>
-                <h2 className="sectionTitle_2">Give with Heart. Give Things a Second Life.</h2>
+                {/* <span className={styles.boxLabel}>THE REHOME STORE</span> */}
+                <h2 className="sectionTitle_2">Give Things a Second Life</h2>
                 <p className={styles.boxText}>The ReHome Store promotes reuse and repurposing of pre-loved items while creating livelihood opportunities for women and supporting the environment.</p>
 
                 <div className={styles.flowchart}>
@@ -200,15 +200,24 @@ export default function FundRaisingPage() {
                   <div className={styles.statItemLeft}>
                     <i className="bi bi-bag-heart" style={{ fontSize: '2rem', color: '#242278', marginRight: '15px' }}></i>
                     <div>
-                      <strong>150 kg</strong>
+                      <h5>150 kg</h5>
                       <span>Textile Waste<br />Reused</span>
                     </div>
                   </div>
                   <div className={styles.statItemLeft}>
                     <i className="bi bi-person-gear" style={{ fontSize: '2rem', color: '#242278', marginRight: '15px' }}></i>
                     <div>
-                      <strong>20 Youth</strong>
+                      <h5>20 Youth</h5>
                       <span>Trained in Upcycling<br />& Skill Building</span>
+                    </div>
+                  </div>
+
+
+                  <div className={styles.statItemLeft}>
+                    <i className="bi bi-flower2" style={{ fontSize: '2rem', color: '#242278', marginRight: '15px' }}></i>
+                    <div>
+                      <h5>Plant & Pots</h5>
+                      <span>Donate plants,<br />pots etc</span>
                     </div>
                   </div>
                 </div>
@@ -222,7 +231,7 @@ export default function FundRaisingPage() {
 
             <div className="col-md-6">
               <div className={styles.greenBox}>
-                <span className={styles.boxLabel}>THE GREEN CORNER<sup>&reg;</sup></span>
+                {/* <span className={styles.boxLabel}>THE GREEN CORNER<sup>&reg;</sup></span> */}
                 <h2 className="sectionTitle_2">Support a Greener Future</h2>
                 <p className={styles.boxText}>Your support helps us build environmentally responsible and sustainable communities.</p>
 
