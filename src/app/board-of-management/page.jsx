@@ -56,7 +56,7 @@ const allMembers = [
   },
   {
     name: 'Ms. Aradhna Peter',
-    title: 'President YWCA',
+    title: 'Member',
     image: '/images/board-of-management/ms-aradhna-peter.jpg',
     description: 'Dummy Ipsum is simply dummy filler text of the printing plus type setting and interactive media domain.'
   },
