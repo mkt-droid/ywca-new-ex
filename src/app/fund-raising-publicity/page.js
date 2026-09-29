@@ -136,7 +136,7 @@ export default function FundRaisingPage() {
                   <h2 className={styles.causeTitleHeader}>Help a Woman Find Safety, Dignity and Hope</h2>
                   <p className={styles.causeDesc}>Behind every shelter home is a woman rebuilding her life. Your contribution can help provide safety, care and support to women survivors of violence as they begin their journey towards a better future.</p>
                   <div className="mt-4 d-flex flex-nowrap" style={{ whiteSpace: 'nowrap' }}>
-                    <Link href="/fund-raising-publicity/donate" className={styles.solidPurpleBtn}>Donate Now</Link>
+                    {/* <Link href="/fund-raising-publicity/donate" className={styles.solidPurpleBtn}>Donate Now</Link> */}
                     <Link href="/fund-raising-publicity/support-a-cause" className={styles.outlinePurpleBtn}>SUPPORT THIS CAUSE</Link>
                   </div>
                 </div>
@@ -214,8 +214,8 @@ export default function FundRaisingPage() {
                 </div>
 
                 <div className="d-flex gap-3 mt-4 justify-content-center">
-                  <Link href="/fund-raising-publicity/the-rehome-store" className={styles.outlinePurpleBtn}>WHAT CAN I DONATE?</Link>
-                  <Link href="/fund-raising-publicity/the-rehome-store#pickup" className={styles.solidPurpleBtn}>REQUEST A PICKUP</Link>
+                  {/* <Link href="/fund-raising-publicity/the-rehome-store" className={styles.outlinePurpleBtn}>WHAT CAN I DONATE?</Link> */}
+                  <Link href="/fund-raising-publicity/the-rehome-store#pickup" className={styles.solidGreenBtn}>REQUEST A PICKUP</Link>
                 </div>
               </div>
             </div>
@@ -318,7 +318,7 @@ export default function FundRaisingPage() {
                   <div className="col-md-4 d-flex align-items-center gap-2" style={{ fontSize: '0.85rem', color: '#444' }}><i className="bi bi-people text-purple"></i> Community Projects</div>
                 </div>
 
-                <Link href="/fund-raising-publicity/volunteer-and-partnership" className={styles.solidPurpleBtn}>Partner With Us &gt;</Link>
+                <Link href="/fund-raising-publicity/volunteer-and-partnership" className={styles.solidGreenBtn}>Partner With Us &gt;</Link>
               </div>
             </div>
 
