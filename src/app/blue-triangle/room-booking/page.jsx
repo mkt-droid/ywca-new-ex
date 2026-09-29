@@ -108,7 +108,7 @@ const BlueTriangle = () => {
             <h4 className="text-center" style={{ marginBottom: '40px' }}>TYPES OF ACCOMMODATION</h4>
             <div className={styles.bookingGrid}>
               {roomTypes.map((room, index) => (
-                <Link key={index} href="https://ywcaofdelhi.org/public/Public/Login.aspx" target="_blank" rel="noopener noreferrer" className={styles.bookingCardLink}>
+                <Link key={index} href="https://ywcaofdelhi.org/public/public/GHBooking.aspx" target="_blank" rel="noopener noreferrer" className={styles.bookingCardLink}>
                   <div className={styles.bookingCard}>
                     <img src="/images/room-booking/room-booking-thumb.jpg" alt={room.name} />
                     <div className={styles.cardContent}>
