@@ -384,3 +384,115 @@
   color: white;
   transform: translateY(-2px);
 }
+
+/* ── CONTACT CARD ── */
+.contactCard {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 40px;
+  border: 1px solid #d4a976;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.contactCardLeft {
+  border-right: 1px solid #eee;
+  padding-right: 30px;
+}
+
+@media (max-width: 991px) {
+  .contactCardLeft {
+    border-right: none;
+    padding-right: 12px;
+    /* Bootstrap default col padding */
+  }
+}
+
+.contactTitle {
+  font-weight: 600;
+  font-size: 2.2rem;
+  color: #a212b5;
+  margin-bottom: 15px;
+}
+
+.contactText {
+  font-size: 1rem;
+  color: #555;
+  margin: 0 0 20px 0;
+}
+
+.contactBtn {
+  background-color: #293e99;
+  color: #fff;
+  font-weight: 500;
+  padding: 10px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.contactBtn:hover {
+  background-color: #1a2766;
+  color: #fff;
+}
+
+.contactIconWrapper {
+  background: #f5f7fc;
+  padding: 12px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactIconWrapper i {
+  font-size: 1.4rem;
+  color: #293e99;
+}
+
+.contactInfoTitle {
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.contactInfoText {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.contactDivider {
+  border-top: 1px solid #eee;
+}
+
+.contactEmailWrapper {
+  background: #f5f7fc;
+  padding: 12px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactEmailWrapper i {
+  font-size: 1.4rem;
+  color: #293e99;
+}
+
+.contactLink {
+  color: #293e99;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.contactLink:hover {
+  color: #1a2766;
+}

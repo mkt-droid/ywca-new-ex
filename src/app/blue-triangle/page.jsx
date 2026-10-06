@@ -213,43 +213,73 @@ const BlueTriangle = () => {
 
         {/* USER STORIES SECTION */}
         <UserStories stories={stories} title="User Stories" />
-        {/* BOOKING BAR */}
-        <section className={`container  mb-4 ${styles.bookingSection}`}>
-          {/* 
-          <div className={styles.bookingBar}>
-            <h3 className="sectionTitle_3 text-white">Booking</h3>
-            <div className={styles.bookingForm}>
-              <div className={styles.formGroup}>
-                <i className="bi bi-map"></i>
-                <select className={styles.formInput}>
-                  <option>Select Option</option>
-                  <option>Room</option>
-                  <option>Event Space</option>
-                </select>
+        {/* BOOK YOUR STAY / CONTACT SECTION */}
+        <section className="container mb-5 mt-4">
+          <div className={styles.contactCard}>
+            <div className="row align-items-center">
+              <div className={`col-lg-4 mb-4 mb-lg-0 text-center text-lg-start ${styles.contactCardLeft}`}>
+                <h2 className={styles.contactTitle}>Book Your Stay</h2>
+                <p className={styles.contactText}>
+                  Get in touch with us to reserve your room or event space today.
+                </p>
+                <Link
+                  href="https://ywcaofdelhi.org/public/public/GHBooking.aspx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.contactBtn}
+                >
+                  Book Now <i className="bi bi-arrow-right-circle-fill ms-2"></i>
+                </Link>
               </div>
-              <div className={styles.formGroup}>
-                <i className="bi bi-calendar-event"></i>
-                <input type="text" placeholder="Check In" className={styles.formInput} />
+
+              <div className="col-lg-8 ps-lg-5">
+                <div className="row g-4">
+                  <div className="col-md-6">
+                    <div style={{ display: 'flex', gap: '15px' }}>
+                      <div className={styles.contactIconWrapper}>
+                        <i className="bi bi-geo-alt-fill"></i>
+                      </div>
+                      <div>
+                        <h5 className={styles.contactInfoTitle}>Address</h5>
+                        <p className={styles.contactInfoText}>
+                          1, Ashoka Road,<br />New Delhi-110001
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="col-md-6">
+                    <div style={{ display: 'flex', gap: '15px' }}>
+                      <div className={styles.contactIconWrapper}>
+                        <i className="bi bi-telephone-fill"></i>
+                      </div>
+                      <div>
+                        <h5 className={styles.contactInfoTitle}>Contact Info</h5>
+                        <p className={styles.contactInfoText}>
+                          <strong>Tel:</strong> 011-23360133, 23365014, 23365441<br />
+                          <strong>Mob:</strong> +91 70112 99044
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className={`col-md-12 mt-4 pt-3 ${styles.contactDivider}`}>
+                    <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
+                      <div className={styles.contactEmailWrapper}>
+                        <i className="bi bi-envelope-fill"></i>
+                      </div>
+                      <div>
+                        <h5 className={styles.contactInfoTitle} style={{ marginBottom: '2px' }}>Email Us</h5>
+                        <a href="mailto:btfh@ywcaofdelhi.org" className={styles.contactLink}>
+                          btfh@ywcaofdelhi.org
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className={styles.formGroup}>
-                <i className="bi bi-calendar-event"></i>
-                <input type="text" placeholder="Check out" className={styles.formInput} />
-              </div>
-              <div className={styles.formGroup}>
-                <i className="bi bi-people-fill"></i>
-                <input type="text" placeholder="Travellers" className={styles.formInput} />
-              </div>
-              <button className={styles.bookBtn}>Book Now</button>
             </div>
           </div>
-          */}
-          <Link
-            href="https://ywcaofdelhi.org/public/public/GHBooking.aspx"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ display: 'block', maxWidth: '900px', margin: '0 auto' }}
-          >
-          </Link>
         </section>
 
 

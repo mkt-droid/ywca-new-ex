@@ -158,9 +158,9 @@ const MeetingEventSpaces = () => {
             {/* Right Column */}
             <div className="col-lg-6">
               <div className={styles.overviewImgWrapper}>
-                <img 
-                  src="/images/blue-tringle/mas-main.png" 
-                  alt="About Meeting & Event Spaces" 
+                <img
+                  src="/images/blue-tringle/mas-main.png"
+                  alt="About Meeting & Event Spaces"
                   style={{ borderRadius: '16px', boxShadow: '0 15px 40px rgba(0,0,0,0.12)', width: '100%' }}
                 />
               </div>
@@ -174,7 +174,7 @@ const MeetingEventSpaces = () => {
             <h2 className="sectionTitle_2 text-center">Spaces</h2>
             <div className={styles.bookingGrid}>
               {spacesData.slice(0, 4).map((space, index) => (
-                <Link key={space.id} href="https://ywcaofdelhi.org/public/Public/Login.aspx" target="_blank" rel="noopener noreferrer" className={styles.bookingCardLink} style={{textDecoration: 'none'}}>
+                <div key={space.id} onClick={() => openPopup(index)} style={{ cursor: 'pointer', textDecoration: 'none' }} className={styles.bookingCardLink}>
                   <div className={styles.bookingCard}>
                     <img src={space.image} alt={space.title} />
                     <div className={styles.cardContent}>
@@ -184,11 +184,11 @@ const MeetingEventSpaces = () => {
                       </div>
                     </div>
                   </div>
-                </Link>
+                </div>
               ))}
             </div>
 
-            <Link href="https://ywcaofdelhi.org/public/Public/Login.aspx" target="_blank" rel="noopener noreferrer" className={styles.bigSpaceWrapper} style={{textDecoration: 'none', display: 'block'}}>
+            <div onClick={() => openPopup(4)} className={styles.bigSpaceWrapper} style={{ cursor: 'pointer', textDecoration: 'none', display: 'block' }}>
               <div className={styles.bookingCard}>
                 <img src={spacesData[4].image} alt={spacesData[4].title} style={{ height: '350px' }} />
                 <div className={styles.cardContent}>
@@ -198,7 +198,7 @@ const MeetingEventSpaces = () => {
                   </div>
                 </div>
               </div>
-            </Link>
+            </div>
           </div>
         </section>
 
@@ -260,8 +260,8 @@ const MeetingEventSpaces = () => {
                 </div>
               )}
 
-              <Link href="https://ywcaofdelhi.org/public/Public/Login.aspx" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none'}}>
-                <button className={styles.popupBookBtn}>Book Now</button>
+              <Link href="https://ywcaofdelhi.org/public/Public/Login.aspx" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+                <button className={styles.popupBookBtn}>Book Now <i className="bi bi-arrow-right ms-2"></i></button>
               </Link>
             </div>
 

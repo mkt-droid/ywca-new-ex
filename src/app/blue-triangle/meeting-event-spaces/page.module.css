@@ -374,18 +374,18 @@
 }
 
 .popupBookBtn {
-  background: #BE00C4;
+  background: #293e99;
   color: #fff;
   border: none;
   padding: 12px 35px;
   font-size: 1rem;
-  border-radius: 25px;
+  border-radius: 50px;
   cursor: pointer;
   transition: background 0.3s;
 }
 
 .popupBookBtn:hover {
-  background: #7a1f76;
+  background: #1a2766;
 }
 
 .navBtn {

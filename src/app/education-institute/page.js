@@ -18,8 +18,7 @@ export default function EducationInstitutePage() {
     { title: 'Overview', icon: 'bi-flower1', link: '/education-institute' },
     { title: 'Programs', icon: 'bi-mortarboard', link: '/education-institute/programs' },
     { title: 'Admission', icon: 'bi-person-vcard', link: '/education-institute/admission' },
-    // { title: 'Life@YWCA', icon: 'bi-building', link: '#' },
-    { title: 'Life@YWCA', icon: 'bi-people', link: '/news?category=Academic+News' },
+    { title: 'Life@YWCA', icon: 'bi-people', link: '#life-at-ywca' },
     { title: 'Contact us', icon: 'bi-telephone', link: '/education-institute/contact' },
   ];
 
@@ -129,13 +128,13 @@ export default function EducationInstitutePage() {
       </section>
 
       {/* Academic News Section */}
-      <section className="container mb-5">
+      <section id="life-at-ywca" className="container mb-5" style={{ scrollMarginTop: '100px' }}>
         <h2 className="sectionTitle_2 text-center d-block">Life@YWCA</h2>
         <div className="mt-4">
           <NewsCarousel newsData={academicNews} />
         </div>
         <div className="text-center mt-3">
-          <Link href="/news?category=Academic+News" className={styles.viewMoreBtn}>View All</Link>
+          <Link href="/news?category=Academic+News" className={styles.viewMoreBtn}>View All <i className="bi bi-arrow-right ms-2"></i></Link>
         </div>
       </section>
 
