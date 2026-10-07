@@ -234,7 +234,7 @@ export default function CDPOverviewPage() {
           <div className="container px-3">
             <div className={styles.trustSection}>
               <h2 className="sectionTitle_2" style={{ textAlign: 'center', marginBottom: '30px', color: '#a212b5' }}>
-                Transparency isn’t a buzzword for us. It’s how we operate.
+                Transparency is how we operate
               </h2>
               <ul className={styles.trustList}>
                 <li><i className="bi bi-check-circle-fill" style={{ color: '#a212b5', marginTop: '3px' }}></i> <span>Registered under the Societies Registration Act, affiliated to the YWCA of India</span></li>

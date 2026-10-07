@@ -16,7 +16,7 @@
 }
 
 .heroSection> :global(.container) {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 .heroBg {
@@ -54,11 +54,13 @@
 }
 
 .heroTitle {
-  font-size: 3.5rem;
-  font-weight: 400;
-  line-height: 1.1;
-  margin-bottom: 0;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 20px;
   letter-spacing: 1px;
+  border-left: 6px solid #be00c4; 
+  padding-left: 25px;
   text-transform: uppercase;
 }
 

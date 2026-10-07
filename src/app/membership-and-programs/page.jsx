@@ -10,7 +10,7 @@ export default function MembershipDepartmentPage() {
     <main>
       <SideNavBanner
         height="360px"
-        title={<>MEMBERSHIP AND<br />PROGRAM DEPARTMENT</>}
+        title={<>MEMBERSHIP AND<br />PROGRAM</>}
         bgImage="/images/map/01-Banner-MAP.jpg"
         activePath="/membership-and-programs"
         contentMarginTop="25vh"

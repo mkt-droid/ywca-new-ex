@@ -83,8 +83,8 @@ export default function HopeSlider() {
       id: 'banner',
       isBanner: true,
       image: '/images/fund-raising/small-help.png',
-      tagline: 'SUPPORT A CAUSE',
-      title: 'Help a Woman Find Safety, Dignity and Hope',
+      title: 'Support a Cause',
+      tagline: 'Woman Safety, Dignity & Hope',
       desc: 'Behind every shelter home is a woman rebuilding her life. Your contribution can help provide safety, care and support to women survivors of violence as they begin their journey towards a better future.'
     },
     ...hopeCards.map(c => ({

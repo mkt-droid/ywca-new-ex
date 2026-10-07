@@ -36,54 +36,14 @@ export default function FundRaisingPage() {
         activePath="/fund-raising-publicity"
       />
 
-      <div className={`${styles.contentWrapper} pageContentWrapper`} style={{ paddingBottom: 0 }}>
-
-        {/* HOW YOU CAN HELP */}
-        <section className={`container ${styles.newSection}`} style={{ paddingTop: 0 }}>
-
-          <div className="row g-3 justify-content-center">
-            <div className="col-lg col-md-6 col-sm-12 mb-3">
-              <div className={styles.helpCard}>
-                <div className={styles.helpCardIcon} style={{ backgroundColor: 'rgba(123, 68, 162, 0.1)' }}><i className="bi bi-heart-fill" style={{ color: '#7b44a2' }}></i></div>
-                <h4>Donate</h4>
-                <p>Make a financial contribution towards our programs and help create lasting impact.</p>
-                <Link href="/fund-raising-publicity/donate" className={styles.helpCardLink}>DONATE NOW <i className="bi bi-arrow-right"></i></Link>
-              </div>
-            </div>
-            <div className="col-lg col-md-6 col-sm-12 mb-3">
-              <div className={styles.helpCard}>
-                <div className={styles.helpCardIcon} style={{ backgroundColor: 'rgba(226, 68, 134, 0.1)' }}><i className="bi bi-people-fill" style={{ color: '#e24486' }}></i></div>
-                <h4>Support a Cause</h4>
-                <p>Support women survivors of violence, shelter homes and specific community needs.</p>
-                <Link href="/fund-raising-publicity/support-a-cause" className={styles.helpCardLink}>EXPLORE CAUSES <i className="bi bi-arrow-right"></i></Link>
-              </div>
-            </div>
-            <div className="col-lg col-md-6 col-sm-12 mb-3">
-              <div className={styles.helpCard}>
-                <div className={styles.helpCardIcon} style={{ backgroundColor: 'rgba(85, 155, 85, 0.1)' }}><i className="bi bi-gift-fill" style={{ color: '#559b55' }}></i></div>
-                <h4>Give with Purpose</h4>
-                <p>Support community through recycling, composting, water conservation and other green initiatives.</p>
-                <Link href="/fund-raising-publicity/the-rehome-store" className={styles.helpCardLink}>DONATE ITEMS <i className="bi bi-arrow-right"></i></Link>
-              </div>
-            </div>
-
-            <div className="col-lg col-md-6 col-sm-12 mb-3">
-              <div className={styles.helpCard}>
-                <div className={styles.helpCardIcon} style={{ backgroundColor: 'rgba(74, 122, 181, 0.1)' }}><i className="bi bi-briefcase-fill" style={{ color: '#4a7ab5' }}></i></div>
-                <h4>Partner With Us</h4>
-                <p>Collaborate through CSR, sponsorships, volunteering or institutional partnerships.</p>
-                <Link href="/fund-raising-publicity/volunteer-and-partnership" className={styles.helpCardLink}>PARTNER WITH US <i className="bi bi-arrow-right"></i></Link>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* WHERE YOUR SUPPORT CREATES IMPACT */}
+      <div className={`${styles.contentWrapper} ppageContentWrapper`} style={{ paddingBottom: 0 }}>
+        
+        {/* WHERE YOUR SUPPORT CREATES IMPACT | FRAP */}
         <section className={`container ${styles.newSection}`}>
           <div className="text-center mb-5">
-            <h2 className="sectionTitle_2">Where Your Support Creates Impact</h2>
-
+            <h2 className="sectionTitle_1">Fund Raising and Publicity</h2>
           </div>
+          
           <div className="row g-4">
             <div className="col-md-4">
               <div className={styles.impactCard}>
@@ -124,6 +84,49 @@ export default function FundRaisingPage() {
           </div>
         </section>
 
+
+        {/* HOW YOU CAN HELP | 4 Blocks*/}
+        {/* <section className={`container ${styles.newSection}`} style={{ paddingTop: 80 }}>
+
+          <div className="row g-3 justify-content-center">
+            <div className="col-lg col-md-6 col-sm-12 mb-3">
+              <div className={styles.helpCard}>
+                <div className={styles.helpCardIcon} style={{ backgroundColor: 'rgba(123, 68, 162, 0.1)' }}><i className="bi bi-heart-fill" style={{ color: '#7b44a2' }}></i></div>
+                <h4>Donate</h4>
+                <p>Make a financial contribution towards our programs and help create lasting impact.</p>
+                <Link href="/fund-raising-publicity/donate" className={styles.helpCardLink}>DONATE NOW <i className="bi bi-arrow-right"></i></Link>
+              </div>
+            </div>
+            <div className="col-lg col-md-6 col-sm-12 mb-3">
+              <div className={styles.helpCard}>
+                <div className={styles.helpCardIcon} style={{ backgroundColor: 'rgba(226, 68, 134, 0.1)' }}><i className="bi bi-people-fill" style={{ color: '#e24486' }}></i></div>
+                <h4>Support a Cause</h4>
+                <p>Support women survivors of violence, shelter homes and specific community needs.</p>
+                <Link href="/fund-raising-publicity/support-a-cause" className={styles.helpCardLink}>EXPLORE CAUSES <i className="bi bi-arrow-right"></i></Link>
+              </div>
+            </div>
+            <div className="col-lg col-md-6 col-sm-12 mb-3">
+              <div className={styles.helpCard}>
+                <div className={styles.helpCardIcon} style={{ backgroundColor: 'rgba(85, 155, 85, 0.1)' }}><i className="bi bi-gift-fill" style={{ color: '#559b55' }}></i></div>
+                <h4>Give with Purpose</h4>
+                <p>Support community through recycling, composting, water conservation and other green initiatives.</p>
+                <Link href="/fund-raising-publicity/the-rehome-store" className={styles.helpCardLink}>DONATE ITEMS <i className="bi bi-arrow-right"></i></Link>
+              </div>
+            </div>
+
+            <div className="col-lg col-md-6 col-sm-12 mb-3">
+              <div className={styles.helpCard}>
+                <div className={styles.helpCardIcon} style={{ backgroundColor: 'rgba(74, 122, 181, 0.1)' }}><i className="bi bi-briefcase-fill" style={{ color: '#4a7ab5' }}></i></div>
+                <h4>Partner With Us</h4>
+                <p>Collaborate through CSR, sponsorships, volunteering or institutional partnerships.</p>
+                <Link href="/fund-raising-publicity/volunteer-and-partnership" className={styles.helpCardLink}>PARTNER WITH US <i className="bi bi-arrow-right"></i></Link>
+              </div>
+            </div>
+          </div>
+        </section> */}
+
+        
+
         {/* BRINGING HOPE TO LIVES SLIDER (Includes Support Banner) */}
         <HopeSlider />
 
@@ -141,49 +144,55 @@ export default function FundRaisingPage() {
 
                 <div className={styles.flowchart}>
                   <div className={styles.flowchartStep}>
-                    <i className="bi bi-box-seam" style={{ color: '#242278' }}></i>
+                    <div className={styles.circleIcon}>
+                      <i className="bi bi-box-seam"></i>
+                    </div>
                     <h6>Donate</h6>
-                    <p>We collect useful items from you</p>
+                    <p>We collect useful items and resources from you</p>
                   </div>
                   <div className={styles.flowchartArrow}>
                     <i className="bi bi-arrow-right"></i>
                   </div>
                   <div className={styles.flowchartStep}>
-                    <i className="bi bi-recycle" style={{ color: '#242278' }}></i>
+                    <div className={styles.circleIcon}>
+                      <i className="bi bi-recycle"></i>
+                    </div>
                     <h6>Reuse</h6>
-                    <p>Items are sorted, reused or repurposed</p>
+                    <p>Items are carefully sorted, reused or creatively repurposed</p>
                   </div>
                   <div className={styles.flowchartArrow}>
                     <i className="bi bi-arrow-right"></i>
                   </div>
                   <div className={styles.flowchartStep}>
-                    <i className="bi bi-people" style={{ color: '#242278' }}></i>
+                    <div className={styles.circleIcon}>
+                      <i className="bi bi-people"></i>
+                    </div>
                     <h6>Empower</h6>
-                    <p>Supporting women, communities and livelihoods</p>
+                    <p>Supporting women, communities and sustainable livelihoods</p>
                   </div>
                 </div>
 
                 <div className={`${styles.statsRowLeft} justify-content-center`}>
                   <div className={styles.statItemLeft}>
-                    <i className="bi bi-bag-heart" style={{ fontSize: '2rem', color: '#242278', marginRight: '15px' }}></i>
+                    {/* <i className="bi bi-bag-heart" style={{ fontSize: '2rem', color: '#242278', marginRight: '15px' }}></i> */}
                     <div>
-                      <h5>150 kg</h5>
+                      <h6>150 kg</h6>
                       <span>Textile Waste<br />Reused</span>
                     </div>
                   </div>
                   <div className={styles.statItemLeft}>
-                    <i className="bi bi-person-gear" style={{ fontSize: '2rem', color: '#242278', marginRight: '15px' }}></i>
+                    {/* <i className="bi bi-person-gear" style={{ fontSize: '2rem', color: '#242278', marginRight: '15px' }}></i> */}
                     <div>
-                      <h5>20 Youth</h5>
+                      <h6>20 Youth</h6>
                       <span>Trained in Upcycling<br />& Skill Building</span>
                     </div>
                   </div>
 
 
                   <div className={styles.statItemLeft}>
-                    <i className="bi bi-flower2" style={{ fontSize: '2rem', color: '#242278', marginRight: '15px' }}></i>
+                    {/* <i className="bi bi-flower2" style={{ fontSize: '2rem', color: '#242278', marginRight: '15px' }}></i> */}
                     <div>
-                      <h5>Plant & Pots</h5>
+                      <h6>Plant & Pots</h6>
                       <span>Donate plants,<br />pots etc</span>
                     </div>
                   </div>
@@ -200,7 +209,7 @@ export default function FundRaisingPage() {
               <div className={styles.greenBox}>
                 {/* <span className={styles.boxLabel}>THE GREEN CORNER<sup>&reg;</sup></span> */}
                 <h2 className="sectionTitle_2">Support a Greener Future</h2>
-                <p className={styles.boxText}>Your support helps us build environmentally responsible and sustainable communities.</p>
+                <p className={styles.boxText}>Your support helps us build environmentally responsible and sustainable communities while fostering eco-friendly habits and empowering local initiatives for a greener future.</p>
 
                 <div className={styles.iconGrid}>
                   <div className={styles.iconItemGreen}>
@@ -208,65 +217,65 @@ export default function FundRaisingPage() {
                       <i className="bi bi-recycle"></i>
                     </div>
                     <h6>Recycle Plastic</h6>
-                    <p>Support collection,<br />segregation and<br />recycling initiatives.</p>
+                    <p>Recycling and segregation initiatives</p>
                   </div>
                   <div className={styles.iconItemGreen}>
                     <div className={styles.circleIcon}>
                       <i className="bi bi-tree"></i>
                     </div>
                     <h6>Organic manure</h6>
-                    <p>Support composting<br />and organic manure<br />production.</p>
+                    <p>Composting and manure production</p>
                   </div>
                   <div className={styles.iconItemGreen}>
                     <div className={styles.circleIcon}>
                       <i className="bi bi-droplet-half"></i>
                     </div>
                     <h6>Conserve Water</h6>
-                    <p>Support wastewater<br />reuse and water<br />conservation initiatives.</p>
+                    <p>Wastewater reuse and conservation</p>
                   </div>
                   <div className={styles.iconItemGreen}>
                     <div className={styles.circleIcon}>
                       <i className="bi bi-house-heart"></i>
                     </div>
                     <h6>Communities</h6>
-                    <p>Youth engagement<br />and climate action.</p>
+                    <p>Youth engagement and climate action</p>
                   </div>
                 </div>
 
                 <div className={styles.statsGridFour}>
                   <div className={styles.statItemLeft}>
-                    <i className="bi bi-building-add" style={{ fontSize: '1.8rem', color: '#559b55', marginRight: '10px' }}></i>
+                    {/* <i className="bi bi-building-add" style={{ fontSize: '1.8rem', color: '#559b55', marginRight: '10px' }}></i> */}
                     <div>
-                      <strong>3,200 kg</strong>
-                      <span>Kitchen Waste<br />Processed</span>
+                      <h6>3,200 kg</h6>
+                      <span>Kitchen Waste Processed</span>
                     </div>
                   </div>
                   <div className={styles.statItemLeft}>
-                    <i className="bi bi-flower1" style={{ fontSize: '1.8rem', color: '#559b55', marginRight: '10px' }}></i>
+                    {/* <i className="bi bi-flower1" style={{ fontSize: '1.8rem', color: '#559b55', marginRight: '10px' }}></i> */}
                     <div>
-                      <strong>432 kg</strong>
-                      <span>Organic Manure<br />Produced</span>
+                      <h6>432 kg</h6>
+                      <span>Organic Manure Produced</span>
                     </div>
                   </div>
                   <div className={styles.statItemLeft}>
-                    <i className="bi bi-droplet" style={{ fontSize: '1.8rem', color: '#559b55', marginRight: '10px' }}></i>
+                    {/* <i className="bi bi-droplet" style={{ fontSize: '1.8rem', color: '#559b55', marginRight: '10px' }}></i> */}
                     <div>
-                      <strong>1,000+ litres</strong>
-                      <span>Wastewater<br />Reused Daily</span>
+                      <h6>1,000+ litres</h6>
+                      <span>Wastewater Reused Daily</span>
                     </div>
                   </div>
                   <div className={styles.statItemLeft}>
-                    <i className="bi bi-recycle" style={{ fontSize: '1.8rem', color: '#559b55', marginRight: '10px' }}></i>
+                    {/* <i className="bi bi-recycle" style={{ fontSize: '1.8rem', color: '#559b55', marginRight: '10px' }}></i> */}
                     <div>
-                      <strong>84 kg</strong>
-                      <span>Plastic Waste<br />Recycled</span>
+                      <h6>84 kg</h6>
+                      <span>Plastic Waste Recycled</span>
                     </div>
                   </div>
                 </div>
 
                 <div className="text-center mt-5">
                   <Link href="/fund-raising-publicity/eco-justice-lab" className={styles.solidGreenBtn}>
-                    <i className="bi bi-heart"></i> SUPPORT GREEN ACTION <span style={{ marginLeft: '4px' }}>&#9656;</span>
+                    SUPPORT GREEN ACTION
                   </Link>
                 </div>
               </div>

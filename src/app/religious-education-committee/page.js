@@ -16,7 +16,7 @@ export default function ReligiousEducationCommitteePage() {
     <main>
       <SideNavBanner
         height="360px"
-        title={<>RELIGIOUS <br />EDUCATION<br /> COMMITTEE</>}
+        title={<>RELIGIOUS <br />EDUCATION</>}
         bgImage="/images/01-Banner-Religious-Education.jpg"
         activePath="/religious-education-committee"
         contentMarginTop="25vh"
