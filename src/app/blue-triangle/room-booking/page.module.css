@@ -166,6 +166,21 @@
   transform: scale(1.05);
 }
 
+.roomBadge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #be00c4;
+  color: #ffffff;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  letter-spacing: 0.5px;
+  z-index: 10;
+}
+
 .bookingCard h4 {
   /* Kept for fallback, but using .cardTitle now */
 }
@@ -186,11 +201,12 @@
 }
 
 .cardTitle {
-  font-size: 18px;
+  font-size: 17px;
   margin: 0;
   font-weight: 600;
   color: #222;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .cardSubtitle {
@@ -260,6 +276,172 @@
 
   .storiesGrid {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ── POPUP MODAL ── */
+.popupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(180, 180, 180, 0.8);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background: transparent;
+  border: none;
+  font-size: 2.5rem;
+  color: #000000;
+  cursor: pointer;
+}
+
+.popupContent {
+  position: relative;
+  display: flex;
+  background: #fff;
+  width: 1100px;
+  max-width: 95%;
+  min-height: 500px;
+  border: 1px solid #d4a373;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  padding: 40px 80px;
+  gap: 40px;
+  align-items: center;
+}
+
+.popupImageWrapper {
+  flex: 1;
+}
+
+.popupImageWrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.popupTextWrapper {
+  flex: 1;
+}
+
+.popupTitle {
+  font-size: 1.5rem;
+  color: #111;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.popupDesc {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.tariffTableContainer {
+  margin-bottom: 25px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.tariffTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.tariffTable th {
+  background-color: #f7e0d3;
+  color: #242278;
+  font-weight: 600;
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 2px solid #e0c8b9;
+}
+
+.tariffTable td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #eaeaea;
+  color: #444;
+  vertical-align: middle;
+}
+
+.popupBookBtn {
+  background: #293e99;
+  color: #fff;
+  border: none;
+  padding: 12px 35px;
+  font-size: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.popupBookBtn:hover {
+  background: #1a2766;
+}
+
+.navBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid #293e99;
+  color: #293e99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 10000;
+  transition: all 0.3s;
+}
+
+.navBtn:hover {
+  background: #b000b9;
+  border-color: #b000b9;
+  color: #fff;
+}
+
+.prevBtn {
+  left: 20px;
+}
+
+.nextBtn {
+  right: 20px;
+}
+
+@media (max-width: 768px) {
+  .popupContent {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .navBtn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .prevBtn {
+    left: 10px;
+  }
+
+  .nextBtn {
+    right: 10px;
   }
 }
 

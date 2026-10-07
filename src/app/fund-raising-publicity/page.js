@@ -3,6 +3,8 @@ import Image from 'next/image';
 import styles from './page.module.css';
 import Link from 'next/link';
 import SideNavBanner from '@/components/partials/SideNavBanner';
+import HopeSlider from './HopeSlider';
+import ImpactHighlights from './ImpactHighlights';
 
 export const metadata = {
   title: 'Fund Raising & Publicity | YWCA of Delhi',
@@ -122,46 +124,11 @@ export default function FundRaisingPage() {
           </div>
         </section>
 
-        {/* Support a Cause (Help a Woman Find Safety...) */}
-        <section className={styles.causeBannerSection}>
-          <div className="container">
-            <div className={styles.causeBannerCard}>
-              <div className={styles.causeBannerBgWrapper}>
-                <img src="/images/fund-raising/small-help.png" alt="Women talking" />
-              </div>
+        {/* BRINGING HOPE TO LIVES SLIDER (Includes Support Banner) */}
+        <HopeSlider />
 
-              <div className={`row w-100 g-0 align-items-center ${styles.causeContentWrapper}`}>
-                <div className="col-lg-6 p-4 p-md-5">
-                  <span className={styles.causeLabelHeader}>SUPPORT A CAUSE</span>
-                  <h2 className={styles.causeTitleHeader}>Help a Woman Find Safety, Dignity and Hope</h2>
-                  <p className={styles.causeDesc}>Behind every shelter home is a woman rebuilding her life. Your contribution can help provide safety, care and support to women survivors of violence as they begin their journey towards a better future.</p>
-                  <div className="mt-4 d-flex flex-nowrap" style={{ whiteSpace: 'nowrap' }}>
-                    {/* <Link href="/fund-raising-publicity/donate" className={styles.solidPurpleBtn}>Donate Now</Link> */}
-                    <Link href="/fund-raising-publicity/support-a-cause" className={styles.outlinePurpleBtn}>SUPPORT THIS CAUSE</Link>
-                  </div>
-                </div>
-                <div className="col-lg-6 d-none d-lg-block"></div>
-                {/* <div className="col-lg-4 p-4 p-md-5">
-                  <div className={styles.campaignBoxRight}>
-                    <span className={styles.campaignTag}>CURRENT CAMPAIGN</span>
-                    <h3 className={styles.campaignTitleRight}>Help Women Survivors of Violence Find Safety and Shelter</h3>
-                    <div className={styles.campaignStatsBar}>
-                      <span className={styles.raisedAmount}><strong>₹ 18,75,000</strong> Raised</span>
-                      <span className={styles.percentage}>62%</span>
-                    </div>
-                    <div className={styles.progressBarWrapperCampaign}>
-                      <div className={styles.progressBarCampaign} style={{ width: '62%' }}></div>
-                    </div>
-                    <div className={styles.goalAmount}>Goal: ₹ 30,00,000</div>
-                    <Link href="/fund-raising-publicity/donate" className={styles.btnSupportNow}>
-                      <i className="bi bi-heart"></i> SUPPORT NOW <span style={{ marginLeft: '4px' }}>&#9656;</span>
-                    </Link>
-                  </div>
-                </div> */}
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* Impact Highlights from ReHome Store */}
+        <ImpactHighlights />
 
         {/* The ReHome Store & The Green Corner */}
         <section className={`container ${styles.newSection}`}>
@@ -175,7 +142,7 @@ export default function FundRaisingPage() {
                 <div className={styles.flowchart}>
                   <div className={styles.flowchartStep}>
                     <i className="bi bi-box-seam" style={{ color: '#242278' }}></i>
-                    <h6>DONATE</h6>
+                    <h6>Donate</h6>
                     <p>We collect useful items from you</p>
                   </div>
                   <div className={styles.flowchartArrow}>
@@ -183,7 +150,7 @@ export default function FundRaisingPage() {
                   </div>
                   <div className={styles.flowchartStep}>
                     <i className="bi bi-recycle" style={{ color: '#242278' }}></i>
-                    <h6>REUSE</h6>
+                    <h6>Reuse</h6>
                     <p>Items are sorted, reused or repurposed</p>
                   </div>
                   <div className={styles.flowchartArrow}>
@@ -191,7 +158,7 @@ export default function FundRaisingPage() {
                   </div>
                   <div className={styles.flowchartStep}>
                     <i className="bi bi-people" style={{ color: '#242278' }}></i>
-                    <h6>EMPOWER</h6>
+                    <h6>Empower</h6>
                     <p>Supporting women, communities and livelihoods</p>
                   </div>
                 </div>

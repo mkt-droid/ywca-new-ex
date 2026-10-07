@@ -50,3 +50,76 @@
   line-height: 1.5;
   color: #555;
 }
+
+.storyCarousel {
+  position: relative;
+}
+
+.storyCarousel :global(.carousel-control-prev),
+.storyCarousel :global(.carousel-control-next) {
+  width: 40px;
+  height: 40px;
+  top: 42%;
+  /* Adjusted from 50% to account for the bottom padding of the carousel */
+  transform: translateY(-50%);
+  background-color: #293e99;
+  border-radius: 50%;
+  opacity: 0.9;
+  z-index: 10;
+}
+
+.storyCarousel :global(.carousel-control-prev:hover),
+.storyCarousel :global(.carousel-control-next:hover) {
+  opacity: 1;
+  background-color: #293e99;
+  /* slightly darker for hover */
+}
+
+.storyCarousel :global(.carousel-control-prev:focus),
+.storyCarousel :global(.carousel-control-next:focus),
+.storyCarousel :global(.carousel-control-prev:focus-visible),
+.storyCarousel :global(.carousel-control-next:focus-visible),
+.storyCarousel :global(.carousel-control-prev:active),
+.storyCarousel :global(.carousel-control-next:active) {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #293e99;
+}
+
+.storyCarousel :global(.carousel-control-prev) {
+  left: -50px !important;
+}
+
+.storyCarousel :global(.carousel-control-next) {
+  right: -50px !important;
+}
+
+/* Override global CSS that adds a background color to the inner span */
+.storyCarousel :global(.carousel-control-prev span:nth-child(1)),
+.storyCarousel :global(.carousel-control-next span:nth-child(1)),
+.storyCarousel :global(.carousel-control-prev-icon),
+.storyCarousel :global(.carousel-control-next-icon) {
+  background-color: transparent !important;
+}
+
+.readMore {
+  color: #293e99;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 5px;
+  font-size: 13px;
+}
+
+.readMore:hover {
+  text-decoration: underline;
+}
+
+.modalTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #242278;
+}
+
+.modalBody {
+  padding: 24px;
+}
