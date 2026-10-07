@@ -73,7 +73,7 @@ const LOCATIONS = [
     id: 7,
     title: "Shelter Home for Women, Sarai Rohilla",
     name: "Shelter Home for Women",
-    bldg: "Manikika Chhaya Shelter Home",
+    bldg: "Matritava Chhaya Shelter Home",
     address: "MCD Community Centre, Daya Basti, Pratap Bagh, Inderlok, Delhi 110035",
     tel: "+91-9810620240",
     email: "info@ywcaofdelhi.org",
