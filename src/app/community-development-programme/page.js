@@ -134,7 +134,7 @@ export default function CDPOverviewPage() {
           {/* Hero Section */}
           <section className={styles.sectionPadding}>
             <div className="container">
-              <h1 className="sectionTitle_1 text-center mx-800">We measure success in changed lives - and we can show you the numbers.</h1>
+              <h1 className="sectionTitle_1 text-center mx-800">We measure success in changing lives</h1>
               <p className={styles.overviewText}>
                 For over years, the YWCA of Delhi’s Community Development Programme has walked alongside women, young girls & children in Delhi’s urban settlements - turning vulnerability into voice, and dependence into dignity.
               </p>
