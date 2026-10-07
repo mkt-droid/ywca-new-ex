@@ -110,6 +110,124 @@
   display: block;
 }
 
+.overviewCard {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(162, 18, 181, 0.06);
+  border: 1px solid rgba(162, 18, 181, 0.08);
+  height: 100%;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.overviewCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(162, 18, 181, 0.12);
+  border-color: rgba(162, 18, 181, 0.2);
+}
+
+.overviewCardTitle {
+  color: #a212b5;
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.overviewCardTitle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #a212b5, #be00c4);
+  border-radius: 2px;
+}
+
+.overviewCardImgWrapper {
+  margin-bottom: 25px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.overviewCardImgWrapper img {
+  height: 280px;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  display: block;
+}
+
+.overviewCardImgWrapper:hover img {
+  transform: scale(1.05);
+}
+
+.overviewCardText {
+  color: #555;
+  line-height: 1.7;
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+/* ── FACILITIES ── */
+.infoBox {
+  background-color: #fcefe6;
+  padding: 30px;
+  border-radius: 0;
+  border: 1px solid #eba471;
+  width: 100%;
+  margin: 40px auto;
+  border-radius: 8px;
+}
+
+.iconList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.iconList li {
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 1.05rem;
+  color: #222;
+  line-height: 1.5;
+  font-weight: 500;
+  display: flex;
+  align-items: flex-start;
+}
+
+.iconList li i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  color: #a212b5;
+  font-size: 1.3rem;
+  margin-right: 18px;
+  margin-top: -2px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.iconList li:hover i {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(162, 18, 181, 0.2);
+  background-color: #a212b5;
+  color: #ffffff;
+  border-color: #a212b5;
+}
+
 /* ── COMMON HEADINGS ── */
 .sectionTitle {
   text-align: center;

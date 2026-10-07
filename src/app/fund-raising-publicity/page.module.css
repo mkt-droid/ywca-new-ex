@@ -161,8 +161,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  -webkit-mask-image: linear-gradient(to right, transparent, black 25%, black 100%);
-  mask-image: linear-gradient(to right, transparent, black 25%, black 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.1) 15%, rgba(0,0,0,0.6) 40%, black 75%);
+  mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.1) 15%, rgba(0,0,0,0.6) 40%, black 75%);
 }
 
 .causeContentWrapper {
@@ -193,6 +193,11 @@
   color: #333;
   line-height: 1.6;
   margin-bottom: 30px;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .btnSolidPurpleRounded {
@@ -700,10 +705,9 @@
 }
 
 .flowchartStep h6 {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 700;
   margin-bottom: 5px;
-  text-transform: uppercase;
 }
 
 .flowchartStep p {
@@ -737,9 +741,9 @@
 
 .statItemLeft strong {
   display: block;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   color: #111;
-  line-height: 1.1;
+  line-height: 1.2;
 }
 
 .statItemLeft span {
@@ -777,7 +781,7 @@
 }
 
 .iconItemGreen h6 {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 700;
   margin-bottom: 5px;
   color: #111;
@@ -796,14 +800,6 @@
   margin-top: 30px;
   padding-top: 25px;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.statsGridFour .statItemLeft strong {
-  font-size: 1.1rem;
-}
-
-.statsGridFour .statItemLeft span {
-  font-size: 0.7rem;
 }
 
 /* Buttons */
@@ -1000,4 +996,260 @@
   .causeImg {
     margin-top: 20px;
   }
+}
+
+/* ── HOPE SLIDER CSS ── */
+.hopeSection {
+  padding-bottom: 40px;
+}
+
+.sliderContainer {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.sliderArrowLeft,
+.sliderArrowRight {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: 1px solid #1a1668;
+  color: #1a1668;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.sliderArrowLeft:hover,
+.sliderArrowRight:hover {
+  background: #1a1668;
+  color: #fff;
+}
+
+.sliderArrowLeft {
+  left: 0;
+}
+
+.sliderArrowRight {
+  right: 0;
+}
+
+.hopeCard {
+  background: #fff;
+  border: 1px solid #ffd2b2;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px #0000000d;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hopeCardImg {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.hopeCardBody {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.hopeCardTitle {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 0.95rem;
+}
+
+.hopeCardText {
+  font-size: 1rem;
+  color: #000000;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  flex: 1;
+}
+
+.hopeCardsRow {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 0.95rem;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hopeCardsRow::-webkit-scrollbar {
+  display: none;
+}
+
+.hopeCardWrapper {
+  flex: 0 0 calc(33.333% - 16px);
+}
+
+@media (max-width: 992px) {
+  .hopeCardWrapper {
+    flex: 0 0 calc(50% - 12px);
+  }
+}
+
+@media (max-width: 768px) {
+  .hopeCardWrapper {
+    flex: 0 0 100%;
+  }
+}
+
+.readMoreBtn {
+  align-self: center;
+  background-color: #242278;
+  color: white;
+  padding: 12px 50px;
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.readMoreBtn:hover {
+  background-color: #1a1668;
+}
+
+/* ── MODAL CSS ── */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+  padding: 20px;
+}
+
+.modalContent {
+  background-color: #fafafa;
+  border: 2px solid #c98d45;
+  width: 95vw;
+  max-width: 1200px;
+  height: 90vh;
+  max-height: 850px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.modalCloseBtn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #f1f1f1;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #333;
+  z-index: 20;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 0;
+}
+
+.modalCloseBtn i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  transform: translateY(1px);
+}
+
+.modalCloseBtn:hover {
+  color: #fff;
+  background: #e6235b;
+}
+
+.modalBody {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 30px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+@media (min-width: 768px) {
+  .modalBody {
+    flex-direction: row;
+    overflow-y: hidden;
+  }
+}
+
+.modalImageWrapper {
+  flex: 0 0 35%;
+}
+
+.modalImageWrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.modalTextContent {
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .modalTextContent {
+    overflow-y: auto;
+    padding-right: 15px;
+    height: 100%;
+  }
+
+  .modalTextContent::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .modalTextContent::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+}
+
+.modalTitle {
+  color: #a212b5;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.modalDesc {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
 }

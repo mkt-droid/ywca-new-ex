@@ -1,8 +1,10 @@
 "use client";
 import React, { useState } from "react";
+import Link from "next/link";
 import SideNavBanner from "@/components/partials/SideNavBanner";
 import UserStories from "@/components/UserStories";
 import styles from "./page.module.css";
+import parentStyles from "../page.module.css";
 
 const ImageCarousel = ({ images, alt }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -270,6 +272,7 @@ const ExploreDelhi = () => {
   ];
 
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
+  const [activeTab, setActiveTab] = useState('halfDay');
 
   const nextSlide = () => {
     setCurrentSlideIndex((prev) => (prev + 1) % sliderData.length);
@@ -389,6 +392,75 @@ const ExploreDelhi = () => {
         </div>
       </section>
 
+      {/* BOOK YOUR STAY / CONTACT SECTION */}
+      <section className="container mb-5 mt-2">
+        <div className={parentStyles.contactCard}>
+          <div className="row align-items-center">
+            <div className={`col-lg-4 mb-4 mb-lg-0 text-center text-lg-start ${parentStyles.contactCardLeft}`}>
+              <h2 className={parentStyles.contactTitle}>Book Your Stay</h2>
+              <p className={parentStyles.contactText}>
+                Get in touch with us to reserve your room or event space today.
+              </p>
+              <Link
+                href="https://ywcaofdelhi.org/public/public/GHBooking.aspx"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={parentStyles.contactBtn}
+              >
+                Book Now <i className="bi bi-arrow-right-circle-fill ms-2"></i>
+              </Link>
+            </div>
+
+            <div className="col-lg-8 ps-lg-5">
+              <div className="row g-4">
+                <div className="col-md-6">
+                  <div style={{ display: 'flex', gap: '15px' }}>
+                    <div className={parentStyles.contactIconWrapper}>
+                      <i className="bi bi-geo-alt-fill"></i>
+                    </div>
+                    <div>
+                      <h5 className={parentStyles.contactInfoTitle}>Address</h5>
+                      <p className={parentStyles.contactInfoText}>
+                        1, Ashoka Road,<br />New Delhi-110001
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-md-6">
+                  <div style={{ display: 'flex', gap: '15px' }}>
+                    <div className={parentStyles.contactIconWrapper}>
+                      <i className="bi bi-telephone-fill"></i>
+                    </div>
+                    <div>
+                      <h5 className={parentStyles.contactInfoTitle}>Contact Info</h5>
+                      <p className={parentStyles.contactInfoText}>
+                        <strong>Tel:</strong> 011-23360133, 23365014, 23365441<br />
+                        <strong>Mob:</strong> +91 70112 99044
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className={`col-md-12 mt-4 pt-3 ${parentStyles.contactDivider}`}>
+                  <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
+                    <div className={parentStyles.contactEmailWrapper}>
+                      <i className="bi bi-envelope-fill"></i>
+                    </div>
+                    <div>
+                      <h5 className={parentStyles.contactInfoTitle} style={{ marginBottom: '2px' }}>Email Us</h5>
+                      <a href="mailto:btfh@ywcaofdelhi.org" className={parentStyles.contactLink}>
+                        btfh@ywcaofdelhi.org
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* USER STORIES SECTION */}
       {/* <UserStories stories={stories} title="User Stories" /> */}
 
@@ -403,12 +475,43 @@ const ExploreDelhi = () => {
             </p>
           </div>
 
-          {/* Half Day Tours */}
-          <div className={styles.itineraryTypeContainer}>
-            <h3 className={styles.itineraryTypeTitle}>Half Day Tours</h3>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '30px', marginBottom: '40px' }}>
+            <button
+              onClick={() => setActiveTab('halfDay')}
+              style={{
+                background: 'transparent',
+                color: activeTab === 'halfDay' ? '#110356' : '#888',
+                border: 'none',
+                borderBottom: activeTab === 'halfDay' ? '3px solid #be00c4' : '3px solid transparent',
+                padding: '10px 20px',
+                fontSize: '1.5rem',
+                fontWeight: '700',
+                cursor: 'pointer',
+                transition: 'all 0.3s ease',
+              }}
+            >
+              Half Day Tours
+            </button>
+            <button
+              onClick={() => setActiveTab('fullDay')}
+              style={{
+                background: 'transparent',
+                color: activeTab === 'fullDay' ? '#110356' : '#888',
+                border: 'none',
+                borderBottom: activeTab === 'fullDay' ? '3px solid #be00c4' : '3px solid transparent',
+                padding: '10px 20px',
+                fontSize: '1.5rem',
+                fontWeight: '700',
+                cursor: 'pointer',
+                transition: 'all 0.3s ease',
+              }}
+            >
+              Full Day Tours
+            </button>
           </div>
 
-          <div className="row">
+          {activeTab === 'halfDay' && (
+            <div className="row">
             {/* Tour 1 */}
             <div className="col-lg-6 mb-4">
               <div className={styles.itineraryCard}>
@@ -446,14 +549,11 @@ const ExploreDelhi = () => {
                 </p>
               </div>
             </div>
-          </div>
+            </div>
+          )}
 
-          {/* Full Day Tours */}
-          <div className={styles.itineraryTypeContainer} style={{ marginTop: '30px' }}>
-            <h3 className={styles.itineraryTypeTitle}>Full Day Tours</h3>
-          </div>
-
-          <div className="row">
+          {activeTab === 'fullDay' && (
+            <div className="row">
             {/* Tour 3 */}
             <div className="col-lg-6 mb-4">
               <div className={styles.itineraryCard}>
@@ -492,6 +592,7 @@ const ExploreDelhi = () => {
               </div>
             </div>
           </div>
+          )}
         </div>
       </section>
 

@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Link from "next/link";
 import SideNavBanner from "@/components/partials/SideNavBanner";
 import UserStories from "@/components/UserStories";
@@ -44,14 +45,36 @@ const BlueTriangle = () => {
   ];
 
   const roomTypes = [
-    { name: 'Single Room', tariff: '2,368' },
-    { name: 'Double Room  (Double OCC.)', tariff: '3,929' },
-    { name: 'Double Room (Single OCC.)', tariff: '3,177' },
-    { name: 'Executive Deluxe (Double OCC.)', tariff: '4,128' },
-    { name: 'Executive Deluxe (Single OCC.)', tariff: '3,365' },
-    { name: 'Family Suite', tariff: '4,877' },
-    { name: 'Dormitory (6 Bedded)', tariff: '5,662' }
+    { name: 'Single Room', tariff: '2,368', badge: null },
+    { name: 'Double Room', tariff: '3,929', badge: 'Double OCC.' },
+    { name: 'Double Room', tariff: '3,177', badge: 'Single OCC.' },
+    { name: 'Executive Deluxe', tariff: '4,128', badge: 'Double OCC.' },
+    { name: 'Executive Deluxe', tariff: '3,365', badge: 'Single OCC.' },
+    { name: 'Family Suite', tariff: '4,877', badge: null },
+    { name: 'Dormitory', tariff: '5,662', badge: '6 Bedded' }
   ];
+
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [currentSpaceIndex, setCurrentSpaceIndex] = useState(0);
+
+  const openPopup = (index) => {
+    setCurrentSpaceIndex(index);
+    setIsPopupOpen(true);
+  };
+
+  const closePopup = () => {
+    setIsPopupOpen(false);
+  };
+
+  const nextSpace = (e) => {
+    e.stopPropagation();
+    setCurrentSpaceIndex((prev) => (prev + 1) % roomTypes.length);
+  };
+
+  const prevSpace = (e) => {
+    e.stopPropagation();
+    setCurrentSpaceIndex((prev) => (prev - 1 + roomTypes.length) % roomTypes.length);
+  };
 
   return (
     <main>
@@ -108,9 +131,14 @@ const BlueTriangle = () => {
             <h4 className="text-center" style={{ marginBottom: '40px' }}>TYPES OF ACCOMMODATION</h4>
             <div className={styles.bookingGrid}>
               {roomTypes.map((room, index) => (
-                <Link key={index} href="https://ywcaofdelhi.org/public/public/GHBooking.aspx" target="_blank" rel="noopener noreferrer" className={styles.bookingCardLink}>
+                <div key={index} onClick={() => openPopup(index)} style={{ cursor: 'pointer', textDecoration: 'none' }} className={styles.bookingCardLink}>
                   <div className={styles.bookingCard}>
-                    <img src="/images/room-booking/room-booking-thumb.jpg" alt={room.name} />
+                    <div style={{ position: 'relative' }}>
+                      <img src="/images/room-booking/room-booking-thumb.jpg" alt={room.name} />
+                      {room.badge && (
+                        <span className={styles.roomBadge}>{room.badge}</span>
+                      )}
+                    </div>
                     <div className={styles.cardContent}>
                       <h4 className={styles.cardTitle}>{room.name}</h4>
                       <div className={styles.tariffWrapper}>
@@ -119,7 +147,7 @@ const BlueTriangle = () => {
                       </div>
                     </div>
                   </div>
-                </Link>
+                </div>
               ))}
             </div>
           </div>
@@ -139,6 +167,62 @@ const BlueTriangle = () => {
 
 
       </div>
+
+      {/* POPUP MODAL */}
+      {isPopupOpen && (
+        <div className={styles.popupOverlay} onClick={closePopup}>
+          <button className={styles.closeBtn} onClick={closePopup}>&times;</button>
+
+          <div className={styles.popupContent} onClick={(e) => e.stopPropagation()}>
+            <button className={`${styles.navBtn} ${styles.prevBtn}`} onClick={prevSpace}>
+              <i className="bi bi-chevron-left"></i>
+            </button>
+
+            <div className={styles.popupImageWrapper} style={{ position: 'relative' }}>
+              <img src="/images/room-booking/room-booking-thumb.jpg" alt={roomTypes[currentSpaceIndex].name} />
+              {roomTypes[currentSpaceIndex].badge && (
+                <span className={styles.roomBadge} style={{ fontSize: '14px', padding: '6px 15px' }}>
+                  {roomTypes[currentSpaceIndex].badge}
+                </span>
+              )}
+            </div>
+            <div className={styles.popupTextWrapper}>
+              <h3 className={styles.popupTitle}>
+                {roomTypes[currentSpaceIndex].name} 
+                {roomTypes[currentSpaceIndex].badge && ` (${roomTypes[currentSpaceIndex].badge})`}
+              </h3>
+              
+              <div className={styles.tariffTableContainer}>
+                <table className={styles.tariffTable}>
+                  <thead>
+                    <tr>
+                      <th>TYPES OF ACCOMMODATION</th>
+                      <th>TARIFF (₹)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        {roomTypes[currentSpaceIndex].name}
+                        {roomTypes[currentSpaceIndex].badge && ` (${roomTypes[currentSpaceIndex].badge})`}
+                      </td>
+                      <td style={{ fontWeight: 600 }}>{roomTypes[currentSpaceIndex].tariff}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <Link href="https://ywcaofdelhi.org/public/public/GHBooking.aspx" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+                <button className={styles.popupBookBtn}>Book Now <i className="bi bi-arrow-right ms-2"></i></button>
+              </Link>
+            </div>
+
+            <button className={`${styles.navBtn} ${styles.nextBtn}`} onClick={nextSpace}>
+              <i className="bi bi-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* INSTAGRAM SECTION */}
       {/* <section className={styles.instaSection}>
