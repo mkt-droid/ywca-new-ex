@@ -18,7 +18,7 @@ const LOCATIONS = [
     id: 2,
     title: "Shelter Home for Women, Jahangirpuri",
     name: "Shelter Home for Women",
-    bldg: "Manikika Chhaya Shelter Home",
+    bldg: "Matritava Chhaya Shelter Home",
     address: "F-Block, Community Centre, Jahangirpuri, Delhi 110033",
     tel: "011-27632731",
     email: "info@ywcaofdelhi.org",
