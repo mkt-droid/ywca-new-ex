@@ -27,8 +27,8 @@ export default function FundRaisingPage() {
         height="360px"
         title={
           <>
-            Support Women<br />Support Sustainability<br />
-            Support Change
+            Fund Raising
+            <br />and Publicity<br />
           </>
         }
         bgImage="/images/01-Banner-FRAp.jpg"
@@ -41,7 +41,7 @@ export default function FundRaisingPage() {
         {/* WHERE YOUR SUPPORT CREATES IMPACT | FRAP */}
         <section className={`container ${styles.newSection}`}>
           <div className="text-center mb-5">
-            <h2 className="sectionTitle_1">Fund Raising and Publicity</h2>
+            <h2 className="sectionTitle_1">Support Women, Support Sustainability, Support Change</h2>
           </div>
           
           <div className="row g-4">
