@@ -8,9 +8,36 @@ import SideNavBanner from '@/components/partials/SideNavBanner';
 import ImpactStats from '@/components/partials/ImpactStats';
 import OurValues from '@/components/partials/OurValues';
 import CdpBlogSection from '@/components/partials/CdpBlogSection';
+
+import galleryStyles from '@/styles/Gallery.module.css';
+import Gallery from '@/components/common/Gallery';
+
 import { cdpBlogData } from '@/data/cdpBlogData';
 
 export default function CDPOverviewPage() {
+  
+  const galleryImages = [
+    '/images/cdp/gallery/cdp-1.webp',
+    '/images/cdp/gallery/cdp-2.webp',
+    '/images/cdp/gallery/cdp-3.webp',
+    '/images/cdp/gallery/cdp-4.webp',
+    '/images/cdp/gallery/cdp-5.webp',
+    '/images/cdp/gallery/cdp-6.webp',
+    '/images/cdp/gallery/cdp-7.webp',
+    '/images/cdp/gallery/cdp-8.webp',
+    '/images/cdp/gallery/cdp-9.webp',
+    '/images/cdp/gallery/cdp-10.webp',
+    '/images/cdp/gallery/cdp-11.webp',
+    '/images/cdp/gallery/cdp-12.webp',
+    '/images/cdp/gallery/cdp-14.webp',
+    '/images/cdp/gallery/cdp-15.webp',
+    '/images/cdp/gallery/cdp-16.webp',
+    '/images/cdp/gallery/cdp-17.webp',
+    '/images/cdp/gallery/cdp-18.webp',
+    '/images/cdp/gallery/cdp-19.webp',
+    '/images/cdp/gallery/cdp-20.webp',
+  ]; 
+  
   const threeWaysValues = [
     {
       icon: "bi-heart-fill",
@@ -258,7 +285,8 @@ export default function CDPOverviewPage() {
           {/* Blog Section */}
           <CdpBlogSection blogData={cdpBlogData} />
 
-
+          {/* Gallery Section */}
+          <Gallery images={galleryImages} title="Gallery" />
 
         </div>
       </main>

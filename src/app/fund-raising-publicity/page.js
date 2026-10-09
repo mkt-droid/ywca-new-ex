@@ -27,8 +27,8 @@ export default function FundRaisingPage() {
         height="360px"
         title={
           <>
-            SUPPORT WOMEN<br />SUPPORT SUSTAINABILITY<br />
-            SUPPORT CHANGE
+            Support Women<br />Support Sustainability<br />
+            Support Change
           </>
         }
         bgImage="/images/01-Banner-FRAp.jpg"
