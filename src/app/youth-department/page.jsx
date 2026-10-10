@@ -11,7 +11,7 @@ export default function YouthDepartmentPage() {
   return (
     <main>
       <SideNavBanner
-        height="360px"
+        height="400px"
         title={<>YOUTH<br />DEPARTMENT</>}
         bgImage="/images/yuva-department/01-Banner-Youth.jpg"
         activePath="/youth-department"
@@ -22,12 +22,11 @@ export default function YouthDepartmentPage() {
         <section className={styles.sectionPadding}>
           <div className="container">
 
-            <h1 className="sectionTitle_1 text-center mx-800">Youth Department</h1>
+            <h1 className="sectionTitle_1 text-center mx-800">Be the change you want to see</h1>
 
             <div className={styles.overviewText}>
-              <p>The Youth Department of the YWCA of Delhi promotes meaningful and active participation of young people in the organisation’s programmes, enabling them to recognise their role as agents of social, political, and economic change in society. The department works to nurture leadership, awareness, and responsibility among youth, encouraging them to engage with issues that shape their communities and the wider world.</p>
-              <p>Through a range of community development and outreach initiatives, the Youth Department collaborates with UDP, RDP, WTI, and neighbourhood schools to deepen understanding of social realities and contribute to the vision of “Justice Beyond Borders.” These engagements provide young people with opportunities to learn, reflect, and actively participate in community-based action.</p>
-              <p>The department also organises various events, workshops, and competitions designed to build teamwork, creativity, and healthy competition among children and young people of today’s generation. Through these initiatives, the Youth Department fosters holistic development, leadership skills, and a strong sense of social responsibility.</p>
+              <p>The Youth Department of the YWCA of Delhi encourages young people to become active participants in social, political, and economic change. Through community development and outreach initiatives, the department collaborates with UDP, RDP, WTI, and neighbourhood schools to deepen awareness of social realities and promote the vision of “Justice Beyond Borders.”</p>
+              <p>Through events, workshops, and competitions, the department nurtures leadership, teamwork, creativity, and healthy competition among children and young people. These initiatives provide opportunities for learning, community engagement, and holistic development while fostering a strong sense of social responsibility.</p>
             </div>
 
             {/* Programs Section */}

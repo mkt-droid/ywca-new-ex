@@ -162,7 +162,7 @@ export default function ShelterHomesPage() {
   return (
     <main>
       <SideNavBanner
-        height="360px"
+        height="400px"
         title={<>SHELTER<br />HOMES</>}
         bgImage="/images/shelter-homes/shelter-bnr.jpg"
         navItems={bannerNavItems}
@@ -172,6 +172,7 @@ export default function ShelterHomesPage() {
 
       <div className={styles.gradientBgWrap}>
         <section className={`container ${styles.introSection}`}>
+          <h1 className="sectionTitle_1 text-center mx-800">Raj Kumari Amrit Kaur Day Care Centre</h1>
           <p className={styles.introText}>
             YWCA of Delhi is committed to supporting women in distress by providing safe shelter, care, and opportunities for rehabilitation. We operate two dedicated shelter home programs designed to meet the diverse needs of vulnerable women, helping them rebuild their lives with dignity and independence.
           </p>

@@ -112,7 +112,7 @@ const ExecutiveTeam = () => {
         defaultGrayscale={false}
       />
 
-      <section className={innerStyles.innerPageSection} style={{ backgroundColor: '#FCF7F7' }}>
+      <section className={innerStyles.innerPageSection}>
         <div className="container">
           <section className={innerStyles.boardSection} ref={sectionRef}>
             <div className="row justify-content-center">

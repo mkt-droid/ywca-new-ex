@@ -150,7 +150,7 @@ const BoardOfManagement = () => {
         defaultGrayscale={false}
       />
 
-      <section className={styles.innerPageSection} style={{ backgroundColor: '#FCF7F7' }}>
+      <section className={styles.innerPageSection}>
         <div className="container">
           <section className={styles.boardSection} ref={sectionRef}>
 

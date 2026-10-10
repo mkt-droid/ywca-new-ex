@@ -41,7 +41,7 @@ export default async function Page({ params }) {
                 </div>
             </InnerPageBanner>
 
-            <section className={styles.innerPageSection} style={{ backgroundColor: '#FCF7F7' }}>
+            <section className={styles.innerPageSection}>
                 <div className="container">
                     {/* ── Details Section ── */}
                     <div className={styles.memberDetails}>

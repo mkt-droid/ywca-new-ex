@@ -23,7 +23,10 @@
    font-family: "Poppins", sans-serif;
    color: #000000;
    overflow-x: hidden;
-   background-color: #FCF7F7;
+   /* background-color: #FCF7F7; */
+   /* background-color: red; */
+   /* background: linear-gradient(#f8eaea 0%, #fff 30% 70%, #fcf0f0 100%); */
+   background: linear-gradient(#f8eaea 0%, #fff 60% 100%);
    line-height: 1.5;
  }
 
@@ -2393,7 +2396,7 @@
  }
 
  main {
-   background: linear-gradient(#fff 0%, #fffbf9 15% 85%, #fff 100%);
+   /* background: linear-gradient(#fff 0%, #fffbf9 15% 85%, #fff 100%); */
    /* background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(253, 243, 237, 1) 15%, rgba(253, 243, 237, 1) 85%, rgba(255, 255, 255, 1) 100%); */
  }
 

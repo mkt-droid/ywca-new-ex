@@ -11,7 +11,11 @@ const NewsDetail = () => {
   const slug = params?.slug
 
   const newsDetail = newsData.find(item => item.slug === slug) || newsData[0]
-  const relatedNews = newsData.filter(item => item.slug !== slug).slice(0, 3)
+  const relatedNews = newsData.filter( item => 
+    item.slug !== slug &&
+    item.category === newsDetail.category
+  ).slice(0, 4)
+  const categories = [...new Set(newsData.map(obj => obj.category))]
 
   const contentRef = useRef(null)
   const galleryRef = useRef(null)
@@ -77,13 +81,13 @@ const NewsDetail = () => {
                   </svg>
                   {newsDetail.date}
                 </span>
-                <span className={styles.metaDot}>•</span>
+                {/* <span className={styles.metaDot}>•</span>
                 <span className={styles.metaItem}>
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" />
                   </svg>
                   {newsDetail.author}
-                </span>
+                </span> */}
                 <span className={styles.metaDot}>•</span>
                 <span className={styles.metaItem}>
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -200,7 +204,7 @@ const NewsDetail = () => {
                 <div className={`${styles.sideWidget} ${styles.animate}`} data-delay="300">
                   <h4 className={styles.widgetTitle}>Categories</h4>
                   <div className={styles.categoryList}>
-                    {['Events', 'Programs', 'Announcements', 'Community', 'Advocacy'].map((cat) => (
+                    {categories.map((cat) => (
                       <Link key={cat} href="#" className={styles.categoryTag}>
                         {cat}
                       </Link>

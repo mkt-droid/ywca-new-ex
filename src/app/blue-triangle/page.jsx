@@ -46,27 +46,14 @@ const BlueTriangle = () => {
 
   return (
     <main>
-      {/* HERO SECTION */}
       <SideNavBanner
-        height="380px"
-        bgImage="/images/blue-tringle/bt-bnr.png"
-        navItems={bannerNavItems}
-        activePath="/blue-triangle"
+              height="430px"
+              title={<>Blue Triangle<br />Family Hostel</>}
+              bgImage="/images/blue-tringle/bt-bnr.png"
+              navItems={bannerNavItems}
+              activePath="#overview"
+      />
 
-      >
-        <div className={styles.heroLeft}>
-          {/* <img
-            src="/images/blue-tringle/stamp 1.png"
-            alt="Book Now Stamp"
-            className={styles.stamp}
-          /> */}
-          <h1 className={styles.heroTitle}>
-            Your Preferred Choice<br />In New Delhi
-          </h1>
-        </div>
-      </SideNavBanner>
-
-      {/* GRADIENT WRAPPER */}
       <div>
 
 
@@ -74,7 +61,7 @@ const BlueTriangle = () => {
         <section className={`container ${styles.overviewSection}`}>
           {/* Centered Overview Title & Welcome Message */}
           <div className="text-center mb-4">
-            <h2 className="sectionTitle_2">Welcome to Blue Triangle Family Hostel (BTFH)</h2>
+            <h1 className="sectionTitle_1 text-center mx-800">Your Preferred Choice in New Delhi</h1>
 
             <p style={{ maxWidth: '850px', margin: '15px auto 0', fontSize: '1.05rem', lineHeight: '1.7', color: '#444' }}>
               Experience exceptional hospitality at YWCA of Delhi's Blue Triangle Family Hostel, where quality service meets comfort and purpose.
@@ -112,14 +99,14 @@ const BlueTriangle = () => {
               </div>
             </div>
           </div>
-          <div style={{ backgroundColor: '#ffffff', padding: '30px', borderRadius: '12px', border: '1px solid #f0f0f0', marginTop: '20px', boxShadow: '0 8px 24px rgba(162, 18, 181, 0.08)' }}>
+          {/* <div style={{ backgroundColor: '#ffffff', padding: '30px', borderRadius: '12px', border: '1px solid #f0f0f0', marginTop: '20px', boxShadow: '0 8px 24px rgba(162, 18, 181, 0.08)' }}>
             <h4 style={{ color: '#a212b5', fontWeight: '600', fontSize: '1.4rem', marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '10px' }}>
               <i className="bi bi-cup-hot-fill"></i> Dining Excellence
             </h4>
             <p style={{ margin: 0, fontSize: '1.05rem', color: '#555', lineHeight: '1.6' }}>
               Indulge in diverse, flavorful options at our in-house venues, offering international, Indian, and global cuisines tailored for events and daily stays.
             </p>
-          </div>
+          </div> */}
           
           {/* FACILITIES SECTION */}
           <div className={styles.infoBox}>
@@ -142,6 +129,7 @@ const BlueTriangle = () => {
                   <li><i className="bi bi-lightning-charge-fill"></i>Power Backup</li>
                   <li><i className="bi bi-tree-fill"></i>Peaceful Garden Area</li>
                   <li><i className="bi bi-tv-fill"></i>Common Lounge</li>
+                  <li><i className="bi bi-cup-hot-fill"></i>Dining Excellence</li>
                 </ul>
               </div>
             </div>

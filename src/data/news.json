@@ -1,4 +1,48 @@
 [
+  
+  {
+    "id": 3,
+    "title": "Thrive Music Festival",
+    "date": "14th March 2026",
+    "description": "Lorem ipsum is a standard placeholder or dummy text used across graphic design, publishing, and web development to test layouts and visual hierarchies. By utilizing a scrambled, nonsensical version of Latin, it allows designers to focus entirely on typography, spacing, and page structure without being distracted by readable content.",
+    "image": "/images/News-Thumb/Thrive-Music-Fest.jpg",
+    "category": "Organisation",
+    "slug": "thrive-music-festival",
+    "gallery": [
+        "/images/blog/thrive-music-fest/thrive-music-fest-1.jpg",
+        "/images/blog/thrive-music-fest/thrive-music-fest-2.jpg",
+        "/images/blog/thrive-music-fest/thrive-music-fest-3.jpg",
+        "/images/blog/thrive-music-fest/thrive-music-fest-4.jpg",
+        "/images/blog/thrive-music-fest/thrive-music-fest-5.jpg",
+        "/images/blog/thrive-music-fest/thrive-music-fest-6.jpg",
+        "/images/blog/thrive-music-fest/thrive-music-fest-7.jpg",
+        "/images/blog/thrive-music-fest/thrive-music-fest-8.jpg",
+        "/images/blog/thrive-music-fest/thrive-music-fest-9.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "International Women’s Day",
+    "date": "7th March 2026",
+    "description": "Lorem ipsum is a standard placeholder or dummy text used across graphic design, publishing, and web development to test layouts and visual hierarchies. By utilizing a scrambled, nonsensical version of Latin, it allows designers to focus entirely on typography, spacing, and page structure without being distracted by readable content.",
+    "image": "/images/News-Thumb/Int-Women-day.jpg",
+    "category": "Organisation",
+    "slug": "international-womens-day",
+    "gallery": [
+        "/images/blog/international-women-day/international-women-day-1.jpg",
+        "/images/blog/international-women-day/international-women-day-2.jpg",
+        "/images/blog/international-women-day/international-women-day-3.jpg",
+        "/images/blog/international-women-day/international-women-day-4.jpg",
+        "/images/blog/international-women-day/international-women-day-5.jpg",
+        "/images/blog/international-women-day/international-women-day-6.jpg",
+        "/images/blog/international-women-day/international-women-day-7.jpg",
+        "/images/blog/international-women-day/international-women-day-8.jpg",
+        "/images/blog/international-women-day/international-women-day-9.jpg",
+        "/images/blog/international-women-day/international-women-day-10.jpg",
+        "/images/blog/international-women-day/international-women-day-11.jpg",
+        "/images/blog/international-women-day/international-women-day-12.jpg"
+    ]
+  },
   {
     "id": 5,
     "title": "Bridge the Gap - August-September 2025",
@@ -273,7 +317,7 @@
     "date": "15 Oct 2026",
     "description": "When we started our Self-Help Group programme, we assumed women needed capital first and financial knowledge later. Five years and 180 SHGs on, we’ve learned it’s the other way around. Here’s what changed our approach — and what it means for the women we work with.\n\nFinancial literacy is often seen as a secondary skill, something to be learned after one has secured an income. However, in our work across Delhi's urban settlements, we discovered that without foundational financial knowledge, any capital injected into the community was quickly dissipated. Women were securing loans but didn't know how to budget, save, or invest efficiently.\n\nBy introducing mandatory financial literacy training before capital disbursement, we saw a 40% increase in loan repayment rates and a significant rise in household savings. The women in our program are now not just borrowers; they are informed financial decision-makers. They understand interest rates, banking procedures, and the importance of emergency funds.\n\nThis shift in strategy emphasizes that real independence is built on a solid understanding of how money works.",
     "image": "/images/cdp/main-banner.jpg",
-    "category": "Community Development Programme",
+    "category": "Community Development",
     "slug": "why-financial-literacy-is-the-first-step-to-real-independence",
     "author": "CDP Programme Team",
     "gallery": [
@@ -286,7 +330,7 @@
     "date": "02 Nov 2026",
     "description": "Our latest health camp in Madanpur Khadar screened 150 women in a single morning. The lines were long, but the real story was in what women asked our volunteer doctors when they finally had someone to ask.\n\nMany of these women had ignored chronic pain, vision issues, and nutritional deficiencies for years. The barrier wasn't always a lack of medical facilities nearby; it was the lack of an approachable, non-judgmental space where they felt heard. Our volunteer doctors noted that nearly 60% of the questions asked were about preventative care and nutrition—topics often brushed aside in rushed public clinics.\n\nThe overwhelming turnout highlighted a critical lesson: healthcare access is as much about trust and communication as it is about proximity. By bringing healthcare directly into their community and ensuring doctors took the time to listen, we were able to provide more than just prescriptions—we provided reassurance and vital health education.",
     "image": "/images/cdp/main-banner.jpg",
-    "category": "Community Development Programme",
+    "category": "Community Development",
     "slug": "inside-a-cdp-health-camp",
     "author": "CDP Field Team",
     "gallery": [
@@ -299,7 +343,7 @@
     "date": "18 Nov 2026",
     "description": "Sneha came to us as a college student looking for a resume line. She’s now our longest-serving literacy volunteer. Her story is a reminder that consistency, not credentials, is what these communities need most.\n\nInitially committing to just three months to fulfill a college requirement, Sneha found herself profoundly moved by the eagerness of the women in her adult literacy class. She realized that while she was teaching them to read, they were teaching her about resilience, community, and the power of determination.\n\nThree years later, Sneha is still here. She has helped over 40 women achieve basic literacy and is now involved in developing our advanced curriculum. \"The hardest part isn't the teaching,\" she says, \"it's unlearning the biases we bring into the classroom. The women here are incredibly smart; they just haven't had the opportunity.\"\n\nHer journey underscores the core philosophy of our volunteer program: it's not about swooping in to 'save' anyone. It's about showing up, week after week, and being a reliable partner in someone else's growth.",
     "image": "/images/cdp/main-banner.jpg",
-    "category": "Community Development Programme",
+    "category": "Community Development",
     "slug": "meet-the-volunteer-who-turned-a-3-month-commitment-into-3-years",
     "author": "Volunteer Network",
     "gallery": [
@@ -308,15 +352,55 @@
   },
   {
     "id": 29,
+    "title": "World YWCA Day - Celebrating Sisterhood and Solidarity",
+    "date": "25th April, 2026",
+    "description": "Lorem ipsum is a standard placeholder or dummy text used across graphic design, publishing, and web development to test layouts and visual hierarchies. By utilizing a scrambled, nonsensical version of Latin, it allows designers to focus entirely on typography, spacing, and page structure without being distracted by readable content.",
+    "image": "/images/News-Thumb/World-YCWA-Day.jpg",
+    "category": "Organisation",
+    "slug": "world-ywca-day-2026",
+    "gallery": [
+        "/images/blog/world-ywca-day/world-ywca-day-1.jpg",
+        "/images/blog/world-ywca-day/world-ywca-day-2.jpg",
+        "/images/blog/world-ywca-day/world-ywca-day-3.jpg",
+        "/images/blog/world-ywca-day/world-ywca-day-4.jpg",
+        "/images/blog/world-ywca-day/world-ywca-day-5.jpg",
+        "/images/blog/world-ywca-day/world-ywca-day-6.jpg",
+        "/images/blog/world-ywca-day/world-ywca-day-7.jpg",
+        "/images/blog/world-ywca-day/world-ywca-day-8.jpg",
+        "/images/blog/world-ywca-day/world-ywca-day-9.jpg"
+    ]
+  },
+  {
+    "id": 30,
     "title": "Our FY 2024–25 Annual Report Is Here — Here’s What the Numbers Really Tell Us",
     "date": "05 Dec 2026",
     "description": "Beyond the headline figures, our latest annual report reveals where our model is working best — and where we’re still adapting. A transparent look at a year of work.\n\nThis fiscal year brought unprecedented challenges and remarkable breakthroughs. While we celebrate reaching over 5,000 direct beneficiaries, a closer look at the data reveals nuanced trends. Our vocational training programs saw a 25% increase in enrollment, yet post-training placement rates highlighted a need for stronger industry partnerships.\n\nWe also noted a significant uptick in participation in our rights-awareness workshops, indicating a growing demand for legal literacy among community members. These numbers are more than just metrics; they are signposts guiding our strategic direction. They tell us that while our interventions are effective, we must continuously evolve to meet the complex, changing needs of the communities we serve.\n\nAs we look forward to the next year, our focus will be on deepening our impact, strengthening our partnerships, and ensuring that our programs remain responsive and community-led.",
     "image": "/images/cdp/main-banner.jpg",
-    "category": "Community Development Programme",
+    "category": "Community Development",
     "slug": "fy-2024-25-annual-report-insights",
     "author": "YWCA Delhi Management",
     "gallery": [
       "/images/cdp/main-banner.jpg"
+    ]
+  },
+  {
+    "id": 31,
+    "title": "Lenten Prayer Meeting",
+    "date": "27th March 2026",
+    "description": "Lorem ipsum is a standard placeholder or dummy text used across graphic design, publishing, and web development to test layouts and visual hierarchies. By utilizing a scrambled, nonsensical version of Latin, it allows designers to focus entirely on typography, spacing, and page structure without being distracted by readable content.",
+    "image": "/images/News-Thumb/Lenten-Prayer-Meet.jpg",
+    "category": "Organisation",
+    "slug": "lenten-prayer-meeting",
+    "gallery": [
+        "/images/blog/lenten-prayer-meet/lenten-prayer-meet-1.jpg",
+        "/images/blog/lenten-prayer-meet/lenten-prayer-meet-2.jpg",
+        "/images/blog/lenten-prayer-meet/lenten-prayer-meet-3.jpg",
+        "/images/blog/lenten-prayer-meet/lenten-prayer-meet-4.jpg",
+        "/images/blog/lenten-prayer-meet/lenten-prayer-meet-5.jpg",
+        "/images/blog/lenten-prayer-meet/lenten-prayer-meet-6.jpg",
+        "/images/blog/lenten-prayer-meet/lenten-prayer-meet-7.jpg",
+        "/images/blog/lenten-prayer-meet/lenten-prayer-meet-8.jpg",
+        "/images/blog/lenten-prayer-meet/lenten-prayer-meet-9.jpg"
     ]
   }
 ]

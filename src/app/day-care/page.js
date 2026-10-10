@@ -39,8 +39,8 @@ export default function DayCarePage() {
   return (
     <main>
       <SideNavBanner
-        height="430px"
-        title={<>DAY CARE<br /> CENTRE</>}
+        height="400px"
+        title={<>Day Care<br /> Centre</>}
         bgImage="/images/day-care/banner-image.jpg"
         navItems={bannerNavItems}
         activePath="#overview"
