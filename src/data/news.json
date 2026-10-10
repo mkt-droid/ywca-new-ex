@@ -44,6 +44,93 @@
     ]
   },
   {
+    "id": 1,
+    "title": "World YWCA Day - Celebrating Sisterhood and Solidarity",
+    "date": "25th April, 2026",
+    "description": "Lorem ipsum is a standard placeholder or dummy text used across graphic design, publishing, and web development to test layouts and visual hierarchies. By utilizing a scrambled, nonsensical version of Latin, it allows designers to focus entirely on typography, spacing, and page structure without being distracted by readable content.",
+    "image": "/images/News-Thumb/World-YCWA-Day.jpg",
+    "category": "Academic News",
+    "slug": "world-ywca-day-2026",
+    "gallery": [
+      "/images/blog/world-ywca-day/world-ywca-day-1.jpg",
+      "/images/blog/world-ywca-day/world-ywca-day-2.jpg",
+      "/images/blog/world-ywca-day/world-ywca-day-3.jpg",
+      "/images/blog/world-ywca-day/world-ywca-day-4.jpg",
+      "/images/blog/world-ywca-day/world-ywca-day-5.jpg",
+      "/images/blog/world-ywca-day/world-ywca-day-6.jpg",
+      "/images/blog/world-ywca-day/world-ywca-day-7.jpg",
+      "/images/blog/world-ywca-day/world-ywca-day-8.jpg",
+      "/images/blog/world-ywca-day/world-ywca-day-9.jpg"
+    ],
+    "isHome": true
+  },
+  {
+    "id": 2,
+    "title": "Lenten Prayer Meeting",
+    "date": "27th March 2026",
+    "description": "Lorem ipsum is a standard placeholder or dummy text used across graphic design, publishing, and web development to test layouts and visual hierarchies. By utilizing a scrambled, nonsensical version of Latin, it allows designers to focus entirely on typography, spacing, and page structure without being distracted by readable content.",
+    "image": "/images/News-Thumb/Lenten-Prayer-Meet.jpg",
+    "category": "Academic News",
+    "slug": "lenten-prayer-meeting",
+    "gallery": [
+      "/images/blog/lenten-prayer-meet/lenten-prayer-meet-1.jpg",
+      "/images/blog/lenten-prayer-meet/lenten-prayer-meet-2.jpg",
+      "/images/blog/lenten-prayer-meet/lenten-prayer-meet-3.jpg",
+      "/images/blog/lenten-prayer-meet/lenten-prayer-meet-4.jpg",
+      "/images/blog/lenten-prayer-meet/lenten-prayer-meet-5.jpg",
+      "/images/blog/lenten-prayer-meet/lenten-prayer-meet-6.jpg",
+      "/images/blog/lenten-prayer-meet/lenten-prayer-meet-7.jpg",
+      "/images/blog/lenten-prayer-meet/lenten-prayer-meet-8.jpg",
+      "/images/blog/lenten-prayer-meet/lenten-prayer-meet-9.jpg"
+    ],
+    "isHome": true
+  },
+  {
+    "id": 3,
+    "title": "Thrive Music Festival",
+    "date": "14th March 2026",
+    "description": "Lorem ipsum is a standard placeholder or dummy text used across graphic design, publishing, and web development to test layouts and visual hierarchies. By utilizing a scrambled, nonsensical version of Latin, it allows designers to focus entirely on typography, spacing, and page structure without being distracted by readable content.",
+    "image": "/images/News-Thumb/Thrive-Music-Fest.jpg",
+    "category": "Academic News",
+    "slug": "thrive-music-festival",
+    "gallery": [
+      "/images/blog/thrive-music-fest/thrive-music-fest-1.jpg",
+      "/images/blog/thrive-music-fest/thrive-music-fest-2.jpg",
+      "/images/blog/thrive-music-fest/thrive-music-fest-3.jpg",
+      "/images/blog/thrive-music-fest/thrive-music-fest-4.jpg",
+      "/images/blog/thrive-music-fest/thrive-music-fest-5.jpg",
+      "/images/blog/thrive-music-fest/thrive-music-fest-6.jpg",
+      "/images/blog/thrive-music-fest/thrive-music-fest-7.jpg",
+      "/images/blog/thrive-music-fest/thrive-music-fest-8.jpg",
+      "/images/blog/thrive-music-fest/thrive-music-fest-9.jpg"
+    ],
+    "isHome": true
+  },
+  {
+    "id": 4,
+    "title": "International Women’s Day",
+    "date": "7th March 2026",
+    "description": "Lorem ipsum is a standard placeholder or dummy text used across graphic design, publishing, and web development to test layouts and visual hierarchies. By utilizing a scrambled, nonsensical version of Latin, it allows designers to focus entirely on typography, spacing, and page structure without being distracted by readable content.",
+    "image": "/images/News-Thumb/Int-Women-day.jpg",
+    "category": "Academic News",
+    "slug": "international-womens-day",
+    "gallery": [
+      "/images/blog/international-women-day/international-women-day-1.jpg",
+      "/images/blog/international-women-day/international-women-day-2.jpg",
+      "/images/blog/international-women-day/international-women-day-3.jpg",
+      "/images/blog/international-women-day/international-women-day-4.jpg",
+      "/images/blog/international-women-day/international-women-day-5.jpg",
+      "/images/blog/international-women-day/international-women-day-6.jpg",
+      "/images/blog/international-women-day/international-women-day-7.jpg",
+      "/images/blog/international-women-day/international-women-day-8.jpg",
+      "/images/blog/international-women-day/international-women-day-9.jpg",
+      "/images/blog/international-women-day/international-women-day-10.jpg",
+      "/images/blog/international-women-day/international-women-day-11.jpg",
+      "/images/blog/international-women-day/international-women-day-12.jpg"
+    ],
+    "isHome": true
+  },
+  {
     "id": 5,
     "title": "Bridge the Gap - August-September 2025",
     "date": "August-September 2025",
