@@ -137,16 +137,7 @@
   padding-bottom: 12px;
 }
 
-.overviewCardTitle::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 60px;
-  height: 3px;
-  background: linear-gradient(90deg, #a212b5, #be00c4);
-  border-radius: 2px;
-}
+
 
 .overviewCardImgWrapper {
   margin-bottom: 25px;

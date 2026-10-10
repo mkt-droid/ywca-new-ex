@@ -22,11 +22,12 @@ const NewsContent = () => {
     }
   }, [categoryParam])
 
-  const categories = ['All', ...new Set(newsData.map(item => item.category))]
+  const newsForPage = newsData.filter(item => !item.isHome);
+  const categories = ['All', ...new Set(newsForPage.map(item => item.category))]
 
   const filteredNews = selectedCategory === 'All'
-    ? newsData
-    : newsData.filter(item => item.category === selectedCategory)
+    ? newsForPage
+    : newsForPage.filter(item => item.category === selectedCategory)
 
   const handleCategoryClick = (cat) => {
     setSelectedCategory(cat)

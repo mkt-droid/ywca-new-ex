@@ -23,7 +23,7 @@ export default function EducationInstitutePage() {
   ];
 
   const academicNews = newsData
-    .filter(news => news.category === 'Academic News')
+    .filter(news => news.category === 'Academic News' && !news.isHome)
     .slice(0, 8);
 
   const alumni = [

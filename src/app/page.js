@@ -3,7 +3,10 @@ import ImpactSection from "@/components/ImpactSection";
 import PresenceMap from "@/components/PresenceMap";
 
 import HeroBanner from "@/components/partials/HeroBanner2";
+import newsData from "@/data/news.json";
+
 export default function Home() {
+  const homeNews = newsData.filter(item => item.isHome);
   return (
     <>
       <HeroBanner />
@@ -11,52 +14,20 @@ export default function Home() {
       <div className="news-bar">
         <div className="news-label">NEWS</div>
         <div className="news-items">
-          <div className="news-item">
-            <img src="/images/News-Thumb/World-YCWA-Day.jpg" alt="brand" />
-            <span className="n-text">
-              <span className="n-label">World YWCA Day - Celebrating Sisterhood and Solidarity
-                <span className="n-date">25th April, 2026</span>
+          {homeNews.map((news) => (
+            <div className="news-item" key={news.id}>
+              <img src={news.image} alt={news.title} />
+              <span className="n-text">
+                <span className="n-label">
+                  {news.title}
+                  <span className="n-date">{news.date}</span>
+                </span>
+                <a className="n-more" href={`/news/${news.slug}`}>
+                  Read More <i className="bi bi-arrow-up-right-circle" />
+                </a>
               </span>
-              <a className="n-more" href="/news/world-ywca-day-2026">
-                Read More <i className="bi bi-arrow-up-right-circle" />
-              </a>
-            </span>
-          </div>
-          <div className="news-item">
-            <img src="/images/News-Thumb/Lenten-Prayer-Meet.jpg" alt="brand" />
-            <span className="n-text">
-              <span className="n-label"> Lenten Prayer Meeting
-                <span className="n-date">27th March 2026 </span>
-              </span>
-              <a className="n-more" href="/news/lenten-prayer-meeting">
-                Read More <i className="bi bi-arrow-up-right-circle" />
-              </a>
-            </span>
-          </div>
-          <div className="news-item">
-            <img src="/images/News-Thumb/Thrive-Music-Fest.jpg" alt="brand" />
-            <span className="n-text">
-              <span className="n-label">Thrive Music Festival
-                <span className="n-date">14th March 2026</span>
-              </span>
-              <a className="n-more" href="/news/thrive-music-festival">
-                Read More <i className="bi bi-arrow-up-right-circle" />
-              </a>
-            </span>
-          </div>
-          <div className="news-item">
-            <img src="/images/News-Thumb/Int-Women-day.jpg" alt="brand" />
-            <span className="n-text">
-              <span className="n-label">
-                International Women’s Day
-                <span className="n-date">7th March 2026</span>
-              </span>
-
-              <a className="n-more" href="/news/international-womens-day">
-                Read More <i className="bi bi-arrow-up-right-circle" />
-              </a>
-            </span>
-          </div>
+            </div>
+          ))}
         </div>
       </div>
       <section className="hl-sec-2">
