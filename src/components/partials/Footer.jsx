@@ -24,7 +24,7 @@ const Footer = () => {
             <div className="col-lg-3 brd-1">
               <div className="footer-widget">
                 <div className="footer-brand">
-                  <img src="/images/logo-2.png" alt="img" />
+                  <a href='/'><img src="/images/logo-2.png" alt="img" /></a>
                 </div>
                 <div className="location">
                   <p>
